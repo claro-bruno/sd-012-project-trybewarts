@@ -3,8 +3,16 @@
     display: flex;
     background-color: rgb(50, 167, 145);
 }
+.img-container {
+  display: flex;
+  align-items: center;
+  flex-basis: 5%;
+}
 .trybewarts-header-logo{
   height: 50px;
+}
+.trybewarts-login {
+  display: flex;
 }
 =======
 /* Estilização do forms principal */
