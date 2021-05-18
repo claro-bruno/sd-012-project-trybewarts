@@ -7,3 +7,12 @@
 .header form {
   display: flex;
 }
+
+#mainId {
+  display: flex;
+}
+
+#mainId form {
+  display: flex;
+  width: 675px;
+}
