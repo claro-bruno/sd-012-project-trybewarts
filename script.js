@@ -8,7 +8,7 @@ function loginCheck() {
   }
   alert('Login ou senha inválidos.');
 }
-loginCheck();
+
 
 //  referência : https://thisinterestsme.com/disable-button-checkbox-checked/
 
@@ -19,4 +19,4 @@ function habilitarBtn(checkBox) {
     document.getElementById('submit-btn').disabled = true;
   }
 }
-habilitarBtn();
+
