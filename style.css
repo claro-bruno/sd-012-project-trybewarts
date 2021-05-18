@@ -36,12 +36,36 @@
 
 main {
   display: flex;
+  justify-content: space-between;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+#evaluation-form div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#evaluation-form div input {
+  height: 30px;
+  width: 200px;
+  margin: 5px;
+  border-radius: 1.5ch;
+  padding-left: 10px;
+}
+
+#evaluation-form div select {
+  height: 34px;
+  width: 180px;
+  margin: 5px;
+  border-radius: 1.5ch;
+  padding-left: 10px;
+  background-color: white;
 }
 
 #trybewarts-forms-logo {
