@@ -5,40 +5,46 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <title>Trybewarts</title>
 </head>
 
 <body>
   <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
-    <h1 class="title" id="trybewarts-header-title">Trybewarts</h1>
-    <form class="login-field trybewarts-login">
-      <input id="login" placeholder="Login" type="text">
-      <input type="password" name="" placeholder="Senha" id="password">
-      <button class="login-btn" type="submit">Enviar</button>
-    </form>
+    <!-- <div class="inner-header"> -->
+      <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
+      <h1 class="title" id="trybewarts-header-title">Trybewarts</h1>
+      <form class="login-field trybewarts-login">
+        <input id="login" class="login-input" placeholder="Login" type="text">
+        <input type="password" class="login-input" name="" placeholder="Senha" id="password">
+        <button class="login-btn" type="submit">Enviar</button>
+      </form>
+    <!-- </div> -->
   </header>
   <main>
     <form id="evaluation-form" action="" class="form">
       <div class="name">
         <label for="input-name"></label>
-        <input placeholder="Nome" id="input-name" type="text">
+        <input class="form-input" placeholder="Nome" id="input-name" type="text">
         <label for="input-lastname"></label>
-        <input placeholder="Sobrenome" id="input-lastname" type="text">
+        <input class="form-input" placeholder="Sobrenome" id="input-lastname" type="text">
       </div>
       <div class="email-house">
         <label for="input-email"></label>
-        <input placeholder="Email" id="input-email" type="email">
-        <select name="" id="house">
+        <input class="form-input" placeholder="Email" id="input-email" type="email">
+        <select class="form-input" name="" id="house">
           <option id="gitnoria-house" value="Gitnória">Gitnória</option>
           <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
           <option id="corvinode-house" value="Corvinode">Corvinode</option>
           <option id="pytherina-house" value="Pytherina">Pytherina</option>
         </select>
       </div>
-      <label id="label-family" for="">Qual sua família?</label>
+      <div class="family-container">
+        <label id="label-family" for=""><i class="bi bi-lightning-fill"></i>Qual sua família?</label>
         <label for="frontend">Frontend
           <input type="radio" name="family" id="frontend" value="Frontend">
         </label>
@@ -48,9 +54,11 @@
         <label for="fullstack">FullStack
           <input type="radio" name="family" id="fullstack" value="FullStack">
         </label>
+      </div>
 
-      <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
       <div class="tech">
+        <label id="label-content" for=""><i class="bi bi-lightning-fill"></i> Qual conteúdo você está com mais vontade de aprender?</label>
+        <br>
         <label for="hofs">HoFs
           <input class="subject" type="checkbox" name="skill" id="hofs" value="HoFs">
           </label>
@@ -71,11 +79,11 @@
           </label>
       </div>
       <div class="label-rate-container">
-        <label id="label-rate" class="label-rate" for="rate">Como você avalia a Trybewarts?</label>
+        <label id="label-rate" class="label-rate" for="rate"><i class="bi bi-lightning-fill"></i>Como você avalia a Trybewarts?</label>
       </div>
-      <label class="textarea" for="textarea">Deixe seu comentário:
-      <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-      </label>
+      <label class="textarea" for="textarea"><i class="bi bi-lightning-fill"></i>Deixe seu comentário:</label>
+      <textarea class="textarea-txt" name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      <p class="counter" id="counter">500</p>
       <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?
       <input type="checkbox" name="" id="agreement">
       </label>

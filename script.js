@@ -7,7 +7,7 @@ function createRate() {
     const radioBtn = document.createElement('input');
     const label = document.createElement('label');
     label.setAttribute('for', index);
-    label.innerHTML = index;
+    label.innerHTML = `${index} `;
     label.classList.add('form-check-label');
     radioBtn.setAttribute('type', 'radio');
     radioBtn.id = index;
@@ -37,8 +37,10 @@ agreement.addEventListener('click', () => {
 function activeBtn() {
   if (agreement.hasAttribute('checked')) {
     submitBtn.removeAttribute('disabled');
+    submitBtn.classList.add('able');
   } else {
     submitBtn.setAttribute('disabled', '');
+    submitBtn.classList.remove('able');
   }
 }
 
@@ -57,3 +59,16 @@ loginBtn.addEventListener('click', () => {
     window.alert('Olá, Tryber!');
   }
 });
+
+// contador de caracteres textarea
+
+const textarea = document.querySelector('#textarea');
+const counterN = 500;
+const counterTxt = document.querySelector('.counter');
+
+function counter() {
+  const x = counterN - textarea.value.length;
+  counterTxt.innerHTML = x;
+}
+
+textarea.addEventListener('keyup', counter);
