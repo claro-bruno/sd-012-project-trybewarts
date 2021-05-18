@@ -16,3 +16,16 @@ function checkLogin() {
   });
 }
 checkLogin();
+
+function enableSubmit() {
+  const submitButton = document.getElementById('submit-btn');
+  const checkbox = document.querySelector('#agreement');
+
+  checkbox.addEventListener('click', () => {
+    const condition = document.querySelector('#agreement').value;
+    if (condition === 'true') {
+      submitButton.disabled = false;
+    }
+  });
+}
+enableSubmit();
