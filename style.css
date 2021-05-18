@@ -33,3 +33,12 @@
   border-radius: 1.5ch;
   margin-right: 10px;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
