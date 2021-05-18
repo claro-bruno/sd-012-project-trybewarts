@@ -24,9 +24,14 @@ body {
 
 .trybewarts-header-logo {
   width: 60px;
-  padding: 10px;
 }
 
 .trybewarts-login {
   display: flex;
+  align-items: center;
+  
+}
+
+input.login, input.senha, button.logar {
+  margin: 5px;
 }
