@@ -31,8 +31,13 @@ main form {
 }
 
 #label-content {
+    display: flex;
+    flex-direction: column;
+}  
+
+.rate-container {
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
 #text-area {
