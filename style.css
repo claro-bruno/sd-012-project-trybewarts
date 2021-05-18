@@ -10,6 +10,7 @@
 }
 
 main {
+  margin: 10px 5px;
   display: flex;
 }
 
@@ -19,6 +20,6 @@ main {
   flex-direction: column;
 }
 
-#trybewarts-form-logo {
- height: 500px;
+#trybewarts-forms-logo {
+  height: 500px;
 }
