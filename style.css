@@ -34,3 +34,8 @@ main form {
     display: flex;
     flex-direction: column;
 }  
+
+.rate-container {
+  display: flex;
+  align-items: center;
+}
