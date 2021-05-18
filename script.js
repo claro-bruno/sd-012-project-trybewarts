@@ -1,3 +1,4 @@
+
 let botao=document.getElementById("submit-btn")
 let confirma=document.getElementById("agreement")
 botao.disabled=true;
@@ -9,3 +10,17 @@ confirma.addEventListener("change", function(){
         botao.disabled=false;
     }
 })
+const senha = document.querySelector('#senha').value;
+const email = document.querySelector('#email').value;
+const botaoHeader = document.querySelector('#btnheader');
+botaoHeader.addEventListener('click', verificaLogin);
+function verificaLogin() {
+  const novaSenha = document.querySelector('#senha').value;
+  const novoEmail = document.querySelector('#email').value;
+  if (senha !== novaSenha || email !== novoEmail) {
+        alert('Login ou senha inválidos');
+  } else if (senha === novaSenha && email === novoEmail) {
+        alert('Olá, Tryber!');
+  }
+};
+
