@@ -29,22 +29,28 @@ main {
 
 
 #evaluation-form {
+  display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 #input-name {
+  flex-direction: row;
   width: 40%;
 }
 
 #input-lastname {
+  flex-direction: row;
   width: 40%;
 }
 
 #input-email {
+  flex-direction: row;
   width: 40%;
   display: inline-flex;
 }
 
 #evaluation-form {
+  flex-direction: row;
   display: inline-flex;
 }
