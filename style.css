@@ -13,3 +13,7 @@ main {
   flex-direction: column;
   background-color: bisque;
 }
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
