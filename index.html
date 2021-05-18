@@ -34,28 +34,79 @@
         </select>
       </div>
       <div class="perguntas">
-        <div class="pergunta-familia">
+        <div class="pergunta-familia col-4">
           <label for="" id="label-family" class="col-12">Qual sua família?</label>
-          <label for="">
-            <input type="radio" name="family" id="" value="Frontend"> Frontend
+          <label for="radio-frontend">
+            <input id="radio-frontend" type="radio" name="family" id="" value="Frontend" checked> Frontend
           </label>
-          <label for="">
-            <input type="radio" name="family" id="" value="Backend"> Backend
+          <label for="radio-backend">
+            <input id="radio-backend" type="radio" name="family" id="" value="Backend"> Backend
           </label>
-          <label for="">
-            <input type="radio" name="family" id="" value="FullStack"> FullStack
+          <label for="radio-fullstack">
+            <input id="radio-fullstack" type="radio" name="family" id="" value="FullStack"> FullStack
           </label>
         </div>
-        <div class="pergunta-aprender">
+        <div class="pergunta-aprender col-8">
+          <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="opcoes-vontade-aprender">
+            <label for="checkbox-hofs">
+              <input id="checkbox-hofs" type="checkbox" value="HoFs"> HoFs
+            </label>
+            <label for="checkbox-jest">
+              <input id="checkbox-jest" type="checkbox" value="Jest"> Jest
+            </label>
+            <label for="checkbox-promises">
+              <input id="checkbox-promises" type="checkbox" value="Promises"> Promises
+            </label>
+            <label for="checkbox-react">
+              <input id="checkbox-react" type="checkbox" value="React"> React
+            </label>
+            <label for="checkbox-sql">
+              <input id="checkbox-sql" type="checkbox" value="SQL"> SQL
+            </label>
+            <label for="checkbox-python">
+              <input id="checkbox-python" type="checkbox" value="Python"> Python
+            </label>
+          </div>
           
         </div>
         <hr>
         <div class="avaliacao">
-          
+          <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+          <label for="radio-button-valor-1">
+            1 <input type="radio" name="rate" id="radio-button-valor1" value="1">
+          </label>
+          <label for="radio-button-valor-2">
+            2 <input type="radio" name="rate" id="radio-button-valor2" value="2">
+          </label>
+          <label for="radio-button-valor-3">
+            3 <input type="radio" name="rate" id="radio-button-valor3" value="3">
+          </label>
+          <label for="radio-button-valor-4">
+            4 <input type="radio" name="rate" id="radio-button-valor4" value="4">
+          </label>
+          <label for="radio-button-valor-5">
+            5 <input type="radio" name="rate" id="radio-button-valor5" value="5">
+          </label>
+          <label for="radio-button-valor-6">
+            6 <input type="radio" name="rate" id="radio-button-valor6" value="6">
+          </label>
+          <label for="radio-button-valor-7">
+            7 <input type="radio" name="rate" id="radio-button-valor7" value="7">
+          </label>
+          <label for="radio-button-valor-8">
+            8 <input type="radio" name="rate" id="radio-button-valor8" value="8">
+          </label>
+          <label for="radio-button-valor-9">
+            9 <input type="radio" name="rate" id="radio-button-valor9" value="9">
+          </label>
+          <label for="radio-button-valor-10">
+            10 <input type="radio" name="rate" id="radio-button-valor10" value="10">
+          </label>
         </div>
       </div>
       <!-- Linha divisória -->
-      
+
     </form>
     <img  id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da escola de códigos automágicos Trybewarts">
   </main>

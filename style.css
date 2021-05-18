@@ -85,14 +85,29 @@ main input:nth-of-type( 2 ) {
 }
 
 .perguntas {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .pergunta-aprender {
   display: flex;
+  flex-flow: column wrap;
+  box-sizing: border-box;
 }
 
 .pergunta-familia {
   display: flex;
   flex-direction: column;
+}
+
+#label-content {
+  width: 100%;
+}
+
+.opcoes-vontade-aprender {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100px;
 }
