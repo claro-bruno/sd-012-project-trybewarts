@@ -1,15 +1,15 @@
-const botao = document.querySelector("#singUp");
+const botao = document.querySelector('#singUp');
 
 function validandoCabecalho() {
-  botao.addEventListener("click", () => {
-    const login = document.querySelector("#login");
-    const senha = document.querySelector("#senha");
-    if (login.value !== "trybe@teste.com" && senha.value !== "123456") {
-      window.alert("Login ou senha inválidos");
+  botao.addEventListener('click', () => {
+    const login = document.querySelector('#login');
+    const senha = document.querySelector('#senha');
+    if (login.value !== 'trybe@teste.com' && senha.value !== '123456') {
+      window.alert('Login ou senha inválidos');
     } else {
-        window.alert("Olá, Tryber!");
-      }
-    });
+      window.alert('Olá, Tryber!');
+    }
+  });
 }
 
 const divNotas = document.querySelector('#rate-div');
@@ -35,7 +35,6 @@ function habilitandoBotaoEnviar() {
   checkboxSubmit.addEventListener('click', () => {
     if (checkboxSubmit.checked) botaoSubmit.disabled = false;
     else botaoSubmit.disabled = true;
-    
   });
 }
 
