@@ -11,4 +11,5 @@
 #evaluation-form {
   width: 675px;
   display: flex;
+  flex-direction: column;
 }
