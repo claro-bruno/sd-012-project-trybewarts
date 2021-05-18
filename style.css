@@ -36,3 +36,8 @@ h2 {
 #label-family label {
     display: block;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
