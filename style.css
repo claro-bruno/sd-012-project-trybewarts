@@ -61,3 +61,13 @@
 #trybewarts-forms-logo{
     height: 500px;
 }
+
+#label-content {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-flow: row wrap;
+}
