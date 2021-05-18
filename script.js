@@ -30,12 +30,12 @@ function createHouses() {
     createOption.value = houses[index];
     createOption.innerText = houses[index];
     const lowCase = houses[index].toLowerCase();
-    createOption.id = lowCase + '-house';
+    createOption.id = lowCase.normalize("NFD").replace(/[^a-zA-Zs]/g, "") + '-house';
     getTagHouse.appendChild(createOption);
   }
 }
 
-createHouses()
+createHouses();
 
 function createFamily() {
   const getTagFamily = document.getElementById('family-input');
@@ -45,6 +45,7 @@ function createFamily() {
     createLabelFamily.innerText = familys[index];
     createInput.className = 'family';
     createInput.type = 'radio';
+    createInput.name = 'family';
     createInput.value = familys[index];
     getTagFamily.appendChild(createLabelFamily);
     getTagFamily.appendChild(createInput);
@@ -64,7 +65,7 @@ function createTech() {
     createInputTech.value = tech[index];
     getDivTech.appendChild(createLabelTech);
     getDivTech.appendChild(createInputTech);
-  };
+  }
 }
 
 createTech();
