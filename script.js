@@ -8,7 +8,7 @@ function validarLogin() {
     const senhaValue = document.getElementById('senha').value;
 
     if (loginValue !== 'tryber@teste.com' || senhaValue !== '123456') {
-      alert('Login ou senha inválidos');
+      alert('Login ou senha inválidos.');
     } else {
       alert('Olá, Tryber!');
     }
