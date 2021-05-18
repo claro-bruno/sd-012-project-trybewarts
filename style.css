@@ -6,7 +6,7 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   width: 100%;
-    height: 60px;
+  height: 60px;
 }
 
 main {
@@ -19,6 +19,6 @@ main {
   flex-direction: column;
 }
 
-#trybewarts-logo {
-  width: 675px;
+#trybewarts-form-logo {
+ height: 500px;
 }
