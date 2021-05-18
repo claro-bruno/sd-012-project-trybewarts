@@ -14,7 +14,7 @@ function stopDefAction(event) {
 
 loginButton.addEventListener('click', stopDefAction);
 
-const rateSection = document.getElementById('rate-section');
+const rateSection = document.getElementById('radio-container');
 
 function createRadioButtons() {
   for (let index = 1; index <= 10; index += 1) {

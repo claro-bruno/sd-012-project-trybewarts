@@ -38,3 +38,14 @@
 img {
   float: right;
 }
+
+#rate-section {
+  width: 515px;
+  display: flex;
+  flex-direction: column;
+}
+
+#comment-container {
+  display: flex;
+  flex-direction: column;
+}
