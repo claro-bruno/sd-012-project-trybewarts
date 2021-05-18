@@ -63,3 +63,8 @@ hr {
 .userOptions {
   display: flex;
 }
+
+footer {
+  background-color: darkblue;
+  color: aliceblue;
+}
