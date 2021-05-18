@@ -11,7 +11,7 @@ confirma.addEventListener('change', () => {
 const senha = document.querySelector('#senha').value;
 const email = document.querySelector('#email').value;
 const botaoHeader = document.querySelector('#btnheader');
-botaoHeader.addEventListener('click', function() {
+function verificaLogin() {
   const novaSenha = document.querySelector('#senha').value;
   const novoEmail = document.querySelector('#email').value;
   if (senha !== novaSenha || email !== novoEmail) {
@@ -19,4 +19,5 @@ botaoHeader.addEventListener('click', function() {
   } else if (senha === novaSenha && email === novoEmail) {
     alert('Olá, Tryber!');
   }
-});
+};
+botaoHeader.addEventListener('click', verificaLogin);
