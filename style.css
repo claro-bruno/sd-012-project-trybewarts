@@ -48,3 +48,7 @@ main {
 .input-row {
   flex-direction: row;
 }
+
+.content {
+  display: flex;
+}
