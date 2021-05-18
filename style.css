@@ -24,7 +24,7 @@ main {
   width: 675px;
 }
 
-#evaluation-form div{
+#evaluation-form div {
   display: flex;
   flex-flow: row nowrap;
 }
@@ -36,4 +36,8 @@ main {
 #family-radio {
   display: flex;
   flex-direction: column;
+}
+
+#avaliacao {
+  display: flex;
 }
