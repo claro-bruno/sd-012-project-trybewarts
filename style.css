@@ -6,6 +6,7 @@
 /*Começa os estilos*/
 main{
     display: flex;
+
 }
 .header{
     display: flex;
@@ -37,6 +38,16 @@ main{
     justify-content: center;
 }
 
-.footerClass p{
+.footerClassalign-content: space-between p{
     color: white;
+}
+
+#evaluation-form{
+    display: flex;
+    width: 675px;
+    flex-direction: column;
+}
+
+#input-name #input-lastname {
+
 }
