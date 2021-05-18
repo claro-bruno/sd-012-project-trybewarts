@@ -14,3 +14,13 @@ body {
   display: flex;
   align-items: center;
 }
+
+.flex-container {
+  display: flex;
+}
+
+main form {
+  width: 675px;
+  display: flex;
+  flex-direction: column;
+}
