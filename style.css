@@ -12,3 +12,7 @@
   display: flex;
   align-items: center;
 }
+
+#trybewarts-header-title {
+  align-self: center;
+}
