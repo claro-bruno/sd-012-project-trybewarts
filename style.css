@@ -1,9 +1,24 @@
 .header{
+    width: auto;
+    height: 50px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: rgb(50, 167, 145)
 }
 .trybewarts-header-logo {
     left: 0px;
+}
+.trybewarts-login {
+    display: flex;
+    justify-content:space-between;
+    height: 20px;
+}
+#trybewarts-header-title {
+    color: white;
+}
+.trybewarts-header-logo {
+    width: 40px;
 }
 main{
     display: flex;
