@@ -17,9 +17,19 @@ function showLoginResult(){
     }
 }
 
+function switchButtonOnOff(){
+    const button = document.querySelector('#submit-btn');
+   if(document.querySelector('#agreement').checked){
+       button.disabled = false;
+   }else{
+       button.disabled = true;
+   }
+}
+
 window.onload = () => {
     document.querySelector('#login-btn').addEventListener('click', (e)=>{
         e.preventDefault();
         showLoginResult();
     })
+    document.querySelector('#agreement').addEventListener('click', switchButtonOnOff)
 }
