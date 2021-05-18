@@ -14,12 +14,12 @@ const formLogin = document.getElementsByClassName('trybewarts-login');
 formLogin[0].addEventListener('submit', login);
 
 function rates() {
-  for(let index = 1; index <= 10; index += 1) {
-    let rateOption = document.createElement('input');
-    let rateLabel = document.createElement('label');
+  for (let index = 1; index <= 10; index += 1) {
+    const rateOption = document.createElement('input');
+    const rateLabel = document.createElement('label');
     rateOption.value = index;
-    rateOption.name = "rate";
-    rateOption.type = "radio";
+    rateOption.name = 'rate';
+    rateOption.type = 'radio';
     rateLabel.innerHTML = index;
     rate.appendChild(rateOption);
     rate.appendChild(rateLabel);
