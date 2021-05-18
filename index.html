@@ -9,13 +9,43 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="header">
 
   </header>
   <main>
     <form id="evaluation-form" action="">
+      <div class="nome-completo col-12">
+        <input id="input-name" class="col-6" placeholder="Nome" autofocus>
+        <input id="input-lastname" class="col-6" placeholder="Sobrenome">
+      </div>
+      <div class="email-casa col-12">
+        <input id="input-email" placeholder="Email" class="col-6">
+        <select id="house" name="house" class="select-casa col-6">
+          <option id="gitnoria-house" value="gitnoria">Gitnória</option>
+          <option id="reactpuff-house" value="reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="corvinode">Corvinode</option>
+          <option id="pytherina-house" value="pytherina">Pytherina</option>
+        </select>
+      </div>
+      <div class="perguntas">
+        <div class="pergunta-familia">
+          <label for="" id="label-family" class="col-12">Qual sua família?</label>
+          <label for="">
+            <input type="radio" name="familia" id="" value="Frontend"> Frontend
+          </label>
+          <label for="">
+            <input type="radio" name="familia" id="" value="Backend"> Backend
+          </label>
+          <label for="">
+            <input type="radio" name="familia" id="" value="FullStack"> FullStack
+          </label>
+        </div>
+        <div class="pergunta-aprender">
+
+        </div>
+      </div>
     </form>
-    <img  id="rybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da escola de códigos automágicos Trybewarts">
+    <img  id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da escola de códigos automágicos Trybewarts">
   </main>
 </body>
 </html>
