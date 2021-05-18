@@ -1,13 +1,17 @@
-.header{
+.header {
     display: flex;
     background-color: rgb(50, 167, 145)
 }
 .trybewarts-header-logo {
+
     left: 0px;
 }
-main{
+main {
+
     display: flex;
 }
-#evaluation-form{
+#evaluation-form {
+    
     width: 650px;
+    flex-direction: column
 }
