@@ -1,3 +1,13 @@
+main {
+  display: flex;
+}
+
+form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
 body {
   margin: 0;
 }
