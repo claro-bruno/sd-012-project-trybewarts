@@ -23,3 +23,7 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#label-rate {
+    display: flex;
+}
