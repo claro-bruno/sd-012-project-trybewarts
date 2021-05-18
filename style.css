@@ -27,9 +27,40 @@ main {
   display: flex;
 }
 
+#label-forms {
+  display: flex;
+  justify-content: center;
+}
+
+#name-lastName {
+  display: flex;
+  justify-content: center;
+}
+
+#label-house {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 6px;
+}
+
+#input-email {
+  width: 256px;
+}
+
+#house {
+  width: 205px;
+}
+
+#email-house {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #evaluation-form {
   display: flex;
-  flex-flow: column wrap;
+  flex-direction: column;
   width: 675px;
 }
 
