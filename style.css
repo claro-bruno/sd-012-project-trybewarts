@@ -1,79 +1,72 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(50, 167, 145);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-header-logo {
-    width: 100px;
-    
-}
+  width: 100px;
 
-.trybewarts-header-title{
-   
-    
 }
 
 .trybewarts-login {
-    width: 30%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+  width: 30%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#login-input, #password-input, #login-btn {
-    width: 30%;
-    border-radius: 5px;
+#login-input , #password-input , #login-btn {
+  width: 30%;
+  border-radius: 5px;
 }
 
 .main-content {
-    display: flex;
-    justify-content: center;
-    
-    
+  display: flex;
+  justify-content: center;
+
+
 }
 
 #evaluation-form {
-    display: flex;
-    flex-flow: column nowrap;
-    width: 675px;
+  display: flex;
+  flex-flow: column nowrap;
+  width: 675px;
 }
 
 .input-fname-container {
-    display: flex;
-    flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
 .input-email-house-container {
-    display: flex;
-    flex-flow: row nowrap;
+  display: flex;
+  flex-flow: row nowrap;
 }
 
-#trybewarts-forms-logo{
-    height: 500px;
+#trybewarts-forms-logo {
+  height: 500px;
 }
 
 #label-content {
-    display: flex;
-    flex-flow: column nowrap;
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 #checkbox-container {
-    display: flex;
-    flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-#rodape{
-    
-    text-align: center;
-    
+#rodape {
+  text-align: center;
 }
