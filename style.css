@@ -6,13 +6,13 @@
 
 .header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-header-logo {
+  align-self: flex-start;
   width: 60px;
   height: 60px;
   padding: 10px;
