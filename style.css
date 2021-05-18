@@ -15,6 +15,10 @@ main form {
   flex-direction: column;
 }
 
+hr {
+  width: 50%;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
