@@ -17,7 +17,6 @@
       <button type="button">Logar</button>
     </form>
   </header>
-
   <main>
     <form action="get" id="evaluation-form">
       <div class="line">
@@ -73,7 +72,6 @@
             <label for="python">Python</label>
           </div>
         </div>
-
       <div id="label-rate">Como você avalia a Trybewarts?
         <input name="rate" type="radio" value="1">
         <label for="rate">1</label>
@@ -96,11 +94,14 @@
         <input name="rate" type="radio" value="10">
         <label for="rate">10</label>
       </div>
-
       <div class="text-area">
         <label class="textarea" for="text-area">Deixe seu comentário:
           <textarea name="comment" maxlength="500"></textarea>
         </label>
+      </div>
+      <div class="checkbox-agreement">
+        <label for="python" id="label-infos">Você concorda com o uso das informações acima?</label>
+        <input type="checkbox" name="agreement" value="agree" id="agreement">
       </div>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da Trybewarts">
