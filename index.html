@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto TrybeWarts</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto TrybeWarts</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
   <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">  
-</header>
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+  </header>
   <main>
     <form id="evaluation-form" action="" method="get">
       <div class="container-names">
@@ -29,14 +31,17 @@
           <option id="corvinode-house" value="corvinode-house">Corvinode</option>
           <option id="pytherina-house" value="pytherina-house">Pytherina</option>
         </select>
-        <hr>
-        <p id="label-family">label-family">Qual sua família?</p>
-        <input type="radio" name="family" id="frontend">Frontend
-        <input type="radio" name="family" id="backend">Backend
-        <input type="radio" name="family" id="fullstack">Fullstack
+      </div>
+      <hr>
+      <div class="container-radio">
+        <p id="label-family">Qual sua família?</p>
+        <input type="radio" name="family" id="frontend" value="Frontend">
+        <label for="frontend">Frontend</label>
+        <input type="radio" name="family" id="backend" value="Backend">
+        <label for="backend">Backend</label>
+        <input type="radio" name="family" id="fullstack" value="Fullstack">
+        <label for="fullstack">Fullstack</label>
       </div>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da Trybewarts">
   </main>
-
-
