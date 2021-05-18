@@ -43,3 +43,12 @@ body {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#main, #evaluation-form {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  flex-direction: column;
+}
