@@ -26,3 +26,7 @@ main {
 #name-container {
     display: flex;
 }
+
+#email-house-container {
+    display: flex;
+}
