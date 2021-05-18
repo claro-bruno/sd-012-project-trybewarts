@@ -7,11 +7,19 @@ html {
 }
 
 :root {
-  --verde-trybe: 'rgb(50, 167, 145)';
+  --verde-trybe: rgb(50, 167, 145);
+}
+
+body {
+  margin: 0;
 }
 
 .header {
   background-color: var(--verde-trybe);
   display: flex;
+}
+
+.trybewarts-header-logo {
+  width: 50px;
 }
 
