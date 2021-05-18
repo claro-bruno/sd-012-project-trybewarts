@@ -68,3 +68,16 @@ footer p {
   height: 50px;
   color: white;
 }
+
+#input-name {
+  width: 150px;
+}
+
+#input-lastname {
+  width: 150px;
+}
+
+#nome-sobrenome {
+  display: flex;
+  flex-direction: row;
+}
