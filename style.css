@@ -37,3 +37,19 @@
 #house {
   width: 170px;
 }
+
+.family-checker {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 15px 10px 15px;
+}
+
+.div-family {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-checkbox {
+  display: flex;
+  flex-direction: column;
+}
