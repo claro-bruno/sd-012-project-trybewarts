@@ -42,4 +42,9 @@ main {
 
 #input-email {
   width: 40%;
+  display: inline-flex;
+}
+
+#evaluation-form {
+  display: inline-flex;
 }
