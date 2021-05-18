@@ -68,3 +68,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#which-content {
+  display: flex;
+  flex-wrap: wrap;
+}
