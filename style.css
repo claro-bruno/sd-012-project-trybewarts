@@ -11,7 +11,6 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
-  background-color: bisque;
 }
 
 #trybewarts-forms-logo {
@@ -20,18 +19,26 @@ main {
 
 #section-name {
   display: flex;
+  flex-direction: row;
 }
 
 #input-name {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   flex-grow: 1;
 }
 
 #input-lastname {
+  flex-grow: 1;
+}
+
+#section-email-houses {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+}
+
+#input-email {
+  flex-grow: 1;
+}
+
+#house {
   flex-grow: 1;
 }
