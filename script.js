@@ -1,5 +1,5 @@
-let loginid = document.getElementById("login");
-let passwId = document.getElementById("password");
+const loginid = document.getElementById("login");
+const passwId = document.getElementById("password");
 l
 
 function Startlogin() {
