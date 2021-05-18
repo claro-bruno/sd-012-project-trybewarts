@@ -77,7 +77,35 @@ main {
   justify-content: center;
 }
 
-#family-type{
+#family-type-content-learn{
+  display: flex;
+  justify-content: space-between;
+}
+
+#family-type {
   display: flex;
   flex-direction: column;
+  background-color: rgb(50, 167, 145);
 }
+
+#learn-content {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(192, 206, 203);
+}
+
+#label-content {
+  background-color: red;
+}
+
+#learn-checkbox {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.subject {
+  margin-left: 20px;
+}
+
+
+
