@@ -35,6 +35,11 @@ h1 {
   font-size: 12px;
 }
 
+#comments {
+  max-width: 700px;
+  max-height: 200px;
+}
+
 /* Linha Divisória */
 main {
   display: flex;
