@@ -1,8 +1,15 @@
 .header {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
+  padding: 0 20px;
 }
 
 .trybewarts-header-logo {
   width: 50px;
+  align-items: flex-start;
+}
+
+#trybewarts-header-title {
+  color: white;
 }
