@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -28,8 +27,4 @@
 #login-input, #password-input, #login-btn {
     width: 30%;
     border-radius: 5px;
-=======
-.trybewarts-login{
-    display:flex;
->>>>>>> 96168a310126bb49ec6b83c779afcf5f52c04ac6
 }
