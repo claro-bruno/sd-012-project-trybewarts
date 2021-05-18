@@ -48,11 +48,11 @@
 }
 
 #evaluation-form {
-  display:flex;
+  display: flex;
   width: 675px;
   flex-direction: column;
 }
 
 main {
- display:flex;
+ display: flex;
 }
