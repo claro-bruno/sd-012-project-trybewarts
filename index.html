@@ -4,9 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Trybe Warts</title>
 </head>
 <body>
-    
+    <main>
+        <form method="GET" id="evaluation-form">
+            <div id="dados-container">
+                <input type="text" id="input-name" placeholder="Nome">
+                <input type="text" id="input-lastname" placeholder="Sobrenome">
+                <input type="text" id="input-email" placeholder="Email">
+            </div>
+            <div id="house-container">
+                <label for="house">Casa </label>
+                <select name="house" id="house">
+                    <option value="Gitnória" id="gitnoria-house"></option>
+                    <option value="Reactpuff" id="reactpuff-house"></option>
+                    <option value="Corvinode" id="corvinode-house"></option>
+                    <option value="Pytherina " id="pytherina-house"></option>
+                </select>
+            </div>
+        </form>
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo da Trybewarts">
+    </main>
 </body>
 </html>
