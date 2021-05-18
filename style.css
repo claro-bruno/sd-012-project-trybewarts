@@ -38,3 +38,8 @@ main {
 .inputs-casa {
   display: flex;
 }
+
+#checkbox-content {
+  display: flex;
+  flex-direction: row;
+}
