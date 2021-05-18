@@ -19,6 +19,16 @@ main form {
   height: 500px;
 }
 
+#form1-row1 {
+  display: flex;
+  flex-direction: row;
+}
+
+#form1-row2 {
+  display: flex;
+  flex-direction: row;
+}
+
 .header {
   display: flex;
   background-color: rgb(50 167 145);
