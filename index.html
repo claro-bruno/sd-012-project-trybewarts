@@ -11,12 +11,12 @@
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form action="" class="trybewarts-login">
-      <input type="text" placeholder="Login">
-      <input type="text" placeholder="Senha">
-      <button type="submit">Login</button>
+    <form action="" class="trybewarts-login" method="GET" id="login-form">
+      <input type="text" name="username" placeholder="Login" required>
+      <input type="text" name="password" placeholder="Senha" required>
+      <button type="submit" id="loginButton">Login</button>
     </form>
   </header>
-
+<script src="script.js"></script>
 </body>
 </html>
