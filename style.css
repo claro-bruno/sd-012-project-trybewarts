@@ -1,6 +1,22 @@
 .header {
     display: flex;
     background-color: rgb(50, 167, 145);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trybewarts-login {
+    display: flex;
+    padding: 20px 10px;
+}
+
+.input-senha, .input-login {
+    margin-right: 10px;
+}
+
+.trybewarts-header-logo {
+    width: 5%;
+    background-color: rgb(50, 167, 145);
 }
 
 main {
@@ -16,4 +32,7 @@ h2 {
 }
 #trybewarts-forms-logo {
     height: 500px;
+}
+#label-family label {
+    display: block;
 }

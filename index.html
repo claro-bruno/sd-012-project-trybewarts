@@ -11,6 +11,11 @@
 <body>
     <header class="header">
         <img src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts cabeçalho" class="trybewarts-header-logo">
+        <form action="" class="trybewarts-login">
+            <input type="text" placeholder="Login" class="input-login">
+            <input type="number" placeholder="Senha" class="input-senha">
+            <button class="btn-submit">Submit</button>
+        </form>
     </header>
 
     <main>
@@ -30,6 +35,22 @@
                         <option id="corvinode-house" value="Corvinode">Corvinode</option>
                         <option id="pytherina-house" value="Pytherina">Pytherina</option>
                     </select>
+                </label>
+            </div>
+            <hr>
+            <div id="label-family">
+                <p>Qual sua família?"</p>
+                <label for="frontend">
+                    <input id="frontend" name="family" type="radio" value="Frontend">
+                    Familia Frontend
+                </label>
+                <label for="backend">
+                    <input id="backend" name="family" type="radio" value="Backend">
+                    Familia Backend
+                </label>
+                <label for="fullstack">
+                    <input id="fullstack" name="family" type="radio" value="FullStack">
+                    Familia FullStack
                 </label>
             </div>
 
