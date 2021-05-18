@@ -46,6 +46,12 @@ h1 {
   max-height: 200px;
 }
 
+.btn {
+  background-color: rgb(78, 44, 131);
+  color: white;
+}
+
+
 /* Linha Divisória */
 main {
   display: flex;
