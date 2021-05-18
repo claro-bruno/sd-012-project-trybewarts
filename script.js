@@ -2,7 +2,9 @@ const loginButton = document.querySelector('#login-button');
 const loginInput = document.querySelector('#login-input');
 const passInput = document.querySelector('#pass-input');
 const escolheCasa = document.querySelector('#house');
-const nota = document.querySelector('#rate')
+const nota = document.querySelector('#rate');
+const checkboxAgreement = document.querySelector('#agreement');
+const submitButton = document.querySelector('#submit-btn');
 
 loginButton.addEventListener('click', (event) => {
   event.preventDefault();
@@ -45,5 +47,14 @@ function rate() {
     }
 }
 
+function isChecked() {
+    if (checkboxAgreement.checked == 1) {
+        submitButton.disabled = 0;
+    } else {
+        submitButton.disabled = 1;
+    }
+}
+
 escolherCasa();
 rate();
+isChecked();

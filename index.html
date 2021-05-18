@@ -105,10 +105,10 @@
                 <label for="textarea">Deixe seu comentário:</label><br>
                 <textarea  class = "textarea" cols="30" maxlength="500"  rows="10"></textarea>
             </div>
-            <label for="agreement">Você concorda com o uso das informações acima?<input id = "agreement" type="checkbox"></label>
+            <label for="agreement">Você concorda com o uso das informações acima?<input id = "agreement" onclick="isChecked()" type="checkbox"></label>
         </div>
 
-        <button type="submit" id="submit-btn">Enviar</button>
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
       </form>
       <img
         id="trybewarts-forms-logo"
