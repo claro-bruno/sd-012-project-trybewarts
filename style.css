@@ -55,11 +55,17 @@ form select {
   margin: 3px;
 }
 
-#container-boxes{
+#container-boxes {
   display: flex;  
 }
 
-#container-radio{
+#container-radio {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+#container-checkBox{
   display: flex;
   flex-direction: column;
 }
