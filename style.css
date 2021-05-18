@@ -1,13 +1,18 @@
+@font-face {
+  font-family: MagicSchool;
+  src: url('fonts/MagicSchoolOne-ovYz.ttf');
+}
+
 html {
   box-sizing: border-box;
 }
 
-*, *:after, *:before {
+* , *:after , *:before {
   box-sizing: inherit;
 }
 
 :root {
-  --verde-trybe: rgb(50, 167, 145);
+  --verde-trybe: rgb(50 , 167 , 145);
 }
 
 body {
@@ -29,3 +34,9 @@ body {
   display: flex;
   justify-content: space-between;
 }
+#trybewarts-header-title {
+  font-family: MagicSchool, fantasy, serif;
+  font-weight: 500;
+  color: white;
+}
+
