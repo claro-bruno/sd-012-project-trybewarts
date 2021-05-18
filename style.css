@@ -19,20 +19,20 @@ body {
   margin-left: 10px;
 }
 
-#login {
+#login-input {
   width: 200px;
   margin-left: 10px;
   border-radius: 10px;
 }
 
-#senha {
+#login-pass {
   width: 200px;
   margin-left: 10px;
   border-radius: 10px;
   margin-right: 10px;
 }
 
-#btn-login {
+#login-btn {
   border-radius: 10px;
 }
 
