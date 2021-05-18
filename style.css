@@ -9,10 +9,17 @@ main{
   display: flex;
 }
 
+<<<<<<< HEAD
 #evaluevaluation-form{
   display: flex;
   width: 675px;
   flex-direction: column;
+=======
+#evaluation-form{
+    display: flex;
+    width: 675px;
+    flex-direction: column;
+>>>>>>> 348532b54768c30cb225139ee69b574ece3c9005
 }
 
 .header {
