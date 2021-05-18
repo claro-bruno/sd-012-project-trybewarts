@@ -19,6 +19,10 @@
   flex-wrap: wrap;
 }
 
+main {
+  display: flex;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -32,32 +36,48 @@
 
 #input-name {
   display: flex;
-  flex-flow: row;  
+  flex-flow: row; 
+  height: 10px;
+  align-items: flex-start;
+  
 }
 
 #input-lastname {
   display: flex;
   flex-flow: row;
+  height: 10px;
+  align-items: flex-start;
 
 }
 
 #input-email {
   flex-direction: column;
+  height: 10px;
+  flex-wrap: wrap;
 
+}
+
+#house {
+  heigh: 10px;
 }
 
 #gitnoria-house {
-
+    height: 10px;
 }
 
 #reactpuff-house {
-
+    height: 10px;
 }
 
 #corvinode-house {
-
+    height: 10px;
 }
 
 #pytherina-house {
+    height: 10px;
+} 
 
+.family-container {
+  display: flex;
+  flex-direction: column;
 }
