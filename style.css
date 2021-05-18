@@ -36,3 +36,12 @@
   background-color: rgba(233, 233, 233, 1);
   box-shadow: none;
 }
+
+.form-container {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
