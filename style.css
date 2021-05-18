@@ -39,3 +39,13 @@ main {
 .linha {
   display: flex;
 }
+
+#horizonte {
+  width: 100%;
+}
+
+#family-conteiner {
+  display: flex;
+  flex-direction: column;
+
+}
