@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .header {
     display:flex;
     justify-content: space-between;
@@ -18,3 +19,31 @@ width: 80px;
 .trybewarts-login {
     display: flex;
 }
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+main form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+main img {
+  height: 500px;
+}
+>>>>>>> bda8db56b6ff2977f4b5a07e4c4c28134b3bdc84
