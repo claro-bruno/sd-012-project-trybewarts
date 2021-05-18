@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: flex;
+    
+}
+
+#evaluation-form{
+    display: flex;
+    width: 675px;
+}
