@@ -59,3 +59,8 @@ main form {
 main img {
   height: 500px;
 }
+
+footer {
+    background-color: rgb(30, 30, 30);
+    color: white;
+}
