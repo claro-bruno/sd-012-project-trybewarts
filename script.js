@@ -24,6 +24,7 @@ function enviar() {
 
 agreement.addEventListener('click', enviar);
 
+const textarea = document.getElementById('textarea');
 textarea.addEventListener('input', () => {
-  counter.innerText = 500 - textarea.value.length
+  counter.innerText = 500 - textarea.value.length;
 });
