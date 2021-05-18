@@ -7,8 +7,7 @@
 .trybewarts-login {
   display: flex;
   flex-wrap: wrap;
-  width: 230px;
-  margin-left: auto;
+  width: 220px;
   align-content: flex-start;
 }
 
@@ -18,7 +17,7 @@
   margin: auto;
 }
 
-input, button {
+input , button {
   width: 200px;
   height: 30px;
 }
