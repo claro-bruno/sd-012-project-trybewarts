@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  margin: 0;
 }
 
 .header {
@@ -32,6 +33,10 @@ main img {
   border-radius: 5px;
 }
 
+.header form button {
+  margin: 0 10px 0 0;
+}
+
 main {
   display: flex;
 }
@@ -45,4 +50,16 @@ main #evaluation-form {
 main .name-lastName {
   display: flex;
   flex-direction: row;
+}
+
+hr {
+  width: 250px;
+  background-color: rgb(50, 167, 145);
+  border-bottom: 3px;
+  border-color: grey;
+  height: 1px;
+}
+
+#userFamily {
+  align-items: center;
 }
