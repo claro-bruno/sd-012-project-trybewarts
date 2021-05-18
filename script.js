@@ -1,13 +1,17 @@
-const login = document.getElementById("login-form")
-const loginButton = document.getElementById("loginButton")
+const form = document.getElementById("login-form");
+const loginButton = document.getElementById("loginButton");
+let loginInput = document.getElementById("login-input");
+let passwordInput = document.getElementById("senha-input");
 
-loginButton.addEventListener("click", (e) {
-  const username = login.username.value;
-  const password = login.password.value;
+function stopDefAction(event) {
+  event.preventDefault();
 
-  if (username === "tryber@teste.com" && password === "123456") {
-    alert("Olá, Tryber!")
+  if (loginInput.value === "tryber@teste.com" && passwordInput.value === "123456") {
+    alert("Olá, Tryber!");
   } else {
-    alert("Login ou senha inválidos")
+    alert("Login ou senha inválidos.");
   }
+
 }
+
+loginButton.addEventListener("click", stopDefAction)
