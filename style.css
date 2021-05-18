@@ -16,7 +16,6 @@
 
 .trybewarts-header-logo {
   width: 100px;
-
 }
 
 .title {
@@ -46,7 +45,7 @@ main {
   display: flex;
 }
 
-.label-rate {
+.label-rate-container {
   display: flex;
 }
 
