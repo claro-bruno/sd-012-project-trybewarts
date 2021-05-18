@@ -17,7 +17,7 @@ botao.addEventListener('click', () => {
 });
 
 const agreement = document.querySelector('#agreement');
-const submitBtn = document.querySelector('#submit-btn')
+const submitBtn = document.querySelector('#submit-btn');
 
 agreement.addEventListener('click', () => {
   if (agreement) {
