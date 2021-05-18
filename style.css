@@ -1,12 +1,15 @@
 .container {
   display: flex;
 }
+
 .col {
   flex-direction: column;
 }
+
 #evaluation-form {
   width: 675px;
 }
+
 #trybewarts-forms-logo {
   height: 500px;
 }
