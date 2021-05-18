@@ -44,8 +44,8 @@
           <div id="house-container">
             <input id="input-email" type="text" placeholder="Email" />
             <div id="house-select">
-                <label for="house">Casa</label>
-                <select name="Casa" id="house"></select>
+              <label for="house">Casa</label>
+              <select name="Casa" id="house"></select>
             </div>
           </div>
         </div>
@@ -70,44 +70,54 @@
             <label for="fullstack">
               <input
                 name="family"
-                value="Fullstack"
+                value="FullStack"
                 id="fullstack"
                 type="radio"
-              />Fullstack
+              />FullStack
             </label>
           </div>
 
-            <div class="content-container">
-                <label id="label-content"
-                >Qual conteúdo você está com mais vontade de aprender?</label
-                >
-                <br />
-                <input type="checkbox" id="hofs" value="HoFs" /><label for="hofs"
-                >HoFs
-                </label>
-                <input type="checkbox" id="jest" value="Jest" /><label for="jest"
-                >Jest</label
-                >
-                <input type="checkbox" id="promises" value="Promises" />
-                <label for="promises">Promises</label>
-                <input type="checkbox" id="react" value="React" />
-                <label for="react">React</label>
-                <input type="checkbox" id="sql" value="SQL" />
-                <label for="sql">SQL</label>
-                <input type="checkbox" id="python" value="Python" />
-                <label for="python">Python</label>
-            </div>
+          <div class="content-container">
+            <label id="label-content"
+              >Qual conteúdo você está com mais vontade de aprender?</label
+            >
+            <br />
+            <input type="checkbox" id="hofs" value="HoFs" /><label for="hofs"
+              >HoFs
+            </label>
+            <input type="checkbox" id="jest" value="Jest" /><label for="jest"
+              >Jest</label
+            >
+            <input type="checkbox" id="promises" value="Promises" />
+            <label for="promises">Promises</label>
+            <input type="checkbox" id="react" value="React" />
+            <label for="react">React</label>
+            <input type="checkbox" id="sql" value="SQL" />
+            <label for="sql">SQL</label>
+            <input type="checkbox" id="python" value="Python" />
+            <label for="python">Python</label>
+          </div>
         </div>
 
         <div class="third-container">
-            <div id="rate">
-                <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
-            </div>
-            <div id="comments">
-                <label for="textarea">Deixe seu comentário:</label><br>
-                <textarea  class = "textarea" cols="30" maxlength="500"  rows="10"></textarea>
-            </div>
-            <label for="agreement">Você concorda com o uso das informações acima?<input id = "agreement" onclick="isChecked()" type="checkbox"></label>
+          <div id="rate">
+            <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+          </div>
+          <div id="comments">
+            <label for="textarea">Deixe seu comentário:</label><br />
+            <textarea
+              class="textarea"
+              cols="30"
+              maxlength="500"
+              rows="10"
+            ></textarea>
+          </div>
+          <label id="#label-infos" for="agreement"
+            >Você concorda com o uso das informações acima?<input
+              id="agreement"
+              onclick="isChecked()"
+              type="checkbox"
+          /></label>
         </div>
 
         <button type="submit" id="submit-btn" disabled>Enviar</button>
