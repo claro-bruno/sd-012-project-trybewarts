@@ -8,7 +8,7 @@ header {
   background-color: rgb(50, 167, 145);
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 } 
 
@@ -17,12 +17,13 @@ button {
 }
 .trybewarts-login {
   display: flex;
-  align-items: space-around;
 }
 main {
   display: flex;
 }
 
-.evaluation-form {
+#evaluation-form {
+  display: flex;
   width: 675px;
+  flex-direction: column;
 }
