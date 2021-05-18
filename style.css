@@ -1,10 +1,29 @@
+body {
+  text-align: center;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  width: 100%;
+  padding: 20px 10px;
+  align-items: center;
+}
+
+.header img {
+  width: 70px;
 }
 
 .header form {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 10px;
+}
+
+.header form input {
+  margin: 0 10px;
+  height: 25px;
+  border: 1px solid;
+  border-radius: 5px;
 }
