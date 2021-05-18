@@ -14,7 +14,6 @@ function formHeader() {
 
 const agreement = document.getElementById('agreement');
 const submit = document.getElementById('submit-btn');
-agreement.addEventListener('click', verificaCadastro);
 
 function verificaCadastro() {
   if (agreement.checked === true) {
@@ -23,6 +22,8 @@ function verificaCadastro() {
     submit.disabled = true;
   }
 }
+
+agreement.addEventListener('click', verificaCadastro);
 
 const btn = document.querySelector('.btn-submit');
 btn.addEventListener('click', formHeader);
