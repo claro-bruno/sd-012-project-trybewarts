@@ -12,4 +12,4 @@ function verificaLogin () {
     }
 }
 
-form.addEventListener('submit', verificaLogin());
+form.addEventListener('submit', verificaLogin);
