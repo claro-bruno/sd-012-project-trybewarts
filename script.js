@@ -7,5 +7,6 @@ function alertClick() {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');   
-}}
+  } 
+ }
 clickButton.addEventListener('click', alertClick);
