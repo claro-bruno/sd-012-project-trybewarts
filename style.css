@@ -1,4 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .header {
+    /* height: 300px; */
     background-color: rgb(50, 167, 145);
+    /* display: flex; */
+}
+
+.trybewarts-login {
     display: flex;
+    justify-content: space-between;
 }
