@@ -25,26 +25,27 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  height: 80px;
 }
 
-#input-lastname {
-  order: 2;
+#container-nomeSobrenomeCasa{
+  display: flex;
+  background-color: blue;
+  flex-wrap: wrap;
+  width: 600px;
+  justify-content: space-around;
 }
 
-#input-email {
-  order: 1;
-}
-
-#house, label{
-  order: 3;
-}
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-form input, form select {
+form input {
   width: 200px;
+  margin: 3px;
+}
+
+form select {
+  width: 209px;
   margin: 3px;
 }
