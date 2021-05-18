@@ -37,6 +37,7 @@ main form {
 #text-area {
   display: flex;
   flex-direction: column;
+  padding-bottom: 10px;
 }
 
 textarea {
