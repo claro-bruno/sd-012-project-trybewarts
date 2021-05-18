@@ -1,11 +1,18 @@
-.header{
-    display: flex;
-    background-color: rgb(50, 167, 145);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;  
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 
-.containerLogo{
-    align-content: flex-start
+.containerLogo {
+  align-content: flex-start
+}
+
+.trybewarts-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
