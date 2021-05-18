@@ -34,25 +34,24 @@ function escolherCasa() {
 }
 
 function rate() {
-    for(let index = 1; index <= 10; index += 1) {
-        let notaLabel = document.createElement('label');
-        notaLabel.innerHTML = index;
-        let novaNota = document.createElement('input');
-        novaNota.name = 'rate';
-        novaNota.type = 'radio';
-        novaNota.value = index;
-        nota.append(novaNota);
-        nota.appendChild(notaLabel);
-
-    }
+  for (let index = 1; index <= 10; index += 1) {
+    const notaLabel = document.createElement('label');
+    notaLabel.innerHTML = index;
+    const novaNota = document.createElement('input');
+    novaNota.name = 'rate';
+    novaNota.type = 'radio';
+    novaNota.value = index;
+    nota.append(novaNota);
+    nota.appendChild(notaLabel);
+  }
 }
 
 function isChecked() {
-    if (checkboxAgreement.checked == 1) {
-        submitButton.disabled = 0;
-    } else {
-        submitButton.disabled = 1;
-    }
+  if (checkboxAgreement.checked === true) {
+    submitButton.disabled = 0;
+  } else {
+    submitButton.disabled = 1;
+  }
 }
 
 escolherCasa();

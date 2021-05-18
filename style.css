@@ -112,21 +112,21 @@ main {
 }
 
 .third-container {
-    width: 80%;
+  width: 80%;
 }
 
 .third-container label {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 
 textarea {
-    resize: none;
-    width: 100%;
+  resize: none;
+  width: 100%;
 }
 
 #agreement {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 footer {
