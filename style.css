@@ -48,7 +48,7 @@ body {
   color: white;
 }
 
-main {
+main, form {
   display: flex;
 }
 
@@ -62,9 +62,4 @@ main {
   display: flex;
   align-content: flex-end;
   height: 500px;
-}
-
-
-#evaluation-form {
-  display: inline-block;
 }
