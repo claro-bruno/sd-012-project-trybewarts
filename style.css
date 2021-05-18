@@ -11,6 +11,10 @@ body {
   align-items: center;
 }
 
+main img {
+  height: 500px;
+}
+
 .header img {
   width: 70px;
 }
