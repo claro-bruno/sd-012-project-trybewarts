@@ -43,7 +43,12 @@ main {
   height: 500px;
 }
 
-.div-container {
+.direction-row {
   display: flex;
   flex-direction: row;
+}
+
+.direction-column {
+  display: flex;
+  flex-direction: column;
 }
