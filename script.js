@@ -2,6 +2,7 @@ const loginButton = document.querySelector('#login-button');
 const loginInput = document.querySelector('#login-input');
 const passInput = document.querySelector('#pass-input');
 const escolheCasa = document.querySelector('#house');
+const nota = document.querySelector('.third-container')
 
 loginButton.addEventListener('click', (event) => {
   event.preventDefault();
@@ -30,4 +31,20 @@ function escolherCasa() {
   }
 }
 
+function rate() {
+    for(let index = 1; index <= 10; index += 1) {
+        let notaLabel = document.createElement('label');
+        notaLabel.innerHTML = index;
+        notaLabel.htmlFor = 'rate';
+        let novaNota = document.createElement('input');
+        novaNota.name = 'rate';
+        novaNota.type = 'radio';
+        novaNota.value = index;
+        nota.appendChild(notaLabel);
+        nota.append(novaNota);
+
+    }
+}
+
 escolherCasa();
+rate();
