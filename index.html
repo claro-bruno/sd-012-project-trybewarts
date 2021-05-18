@@ -16,10 +16,11 @@
     <nav class="header">
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
       <h1 id="trybewarts-header-title">Trybewarts</h1>
+
       <form class="trybewarts-login" action="">
-        <input type="text" placeholder="Login">
-        <input type="text" placeholder="Senha">
-        <button type="submit">Logar</button>
+        <input id="login" type="text" placeholder="Login">
+        <input id="senha" type="text" placeholder="Senha">
+        <button id="tbn-login" type="submit">Logar</button>
       </form>
     </nav>
   </header>
@@ -30,7 +31,7 @@
       <label id="label-forms">Forms</label>
       <div id="name-lastName">
         <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
+        <input id="input-lastName" type="text" placeholder="Sobrenome">
       </div>
 
       <div id="email-house">
@@ -62,9 +63,29 @@
         </section>
       </div>
 
+      <section class="section-learning-content">
+        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <div class="cb-block">
+            <input type="checkbox" id="cb-HoFs" name="cb-HoFs" value="HoFs">
+            <label for="cb-HoFs">HoFs</label>
+            <input type="checkbox" id="cb-Jest" name="cb-Jest" value="Jest">
+            <label for="cb-Jest">Jest</label>
+            <input type="checkbox" id="cb-Promises" name="cb-Promises" value="Promises">
+            <label for="cb-Promises">Promises</label>
+        </div>
+        <div class="cb-block">
+            <input type="checkbox" id="cb-React" name="cb-React" value="React">
+            <label for="cb-React">React</label>
+            <input type="checkbox" id="cb-SQL" name="cb-SQL" value="SQL">
+            <label for="cb-SQL">SQL</label>
+            <input type="checkbox" id="cb-Python" name="cb-Python" value="Python">
+            <label for="cb-Python">Python</label>
+        </div>
+    </section>
+
       <section id="text-area">
         <label class="textarea">Deixe seu comentário:</label>
-        <textarea name="textarea" id="textarea-txt" cols="60" rows="8" maxlength="500"></textarea>
+        <textarea name="textarea" id="textarea-txt" cols="50" rows="8" maxlength="500"></textarea>
         <span id="counter">500</span>
       </section>
 
