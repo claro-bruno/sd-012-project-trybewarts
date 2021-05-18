@@ -33,6 +33,11 @@ hr {
   flex-direction: row;
 }
 
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
   display: flex;
   background-color: rgb(50 167 145);
