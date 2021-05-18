@@ -1,15 +1,14 @@
-window.onload = function() {
-  let buttonLogin = document.getElementById('btn-login');
-  buttonLogin.addEventListener('click', logar);
-  let login = document.getElementById('login');
-  let senha = document.getElementById('senha');
+window.onload = function () {
+  const buttonLogin = document.getElementById('btn-login');
+  const login = document.getElementById('login');
+  const senha = document.getElementById('senha');
 
   function logar() {
-    if(login.value === 'tryber@teste.com' && senha.value === '123456') {
+    if (login.value === 'tryber@teste.com' && senha.value === '123456') {
       alert('Olá, Tryber!');
-    }
-    else {
+    }else {
       alert('Login ou senha inválidos.');
     }
   }
-}
+  buttonLogin.addEventListener('click', logar);
+};
