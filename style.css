@@ -25,6 +25,19 @@ button {
     align-self: center;
 }
 
+#rodape {
+    height: 50px;
+    background-color: gray;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
 main {
     margin: 10px 5px;
     display: flex;
