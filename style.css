@@ -1,7 +1,7 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -19,6 +19,10 @@ header button {
   width: 100px;
   background-color: rgb(75, 0, 75);
   color: white;
+}
+
+.trybewarts-login {
+  display: flex;
 }
 
 main {
