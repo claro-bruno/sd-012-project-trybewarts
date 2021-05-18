@@ -89,3 +89,11 @@ footer p {
 #family-container , #content-container {
   width: 50%;
 }
+
+#form-section3 {
+  display: flex;
+}
+
+#label-rate {
+  margin-right: 15px;
+}
