@@ -2,10 +2,8 @@
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
-  position: absolute;
-  width: 100%;
-  top: 0%;
-  left: 0%;
+  align-items: center;
+  padding: 15px 148px;
 }
 
 .trybewarts-header-logo {
