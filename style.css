@@ -12,3 +12,12 @@
 .header form {
   display: flex;
 }
+
+.main {
+  display: flex;
+}
+
+.main form {
+  display: flex;
+  width: 675px;
+}
