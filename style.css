@@ -31,7 +31,21 @@ main {
 #input-lastname {
   width: 150px;
 }
-#nome-sobrenome{
+
+#nome-sobrenome {
   display: flex;
   flex-direction: row;
+}
+
+#email-casa {
+  display: flex;
+  flex-direction: row;
+}
+
+#input-email {
+  width: 150px;
+}
+
+#house {
+  width: 150px;
 }
