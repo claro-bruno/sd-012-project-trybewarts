@@ -1,4 +1,4 @@
-const botao = document.querySelector('#botao-login');
+const jonas = document.querySelector('#botao-login');
 
 function botaoLoginPassword() {
   const loginTrybewarts = document.querySelector('#login');
@@ -12,7 +12,7 @@ function botaoLoginPassword() {
 }
 
 function preventD() {
-  botao.addEventListener('click', (event) => {
+  jonas.addEventListener('click', (event) => {
     event.preventDefault();
     botaoLoginPassword();
   });
