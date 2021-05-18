@@ -34,33 +34,26 @@ main {
   justify-content: flex-end;
 }
 
-#input-name {
-
+/* #input-name {
 }
 
 #input-lastname {
-
 }
 
 #input-email {
-
 }
 
 #gitnoria-house {
-
 }
 
 #reactpuff-house {
-
 }
 
 #corvinode-house {
-
 }
 
 #pytherina-house {
- 
-}
+} */
 
 .family-container {
   display: flex;
