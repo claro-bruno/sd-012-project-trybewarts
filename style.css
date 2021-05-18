@@ -38,8 +38,8 @@ main {
 
 #house, label{
   order: 3;
-
 }
+
 #trybewarts-forms-logo {
   height: 500px;
 }
@@ -48,4 +48,3 @@ form input, form select {
   width: 200px;
   margin: 3px;
 }
-
