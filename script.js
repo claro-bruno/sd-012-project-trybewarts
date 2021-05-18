@@ -10,4 +10,4 @@ botao.addEventListener('click', () => {
   } else {
     alert('Olá, Tryber!');
   }
-})
+});
