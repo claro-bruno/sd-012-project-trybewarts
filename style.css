@@ -21,6 +21,10 @@ main {
   align-items: center;
 }
 
+.name-lastname-input {
+  display: flex;
+}
+
 #trybewarts-header-title {
   display: flex;
   justify-content: center;
@@ -31,4 +35,19 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+#input-name {
+  display: flex;
+}
+
+#input-lastname {
+  display: flex;
+  justify-content: right;
 }
