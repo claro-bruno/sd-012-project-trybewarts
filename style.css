@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(50, 167, 145)
+}
+
+.trybewarts-header-logo {
+width: 80px;
+}
+
+#trybewarts-header-title {
+ display: flex;
+ align-self: center;
+ color: #ffffff;
+}
+
+.trybewarts-login {
+    display: flex;
+}
+=======
 * {
   margin: 0;
   padding: 0;
@@ -39,3 +61,4 @@ main form {
 main img {
   height: 500px;
 }
+>>>>>>> bda8db56b6ff2977f4b5a07e4c4c28134b3bdc84
