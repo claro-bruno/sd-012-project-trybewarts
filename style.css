@@ -1,9 +1,35 @@
+* {
+  margin: 0;
+}
+
 .header {
   display: flex;
   flex-flow: row nowrap;
   background-color: rgb(50, 167, 145);
   justify-content: space-around;
   align-items: center;
+  padding: 10px;
+}
+
+.trybewarts-header-logo {
+  width: 50px;
+}
+
+h1 {
+  color: white;
+}
+
+#login , #senha , #botao {
+  width: 150px;
+  padding: 5px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+#botao {
+  background-color: darkblue;
+  color: white;
+  border: none;
 }
 
 .trybewarts-login {
@@ -22,4 +48,23 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: rgb(50, 167, 145);
+  height: 50px;
+  color: white;
 }
