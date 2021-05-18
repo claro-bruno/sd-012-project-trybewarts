@@ -115,6 +115,10 @@ textarea {
     width: 100%;
 }
 
+#agreement {
+    margin-left: 5px;
+}
+
 footer {
   background: rgb(32, 32, 32);
   width: 100%;
