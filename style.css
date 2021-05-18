@@ -39,6 +39,7 @@ body {
   font-family: MagicSchool, fantasy, serif;
   font-weight: 500;
   color: white;
+  margin: 0;
 }
 
 #trybewarts-forms-logo {
@@ -52,6 +53,7 @@ body {
 #evaluation-form {
   width: 675px;
   flex-direction: column;
+  padding: 20px;
 }
 
 .footer {
@@ -60,3 +62,15 @@ body {
   bottom: 0;
   left: 40vw;
 }
+
+.row {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  display:flex;
+  flex-direction: column;
+}
+

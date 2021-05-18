@@ -37,39 +37,46 @@
         </select>
       </div>
 
-      <label for="family" id="label-family">Qual sua família?</label>
-      <label for="frontend">
-        <input type="radio" name="family" value="Frontend" id="frontend" checked class="family">Frontend
-      </label>
-      <label for="backend">
-        <input type="radio" name="family" value="Backend" id="backend" class="family">Backend
-      </label>
-      <label for="fullStack">
-        <input type="radio" name="family" value="FullStack" id="fullStack" class="family">FullStack
-      </label>
+      <div class="row">
 
-      <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-      <div class="row">
-        <label for="hofs">
-          <input type="checkbox" id="hofs" value="HoFs">HoFs
-        </label>
-        <label for="jest">
-          <input type="checkbox" id="jest" value="Jest">Jest
-        </label>
-        <label for="promises">
-          <input type="checkbox" id="promises" value="Promises">Promises
-        </label>
-      </div>
-      <div class="row">
-        <label for="react">
-          <input type="checkbox" id="react" value="React">React
-        </label>
-        <label for="sql">
-          <input type="checkbox" id="sql" value="SQL">SQL
-        </label>
-        <label for="python">
-          <input type="checkbox" id="python" value="Python">Python
-        </label>
+        <div class="column">
+          <label for="family" id="label-family">Qual sua família?</label>
+          <label for="frontend">
+            <input type="radio" name="family" value="Frontend" id="frontend" checked class="family">Frontend
+          </label>
+          <label for="backend">
+            <input type="radio" name="family" value="Backend" id="backend" class="family">Backend
+          </label>
+          <label for="fullStack">
+            <input type="radio" name="family" value="FullStack" id="fullStack" class="family">FullStack
+          </label>
+        </div>
+        
+        <div class="column">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="row">
+            <label for="hofs">
+              <input type="checkbox" id="hofs" value="HoFs">HoFs
+            </label>
+            <label for="jest">
+              <input type="checkbox" id="jest" value="Jest">Jest
+            </label>
+            <label for="promises">
+              <input type="checkbox" id="promises" value="Promises">Promises
+            </label>
+          </div>
+          <div class="row">
+            <label for="react">
+              <input type="checkbox" id="react" value="React">React
+            </label>
+            <label for="sql">
+              <input type="checkbox" id="sql" value="SQL">SQL
+            </label>
+            <label for="python">
+              <input type="checkbox" id="python" value="Python">Python
+            </label>
+          </div>
+        </div>
       </div>
 
       <div class="row">
@@ -96,9 +103,8 @@
         <label for="ten">10</label>
       </div>
 
-      <label class="textarea">Deixe seu comentário:
+      <label class="textarea">Deixe seu comentário:</label>
         <textarea maxlength="500"></textarea>
-      </label>
       <label id="label-infos">Você concorda com o uso das informações acima?
         <input id="agreement" type="checkbox">
       </label>
