@@ -60,3 +60,7 @@
   display: flex;
   justify-content: space-around;
 }
+
+.rate {
+  display: flex;
+}
