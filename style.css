@@ -63,3 +63,13 @@ form select {
   display: flex;
   flex-direction: column;
 }
+
+#container-rate {
+  display: flex;
+}
+
+#label-rate {
+  display: flex;
+  flex-wrap: nowrap;
+  
+}
