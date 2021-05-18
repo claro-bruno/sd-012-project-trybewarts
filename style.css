@@ -34,7 +34,7 @@ main {
 
 #name-lastName {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 #label-house {
