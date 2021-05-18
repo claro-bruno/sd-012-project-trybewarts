@@ -6,12 +6,19 @@
 
 main {
   display: flex;
+  flex-direction: row;
 }
 
 main form {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 main img {
