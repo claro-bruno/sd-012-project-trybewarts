@@ -27,3 +27,10 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#nome-completo {
+  display: flex;
+}
+#email-casa {
+  display: flex;
+}
