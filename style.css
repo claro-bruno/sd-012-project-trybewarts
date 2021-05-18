@@ -48,9 +48,16 @@
     width: 675px;
 }
 
-#trybewarts-forms-logo{
-    
-    height:500px;
+.input-fname-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
 
-   
+.input-email-house-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#trybewarts-forms-logo{
+    height: 500px;
 }
