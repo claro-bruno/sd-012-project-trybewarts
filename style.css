@@ -22,10 +22,15 @@
 
 .formMain {
   display: flex;
+  justify-content: space-between;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+#trybewarts-forms-logo {
+  height: 500px;
+  justify-content: right;
 }
