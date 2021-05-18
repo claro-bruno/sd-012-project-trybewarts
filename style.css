@@ -52,3 +52,7 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+#validacao-container {
+  display: flex;
+}
