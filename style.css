@@ -46,3 +46,12 @@ main {
 .name {
   display: flex;
 }
+
+.label-rate {
+  display: flex;
+}
+
+.rate-container {
+  display: flex;
+  justify-content: space-between;
+}

@@ -6,14 +6,19 @@ function createRate() {
   for (let index = 1; index < 11; index += 1) {
     const radioBtn = document.createElement('input');
     const label = document.createElement('label');
+    const div = document.createElement('div');
+    div.classList.add('rate-container');
     label.setAttribute('for', index);
     label.innerHTML = index;
-    rate.appendChild(label);
+    label.classList.add('form-check-label');
     radioBtn.setAttribute('type', 'radio');
     radioBtn.id = index;
+    radioBtn.classList.add('form-check-input');
     radioBtn.setAttribute('name', 'rate');
     radioBtn.setAttribute('value', index);
-    label.appendChild(radioBtn);
+    rate.appendChild(div);
+    div.appendChild(radioBtn);
+    div.appendChild(label);
   }
 }
 
