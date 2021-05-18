@@ -1,15 +1,21 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  height: 60px;
-  justify-content: flex-start;
+  height: 50px;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
-  width: 50px;
+  width: 40px;
+}
+
+.trybewarts-login {
+  display: flex;
 }
