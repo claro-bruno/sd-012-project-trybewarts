@@ -101,6 +101,20 @@ main {
   flex-direction: column;
 }
 
+.third-container {
+    width: 80%;
+}
+
+.third-container label {
+    margin-right: 10px;
+}
+
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+
 footer {
   background: rgb(32, 32, 32);
   width: 100%;
@@ -115,6 +129,3 @@ footer p {
   font-size: 12px;
 }
 
-.third-container input {
-    margin-right: 10px;
-}

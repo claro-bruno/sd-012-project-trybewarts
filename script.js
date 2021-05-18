@@ -2,7 +2,7 @@ const loginButton = document.querySelector('#login-button');
 const loginInput = document.querySelector('#login-input');
 const passInput = document.querySelector('#pass-input');
 const escolheCasa = document.querySelector('#house');
-const nota = document.querySelector('.third-container')
+const nota = document.querySelector('#rate')
 
 loginButton.addEventListener('click', (event) => {
   event.preventDefault();
@@ -39,8 +39,8 @@ function rate() {
         novaNota.name = 'rate';
         novaNota.type = 'radio';
         novaNota.value = index;
-        nota.appendChild(notaLabel);
         nota.append(novaNota);
+        nota.appendChild(notaLabel);
 
     }
 }
