@@ -1,11 +1,24 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
 }
 
 .trybewarts-login {
   display: flex;
-  justify-content: space-between;
-  justify-self: right;
+  flex-wrap: wrap;
+  width: 230px;
   margin-left: auto;
+  align-content: flex-start;
+}
+
+#trybewarts-header-title {
+  justify-self: center;
+  text-align: center;
+  margin: auto;
+}
+
+input, button {
+  width: 200px;
+  height: 30px;
 }
