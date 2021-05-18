@@ -34,10 +34,25 @@
 header form input {
   margin: 0 5px;
   border: 1px solid black;
+  border-radius: 6px;
+  text-align: left;
 }
 
 main {
   display: flex;
+}
+
+#input-name-lastname {
+  margin-top: 10%;
+  justify-self: stretch;
+}
+
+#evaluation-form input {
+  margin: 5px 0;
+  margin-left: 2%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid black;
 }
 
 #evaluation-form {
@@ -47,5 +62,5 @@ main {
 }
 
 #trybewarts-forms-logo {
-  height: 500px; 
+  height: 500px;
 }
