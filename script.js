@@ -1,11 +1,4 @@
-const btn = document.querySelector('.btn-submit');
-btn.addEventListener('click', formHeader)
-
-const agreement = document.getElementById('agreement');
-const submit = document.getElementById('submit-btn');
-agreement.addEventListener('click', verificaCadastro)
-
-function formHeader () {
+function formHeader (){
   const login = document.querySelector('.input-login');
   const loginValue = login.value;
   const loginTexto = loginValue.toString();
@@ -19,10 +12,17 @@ function formHeader () {
   }
 }
 
-function verificaCadastro () {
+function verificaCadastro (){
   if (agreement.checked === true) {
     submit.disabled = false;
   } else {
     submit.disabled = true;
   }
 }
+
+const btn = document.querySelector('.btn-submit');
+btn.addEventListener('click', formHeader);
+
+const agreement = document.getElementById('agreement');
+const submit = document.getElementById('submit-btn');
+agreement.addEventListener('click', verificaCadastro);
