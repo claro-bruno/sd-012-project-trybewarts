@@ -4,4 +4,10 @@
 
 .header {
     background-color: rgb(50, 167, 145);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trybewarts-login {
+    justify-content: space-between;
 }
