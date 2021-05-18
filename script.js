@@ -3,6 +3,7 @@ const correctPassword = "123456";
 const login = document.getElementById('login');
 const correctLogin = 'tryber@teste.com';
 const logar = document.getElementById('login-button');
+const agreeBox = document.getElementById('agreement');
 
 function verifyLogin() {
   if (password.value === correctPassword && login.value === correctLogin) {
@@ -13,3 +14,15 @@ function verifyLogin() {
 }
 
 logar.addEventListener('click', verifyLogin);
+
+
+function ableButton() {
+    let button = document.getElementById('submit-btn');
+    if (agreeBox.checked === true) {
+        button.removeAttribute('disabled');
+    } else {
+        button.setAttribute("disabled", "disabled");
+    }
+}
+
+agreeBox.addEventListener('click', ableButton)

@@ -49,3 +49,8 @@ main form {
 textarea {
   resize: none;
 }
+
+footer {
+    padding-top: 10px;
+    text-align: center;
+}
