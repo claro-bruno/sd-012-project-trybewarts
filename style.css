@@ -11,3 +11,21 @@
 .trybewarts-login {
   display: flex;
 }
+
+#trybewarts-header-title {
+  text-align: center;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
