@@ -23,8 +23,9 @@ main{
 
 #trybewarts-forms-logo{
     height: 500px;
+    left: 50%;
     position: absolute;
-    left: 60%;
+    display: flex;
 }   
 
 .footerClass{
