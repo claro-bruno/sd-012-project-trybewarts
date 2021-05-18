@@ -17,7 +17,7 @@
 }
 
 #evaluation-form {
-  width: 675px;
+  width: 675px !important;
 }
 
 #trybewarts-forms-logo {
