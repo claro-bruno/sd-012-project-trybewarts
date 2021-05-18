@@ -10,6 +10,13 @@ loginButton.addEventListener('click', () => {
   }
 });
 
+const submitButton = document.querySelector('#submit-btn');
+const checkAgreement = document.querySelector('#agreement');
+
+if (checkAgreement.checked) {
+  submitButton.disabled = false;
+}
+
 // const evaluationNote = document.querySelector('#label-rate');
 // for (let note = 1; note <= 10; note += 1) {
 //     let input = document.createElement('input');
