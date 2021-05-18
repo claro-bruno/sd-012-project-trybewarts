@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Trybewarts</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="header">
     <a href="#">
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
     </a>
+    <form class="trybewarts-login">
+      <div class="d-flex align-items-center">
+        <input id="email" type="email" placeholder="Login">
+        <input id="passwd" type="password" placeholder="Senha">
+        <button id="btLogin">Entrar</button>
+      </div>
+    </form>
 
   </header>
   <script src="script.js"></script>
 </body>
+
 </html>
