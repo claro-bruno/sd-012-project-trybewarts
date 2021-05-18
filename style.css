@@ -20,3 +20,8 @@ body {
 main {
   display: flex;
 }
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
