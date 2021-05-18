@@ -42,3 +42,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#techs-container {
+  display: flex;
+  flex-direction: column;
+}
