@@ -13,103 +13,88 @@
 }
 
 .trybewarts-header-logo {
-    width: 40px;
+  width: 40px;
 }
 
 #trybewarts-header-title {
-    color: white;
+  color: white;
 }
 
 .trybewarts-login {
-    width: 40%;
-    display: flex;
+  width: 40%;
+  display: flex;
 }
 
-.login-input, .pass-input, .login-button {
-    height: 30px;
-    border-radius: 10px;
-    border: none;
+.login-input , .pass-input , .login-button {
+  height: 30px;
+  border-radius: 10px;
+  border: none;
 }
 
-.login-input, .pass-input {
-    padding-left: 15px;
-    margin-right: 10px;
+.login-input , .pass-input {
+  padding-left: 15px;
+  margin-right: 10px;
 }
 
 .login-button {
-    text-align: center;
-    width: 100px;
-<<<<<<< HEAD
-    background-color: blueviolet;
-    color: white;
-    font-weight: bold;
-=======
->>>>>>> 7b371e985613dd480c720cdc65dc8ec9b4f17f74
+  text-align: center;
+  width: 100px;
+  background-color: blueviolet;
+  color: white;
+  font-weight: 700;
 }
 
 main {
-    display: flex;
+  display: flex;
 }
 
 .first-container {
-    width: 80%;
+  width: 80%;
 }
 
 #evaluation-form {
-    display: flex;
-    width: 675px;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  align-items: center;
 }
 
 #name-container {
-    display: flex;
+  display: flex;
 }
 
 #name-container input {
-    width: 50%;
-<<<<<<< HEAD
+  width: 50%;
 }
 
 #house-container {
-    display: flex;
-    padding-bottom: 20px;
-    border-bottom: 1px solid darkgrey;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid darkgrey;
 }
 
-#house-container input, #house-container select {
-    width: 50%;
-=======
->>>>>>> 7b371e985613dd480c720cdc65dc8ec9b4f17f74
+#house-container input , #house-container select {
+  width: 50%;
 }
-
-#house-container {
-    display: flex;
-}
-
-#house-container input, #house-container select {
-    width: 50%;
-}
-
 
 #trybewarts-forms-logo {
-    height: 500px;
+  height: 500px;
 }
 
 .second-container {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid darkgray;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid darkgray;
 }
 
-.content-container, .family-container {
-    width: 50%;
+.content-container , .family-container {
+  width: 50%;
 }
 
 .family-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
