@@ -7,5 +7,14 @@
 .trybewarts-login {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+
+}
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+}
+
+.nav-brand {
+  width: 50px;
+  height: 50px;
 }
