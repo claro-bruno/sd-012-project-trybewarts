@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -27,13 +31,13 @@
   display: flex;
 }
 
-.login-input , .pass-input , .login-button, #input-name, #input-lastname, #input-email {
+.login-input , .pass-input , .login-button, #input-name, #input-lastname, #input-email, #house {
   height: 30px;
   border-radius: 10px;
   border: none;
 }
 
-.login-input , .pass-input, #input-name, #input-lastname, #input-email {
+.login-input , .pass-input, #input-name, #input-lastname, #input-email, #house {
   padding-left: 15px;
   margin-right: 10px;
 }
@@ -42,7 +46,7 @@
     border: 1px solid grey;
 }
 
-.login-button {
+.login-button, #submit-btn {
   text-align: center;
   width: 100px;
   background-color: blueviolet;
@@ -52,6 +56,14 @@
 
 main {
   display: flex;
+  height: 100vh;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    margin: 10px 0;
 }
 
 .first-container {
@@ -100,10 +112,15 @@ main {
   margin-top: 20px;
   padding-bottom: 10px;
   border-bottom: 1px solid darkgray;
+  margin-bottom: 15px;
 }
 
 .content-container , .family-container {
   width: 50%;
+}
+
+.content-container label {
+    margin-right: 25px;
 }
 
 .family-container {
@@ -111,14 +128,21 @@ main {
   flex-direction: column;
 }
 
+.family-container label {
+    margin-bottom: 5px;
+}
+
 .third-container {
   width: 80%;
 }
 
 .third-container label {
-  margin-right: 10px;
+  margin-right: 7px;
 }
 
+#rate {
+    margin-bottom: 10px;
+}
 
 textarea {
   resize: none;
@@ -129,13 +153,19 @@ textarea {
   margin-left: 5px;
 }
 
+#submit-btn {
+    margin-top: 10px;
+    padding: 5px;
+    width: 80%;
+}
+
 footer {
   background: rgb(32, 32, 32);
   width: 100%;
   color: white;
   text-align: center;
   padding: 20px;
-  margin: auto;
+  margin-top: 30px
 }
 
 footer p {
