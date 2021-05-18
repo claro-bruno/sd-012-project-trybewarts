@@ -5,7 +5,7 @@ const senha = document.getElementById('senha');
 function logar() {
   if (login.value === 'tryber@teste.com' && senha.value === '123456') {
     alert('Olá, Tryber!');
-  }else {
+  } else {
     alert('Login ou senha inválidos.');
   }
 }
