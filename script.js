@@ -45,6 +45,7 @@ function createFamily() {
     createLabelFamily.innerText = familys[index];
     createInput.className = 'family';
     createInput.type = 'radio';
+    createInput.name = 'family'
     createInput.value = familys[index];
     getTagFamily.appendChild(createLabelFamily);
     getTagFamily.appendChild(createInput);
