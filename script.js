@@ -4,7 +4,7 @@ const inputPassword = document.querySelector('.senha');
 
 btnEL.addEventListener('click', () => {
   if (inputEmail.value !== 'tryber@teste.com' && inputPassword.value !== '123456') {
-    alert('Login ou senha inválidos.')
+    alert('Login ou senha inválidos.');
   } else {
     alert('Olá, Tryber!');
   }

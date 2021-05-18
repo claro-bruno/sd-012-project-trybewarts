@@ -1,5 +1,6 @@
-body {
+* {
   margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -8,18 +9,19 @@ body {
   width: 100%;
   height: 70px;
   align-items: center;
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
+
   height: 50px;
-  order: 1;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .trybewarts-login {
   display: flex;
-  flex-direction: row;
   height: 40px;
-  order: 2;
 }
 
 .btn {
@@ -33,4 +35,8 @@ body {
 input {
   margin: 0 5px;
   border: 1px solid black;
+}
+
+#trybewarts-header-title {
+
 }
