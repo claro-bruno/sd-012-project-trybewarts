@@ -1,15 +1,13 @@
 const botao = document.getElementById('submit-btn');
 const confirma = document.getElementById('agreement');
 botao.disabled = true;
-confirma.addEventListener('change', ()=> {
+confirma.addEventListener('change', () => {
   if (confirma.checked === false) {
     botao.disabled = true;
-  }
-
-  else {
+  }  else {
     botao.disabled = false;
   }
-})
+});
 const senha = document.querySelector('#senha').value;
 const email = document.querySelector('#email').value;
 const botaoHeader = document.querySelector('#btnheader');
