@@ -9,3 +9,8 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
+#evaluation-form {
+    display: flex;
+    width: 675px
+}
