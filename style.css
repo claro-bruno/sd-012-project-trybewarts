@@ -25,6 +25,7 @@
 
 .trybewarts-login {
   display: flex;
+  justify-content: flex-end;
 
 }
 
