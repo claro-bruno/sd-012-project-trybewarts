@@ -1,10 +1,10 @@
-.header {
+.header{
+  width: auto;
+  height: 50px;
   display: flex;
-  background-color: rgb(50, 167, 145);
-}
-
-main {
-  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(50, 167, 145)
 }
 
 main {
@@ -13,13 +13,25 @@ main {
   flex-direction: column;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
+.trybewarts-login {
+  display: flex;
+  justify-content:space-between;
+  height: 20px;
 }
+
+#trybewarts-header-title {
+  color: white;
+}
+
+.trybewarts-header-logo {
+  width: 40px;
+}
+
 
 #evaluation-form {
   flex-wrap: wrap;
-} 
+}
+
 #input-name {
   width: 40%;
 }
