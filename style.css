@@ -38,3 +38,8 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+.familyArea {
+ display: flex;
+ flex-direction: column;
+}
