@@ -30,15 +30,20 @@
 
     <main class="main-content">
       <form action="" id="evaluation-form">
-        <input id="input-name" type="text" name="name" placeholder="Nome">
-        <input id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome">
-        <input id="input-email" type="email" name="email" placeholder="Email">
-        <select id="house">
-          <option id="gitnoria-house" value="">Gitnória</option>
-          <option id="reactpuff-house" value="">Reactpuff</option>
-          <option id="corvinode-house" value="">Corvinode</option>
-          <option id="pytherina-house" value="">Pytherina</option>
-        </select>
+        <div class="row">
+          <input id="input-name" type="text" name="name" placeholder="Nome">
+          <input id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome">
+        </div>
+        <div class="row">
+          <input id="input-email" type="email" name="email" placeholder="Email">
+          <label for="house">Casa:</label>
+          <select id="house">
+            <option id="gitnoria-house" value="">Gitnória</option>
+            <option id="reactpuff-house" value="">Reactpuff</option>
+            <option id="corvinode-house" value="">Corvinode</option>
+            <option id="pytherina-house" value="">Pytherina</option>
+          </select>
+      </div>
       </form>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Brasão da Trybewarts">
     </main>
