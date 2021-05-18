@@ -31,13 +31,6 @@ const changeCounter = () => {
 };
 textarea.addEventListener('keyup', changeCounter);
 
-let fullName;
-let email;
-let house;
-let family;
-let subject;
-let rate;
-let commentary;
 
 const getFamilyRadios = () => {
   const familyRadios = document.getElementsByClassName('family');
@@ -48,7 +41,7 @@ const getFamilyRadios = () => {
   }
 };
 
-const getFamily = () => {
+const getSubject = () => {
   const checked = [];
   const checkBoxes = document.getElementsByClassName('subject');
   for (let i = 0; i < checkBoxes.length; i += 1) {
@@ -67,3 +60,41 @@ const getRateRadios = () => {
     }
   }
 };
+
+const form = document.getElementById('evaluation-form');
+let fullName;
+let email;
+let house;
+let family;
+let subject;
+let rate;
+let commentary;
+
+const getInputs = () => {
+  const inputs = [];
+  const name = document.getElementById('input-name').value;
+  const lastName = document.getElementById('input-lastname').value;
+  fullName = `Nome: ${name} ${lastName}`;
+  email = `Email: ${document.getElementById('input-email').value}`;
+  house = `Casa: ${document.getElementById('house').value}`;
+  family = `Família: ${getFamilyRadios()}`;
+  subject = `Matérias: ${getSubject()}`;
+  rate = `Avaliação: ${getRateRadios()}`;
+  commentary = `Observações: ${document.getElementById('textarea').value}`;
+  inputs.push(fullName, email, house, family, subject, rate, commentary);
+  return inputs;
+};
+
+const assembleInfo = () => {
+  const newForm = document.createElement('form');
+  for (let i = 0; i < getInputs().length; i += 1) {
+    const paragraph = document.createElement('p');
+    paragraph.innerHTML = getInputs()[i];
+    newForm.appendChild(paragraph);
+  }
+  form.innerHTML = newForm.innerHTML;
+  form.style.textAlign = 'center';
+  form.style.justifyContent = 'center';
+};
+
+submitBtn.addEventListener('click', assembleInfo);
