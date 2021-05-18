@@ -40,7 +40,7 @@ main {
   display: flex;
 }
 
-#horizonte {
+.horizonte {
   width: 100%;
 }
 
@@ -60,6 +60,10 @@ main {
   flex-flow: row wrap;
 }
 
-.subject {
-  justify-content:space-around;
+#radio-conteiner {
+  display: flex;
+}
+
+.avaliador {
+  display: flex;
 }

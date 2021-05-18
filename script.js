@@ -16,3 +16,20 @@ function preventDef(event) {
 
 botao.addEventListener('click', preventDef); 
 botao.addEventListener('click', validar); 
+
+function radio () {
+  let divRadio = document.getElementById('radio-conteiner');
+  for (let index = 1; index < 11; index += 1) {
+    let criaInput = document.createElement('input');
+    let criaLabel = document.createElement('label');
+    criaInput.type = 'radio';
+    criaInput.name = 'rate';
+    criaLabel.innerText = index;
+    criaLabel.for = index;
+    criaLabel.appendChild(criaInput);
+    criaInput.id = index;
+    criaInput.value = index;
+    divRadio.appendChild(criaLabel);
+  }
+}
+radio();
