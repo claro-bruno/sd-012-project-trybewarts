@@ -34,5 +34,8 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
-  
+}
+
+.linha {
+  display: flex;
 }
