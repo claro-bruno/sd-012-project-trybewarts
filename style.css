@@ -1,5 +1,48 @@
 .header {
-    display: flex;
-    background-color: rgb(50, 167, 145);
-    padding: 20px;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #eff3f7;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  width: 40%;
+}
+
+#userInfo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: 20px;
+}
+#userInfo input{
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 6px;
+  }
+
+  #userInfo label{
+    margin-left: 5px;
+  }
+
+h2 {
+  align-self: center;
+  font-family: 'MedievalSharp', cursive;
+  
+}
+
+#house {
+    width:20%;
+    margin-left: 5px;
 }
