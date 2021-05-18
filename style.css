@@ -36,3 +36,13 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#radioLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#radioLabel a {
+  display: flex;
+  flex-direction: row-reverse;
+}

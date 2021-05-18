@@ -26,3 +26,27 @@ function createOptions() {
   }
 }
 createOptions();
+
+// cria tagA
+function createA(array, position) {
+  for (let index = 0; index < array.length; index += 1) {
+    const tagA = document.createElement('a');
+    tagA.innerHTML = `Família ${array[index]}`;
+    position.appendChild(tagA);
+  }
+}
+
+// Cria inputRadio
+const divRadio = document.getElementById('radioLabel');
+const radioValue = ['Frontend', 'Backend', 'FullStack'];
+function createRadio() {
+  createA(radioValue, divRadio);
+  for (let index = 0; index < radioValue.length; index += 1) {
+    const inputRadio = document.createElement('input');
+    inputRadio.type = 'radio';
+    inputRadio.name = 'family';
+    inputRadio.value = radioValue[index];
+    divRadio.children[index + 1].appendChild(inputRadio);
+  }
+}
+createRadio();
