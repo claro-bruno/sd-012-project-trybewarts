@@ -1,7 +1,8 @@
 header{
     background-color: rgb(50, 167, 145);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    width: 100%;
 }
 
 main{
@@ -22,6 +23,8 @@ main{
 .trybewarts-header-logo {
     width: 50px;
 }
+
+
 #trybewarts-header-title {
     font-size: 30px;
     color: white;
