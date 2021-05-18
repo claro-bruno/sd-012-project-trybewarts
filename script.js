@@ -12,8 +12,6 @@ function validandoCabecalho() {
     });
 }
 
-validandoCabecalho();
-
 const divNotas = document.querySelector('#rate-div');
 
 function criandoRadiosNota() {
@@ -30,4 +28,20 @@ function criandoRadiosNota() {
   }
 }
 
-criandoRadiosNota();
+const botaoSubmit = document.querySelector('#submit-btn');
+const checkboxSubmit = document.querySelector('#agreement');
+
+function habilitandoBotaoEnviar() {
+  checkboxSubmit.addEventListener('click', () => {
+    if (checkboxSubmit.checked) botaoSubmit.disabled = false;
+    else botaoSubmit.disabled = true;
+    
+  });
+}
+
+window.onload = () => {
+  habilitandoBotaoEnviar();
+  criandoRadiosNota();
+  validandoCabecalho();
+  botaoSubmit.disabled = true;
+};
