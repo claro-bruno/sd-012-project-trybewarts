@@ -24,3 +24,37 @@
   width: 675px;
   flex-direction: column;
 }
+
+#trybewarts-forms-logo {
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#input-name {
+
+}
+
+#input-lastname {
+
+}
+
+#input-email {
+
+}
+
+#gitnoria-house {
+
+}
+
+#reactpuff-house {
+
+}
+
+#corvinode-house {
+
+}
+
+#pytherina-house {
+
+}
