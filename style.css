@@ -30,6 +30,15 @@
   width: 675px;
   flex-direction: column;
 }
+
+.nomeDoTryber {
+  display: flex;
+}
+
+.casaEmail {
+  display: flex;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
   justify-content: right;
