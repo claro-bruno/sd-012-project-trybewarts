@@ -34,6 +34,11 @@ main {
   flex-direction: column;
 }
 
+.checkboxs {
+  display: flex;
+  flex-direction: column;
+}
+
 #trybewarts-header-title {
   display: flex;
   justify-content: center;
