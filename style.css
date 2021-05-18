@@ -7,12 +7,10 @@
   justify-content: space-between;
 }
 
-.containerLogo {
-  align-content: flex-start
-}
+.trybewarts-header-logo {}
 
-#trybewarts-header-title{
-    text-align: center;
+#trybewarts-header-title {
+  text-align: center;
 }
 
 .trybewarts-login {
