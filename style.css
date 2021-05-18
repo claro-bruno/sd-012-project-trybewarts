@@ -19,3 +19,12 @@
   align-items: center;
   margin-bottom: 0;
 }
+
+.formMain {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+}
