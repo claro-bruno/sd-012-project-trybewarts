@@ -1,11 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .header {
-    background-color: rgb(50, 167, 145);
-    width: 100%;
-    display: flex;
+  background-color: rgb(50, 167, 145);
+  width: 100%;
+  display: flex;
 }
