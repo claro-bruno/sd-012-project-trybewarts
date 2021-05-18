@@ -2,3 +2,18 @@
     display: flex;
     background-color: rgb(50, 167, 145)
 }
+
+main {
+    display: flex;
+}
+#evaluation-form {
+    display: flex;
+    flex-direction: column;
+    width: 675px;
+}
+h2 {
+    text-align: center;
+}
+#trybewarts-forms-logo {
+    height: 500px;
+}
