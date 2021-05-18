@@ -17,9 +17,15 @@ body {
 .header {
   background-color: var(--verde-trybe);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .trybewarts-header-logo {
   width: 50px;
 }
 
+.trybewarts-login {
+  display: flex;
+  justify-content: space-between;
+}
