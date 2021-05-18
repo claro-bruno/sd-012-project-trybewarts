@@ -1,0 +1,31 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(50, 167, 145);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} 
+
+button {
+  background-color: aliceblue;
+}
+.trybewarts-login {
+  display: flex;
+}
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
+
