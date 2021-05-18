@@ -45,6 +45,6 @@ main {
   height: 500px;
 }
 
-.row {
-  flex-direction: row
+.input-row {
+  flex-direction: row;
 }
