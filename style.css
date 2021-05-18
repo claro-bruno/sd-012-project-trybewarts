@@ -1,25 +1,41 @@
 * {
-  margin: 0;
+    margin: 0;
 }
 
 #cabecalho {
-  display: flex;
-  background-color: rgb(50, 167, 145);
-  width: 100%;
-  height: 60px;
+    display: flex;
+    background-color: rgb(50, 167, 145);
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.formulario-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formulario-header label,
+button {
+    margin: 0px 10px 0px 10px;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    height: 60px;
 }
 
 main {
-  margin: 10px 5px;
-  display: flex;
+    margin: 10px 5px;
+    display: flex;
 }
 
 #evaluation-form {
-  width: 675px;
-  display: flex;
-  flex-direction: column;
+    width: 675px;
+    display: flex;
+    flex-direction: column;
 }
 
 #trybewarts-forms-logo {
-  height: 500px;
+    height: 500px;
 }

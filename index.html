@@ -2,50 +2,62 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <main class="container">
-    <form action="GET" id="evaluation-form">
-      <div>
-        <label for="input-name">Nome:</label>
-        <input  id="input-name" type="text" placeholder="Nome">
-        <label for="input-lastname">Sobrenome:</label>
-        <input  id="input-lastname" type="text" placeholder="Sobrenome">  
-      </div>
-      <div>
-        <label for="input-email">Email:</label>
-        <input  id="input-email" type="text" placeholder="Email">
-        <label for="house">Casa:</label>
-        <select name="casa" id="house">
+    <header id="cabecalho">
+        <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="logo da trybewarts">
+
+        <form action="post" class="formulario-header">
+            <label for="login" id="label-login"> Login</label>
+            <input type="text" name="login" id="login" placeholder="Login">
+            <label for="senha" id="label-senha">Senha</label>
+            <input type="text" name="senha" id="senha" placeholder="Senha">
+            <button id="singUp"> Sing Up</button>
+
+        </form>
+    </header>
+    <main class="container">
+        <form action="post" id="evaluation-form">
+            <div>
+                <label for="input-name">Nome:</label>
+                <input id="input-name" type="text" placeholder="Nome">
+                <label for="input-lastname">Sobrenome:</label>
+                <input id="input-lastname" type="text" placeholder="Sobrenome">
+            </div>
+            <div>
+                <label for="input-email">Email:</label>
+                <input id="input-email" type="text" placeholder="Email">
+                <label for="house">Casa:</label>
+                <select name="casa" id="house">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
-      </div>
-      <div>
-        <label id="label-family">Qual a sua Família?</label>
-        <input type="radio" name="family" id="family-FrontEnd" value="Frontend">
-        <label for="family-Frontend">Família Frontend</label>
-        <input type="radio" name="family" id="family-Backend" value="Backend">
-        <label for="family-Backend">Família Backend</label>
-        <input type="radio" name="family" id="family-fullstack" value="FullStack">
-        <label for="family-fullstack">Família FullStack</label>
-      </div>
-      
-    
-    </form>
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da TrybeWarts colorido">
-  </main>
+            </div>
+            <div>
+                <label id="label-family">Qual a sua Família?</label>
+                <input type="radio" name="family" id="family-FrontEnd" value="Frontend">
+                <label for="family-Frontend">Família Frontend</label>
+                <input type="radio" name="family" id="family-Backend" value="Backend">
+                <label for="family-Backend">Família Backend</label>
+                <input type="radio" name="family" id="family-fullstack" value="FullStack">
+                <label for="family-fullstack">Família FullStack</label>
+            </div>
 
 
-  <script src="script.js"></script>
+        </form>
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da TrybeWarts colorido">
+    </main>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
