@@ -31,9 +31,21 @@ submitButton.addEventListener('click', () => {
   const emailParagraph = document.createElement('p');
   emailParagraph.innerHTML = `Email: ${email.value}`;
   emailParagraph.id = 'input-email';
-  document.querySelector('#email-container').removeChild(email);
-  document.querySelector('#email-container').appendChild(emailParagraph);
+  email.parentNode.replaceChild(emailParagraph, email);
+
+  const house = document.querySelector('#house');
+  const houseParagraph = document.createElement('p');
+  houseParagraph.innerHTML = `Casa: ${house.value}`;
+  houseParagraph.id = 'house';
+  house.parentNode.replaceChild(houseParagraph, house);
 });
+//   const families = document.querySelectorAll('.input-family')
+//   for (let family of families) {
+//       if (families[family].checked) {
+//         const familyParagraph = document.createElement('p');
+//       }
+
+//   }
 
 // const evaluationNote = document.querySelector('#label-rate');
 // for (let note = 1; note <= 10; note += 1) {
