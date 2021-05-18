@@ -27,16 +27,21 @@ textAreaInput.addEventListener('keyup', () => {
 });
 
 submitButton.addEventListener('click', () => {
+  const firstName = document.querySelector('#input-name');
+  const lastName = document.querySelector('#input-lastname');
+  const nameParagraph = document.createElement('p');
+  nameParagraph.innerHTML = `Nome: ${firstName.value} ${lastName.value}`;
+  firstName.parentNode.removeChild(firstName.parentNode.lastElementChild);
+  firstName.parentNode.replaceChild(nameParagraph, firstName);
+
   const email = document.querySelector('#input-email');
   const emailParagraph = document.createElement('p');
   emailParagraph.innerHTML = `Email: ${email.value}`;
-  emailParagraph.id = 'input-email';
   email.parentNode.replaceChild(emailParagraph, email);
 
   const house = document.querySelector('#house');
   const houseParagraph = document.createElement('p');
   houseParagraph.innerHTML = `Casa: ${house.value}`;
-  houseParagraph.id = 'house';
   house.parentNode.replaceChild(houseParagraph, house);
 });
 //   const families = document.querySelectorAll('.input-family')
