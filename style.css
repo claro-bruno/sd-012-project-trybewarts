@@ -1,11 +1,16 @@
 main {
   display: flex;
+  justify-content: center;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
+}
+
+main img {
+  height: 500px;
 }
 
 .header {
