@@ -39,23 +39,47 @@
                 </label>
             </div>
             <hr>
-            <div id="label-family">
-                <p>Qual sua família?"</p>
-                <label for="frontend">
-                    <input id="frontend" name="family" type="radio" value="Frontend">
-                    Familia Frontend
-                </label>
-                <label for="backend">
-                    <input id="backend" name="family" type="radio" value="Backend">
-                    Familia Backend
-                </label>
-                <label for="fullstack">
-                    <input id="fullstack" name="family" type="radio" value="FullStack">
-                    Familia FullStack
-                </label>
-            </div>
             <div>
-                req 13
+                <div id="label-family">
+                    <p>Qual sua família?</p>
+                    <label for="frontend">
+                        <input id="frontend" name="family" type="radio" value="Frontend">
+                        Familia Frontend
+                    </label>
+                    <label for="backend">
+                        <input id="backend" name="family" type="radio" value="Backend">
+                        Familia Backend
+                    </label>
+                    <label for="fullstack">
+                        <input id="fullstack" name="family" type="radio" value="FullStack">
+                        Familia FullStack
+                    </label>
+                </div>
+                <div id="label-content">
+                    <p>Qual conteúdo você está com mais vontade de aprender?</p>
+                    <div>
+                        <label for="HoFs">
+                            <input id="HoFs" name="HoFs" type="checkbox" value="HoFs">HoFs
+                        </label>
+                        <label for="Jest">
+                            <input id="Jest" name="Jest" type="checkbox" value="Jest">Jest
+                        </label>
+                        <label for="Promises">
+                            <input id="Promises" name="Promises" type="checkbox" value="Promises">Promises
+                        </label>
+                    </div>
+                    <div>
+                        <label for="React">
+                            <input id="React" name="React" type="checkbox" value="React">React
+                        </label>
+                        <label for="SQL">
+                            <input id="SQL" name="SQL" type="checkbox" value="SQL">SQL
+                        </label>
+                        <label for="Python">
+                            <input id="Python" name="Python" type="checkbox" value="Python">Python
+                        </label>
+                    </div>
+                </div>
             </div>
             <hr>
             <div id="avalia">
@@ -103,7 +127,8 @@
                 </label>
                 <input type="checkbox" name="" id="agreement">
             </div>
-            
+            <button id="submit-btn" type="submit" disabled>Enviar</button>
+
         </form>
 
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">

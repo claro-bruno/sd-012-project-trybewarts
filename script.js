@@ -14,3 +14,14 @@ window.onload = function() {
     }
   })
 }
+
+let agreement = document.getElementById("agreement");
+let submit = document.getElementById("submit-btn");
+agreement.addEventListener("click", function () {
+    if (agreement.checked == true) {
+        submit.disabled = false;
+    }
+    else {
+        submit.disabled = true;
+    }
+})
