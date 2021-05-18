@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  padding: 20px;
+  width: 100%;
+}
