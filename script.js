@@ -4,10 +4,10 @@ function validandoCabecalho() {
   botao.addEventListener('click', () => {
     const login = document.querySelector('#login');
     const senha = document.querySelector('#senha');
-    if (login.value !== 'trybe@teste.com' && senha.value !== '123456') {
-      window.alert('Login ou senha inválidos');
-    } else {
+    if (login.value === 'tryber@teste.com' && senha.value === '123456') {
       window.alert('Olá, Tryber!');
+    } else {
+      window.alert('Login ou senha inválidos.');
     }
   });
 }
