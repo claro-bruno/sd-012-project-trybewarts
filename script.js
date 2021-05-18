@@ -27,3 +27,4 @@ function submitValidation() {
 }
 
 submitValidation();
+document.getElementById('label-infos').disabled = true;
