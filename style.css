@@ -36,9 +36,18 @@
 
 .main-content {
     display: flex;
+    
+    
 }
 
 #evaluation-form {
     display: flex;
     width: 675px;
+}
+
+.forms-logo{
+    display: flex;
+    max-height: 500px;
+    flex-flow: row nowrap;
+    align-items: center;
 }
