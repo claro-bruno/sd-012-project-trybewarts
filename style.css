@@ -9,6 +9,13 @@ main {
   width: 675px;
 }
 
+#evaluation-form input {
+  border: 1px solid gray;
+  height: 50px;
+  width: 400px;
+  margin-bottom: 5px;
+}
+
 /* Estilização da Imagem */
 #trybewarts-forms-logo {
   height: 500px;
