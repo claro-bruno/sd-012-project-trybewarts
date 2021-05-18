@@ -1,4 +1,41 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: space-between;
+}
+
+.trybewarts-header-logo {
+  display: flex;
+  justify-content: flex-start;
+  width: 70px;
+  height: 70px;
+}
+
+.trybewarts-login {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#login {
+  border: black 1px solid;
+  margin-right: 12px;
+  height: 30px;
+  width: 120px;
+  align-self: center;
+}
+
+#password {
+  border: black 1px solid;
+  margin-right: 12px;
+  height: 30px;
+  width: 120px;
+  align-self: center;
+}
+
+#login-button {
+  border: black 1px solid;
+  margin-right: 12px;
+  height: 30px;
+  width: 120px;
+  align-self: center;
 }
