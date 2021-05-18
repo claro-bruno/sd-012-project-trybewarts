@@ -29,3 +29,8 @@ main {
 .inputs-name {
   display: flex;
 }
+
+#family-radios {
+  display: flex;
+  flex-direction: column;
+}
