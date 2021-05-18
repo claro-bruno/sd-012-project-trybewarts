@@ -1,10 +1,10 @@
-.header{
+.header {
   width: auto;
   height: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(50, 167, 145)
+  background-color: rgb(50, 167, 145);
 }
 
 main {
@@ -15,7 +15,7 @@ main {
 
 .trybewarts-login {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   height: 20px;
 }
 
