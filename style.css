@@ -29,4 +29,12 @@
   display: flex;
   width: 675px;
   flex-direction: column;
+
+}
+
+#trybewarts-header-title {
+  display: flex;
+  align-self: center;
+  color: white;
+
 }
