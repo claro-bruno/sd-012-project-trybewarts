@@ -1,6 +1,7 @@
 const button = document.querySelector('#botao-login');
 const familys = ['Frontend', 'Backend', 'FullStack'];
 const houses = ['Gitnória', 'Reactpuff', 'Corvinode', 'Pytherina'];
+const tech = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
 
 function botaoLoginPassword() {
   const loginTrybewarts = document.querySelector('#login');
@@ -51,3 +52,19 @@ function createFamily() {
 }
 
 createFamily();
+
+function createTech() {
+  const getDivTech = document.getElementById('radio-button-container');
+  for (let index = 0; index < tech.length; index += 1) {
+    const createLabelTech = document.createElement('label');
+    const createInputTech = document.createElement('input');
+    createLabelTech.innerText = tech[index];
+    createInputTech.type = 'checkbox';
+    createInputTech.className = 'subject';
+    createInputTech.value = tech[index];
+    getDivTech.appendChild(createLabelTech);
+    getDivTech.appendChild(createInputTech);
+  };
+}
+
+createTech();
