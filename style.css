@@ -37,3 +37,8 @@ main {
   display: flex;
   flex-direction: row;
 }
+
+#family-container {
+  display: flex;
+  flex-direction: column;
+}
