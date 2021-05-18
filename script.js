@@ -1,7 +1,6 @@
 const butto = document.querySelector('.btn');
 
-butto.addEventListener('click',()=>{
-
+butto.addEventListener('click' ,() => {
   const senha = document.querySelector('#input-senha');
   const login = document.querySelector('#input-login');
 
