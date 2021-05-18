@@ -10,3 +10,15 @@ function loginAlert() {
   }
 }
 botaoLogar.addEventListener('click', loginAlert);
+
+const takeAgreement = document.getElementById('agreement');
+const takeSubmitBtn = document.getElementById('submit-btn').disabled = true;
+
+takeAgreement.addEventListener('input', function(event) {
+
+  if (event.target !== null) {
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    document.getElementById('submit-btn').disabled = true;
+  };
+});
