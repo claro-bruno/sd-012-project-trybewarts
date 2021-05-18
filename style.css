@@ -64,14 +64,6 @@ main {
   flex-direction: row;
 }
 
-#input-email {
-  flex-grow: 1;
-}
-
-#house {
-  flex-grow: 1;
-}
-
 #images-position {
   display: flex;
   justify-content: center;
@@ -104,4 +96,9 @@ main {
 
 .subject {
   margin-left: 20px;
+}
+
+#input-text {
+  border: solid black 1px;
+  resize: none;
 }
