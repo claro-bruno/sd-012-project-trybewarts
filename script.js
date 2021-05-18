@@ -24,3 +24,10 @@ agreement.addEventListener('click', () => {
     submitBtn.disabled = false;
   }
 });
+
+const textArea = document.querySelector('#textarea');
+const pCounter = document.querySelector('#counter');
+
+textArea.addEventListener('input', () => {
+  pCounter.innerText = 500 - textArea.value.length;
+});
