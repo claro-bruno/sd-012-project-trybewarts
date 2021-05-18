@@ -18,12 +18,14 @@ function createHouseOptions() {
     Pytherina: 'pytherina-house',
   };
   const selectHouse = document.getElementById('house');
-  for (let option in optionsObject) {
-    const houseOption = document.createElement('option');
-    houseOption.id = optionsObject[option];
-    houseOption.value = optionsObject[option];
-    houseOption.innerText = option;
-    selectHouse.appendChild(houseOption);
+  for (const option in optionsObject) {
+    if (optionsObject) {
+      const houseOption = document.createElement('option');
+      houseOption.id = optionsObject[option];
+      houseOption.value = optionsObject[option];
+      houseOption.innerText = option;
+      selectHouse.appendChild(houseOption);
+    }
   }
 }
 

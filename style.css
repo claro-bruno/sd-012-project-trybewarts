@@ -48,14 +48,14 @@ body {
   color: white;
 }
 
-main, form {
+main {
   display: flex;
 }
 
 #evaluation-form {
   display: flex;
-  flex-direction: column;
   width: 675px;
+  flex-direction: column;
 }
 
 #trybewarts-forms-logo {
