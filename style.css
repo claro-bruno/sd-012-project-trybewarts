@@ -44,3 +44,13 @@
     flex-flow: column nowrap;
     width: 675px;
 }
+
+.input-fname-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.input-email-house-container {
+    display: flex;
+    flex-flow: row nowrap;
+}
