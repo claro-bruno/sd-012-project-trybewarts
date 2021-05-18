@@ -2,6 +2,10 @@ body {
   background-color: blanchedalmond;
 }
 
+body h1 {
+  color: white;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
