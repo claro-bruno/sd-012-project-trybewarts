@@ -34,3 +34,10 @@ body {
 .login , .senha , .logar {
   margin: 5px;
 }
+
+.footer-style {
+  background-color: rgb(60 64 74);
+  padding: 5px;
+  color: white;
+  text-align: center;
+}
