@@ -1,28 +1,28 @@
 main{
-    display: flex;
+  display: flex;
 }
 
 #evaluevaluation-form{
-    display: flex;
-    width: 675px;
+  display: flex;
+  width: 675px;
 }
 
 .header {
-    background-color: rgb(50, 167, 145);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .trybewarts-header-logo {
-    width: 50px;
-    align-self: flex-start;
+  width: 50px;
+  align-self: flex-start;
 }
 #trybewarts-header-title {
-    font-size: 30px;
-    color: white;
+  font-size: 30px;
+  color: white;
 }
 
 .trybewarts-login {
-    display: flex;
+  display: flex;
 } 
