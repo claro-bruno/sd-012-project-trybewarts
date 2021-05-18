@@ -1,2 +1,5 @@
 **/*.spec.js
 /cypress
+/bootstrap-5.0.1-dist
+/node_modules
+package-lock.json
