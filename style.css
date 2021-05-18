@@ -1,11 +1,31 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: flex-start;
+  justify-content: space-around;
+  padding: 10px;
 }
 
 .trybewarts-header-logo {
   max-width: 50px;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+}
+
+.trybewarts-login input {
+  margin: 5px;
+  max-width: 130px;
+  max-height: 30px;
+  font-size: 12px;
+}
+
+.btn-primary {
+  background-color: rgb(78, 44, 131);
+  max-width: 130px;
+  max-height: 30px;
+  font-size: 12px;
 }
 
 /* Linha Divisória */
