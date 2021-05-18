@@ -18,7 +18,22 @@ main form {
 .row {
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   width: 100%;
+}
+
+.row input,
+.row .select-container {
+  width: 48%;
+}
+
+.select-container {
+  display: flex;
+}
+
+.row .select-container select {
+  margin-left: 5px;
+  flex-grow: 1;
 }
 
 main img {
