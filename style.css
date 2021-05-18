@@ -25,3 +25,12 @@ form {
 #trybewarts-header-title {
   color: white;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
+}
