@@ -15,7 +15,7 @@ main {
 
 .trybewarts-login {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between right;
   height: 20px;
 }
 
@@ -25,6 +25,9 @@ main {
 
 .trybewarts-header-logo {
   width: 40px;
+  display: flex;
+  justify-content: left;
+
 }
 
 #input-name {
