@@ -22,3 +22,12 @@
 .trybewarts-header-title {
   display: flex;
 }
+
+main, #evaluation-form {
+  display: flex;
+}
+
+#evaluation-form {
+ width: 675px;
+ flex-direction: column;
+}
