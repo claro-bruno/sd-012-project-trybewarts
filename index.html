@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <title>Cadastro Trybewarts</title>
 
 </head>
 
@@ -30,40 +30,34 @@
 
     <main class="main">
         <form id="evaluation-form">
-            <label for="input-name'">
-                <input id="input-name" type="text" placeholder="Nome">
+            
+            <h2>Forms</h2>  
 
-                </input>
-            </label>
+            <div class="nome-sobrenome">
+              <input id="input-name" type="text" placeholder="Nome"></input>
 
-            <label for="input-lastname">
-                <input id="input-lastname" type="text" placeholder="Sobrenome">
+              <input id="input-lastname" type="text" placeholder="Sobrenome"></input>
+            </div>
 
-                </input>
-            </label>
+            <div class="email-casa">
+              <input id="input-email" type="text" placeholder="Email"></input>
 
-            <label for="input-email">
-                <input id="input-email" type="text" placeholder="Email">
+              <label for="house">Casa
+                <select id="house">
 
-                </input>
-            </label>
-
-            <select id="house">
-
-                <div class="completeName">
                     <option id="gitnoria-house" value="Gitnória">Gitnória</option>
                     <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                </div>
-
-                <div class="completeName">
                     <option id="corvinode-house" value="Corvinode">Corvinode</option>
                     <option id="pytherina-house" value="Pytherina">Pytherina</option>
-                </div>
-
-            </select>
+    
+                </select>
+              </label>
+            </div>
 
             <div class="familyArea">
-                <label for="front" id="label-family" type="text">Qual sua família?
+                <label id="label-family">Qual sua família?</label>
+
+                <label for="front">
                     <input id="front" type="radio" name="family" value="Frontend">Frontend</input>
                 </label>
 
@@ -78,7 +72,9 @@
 
             <div class="contentLearn">
 
-                <label for="hofs" id="label-content">Qual conteúdo você está com mais vontade de aprender?
+                <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
+
+                <label for="hofs">
                     <input id="hofs" type="checkbox" class="subject" value="HoFs">HoFs
                     </input>
                 </label>

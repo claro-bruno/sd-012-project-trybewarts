@@ -9,7 +9,7 @@
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
-  padding: 5px 100px;
+  padding: 5px 150px;
 }
 
 .trybewarts-header-logo {
@@ -40,6 +40,7 @@
 
 .main {
   display: flex;
+  padding: 20px 150px;
 }
 
 #evaluation-form {
@@ -60,8 +61,4 @@
 .familyArea {
   display: flex;
   flex-direction: column;
-}
-
-.contentLearn {
-  display: flex;
 }
