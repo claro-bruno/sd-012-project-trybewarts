@@ -27,24 +27,50 @@
 =======
     <img class='trybewarts-header-logo' src="images/trybewarts-header-logo.svg" alt="Logo">
 
+    <h1 id='trybewarts-header-title'>Trybewarts</h1>
+
     <form class='trybewarts-login' method="get">
-      
-      <input type="text" name="inputLogin" id="inputLogin" 
-      placeholder='Login'>
+
+      <input type="text" name="inputLogin" id="inputLogin" placeholder='Login'>
 
       <input type="password" name="inputSenha" id="inputSenha" placeholder='Senha'>
 
       <button id='botaoLogin' type="submit">Logar</button>
-      
+
     </form>
   </header>
   <main>
-    <section>
+    <form id='evaluation-form'>
 
-    </section>
-    <section>
+      <div>
+        <input type="text" id='input-name' placeholder='Nome'>
+        <input type="text" id="input-lastname" placeholder='Sobrenome'>
+      </div>
 
-    </section>
+      <div>
+        <input type="text" id='input-email' placeholder='Email'>
+
+        <select id="house">
+          <option id='gitnoria-house' value="Gitnória">Gitnória</option>
+          <option id='reactpuff-house' value="Reactpuff">Reactpuff</option>
+          <option id='corvinode-house' value="Corvinode">Corvinode</option>
+          <option id='pytherina-house' value="Pytherina">Pytherina</option>
+        </select>
+      </div>
+
+      <label for="family-radio" id='label-family'>Qual sua família?</label>
+      <div>
+        <input type="radio" name='family' id="radioFrontend" value="Frontend"> <label for="radioFrontend">Frontend</label>
+      </div>
+      <div>
+        <input type="radio" name='family' id="radioBackend" value="Backend"> <label for="radioBackend">Backend</label>
+      </div>
+      <div>
+        <input type="radio" name='family' id="radioFullStack" value="FullStack"> <label for="radioFullStack">FullStack</label>
+      </div>
+
+    </form>
+    <img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="Imagem logo">
   </main>
   <footer>
 
