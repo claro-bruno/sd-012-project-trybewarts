@@ -53,17 +53,12 @@ main {
     height: 500px;
 }
 
-#family-radios {
-  display: flex;
-  flex-direction: column;
-}
-
 .container {
   display: flex;
   flex-wrap: wrap;
 }
 
-#content-checkboxes {
+.container-column {
   display: flex;
   flex-direction: column;
 }

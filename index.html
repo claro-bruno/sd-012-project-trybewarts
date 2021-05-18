@@ -1,39 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Projeto TrybeWarts</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="header" id="cabecalho">
-        <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="logo da trybewarts">
-        <h1 class="Trybewarts" id="trybewarts-header-title">TrybeWarts</h1>
-        <form action="post" class="trybewarts-login">
-            <label for="login" id="label-login"> Login</label>
-            <input type="text" name="login" id="login" placeholder="Login">
-            <label for="senha" id="label-senha">Senha</label>
-            <input type="text" name="senha" id="senha" placeholder="Senha">
-            <button id="singUp"> Sing Up</button>
-        </form>
-    </header>
-    <main class="container">
-        <form action="post" id="evaluation-form">
-            <div>
-                <label for="input-name">Nome:</label>
-                <input id="input-name" type="text" placeholder="Nome">
-                <label for="input-lastname">Sobrenome:</label>
-                <input id="input-lastname" type="text" placeholder="Sobrenome">
-            </div>
-            <div>
-                <label for="input-email">Email:</label>
-                <input id="input-email" type="text" placeholder="Email">
-                <label for="house">Casa:</label>
-                <select name="casa" id="house">
+  <header class="header" id="cabecalho">
+    <img class="trybewarts-header-logo" src="./images/trybewarts-header-logo.svg" alt="logo da trybewarts">
+    <h1 class="Trybewarts" id="trybewarts-header-title">TrybeWarts</h1>
+    <form action="post" class="trybewarts-login">
+      <label for="login" id="label-login"> Login</label>
+      <input type="text" name="login" id="login" placeholder="Login">
+      <label for="senha" id="label-senha">Senha</label>
+      <input type="text" name="senha" id="senha" placeholder="Senha">
+      <button id="singUp"> Sing Up</button>
+      </form>
+  </header>
+  <main class="container">
+    <form action="post" id="evaluation-form">
+      <div class="container">
+        <label for="input-name">Nome:</label>
+        <input id="input-name" type="text" placeholder="Nome">
+        <label for="input-lastname">Sobrenome:</label>
+        <input id="input-lastname" type="text" placeholder="Sobrenome">
+      </div>
+      <div class="container">
+        <label for="input-email">Email:</label>
+        <input id="input-email" type="text" placeholder="Email">
+        <label for="house">Casa:</label>
+        <select name="casa" id="house">
           <option value="Gitnória" id="gitnoria-house">Gitnória</option>
           <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
           <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -41,7 +41,7 @@
         </select>
       </div>
       <div class="container">
-        <div id="family-radios">
+        <div class="container-column" id="family-radios">
           <label id="label-family">Qual sua família?</label>
           <div>
             <input type="radio" name="family" id="family-FrontEnd" value="Frontend">
@@ -56,7 +56,7 @@
             <label for="family-fullstack">Família FullStack</label>
           </div>
         </div>
-        <div id="content-checkboxes">
+        <div class="container-column" id="content-checkboxes">
           <div>
             <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
           </div>
@@ -77,9 +77,9 @@
         </div>
       </div>
       <div id="rate-div" class="container">
-        <label for="">Como você avalia a Trybewarts?</label>
+        <label id= "label-rate" for="">Como você avalia a Trybewarts?</label>
       </div>
-      <div>
+      <div class="container">
         <label id="textarea-label" class="textarea" for="textarea-input">Deixe seu comentário:</label>
         <textarea name="" id="textarea-input" cols="30" rows="10" maxlength="500"></textarea>
       </div>
@@ -90,17 +90,12 @@
       <div>
         <button type="submit" id="submit-btn">Enviar</button>
       </div>
-      </form>
-
-      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da TrybeWarts colorido">
-    </main>
-
-    <footer id="rodape">
-        Direitos reservados à Trybewarts&copy;
-    </footer>
-
-
-    <script src="script.js"></script>
+    </form>
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da TrybeWarts colorido">
+  </main>
+  <footer id="rodape">
+    Direitos reservados à Trybewarts&copy;
+  </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
