@@ -68,12 +68,11 @@ main {
   background-color: white;
 }
 
-.input2 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 80px;
+.input3 label {
+  padding-right: 15px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
+
