@@ -8,6 +8,20 @@
   display: flex;
 }
 
-trybewarts-header-title {
+#trybewarts-header-title {
   text-align: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
 }
