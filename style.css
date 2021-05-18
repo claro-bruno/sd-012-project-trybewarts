@@ -60,6 +60,6 @@ hr {
   height: 1px;
 }
 
-#userFamily {
-  align-items: center;
+.userOptions {
+  display: flex;
 }
