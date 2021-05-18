@@ -1,0 +1,13 @@
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
+  flex-direction: column;
+}
+
+#trybewarts-logo {
+  width: 675px;
+}
