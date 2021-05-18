@@ -18,6 +18,7 @@ function createHouseOptions() {
     Pytherina: 'pytherina-house',
   };
   const selectHouse = document.getElementById('house');
+<<<<<<< HEAD
   for (const option in optionsObject) {
     if (optionsObject) {
       const houseOption = document.createElement('option');
@@ -26,6 +27,16 @@ function createHouseOptions() {
       houseOption.innerText = option;
       selectHouse.appendChild(houseOption);
     }
+=======
+  const keysObject = Object.keys(optionsObject);
+  const valuesObject = Object.values(optionsObject);
+  for (let houseIndex = 0; houseIndex < keysObject.length; houseIndex += 1) {
+    const houseOption = document.createElement('option');
+    houseOption.id = valuesObject[houseIndex];
+    houseOption.value = valuesObject[houseIndex];
+    houseOption.innerText = keysObject[houseIndex];
+    selectHouse.appendChild(houseOption);
+>>>>>>> acab48939d1b18458bc11910b4015a425d53a5c5
   }
 }
 
