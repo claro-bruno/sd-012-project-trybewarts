@@ -1,9 +1,20 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
 .header {
     display: flex;
     background-color: rgb(50, 167, 145);
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .trybewarts-login{
     display: flex;
 }
+
+.trybewarts-header-logo {
+    align-self: flex-start;
+  }
