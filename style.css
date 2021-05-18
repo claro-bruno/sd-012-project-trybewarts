@@ -10,5 +10,13 @@ header {
 #evaluation-form {
     display: flex;
     width: 675px;
+    flex-direction: column
 }
 
+.img-container {
+    float: right;
+}
+
+.trybewarts-forms-logo {
+    height: 500px;
+}
