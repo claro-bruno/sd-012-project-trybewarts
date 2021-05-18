@@ -13,3 +13,6 @@ loginButton.addEventListener('click', () => {
     alert('Olá, Tryber!');
   }
 });
+
+const submitBtn = document.getElementById('submit-btn');
+submitBtn.addEventListener('click', preventDef);
