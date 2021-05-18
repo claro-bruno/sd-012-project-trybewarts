@@ -6,8 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trybewarts - Victor Veloso</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
-    
+    <header class="header">
+        <img src="images/trybewarts-header-logo.svg" alt="logo da Trybewarts" class="trybewarts-header-logo">
+        <form action="">
+            <input type="email">
+            <input type="password">
+            <button>Login</button>
+        </form>
+        <h1>Trybewarts</h1>
+    </header>
+    <main>
+        <form action="" id="evaluation-form">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+           <label for="house">Casa:</label>
+            <select name="Casa" id="house">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            <div id="label-family">
+                <h2>Qual sua família?</h2>
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+            </div>
+            <div id="label-content">
+                <h2>Qual conteúdo você está com mais vontade de aprender?</h2>
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+                <input type="checkbox">
+            </div>
+            <div>
+                <h2>Como você avalia a Trybewarts?</h2>
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+            </div>
+            <div>
+                <label for="textarea">Deixe seu comentário</label>
+                <textarea name="review" id="textarea" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+                <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+                <input type="checkbox" id="agreement">
+            </div>
+            <button type="submit" id="submit-btn">Enviar</button>
+            
+        </form>
+        <img src="images/trybewarts-colored.svg" alt="logo da trybewarts colorido" id="trybewarts-forms-logo">
+    </main>
+    <footer>
+        <p>Direitos reservados à Trybewarts©</p>
+        <script src="script.js"></script>
+    </footer>
 </body>
 </html>
