@@ -1,0 +1,31 @@
+#main {
+    display: flex;
+}
+
+#evaluation-form {
+    width: 675px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#trybewarts-forms-logo {
+    height: 500px;
+    margin: auto;
+}
+
+#main {
+    display: flex;
+    margin: auto;
+}
+
+.form-top {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 65%;
+    margin: auto;
+}
+
