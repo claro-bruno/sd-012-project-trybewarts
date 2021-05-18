@@ -5,8 +5,8 @@
 
 /*Começa os estilos*/
 main{
-    display: flex;
-
+    flex-direction: column;
+    width: 1000px;
 }
 .header{
     display: flex;
@@ -38,16 +38,20 @@ main{
     justify-content: center;
 }
 
-.footerClassalign-content: space-between p{
+.footerClassalign-content space-between p{
     color: white;
 }
 
-#evaluation-form{
+.secFamily{
     display: flex;
-    width: 675px;
     flex-direction: column;
+    width: 200px;
 }
 
-#input-name #input-lastname {
+#labelFA{
+    display: inline-block;
+}
 
+#inputId{
+    display: inline-block;
 }
