@@ -7,11 +7,13 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   /* flex-direction: column; */
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.header-logo {
+.trybewarts-header-logo {
   width: 100px;
+
 }
 
 .title {

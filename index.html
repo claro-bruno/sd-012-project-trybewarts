@@ -11,13 +11,13 @@
 
 <body>
   <header class="header">
-    <img class="header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
-    <h1 class="title">Trybewarts</h1>
-    <form action="get" class="login-field">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trybewarts">
+    <h1 class="title" id="trybewarts-header-title">Trybewarts</h1>
+    <form action="get" class="login-field trybewarts-login">
       <label for="login">Login</label>
-      <input id="login" type="text">
+      <input id="login" placeholder="Login" type="text">
       <label for="password">Senha</label>
-      <input type="password" name="" id="password">
+      <input type="password" name="" placeholder="Senha" id="password">
       <button type="submit">Enviar</button>
     </form>
   </header>
@@ -40,34 +40,44 @@
         </select>
       </div>
       <label id="label-family" for="">Qual sua família?</label>
-      <label for="frontend">Frontend
-        <input type="radio" name="family" id="frontend" value="Frontend">
-      </label>
-      <label for="backend">Backend
-        <input type="radio" name="family" id="backend" value="Backend">
-      </label>
-      <label for="fullstack">FullStack
-        <input type="radio" name="family" id="fullstack" value="FullStack">
-      </label>
-      
+        <label for="frontend">Frontend
+          <input type="radio" name="family" id="frontend" value="Frontend">
+        </label>
+        <label for="backend">Backend
+          <input type="radio" name="family" id="backend" value="Backend">
+        </label>
+        <label for="fullstack">FullStack
+          <input type="radio" name="family" id="fullstack" value="FullStack">
+        </label>
+
       <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-      <label for="hofs">HoFs</label>
-      <input class="subject" type="checkbox" name="skill" id="hofs" value="HoFs">
-      <label for="jest">Jest</label>
-      <input class="subject" type="checkbox" name="skill" id="jest" value="Jest">
-      <label for="promises">Promises</label>
-      <input class="subject" type="checkbox" name="skill" id="promises" value="Promises">
-      <label for="react">React</label>
-      <input class="subject" type="checkbox" name="skill" id="react" value="React">
-      <label for="sql">SQL</label>
-      <input class="subject" type="checkbox" name="skill" id="sql" value="SQL">
-      <label for="python">Python</label>
-      <input class="subject" type="checkbox" name="skill" id="python" value="Python">
+      <div class="tech">
+        <label for="hofs">HoFs
+          <input class="subject" type="checkbox" name="skill" id="hofs" value="HoFs">
+          </label>
+          <label for="jest">Jest
+          <input class="subject" type="checkbox" name="skill" id="jest" value="Jest">
+          </label>
+          <label for="promises">Promises
+          <input class="subject" type="checkbox" name="skill" id="promises" value="Promises">
+          </label>
+          <label for="react">React
+          <input class="subject" type="checkbox" name="skill" id="react" value="React">
+          </label>
+          <label for="sql">SQL
+          <input class="subject" type="checkbox" name="skill" id="sql" value="SQL">
+          </label>
+          <label for="python">Python
+          <input class="subject" type="checkbox" name="skill" id="python" value="Python">
+          </label>
+      </div>
       <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
-      <label class="textarea" for="textarea">Deixe seu comentário:</label>
+      <label class="textarea" for="textarea">Deixe seu comentário:
       <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-      <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+      </label>
+      <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?
       <input type="checkbox" name="" id="agreement">
+      </label>
       <button id="submit-btn" type="submit">Enviar</button>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts-colored" class="main-logo">
