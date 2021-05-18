@@ -4,7 +4,7 @@ botao.disabled = true;
 confirma.addEventListener('change', () => {
   if (confirma.checked === false) {
     botao.disabled = true;
-  }  else {
+  } else {
     botao.disabled = false;
   }
 });
