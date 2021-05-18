@@ -22,3 +22,12 @@
     flex-direction: column;
     width: 675px;
 }
+
+.line-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.line-content-2 {
+    
+}
