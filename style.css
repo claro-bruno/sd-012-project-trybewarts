@@ -100,3 +100,17 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+footer {
+  background: rgb(32, 32, 32);
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+}
+
+footer p {
+  color: rgb(199 199 199);
+  font-size: 12px;
+}
