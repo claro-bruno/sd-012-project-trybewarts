@@ -4,5 +4,12 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  flex-flow: wrap;
+}
+
+.trybewarts-header-logo {
+   width: 100px;
+}
+
+.flex-container {
+  display: flex;
 }
