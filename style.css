@@ -76,3 +76,8 @@ main {
   display: flex;
   justify-content: center;
 }
+
+#family-type{
+  display: flex;
+  flex-direction: column;
+}
