@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #eee;
+  background-color: rgb(238, 238, 238);
 }
 
 .header {
@@ -21,25 +21,29 @@ body {
   width: 4.2rem;
 }
 
+#trybewarts-header-title {
+  color: white;
+}
+
 .trybewarts-login {
   display: flex;
 }
 
 .trybewarts-login input {
-  padding: .8rem .5rem;
+  padding: 0.8rem 0.5rem;
   border: none;
   outline: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-weight: 600;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .trybewarts-login button {
-  padding: .8rem .5rem;
+  padding: 0.8rem 0.5rem;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-weight: 600;
   width: 10rem;
-  background-color: #4e2c83;
-  color: #fff;
+  background-color: rgb(78, 44, 131);
+  color: white;
 }
