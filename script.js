@@ -10,14 +10,14 @@ loginButton.addEventListener('click', () => {
   }
 });
 
-const evaluationNote = document.querySelector('#label-rate');
-for (let note = 1; note <= 10; note += 1) {
-    let input = document.createElement('input');
-    let label = document.createElement('label');
-    input.type = 'radio';
-    input.name = 'rate';
-    input.value = note;
-    label.innerText = note;
-    evaluationNote.appendChild(label);
-    evaluationNote.appendChild(input);
-}
+// const evaluationNote = document.querySelector('#label-rate');
+// for (let note = 1; note <= 10; note += 1) {
+//     let input = document.createElement('input');
+//     let label = document.createElement('label');
+//     input.type = 'radio';
+//     input.name = 'rate';
+//     input.value = note;
+//     label.innerText = note;
+//     evaluationNote.appendChild(label);
+//     evaluationNote.appendChild(input);
+// }
