@@ -9,3 +9,14 @@
   width: 100%;
   display: flex;
 }
+.trybewarts-login {
+  display: flex;
+  align-items: space-around;
+}
+main {
+  display: flex;
+}
+
+.evaluation-form {
+  width: 675px;
+}
