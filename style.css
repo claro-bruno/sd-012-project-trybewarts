@@ -2,25 +2,27 @@
     margin: 0;
 }
 
-#cabecalho {
+.header {
     display: flex;
     background-color: rgb(50, 167, 145);
     width: 100%;
     height: 60px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.formulario-header {
+#trybewarts-header-title {
+    align-self: center;
+}
+
+.trybewarts-login {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-self: center;
 }
 
-.formulario-header label,
+.trybewarts-login label,
 button {
     margin: 0px 10px 0px 10px;
     align-self: center;
-    justify-self: center;
 }
 
 main {
