@@ -9,14 +9,17 @@
 }
 
 /* Linha Divisória */
-main, form {
+main {
+  display: flex;
+}
+
+form {
   display: flex;
 }
 
 #evaluation-form {
-  width: 675px !important;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  width: 675px;
+  flex-flow: column nowrap;
   flex-basis: auto;
 }
 
@@ -24,7 +27,11 @@ main, form {
   height: 500px;
 }
 
-main input, main select {
+main input {
+  margin-bottom: 20px;
+}
+
+main select {
   margin-bottom: 20px;
 }
 
@@ -35,7 +42,18 @@ main input, main select {
   box-sizing: border-box;
 }
 
-main input:nth-of-type(1), main input:nth-of-type(2) {
+.email-casa {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box; 
+}
+
+main input:nth-of-type( 1 ) {
+  flex-direction: row;
+}
+
+main input:nth-of-type( 2 ) {
   flex-direction: row;
 }
 
@@ -44,7 +62,7 @@ main input:nth-of-type(1), main input:nth-of-type(2) {
 }
 
 .pergunta-aprender {
-    display: flex;
+  display: flex;
 }
 
 .pergunta-familia {
