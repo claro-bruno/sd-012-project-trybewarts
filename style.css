@@ -1,8 +1,3 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -22,9 +17,7 @@
   margin: auto;
 }
 
-#email,
-#senha,
-#botao-login {
+#email , #senha , #botao-login {
   width: 200px;
   height: 30px;
 }
