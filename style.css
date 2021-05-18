@@ -12,3 +12,8 @@
 .trybewarts-login {
   display: flex;
 }
+
+#trybewarts-header-title {
+  display: flex;
+  align-items: center;
+}
