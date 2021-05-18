@@ -7,7 +7,11 @@
   background-color: rgb(50, 167, 145);
   width: 100%;
   height: 60px;
+<<<<<<< HEAD
   justify-content: space-evenly;
+=======
+  justify-content: space-between;
+>>>>>>> e8ac4547686571c53bb2d3bc2b015f2ff6e9f299
 }
 
 #trybewarts-header-title {
@@ -19,8 +23,8 @@
   align-self: center;
 }
 
-.trybewarts-login label , button {
-  margin: 0 10px;
+.trybewarts-login input , button {
+  margin: 0 5px;
   align-self: center;
 }
 
