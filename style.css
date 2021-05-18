@@ -13,3 +13,9 @@
 #trybewarts-header-title {
   color: white;
 }
+
+.trybewarts-login {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
