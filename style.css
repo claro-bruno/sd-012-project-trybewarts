@@ -2,6 +2,8 @@
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 15px 150px;
 }
 
 .trybewarts-header-logo {
@@ -38,4 +40,18 @@
   height: 30px;
   width: 120px;
   align-self: center;
+}
+
+#trybewarts-header-title {
+  display: flex;
+  justify-content: center;
+}
+
+#evaluation-form {
+  display:flex;
+  width: 675px
+}
+
+main {
+  display:flex;
 }
