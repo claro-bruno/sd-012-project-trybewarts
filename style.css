@@ -23,3 +23,12 @@
   display: flex;
   align-self: center;
 }
+.main-content {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
