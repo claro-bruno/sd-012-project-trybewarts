@@ -7,7 +7,7 @@ main {
   display: flex;
 }
 
-#evaluation-form {
+main {
   display: flex;
   width: 675px;
   flex-direction: column;
@@ -15,4 +15,19 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#evaluation-form {
+  flex-wrap: wrap;
+} 
+#input-name {
+  width: 40%;
+}
+
+#input-lastname {
+  width: 40%;
+}
+
+#input-email {
+  width: 40%;
 }
