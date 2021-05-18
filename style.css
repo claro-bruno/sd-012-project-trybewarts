@@ -31,6 +31,6 @@ body {
   align-items: center;
 }
 
-input.login, input.senha, button.logar {
+.login , .senha , .logar {
   margin: 5px;
 }
