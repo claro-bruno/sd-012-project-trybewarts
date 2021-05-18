@@ -16,6 +16,7 @@ main form {
   display: flex;
   background-color: rgb(50, 167, 145);
   padding: 10px;
+  margin-bottom: 50px;
   align-items: center;
   justify-content: space-between;    
 }
@@ -24,8 +25,13 @@ main form {
   display: flex;    
 }
 
-.label-content {
-    flex-flow: column;
+ 
+.container-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+#label-content {
+    display: flex;
+    flex-direction: column;
 }  
-
-
