@@ -10,3 +10,16 @@ function logar() {
   }
 }
 buttonLogin.addEventListener('click', logar);
+
+const buttonEnviar = document.getElementById('submit-btn');
+const agreement = document.getElementById('agreement');
+
+function enviar() {
+  if (buttonEnviar.disabled === true) {
+    buttonEnviar.disabled = false;
+  } else {
+    buttonEnviar.disabled = true;
+  }
+}
+
+agreement.addEventListener('click', enviar);
