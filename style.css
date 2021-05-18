@@ -53,3 +53,8 @@
   display: flex;
   flex-direction: column;
 }
+
+.label-rate-container{
+ display: inline;
+
+}
