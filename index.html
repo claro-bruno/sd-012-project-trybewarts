@@ -21,18 +21,18 @@
     <main class="flex">
         <form id="evaluation-form" class="flex" action="">
             <div class="nome-sobrenome">
-                <input id="input-name" placeholder="Nome" type="text">
-                <input id="input-lastname" placeholder="Sobrenome" type="text">
+                <input id="input-name" name='nome' placeholder="Nome" type="text">
+                <input id="input-lastname" name='sobrenome' placeholder="Sobrenome" type="text">
             </div>
             <div class="email-casa">
-                <input id="input-email" placeholder="Email" type="text">
+                <input id="input-email" name='email' placeholder="Email" type="text">
                 <label id="house-family" for="house">
                 </label>
-                <select name="" id="house">
-                    <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                    <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                    <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                    <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                <select name="casa" id="house">
+                    <option name='casa' value="Gitnória" id="gitnoria-house">Gitnória</option>
+                    <option name='casa' value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                    <option name='casa' value="Corvinode" id="corvinode-house">Corvinode</option>
+                    <option name='casa' value="Pytherina" id="pytherina-house">Pytherina</option>
                 </select>
             </div>
             <label id="label-family" for="family">
@@ -44,12 +44,12 @@
             <label id="label-content" for="subject">
               <p>Qual conteúdo você está com mais vontade de aprender?"</p>
             </label>
-              <a><input  class="subject" type="checkbox" value="HoFs">Hofs</a>
-              <a><input  class="subject" type="checkbox" value="Jest">Jest</a>
-              <a><input  class="subject" type="checkbox" value="Promises">Promises</a>
-              <a><input  class="subject" type="checkbox" value="React">React</a>
-              <a><input  class="subject" type="checkbox" value="SQL">SQL</a>
-              <a><input  class="subject" type="checkbox" value="Python">Python</a>
+              <a><input name="subject" class="subject" type="checkbox" value="HoFs">Hofs</a>
+              <a><input name="subject" class="subject" type="checkbox" value="Jest">Jest</a>
+              <a><input name="subject" class="subject" type="checkbox" value="Promises">Promises</a>
+              <a><input name="subject" class="subject" type="checkbox" value="React">React</a>
+              <a><input name="subject" class="subject" type="checkbox" value="SQL">SQL</a>
+              <a><input name="subject" class="subject" type="checkbox" value="Python">Python</a>
             <div class="wrap-rate">
             <label id="label-rate">
               <p>Como você avalia a Trybewarts?</p>
@@ -67,7 +67,7 @@
             </div>
             <label class="textarea" >
               <p>Deixe seu comentário:</p>
-              <textarea id="textarea" maxlength="500"></textarea>
+              <textarea name='comentario' id="textarea" maxlength="500"></textarea>
             </label>
             <div id="counter">500</div>
             <label id="label-infos">
