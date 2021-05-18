@@ -1,4 +1,15 @@
+<<<<<<< HEAD
+.container {
+    display: flex;
+}
+
+#evaluation-form {
+    display: flex;
+    width: 675px;
+}
+=======
 header {
   background-color: rgb(50, 167, 145);
   display: flex;
 }
+>>>>>>> 17f3b223601a46f6f4e10e90a43955491075dbdc
