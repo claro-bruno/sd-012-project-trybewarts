@@ -23,3 +23,7 @@ function enviar() {
 }
 
 agreement.addEventListener('click', enviar);
+
+textarea.addEventListener('input', () => {
+  counter.innerText = 500 - textarea.value.length
+});
