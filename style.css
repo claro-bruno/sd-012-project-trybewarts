@@ -33,3 +33,8 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.div-family {
+  display: flex;
+  flex-direction: column;
+}
