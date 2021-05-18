@@ -22,16 +22,20 @@
 <main>
   <form id="evaluation-form">
     <fieldset class="form-group">
+      <div class="nome-e-sobrenome-container">
         <input type="text" class="form-control" id="input-name" placeholder="Nome">
         <input type="text" class="form-control" id="input-lastname" placeholder="Sobrenome">
+      </div>
+      <div class="email-e-casa-container">
         <input type="text" class="form-control" id="input-email" placeholder="Email">
-        <div class="input-group mb-3">
+        <div class="input-group">
           <div class="input-group-prepend">
             <label class="input-group-text" for="house">Casa:</label>
           </div>
-          <select class="form-select form-select-sm" id="house">
+          <select class="form-select" id="house">
           </select>
         </div>
+      </div>
     </fieldset>
   </form>
   <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
