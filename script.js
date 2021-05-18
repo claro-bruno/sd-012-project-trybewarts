@@ -1,6 +1,9 @@
+const emailLogin = document.getElementById('email-login');
+const passwordLogin = document.getElementById('password-login');
+
 function login() {
   if (
-    emailLogin.value === 'tryber@teste.com' 
+    emailLogin.value === 'tryber@teste.com'
     && passwordLogin.value === '123456'
   ) {
     alert('Olá, Tryber!');
@@ -9,7 +12,5 @@ function login() {
   }
 }
 
-const emailLogin = document.getElementById('email-login');
-const passwordLogin = document.getElementById('password-login');
 const formLogin = document.getElementsByClassName('trybewarts-login');
 formLogin[0].addEventListener('submit', login);
