@@ -90,3 +90,21 @@ footer p {
 #opcoesAprender {
   display: flex;
 }
+
+#email-casa {
+  display: flex;
+  flex-direction: row;
+}
+
+#input-email {
+  width: 150px;
+}
+
+#house {
+  width: 150px;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
