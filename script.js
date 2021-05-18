@@ -41,3 +41,17 @@ function activeBtn() {
 }
 
 agreement.addEventListener('click', activeBtn);
+
+// verificação login
+
+const loginBtn = document.querySelector('.login-btn');
+const login = document.querySelector('#login');
+const pass = document.querySelector('#password');
+
+loginBtn.addEventListener('click', () => {
+  if (login.value.length < 7 || pass.value.legth < 5) {
+    alert('Login ou senha inválidos.');
+  } else {
+    window.alert('Olá, Tryber!');
+  }
+});
