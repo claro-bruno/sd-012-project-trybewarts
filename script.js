@@ -26,6 +26,15 @@ textAreaInput.addEventListener('keyup', () => {
   counter.innerHTML = 500 - textAreaInput.value.length;
 });
 
+submitButton.addEventListener('click', () => {
+  const email = document.querySelector('#input-email');
+  const emailParagraph = document.createElement('p');
+  emailParagraph.innerHTML = `Email: ${email.value}`;
+  emailParagraph.id = 'input-email';
+  document.querySelector('#email-container').removeChild(email);
+  document.querySelector('#email-container').appendChild(emailParagraph);
+});
+
 // const evaluationNote = document.querySelector('#label-rate');
 // for (let note = 1; note <= 10; note += 1) {
 //     let input = document.createElement('input');
