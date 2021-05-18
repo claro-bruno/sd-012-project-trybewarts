@@ -1,4 +1,22 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-around;
+  align-items: center;
+}
+
+header input {
+  height: 40px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+header button {
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100px;
+  background-color: rgb(75, 0, 75);
+  color: white;
 }
