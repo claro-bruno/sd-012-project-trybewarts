@@ -22,8 +22,9 @@
   margin: auto;
 }
 
-header input,
-button {
+#email,
+#senha,
+#botao-login {
   width: 200px;
   height: 30px;
 }
