@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 header{
     background-color: rgb(50, 167, 145);
     display: flex;
@@ -29,3 +30,20 @@ main{
 .trybewarts-login {
     display: flex;
 } 
+=======
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-evenly;
+}
+.trybewarts-header-logo {
+  width: 50px;
+}
+#trybewarts-header-title {
+  font-size: 30px;
+  color: white;
+}
+.trybewarts-login {
+  display: flex;
+}
+>>>>>>> 649cefc945d1599d29bfddaf0606ffaedc807c14
