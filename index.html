@@ -28,19 +28,21 @@
   <main class="container">
     <form id="evaluation-form">
       <h2 id="form-title">Forms</h2>
-      <div id="fullname-container">
-        <input name="name" id="input-name" placeholder="Nome">
-        <input name="lastname" id="input-lastname" placeholder="Sobrenome">
-      </div>
-      <div id="contact-container">
-        <input name="email" id="input-email" placeholder="Email">
-        <label for="house" id="house-label">Casa</label>
-        <select id="house">
-          <option id="gitnoria-house">Gitnória</option>
-          <option id="reactpuff-house">Reactpuff</option>
-          <option id="corvinode-house">Corvinode</option>
-          <option id="pytherina-house">Pytherina</option>
-        </select>
+      <div id="form-section1">
+        <div id="fullname-container">
+          <input name="name" id="input-name" placeholder="Nome">
+          <input name="lastname" id="input-lastname" placeholder="Sobrenome">
+        </div>
+        <div id="contact-container">
+          <input name="email" id="input-email" placeholder="Email">
+          <label for="house" id="house-label">Casa</label>
+          <select id="house">
+            <option id="gitnoria-house">Gitnória</option>
+            <option id="reactpuff-house">Reactpuff</option>
+            <option id="corvinode-house">Corvinode</option>
+            <option id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
       </div>
       <div id="form-section2">
         <div id="family-container">
@@ -69,6 +71,7 @@
             <label id="promises-label" for="promises-option">Promises</label>
             <input type="checkbox" id="react-option" value="React">
             <label id="react-label" for="reactoption">React</label>
+            <br>
             <input type="checkbox" id="sql-option" value="SQL">
             <label id="sql-label" for="sql-option">SQL</label>
             <input type="checkbox" id="python-option" value="Python">
