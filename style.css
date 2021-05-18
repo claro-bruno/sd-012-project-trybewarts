@@ -17,3 +17,21 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#section-name {
+  display: flex;
+}
+
+#input-name {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+#input-lastname {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-grow: 1;
+}
