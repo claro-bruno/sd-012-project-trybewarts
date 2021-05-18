@@ -53,3 +53,17 @@ header {
 #btn-login {
   width: 100%;
 }
+
+#family-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-section2 {
+  display: flex;
+  margin: 10px 20px;
+}
+
+#family-container , #content-container {
+  width: 50%;
+}
