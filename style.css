@@ -44,15 +44,15 @@ h2 {
   height: 500px;
 }
 
-#label-family {
+#div-radio {
   display: inline-block;
 }
 
-#label-family label {
+#div-radio label {
   display: block;
 }
 
-#label-content {
+#div-check {
   display: inline-block;
   width: 60%;
   float: right;
@@ -61,4 +61,8 @@ h2 {
 .footer {
   display: flex;
   justify-content: center;
+}
+
+.textarea {
+    display: block;
 }

@@ -40,8 +40,8 @@
             </div>
             <hr>
             <div>
-                <div id="label-family">
-                    <p>Qual sua família?</p>
+                <div id="div-radio">
+                    <label id="label-family">Qual sua família?</label>
                     <label for="frontend">
                         <input id="frontend" name="family" type="radio" value="Frontend">
                         Familia Frontend
@@ -55,28 +55,28 @@
                         Familia FullStack
                     </label>
                 </div>
-                <div id="label-content">
-                    <p>Qual conteúdo você está com mais vontade de aprender?</p>
+                <div id="div-check">
+                    <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
                     <div>
                         <label for="HoFs">
-                            <input id="HoFs" name="HoFs" type="checkbox" value="HoFs">HoFs
+                            <input id="HoFs" class="subject" name="HoFs" type="checkbox" value="HoFs">HoFs
                         </label>
                         <label for="Jest">
-                            <input id="Jest" name="Jest" type="checkbox" value="Jest">Jest
+                            <input id="Jest" class="subject" name="Jest" type="checkbox" value="Jest">Jest
                         </label>
                         <label for="Promises">
-                            <input id="Promises" name="Promises" type="checkbox" value="Promises">Promises
+                            <input id="Promises" class="subject" name="Promises" type="checkbox" value="Promises">Promises
                         </label>
                     </div>
                     <div>
                         <label for="React">
-                            <input id="React" name="React" type="checkbox" value="React">React
+                            <input id="React" class="subject" name="React" type="checkbox" value="React">React
                         </label>
                         <label for="SQL">
-                            <input id="SQL" name="SQL" type="checkbox" value="SQL">SQL
+                            <input id="SQL" class="subject" name="SQL" type="checkbox" value="SQL">SQL
                         </label>
                         <label for="Python">
-                            <input id="Python" name="Python" type="checkbox" value="Python">Python
+                            <input id="Python" class="subject" name="Python" type="checkbox" value="Python">Python
                         </label>
                     </div>
                 </div>
@@ -116,10 +116,8 @@
                 </label>
             </div>
             <div>
-                <p>Deixe seu comentário:</p>
-                <label for="coment" class="textarea">
+                <label for="coment" class="textarea">Deixe seu comentário:</label>
                     <textarea name="" id="coment" cols="30" rows="10" maxlength="500"></textarea>
-                </label>
             </div>
             <div>
                 <label for="" id="label-infos">
