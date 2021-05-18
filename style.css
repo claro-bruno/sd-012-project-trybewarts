@@ -1,14 +1,9 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
-main{
-    display: flex;
-    
+main {
+  display: flex;
 }
 
-#evaluation-form{
-    display: flex;
-    width: 675px;
-    flex-direction: column;
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
 }
