@@ -8,27 +8,25 @@ header {
 main {
   display: flex;
 }
-
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
 }
-
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
 }
-
 .trybewarts-header-logo {
   width: 50px;
 }
-
 #trybewarts-header-title {
   font-size: 30px;
   color: white;
 }
-
 .trybewarts-login {
   display: flex;
+}
+#trybewarts-forms-logo{
+  height: 500px;
 }
