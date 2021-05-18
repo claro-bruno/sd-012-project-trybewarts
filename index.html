@@ -10,7 +10,7 @@
     <header class="header">
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="trybewarts-logo">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <form action="get" class="trybewarts-login">
+        <form action="" method="GET" class="trybewarts-login">
           <input type="email" name="login" placeholder="Login" id="login">
           <input type="text" name="Senha" placeholder="Senha" id="senha">
           <button type="submit" id="logar">Logar</button>
@@ -20,14 +20,14 @@
       
     </section>
     <main>
-      <form action="get" id="evaluation-form">
-        <div>
+      <form action="" method="GET" id="evaluation-form">
+        <div class="input1">
           <input type="text" name="nome" placeholder="Nome" id="input-name">
           <input type="text" name="sobrenome" placeholder="Sobrenome" id="input-lastname">
         </div>
-        <div>
+        <div class="input1"> 
           <input type="email" name="email" placeholder="Email" id="input-email">
-          <label for="casa">Casa:</label>
+          <label for="Casa">Casa:</label>
           <select name="Casa" id="house">
             <option id="gitnoria-house" value="Gitnória">Gitnória</option>
             <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
@@ -35,6 +35,17 @@
             <option id="pytherina-house" value="Pytherina">Pytherina</option>
           </select>
         </div>       
+        <hr>
+        <div class="input2">
+          <p id="label-family">Qual sua família?</p>
+          <input type="radio" name="family" value="Frontend" id="radioFront">
+          <label for="radioFront">Frontend</label>
+          <input type="radio" name="family" value="Backend" id="radioBack">
+          <label for="radioBack">Backend</label>
+          <input type="radio" name="family" value="FullStack" id="radioFull">
+          <label for="radioFull">FullStack</label>
+        </div>
+
       </form>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Casa">
     </main>
