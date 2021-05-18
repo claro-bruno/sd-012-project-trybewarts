@@ -23,16 +23,11 @@
 #evaluation-form {
   width: 675px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
 }
 
 #name-container {
   display: flex;
-}
-
-#evaluation-form select {
-  /* width: 145px; */
 }
 
 #trybewarts-forms-logo {
