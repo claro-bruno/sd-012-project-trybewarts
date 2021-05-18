@@ -44,8 +44,22 @@ main {
   width: 100%;
 }
 
+#conteiner-maior {
+  display: flex;
+}
+
 #family-conteiner {
   display: flex;
   flex-direction: column;
+  width: 40%;
+}
 
+#family-conteiner2 {
+  display: flex;
+  width: 60%;
+  flex-flow: row wrap;
+}
+
+.subject {
+  justify-content:space-around;
 }
