@@ -56,4 +56,14 @@
 
 .label-rate-container {
   display: inline;
+  margin: 30px;
+}
+
+#textarea {
+  resize: none;
+  margin: 10px;
+}
+
+.textarea {
+  margin: 10px;
 }
