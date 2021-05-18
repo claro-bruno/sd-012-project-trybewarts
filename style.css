@@ -25,6 +25,10 @@ main {
   display: flex;
 }
 
+.email-house {
+  display: flex;
+}
+
 #trybewarts-header-title {
   display: flex;
   justify-content: center;
@@ -43,11 +47,7 @@ main {
   justify-content: center;
 }
 
-#input-name {
-  display: flex;
+#house {
+  width: 100%;
 }
 
-#input-lastname {
-  display: flex;
-  justify-content: right;
-}
