@@ -33,3 +33,13 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.input-form-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-form-email {
+  display: flex;
+  flex-direction: row;
+}
