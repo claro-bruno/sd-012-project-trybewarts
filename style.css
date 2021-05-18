@@ -5,6 +5,10 @@
   align-items: center;
 }
 
+hr {
+  width: 100%;
+}
+
 .trybewarts-login {
   display: flex;
 }
