@@ -2,14 +2,15 @@ const selectButton = document.querySelector('.botaoSubmit');
 const selectLogin = document.querySelector('#login');
 const selectPassword = document.querySelector('#senha');
 
-selectButton.addEventListener('click', verificarLogin);
-function verificarLogin (event) {
+function verificarLogin(event) {
     if (
-      selectLogin.value === 'tryber@teste.com' 
-      && selectPassword.value === '123456'
-    ) {
-      alert('Olá, Tryber!');
-    } else {
-      alert('Login ou senha inválidos.');
-    }
-  }
+        selectLogin.value === 'tryber@teste.com' &&
+        selectPassword.value === '123456'
+        ) {
+            alert('Olá, Tryber!');
+        } else {
+            alert('Login ou senha inválidos.');
+        }
+    };
+selectButton.addEventListener('click', verificarLogin);
+    
