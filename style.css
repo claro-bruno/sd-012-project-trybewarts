@@ -67,3 +67,11 @@
 .textarea {
   margin: 10px;
 }
+
+#label-infos {
+  margin: 10px;
+}
+
+footer {
+  background-color: lightslategrey;
+}
