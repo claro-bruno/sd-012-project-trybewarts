@@ -17,3 +17,13 @@
 .trybewarts-header-title {
   justify-content: center;
 }
+
+main {
+  display: flex;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
