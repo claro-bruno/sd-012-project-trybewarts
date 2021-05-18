@@ -83,6 +83,20 @@
   margin: 15px;
 }
 
+#submit {
+  display: flex;
+  flex-flow: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+#submit-btn {
+  width: 80%;
+  padding: 1%;
+  margin: auto;
+}
+
 footer {
   display: flex;
   flex-direction: row;
