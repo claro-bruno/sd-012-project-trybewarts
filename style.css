@@ -51,6 +51,14 @@ h1 {
   color: white;
 }
 
+footer {
+  padding: 8px;
+  text-align: center;
+  background-color: rgb(60, 63, 73);
+  color: white;
+  font-size: 14px;
+  margin-top: 40px;
+}
 
 /* Linha Divisória */
 main {
