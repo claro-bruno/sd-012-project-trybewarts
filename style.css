@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+main{
+  display: flex;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -28,4 +32,9 @@
 
 #trybewarts-header-title {
   color: white;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
