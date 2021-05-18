@@ -7,7 +7,8 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   padding: 5px;
 }
 
@@ -19,4 +20,35 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#trybewarts-header-title {
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#evaluation-form {
+  width: 675px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.direction-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.direction-column {
+  display: flex;
+  flex-direction: column;
 }
