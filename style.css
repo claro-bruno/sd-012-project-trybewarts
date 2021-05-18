@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -14,16 +15,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+>>>>>>> 22c51900b4f03f747e62b682ea041d3f1f407b4a
 }
+
 .header {
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    background-color: rgb(50, 167, 145);
-    display: flex;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: rgb(50, 167, 145);
+  display: flex;
 }
 
 .header .trybewarts-header-logo {
-    width: 50px;
+  width: 50px;
 }
 >>>>>>> 0484f99a4dc18f27dfceb59a9d9913b1ac994e75
