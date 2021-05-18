@@ -1,7 +1,7 @@
 const botao = document.getElementById('submit-btn');
 const confirma = document.getElementById('agreement');
 botao.disabled = true;
-confirma.addEventListener('change', function (){
+confirma.addEventListener('change', ()=> {
   if (confirma.checked === false) {
     botao.disabled = true;
   }
