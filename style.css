@@ -22,8 +22,17 @@
   align-self: center;
 }
 
+main {
+  display: flex;
+  justify-content: space-around;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   width: 675px;
+}
+
+.main-logo {
+  height: 500px;
 }
