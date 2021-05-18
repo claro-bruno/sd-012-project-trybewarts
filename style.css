@@ -17,7 +17,8 @@
   margin: auto;
 }
 
-input , button {
+input,
+button {
   width: 200px;
   height: 30px;
 }
@@ -28,4 +29,9 @@ main {
 
 #evaluation-form {
   display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
 }
