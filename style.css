@@ -18,3 +18,7 @@
 .trybewarts-header-logo {
     align-self: flex-start;
   }
+
+  #trybewarts-header-title {
+    justify-content: center;
+  }
