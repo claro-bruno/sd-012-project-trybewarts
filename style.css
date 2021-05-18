@@ -5,11 +5,14 @@ main {
 form {
   display: flex;
   width: 675px;
-  flex-direction: column;
 }
 
 body {
   margin: 0;
+}
+
+main form {
+  flex-direction: column;
 }
 
 #trybewarts-forms-logo {
