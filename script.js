@@ -47,7 +47,7 @@ function rate() {
 }
 
 function isChecked() {
-  if (checkboxAgreement.checked === 1) {
+  if (checkboxAgreement.checked === true) {
     submitButton.disabled = 0;
   } else {
     submitButton.disabled = 1;
