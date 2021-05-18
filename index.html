@@ -14,18 +14,23 @@
 		<form class="trybewarts-login" action="">
 			<input type="text" id = "login-input" class = "login-input" placeholder="Login">
             <input type="password" id="pass-input" class = "pass-input" placeholder="Senha">
-            <button class = "loginButton" id="login-button">Logar</button>
+            <button class = "login-button" id="login-button">Logar</button>
 		</form>
 	</header>
     
     <main>
         <form action="get" id = "evaluation-form">
             <h1>Forms</h1>
-            <input id="input-name" type="text" placeholder="Nome">
-            <input id="input-lastname" type="text" placeholder="Sobrenome">
-            <input id="input-email" type="text" placeholder="Email">
+            <div id="name-container">
+                <input id="input-name" type="text" placeholder="Nome">
+                <input id="input-lastname" type="text" placeholder="Sobrenome">
+            </div>
 
-            <select name="Casa" id="house"></select>
+            <div id="house-container">
+                <input id="input-email" type="text" placeholder="Email">
+                <label for="house">Casa</label>
+                <select name="Casa" id="house"></select>
+            </div>
         </form>
         <img id = "trybewarts-forms-logo" src="./images/trybewarts-colored.svg" alt="Logo da Trybewarts">
     </main>

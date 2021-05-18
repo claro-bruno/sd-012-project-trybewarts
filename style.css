@@ -9,6 +9,11 @@
   display: flex;
   height: 50px;
   align-items: center;
+  justify-content: space-around;
+}
+
+.trybewarts-header-logo {
+    width: 50px;
 }
 
 .trybewarts-login {
@@ -24,10 +29,12 @@
 
 .login-input, .pass-input {
     padding-left: 15px;
+    margin-right: 10px;
 }
 
 .login-button {
     text-align: center;
+    width: 100px;
 }
 
 main {
@@ -38,7 +45,25 @@ main {
     display: flex;
     width: 675px;
     flex-direction: column;
+    align-items: center;
 }
+
+#name-container {
+    display: flex;
+}
+
+#name-container input {
+    width: 50%;
+}
+
+#house-container {
+    display: flex;
+}
+
+#house-container input, #house-container select {
+    width: 50%;
+}
+
 
 #trybewarts-forms-logo {
     height: 500px;
