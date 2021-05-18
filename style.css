@@ -8,3 +8,10 @@
   display: flex;
   background-color: rgb(50, 167, 145);
 }
+<<<<<<< HEAD
+=======
+
+.trybewarts-header-logo {
+  align-self: flex-start;
+}
+>>>>>>> ff02cbafa5b3e164f91a8985fa6773731e44334b
