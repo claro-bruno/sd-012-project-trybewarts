@@ -13,3 +13,14 @@
 .flex-container {
   display: flex;
 }
+
+.main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  max-width: 675px;
+  flex-direction: column;
+  
+}
