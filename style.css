@@ -12,7 +12,7 @@ html {
 }
 
 :root {
-  --verde-trybe: rgb(50 , 167 , 145);
+  --verde-trybe: rgb(50, 167, 145);
 }
 
 body {
@@ -34,6 +34,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 #trybewarts-header-title {
   font-family: MagicSchool, fantasy, serif;
   font-weight: 500;
@@ -44,7 +45,7 @@ body {
   height: 500px;
 }
 
-#main, #evaluation-form {
+#main , #evaluation-form {
   display: flex;
 }
 
