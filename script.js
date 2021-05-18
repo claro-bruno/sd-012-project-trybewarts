@@ -19,6 +19,13 @@ checkAgreement.addEventListener('change', (event) => {
   }
 });
 
+const textAreaInput = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+
+textAreaInput.addEventListener('keyup', () => {
+  counter.innerHTML = 500 - textAreaInput.value.length;
+});
+
 // const evaluationNote = document.querySelector('#label-rate');
 // for (let note = 1; note <= 10; note += 1) {
 //     let input = document.createElement('input');
