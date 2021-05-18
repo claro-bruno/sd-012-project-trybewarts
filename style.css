@@ -29,6 +29,7 @@
   border: 1px solid black;
   cursor: pointer;
   border-radius: 5px;
+  width: 60px;
 }
 
 header form input {
@@ -42,9 +43,29 @@ main {
   display: flex;
 }
 
+#input-name {
+  width: 245px;
+}
+
+#input-lastname {
+  width: 245px;
+}
+
 #input-name-lastname {
   margin-top: 10%;
   justify-self: stretch;
+}
+
+#house {
+  margin: 0 5.6px;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+#input-email {
+  width: 304px;
 }
 
 #evaluation-form input {
@@ -59,6 +80,15 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
+}
+
+hr {
+  margin: 5% 2%;
+}
+
+#label-rate-container {
+  margin-left: 2%;
+  display: flex;
 }
 
 #trybewarts-forms-logo {
