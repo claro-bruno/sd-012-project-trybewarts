@@ -19,7 +19,6 @@
             <label for="senha" id="label-senha">Senha</label>
             <input type="text" name="senha" id="senha" placeholder="Senha">
             <button id="singUp"> Sing Up</button>
-
         </form>
     </header>
     <main class="container">
@@ -41,14 +40,41 @@
           <option value="Pytherina" id="pytherina-house">Pytherina</option>
         </select>
             </div>
-            <div>
-                <label id="label-family">Qual a sua Família?</label>
-                <input type="radio" name="family" id="family-FrontEnd" value="Frontend">
-                <label for="family-Frontend">Família Frontend</label>
-                <input type="radio" name="family" id="family-Backend" value="Backend">
-                <label for="family-Backend">Família Backend</label>
-                <input type="radio" name="family" id="family-fullstack" value="FullStack">
-                <label for="family-fullstack">Família FullStack</label>
+            <div class="container">
+                <div id="family-radios">
+                    <label id="label-family">Qual sua família?</label>
+                    <div>
+                        <input type="radio" name="family" id="family-FrontEnd" value="Frontend">
+                        <label for="family-Frontend">Família Frontend</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="family" id="family-Backend" value="Backend">
+                        <label for="family-Backend">Família Backend</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="family" id="family-fullstack" value="FullStack">
+                        <label for="family-fullstack">Família FullStack</label>
+                    </div>
+                </div>
+                <div id="content-checkboxes">
+                    <div>
+                        <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
+                    </div>
+                    <div>
+                        <input class="subject" type="checkbox" name="content" id="HoFs-content" value="HoFs">
+                        <label for="HoFs-content">HoFs</label>
+                        <input class="subject" type="checkbox" name="content" id="Jest-content" value="Jest">
+                        <label for="Jest-content">Jest</label>
+                        <input class="subject" type="checkbox" name="content" id="Promises-content" value="Promises">
+                        <label for="Promises-content">Promises</label>
+                        <input class="subject" type="checkbox" name="content" id="React-content" value="React">
+                        <label for="React-content">React</label>
+                        <input class="subject" type="checkbox" name="content" id="SQL-content" value="SQL">
+                        <label for="SQL-content">SQL</label>
+                        <input class="subject" type="checkbox" name="content" id="Python-content" value="Python">
+                        <label for="Python-content">Python</label>
+                    </div>
+                </div>
             </div>
 
 
@@ -57,13 +83,14 @@
     </main>
 
 
-    <script src="script.js"></script>
+
 
     <footer id="rodape">
         Direitos reservados à Trybewarts&copy;
     </footer>
 
 
+    <script src="script.js"></script>
 </body>
 
 </html>
