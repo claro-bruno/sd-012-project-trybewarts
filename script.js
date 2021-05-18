@@ -4,9 +4,8 @@ const senha = document.querySelector('#senha');
 
 botaoLogar.addEventListener('click', () => {
   if (login.value === 'tryber@teste.com' && senha.value === '123456') {
-    return window.alert('Olá, Tryber!');
-  }
-  if (login.value !== 'tryber@teste.com' && senha.value !== '123456') {
-    return window.alert('Login ou senha inválidos.');
+    alert('Olá, Tryber!');
+  } else {
+    alert('Login ou senha inválidos.');
   }
 });
