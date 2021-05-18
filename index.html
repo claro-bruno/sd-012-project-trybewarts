@@ -9,8 +9,8 @@
 </head>
 <body>
     <header class="cabecalho">
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
         <img class = "trybewarts-header-logo" src="/images/trybewarts-header-logo.svg" alt="logo projeto cabecalho">
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
         <form class="trybewarts-login" action="" method="get">
             <label for="input-login"></label>
             <input type="text" name="login" id="input-login" placeholder="Login">
@@ -22,15 +22,38 @@
     </header>
 
 
-/* comentario  nao ta indo pq? */
-// teste comentario 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <main class="container-form-1">
-    <label>
-        <form id="evaluation-form" class="formEvaluation">
-
-        </form>
-    </label>
+    <form id="evaluation-form" class="formEvaluation">
+        <div class="form-row">
+                <div class="line-content">
+                  <label for="input-name">Nome</label>
+                  <input type="text" name="name" id="input-name" maxlength="40" placeholder="Nome" required>
+                </div>
+                <div class="line-content">
+                    <label for="input-lastname">Sobrenome</label>
+                    <input type="text" name="cpf" id="input-lastname" maxlength="40" placeholder="Sobrenome" required>
+                  </div>
+                <div class="line-content">
+                    <label for="input-email">Endereço de e-mail: </label>
+                    <input class="email-input" type="email" name="email" id="input-email" maxlength="50" placeholder="Email" required>
+                  </div>
+        </div>   
+    </form>
+    
 </main>
 
 
