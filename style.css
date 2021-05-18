@@ -20,10 +20,6 @@
   display: flex;
 }
 
-#main {
-    display: flex;
-}
-
 #evaluation-form {
     width: 675px;
     display: flex;
@@ -49,4 +45,47 @@
     justify-content: center;
     width: 65%;
     margin: auto;
+}
+
+.family-contents {
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2%;
+}
+
+#section-family {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    letter-spacing: 1px;
+}
+
+#text-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: flex-start;
+    margin-top: 2%;
+}
+
+#agree-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#agreement {
+    margin: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
