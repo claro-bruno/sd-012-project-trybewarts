@@ -1,6 +1,6 @@
-const login = document.getElementById('login');
-const password = document.getElementById('password');
-const loginButton = document.getElementById('login-btn');
+const login = document.querySelector('#login');
+const password = document.querySelector('#password');
+const loginButton = document.querySelector('#login-btn');
 const loginInput = 'tryber@teste.com';
 const passwordInput = '123456';
 
