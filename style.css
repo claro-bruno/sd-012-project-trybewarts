@@ -27,6 +27,6 @@ main {
   height: 500px;
 }
 
-#house-container{
+#house-container {
   display: flex;
 }
