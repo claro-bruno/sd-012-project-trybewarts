@@ -7,7 +7,8 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   padding: 5px;
 }
 
@@ -19,4 +20,8 @@ form {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#trybewarts-header-title {
+  color: white;
 }
