@@ -9,5 +9,17 @@ function login() {
   }
 }
 
-const formLogin = document.getElementsByClassName('trybewarts-login');
-formLogin[0].addEventListener('submit', login);
+const formLogin = document.getElementById('forms-login');
+formLogin.addEventListener('submit', login);
+
+const agreement = document.getElementById('agreement');
+
+function buttonStatus(agreement) {
+  if (agreement.checked) {
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    document.getElementById('submit-btn').disabled = true;
+  }
+}
+
+agreement.addEventListener('click', buttonStatus);

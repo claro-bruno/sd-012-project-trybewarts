@@ -16,7 +16,7 @@
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Trybewarts logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form class="trybewarts-login" action="" method="get">
+    <form id="forms-login" class="trybewarts-login" action="" method="get">
       <div class="mb-3">
         <input type="text" id="email-login" class="form-control" placeholder="Login">
         <input type="text" id="password-login" class="form-control" placeholder="Senha">
@@ -28,19 +28,21 @@
   <main class="container">
     <form id="evaluation-form">
       <h2 id="form-title">Forms</h2>
-      <div id="fullname-container">
-        <input name="name" id="input-name" placeholder="Nome">
-        <input name="lastname" id="input-lastname" placeholder="Sobrenome">
-      </div>
-      <div id="contact-container">
-        <input name="email" id="input-email" placeholder="Email">
-        <label for="house" id="house-label">Casa</label>
-        <select id="house">
-          <option id="gitnoria-house">Gitnória</option>
-          <option id="reactpuff-house">Reactpuff</option>
-          <option id="corvinode-house">Corvinode</option>
-          <option id="pytherina-house">Pytherina</option>
-        </select>
+      <div>
+        <div id="fullname-container">
+          <input name="name" id="input-name" placeholder="Nome">
+          <input name="lastname" id="input-lastname" placeholder="Sobrenome">
+        </div>
+        <div id="contact-container">
+          <input name="email" id="input-email" placeholder="Email">
+          <label for="house" id="house-label">Casa</label>
+          <select id="house">
+            <option id="gitnoria-house">Gitnória</option>
+            <option id="reactpuff-house">Reactpuff</option>
+            <option id="corvinode-house">Corvinode</option>
+            <option id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
       </div>
       <div id="form-section2">
         <div id="family-container">
@@ -69,6 +71,7 @@
             <label id="promises-label" for="promises-option">Promises</label>
             <input type="checkbox" id="react-option">
             <label id="react-label" for="reactoption">React</label>
+            <br>
             <input type="checkbox" id="sql-option">
             <label id="sql-label" for="sql-option">SQL</label>
             <input type="checkbox" id="python-option">
@@ -76,6 +79,7 @@
           </div>
         </div>
       </div>
+      <button type="submit" id="submit-btn" class="btn btn-primary mb-3" disabled>Enviar</button>
     </form>
     <aside class="img-container">
       <img class="trybewarts-body-logo" src="images/trybewarts-colored.svg" alt="Brasão Trybewarts" id="trybewarts-forms-logo">

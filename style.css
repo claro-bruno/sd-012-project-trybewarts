@@ -36,7 +36,7 @@ footer p {
 }
 
 .container {
-  margin: 0 auto;
+  margin: 1rem auto 0;
   display: flex;
   justify-content: center;
 }
@@ -74,6 +74,10 @@ footer p {
 
 #btn-login {
   width: 100%;
+}
+
+#submit-btn {
+  width: 40%;
 }
 
 #family-container {
