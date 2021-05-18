@@ -10,20 +10,20 @@ function login() {
   }
 }
 
-const formLogin = document.getElementById('forms-login');
-formLogin.addEventListener('submit', login);
+const formLoginHeader = document.getElementById('forms-login');
+formLoginHeader.addEventListener('submit', login);
 
 const agreement = document.getElementById('agreement');
 
-function buttonStatus(agreement) {
+function buttonStatus() {
   if (agreement.checked) {
     document.getElementById('submit-btn').disabled = false;
   } else {
     document.getElementById('submit-btn').disabled = true;
   }
 }
-
 agreement.addEventListener('click', buttonStatus);
+
 const formLogin = document.getElementsByClassName('trybewarts-login');
 formLogin[0].addEventListener('submit', login);
 
