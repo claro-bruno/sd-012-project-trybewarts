@@ -46,3 +46,13 @@ main {
   flex-direction: row;
   width: 40%;
 }
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#familias {
+  display: flex;
+  flex-direction: column;
+}
