@@ -3,3 +3,19 @@
     height: 80px;
     display: flex;
 }
+
+.trybewarts-login {
+    height: 30px;
+    display: flex;
+   align-content: space-between;
+    
+}
+
+main {
+    display: flex;
+}
+
+#evaluation-form {
+    display: flex;
+    width: 675px;
+}
