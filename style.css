@@ -5,6 +5,13 @@
   padding: 10px;
 }
 
+h1 {
+  justify-self: center;
+  color: white;
+  font-family: serif;
+  font-weight: 600;
+}
+
 .trybewarts-header-logo {
   max-width: 50px;
 }
@@ -14,7 +21,7 @@
   align-items: center;
 }
 
-.trybewarts-login input {
+.form-control {
   margin: 5px;
   max-width: 130px;
   max-height: 30px;
