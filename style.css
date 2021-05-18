@@ -76,3 +76,12 @@ main {
 #submit-btn {
   width: 100%;
 }
+
+#rodape {
+  background-color: rgb(50, 167, 145);
+  text-align: center;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
