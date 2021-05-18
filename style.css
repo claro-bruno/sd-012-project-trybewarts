@@ -25,6 +25,7 @@
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 #trybewarts-forms-logo {
   height: 500px;
   display: flex;
@@ -58,3 +59,11 @@
 #pytherina-house {
 
 }
+=======
+footer {
+  background-color: dimgray;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+>>>>>>> 39ab7d5e1b496d01522b3f0cd1616c7baf522232
