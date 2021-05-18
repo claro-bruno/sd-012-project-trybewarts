@@ -15,8 +15,7 @@ main {
 
 .trybewarts-login {
   display: flex;
-  justify-content: space-between;
-  justify-content: right;
+  justify-content: space-between right;
   height: 20px;
 }
 
