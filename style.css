@@ -7,3 +7,11 @@
 .trybewarts-login {
   display: flex;
 }
+
+.flex {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+}
