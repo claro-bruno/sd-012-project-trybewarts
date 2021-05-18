@@ -39,6 +39,7 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 #trybewarts-forms-logo {
@@ -53,4 +54,20 @@ main {
 
 #botaoLogar:hover {
   background-color: purple;
+}
+
+#divNomeSobrenome {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+#input-name {
+  flex-grow: 2;
+  margin-right: 10px;
+}
+
+#input-lastname {
+  flex-grow: 2;
 }
