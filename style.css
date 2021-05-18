@@ -1,7 +1,7 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  flex-flow: row: space-between;
+  flex-flow: space-between;
 }
 
 .trybewarts-header-logo {
@@ -39,6 +39,7 @@ main {
   flex-flow: row; 
   height: 10px;
   align-items: flex-start;
+  margin: 5px;
   
 }
 
@@ -47,11 +48,12 @@ main {
   flex-flow: row;
   height: 10px;
   align-items: flex-start;
-
+  margin: 5px;
 }
 
 #input-email {
-  flex-direction: column;
+  display: flex;
+  flex-flow: row;
   height: 10px;
   flex-wrap: wrap;
 
@@ -59,6 +61,7 @@ main {
 
 #house {
   heigh: 10px;
+  flex-wrap: wrap;
 }
 
 #gitnoria-house {
