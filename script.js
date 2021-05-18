@@ -13,3 +13,16 @@ function login() {
 }
 
 botaoLogar.addEventListener('click', login);
+
+const checkBox = document.getElementById('agreement');
+const submitButton = document.getElementById('submit-btn');
+
+function activateSubmit() {
+  if (checkBox.checked === true) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+}
+
+checkBox.addEventListener('click', activateSubmit);
