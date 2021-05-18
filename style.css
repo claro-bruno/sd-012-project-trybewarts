@@ -36,9 +36,14 @@ main {
   width: 675px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
+.div-container {
+  display: flex;
+  flex-direction: row;
+}
