@@ -26,6 +26,7 @@
 
   <main>
     <form id="evaluation-form" action="">
+
       <label id="label-forms">Forms</label>
       <div id="name-lastName">
         <input id="input-name" type="text" placeholder="Nome">
@@ -42,10 +43,42 @@
           <option id="pytherina-house" value="Pytherina">Pytherina</option>
         </select>
       </div>
-    </form>
 
-      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo Trybewarts Colorida">
+      <div class="family-contents">
+        <section id="section-family" class="section-family">
+            <label for="" id="label-family">Qual sua família?</label>
+            <div class="frontend">
+                <input type="radio" name="family" id="frontend" value="Frontend">
+                <label class="lbl-front" for="frontend">Familia Frontend</label>
+            </div>
+            <div class="backend">
+                <input type="radio" name="family" id="backend" value="Backend">
+                <label for="backend">Familia Backend</label>
+            </div>
+            <div class="fullstack">
+                <input type="radio" name="family" id="fullstack" value="FullStack">
+                <label for="fullstack">Familia FullStack</label>
+            </div>
+        </section>
+    </div>
+
+    <section id="text-area">
+      <label class="textarea">Deixe seu comentário:</label>
+      <textarea name="textarea" id="textarea-txt" cols="60" rows="8" maxlength="500"></textarea>
+      <span id="counter">500</span>
+    </section>
+    
+    <div id="agree-btn">
+      <input type="checkbox" name="agree" id="agreement">
+      <label for="agree" id="label-infos">Você concorda com o uso das informações acima?</label>
+    </div>
+    
+  </form>
+
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo Trybewarts Colorida">
   </main>
+
+  <footer>Direitos reservados à Trybewarts©</footer>
 
   <script src="script.js"></script>
 </body>

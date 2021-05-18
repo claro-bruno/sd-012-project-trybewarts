@@ -58,12 +58,46 @@ main {
   justify-content: center;
 }
 
+.family-contents {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
 #evaluation-form {
   display: flex;
   flex-direction: column;
   width: 675px;
 }
 
+#text-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: flex-start;
+  margin-top: 2%;
+}
+
+#agree-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#agreement {
+  margin: 15px;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(83, 81, 81);
+  color: antiquewhite;
 }
