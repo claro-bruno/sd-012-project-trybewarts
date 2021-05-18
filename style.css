@@ -9,7 +9,7 @@ main {
 
 #evaluation-form {
   display: flex;
-  width: 650px;
+  width: 675px;
   flex-direction: column;
 }
 
