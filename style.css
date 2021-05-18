@@ -29,3 +29,10 @@ main{
 #trybewarts-forms-logo{
   height: 500px;
 }
+
+footer{
+  display: flex;
+  justify-content: center;
+  background-color: #101419;
+  color: antiquewhite;
+}
