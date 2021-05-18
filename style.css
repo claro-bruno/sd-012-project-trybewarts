@@ -25,3 +25,7 @@
   border: black solid 1px;
   border-radius: 10px;
 }
+
+#trybewarts-header-title {
+  color: white;
+}
