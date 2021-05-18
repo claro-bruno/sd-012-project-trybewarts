@@ -38,3 +38,12 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.div-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.div-checkbox {
+  display: flex;
+}
