@@ -4,12 +4,12 @@
 }
 
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(50, 167, 145);
-    height: 80px;
-    padding: 0 0%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(50, 167, 145);
+  height: 80px;
+  padding: 0 0%;
 }
 
 .header img {
@@ -21,71 +21,70 @@
 }
 
 #evaluation-form {
-    width: 675px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+  width: 675px;
+  display: flex;
+  flex-flow: wrap;
+  flex-direction: column;
 }
 
 #trybewarts-forms-logo {
-    height: 500px;
-    margin: auto;
+  height: 500px;
+  margin: auto;
 }
 
 #main {
-    display: flex;
-    margin: auto;
+  display: flex;
+  margin: auto;
 }
 
 .form-top {
-    display: flex;
-    flex-flow: row wrap;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 65%;
-    margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 65%;
+  margin: auto;
 }
 
 .family-contents {
-    display: flex;
-    flex-direction: row;
-    align-content: stretch;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2%;
 }
 
 #section-family {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    letter-spacing: 1px;
+  display: flex;
+  flex-flow: nowrap;
+  flex-direction: column;
+  align-items: center;
+  letter-spacing: 1px;
 }
 
 #text-area {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: space-around;
-    align-items: flex-start;
-    margin-top: 2%;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+  align-items: flex-start;
+  margin-top: 2%;
 }
 
 #agree-btn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 #agreement {
-    margin: 15px;
+  margin: 15px;
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
