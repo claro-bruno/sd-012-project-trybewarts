@@ -15,8 +15,8 @@ botaoHeader.addEventListener('click', function () {
   const novaSenha = document.querySelector('#senha').value;
   const novoEmail = document.querySelector('#email').value;
   if (senha !== novaSenha || email !== novoEmail) {
-      alert("Login ou senha inválidos.");
+      alert('Login ou senha inválidos.');
   } else if (senha === novaSenha && email === novoEmail) {
-      alert("Olá, Tryber!");
+      alert('Olá, Tryber!');
   }
 });
