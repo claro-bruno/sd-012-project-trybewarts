@@ -68,3 +68,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#label-rate {
+  justify-content: space-between;
+}
