@@ -10,12 +10,10 @@
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" height="50px">
-    <h1 id="trybewarts-header-title">Trybewarts </h1>
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
     <div class="form-div">
       <form class="trybewarts-login">
-        <label for="login"></label>
         <input type="email" id="login" name="user-login" placeholder="Login">
-        <label for="password"></label>
         <input type="password" id="password" name="user-password" placeholder="Senha">
         <button type="submit" id="login-button">Logar</button>
       </form>
@@ -53,10 +51,25 @@
           <input type="radio" name="family" id="fullstack" value="FullStack">Fullstack
         </label>
       </div>
+      <div id="label-content">
+        <p>Qual conteúdo você está com mais vontade de aprender?</p>
+        <label for="hofs">HoFs</label>              
+        <input type="checkbox" value="HoFs" id="hofs">
+        <label for="jest">Jest</label>
+        <input type="checkbox" value="Jest" id="jest">
+        <label for="promises">Promises</label>
+        <input type="checkbox" value="Promises" id="promises">
+        <label for="react">React</label>
+        <input type="checkbox" value="React" id="react">
+        <label for="sql">SQL</label>
+        <input type="checkbox" value="SQL" id="sql">
+        <label for="python">Python</label>
+        <input type="checkbox" value="Python" id="python">   
+      
+      </div>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da Trybewarts">
   </main>
-  
-  </body>
   <script src="script.js"></script>
+</body>
 </html>

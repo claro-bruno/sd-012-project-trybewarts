@@ -9,6 +9,6 @@ logar.addEventListener('click', function (){
     if (password.value == correctPassword && login.value === correctLogin) {
         alert('Olá, Tryber!');    
     } else {
-        alert("Login ou senha inválidos");
+        alert("Login ou senha inválidos.");
     }
 })

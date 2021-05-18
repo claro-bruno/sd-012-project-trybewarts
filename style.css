@@ -24,8 +24,14 @@ main form {
 .trybewarts-login {
   display: flex;    
 }
-  
+
+ 
 .container-radio {
   display: flex;
   flex-direction: column;
 }
+
+#label-content {
+    display: flex;
+    flex-direction: column;
+}  
