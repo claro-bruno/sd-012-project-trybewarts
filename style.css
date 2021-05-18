@@ -1,3 +1,8 @@
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+}
 .conteiner-img {
   background-color: rgb(50, 167, 145);
   width: 80px;
@@ -5,6 +10,6 @@
   display: flex;
 }
 
-.logo-esquerdo {
-  width: 
+.trybewarts-login {
+  display: flex;
 }
