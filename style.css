@@ -25,3 +25,7 @@ main form {
   display: flex;    
 }
   
+.container-radio {
+  display: flex;
+  flex-direction: column;
+}
