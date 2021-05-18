@@ -72,8 +72,7 @@ main {
 
 #text-area {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-content: space-around;
   align-items: flex-start;
   margin-top: 2%;
