@@ -39,3 +39,8 @@ main {
   height: 500px;
   justify-content: right;
 }
+
+.mesmaLinha {
+  display: flex;
+  flex-direction: row;
+}
