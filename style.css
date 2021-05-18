@@ -6,8 +6,9 @@
     align-items: center;
     background-color: rgb(50, 167, 145)
 }
-.trybewarts-header-logo {
-    left: 0px;
+
+main {
+  display: flex;
 }
 .trybewarts-login {
     display: flex;
