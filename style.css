@@ -16,7 +16,6 @@ body {
 
 .trybewarts-header-logo {
   height: 100px;
-  margin-left: 10px;
 }
 
 #login-input {
@@ -56,7 +55,7 @@ main {
   border-radius: 10px;
 }
 
-#input-lastName {
+#input-lastname {
   border-radius: 10px;
 }
 
