@@ -24,6 +24,11 @@ main {
   width: 675px;
 }
 
+#evaluation-form div{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
