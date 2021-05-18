@@ -29,6 +29,7 @@
   border: 1px solid black;
   cursor: pointer;
   border-radius: 5px;
+  width: 60px;
 }
 
 header form input {
@@ -79,6 +80,15 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
+}
+
+hr {
+  margin: 5% 2%;
+}
+
+#label-rate-container {
+  margin-left: 2%;
+  display: flex;
 }
 
 #trybewarts-forms-logo {
