@@ -17,17 +17,12 @@
   margin: auto;
 }
 
-input,
-button {
+input , button {
   width: 200px;
   height: 30px;
 }
 
 main {
-  display: flex;
-}
-
-#evaluation-form {
   display: flex;
 }
 
