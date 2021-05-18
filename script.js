@@ -1,6 +1,4 @@
 const submitButtom = document.getElementById('submit-button');
-console.log(submitButtom);
-submitButtom.addEventListener('click', submit);
 
 function submit() {
   const inputLogin = document.getElementById('input-login');
@@ -11,4 +9,6 @@ function submit() {
   } else {
     alert('Olá, Tryber!');
   }
-};
+}
+
+submitButtom.addEventListener('click', submit);
