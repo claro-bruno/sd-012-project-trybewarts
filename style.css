@@ -44,3 +44,13 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#botaoLogar {
+  width: 70px;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+#botaoLogar:hover {
+  background-color: purple;
+}
