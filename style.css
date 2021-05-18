@@ -38,3 +38,13 @@ form {
   align-self: center;
 }
 
+#family-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.subject {
+  display: flex;
+  flex-direction: column;
+}
+
