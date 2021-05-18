@@ -10,8 +10,19 @@
   position: fixed;
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: space-between;
 }
 
 .header .trybewarts-header-logo {
   width: 50px;
+}
+
+.trybewarts-login {
+  display: flex;
+  height: 20px;
+  margin-top: 30px;
+}
+
+#login, #password {
+    width: 100px;
 }
