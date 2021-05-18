@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-header {
+.header {
   background-color: rgb(50, 167, 145);
   width: 100%;
   display: flex;
@@ -14,4 +14,12 @@ header {
 
 button {
   background-color: aliceblue;
+}
+
+body main {
+  display: flex;
+}
+
+#form {
+  width: 675px;
 }
