@@ -18,19 +18,27 @@ main form {
   padding: 10px;
   margin-bottom: 50px;
   align-items: center;
-  justify-content: space-between;    
+  justify-content: space-between;
 }
 
 .trybewarts-login {
-  display: flex;    
+  display: flex;
 }
- 
+
 .container-radio {
   display: flex;
   flex-direction: column;
 }
 
 #label-content {
-    display: flex;
-    flex-direction: column;
-}  
+  display: flex;
+  flex-direction: column;
+}
+#text-area {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  resize: none;
+}
