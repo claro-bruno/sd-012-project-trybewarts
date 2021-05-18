@@ -31,7 +31,6 @@ const changeCounter = () => {
 };
 textarea.addEventListener('keyup', changeCounter);
 
-
 const getFamilyRadios = () => {
   const familyRadios = document.getElementsByClassName('family');
   for (let i = 0; i < familyRadios.length; i += 1) {
@@ -56,7 +55,7 @@ const getRateRadios = () => {
   const rateRadios = document.getElementsByClassName('rate');
   for (let i = 0; i < rateRadios.length; i += 1) {
     if (rateRadios[i].checked) {
-      return rateRadios[i];
+      return rateRadios[i].value;
     }
   }
 };
