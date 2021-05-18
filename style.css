@@ -31,36 +31,28 @@ body {
   display: flex;
 }
 
-.login-input,
-.pass-input,
-.login-button,
-#input-name,
-#input-lastname,
-#input-email,
-#house {
+.login-input , .pass-input , .login-button , #input-name {
   height: 30px;
   border-radius: 10px;
   border: none;
 }
 
-.login-input,
-.pass-input,
-#input-name,
-#input-lastname,
-#input-email,
-#house {
+#input-lastname , #input-email , #house {
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+.login-input , .pass-input , #input-name , #input-lastname , #input-email , #house {
   padding-left: 15px;
   margin-right: 10px;
 }
 
-#input-name,
-#input-lastname,
-#input-email {
+#input-name , #input-lastname , #input-email {
   border: 1px solid grey;
 }
 
-.login-button,
-#submit-btn {
+.login-button , #submit-btn {
   text-align: center;
   width: 100px;
   background-color: blueviolet;
@@ -75,7 +67,7 @@ main {
 
 h1 {
   text-transform: uppercase;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, sans-serif;
   font-size: 1.5em;
   margin: 10px 0;
 }
@@ -107,6 +99,18 @@ h1 {
   justify-content: space-between;
 }
 
+.content-container label {
+  margin-right: 25px;
+}
+
+.family-container label {
+  margin-bottom: 5px;
+}
+
+.third-container label {
+  margin-right: 7px;
+}
+
 #house-container label {
   margin-right: 10px;
 }
@@ -134,25 +138,13 @@ h1 {
   width: 50%;
 }
 
-.content-container label {
-  margin-right: 25px;
-}
-
 .family-container {
   display: flex;
   flex-direction: column;
 }
 
-.family-container label {
-  margin-bottom: 5px;
-}
-
 .third-container {
   width: 80%;
-}
-
-.third-container label {
-  margin-right: 7px;
 }
 
 #rate {
