@@ -14,6 +14,7 @@ body {
   background-color: rgb(50, 167, 145);
   padding: 1rem 15rem;
   align-items: center;
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
@@ -21,7 +22,6 @@ body {
 }
 
 .trybewarts-login {
-  margin-left: auto;
   display: flex;
 }
 
