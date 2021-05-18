@@ -7,7 +7,7 @@ function createRate() {
     const radioBtn = document.createElement('input');
     const label = document.createElement('label');
     label.setAttribute('for', index);
-    label.innerHTML = index;
+    label.innerHTML = `${index} `;
     label.classList.add('form-check-label');
     radioBtn.setAttribute('type', 'radio');
     radioBtn.id = index;
@@ -37,8 +37,10 @@ agreement.addEventListener('click', () => {
 function activeBtn() {
   if (agreement.hasAttribute('checked')) {
     submitBtn.removeAttribute('disabled');
+    submitBtn.classList.add('able');
   } else {
     submitBtn.setAttribute('disabled', '');
+    submitBtn.classList.remove('able');
   }
 }
 
@@ -70,5 +72,3 @@ function counter() {
 }
 
 textarea.addEventListener('keyup', counter);
-
-
