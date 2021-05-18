@@ -1,6 +1,5 @@
 const login = document.getElementById('login');
 const password = document.getElementById('password');
-const submitButton = document.getElementById('submit-btn');
 
 function loginCheck() {
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
@@ -10,11 +9,15 @@ function loginCheck() {
   alert('Login ou senha inválidos.');
 }
 
-function enableSubmit() {
-  submitButton.disabled = false;
+function habilitarBtn(checkBox) { //  referência : https://thisinterestsme.com/disable-button-checkbox-checked/
+  if (checkBox.checked) {
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    document.getElementById('submit-btn').disabled = true;
+  }
 }
 
 if (0 === 1) {
   loginCheck();
-  enableSubmit();
+  habilitarBtn();
 }
