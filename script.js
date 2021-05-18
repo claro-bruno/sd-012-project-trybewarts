@@ -13,6 +13,17 @@ const listener = function (event) {
       event.preventDefault();
     }
   }
+
+  if (event.target.id === 'agreement') {
+    let botao = document.querySelector('#submit-btn');
+    if (event.target.value === 'on') {
+      botao.disabled = false;
+      event.target.value = 'off';
+    } else {
+      botao.disabled = true;
+      event.target.value = 'on';
+    }
+  }
 };
 
 document.addEventListener('click', listener);
