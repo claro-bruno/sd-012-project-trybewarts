@@ -33,10 +33,32 @@ hr {
   flex-direction: row;
 }
 
-#counter { 
+#counter {
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
+
+#form2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#form2-left {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+
+#form2-right {
+  display: flex;
+  flex-flow: column wrap;
+  width: max-content;
 }
 
 .header {

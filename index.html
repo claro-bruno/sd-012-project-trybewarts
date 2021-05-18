@@ -26,11 +26,13 @@
     <main>
         <!-- Requisito 5 e 6 -->
         <form action="" method="GET" id="evaluation-form">
+            <!-- Requisito 10 -->
             <div id="form1-row1">
                 <!-- Requisito 8 -->
                 <input placeholder="Nome" type="text" id="input-name">
                 <input placeholder="Sobrenome" type="text" id="input-lastname">
             </div>
+            <!-- Requisito 11 -->
             <div id="form1-row2">
                 <input placeholder="Email" type="email" id="input-email">
                 <!-- Requisito 9 -->
@@ -43,7 +45,24 @@
                 </select>
             </div>
             <hr>
-            <!-- Aqui a parte do meio -->
+            <div id="form2">
+                <div id="form2-left">
+                    <label for="family" id="label-family">Qual sua família?</label>
+                    <label for="Frontend"><input type="radio" name="family" id="Frontend" value="Frontend">Frontend</label>
+                    <label for="Backend"><input type="radio" name="family" id="Backend" value="Backend">Backend</label>
+                    <label for="FullStack"><input type="radio" name="family" id="FullStack" value="FullStack">FullStack</label>
+                </div>
+                <div id="form2-right">
+                    <label for="content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                    <label for="HoFs"><input class="subject" type="checkbox" name="content" id="HoFs" value="HoFs">HoFs</label>
+                    <label for="Jest"><input class="subject" type="checkbox" name="content" id="Jest" value="Jest">Jest</label>
+                    <label for="Promises"><input class="subject" type="checkbox" name="content" id="Promises" value="Promises">Promises</label>
+                    <label for="React"><input class="subject" type="checkbox" name="content" id="React" value="React">React</label>
+                    <label for="SQL"><input class="subject" type="checkbox" name="content" id="SQL" value="SQL">SQL</label>
+                    <label for="Python"><input class="subject" type="checkbox" name="content" id="Python" value="Python">Python</label>
+                    
+                </div>
+            </div>
             <hr>
             <!-- Requisito 14 -->
             <div>
