@@ -39,9 +39,12 @@
 .login-button {
     text-align: center;
     width: 100px;
+<<<<<<< HEAD
     background-color: blueviolet;
     color: white;
     font-weight: bold;
+=======
+>>>>>>> 7b371e985613dd480c720cdc65dc8ec9b4f17f74
 }
 
 main {
@@ -65,6 +68,7 @@ main {
 
 #name-container input {
     width: 50%;
+<<<<<<< HEAD
 }
 
 #house-container {
@@ -75,7 +79,18 @@ main {
 
 #house-container input, #house-container select {
     width: 50%;
+=======
+>>>>>>> 7b371e985613dd480c720cdc65dc8ec9b4f17f74
 }
+
+#house-container {
+    display: flex;
+}
+
+#house-container input, #house-container select {
+    width: 50%;
+}
+
 
 #trybewarts-forms-logo {
     height: 500px;
