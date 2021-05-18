@@ -33,3 +33,8 @@ h2 {
 #trybewarts-forms-logo {
     height: 500px;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
