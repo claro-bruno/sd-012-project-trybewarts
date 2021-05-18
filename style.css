@@ -77,7 +77,7 @@ main {
   justify-content: center;
 }
 
-#family-type-content-learn{
+#family-type-content-learn {
   display: flex;
   justify-content: space-between;
 }
@@ -99,13 +99,9 @@ main {
 }
 
 #learn-checkbox {
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .subject {
   margin-left: 20px;
 }
-
-
-
