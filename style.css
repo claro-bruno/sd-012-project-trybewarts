@@ -44,3 +44,13 @@ main {
   display: flex;
   flex-direction: row;
 }
+
+.mesmaColuna {
+  display: flex;
+  flex-direction: column;
+}
+
+.subject {
+  display: flex;
+  flex-direction: row;
+}

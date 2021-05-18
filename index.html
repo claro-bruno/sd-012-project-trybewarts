@@ -28,18 +28,31 @@
     <input type="text" id="input-name" placeholder="Nome">
     <input type="text" id="input-lastname" placeholder="Sobrenome">
       </section>
-      <section>
+      <section class="mesmaLinha">
         <label for="input-email">Email: </label>
     <input type="email" id="input-email" placeholder="Email">
+      <select name="" id="house">
+        <option value="gitnoria" id="gitnoria-house">gitnoria</option>
+        <option value="reactpuff" id="reactpuff-house">reactpuff</option>
+        <option value="corvinode" id="corvinode-house">corvinode</option>
+        <option value="pytherina" id="pytherina-house">pytherina</option>
+      </select>
       </section>
-      <section>
-        <select name="" id="house">
-          <option value="gitnoria" id="gitnoria-house">gitnoria</option>
-          <option value="reactpuff" id="reactpuff-house">reactpuff</option>
-          <option value="corvinode" id="corvinode-house">corvinode</option>
-          <option value="pytherina" id="pytherina-house">pytherina</option>
-        </select>
-
+      <hr>
+      <section class="mesmaColuna">
+        <span id="label-family">Qual sua família?</span>
+        <input type="radio" value="Frontend" name="family">
+        <input type="radio" value="Backend" name="family">
+        <input type="radio" value="FullStack" name="family">
+      </section>
+      <section class="mesmaColuna">
+        <span id="label-content">"Qual conteúdo você está com mais vontade de aprender?"</span>
+        <input type="checkbox" value="HoFs" class="subject">
+        <input type="checkbox" value="Jest" class="subject">
+        <input type="checkbox" value="Promises" class="subject">
+        <input type="checkbox" value="React" class="subject">
+        <input type="checkbox" value="SQL" class="subject">
+        <input type="checkbox" value="Python" class="subject">
       </section>
      </form>
      <figure>
