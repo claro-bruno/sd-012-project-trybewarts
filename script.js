@@ -9,3 +9,13 @@ btnLogin.addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+// Habilita botão Enviar quando usuário marcar checkbox de uso de informações
+const agreement = document.querySelector('#agreement');
+const submitBtn = document.querySelector('#submit-btn');
+agreement.addEventListener('click', () => {
+  if (agreement.checked) {
+    submitBtn.removeAttribute('disabled');
+  } else {
+    submitBtn.setAttribute('disabled', 'disabled');
+  }
+});
