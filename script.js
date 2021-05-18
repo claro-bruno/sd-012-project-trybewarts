@@ -12,3 +12,15 @@ function login() {
 }
 
 button.addEventListener('click', login);
+
+const checkbox = document.getElementById('agreement');
+
+function hability() {
+  if (checkbox.checked === true) {
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    document.getElementById('submit-btn').disabled = true;
+  }
+}
+
+checkbox.addEventListener('click', hability);
