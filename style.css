@@ -1,4 +1,32 @@
+<<<<<<< HEAD
 .header {
     display: flex;
     background-color: rgb(50, 167, 145);
 }
+.trybewarts-header-logo{
+  height: 50px;
+}
+=======
+/* Estilização do forms principal */
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#evaluation-form input {
+  border: 1px solid gray;
+  height: 50px;
+  width: 400px;
+  margin-bottom: 5px;
+}
+
+/* Estilização da Imagem */
+#trybewarts-forms-logo {
+  height: 500px;
+}
+>>>>>>> 7f51920ba50638570dde56aab0f8c3d7f07fcd63
