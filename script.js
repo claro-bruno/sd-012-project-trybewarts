@@ -13,10 +13,11 @@ function botaoLoginPassword () {
     let loginTrybewarts = document.querySelector('#login');
     let senhaTrybewarts = document.querySelector('#password');
 
-    if (loginTrybewarts.value !== 'tryber@teste.com') {
+    if (loginTrybewarts.value !== 'tryber@teste.com' || senhaTrybewarts.value !== '123456') {
         alert ('Login ou senha inválidos.');
     }
-    if (senhaTrybewarts !== '123456') {
-        alert ('Login ou senha inválidos.');
+    if (loginTrybewarts.value === 'tryber@teste.com' && senhaTrybewarts.value === '123456') {
+        alert ('Olá, Tryber!');
     }
+
 }
