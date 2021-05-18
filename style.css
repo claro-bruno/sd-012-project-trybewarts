@@ -1,4 +1,9 @@
+body {
+  margin: 0;
+}
+
 .header {
+<<<<<<< HEAD
     background-color: rgb(50, 167, 145);
     height: 80px;
     display: flex;
@@ -19,3 +24,14 @@ main {
     display: flex;
     width: 675px;
 }
+=======
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(50, 167, 145);
+}
+
+.trybewarts-header-logo {
+  float: right;
+}
+>>>>>>> 1d532cfbe3dc93f774fd626af988a961ad7aa896
