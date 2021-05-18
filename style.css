@@ -33,3 +33,7 @@ form {
   justify-content: center;
   flex-direction: row;
 }
+
+#trybewarts-header-title {
+  align-self: center;
+}
