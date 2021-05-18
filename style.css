@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+.header {
+  display: flex;
+  width: 100%;
+  background-color: rgb(50, 167, 145);
+}
+
+.trybewarts-header-logo {
+  float: left;
+}
