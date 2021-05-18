@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -8,3 +9,21 @@
     background-color:rgb(50, 167, 145) ;
     height: 100px;
 }
+=======
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    background-color: rgb(50, 167, 145);
+    display: flex;
+}
+
+.header .trybewarts-header-logo {
+    width: 50px;
+}
+>>>>>>> 0484f99a4dc18f27dfceb59a9d9913b1ac994e75
