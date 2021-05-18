@@ -13,11 +13,4 @@ function btLoguin() {
    
  }
  btLoguin();
-
-
-
-    //  if (login !== loginCerto || senha !== senhaCerta) {
-    //     window.alert('Login ou senha inválidos.')
-    // } else {
-    //     window.alert('Olá, Tryber!')
-    // }
+ 
