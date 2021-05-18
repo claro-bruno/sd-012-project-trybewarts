@@ -12,8 +12,17 @@
   width: 675px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+
+#evaluation-form input, select {
+  /* width: 45%; */
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+img {
+  float: right;
 }
