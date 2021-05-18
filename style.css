@@ -67,7 +67,7 @@
     flex-flow: column nowrap;
 }
 
-.checkbox-container {
+#checkbox-container {
     display: flex;
     flex-flow: row wrap;
 }
