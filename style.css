@@ -4,17 +4,29 @@
   box-sizing: border-box;
 }
 
-.trybewarts-login {
-  display: flex;
-  flex-direction: column;
-
-}
 .header {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
+}
+
+.trybewarts-login {
+  display: flex;
 }
 
 .nav-brand {
   width: 50px;
   height: 50px;
+}
+
+.trybewarts-header-title {
+align-items: flex-end;
+}
+
+main {
+  display: flex;
+}
+
+.evaluation-form {
+  width: 675px;
 }
