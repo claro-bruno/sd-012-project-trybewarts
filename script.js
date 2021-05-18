@@ -1,13 +1,13 @@
-let senha = document.querySelector('#senha').value;
-let email = document.querySelector('#email').value;
-let botaoHeader = document.querySelector('#btnheader');
-botaoHeader.addEventListener('click', verificalogin);
-function verificalogin(){
-    let novaSenha = document.querySelector('#senha').value;
-    let novoEmail = document.querySelector('#email').value;
-    if(senha !== novaSenha || email !== novoEmail){
-        alert("Login ou senha inválidos");
-    } else if(senha === novaSenha && email === novoEmail){
-        alert("Olá, Tryber!");
-    }; 
+const senha = document.querySelector('#senha').value;
+const email = document.querySelector('#email').value;
+const botaoHeader = document.querySelector('#btnheader');
+botaoHeader.addEventListener('click', verificaLogin);
+function verificaLogin() {
+  const novaSenha = document.querySelector('#senha').value;
+  const novoEmail = document.querySelector('#email').value;
+  if (senha !== novaSenha || email !== novoEmail) {
+        alert('Login ou senha inválidos');
+  } else if (senha === novaSenha && email === novoEmail) {
+        alert('Olá, Tryber!');
+  }
 };
