@@ -25,62 +25,57 @@ main {
 
 #evaluation-form {
   display: flex;
+  flex-direction: column;
   width: 675px;
+}
+
+.name-container {
+  display: flex;
+}
+
+.emailAndItems-container {
+  display: flex;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
-  display: flex;
-  flex-flow: flex-end;
 }
 
-#input-name {
-  display: flex;
-  flex-flow: row; 
-  height: 10px;
-  align-items: flex-start;
-  margin: 5px;
-  
+/* #input-name {
 }
-
 #input-lastname {
-  display: flex;
-  flex-flow: row;
-  height: 10px;
-  align-items: flex-start;
-  margin: 5px;
 }
-
 #input-email {
-  display: flex;
-  flex-flow: row;
-  height: 10px;
-  flex-wrap: wrap;
-
-}
+} */
 
 #house {
-  heigh: 10px;
-  flex-wrap: wrap;
+  height: 10px;
 }
 
 #gitnoria-house {
-    height: 10px;
+  height: 10px;
 }
 
 #reactpuff-house {
-    height: 10px;
+  height: 10px;
 }
 
 #corvinode-house {
-    height: 10px;
+  height: 10px;
 }
 
 #pytherina-house {
-    height: 10px;
-} 
+  height: 10px;
+}
 
 .family-container {
   display: flex;
-  flex-direction: column;
+}
+
+.content-checkbox-container {
+  display: flex;
+}
+
+.checkbox-container {
+  display: flex;
 }
