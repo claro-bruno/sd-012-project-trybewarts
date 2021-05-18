@@ -74,3 +74,8 @@ body {
   flex-direction: column;
 }
 
+.subjects {
+  margin: 5px;
+  justify-content: space-around;
+}
+
