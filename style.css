@@ -35,7 +35,7 @@ main select {
   margin-bottom: 20px;
 }
 
-.nome-completo, .email-casa {
+.nome-completo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -46,7 +46,7 @@ main select {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 main input:nth-of-type( 1 ) {
