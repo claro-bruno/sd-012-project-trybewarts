@@ -27,13 +27,6 @@ main {
   width: 40px;
 }
 
-
-#evaluation-form {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
 #input-name {
   flex-direction: row;
   width: 40%;
@@ -47,10 +40,9 @@ main {
 #input-email {
   flex-direction: row;
   width: 40%;
-  display: inline-flex;
 }
 
-#evaluation-form {
+#house {
   flex-direction: row;
-  display: inline-flex;
+  width: 40%;
 }
