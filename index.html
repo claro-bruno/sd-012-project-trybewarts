@@ -20,17 +20,35 @@
             <input type="submit" name="login" id="input-botao">
         </form>
     </header>
-
-
-/* comentario  nao ta indo pq? */
-// teste comentario 
-
 <main class="container-form-1">
-    <label>
-        <form id="evaluation-form" class="formEvaluation">
-
-        </form>
+    <form id="evaluation-form" class="formEvaluation">
+        <div class="form-row">
+                <div class="line-content">
+                  <label for="input-name">Nome</label>
+                  <input type="text" name="name" id="input-name" maxlength="40" placeholder="Nome" required>
+                </div>
+                <div class="line-content">
+                    <label for="input-lastname">Sobrenome</label>
+                    <input type="text" name="cpf" id="input-lastname" maxlength="40" placeholder="Sobrenome" required>
+                  </div>
+                <div class="line-content">
+                    <label for="input-email">Endereço de e-mail: </label>
+                    <input class="email-input" type="email" name="email" id="input-email" maxlength="50" placeholder="Email" required>
+                  </div>
+        </div>   
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo alta trybewarts">
+    </form>
+    <div>
+        <label>Casa
+        <select id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+        </select>
     </label>
+    </div>
+    
 </main>
 
 
