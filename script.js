@@ -4,7 +4,7 @@ function formHeader() {
   const loginTexto = loginValue.toString();
   const password = document.querySelector('.input-senha');
   const passwordValue = password.value;
-  const passwordSenha = parseInt(passwordValue);
+  const passwordSenha = parseInt(passwordValue, 10);
   if (loginTexto === 'tryber@teste.com' && passwordSenha === 123456) {
     alert('Olá, Tryber!');
   } else {
