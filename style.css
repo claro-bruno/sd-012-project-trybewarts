@@ -8,7 +8,6 @@ header {
 main {
   display: flex;
 }
-
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -27,4 +26,7 @@ main {
 }
 .trybewarts-login {
   display: flex;
+}
+#trybewarts-forms-logo{
+  height: 500px;
 }
