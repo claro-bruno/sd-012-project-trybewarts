@@ -35,6 +35,12 @@ h1 {
   font-size: 12px;
 }
 
+#comments-textarea {
+  display: flex;
+  flex-direction: column;
+
+}
+
 #comments {
   max-width: 700px;
   max-height: 200px;
