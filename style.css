@@ -15,7 +15,7 @@ body {
   width: 70px;
 }
 
-.header form {
+.header .trybewarts-login {
   display: flex;
   justify-content: flex-end;
   padding: 30px 10px;
@@ -26,4 +26,14 @@ body {
   height: 25px;
   border: 1px solid;
   border-radius: 5px;
+}
+
+main {
+  display: flex;
+}
+
+main #evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
 }
