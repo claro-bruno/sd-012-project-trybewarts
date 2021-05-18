@@ -24,3 +24,10 @@
   width: 675px;
   flex-direction: column;
 }
+
+footer{
+ background-color: dimgray;
+ color: white;
+ display: flex;
+ justify-content: center;
+}
