@@ -11,15 +11,24 @@
   <link rel="stylesheet" href="style.css">
   <title>Trybewarts</title>
 </head>
+
 <body>
   <header>
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Trybewarts logo">
+    <form class="trybewarts-login" action="" method="get">
+      <div class="mb-3">
+        <input type="text" id="email-login" class="form-control" placeholder="Login">
+        <input type="text" id="password-login" class="form-control" placeholder="Senha">
+        <button type="submit" id="btn-login" class="btn btn-primary mb-3">Entrar</button>
+      </div>
+    </form>
   </header>
   <main class="container">
     <form id="evaluation-form">
 
     </form>
   </main>
+  <script src="script.js"></script>
 </body>
 
 </html>

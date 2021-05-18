@@ -1,14 +1,23 @@
-header {
-    background-color: rgb(50, 167, 145);
-    display: flex;
-  }
-
 .container {
-    display: flex;
+  display: flex;
 }
 
 #evaluation-form {
-    display: flex;
-    width: 675px;
+  display: flex;
+  width: 675px;
+}
+header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.trybewarts-header-logo {
+  width: 100px;
+}
+
+.trybewarts-login {
+  display: flex;
+  flex-direction: column;
+}
