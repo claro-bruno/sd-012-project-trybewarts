@@ -26,20 +26,37 @@
         </forms>
 
     </header>
+
     <main>
-        <form id="evaluation-form" action="GET">Fomrs</form>
-            <div><input type="text" id="input-name" placeholder="Nome"></div>
-            <div><input type="text" id="input-lastname" placeholder="Sobrenome"></div>
-            <div><input type="text" id="input-email" placeholder="Email"></div>
-           
-            <select name="formulario" id="house">
-                <option value="Gitnória" id="gitnoria-house"></option>
-                <option value="Reactpuff" id="reactpuff-house"></option>
-                <option value="Corvinode" id="corvinode-house"></option>
-                <option value="Pytherina" id="pytherina-house"></option>
-            </select>
+
+        <form id="evaluation-form" action="GET">Forms</form>
+        <div><input type="text" id="input-name" placeholder="Nome"></div>
+        <div><input type="text" id="input-lastname" placeholder="Sobrenome"></div>
+        <div><input type="text" id="input-email" placeholder="Email"></div>
+
+        <select name="formulario" id="house">
+            <option value="Gitnória" id="gitnoria-house"></option>
+            <option value="Reactpuff" id="reactpuff-house"></option>
+            <option value="Corvinode" id="corvinode-house"></option>
+            <option value="Pytherina" id="pytherina-house"></option>
+        </select>
+
+        <section class="secFamily">
+
+            <label id="label-family">Qual sua família?</label>
+
+            <input type="radio" id="frontId" name="family">
+            <label id="labelFA" for="frontId">Família Frontend</label>
+            <input type="radio" id="backID" name="family">
+            <label id="labelFA" for="backID">Família Backend</label>
+            <input type="radio" id="fullId" name="family">
+            <label id="labelFA" for="fullId">Família FullStack</label>
+
+        </section>
+
+        <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
     </main>
-    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo"> 
+
 
 
     <footer class="footerClass">

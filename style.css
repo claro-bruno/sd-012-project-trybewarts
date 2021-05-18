@@ -5,7 +5,8 @@
 
 /*Começa os estilos*/
 main{
-    display: flex;
+    flex-direction: column;
+    width: 1000px;
 }
 .header{
     display: flex;
@@ -39,4 +40,18 @@ main{
 
 .footerClass p{
     color: white;
+}
+
+.secFamily{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+#labelFA{
+    display: inline-block;
+}
+
+#inputId{
+    display: inline-block;
 }
