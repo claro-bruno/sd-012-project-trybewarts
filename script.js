@@ -14,8 +14,30 @@ function createRate() {
     radioBtn.setAttribute('name', 'rate');
     radioBtn.setAttribute('value', index);
     label.appendChild(radioBtn);
-    console.log('oi');
   }
 }
 
 createRate();
+
+// habilitar botão enviar
+
+const agreement = document.querySelector('#agreement');
+const submitBtn = document.querySelector('#submit-btn');
+
+agreement.addEventListener('click', () => {
+  if (agreement.hasAttribute('checked')) {
+    agreement.removeAttribute('checked');
+  } else {
+    agreement.setAttribute('checked', '');
+  }
+});
+
+function activeBtn() {
+  if (agreement.hasAttribute('checked')) {
+    submitBtn.removeAttribute('disabled');
+  } else {
+    submitBtn.setAttribute('disabled', '');
+  }
+}
+
+agreement.addEventListener('click', activeBtn);
