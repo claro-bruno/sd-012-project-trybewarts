@@ -1,4 +1,5 @@
-const jonas = document.querySelector('#botao-login');
+const button = document.querySelector('#botao-login');
+const familys = ['Frontend', 'Backend', 'FullStack'];
 
 function botaoLoginPassword() {
   const loginTrybewarts = document.querySelector('#login');
@@ -12,10 +13,26 @@ function botaoLoginPassword() {
 }
 
 function preventD() {
-  jonas.addEventListener('click', (event) => {
+  button.addEventListener('click', (event) => {
     event.preventDefault();
     botaoLoginPassword();
   });
 }
 
 preventD();
+
+function createFamily() {
+  const getTagFamily = document.getElementById('family-input');
+  for (let index = 0; index < familys.length; index += 1) {
+    const createLabelFamily = document.createElement('label');
+    const createInput = document.createElement('input');
+    createLabelFamily.innerText = familys[index];
+    createInput.className = 'family';
+    createInput.type = 'radio';
+    createInput.value = familys[index];
+    getTagFamily.appendChild(createLabelFamily);
+    getTagFamily.appendChild(createInput);
+  }
+}
+
+createFamily();
