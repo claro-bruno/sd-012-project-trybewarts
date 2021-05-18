@@ -1,10 +1,14 @@
 
+/* Linha Divisória */
+main, form {
+  display: flex;
+}
 
+#evaluation-form {
+  width: 675px !important;
+  flex-direction: column;
+}
 
-
-
-/*Linha Divisória*/
-
-
-
-
+#trybewarts-forms-logo {
+  height: 500px;
+}
