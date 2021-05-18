@@ -1,6 +1,9 @@
 const logar = document.querySelector('.logar');
 const agree = document.querySelector('#agreement');
 const submit = document.querySelector('#submit-btn');
+const textarea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+const maxLength = 500;
 
 logar.addEventListener('click', () => {
   const login = document.querySelector('.login');
@@ -19,4 +22,8 @@ agree.addEventListener('click', () => {
   } else {
     submit.disabled = true;
   }
+});
+
+textarea.addEventListener('keyup', () => {
+  counter.innerHTML = maxLength - textarea.value.length;
 });
