@@ -27,15 +27,19 @@
   display: flex;
 }
 
-.login-input , .pass-input , .login-button {
+.login-input , .pass-input , .login-button, #input-name, #input-lastname, #input-email {
   height: 30px;
   border-radius: 10px;
   border: none;
 }
 
-.login-input , .pass-input {
+.login-input , .pass-input, #input-name, #input-lastname, #input-email {
   padding-left: 15px;
   margin-right: 10px;
+}
+
+#input-name, #input-lastname, #input-email {
+    border: 1px solid grey;
 }
 
 .login-button {
@@ -63,6 +67,7 @@ main {
 
 #name-container {
   display: flex;
+  margin-bottom: 15px
 }
 
 #name-container input {
@@ -73,9 +78,14 @@ main {
   display: flex;
   padding-bottom: 20px;
   border-bottom: 1px solid darkgrey;
+  justify-content: space-between;
 }
 
-#house-container input , #house-container select {
+#house-container label {
+    margin-right: 10px;
+}
+
+#house-container input {
   width: 50%;
 }
 
