@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
 }
@@ -9,4 +10,10 @@ body {
 
 .trybewarts-header-logo {
   float: left;
+=======
+.header {
+    background-color: rgb(50, 167, 145);
+    height: 80px;
+    display: flex;
+>>>>>>> 633a0bdaa62724c5621af294f7b86e9c2229b31f
 }
