@@ -5,18 +5,31 @@ header {
 
 .container {
     display: flex;
+    margin: 0;
 }
 
 #evaluation-form {
     display: flex;
     width: 675px;
-    flex-direction: column
+    flex-direction: column;
 }
 
-.img-container {
-    float: right;
+#form-title {
+    text-align: center;
 }
 
 .trybewarts-forms-logo {
     height: 500px;
+}
+
+#fullname-container {
+    display: flex;
+}
+
+#input-name, #input-lastname, #input-email, #house, #house-label {
+    margin: 10px;
+}
+
+#contact-container {
+    display: flex;
 }
