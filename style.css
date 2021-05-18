@@ -33,3 +33,12 @@
     width: 30%;
     border-radius: 5px;
 }
+
+.main-content {
+    display: flex;
+}
+
+#evaluation-form {
+    display: flex;
+    width: 675px;
+}
