@@ -24,7 +24,6 @@ main {
   width: 675px;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
 }
 
 #container-nomeSobrenomeCasa{
@@ -46,4 +45,13 @@ form input {
 form select {
   width: 209px;
   margin: 3px;
+}
+
+#container-boxes{
+  display: flex;  
+}
+
+#container-radio{
+  display: flex;
+  flex-direction: column;
 }
