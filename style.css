@@ -17,13 +17,25 @@
 }
 
 #trybewarts-header-title {
-  text-align: center;
+  font-family: fantasy;
+  color: white;
 }
 
 .trybewarts-login {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+}
+
+#login {
+  margin-right: 5px;
+}
+
+#senha {
+  margin-right: 5px;
+}
+
+#entrar {
+  margin-right: 5px;
 }
 
 .main {
@@ -37,26 +49,19 @@
 }
 
 #trybewarts-forms-logo {
-    height: 500px;
+  height: 500px;
 }
 
 .completeName {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .familyArea {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .contentLearn {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
-
-.avaliation {
-
+  display: flex;
 }
