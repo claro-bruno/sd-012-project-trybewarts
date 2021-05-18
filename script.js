@@ -8,4 +8,4 @@ btnEL.addEventListener('click', () => {
   } else {
     alert('Olá, Tryber!');
   }
-})
+});

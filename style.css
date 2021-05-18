@@ -13,9 +13,8 @@
 }
 
 .trybewarts-header-logo {
-
-  height: 50px;
   display: flex;
+  height: 50px;
   justify-content: flex-start;
 }
 
@@ -32,11 +31,21 @@
   border-radius: 5px;
 }
 
-input {
+header form input {
   margin: 0 5px;
   border: 1px solid black;
 }
 
-#trybewarts-header-title {
+main {
+  display: flex;
+}
 
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px; 
 }
