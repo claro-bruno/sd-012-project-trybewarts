@@ -1,5 +1,6 @@
 const button = document.querySelector('#botao-login');
 const familys = ['Frontend', 'Backend', 'FullStack'];
+const houses = ['Gitnória', 'Reactpuff', 'Corvinode', 'Pytherina'];
 
 function botaoLoginPassword() {
   const loginTrybewarts = document.querySelector('#login');
@@ -20,6 +21,20 @@ function preventD() {
 }
 
 preventD();
+
+function createHouses() {
+  const getTagHouse = document.getElementById('house');
+  for (let index = 0; index < houses.length; index += 1) {
+    const createOption = document.createElement('option');
+    createOption.value = houses[index];
+    createOption.innerText = houses[index];
+    const lowCase = houses[index].toLowerCase();
+    createOption.id = lowCase + '-house';
+    getTagHouse.appendChild(createOption);
+  }
+}
+
+createHouses()
 
 function createFamily() {
   const getTagFamily = document.getElementById('family-input');
