@@ -51,3 +51,7 @@
   height: 500px;
 }
 
+.label {
+  display: flex;
+  flex-direction: column;
+}
