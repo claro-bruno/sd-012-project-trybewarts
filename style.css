@@ -79,3 +79,12 @@ body {
   justify-content: space-around;
 }
 
+#textarea {
+  resize: none;
+}
+
+#counter {
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}

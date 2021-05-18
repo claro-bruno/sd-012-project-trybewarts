@@ -22,3 +22,11 @@ const getAgreement = document.getElementById('agreement');
 getAgreement.onchange = function swap() {
   submitBtn.disabled = !this.checked;
 };
+
+const counter = parseInt(document.getElementById('counter').innerHTML, 10);
+const textarea = document.getElementById('textarea');
+
+const changeCounter = () => {
+  document.getElementById('counter').innerHTML = counter - textarea.value.length;
+};
+textarea.addEventListener('keyup', changeCounter);
