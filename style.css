@@ -1,5 +1,5 @@
 body {
-  margin: 0px;
+  margin: 0;
 }
 
 main {
@@ -25,13 +25,12 @@ main img {
 }
 
 .trybewarts-header-logo {
-  margin: 5px;
-  margin-left: 120px;
   display: flex;
   justify-content: left;
 }
 
 .trybewarts-login {
+  display: flex;
   align-self: center;
   justify-content: center;
   margin-right: 130px;
@@ -46,7 +45,7 @@ main img {
 #buttonEntrar {
   background-color: blueviolet;
   color: white;
-  font-weight: bold;
+  font-weight: 700;
   padding: 10px 30px;
 }
 
@@ -64,7 +63,7 @@ main img {
   width: 500px;
 }
 
-#input-name , #input-lastname , #input-email , #house{
+#input-name , #input-lastname , #input-email , #house {
   padding: 15px;
   margin: 5px;
   flex-grow: 1;
@@ -79,4 +78,9 @@ hr {
 .section_2 {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.input-family {
+  display: inline-block;
 }
