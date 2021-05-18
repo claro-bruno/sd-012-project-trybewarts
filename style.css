@@ -5,5 +5,7 @@
 
 .trybewarts-login {
   display: flex;
-  justify-self: flex-end;
+  justify-content: space-between;
+  justify-self: right;
+  margin-left: auto;
 }
