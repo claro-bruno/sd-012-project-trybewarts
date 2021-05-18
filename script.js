@@ -1,4 +1,6 @@
 const loginBtn = document.querySelector('form button');
+const agreementChecked = document.getElementById('agreement');
+const submitBtn = document.getElementById('submit-btn');
 
 function validateInput() {
   const emailInput = document.querySelector('input[type="email"]');
@@ -29,7 +31,20 @@ function createHouseOptions() {
   }
 }
 
+function validateCheckbox() {
+  if (!agreementChecked.checked) {
+    submitBtn.setAttribute('disabled', true);
+  } else if (agreementChecked.checked) {
+    submitBtn.removeAttribute('disabled');
+  }
+}
+
+if (!agreementChecked.checked) {
+  submitBtn.setAttribute('disabled', true);
+}
+
 window.onload = () => {
   loginBtn.addEventListener('click', validateInput);
+  agreementChecked.addEventListener('click', validateCheckbox);
   createHouseOptions();
 };
