@@ -11,7 +11,17 @@
 
 <body>
   <header class="header">
-    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" height="50px">
+    <h1 id="trybewarts-header-title">TrybeWarts </h1>
+    <div class="form-div">
+      <form class="trybewarts-login">
+        <label for="login"></label>
+        <input type="email" id="login" name="user-login" placeholder="Login">
+        <label for="password"></label>
+        <input type="password" id="password" name="user-password" placeholder="Senha">
+        <button type="submit" id="login-button">Logar</button>
+      </form>
+    </div>
   </header>
   <main>
     <form id="evaluation-form" action="" method="get">
