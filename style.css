@@ -1,5 +1,12 @@
+/*Reset*/
+*{
+    margin: 0;
+}
 
+/*Começa os estilos*/
 .header{
     display: flex;
-    background-color: rgb(50, 167, 145)
+    background-color: rgb(50, 167, 145);
+    width: 100%;
+    height: 50px;
 }
