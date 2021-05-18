@@ -1,25 +1,24 @@
-<<<<<<< HEAD
 .header {
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(50, 167, 145)
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-header-logo {
-width: 80px;
+  width: 80px;
 }
 
 #trybewarts-header-title {
- display: flex;
- align-self: center;
- color: #ffffff;
+  display: flex;
+  align-self: center;
+  color: white;
 }
 
 .trybewarts-login {
-    display: flex;
+  display: flex;
 }
-=======
+
 * {
   margin: 0;
   padding: 0;
@@ -44,12 +43,11 @@ main form {
   width: 100%;
 }
 
-.row input,
-.row .select-container {
+.row input , .row .select-container {
   width: 48%;
 }
 
-.select-container {
+.row .select-container {
   display: flex;
 }
 
@@ -61,4 +59,3 @@ main form {
 main img {
   height: 500px;
 }
->>>>>>> bda8db56b6ff2977f4b5a07e4c4c28134b3bdc84
