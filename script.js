@@ -57,3 +57,18 @@ loginBtn.addEventListener('click', () => {
     window.alert('Olá, Tryber!');
   }
 });
+
+// contador de caracteres textarea
+
+const textarea = document.querySelector('#textarea');
+const counterN = 500;
+const counterTxt = document.querySelector('.counter');
+
+function counter() {
+  const x = counterN - textarea.value.length;
+  counterTxt.innerHTML = x;
+}
+
+textarea.addEventListener('keyup', counter);
+
+
