@@ -20,3 +20,16 @@ header button {
   background-color: rgb(75, 0, 75);
   color: white;
 }
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
