@@ -1,24 +1,24 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-.header {
-    display: flex;
-    background-color: rgb(50, 167, 145);
-    justify-content: space-between;
-    align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.trybewarts-login{
-    display: flex;
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trybewarts-login {
+  display: flex;
 }
 
 .trybewarts-header-logo {
-    align-self: flex-start;
-  }
+  align-self: flex-start;
+}
 
-  #trybewarts-header-title {
-    justify-content: center;
-  }
+#trybewarts-header-title {
+  justify-content: center;
+}
