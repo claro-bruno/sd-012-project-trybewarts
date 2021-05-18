@@ -41,3 +41,8 @@ main #evaluation-form {
   width: 675px;
   flex-direction: column;
 }
+
+main .name-lastName {
+  display: flex;
+  flex-direction: row;
+}
