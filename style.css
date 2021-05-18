@@ -5,6 +5,7 @@
 
 main {
   display: flex;
+  justify-content: space-between;
 }
 
 .header {
@@ -38,4 +39,8 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
