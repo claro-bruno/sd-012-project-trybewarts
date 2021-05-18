@@ -10,6 +10,24 @@ function validateInput() {
   return alert('Login ou senha inválidos.');
 }
 
+function createHouseOptions() {
+  const optionsObject = {
+    Gitnória: 'gitnoria-house',
+    Reactpuff: 'reactpuff-house',
+    Corvinode: 'corvinode-house',
+    Pytherina: 'pytherina-house',
+  };
+  const selectHouse = document.getElementById('house');
+  for (let option in optionsObject) {
+    const houseOption = document.createElement('option');
+    houseOption.id = optionsObject[option];
+    houseOption.value = optionsObject[option];
+    houseOption.innerText = option;
+    selectHouse.appendChild(houseOption);
+  }
+}
+
 window.onload = () => {
   loginBtn.addEventListener('click', validateInput);
+  createHouseOptions();
 };
