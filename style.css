@@ -16,9 +16,9 @@ main form {
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 main img {
