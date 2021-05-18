@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+}
+.col {
+  flex-direction: column;
+}
+#evaluation-form {
+  width: 675px;
+}
