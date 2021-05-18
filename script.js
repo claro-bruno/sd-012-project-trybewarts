@@ -9,4 +9,5 @@ function alerta() {
     alert('Olá, Tryber!');
   }
 }
+
 botao.addEventListener('click', alerta);
