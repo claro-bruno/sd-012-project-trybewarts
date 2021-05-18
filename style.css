@@ -20,3 +20,13 @@
   justify-content: flex-end;
   margin-right: 30px;
 }
+
+#main-content {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+}
