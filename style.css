@@ -1,10 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .header {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
+  height: 60px;
+  padding: 10px;
+}
+
+.header h1 {
+  color: whitesmoke;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-items: center;
+}
+
+.trybewarts-login input {
+  margin-left: 10px;
+  padding: 10px;
+  width: 130px;
 }
 
 main {
   display: flex;
+}
+
+.trybewarts-login button {
+  margin-left: 10px;
+  width: 100px;
 }
 
 #evaluation-form {
@@ -41,4 +70,9 @@ main {
 
 #house {
   flex-grow: 1;
+}
+
+#images-position {
+  display: flex;
+  justify-content: center;
 }
