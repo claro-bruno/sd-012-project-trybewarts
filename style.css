@@ -20,3 +20,9 @@
   justify-content: flex-end;
   margin-right: 30px;
 }
+
+#trybewarts-header-title {
+  display: flex;
+  align-self: center;
+  color: rgb(255, 255, 255);
+}
