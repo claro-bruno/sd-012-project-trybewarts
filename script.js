@@ -8,20 +8,19 @@ window.onload = function() {
     const passwordValue = password.value;
     const passwordSenha = parseInt(passwordValue);
     if (loginTexto === 'tryber@teste.com' && passwordSenha === 123456) {
-        alert('Olá, Tryber!');
+			alert('Olá, Tryber!');
     } else {
-        alert('Login ou senha inválidos.');
+			alert('Login ou senha inválidos.');
     }
   })
-}
 
-let agreement = document.getElementById("agreement");
-let submit = document.getElementById("submit-btn");
-agreement.addEventListener("click", function () {
-    if (agreement.checked == true) {
-        submit.disabled = false;
-    }
-    else {
-        submit.disabled = true;
-    }
-})
+	const agreement = document.getElementById("agreement");
+	const submit = document.getElementById("submit-btn");
+	agreement.addEventListener("click", function () {
+    if (agreement.checked === true) {
+    	submit.disabled = false;
+  	} 	else {
+    submit.disabled = true;
+  	}
+	})
+}
