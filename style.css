@@ -4,4 +4,24 @@ body {
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trybewarts-header-logo {
+  width: 80px;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+.trybewarts-login input {
+  margin: 0 8px;
+  height: 24px;
+  padding: 0 8px;
+}
+
+.trybewarts-login button {
+  margin: 0 8px;
 }
