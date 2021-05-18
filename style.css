@@ -47,3 +47,8 @@ body {
   background-color: rgb(78, 44, 131);
   color: white;
 }
+
+main, #evaluation-form {
+  display: flex;
+  width: 675px;
+}
