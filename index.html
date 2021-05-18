@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Trybewarts</title>
 </head>
+
 <body>
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" alt="Trybewarts" class="trybewarts-header-logo">
@@ -35,12 +37,23 @@
         </select>
       </div>
 
+      <label for="family" id="label-family">Qual sua família?</label>
+      <label for="frontend">
+        <input type="radio" name="family" value="Frontend" id="frontend" checked class="family">Frontend
+      </label>
+      <label for="backend">
+        <input type="radio" name="family" value="Backend" id="backend" class="family">Backend
+      </label>
+      <label for="fullStack">
+        <input type="radio" name="family" value="FullStack" id="fullStack" class="family">FullStack
+      </label>
     </form>
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg"/>
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" />
   </main>
   <footer class="footer">
     <p>Direitos reservados à Trybewarts©</p>
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>
