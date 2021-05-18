@@ -89,8 +89,9 @@
         </spam>
       </div>
       <div class="form-section">
-        <label class="textarea" for="comments">Deixe seu comentário:</label>
-        <textarea maxlength="500" name="" id="comments" cols="30" rows="10"></textarea>
+        <label class="textarea" for="textarea">Deixe seu comentário:</label>
+        <p id="counter"></p>
+        <textarea maxlength="500" id="textarea" cols="30" rows="10" oninput="updateCounter(this);"></textarea>
       </div>
       <div class="form-section">
         <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>

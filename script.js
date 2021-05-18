@@ -1,5 +1,7 @@
 const login = document.getElementById('login');
 const password = document.getElementById('password');
+const counter = document.getElementById('counter');
+let charCounter = 500;
 
 function loginCheck() {
   if (login.value === 'tryber@teste.com' && password.value === '123456') {
@@ -17,7 +19,15 @@ function habilitarBtn(checkBox) { //  referência : https://thisinterestsme.com/
   }
 }
 
+function updateCounter(element) {
+  charCounter = 500 - element.value.length;
+  counter.innerHTML = `${charCounter} restantes`;
+}
+
+counter.innerHTML = `${charCounter} restantes`;
+
 if (0 === 1) {
   loginCheck();
   habilitarBtn();
+  updateCounter();
 }
