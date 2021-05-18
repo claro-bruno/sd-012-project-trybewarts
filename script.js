@@ -4,8 +4,8 @@ const getSenhaInput = document.querySelector('#senha-input');
 
 function validaLogin() {
   if (
-    getLoginInput.value === 'tryber@teste.com' &&
-    getSenhaInput.value === '123456'
+    getLoginInput.value === 'tryber@teste.com'
+    && getSenhaInput.value === '123456'
   ) {
     alert('Olá, Tryber!');
   } else {
