@@ -1,4 +1,24 @@
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trybewarts-header-logo {
+  height: 50px;
+}
+
+.trybewarts-login {
+  justify-content: right;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+#login {
+  width: 200px;
+}
+
+#password {
+  width: 200px;
 }
