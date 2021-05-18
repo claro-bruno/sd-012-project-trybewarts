@@ -7,12 +7,12 @@ formLogin.addEventListener('submit', (event) => {
   event.preventDefault();
 });
 
-function validaLogin (){
-  if (emailLogin.value === 'tryber@teste.com'){
+function validaLogin() {
+  if (emailLogin.value === 'tryber@teste.com') {
     alert('Olá, Tryber!');
-  }else if (senhaLogin.value === '123456') {
+  } else if (senhaLogin.value === '123456') {
     alert('Olá, Tryber!');
-  }else {
+  } else {
     alert('Login ou senha inválidos.');
   }
 }
