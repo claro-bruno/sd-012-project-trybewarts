@@ -13,3 +13,7 @@ main form {
   width: 675px;
   flex-direction: column;
 }
+
+main img {
+  height: 500px;
+}
