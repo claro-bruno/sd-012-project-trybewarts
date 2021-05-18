@@ -30,7 +30,10 @@ function createHouses() {
     createOption.value = houses[index];
     createOption.innerText = houses[index];
     const lowCase = houses[index].toLowerCase();
-    createOption.id = lowCase.normalize("NFD").replace(/[^a-zA-Zs]/g, "") + '-house';
+    const lowCase1 = lowCase.normalize('NFD').replace(/[^a-zA-Zs]/g, '');
+    const lowCase2 = '-house';
+    const familyId = lowCase1 + lowCase2;
+    createOption.id = familyId;
     getTagHouse.appendChild(createOption);
   }
 }
