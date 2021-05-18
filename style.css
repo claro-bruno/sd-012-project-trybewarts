@@ -1,0 +1,17 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:after, *:before {
+  box-sizing: inherit;
+}
+
+:root {
+  --verde-trybe: 'rgb(50, 167, 145)';
+}
+
+.header {
+  background-color: var(--verde-trybe);
+  display: flex;
+}
+
