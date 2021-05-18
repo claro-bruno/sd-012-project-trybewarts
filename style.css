@@ -1,7 +1,7 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  flex-flow: row: space-between;
 }
 
 .trybewarts-header-logo {
@@ -22,25 +22,27 @@
 #evaluation-form {
   display: flex;
   width: 675px;
-  flex-direction: column;
 }
 
-<<<<<<< HEAD
 #trybewarts-forms-logo {
   height: 500px;
   display: flex;
-  justify-content: flex-end;
+  flex-flow: flex-end;
 }
 
 #input-name {
-
+  display: flex;
+  flex-flow: row;  
 }
 
 #input-lastname {
+  display: flex;
+  flex-flow: row;
 
 }
 
 #input-email {
+  flex-direction: column;
 
 }
 
@@ -59,11 +61,3 @@
 #pytherina-house {
 
 }
-=======
-footer {
-  background-color: dimgray;
-  color: white;
-  display: flex;
-  justify-content: center;
-}
->>>>>>> 39ab7d5e1b496d01522b3f0cd1616c7baf522232
