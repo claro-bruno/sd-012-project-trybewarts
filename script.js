@@ -16,3 +16,9 @@ loginButton.addEventListener('click', () => {
 
 const submitBtn = document.getElementById('submit-btn');
 submitBtn.addEventListener('click', preventDef);
+
+const getAgreement = document.getElementById('agreement');
+
+getAgreement.onchange = function swap() {
+  submitBtn.disabled = !this.checked;
+};
