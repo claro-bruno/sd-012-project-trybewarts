@@ -9,3 +9,11 @@ function loginCheck() {
   alert('Login ou senha inválidos.');
   return;
 }
+function habilitarBtn(checkBox){
+  
+  if(checkBox.checked){      
+      document.getElementById("submit-btn").disabled = false;
+  } else{      
+      document.getElementById("submit-btn").disabled = true;
+  }
+}
