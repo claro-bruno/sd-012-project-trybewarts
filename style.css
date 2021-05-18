@@ -1,7 +1,8 @@
 header {
   background-color: rgb(50, 167, 145);
+  padding: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -29,14 +30,6 @@ header {
   text-align: center;
 }
 
-header {
-  background-color: rgb(50, 167, 145);
-  padding: 1rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .trybewarts-forms-logo {
   height: 500px;
 }
@@ -45,11 +38,7 @@ header {
   display: flex;
 }
 
-#input-name,
-#input-lastname,
-#input-email,
-#house,
-#house-label {
+#input-name , #input-lastname , #input-email , #house , #house-label {
   margin: 10px;
 }
 
@@ -59,7 +48,6 @@ header {
 
 #evaluation-form {
   display: flex;
-  width: 675px;
 }
 
 .mb-3 {
