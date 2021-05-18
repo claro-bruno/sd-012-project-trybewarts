@@ -5,9 +5,12 @@
     background-color: rgb(50, 167, 145);
     align-items: center;
 }
+
 .trybewarts-header-logo {
     width: 50px;
+    margin left: 20px;
 }
 .trybewarts-login {
     display: flex;
 }
+
