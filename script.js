@@ -2,7 +2,7 @@ const inputLogin = document.getElementById('input-login');
 const inputSenha = document.getElementById('input-senha');
 const botaoLogar = document.getElementById('botao-logar');
 const botaoEnviar = document.getElementById('submit-btn');
-const checkbox = document.getElementsByClassName('subject');
+const checkBoxAgree = document.getElementById('agreement');
 
 botaoLogar.addEventListener('click', () => {
   if (inputLogin.value === 'tryber@teste.com' && inputSenha.value === '123456') {
@@ -13,12 +13,10 @@ botaoLogar.addEventListener('click', () => {
 });
 
 botaoEnviar.disabled = true;
-for (let index = 0; index < checkbox.length; index += 1) {
-  checkbox[index].addEventListener('input', () => {
-    if (document.querySelectorAll('.subject:checked').length !== 0) {
-      botaoEnviar.disabled = false;
-    } if (document.querySelectorAll('.subject:checked').length === 0) {
-      botaoEnviar.disabled = true;
-    }
-  });
-}
+checkBoxAgree.addEventListener('input', () => {
+  if (document.querySelectorAll('#agreement:checked').length !== 0) {
+    botaoEnviar.disabled = false;
+  } if (document.querySelectorAll('#agreement:checked').length === 0) {
+    botaoEnviar.disabled = true;
+  }
+});
