@@ -31,9 +31,9 @@ main form {
 }
 
 #label-content {
-    display: flex;
-    flex-direction: column;
-}  
+  display: flex;
+  flex-direction: column;
+}
 
 .rate-container {
   display: flex;
@@ -51,6 +51,6 @@ textarea {
 }
 
 footer {
-    padding-top: 10px;
-    text-align: center;
+  padding-top: 10px;
+  text-align: center;
 }
