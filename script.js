@@ -1,10 +1,11 @@
 const botao = document.getElementById('submit-btn');
 const confirma = document.getElementById('agreement');
 botao.disabled = true;
-confirma.addEventListener("change", function(){
-  if (confirma.checked === false){
+confirma.addEventListener('change', function (){
+  if (confirma.checked === false) {
     botao.disabled = true;
   }
+
   else {
     botao.disabled = false;
   }
@@ -12,7 +13,6 @@ confirma.addEventListener("change", function(){
 const senha = document.querySelector('#senha').value;
 const email = document.querySelector('#email').value;
 const botaoHeader = document.querySelector('#btnheader');
-botaoHeader.addEventListener('click', verificaLogin);
 function verificaLogin() {
   const novaSenha = document.querySelector('#senha').value;
   const novoEmail = document.querySelector('#email').value;
@@ -21,5 +21,5 @@ function verificaLogin() {
   } else if (senha === novaSenha && email === novoEmail) {
     alert('Olá, Tryber!');
   }
-};
-
+}
+botaoHeader.addEventListener('click', verificaLogin);
