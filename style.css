@@ -34,3 +34,7 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+.inputs-casa {
+  display: flex;
+}
