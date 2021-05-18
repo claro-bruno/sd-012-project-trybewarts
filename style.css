@@ -60,6 +60,12 @@ form h1 {
   margin-bottom: 3rem;
 }
 
+form hr {
+  width: 610px;
+  border: 1.1px solid lightgray;
+  margin: .5rem 0;
+}
+
 #house {
   width: 260px;
 }
