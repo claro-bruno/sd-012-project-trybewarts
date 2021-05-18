@@ -69,6 +69,11 @@ main {
   flex-direction: column;
 }
 
+#which-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 #label-rate {
   justify-content: space-between;
 }
