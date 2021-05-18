@@ -29,9 +29,11 @@ main {
 #evaluation-form {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   width: 675px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
+
