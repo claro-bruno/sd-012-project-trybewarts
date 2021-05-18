@@ -30,3 +30,40 @@ const changeCounter = () => {
   document.getElementById('counter').innerHTML = counter - textarea.value.length;
 };
 textarea.addEventListener('keyup', changeCounter);
+
+let fullName;
+let email;
+let house;
+let family;
+let subject;
+let rate;
+let commentary;
+
+const getFamilyRadios = () => {
+  const familyRadios = document.getElementsByClassName('family');
+  for (let i = 0; i < familyRadios.length; i += 1) {
+    if (familyRadios[i].checked) {
+      return familyRadios[i].value;
+    }
+  }
+};
+
+const getFamily = () => {
+  const checked = [];
+  const checkBoxes = document.getElementsByClassName('subject');
+  for (let i = 0; i < checkBoxes.length; i += 1) {
+    if (checkBoxes[i].checked) {
+      checked.push(checkBoxes[i].value);
+    }
+  }
+  return checked.join(', ');
+};
+
+const getRateRadios = () => {
+  const rateRadios = document.getElementsByClassName('rate');
+  for (let i = 0; i < rateRadios.length; i += 1) {
+    if (rateRadios[i].checked) {
+      return rateRadios[i];
+    }
+  }
+};
