@@ -19,13 +19,16 @@
   </header>
   <main>
     <form action="get" id="evaluation-form">
+      <h1>Forms</h1>
       <div class="line">
         <input id="input-name" type="text" placeholder="Nome">
         <input id="input-lastname" type="text" placeholder="Sobrenome">
       </div>
       <div class="inline2">
         <input id="input-email" type="email" placeholder="Email">
-        <select name="house" id="house">Casa :</select>
+        <label for="house">Casa:
+          <select name="house" id="house"></select>
+        </label>
       </div>
       <div>
         <label for="which-family" id="label-family">Qual sua família?</label>
@@ -44,6 +47,7 @@
           </div>
         </div>
       </div>
+
       <div class="checkbox-inputs">
         <label for="which-content" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
         <div id="which-content">
@@ -72,6 +76,7 @@
             <label for="python">Python</label>
           </div>
         </div>
+      </div>
 
         <div>
           <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
@@ -117,12 +122,13 @@
       </div>
       <button type="submit" id="submit-btn">Enviar</button>
     </form>
-    <img
-      id="trybewarts-forms-logo"
-      src="images/trybewarts-colored.svg"
-      alt="Logo da Trybewarts">
+      <img
+        id="trybewarts-forms-logo"
+        src="images/trybewarts-colored.svg"
+        alt="Logo da Trybewarts"
+      >
   </main>
-  <footer>Direitos reservados à Trybewarts©</footer>
+    <footer>Direitos reservados à Trybewarts©</footer>
 <script src="script.js"></script>
 </body>
 </html>
