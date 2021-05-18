@@ -10,6 +10,15 @@
   justify-content: space-between;
 }
 
+main {
+  display: flex;
+}
+
 .trybewarts-login {
   display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
