@@ -46,3 +46,12 @@
   display: flex;
   justify-content: center;
 }
+
+#evaluation-form {
+  display:flex;
+  width: 675px;
+}
+
+main {
+ display:flex;
+}
