@@ -7,7 +7,7 @@
 main {
   display: flex;
   justify-content: space-evenly;
-  background-color: #eff3f7;
+  background-color: rgb(239, 243, 247);
 }
 
 #evaluation-form {
@@ -26,23 +26,51 @@ main {
   align-items: center;
   border-radius: 20px;
 }
-#userInfo input{
-    margin-bottom: 10px;
-    margin-left: 10px;
-    border-radius: 6px;
-  }
 
-  #userInfo label{
-    margin-left: 5px;
-  }
+#userInfo input {
+  margin-bottom: 10px;
+  margin-left: 10px;
+  border-radius: 6px;
+}
+
+#userInfo label {
+  margin-left: 5px;
+}
 
 h2 {
   align-self: center;
-  font-family: 'MedievalSharp', cursive;
-  
+  font-family: MedievalSharp, cursive;
+
 }
 
 #house {
-    width:20%;
-    margin-left: 5px;
+  width: 20%;
+  margin-left: 5px;
 }
+
+.infoText{
+  display: flex;
+  font-weight: bolder;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sectionName{
+  font-size: large;
+}
+
+.sections{
+  display: flex;
+  flex-direction: column;
+  }
+
+  .radioButtons{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.radioButtons label{
+  padding-left: 5px;
+ }
