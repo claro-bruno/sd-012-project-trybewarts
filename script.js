@@ -1,12 +1,11 @@
-const botaoLogar = document.querySelector("#botaoLogar");
-const login = document.querySelector("#login");
-const senha = document.querySelector("#senha");
+const botaoLogar = document.querySelector('#botaoLogar');
+const login = document.querySelector('#login');
+const senha = document.querySelector('#senha');
 
-//BOTAO PARA LOGIN
-botaoLogar.addEventListener("click", function verificaLogin() {
-  if (login.value === "tryber@teste.com" && senha.value === "123456") {
-    window.alert("Olá, Tryber!");
+botaoLogar.addEventListener('click', function verificaLogin() {
+  if (login.value === 'tryber@teste.com' && senha.value === '123456') {
+    window.alert('Olá, Tryber!');
   } else {
-    window.alert("Login ou senha inválidos.");
+    window.alert('Login ou senha inválidos.');
   }
 });
