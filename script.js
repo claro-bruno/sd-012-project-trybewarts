@@ -35,7 +35,6 @@ function rate() {
     for(let index = 1; index <= 10; index += 1) {
         let notaLabel = document.createElement('label');
         notaLabel.innerHTML = index;
-        notaLabel.htmlFor = 'rate';
         let novaNota = document.createElement('input');
         novaNota.name = 'rate';
         novaNota.type = 'radio';
