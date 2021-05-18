@@ -4,11 +4,27 @@ body {
 
 .header {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   width: 100%;
   background-color: rgb(50, 167, 145);
 }
 
 .trybewarts-header-logo {
-  float: right;
+  float: left;
+}
+
+#trybewarts-header-title {
+  align-self: center;
+}
+
+.trybewarts-login {
+  display: flex;
+  align-self: center;
+  height: 1.5em;
+}
+
+#login , #senha , #botao {
+  width: 6em;
+  border-radius: 4px;
+  margin-right: 4px;
 }
