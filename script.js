@@ -5,7 +5,7 @@ const loginPass = document.querySelector('#login-pass');
 const agreementCheck = document.querySelector('#agreement');
 const submitBtn = document.querySelector('#submit-btn');
 submitBtn.disabled = true;
-const textArea = document.querySelector('#textarea-txt');
+const textArea = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
 
 // Valida o login
