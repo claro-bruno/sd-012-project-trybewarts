@@ -2,17 +2,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-family: hp, sans-serif;
-  font-size: 60px;
-  margin: 10px;
-}
-
-@font-face {
-  font-family: hp;
-  src: url(/fonts/HARRYP__.TTF);
-}
-
 .header {
   display: flex;
   justify-content: space-between;
