@@ -27,11 +27,13 @@ header button {
 
 main {
   display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 
 .userInfo {
   display: flex;
-  height: 10%;
+  flex-direction: column;
 }
 
 #evaluation-form {
@@ -42,6 +44,19 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.familys {
+  display: flex;
+  flex-direction: column;
+}
+
+.subject {
+  padding-right: 20px;
+}
+
+.texto textarea {
+  width: 90%;
 }
 
 footer {
