@@ -32,53 +32,46 @@ textArea.addEventListener('input', () => {
   pCounter.innerText = 500 - textArea.value.length;
 });
 
-const printForm = document.querySelector("#print-form-container");
-
-submitBtn.addEventListener('click', () => {
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
   const name = document.querySelector('#input-name').value;
   const lastName = document.querySelector('#input-lastname').value;
   const email = document.querySelector('#input-email').value;
-  const house = document.querySelector('#house option:selected');
+  const house = document.querySelector('#house').value; // Correção 1
   const inputFamily = document.getElementsByName('family');
   let familyValue = "";
   const materia = document.getElementsByClassName('subject');
-  let materiaSelecionadas = "";
+  let materiaSelecionadas = [];
   const avalicacao = document.getElementsByName('rate');
   let avaliacaoValue = "";
   const observacao = document.querySelector('#textarea').value;
+  const printForm = document.querySelector("#print-form-container");
 
   for(let index =0; index < inputFamily.length; index += 1) {
     if (inputFamily[index].checked) {
       familyValue = inputFamily[index].value;
+      console.log(familyValue); // Verificação
     };
   };
   
   for(let index =0; index < materia.length; index += 1) {
-    if (materia[index] === true) {
-      materiaSelecionadas += ` ${materia[index].value}`;
-    }
-  }
+    if (materia[index].checked) {
+      materiaSelecionadas.push(materia[index].value);
+      console.log(materiaSelecionadas); // Verificação
+    };
+  };
 
   for(let index =0; index < avalicacao.length; index += 1) {
     if (avalicacao[index].checked) {
       avaliacaoValue = avalicacao[index].value;
+      console.log(avaliacaoValue); // Verificação
     };
   };
 
-
-
-  // const form = {
-  //   nome: `${name} ${lastName}`,
-  //   email: `${email}`,
-  //   casa: `${house}`,
-  //   familia: "",
-  //   materias: "",
-  //   avaliacao: "",
-  //   observacoes: ""
-  // }
-
-  const addP = document.createElement('p');
-  printForm.appendChild(addP);
-  addP.innerText = `nome: ${name} ${lastName} \n email: ${email} \n casa: ${house} \n familia: ${familyValue} \n matérias:${materiaSelecionadas} \n avaliação: ${avaliacaoValue} \n observações ${observacao}`; 
-  console.log("aqui");
+  const addParagraph = document.createElement('p');
+  printForm.appendChild(addParagraph);
+  let formResult = `Nome: ${name} ${lastName} \n Email: ${email} \n Casa: ${house} \n Familia: ${familyValue} \n Matérias:${materiaSelecionadas} \n Avaliação: ${avaliacaoValue} \n Observações ${observacao}`; 
+  console.log(formResult);
+  addParagraph.innerText = formResult;
+  
 });
