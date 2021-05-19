@@ -65,6 +65,32 @@ function replaceRateElement() {
   evaluation.parentNode.replaceChild(replaceParagraph, evaluation);
 }
 
+function replaceFamilyElement() {
+  const family = document.querySelector('input[name="family"]:checked');
+  const familyCointainer = family.parentNode;
+  const familyParagraph = document.createElement('p');
+  familyParagraph.innerHTML = `Família: ${family.value}`;
+  while (familyCointainer.firstChild) {
+    familyCointainer.removeChild(familyCointainer.firstChild);
+  }
+  familyCointainer.appendChild(familyParagraph);
+}
+
+function replaceContentElement() {
+  const content = document.querySelectorAll('input[class=subject]:checked');
+  const contentContainer = content[0].parentNode.parentNode;
+  const contentParagraph = document.createElement('p');
+  const checkedArray = [];
+  for (let tech = 0; tech < content.length; tech += 1) {
+    checkedArray.push(content[tech].value);
+  }
+  while (contentContainer.firstChild) {
+    contentContainer.removeChild(contentContainer.firstChild);
+  }
+  contentParagraph.innerHTML = `Matérias: ${checkedArray.join(', ')}`;
+  contentContainer.appendChild(contentParagraph);
+}
+
 submitButton.addEventListener('click', () => {
   replaceNameElement();
 
@@ -73,6 +99,10 @@ submitButton.addEventListener('click', () => {
   replaceHouseElement();
 
   replaceRateElement();
+
+  replaceFamilyElement();
+
+  replaceContentElement();
 });
 
 //   const families = document.querySelectorAll('.input-family')
