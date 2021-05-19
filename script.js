@@ -92,10 +92,6 @@ function habilitaBotão() {
 
 valor.addEventListener('click', habilitaBotão);
 
-<<<<<<< HEAD
-
-
-=======
 function limite_textarea(valor) {
   quant = 500;
   total = valor.length;
@@ -106,5 +102,4 @@ function limite_textarea(valor) {
       document.getElementById('textarea').value = valor.substr(0,quant);
   }
 }
-// btn2.addEventListener('click', substituiForm)
->>>>>>> 1d83929432f6fca90b6a896762e51690cfcc3e4c
+
