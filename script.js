@@ -89,3 +89,5 @@ function listenerKey(event) {
 
 // adiciona evento de teclado em toda página
 document.addEventListener('keyup', listenerKey);
+
+console.log("oioioioioi");
