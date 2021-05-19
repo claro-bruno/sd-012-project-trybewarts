@@ -19,3 +19,11 @@ agreement.addEventListener('click', () => {
     submitBtn.setAttribute('disabled', 'disabled');
   }
 });
+// Configura contador de caracteres do campo de comentário
+const textArea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+const maxLength = 500;
+counter.innerHTML = maxLength;
+textArea.addEventListener('input', () => {
+  counter.innerHTML = maxLength - textArea.value.length;
+});
