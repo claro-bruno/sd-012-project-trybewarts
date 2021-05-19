@@ -82,3 +82,26 @@ main {
   display: flex;
 }
 
+.question-container {
+  display: flex;
+}
+
+.content-ckbx-container {
+  display: flex;
+}
+
+.ckbx-container{ 
+  display: flex;
+}
+
+text-container {
+  display: flex;
+}
+
+#textarea {
+  display: flex;
+}
+
+.textarea{
+  display: flex;
+}
