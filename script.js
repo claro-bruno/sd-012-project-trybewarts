@@ -74,14 +74,14 @@ function isChecked() {
 }
 
 function someForm() {
-  const someForm = document.getElementsByClassName('some');
-  for (let index = 0; index < someForm.length; index += 1) {
-    someForm[index].style.display = 'none';
+  const some = document.getElementsByClassName('some');
+  for (let index = 0; index < some.length; index += 1) {
+    some[index].style.display = 'none';
   }
 }
 
 function skillsChecked() {
-  let skillsArray = [];
+  const skillsArray = [];
   for (let index = 0; index < skills.length; index += 1) {
     if (skills[index].checked === true) {
       skillsArray.push(` ${skills[index].value}`);
@@ -108,11 +108,7 @@ function rateChecked() {
 
 function preencheForm() {
   const dados = [
-    {
-      dado: 'Nome',
-      value: `${nameInput.value} ${lastNameInput.value}`,
-      class: 'nome',
-    },
+    {dado: 'Nome',value: `${nameInput.value} ${lastNameInput.value}`,class: 'nome'},
     { dado: 'Email', value: emailInput.value, class: 'email' },
     { dado: 'Casa', value: escolheCasa.value, class: 'casa' },
     { dado: 'Família', value: familyChecked(), class: 'familia' },
