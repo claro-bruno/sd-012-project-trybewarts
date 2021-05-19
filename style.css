@@ -101,8 +101,12 @@ hr {
   height: 500px;
 }
 
-#valor{
+#radioFamily {
   display: flex;
-  align-items: flex-start;
-  flex-direction: column
+  flex-direction: column;
+}
+
+#checkboxConteudo {
+  display: flex;
+  flex-direction: column;
 }

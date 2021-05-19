@@ -24,32 +24,6 @@
         <input type="text" id="input-name" name="input-name" placeholder="Nome">
         <input type="text" id="input-lastname" name="input-lastname" placeholder="Sobrenome">
       </div>
-      <select id="house" name="">
-        <option type="text" id="gitnoria-house" value="Gitnória">Gitnória</option>
-        <option type="text" id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-        <option type="text" id="corvinode-house" value="Corvinode">Corvinode</option>
-        <option type="text" id="pytherina-house" value="Pytherina">Pytherina</option>
-      </select>
-      <input type="text" id="input-email" name="input-email" placeholder="Email">
-      <hr>
-
-      <div class="teste">
-        <label id="label-family" for="">Qual sua família?
-          <input type="radio" id="valor" name="family" value="Frontend"> Frontend
-          <input type="radio" id="valor" name="family" value="Backend"> Backend
-          <input type="radio" id="valor" name="family" value="FullStack"> FullStack
-      </div>
-      
-      <div>
-        <label id="label-family" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-          <imput type="checkbox" class="subject" name="family" value="HoFs"> HoFs
-          <input type="checkbox" class="subject" name="family" value="Jest"> Jest
-          <input type="checkbox" class="subject" name="family" value="Promises"> Promises
-          <input type="checkbox" class="subject" name="family" value="React"> React
-          <input type="checkbox" class="subject" name="family" value="SQL"> SQL
-          <input type="checkbox" class="subject" name="family" value="Python"> Python
-      </div>
-
       <div id="house-email">
         <input type="text" id="input-email" name="input-email" placeholder="Email">
         <span>Casa:
@@ -61,7 +35,36 @@
           </select>
         </span>
       </div>
-      <hr>
+      <hr> 
+
+<!-- Questao 12 -->
+      <div id="radioFamily">
+        <label id="label-family">Qual sua família?</label>
+        <input type="radio" name="family" value="Frontend" id="a">
+        <label for="a">Frontend</label>
+        <input type="radio" name="family" value="Backend" id="b">
+        <label for="b">Backend</label>
+        <input type="radio" name="family" value="FullStack" id="c">
+        <label for="c">FullStack</label>
+      </div>
+      
+<!-- Questao 13-->
+      <div id="checkboxConteudo">
+        <label id="label-content" for="family">Qual conteúdo você está com mais vontade de aprender?</label>
+        <input type="checkbox" class="subject" value="HoFs" id="checkbox-1" name="family">
+        <label for="checkbox-1">HoFs</label>
+        <input type="checkbox" class="subject" value="Jest" id="checkbox-2" name="family">
+        <label for="checkbox-2">Jest</label>
+        <input type="checkbox" class="subject" value="Promises" id="checkbox-3" name="family">
+        <label for="checkbox-3">Promises</label>
+        <input type="checkbox" class="subject" value="React" id="checkbox-4" name="family">
+        <label for="checkbox-4">React</label>
+        <input type="checkbox" class="subject" value="SQL" id="checkbox-5" name="family">
+        <label for="checkbox-5">SQL</label>
+        <input type="checkbox" class="subject" value="Python" id="checkbox-6" name="family">
+        <label for="checkbox-6">Python</label>
+      </div>
+
       <div id="label-rate-container">
         <label id="label-rate">Como você avalia a Trybewarts?</label>
         <input type="radio" name="rate" value="1" id="radio-1">
@@ -85,10 +88,20 @@
         <input type="radio" name="rate" value="10" id="radio-10">
         <label for="radio-10">10</label>
       </div>
+
+      <div>
+        <label class="textarea" for="textarea">Deixe seu comentário:</label>
+        <textarea id="textarea" maxlength="500" cols="30" rows="10"></textarea>
+      </div>
+
       <hr>
       <div id="terms">
         <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" id="agreement">
+        <input type="checkbox" id="agreement" required>
+      </div>
+
+      <div>
+        <button type="submit" id="submit-btn">Enviar</button>
       </div>
     </form>
 
