@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 10
 
 ---
 
@@ -19,11 +19,12 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: Foi muito boa a experiencia em duplas pois nos coloca em situações de que não é somente sua opinião que vale. Não tivemos grandes dificuldades com o projeto nem de relacionamento, pois ja somos meio que uma dupla de apoio mútuo rs'. 
+Acredito que o problema maior foi somente com o requisito 21, cujo a descrição poderia ser mais clara. Mas ao fim conseguimos passar com louvor. Agradeço muito a Thaisa por aguentar minha matraca rs' e vamos pro próximo que esse ja ta pago.
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: [Diogo Sant'Anna](https://github.com/dihsantanna) e [Thaísa Medeiros](https://github.com/ThaisaMA).
 
 ---
 
