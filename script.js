@@ -1,3 +1,17 @@
+const inputNome = document.querySelector('#input-name');
+const inputEmail = document.querySelector('#input-email');
+const listaDeCasas = document.getElementsByName('casa');
+for(let casa of listaDeCasas) {
+  if(casa.checked) {
+    console.log(casa);
+  }
+}
+
+// guarda valores dos campos em localStorage
+function guardarCampos() {
+
+}
+
 // valida login e senha
 function validacaoLoginSenha(event) {
   // acessa elemento com id 'inputSenha'
@@ -15,7 +29,7 @@ function validacaoLoginSenha(event) {
     event.preventDefault();
   }
 }
-
+// valida botão submit
 function validaBotaoSubmit(event) {
   // acessa elemento com id 'submit-btn'
   const btnSubmit = document.querySelector('#submit-btn');
@@ -42,6 +56,9 @@ function listenerClick(event) {
   } else if (event.target.id === 'agreement') {
     // se não, se o alvo do click for o elemento com id 'agreement' (checkbox)
     validaBotaoSubmit(event);
+  } else if (event.target.id === 'submit-btn') {
+    // se não, se o alvo do click for o elemento com id 'submit-btn'
+    guardarCampos();
   } else {
     // se não, exclua esse evento dos registros
     event.target.removeEventListener('click', listenerClick);
