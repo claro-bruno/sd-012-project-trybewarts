@@ -41,6 +41,12 @@ header form input {
 
 main {
   display: flex;
+
+}
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
 }
 
 #input-name {
@@ -53,7 +59,7 @@ main {
 
 #input-name-lastname {
   margin-top: 10%;
-  justify-self: stretch;
+  display: flex;
 }
 
 #house {
@@ -65,7 +71,7 @@ main {
 }
 
 #input-email {
-  width: 304px;
+  width: 286px;
 }
 
 #evaluation-form input {
@@ -76,12 +82,6 @@ main {
   border: 1px solid black;
 }
 
-#evaluation-form {
-  display: flex;
-  flex-direction: column;
-  width: 675px;
-}
-
 hr {
   margin: 5% 2%;
 }
@@ -89,6 +89,7 @@ hr {
 #label-rate-container {
   margin-left: 2%;
   display: flex;
+  align-items: center;
 }
 
 #terms {
@@ -101,12 +102,21 @@ hr {
   height: 500px;
 }
 
-#radioFamily {
+#programming-family {
   display: flex;
   flex-direction: column;
+  margin-left: 2%;
 }
 
-#checkboxConteudo {
+#learn-content {
   display: flex;
   flex-direction: column;
+  margin: 5% 2%;
 }
+
+.subjects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
