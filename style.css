@@ -37,9 +37,9 @@ main {
   height: 500px;
 }
 
-footer{
+footer {
   display: flex;
   justify-content: center;
-  background-color: #101419;
+  background-color: rgb(16, 20, 25);
   color: antiquewhite;
 }
