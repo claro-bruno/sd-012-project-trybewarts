@@ -47,10 +47,6 @@ function listenerClick(event) {
 // adiciona evento de click em toda a página
 document.addEventListener('click', listenerClick);
 
-function quantidadeDeCaracteresDisponíveis(quantidadeDeCaracteres) {
-  return 500 - quantidadeDeCaracteres;
-}
-
 // gerencia eventos de teclado na página
 function listenerKey(event) {
   // se o alvo do click for o elemento com id 'textarea'
@@ -60,12 +56,11 @@ function listenerKey(event) {
     // acessa elemento com id 'contador'
     const contador = document.querySelector('#counter');
     // altera html interno do contador
-    contador.innerHTML = quantidadeDeCaracteresDisponíveis(quantidadeDeCaracteres);
+    contador.innerHTML = 500 - quantidadeDeCaracteres;
   } else {
     // se não, exclua esse evento dos registros
     event.target.removeEventListener('keyup', listenerKey);
   }
 }
-
 // adiciona evento de teclado em toda página
 document.addEventListener('keyup', listenerKey);
