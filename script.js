@@ -34,9 +34,11 @@ function radio() {
 }
 radio();
 
+
 // Encontramos resolução através do link : https://stackoverflow.com/questions/18110865/how-to-disable-enable-a-button-with-a-checkbox-if-checked
 const checker = document.getElementById('agreement');
 const sendbtn = document.getElementById('submit-btn');
+sendbtn.disabled = true;
 checker.onchange = function funcao() {
-  sendbtn.disabled = !this.checked;
+sendbtn.disabled = !this.checked;
 };
