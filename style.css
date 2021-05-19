@@ -67,3 +67,14 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#music {
+  display: flex;
+  justify-content: flex-end;
+}
