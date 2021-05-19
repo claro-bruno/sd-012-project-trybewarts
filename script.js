@@ -24,7 +24,7 @@ function criandoRadiosNota() {
     notaRadio.name = 'rate';
     notaRadio.classList.add('form-check-input');
     labelNota.innerText = nota;
-    labelNota.classList.add('form-check-label')
+    labelNota.classList.add('form-check-label');
     divNotas.appendChild(notaRadio);
     divNotas.appendChild(labelNota);
   }
