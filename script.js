@@ -86,10 +86,18 @@ function mostrarEmail() {
   evaluationForm.appendChild(paragrafoEmail);
 }
 
+function mostrarCasa() {
+  const casa = document.querySelector('#house');
+  const option = document.getElementById(house.value);
+  const paragrafoCasa = document.createElement('p');
+  casa.remove();
+  evaluationForm.appendChild(paragrafoCasa);
+}
+
 function mostrarValores() {
   mostrarNomeCompleto();
   mostrarEmail();
-  // mostrarCasa();
+  mostrarCasa();
   // mostrarFamilia();
   // mostrarConteudo();
   // mostrarAvaliacao();
