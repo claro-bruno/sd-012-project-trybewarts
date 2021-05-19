@@ -29,3 +29,8 @@ main {
   height: 500px;
 }
 
+#label-family {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
