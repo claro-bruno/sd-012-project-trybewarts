@@ -38,20 +38,26 @@ function createA(array, position) {
 // Cria inputRadio
 const divRadio = document.getElementById('radioLabel');
 const radioValue = ['Frontend', 'Backend', 'FullStack'];
+const labelValue = ['label1', 'label2', 'label3'];
+// Cria label
+function createLabel(index) {
+  console.log(index);
+  const inputLabel = document.createElement('label');
+  inputLabel.htmlFor = labelValue[index];
+  inputLabel.id = 'labelRadio';
+  inputLabel.innerHTML = radioValue[index];
+  divRadio.children[index + 1].appendChild(inputLabel);
+}
 function createRadio() {
   createA(radioValue, divRadio);
   for (let index = 0; index < radioValue.length; index += 1) {
-    const inputLabel = document.createElement('label');
     const inputRadio = document.createElement('input');
     inputRadio.type = 'radio';
     inputRadio.name = 'family';
     inputRadio.value = radioValue[index];
-    inputRadio.id = `family ${index}`;
-    inputLabel.htmlFor = `family ${index}`;
-    inputLabel.innerHTML = `Família ${radioValue[index]}`;
-    inputLabel.id = 'labelRadio';
+    inputRadio.id = labelValue[index];
     divRadio.children[index + 1].appendChild(inputRadio);
-    divRadio.children[index + 1].appendChild(inputLabel);
+    createLabel(index);
   }
 }
 createRadio();
@@ -61,17 +67,12 @@ const checkboxValue = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
 function createCheckbox() {
   createA(checkboxValue, divCheckbox);
   for (let index = 0; index < checkboxValue.length; index += 1) {
-    const inputLabel = document.createElement('label');
     const inputCheckbox = document.createElement('input');
     inputCheckbox.type = 'checkBox';
     inputCheckbox.value = checkboxValue[index];
     inputCheckbox.className = 'subject';
-    inputCheckbox.id = `contentCheckbox ${index}`;
-    inputLabel.htmlFor = `contentCheckbox ${index}`;
-    inputLabel.innerHTML = checkboxValue[index];
-    inputLabel.id = 'labelCheckbox';
+    divCheckbox.children[index + 1].innerHTML = checkboxValue[index];
     divCheckbox.children[index + 1].appendChild(inputCheckbox);
-    divCheckbox.children[index + 1].appendChild(inputLabel);
   }
 }
 createCheckbox();
@@ -82,17 +83,12 @@ const rateValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function createRate() {
   createA(rateValue, divRate);
   for (let index = 0; index < rateValue.length; index += 1) {
-    const inputLabel = document.createElement('label');
     const inputRate = document.createElement('input');
     inputRate.type = 'radio';
     inputRate.name = 'rate';
     inputRate.value = rateValue[index];
-    inputRate.id = `rateTrybewarts ${index}`;
-    inputLabel.htmlFor = `rateTrybewarts ${index}`;
-    inputLabel.innerHTML = rateValue[index];
-    inputLabel.id = 'labelRate';
+    divRate.children[index + 1].innerHTML = rateValue[index];
     divRate.children[index + 1].appendChild(inputRate);
-    divRate.children[index + 1].appendChild(inputLabel);
   }
 }
 createRate();
