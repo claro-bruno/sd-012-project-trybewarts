@@ -45,3 +45,12 @@ checker.addEventListener('click', () => {
     sendbtn.disabled = true;
   }
 });
+
+const textArea = document.getElementById('textarea');
+const p = document.getElementById('counter');
+
+textArea.addEventListener('input', () => {
+  const maxCaracter = 500;
+  const digitado = maxCaracter - textArea.value.length;
+  p.innerText = digitado;
+});

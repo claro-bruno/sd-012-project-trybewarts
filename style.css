@@ -84,3 +84,7 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+#counter {
+  text-align: end;
+}
