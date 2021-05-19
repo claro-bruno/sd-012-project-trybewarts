@@ -78,3 +78,13 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+/* Estilização do Footer  */
+footer {
+  background-color: rgb(50, 167, 145);
+  color: white;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
