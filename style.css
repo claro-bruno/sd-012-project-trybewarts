@@ -1,7 +1,13 @@
+body {
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
+  height: auto;
 }
 
 .trybewarts-header-logo {
@@ -10,20 +16,47 @@
 
 .trybewarts-login {
   display: flex;
+  margin: auto 10px;
+  height: 40%;
+}
+
+.trybewarts-login input {
+  border-radius: 5px;
+  border-style: solid;
+}
+
+#login-button {
+  background-color: rgb(50, 167, 145);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: azure;
 }
 
 #trybewarts-header-title {
   text-align: center;
+  font-size: 50px;
+  display: flex;
+  vertical-align: middle;
+  margin: auto;
+  color: azure;
 }
 
 main {
   display: flex;
+  padding: 5%;
+  justify-content: space-around;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  background-color: rgb(208, 165, 100);
+  border-radius: 20px;
+}
+
+#evaluation-form h3 {
+  margin: 5%;
 }
 
 #trybewarts-forms-logo {
@@ -32,18 +65,62 @@ main {
 
 .div-form {
   display: flex;
+  margin: 2% 5%;
+}
+
+.div-form input {
+  border-style: solid;
+  border-color: azure;
+  border-radius: 10px;
+}
+
+#input-name , #input-email {
+  margin-right: 5%;
 }
 
 .div-column {
   display: flex;
   flex-direction: column;
+  margin: 3%;
+  flex-basis: 40%;
 }
 
 .div-learn {
   display: flex;
   flex-wrap: wrap;
+  margin: 5%;
 }
 
-.divResult {
-  background-color: rgb(234, 234, 234);
+#textarea {
+  border-style: solid;
+  border-color: azure;
+  border-radius: 10px;
+  resize: none;
+}
+
+#counter {
+  font-style: italic;
+  font-size: 12px;
+}
+
+#submit-btn {
+  border-style: solid;
+  border-color: azure;
+  background-color: azure;
+  color: rgb(156, 124, 75);
+  font-weight: 800;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+  width: 20%;
+}
+
+footer {
+  background-color: rgb(50, 167, 145);
+  padding: 5px;
+  text-align: center;
+}
+
+footer p {
+  color: azure;
 }
