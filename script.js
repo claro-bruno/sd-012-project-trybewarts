@@ -42,31 +42,45 @@ getAgreementCheck.addEventListener('click', enableButton);
 //  console.log(contador);
 // }
 
-function formOutput(event) {
-  event.preventDefault();
+function createNameOutput() {
   const name = document.querySelector('#input-name').value;
   const lastName = document.querySelector('#input-lastname').value;
-  const email = document.querySelector('#input-email').value;
-  const house = document.querySelector('#house').value;
-  const family = document.getElementsByName('family');
   const pName = document.createElement('p');
-  const pEmail = document.createElement('p');
-  const pHouse = document.createElement('p');
-  const pFamily = document.createElement('p');
-
-  for(let indice = 0;indice < family.length;indice+=1){
-   if(family[indice].checked){
-    pFamily.innerHTML = `Família: ${family[indice].value}`
-   }
-  }
-
   pName.innerHTML = `Nome: ${name} ${lastName}`;
   getOutputDiv.appendChild(pName);
+}
+
+function createEmailOutput() {
+  const email = document.querySelector('#input-email').value;
+  const pEmail = document.createElement('p');
   pEmail.innerHTML = `Email: ${email}`;
   getOutputDiv.appendChild(pEmail);
+}
+
+function createHouseOutput() {
+  const house = document.querySelector('#house').value;
+  const pHouse = document.createElement('p');
   pHouse.innerHTML = `Casa: ${house}`;
   getOutputDiv.appendChild(pHouse);
+}
+
+function createFamilyOutput() {
+  const family = document.getElementsByName('family');
+  const pFamily = document.createElement('p');
+  for (let indice = 0; indice < family.length; indice += 1) {
+    if (family[indice].checked) {
+      pFamily.innerHTML = `Família: ${family[indice].value}`;
+    }
+  }
   getOutputDiv.appendChild(pFamily);
+}
+
+function formOutput(event) {
+  event.preventDefault();
+  createNameOutput();
+  createEmailOutput();
+  createHouseOutput();
+  createFamilyOutput();
 
   getInputDiv.style.display = 'none';
   getOutputDiv.style.display = 'flex';
