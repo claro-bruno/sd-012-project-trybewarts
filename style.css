@@ -53,3 +53,8 @@ main {
 #family {
   width: 250px;
 }
+
+#casa {
+  margin-bottom: 0;
+  padding: 5px;
+}
