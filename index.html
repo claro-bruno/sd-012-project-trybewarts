@@ -19,7 +19,7 @@
     </header>
     <main class="container">
         <form class="container col" action="#" id="evaluation-form">
-            <div class="container">
+            <div class="container" id="full-name">
                 <input type="text" id="input-name" placeholder="Nome">
                 <input type="text" id="input-lastname" placeholder="Sobrenome">
             </div>
@@ -32,7 +32,7 @@
                     <option value="Pytherina" id="pytherina-house">Pytherina</option>
                 </select>
             </div>
-            <div class="container col">
+            <div class="container col" id="family-container">
                 <label id="label-family">Qual sua família?</label>
                 <label for="front-input">Frontend</label>
                 <input type="radio" class="input-family" name="family" value="Frontend" id="front-input">
@@ -41,7 +41,7 @@
                 <label for="full-input">FullStack</label>
                 <input type="radio" class="input-family" name="family" value="FullStack" id="full-input">
             </div>
-            <div class="container col">
+            <div class="container col" id="content-container">
                 <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
                 <div class="container">
                     <label for="hofs-input">HoFs</label>
@@ -71,7 +71,7 @@
                 <input type="radio" name="rate" class="eval" id="" value="9"> 9
                 <input type="radio" name="rate" class="eval" id="" value="10"> 10
             </section>
-            <div class="container">
+            <div class="container" id="textarea-container">
                 <label for="textarea" class="textarea">Deixe seu comentário:</label>
                 <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
                 <p id="counter">500</p>
