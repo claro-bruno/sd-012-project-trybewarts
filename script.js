@@ -76,15 +76,15 @@ function createTech() {
 createTech();
 
 function createLvlAva() {
-  const niveisAva = document.getElementById('niveis');
+  const niveisAva = document.getElementById('rate');
   for (let index = 0; index < arrayNumber.length; index += 1) {
     const createLabelAva = document.createElement('label');
     const createInputAva = document.createElement('input');
     createLabelAva.innerText = arrayNumber[index];
+    niveisAva.appendChild(createLabelAva);
     createInputAva.type = 'radio';
     createInputAva.name = 'rate';
     createInputAva.value = arrayNumber[index];
-    niveisAva.appendChild(createLabelAva);
     niveisAva.appendChild(createInputAva);
   }
 }
@@ -102,7 +102,9 @@ document.querySelector('#agreement').addEventListener('input', () => {
 
 const getTxtArea = document.getElementById('textarea');
 
-getTxtArea.addEventListener('keydown', function(){
+function contador() {
   const getContador = document.querySelector('#counter');
   getContador.innerHTML = getTxtArea.textLength;
-});
+}
+
+getTxtArea.addEventListener('keydown', contador);

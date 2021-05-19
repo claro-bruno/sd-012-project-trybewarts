@@ -60,3 +60,11 @@ form {
 #niveis {
   display: flex;
 }
+
+#label-rate {
+  display: flex;
+}
+
+#rate {
+  display: flex;
+}
