@@ -36,3 +36,10 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(16, 20, 25);
+  color: antiquewhite;
+}
