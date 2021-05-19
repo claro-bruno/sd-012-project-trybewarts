@@ -5,6 +5,8 @@ const escolheCasa = document.querySelector('#house');
 const nota = document.querySelector('#rate');
 const checkboxAgreement = document.querySelector('#agreement');
 const submitButton = document.querySelector('#submit-btn');
+const getTextArea = document.getElementById('textarea');
+const getCounter = document.getElementById('counter');
 
 loginButton.addEventListener('click', (event) => {
   event.preventDefault();
@@ -15,6 +17,11 @@ loginButton.addEventListener('click', (event) => {
     loginInput.value = '';
     passInput.value = '';
   }
+});
+
+getTextArea.addEventListener('keyup', (event) => {
+  const currentLength = event.target.value.length;
+  getCounter.innerText = `Caracteres restantes: ${event.target.maxLength - currentLength}`;
 });
 
 function escolherCasa() {
@@ -51,6 +58,7 @@ function isChecked() {
     submitButton.disabled = 0;
     submitButton.style.opacity = 1;
   } else {
+    submitButton.disabled = 1;
     submitButton.style.opacity = 0.5;
   }
 }

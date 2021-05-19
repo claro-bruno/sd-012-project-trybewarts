@@ -64,6 +64,7 @@ main {
   display: flex;
   height: 100vh;
   margin: auto;
+  width: 85%;
   justify-content: space-around;
 }
 
