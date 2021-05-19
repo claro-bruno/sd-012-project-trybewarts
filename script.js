@@ -15,8 +15,10 @@ function Startlogin() {
 
 function checkTerms() {
     if (terms.checked) {
-      sendButton.disabled = false;
-    } else { sendButton.disabled = true; }
+        sendButton.disabled = false;
+    } else {
+        sendButton.disabled = true;
+    };
 };
 checkTerms();
 

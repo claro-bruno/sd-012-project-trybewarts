@@ -4,10 +4,6 @@
 }
 
 /*Começa os estilos*/
-main{
-    flex-direction: column;
-    width: 1000px;
-}
 .header{
     display: flex;
     background-color: rgb(50, 167, 145);
@@ -16,20 +12,38 @@ main{
     justify-content: space-between;
 }
 
+.trybewarts-header-logo{
+    display: flex;
+}
+
+#trybewarts-header-title{
+    
+}
+
 .trybewarts-login{
     display: flex;
     align-items: center;
+}
+
+main{
+    flex-direction: column;
+    width: 1000px;
 }
 
 #evaluation-form{
 
 }
 
-.familyBox{
+#house{
+
+}
+
+.divFamilyBox{
     display: flex;
     flex-direction: column;
     width: 200px;
 }
+
 
 .divRadioBox{
 
@@ -39,11 +53,11 @@ main{
 
 }
 
-.termsBox{
+.divTermsBox{
 
 }
 
-.submitBox{
+.divSubmitBox{
 
 }
 
@@ -52,7 +66,7 @@ main{
     left: 50%;
     position: absolute;
     display: flex;
-}  
+}
 
 .footerClass{
     background-color: rgb(54, 54, 54);
