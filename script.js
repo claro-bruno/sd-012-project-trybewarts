@@ -12,10 +12,10 @@ function validateLogin() {
 }
 inputButton.addEventListener('click', validateLogin);
 
-function buttonSubmit(event){
+function buttonSubmit(event) {
   const statusButton = event.target.checked;
   const status = document.getElementById('submit-btn');
-  if (statusButton === true){
+  if (statusButton === true) {
     status.disabled = false;
   } else {
     status.enable = true;
