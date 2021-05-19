@@ -135,6 +135,15 @@ function mostrarAvaliacao() {
   evaluationForm.appendChild(paragrafoAvaliacao);
 }
 
+function mostrarComentario() {
+  const divTextArea = document.querySelector('.text-area');
+  const comentario = document.querySelector('#textarea');
+  const paragrafoComentario = document.createElement('p');
+  paragrafoComentario.innerHTML = `Observações: ${comentario.value}`;
+  divTextArea.remove();
+  evaluationForm.appendChild(paragrafoComentario);
+}
+
 function mostrarValores() {
   mostrarNomeCompleto();
   mostrarEmail();
@@ -142,7 +151,7 @@ function mostrarValores() {
   mostrarFamilia();
   mostrarConteudo();
   mostrarAvaliacao();
-  // mostrarComentario();
+  mostrarComentario();
 }
 
 window.onload = () => {
