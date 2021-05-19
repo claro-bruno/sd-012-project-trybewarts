@@ -4,7 +4,7 @@ const btn = document.querySelector('#buttonEntrar');
 const btn2 = document.querySelector('#submit-btn');
 
 function verificaLogin() {
-  if(login.value === 'tryber@teste.com' && senha.value === '123456') {
+  if (login.value === 'tryber@teste.com' && senha.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
@@ -13,54 +13,41 @@ function verificaLogin() {
 
 const inputsFamilia = document.getElementsByName('family');
 const inputsConteudo = document.getElementsByName('conteudo');
-const mainElement = document.getElementById('mainEl');
 const inputAval = document.getElementsByName('rate');
+const div1 = document.getElementById('div1');
+const evalForm = document.getElementById('evaluation-form');
 
 function getFamily() {
-  let textoFam = 'Família: '
-  for (let index = 0; index < inputsFamilia.length; index += 1){
+  let textoFam = 'Família: ';
+  for (let index = 0; index < inputsFamilia.length; index += 1) {
     if (inputsFamilia[index].checked) {
-     let famSelec = inputsFamilia[index].value;
-     textoFam += famSelec;
+      const famSelec = inputsFamilia[index].value;
+      textoFam += famSelec;
     }
   }
   return textoFam;
 }
 
 function getAvaliacao() {
-  let textoAva = 'Avaliação: '
-  for (let index = 0; index < inputAval.length; index += 1){
-     if (inputAval[index].checked) {
-     let rate = inputAval[index].value;
-     textoAva += rate;
+  let textoAval = 'Avaliação: ';
+  for (let index = 0; index < inputAval.length; index += 1) {
+    if (inputAval[index].checked) {
+      const rate = inputAval[index].value;
+      textoAval += rate;
     }
   }
-  return textoAva;
+  return textoAval;
 }
 
 function getConteudo() {
-  let textoCont = 'Matérias: '
-  for (let index = 0; index < inputsConteudo.length; index += 1){
+  let textoCont = 'Matérias: ';
+  for (let index = 0; index < inputsConteudo.length; index += 1) {
     if (inputsConteudo[index].checked) {
-     let contSelec = inputsConteudo[index].value;
-     textoCont += `${contSelec}, `;
+      let contSelec = inputsConteudo[index].value;
+      textoCont += `${contSelec}, `;
     }
   }
   return textoCont;
-}
-
-  const evalForm = document.getElementById('evaluation-form')
-
-function criaDiv() {
-  let formDiv = document.createElement('div');
-  formDiv.id = 'div2';
-  evalForm.appendChild(formDiv);
-  for (let index1 = 0; index1 < 7; index1 += 1){
-    let pDiv = document.createElement('p');
-    pDiv.id = 'formItens' + index1;
-    pDiv.innerHTML = recebeValores(index1);
-    formDiv.appendChild(pDiv);
-  }
 }
 
 function recebeValores(num) {
@@ -69,15 +56,25 @@ function recebeValores(num) {
   const inputEmail = document.getElementById('input-email').value;
   const inputHouse = document.getElementById('house').value;
   const comentText = document.getElementById('textarea').value;
-  let fullName = `Nome: ${inputName} ${inputLastName}`;
-  let textoEmail = `Email: ${inputEmail}`;
-  let textoCasa = `Casa: ${inputHouse}`;
-  let textoComent = `Observações: ${comentText}`;
-  let array = [fullName, textoEmail, textoCasa, getFamily(), getConteudo(), getAvaliacao(), textoComent];
+  const fullName = `Nome: ${inputName} ${inputLastName}`;
+  const tEmail = `Email: ${inputEmail}`;
+  const tCasa = `Casa: ${inputHouse}`;
+  const tComent = `Observações: ${comentText}`;
+  const array = [fullName, tEmail, tCasa, getFamily(), getConteudo(), getAvaliacao(), tComent];
   return array[num];
 }
 
-const div1 = document.getElementById('div1');
+function criaDiv() {
+  const formDiv = document.createElement('div');
+  formDiv.id = 'div2';
+  evalForm.appendChild(formDiv);
+  for (let index1 = 0; index1 < 7; index1 += 1) {
+    const pDiv = document.createElement('p');
+
+    pDiv.innerHTML = recebeValores(index1);
+    formDiv.appendChild(pDiv);
+  }
+}
 
 function hideForm() {
   div1.style.display = 'none';
@@ -94,7 +91,7 @@ btn.addEventListener('click', verificaLogin);
 const valor = document.querySelector('#agreement');
 
 function habilitaBotão() {
-  if(valor.checked) {
+  if (valor.checked) {
     btn2.disabled = false;
   } else {
     btn2.disabled = true;
@@ -103,13 +100,13 @@ function habilitaBotão() {
 
 valor.addEventListener('click', habilitaBotão);
 
-function limite_textarea(valor) {
-  let quant = 500;
-  let total = valor.length;
-  if(total <= quant) {
-    resto = quant - total;
+const limite_textarea = (valor1) => {
+  const quant = 500;
+  const total = valor1.length;
+  if (total <= quant) {
+    const resto = quant - total;
     document.getElementById('counter').innerHTML = resto;
   } else {
-    document.getElementById('textarea').value = valor.substr(0,quant);
+    document.getElementById('textarea').value = valor.substr(0, quant);
   }
 }
