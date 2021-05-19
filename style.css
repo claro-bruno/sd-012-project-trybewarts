@@ -30,6 +30,12 @@
   align-content: flex-start;
 }
 
+.trybewarts-login {
+  display: flex;
+  align-items: flex-end;
+  justify-content: end;
+}
+
 /* Fim dos estilos do header */
 
 /* Inicio dos estilos da Main */
@@ -40,12 +46,6 @@ main {
 
 #evaluation-form {
   width: 675px;
-}
-
-.trybewarts-login {
-  display: flex;
-  align-items: flex-end;
-  justify-content: end;
 }
 
 /* Fim dos estilos da Main */
