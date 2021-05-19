@@ -8,8 +8,8 @@ for(let casa of listaDeCasas) {
 }
 
 // guarda valores dos campos em localStorage
-function guardarCampos() {
-  
+function guardarCampos2() {
+  console.log('teste');
 }
 
 // valida login e senha
@@ -58,7 +58,7 @@ function listenerClick(event) {
     validaBotaoSubmit(event);
   } else if (event.target.id === 'submit-btn') {
     // se não, se o alvo do click for o elemento com id 'submit-btn'
-    guardarCampos();
+    guardarCampos2();
   } else {
     // se não, exclua esse evento dos registros
     event.target.removeEventListener('click', listenerClick);
