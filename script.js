@@ -13,16 +13,73 @@ function verificaLogin() {
   };
 };
 
-document.getElementById('input-name');
-document.getElementById('input-lastname');
-document.getElementById('input-email');
-document.getElementById('house');
+const inputName = document.getElementById('input-name').value;
+const inputLastName = document.getElementById('input-lastname').value;
+const inputEmail = document.getElementById('input-email').value;
+const inputHouse = document.getElementById('house').value;
+const inputsFamilia = document.getElementsByName('family');
+const inputsConteudo = document.getElementsByName('conteudo');
+const mainElement = document.getElementById('mainEl');
 
-// function capturaDados () {
-//   if (btn2.disabled === false) {
+function getFamily() {
+  let textoFam = 'Família: '
+  for (index = 0; index < inputsFamilia.length; index += 1){
+    if (inputsFamilia[index].checked) {
+     let famSelec = inputsFamilia[index].value;
+     textoFam += famSelec;
+    };
+  };
+  return textoFam;
+};
 
-//   }
-// }
+getFamily();
+
+function getConteudo() {
+  let textoCont = 'Matérias: '
+  for (index = 0; index < inputsConteudo.length; index += 1){
+    if (inputsConteudo[index].checked) {
+     let contSelec = inputsConteudo[index].value;
+     textoCont += contSelec + ', '
+    };
+  };
+  return textoCont;
+};
+
+getConteudo();
+
+function criaDiv () {
+  let formDiv = document.createElement('div');
+  mainElement.appendChild(formDiv);
+  
+  for (index1 = 0; index1 < 7; index1 += 1){
+    let pDiv = document.createElement('p');
+    pDiv.className = 'formItens';
+    formDiv.appendChild(pDiv);
+  }
+
+  let textoNomeSobrenome = 'Nome: ' + inputName + ' ' + inputLastName;
+  let textoEmail = 'Email: ' + inputEmail;
+  let textoCasa = 'Casa: ' + inputHouse;
+  getFamily();
+  getConteudo();
+}
+
+
+
+const evalForm = document.getElementById('evaluation-form');
+
+function hideForm() {
+  evalForm.style.display='none';
+  criaDiv();
+};
+
+function preventDef (event) {
+  event.preventDefault();
+};
+
+evalForm.addEventListener('submit', preventDef);
+
+btn2.addEventListener('click', hideForm);
 
 btn.addEventListener('click', verificaLogin);
 const valor = document.querySelector('#agreement');
@@ -37,6 +94,5 @@ function habilitaBotão() {
 
 valor.addEventListener('click', habilitaBotão);
 
-// btn2.addEventListener('click', substituiForm)
 
 
