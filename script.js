@@ -1,4 +1,6 @@
 const loginForm = document.querySelector('.trybewarts-login');
+const agreement = document.querySelector('#agreement');
+const submitBtn = document.querySelector('#submit-btn');
 
 function getFormData(data) {
   const form = {
@@ -23,3 +25,11 @@ function validateLogin(event) {
   } else alert('Login ou senha inválidos.');
 }
 loginForm.addEventListener('submit', validateLogin);
+
+function activateButton() {
+  submitBtn.disabled = true;
+  if (agreement.checked) {
+    submitBtn.disabled = false;
+  }
+}
+activateButton();
