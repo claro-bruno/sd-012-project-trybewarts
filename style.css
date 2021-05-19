@@ -85,6 +85,15 @@ main {
   flex-basis: 40%;
 }
 
+#div-family {
+  display: flex;
+  flex-direction: column;
+}
+
+#div-family input {
+  margin: 10px;
+}
+
 .div-learn {
   display: flex;
   flex-wrap: wrap;
@@ -115,6 +124,10 @@ main {
   width: 20%;
 }
 
+.divResult {
+  margin: 5%;
+}
+
 footer {
   background-color: rgb(50, 167, 145);
   padding: 5px;
@@ -123,4 +136,137 @@ footer {
 
 footer p {
   color: azure;
+}
+
+@media screen and ( max-width : 375px ) {
+
+  body {
+    font-size: 2em;
+  }
+
+  .header {
+    background-color: rgb(50, 167, 145);
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .trybewarts-header-logo {
+    width: 100px;
+    margin: auto;
+  }
+
+  .trybewarts-login {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    margin: 15px auto;
+  }
+
+  .trybewarts-login input {
+    border-radius: 5px;
+    border-style: solid;
+    margin-bottom: 5px;
+    height: 30px;
+  }
+
+  #trybewarts-header-title {
+    display: none;
+  }
+
+  #login-button {
+    height: 30px;
+    font-size: 20px;
+    color: azure;
+  }
+
+  main {
+    display: flex;
+    padding: 5%;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  #evaluation-form {
+    display: flex;
+    margin: 2%;
+    width: 96%;
+    flex-direction: column;
+    background-color: rgb(208, 165, 100);
+    border-radius: 20px;
+  }
+
+  .div-form {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5%;
+  }
+
+  .div-form input {
+    width: 80%;
+    border-style: solid;
+    border-color: azure;
+    border-radius: 10px;
+  }
+
+  .div-learn input {
+    margin: 20px auto;
+  }
+
+  #evaluation-form input {
+    height: 3em;
+  }
+
+  #input-name , #input-email {
+    margin: 5% 0;
+  }
+
+  .div-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5%;
+  }
+
+  #house {
+    height: 2em;
+    display: flex;
+    font-size: 30px;
+  }
+
+  #div-family {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #div-family input {
+    margin: 10px;
+  }
+
+  .div-learn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  #counter {
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  #agreement {
+    text-align: center;
+    width: 50px;
+    margin: 5% auto;
+  }
+
+  #submit-btn {
+    height: 50px;
+    width: 40%;
+  }
 }
