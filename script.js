@@ -12,7 +12,7 @@ const lastNameInput = document.getElementById("input-lastname");
 const emailInput = document.getElementById("input-email");
 const finalForm = document.querySelector(".form");
 const family = document.getElementsByName("family");
-const skills = document.getElementsByClassName("skill-option");
+const skills = document.getElementsByClassName("subject");
 const avaliacao = document.getElementsByClassName('nota');
 
 loginButton.addEventListener("click", (event) => {
@@ -90,7 +90,7 @@ function skillsChecked() {
   let skillsArray = [];
   for(let index = 0; index < skills.length; index += 1) {
     if (skills[index].checked === true) {
-      skillsArray.push(skills[index].value)
+      skillsArray.push(` ${skills[index].value}`);
     }
   }
   return skillsArray;
