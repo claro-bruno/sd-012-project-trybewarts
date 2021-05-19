@@ -31,9 +31,16 @@ textarea.addEventListener('keyup', () => {
   counter.innerHTML = maxLength - textarea.value.length;
 });
 
-function printSubjects() {
-  let subjects = [];
+function subjectExist(subjects) {
+  let subjectString = `${subjects[0]}`;
+  for (let item = 1; item < subjects.length; item += 1) {
+    subjectString += `, ${subjects[item]}`;
+  }
+  document.querySelector('#subjects-list').innerHTML = `Matérias: ${subjectString}`;
+}
 
+function printSubjects() {
+  const subjects = [];
 
   for (let index = 0; index < 6; index += 1) {
     if (checks[index].checked === true) {
@@ -41,51 +48,56 @@ function printSubjects() {
     }
   }
 
-  if ( subjects.length > 0 ) {
-    console.log('MAIOR QUE ZERO');
-    let subjectString = `${subjects[0]}`;
-    for (let item = 1; item < subjects.length; item += 1) {
-      subjectString += `, ${subjects[item]}`;
-    }
-    document.querySelector('#subjects-list').innerHTML = `Matérias: ${subjectString}`;
+  if (subjects.length > 0) {
+    subjectExist(subjects);
   } else {
-    document.querySelector('#subjects-list').innerHTML = `Matérias:`;
+    document.querySelector('#subjects-list').innerHTML = 'Matérias:';
   }
 }
 
-submit.addEventListener('click', (event) => {
-  event.preventDefault();
-  document.querySelector('#pre-form').style.display = "none";
+function createInfos(infos) {
+  document.querySelector('#fullname-list').innerHTML = `Nome: ${infos.fullName}`;
+  document.querySelector('#email-list').innerHTML = `Email: ${infos.email}`;
+  document.querySelector('#house-list').innerHTML = `Casa: ${infos.house}`;
+  document.querySelector('#family-list').innerHTML = `Família: ${infos.family}`;
+  document.querySelector('#rate-list').innerHTML = `Avaliação: ${infos.rate}`;
+  document.querySelector('#comment-list').innerHTML = `Observações: ${infos.comment}`;
+  printSubjects();
+  document.querySelector('#form-results').style.display = 'flex';
+}
 
-  let name = document.querySelector('#input-name').value;
-  let lastname = document.querySelector('#input-lastname').value;
-
-  let fullname = name + ' ' + lastname;
-  let email = document.querySelector('#input-email').value;
-  let house = document.querySelector('#house').value;
-  let comment = document.querySelector('textarea').value;
-  let family = [];
-  let rate = [];
-
+function createFamily(family) {
   for (let index = 0; index < 3; index += 1) {
     if (radios[index].checked === true) {
       family.push(radios[index].value);
     }
   }
+}
 
+function createRate(rate) {
   for (let index = 0; index < 10; index += 1) {
     if (rates[index].checked === true) {
       rate.push(rates[index].value);
     }
   }
+}
 
-  document.querySelector('#fullname-list').innerHTML = `Nome: ${fullname}`;
-  document.querySelector('#email-list').innerHTML = `Email: ${email}`;
-  document.querySelector('#house-list').innerHTML = `Casa: ${house}`;
-  document.querySelector('#family-list').innerHTML = `Família: ${family}`;
-  document.querySelector('#rate-list').innerHTML = `Avaliação: ${rate}`;
-  document.querySelector('#comment-list').innerHTML = `Observações: ${comment}`;
-  printSubjects();
+submit.addEventListener('click', (event) => {
+  event.preventDefault();
+  document.querySelector('#pre-form').style.display = 'none';
+  const name = document.querySelector('#input-name').value;
+  const lastname = document.querySelector('#input-lastname').value;
 
-  document.querySelector('#form-results').style.display = "flex";
-})
+  const infos = {
+    fullName: `${name} ${lastname}`,
+    email: document.querySelector('#input-email').value,
+    house: document.querySelector('#house').value,
+    comment: document.querySelector('textarea').value,
+    family: [],
+    rate: [],
+  };
+
+  createFamily(infos.family);
+  createRate(infos.rate);
+  createInfos(infos);
+});
