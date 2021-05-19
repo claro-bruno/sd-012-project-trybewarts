@@ -23,7 +23,7 @@ agreement.addEventListener('click', () => {
   if (agreement.checked) {
     submitBtn.disabled = false;
   } else {
-    submitBtn.disabled = false;
+    submitBtn.disabled = true;
   }
 });
 
