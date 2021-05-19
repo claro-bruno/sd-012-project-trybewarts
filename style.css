@@ -122,6 +122,11 @@ main {
   margin: 10px;
 }
 
+#form-output {
+  display: none;
+  flex-direction: column;
+}
+
 footer {
   display: flex;
   justify-content: center;

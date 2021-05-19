@@ -3,6 +3,8 @@ const getLoginInput = document.querySelector('#login-input');
 const getSenhaInput = document.querySelector('#senha-input');
 const getAgreementCheck = document.querySelector('#agreement');
 const getFormButton = document.querySelector('#submit-btn');
+const getOutputDiv = document.querySelector('#form-output');
+const getInputDiv = document.querySelector('#form-input');
 
 function validaLogin() {
   if (
@@ -33,16 +35,31 @@ getAgreementCheck.addEventListener('click', enableButton);
 //  if (textArea.value !== '') {
 //    for (let index = 0; index < 500; index += 1) {
 //      contador = 500 - textArea.length;
-//    } 
-// 
+//    }
+//
 //  }
-//  counterChar = contador
+//  counterChar = contador;
 //  console.log(contador);
 // }
-  
-// function formOutput() {
-//   const name = document.querySelector('#input-name').value;
-//   const lastName = document.querySelector('#input-lastname').value;
-//   const email = document.querySelector('#input-email').value;
-//   const house = document.querySelector('#house').value;
-// }
+
+function formOutput() {
+  event.preventDefault();
+  const name = document.querySelector('#input-name').value;
+  const lastName = document.querySelector('#input-lastname').value;
+  const email = document.querySelector('#input-email').value;
+  const house = document.querySelector('#house').value;
+  let pName = document.createElement('p');
+  let pEmail = document.createElement('p');
+  let pHouse = document.createElement('p');
+
+  pName.innerHTML = `Nome: ${name} ${lastName}`;
+  getOutputDiv.appendChild(pName);
+  pEmail.innerHTML = `Email: ${email}`;
+  getOutputDiv.appendChild(pEmail);
+  pHouse.innerHTML = `Casa: ${house}`;
+  getOutputDiv.appendChild(pHouse);
+
+  getInputDiv.style.display = 'none';
+  getOutputDiv.style.display = 'flex';
+}
+getFormButton.addEventListener('click', formOutput);
