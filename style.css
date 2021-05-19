@@ -47,6 +47,6 @@ main {
   height: 500px;
 }
 
-#input-name , #input-lastname , #input-email {
+#input-name , #input-lastname , #input-email , #house {
   width: 200px;
 }
