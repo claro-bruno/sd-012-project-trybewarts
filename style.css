@@ -12,9 +12,7 @@
 }
 
 .trybewarts-header-logo {
-  width: 60px;
-  height: 60px;
-  padding: 10px;
+  max-width: 60px;
 }
 
 .trybewarts-login {

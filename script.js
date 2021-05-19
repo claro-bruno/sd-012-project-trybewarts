@@ -4,7 +4,7 @@ const botao = document.getElementById('btn');
 
 function alerta() {
   if (login.value !== 'tryber@teste.com' || senha.value !== '123456') {
-    alert('Login ou senha inválidos');
+    alert('Login ou senha inválidos.');
   } else {
     alert('Olá, Tryber!');
   }
