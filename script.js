@@ -52,16 +52,54 @@ function contadorDeCaracteres() {
 
 const form = document.querySelector('#evaluation-form');
 
-const valoresInputs = {
-  Nome: document.querySelector('#input-name').value,
-  Sobrenome: document.querySelector('#input-lastname').value,
-  Email: document.querySelector('#input-email').value,
-  Casa: document.querySelector('#house').value,
-  Familia: document.querySelector('input[name="family"]:checked').value,
-  Materias: 0,
-  Avaliacao: 0,
-  Observacao: textarea.value,
+function pegandoMaterias() {
+  const materiasEscolhidas = document.querySelectorAll('input[name="content"]:checked');
+  let textoMaterias = '';
+  materiasEscolhidas.forEach(element => {
+    textoMaterias += `${element.value}, `
+  });
+  return textoMaterias;
 }
+
+const valoresInputs = {
+  Nome: '',
+  Sobrenome: '',
+  Email: '',
+  Casa: '',
+  Familia: '',
+  Materias: '',
+  Avaliacao: '',
+  Observacao: '',
+}
+
+function preenchendoValores() {
+  valoresInputs.Nome = document.querySelector('#input-name').value;
+  valoresInputs.Sobrenome = document.querySelector('#input-lastname').value;
+  valoresInputs.Email = document.querySelector('#input-email').value;
+  valoresInputs.Casa = document.querySelector('#house').value;
+  valoresInputs.Familia = document.querySelector('input[name="family"]:checked').value;
+  valoresInputs.Observacao = textarea.value;
+  valoresInputs.Avaliacao = document.querySelector('input[name="rate"]:checked').value;
+  valoresInputs.Materias = pegandoMaterias();
+}
+
+function colocandoInfoNasLis() {
+  document.querySelector('#li-fullname').innerText = `Nome: ${valoresInputs.Nome} ${valoresInputs.Sobrenome}`;
+  document.querySelector('#li-email').innerText = `Email: ${valoresInputs.Email}`;
+  document.querySelector('#li-casa').innerText = `Casa: ${valoresInputs.Casa}`;
+  document.querySelector('#li-familia').innerText = `Família: ${valoresInputs.Familia}`;
+  document.querySelector('#li-materias').innerText = `Matérias: ${valoresInputs.Materias}`;
+  document.querySelector('#li-avaliacao').innerText = `Avaliação: ${valoresInputs.Avaliacao}`;
+  document.querySelector('#li-observacao').innerText = `Observações: ${valoresInputs.Observacao}`; 
+}
+
+botaoSubmit.addEventListener('click', (event) => {
+  event.preventDefault();
+  document.querySelector('#evaluation-form').style.display = 'none';
+  document.querySelector('#lista-form').style.display = 'flex';
+  preenchendoValores();
+  colocandoInfoNasLis();
+});
 
 window.onload = () => {
   habilitandoBotaoEnviar();
@@ -69,5 +107,5 @@ window.onload = () => {
   validandoCabecalho();
   contadorDeCaracteres();
   botaoSubmit.disabled = true;
-  valoresInputs.Avaliacao = document.querySelector('input[name="rate"]:checked').value;
+  
 };
