@@ -45,7 +45,7 @@ const textArea = document.getElementById('textarea');
 const counter = document.getElementById('counter');
 counter.innerHTML = textArea.maxLength;
 
-function counterTextArea() {  
+function counterTextArea() {
   counter.innerHTML = textArea.maxLength - textArea.value.length;
 }
 textArea.addEventListener('keyup', counterTextArea);
