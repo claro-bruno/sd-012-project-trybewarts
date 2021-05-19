@@ -21,14 +21,11 @@
   background-color: white;
   border: none;
   width: 100px;
+  margin-right: 5px;
 }
 
 .trybewarts-login {
   display: flex;
-}
-  
-.trybewarts-login input {
-  margin-right: 5px;
 }
 
 .trybewarts-login button {
