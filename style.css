@@ -50,7 +50,7 @@ main {
   flex-direction: column;
 }
 
-.subject {
+.familyContent {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
 }
