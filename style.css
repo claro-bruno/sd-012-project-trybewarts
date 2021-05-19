@@ -56,3 +56,7 @@ form {
 #validacao-container {
   display: flex;
 }
+
+#niveis {
+  display: flex;
+}

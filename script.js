@@ -49,7 +49,7 @@ function createFamily() {
     createLabelFamily.innerText = familys[index];
     createInput.className = 'family';
     createInput.type = 'radio';
-    createInput.name = 'family'
+    createInput.name = 'family';
     createInput.name = 'family';
     createInput.value = familys[index];
     getTagFamily.appendChild(createLabelFamily);
@@ -91,7 +91,6 @@ function createLvlAva() {
 
 createLvlAva();
 
-
 document.querySelector('#agreement').addEventListener('input', () => {
   const conteudo = document.querySelector('#agreement');
   if (conteudo.checked === true) {
@@ -99,4 +98,11 @@ document.querySelector('#agreement').addEventListener('input', () => {
   } else {
     document.querySelector('#submit-btn').disabled = true;
   }
+});
+
+const getTxtArea = document.getElementById('textarea');
+
+getTxtArea.addEventListener('keydown', function(){
+  const getContador = document.querySelector('#counter');
+  getContador.innerHTML = getTxtArea.textLength;
 });
