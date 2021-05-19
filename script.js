@@ -83,12 +83,13 @@ function createFamilyOutput() {
 function createSubjectOutput() {
   const subject = document.getElementsByName('content');
   const pSubject = document.createElement('p');
-  pSubject.innerHTML = 'Matérias: ';
+  let subjectText = 'Matérias:';
   for (let indice = 0; indice < subject.length; indice += 1) {
     if (subject[indice].checked) {
-      pSubject.innerHTML = pSubject.innerHTML.concat(`${subject[indice].value},`);
+      subjectText = subjectText.concat(` ${subject[indice].value},`);
     }
   }
+  pSubject.innerHTML = subjectText.slice(0, -1);
   getOutputDiv.appendChild(pSubject);
 }
 
