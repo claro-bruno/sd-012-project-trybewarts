@@ -28,3 +28,13 @@
   height: 500px;
   display: flex;
 }
+
+.select-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.housemail {
+  display: flex;
+  flex-direction: row;
+}
