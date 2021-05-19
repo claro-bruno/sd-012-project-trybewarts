@@ -96,12 +96,13 @@ footer p {
 
 #form-section2 {
   display: flex;
+  justify-content: center;
   text-align: center;
   margin: 10px 20px;
 }
 
-#family-container , #content-container {
-  width: 100%;
+#content-container {
+  max-width: 50%;
 }
 
 #content-options {
