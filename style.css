@@ -49,7 +49,7 @@ main {
 } */
 
 #house {
-  height: 10px;
+  height: 20px;
 }
 
 #gitnoria-house {
@@ -109,11 +109,22 @@ main {
   display: flex;
 }
 
-.submit-containar {
+.agreement-container {
+  display: flex;
+}
+
+.submit-container {
   display: flex;
 }
 
 #submit-btn {
   display: flex;
   margin: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: dimgray;
+  color: white;
 }
