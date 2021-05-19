@@ -43,7 +43,7 @@ function getConteudo() {
   let textoCont = 'Matérias: ';
   for (let index = 0; index < inputsConteudo.length; index += 1) {
     if (inputsConteudo[index].checked) {
-      let contSelec = inputsConteudo[index].value;
+      const contSelec = inputsConteudo[index].value;
       textoCont += `${contSelec}, `;
     }
   }
@@ -100,13 +100,15 @@ function habilitaBotão() {
 
 valor.addEventListener('click', habilitaBotão);
 
-const limite_textarea = (valor1) => {
+const limite = (valor1) => {
   const quant = 500;
   const total = valor1.length;
   if (total <= quant) {
     const resto = quant - total;
     document.getElementById('counter').innerHTML = resto;
   } else {
-    document.getElementById('textarea').value = valor.substr(0, quant);
+    document.getElementById('textarea').value = quant;
   }
-}
+};
+
+const usefunction = limite('');
