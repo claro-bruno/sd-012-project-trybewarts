@@ -65,3 +65,19 @@ function createCheckbox() {
   }
 }
 createCheckbox();
+
+// cria Label-rate
+const divRate = document.getElementById('divLabelRate');
+const rateValue = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+function createRate() {
+  createA(rateValue, divRate);
+  for (let index = 0; index < rateValue.length; index += 1) {
+    const inputRate = document.createElement('input');
+    inputRate.type = 'radio';
+    inputRate.name = 'rate';
+    inputRate.value = rateValue[index];
+    divRate.children[index + 1].innerHTML = rateValue[index];
+    divRate.children[index + 1].appendChild(inputRate);
+  }
+}
+createRate();
