@@ -2,14 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  color: whitesmoke;
   justify-content: space-between;
   margin-bottom: 50px;
   align-items: center;
+}
+
+.trybewarts-header-logo {
+  margin-left: 30px;
+  height: 100px;
+}
+
+#trybewarts-header-title {
+  font-size: 50px;
 }
 
 .trybewarts-login {
@@ -34,6 +45,12 @@
   width: 80px;
   height: 30px;
   align-self: center;
+}
+
+.trybewarts-login button:hover {
+  cursor: pointer;
+  box-shadow: 0 0 1em lavender ;
+  font-size: 15px;
 }
 
 main {
