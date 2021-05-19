@@ -42,3 +42,19 @@ submitButton.addEventListener('click', () => {
     document.getElementById('submit-btn').disabled = true;
   }
 });
+
+const textArea = document.getElementById('textarea');
+textArea.addEventListener('keypress', () => {
+  const counter = document.getElementById('counter');
+  if (counter.innerText !== '0') {
+    counter.innerText = parseInt(counter.innerText, 10) - 1;
+  }
+});
+
+textArea.addEventListener('keydown', (event) => {
+  const counter = document.getElementById('counter');
+  const { key } = event;
+  if (key === 'Backspace' && counter.innerText !== '500') {
+    counter.innerText = parseInt(counter.innerText, 10) + 1;
+  }
+});
