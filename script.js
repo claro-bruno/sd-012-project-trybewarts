@@ -1,17 +1,15 @@
 const login = document.querySelector('#login');
 const senha = document.querySelector('#senha');
 const btn = document.querySelector('#buttonEntrar');
-const btn2 = document.querySelector('#submit-btn')
-
-
+const btn2 = document.querySelector('#submit-btn');
 
 function verificaLogin() {
   if (login.value === 'tryber@teste.com' && senha.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
-  };
-};
+  }
+}
 
 const inputName = document.getElementById('input-name').value;
 const inputLastName = document.getElementById('input-lastname').value;
@@ -89,10 +87,24 @@ function habilitaBotão() {
     btn2.disabled = false;
   } else {
     btn2.disabled = true;
-  };
-};
+  }
+}
 
 valor.addEventListener('click', habilitaBotão);
 
+<<<<<<< HEAD
 
 
+=======
+function limite_textarea(valor) {
+  quant = 500;
+  total = valor.length;
+  if(total <= quant) {
+      resto = quant - total;
+      document.getElementById('counter').innerHTML = resto;
+  } else {
+      document.getElementById('textarea').value = valor.substr(0,quant);
+  }
+}
+// btn2.addEventListener('click', substituiForm)
+>>>>>>> 1d83929432f6fca90b6a896762e51690cfcc3e4c
