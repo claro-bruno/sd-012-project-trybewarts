@@ -3,12 +3,19 @@
   src: url('fonts/MagicSchoolOne-ovYz.ttf');
 }
 
+@font-face {
+  font-family: Yanone;
+  src: url('fonts/YanoneTagesschrift-mLWGP.ttf');
+}
+
 html {
   box-sizing: border-box;
 }
 
 * , *:after , *:before {
   box-sizing: inherit;
+  user-select: none;
+  font-family: Yanone, fantasy, serif;
 }
 
 :root {
@@ -17,6 +24,18 @@ html {
 
 body {
   margin: 0;
+  height: 100vh;
+}
+
+input {
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.login, .password {
+  border: none;
+  margin: 0 5px;
+  height: 25px;
 }
 
 .header {
@@ -33,6 +52,7 @@ body {
 .trybewarts-login {
   display: flex;
   justify-content: space-between;
+  margin-right: 5px;
 }
 
 #trybewarts-header-title {
@@ -48,7 +68,9 @@ body {
 
 #main , #evaluation-form {
   display: flex;
+  justify-content: space-around;
 }
+
 
 #evaluation-form {
   width: 675px;
@@ -60,7 +82,14 @@ body {
   display: flex;
   position: absolute;
   bottom: 0;
-  left: 40vw;
+  justify-content: center;
+  background-color: var(--verde-trybe);
+  width: 100%;
+  text-align: center;
+}
+
+.footer p {
+  margin: 5px;
 }
 
 .row {
@@ -87,4 +116,20 @@ body {
   text-align: right;
   margin: 0;
   padding: 0;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  background-color: slateblue;
+  color: white;
+}
+
+button:disabled {
+  opacity: 50%;
+}
+
+#submit-btn {
+  height: 30px;
+  margin-top: 20px;
 }
