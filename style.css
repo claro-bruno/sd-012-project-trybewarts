@@ -14,7 +14,6 @@ h2{
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
-  align-items: center;
   justify-content: space-between;
   align-items: baseline;  
 }
@@ -73,6 +72,7 @@ h2{
   
 }
 
+
 #avalia{
   display: flex;
 }
@@ -97,3 +97,9 @@ textarea{
   padding: 25px;
   border-radius: 10px;
 }
+
+.family {
+  display: flex;
+  flex-direction: column;
+}
+
