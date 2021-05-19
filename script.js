@@ -115,4 +115,4 @@ botaoSubmit.addEventListener('click', (event) => {
   adicionarInformações();
   removerConteudo();
   escreverInformacoes();
-});
+}); 
