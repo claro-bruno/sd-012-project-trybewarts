@@ -1,3 +1,6 @@
+// acessa formulário de avaliação
+const evaluationForm = document.querySelector('#evaluation-form');
+
 // valida login e senha
 function validacaoLoginSenha(event) {
   // acessa elemento com id 'inputSenha'
@@ -64,3 +67,38 @@ function listenerKey(event) {
 }
 // adiciona evento de teclado em toda página
 document.addEventListener('keyup', listenerKey);
+
+function mostrarNomeCompleto() {
+  const nome = document.querySelector('#input-name');
+  const sobrenome = document.querySelector('#input-lastname');
+  const paragrafoNomeCompleto = document.createElement('p');
+  paragrafoNomeCompleto.innerHTML = `Nome: ${nome.value} ${sobrenome.value}`;
+  nome.remove();
+  sobrenome.remove();
+  evaluationForm.appendChild(paragrafoNomeCompleto);
+}
+
+function mostrarEmail() {
+  const email = document.querySelector('#input-email');
+  const paragrafoEmail = document.createElement('p');
+  paragrafoEmail.innerHTML = `Email: ${email.value}`;
+  email.remove();
+  evaluationForm.appendChild(paragrafoEmail);
+}
+
+function mostrarValores() {
+  mostrarNomeCompleto();
+  mostrarEmail();
+  // mostrarCasa();
+  // mostrarFamilia();
+  // mostrarConteudo();
+  // mostrarAvaliacao();
+  // mostrarComentario();
+}
+
+window.onload = () => {
+  evaluationForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    mostrarValores();
+  });
+}
