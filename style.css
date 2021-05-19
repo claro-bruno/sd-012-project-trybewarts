@@ -108,3 +108,12 @@ hr {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+#comoAvalia {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#notas {
+  display: flex;
+}
