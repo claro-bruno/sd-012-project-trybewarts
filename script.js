@@ -29,6 +29,8 @@ let itemLearnTechnology = [
   { valor: "Python" },
 ];
 
+let getToAssess = document.querySelector(".to-assess");
+
 function verificarLogin(email, password) {
   let emailCerto = "tryber@teste.com";
   let passwordCerto = "123456";
@@ -100,10 +102,35 @@ function createListLearnTechnology() {
   }
 }
 
+// criando avaliador de 1 a 10;
+
+function creatLabel(number) {
+  let getDiv = document.querySelector(`.number-${number}`);
+  let createLabel = document.createElement("label");
+  createLabel.setAttribute("for", number);
+  createLabel.innerText = number;
+  getDiv.appendChild(createLabel);
+}
+
+function createToAssess() {
+  for (let index = 1; index <= 10; index += 1) {
+    criaRadioContainer("number-" + index, getToAssess);
+    let getDiv = document.querySelector(`.number-${index}`);
+    let criaRadio = document.createElement("input");
+    criaRadio.setAttribute("type", "radio");
+    criaRadio.setAttribute("value", index);
+    criaRadio.setAttribute("name", "rate");
+    criaRadio.id = index;
+    getDiv.appendChild(criaRadio);
+    creatLabel(index);
+  }
+}
+
 getButtunLogin.addEventListener(
   "click",
   verificarLogin(getEmail.value, getPassword.value)
 );
+createToAssess();
 createListLearnTechnology();
 criaOpcaoCasa();
 criaRadioBotaoFamilia();
