@@ -29,6 +29,7 @@ const firstName = document.querySelector('#input-name');
 const lastName = document.querySelector('#input-lastname');
 const email = document.querySelector('#input-email');
 const house = document.querySelector('#house');
+const comment = document.querySelector('#textarea');
 
 function replaceNameElement() {
   const nameParagraph = document.createElement('p');
@@ -75,6 +76,12 @@ function replaceContentElement() {
   contentContainer.appendChild(contentParagraph);
 }
 
+function replaceCommentElement() {
+  const commentParagraph = document.createElement('p');
+  commentParagraph.innerHTML = `Observações: ${comment.value} `;
+  comment.parentNode.replaceChild(commentParagraph, comment);
+}
+
 submitButton.addEventListener('click', () => {
   replaceNameElement();
 
@@ -85,6 +92,8 @@ submitButton.addEventListener('click', () => {
   replaceFamilyElement();
 
   replaceContentElement();
+
+  replaceCommentElement();
 });
 //   const families = document.querySelectorAll('.input-family')
 //   for (let family of families) {
