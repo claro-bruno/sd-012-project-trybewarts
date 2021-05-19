@@ -34,46 +34,56 @@ textArea.addEventListener('input', () => {
   pCounter.innerText = 500 - textArea.value.length;
 });
 
+function getFamilyValue() {
+  const inputFamily = document.getElementsByName('family');
+  let familyValue = '';
+  for (let index = 0; index < inputFamily.length; index += 1) {
+    if (inputFamily[index].checked) {
+      familyValue = inputFamily[index].value;
+    }
+  }
+  return familyValue;
+}
+
+function getMaterias() {
+  const materia = document.getElementsByClassName('subject');
+  const materiaSelecionadas = [];
+  for (let index = 0; index < materia.length; index += 1) {
+    if (materia[index].checked) {
+      materiaSelecionadas.push(materia[index].value);
+      console.log(materiaSelecionadas);
+    }
+  }
+  return materiaSelecionadas;
+}
+
+function getAvaliacao() {
+  const avalicacao = document.getElementsByName('rate');
+  let avaliacaoValue = '';
+  for (let index = 0; index < avalicacao.length; index += 1) {
+    if (avalicacao[index].checked) {
+      avaliacaoValue = avalicacao[index].value;
+      console.log(avaliacaoValue);
+    }
+  }
+  return avaliacaoValue;
+}
+
 submitBtn.addEventListener('click', (e) => {
   e.preventDefault();
   const name = document.querySelector('#input-name').value;
   const lastName = document.querySelector('#input-lastname').value;
   const email = document.querySelector('#input-email').value;
   const house = document.querySelector('#house').value; // Correção 1
-  const inputFamily = document.getElementsByName('family');
-  let familyValue = "";
-  const materia = document.getElementsByClassName('subject');
-  let materiaSelecionadas = [];
-  const avalicacao = document.getElementsByName('rate');
-  let avaliacaoValue = "";
   const observacao = document.querySelector('#textarea').value;
-  const printForm = document.querySelector("#print-form-container");
-
-  for(let index =0; index < inputFamily.length; index += 1) {
-    if (inputFamily[index].checked) {
-      familyValue = inputFamily[index].value;
-      console.log(familyValue); // Verificação
-    };
-  };
-  
-  for(let index =0; index < materia.length; index += 1) {
-    if (materia[index].checked) {
-      materiaSelecionadas.push(materia[index].value);
-      console.log(materiaSelecionadas); // Verificação
-    };
-  };
-
-  for(let index =0; index < avalicacao.length; index += 1) {
-    if (avalicacao[index].checked) {
-      avaliacaoValue = avalicacao[index].value;
-      console.log(avaliacaoValue); // Verificação
-    };
-  };
-
+  const printForm = document.querySelector('#print-form-container');
+  const addform = document.createElement('form');
   const addParagraph = document.createElement('p');
-  printForm.appendChild(addParagraph);
-  let formResult = `Nome: ${name} ${lastName} \n Email: ${email} \n Casa: ${house} \n Familia: ${familyValue} \n Matérias:${materiaSelecionadas} \n Avaliação: ${avaliacaoValue} \n Observações ${observacao}`; 
+  printForm.appendChild(addform);
+  addform.appendChild(addParagraph);
+  const formResult = `Nome: ${name} ${lastName} \n Email: ${email} \n Casa: ${house} 
+  \n Familia: ${getFamilyValue()} \n Matérias:${getMaterias()} \n 
+  Avaliação: ${getAvaliacao()} \n Observações ${observacao}`;
   console.log(formResult);
   addParagraph.innerText = formResult;
-  
 });
