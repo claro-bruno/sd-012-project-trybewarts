@@ -13,3 +13,22 @@ function stopDefAction(event) {
 }
 
 loginButton.addEventListener('click', stopDefAction);
+
+const rateSection = document.getElementById('radio-container');
+
+function createRadioButtons() {
+  for (let index = 1; index <= 10; index += 1) {
+    const createInput = document.createElement('input');
+    const createLabel = document.createElement('label');
+    createInput.type = 'radio';
+    createInput.value = index;
+    createInput.name = 'rate';
+    createInput.id = index;
+    createLabel.innerHTML = index;
+    createLabel.htmlFor = index;
+    rateSection.appendChild(createInput);
+    rateSection.appendChild(createLabel);
+  }
+}
+
+createRadioButtons();
