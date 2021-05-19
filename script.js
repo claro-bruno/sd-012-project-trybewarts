@@ -30,6 +30,7 @@ const lastName = document.querySelector('#input-lastname');
 const email = document.querySelector('#input-email');
 const house = document.querySelector('#house');
 
+
 function replaceNameElement() {
   const nameParagraph = document.createElement('p');
   nameParagraph.innerHTML = `Nome: ${firstName.value} ${lastName.value}`;
@@ -49,12 +50,27 @@ function replaceHouseElement() {
   house.parentNode.replaceChild(houseParagraph, house);
 }
 
+function replaceFamilyElement() {
+  const family = document.querySelector('input[name="family"]:checked');
+  const familyCointainer = family.parentNode
+  const familyParagraph = document.createElement('p');
+  familyParagraph.innerHTML = `Família: ${family.value}`;
+  while (familyCointainer.firstChild) {
+    familyCointainer.removeChild(familyCointainer.firstChild)
+  }
+  familyCointainer.appendChild(familyParagraph);
+  
+
+}
+
 submitButton.addEventListener('click', () => {
   replaceNameElement();
 
   replaceEmailElement();
 
   replaceHouseElement();
+
+  replaceFamilyElement()
 });
 //   const families = document.querySelectorAll('.input-family')
 //   for (let family of families) {
