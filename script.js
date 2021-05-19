@@ -14,9 +14,9 @@ botaoLogar.addEventListener('click', () => {
 
 botaoEnviar.disabled = true;
 checkBoxAgree.addEventListener('input', () => {
-  if (document.querySelectorAll('#agreement:checked').length !== 0) {
+  if (document.querySelector('#agreement:checked') !== null) {
     botaoEnviar.disabled = false;
-  } if (document.querySelectorAll('#agreement:checked').length === 0) {
+  } else {
     botaoEnviar.disabled = true;
   }
 });

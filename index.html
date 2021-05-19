@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
@@ -17,8 +18,11 @@
       <button type="submit" id="botao-logar" class="login" >Logar</button>
     </form>
   </header>
-  <main class="flex-container">
-    <form action="" method="get" id="evaluation-form" class="flex-container">
+  <main>
+    <form action="" method="get" id="evaluation-form">
+      <div id="titulo-forms">
+        <h2>Forms</h2>
+      </div>
       <div>
         <input type="text" name="name" id="input-name" placeholder="Nome">
         <input type="text" name="last-name" id="input-lastname" placeholder="Sobrenome">
@@ -33,7 +37,10 @@
           <option id="pytherina-house" text value="Pytherina">Pytherina</option>
         </select>
       </div>
-      <div>
+      <br>
+      <div class="linha-de-divisão"></div>
+      <br>
+      <div id="radio-checkbox">
         <div class="flex-column">
           <label for="" id="label-family">Qual sua família?</label>
           <input type="radio" name="family" value="Frontend">Família Frontend
@@ -51,6 +58,9 @@
           <input type="checkbox" class="subject" value="Python" name="checkbox">Python
         </div>
       </div>
+      <br>
+      <div class="linha-de-divisão"></div>
+      <br>
       <div>
         <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
         <input type="radio" name="rate" value="1">1

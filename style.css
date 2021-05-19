@@ -4,7 +4,8 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   background-color: rgb(50, 167, 145);
   height: 12vh;
   width: 100%;
@@ -15,14 +16,58 @@ body {
   align-items: center;
 }
 
-.flex-container {
-  display: flex;
+.trybewarts-header-logo {
+  height: 80px;
+  width: 80px;
 }
 
-main form {
-  width: 675px;
+#trybewarts-header-title {
+  font-size: 40px;
+  color: white;
+}
+
+.login {
+  height: 30px;
+  width: 140px;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+#botao-logar {
+  background-color: purple;
+  color: white;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(238, 233, 233);
+}
+
+#evaluation-form {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  height: 500px;
+  width: 675px;
+}
+
+#titulo-forms {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#radio-checkbox {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+.linha-de-divisão {
+  height: 1px;
+  background-color: grey;
 }
 
 #trybewarts-forms-logo {
