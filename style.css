@@ -61,6 +61,12 @@ main {
   width: 15px;
 }
 
+/* Estilização do botão de submit */
+#submit-btn {
+  background-color: green;
+  color: white;
+}
+
 /* Estilização da Imagem */
 #trybewarts-forms-logo {
   height: 500px;
