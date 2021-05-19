@@ -3,6 +3,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding: 10px 100px;
 }
 
 main {
@@ -13,6 +14,18 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#evaluation-form  input {
+  max-width: 60%;
+}
+select {
+  min-width: 33%;
+}
+
+.container {
+  margin: 20px 50px;
 }
 
 .header {
