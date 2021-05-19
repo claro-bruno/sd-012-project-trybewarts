@@ -16,7 +16,7 @@ function verificaLogin() {
   const novaEmail = document.querySelector('#email').value;
   if (senha !== novaSenha || email !== novaEmail) {
     alert('Login ou senha inválidos.');
-  } else if (senha === novaSenha && email === novaEmail) {
+  } else {
     alert('Olá, Tryber!');
   }
 }
