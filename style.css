@@ -1,13 +1,25 @@
+@font-face {
+  font-family: Harry;
+  src: url('./HARRYP__.TTF');
+}
+
 * {
   margin: 0%;
   padding: 0%;
   box-sizing: border-box;
 }
 
+
+/*Inicio dos estilos do header*/
 .header {
   display: flex;
   justify-content: space-between;
   background-color: rgb(50, 167, 145);
+}
+
+#trybewarts-header-title {
+  font-family: Harry, sans-serif;
+  font-size: 50px;
 }
 
 .trybewarts-header-logo {
@@ -17,7 +29,9 @@
   align-self: flex-start;
   align-content: flex-start;
 }
+/*Fim dos estilos do header*/
 
+/*Inicio dos estilos da Main*/
 main {
   display: flex;
 }
@@ -31,4 +45,6 @@ main {
   align-items: flex-end;
   justify-content: end;
 }
+
+/*Fim dos estilos da Main*/
 
