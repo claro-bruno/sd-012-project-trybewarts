@@ -1,4 +1,4 @@
-const selectButton = document.querySelector('.botaoSubmit');
+const selectButtonLogin = document.querySelector('.botaoLogin');
 const selectLogin = document.querySelector('#login');
 const selectPassword = document.querySelector('#senha');
 
@@ -13,4 +13,18 @@ function verificarLogin() {
     alert('Login ou senha inválidos.');
   }
 }
-selectButton.addEventListener('click', verificarLogin);
+
+selectButtonLogin.addEventListener('click', verificarLogin);
+
+const selectButtonSubmit = document.querySelector('#submit-btn');
+const checkBox = document.querySelector('#agreement');
+selectButtonSubmit.disabled = true;
+
+function verificaCheckbox() {
+  if (checkBox.checked === true) {
+    selectButtonSubmit.disabled = false;
+  } else {
+    selectButtonSubmit.disabled = true;
+  }
+}
+checkBox.addEventListener('click', verificaCheckbox);
