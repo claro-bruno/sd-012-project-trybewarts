@@ -41,6 +41,8 @@ sendbtn.disabled = true;
 checker.addEventListener('click', function() {
   if (checker.checked) { 
     sendbtn.disabled = false;
+  } else {
+    sendbtn.disabled = true;
   }
 })
 
