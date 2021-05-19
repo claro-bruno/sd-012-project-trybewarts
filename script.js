@@ -12,3 +12,13 @@ loginBtn.addEventListener('click', () => {
     alert('Login ou senha inválidos.');
   }
 });
+
+const submitBtn = document.querySelector('#submit-btn');
+const agreementCheck = document.querySelector('#agreement');
+submitBtn.disabled = true;
+
+agreementCheck.addEventListener('click', () => {
+  if (agreementCheck.checked) {
+    submitBtn.disabled = false;
+  }
+});
