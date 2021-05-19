@@ -28,3 +28,15 @@ function gerarNumero() {
   }
 }
 gerarNumero();
+
+const inputCheckbox = document.getElementById('agreement');
+
+function agreement() {
+  const buttonCheckbox = document.getElementById('submit-btn');
+  if (inputCheckbox.checked) {
+    buttonCheckbox.disabled = false;
+  } else {
+    buttonCheckbox.disabled = true;
+  }
+}
+inputCheckbox.addEventListener('click', agreement);
