@@ -35,11 +35,48 @@
                     <option value="Pytherina" id="pytherina-house">Pytherina</option>
                 </select>
             </div> 
-            <label for="" id="label-family">Qual sua família?</label> 
-            <input type="radio" name="family" value="Frontend">
-            <input type="radio" name="family" value="Backend">
-            <input type="radio" name="family" value="FullStack">
 
+            <div class="container">
+            <div id="familyDev">
+                <label for="" id="label-family">Qual sua família?</label> 
+                <div>
+                    <input type="radio" name="family" id="frontend" value="Frontend">
+                    <label for="frontend">Familia Frontend</label>
+                </div>  
+                <div>  
+                    <input type="radio" name="family" id="backend" value="Backend">
+                    <label for="backend">Familia Backend</label>
+                </div>
+                <div>
+                    <input type="radio" name="family" id="fullstack" value="FullStack">
+                    <label for="fullstack">Familia FullStack</label>
+                </div>
+            </div>  
+
+            <div id="familyDev2"> 
+                <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                <div>
+                <input type="checkbox" class="subject" id="lessons1"value="HoFs" name="HoFs">
+                <label for="lessons1">HoFs</label>
+
+                <input type="checkbox" class="subject" id="lessons2" value="Jest" name="Jest">
+                <label for="lessons2">Jest</label>
+
+                <input type="checkbox" class="subject" id="lessons3" value="Promises" name="Promises">
+                <label for="lessons3">Promoses</label>
+                </div>
+                <div>
+                <input type="checkbox" class="subject" id="lessons4" value="React" name="React">
+                <label for="lessons4">React</label>
+
+                <input type="checkbox" class="subject" id="lessons5" value="SQL" name="lessons">
+                <label for="lessons5">SQL</label>
+
+                <input type="checkbox" class="subject" id="lessons6" value="Python" name="lessons">
+                <label for="lessons6">Python</label>
+             </div>
+            </div>  
+           </div>  
         </form>
         <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
     </main>
