@@ -23,7 +23,17 @@ function submit() {
   });
 }
 
+function contadorCaracteres() {
+  const contador = document.getElementById('counter');
+  const text = document.getElementById('textarea');
+  // let contadorAux = 0;
+  text.addEventListener('keyup', () => {
+    contador.innerText = 500 - text.value.length + ' caracteres restantes.';
+  });
+}
+
 window.onload = function load() {
   alerta();
   submit();
+  contadorCaracteres();
 };
