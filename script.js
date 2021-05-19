@@ -12,12 +12,12 @@ const senha = document.querySelector('#senha').value;
 const email = document.querySelector('#email').value;
 const botaoHeader = document.querySelector('#btnheader');
 function verificaLogin() {
-  const novaSenha = document.querySelector('#senha').value;
-  const novoEmail = document.querySelector('#email').value;
-  if (senha !== novaSenha || email !== novoEmail) {
+  const nSenha = document.querySelector('#senha').value;
+  const nEmail = document.querySelector('#email').value;
+  if (senha !== nSenha || email !== nEmail) {
     alert('Login ou senha inválidos.');
-  } else if (senha === novaSenha && email === novoEmail) {
+  } else if (senha === nSenha && email === nEmail) {
     alert('Olá, Tryber!');
   }
 };
-botaoHeader.addEventListener('click', verificaLogin);
+botaoHeader.addEventListener('click', verificaLogin)
