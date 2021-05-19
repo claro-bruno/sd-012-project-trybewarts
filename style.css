@@ -24,7 +24,6 @@
     width: 675px;
 }
 
-<<<<<<< HEAD
 .line-content {
     display: flex;
     flex-direction: column;
@@ -32,8 +31,15 @@
 
 .line-content-2 {
     
-=======
-.trybewarts-forms-logo{
-    height: 500px;
->>>>>>> f04ac9d3d620e5370ddf75d4ac70b195016c2964
 }
+#trybewarts-forms-logo {
+    height: 500px;
+}
+#fieldset-family{
+    display: flex;
+    flex-direction: column;
+}
+#label-family{
+    display: none;
+}
+    
