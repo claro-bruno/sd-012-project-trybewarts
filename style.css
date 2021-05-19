@@ -39,7 +39,7 @@
 }
 
 .trybewarts-login button {
-  background-color:cadetblue;
+  background-color: cadetblue;
   color: white;
   border-radius: 5px;
   width: 80px;
@@ -49,7 +49,7 @@
 
 .trybewarts-login button:hover {
   cursor: pointer;
-  box-shadow: 0 0 1em lavender ;
+  box-shadow: 0 0 1em lavender;
   font-size: 15px;
 }
 
@@ -69,6 +69,22 @@ main {
   flex-flow: row nowrap;
   align-items: center;
   margin-bottom: 10px;
+}
+
+.inputText {
+  margin-right: 10px;
+  text-align: center;
+}
+
+#house {
+  height: 19px;
+  background-color: cadetblue;
+  color: white;
+  font-weight: 800;
+}
+
+#house:hover {
+  cursor: pointer;
 }
 
 #label-family {
@@ -121,6 +137,15 @@ main {
 
 #counter {
   text-align: end;
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-bottom: 20px;
+  width: 500px;
+  border: solid cadetblue 1px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #label-infos {
@@ -142,6 +167,7 @@ main {
   border-radius: 5px;
   font-size: 20px;
   background-color: cadetblue;
+  color: whitesmoke;
 }
 
 #submit-btn:hover {
@@ -155,7 +181,7 @@ footer {
   background-color: rgb(50, 167, 145);
 }
 
-footer p{
+footer p {
   padding: 10px;
   color: whitesmoke;
   font-size: 15px;
@@ -167,4 +193,3 @@ footer p{
   margin-left: 100px;
   margin-right: 100px;
 }
-
