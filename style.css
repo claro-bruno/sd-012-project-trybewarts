@@ -10,15 +10,16 @@
   justify-content: space-between;
   align-items: center;
   background-color: rgb(50, 167, 145);
+  height: 100px;
+  padding: 10px;
 }
 
 .trybewarts-header-logo {
-  width: 100px;
-
+  max-height: 100%;
 }
 
 .trybewarts-login {
-  width: 30%;
+  width: 25%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
