@@ -26,20 +26,22 @@ textAreaInput.addEventListener('keyup', () => {
   counter.innerHTML = 500 - textAreaInput.value.length;
 });
 
+const firstName = document.querySelector('#input-name');
+const lastName = document.querySelector('#input-lastname');
+const email = document.querySelector('#input-email');
+const house = document.querySelector('#house');
+
 submitButton.addEventListener('click', () => {
-  const firstName = document.querySelector('#input-name');
-  const lastName = document.querySelector('#input-lastname');
+
   const nameParagraph = document.createElement('p');
   nameParagraph.innerHTML = `Nome: ${firstName.value} ${lastName.value}`;
   firstName.parentNode.removeChild(firstName.parentNode.lastElementChild);
   firstName.parentNode.replaceChild(nameParagraph, firstName);
 
-  const email = document.querySelector('#input-email');
   const emailParagraph = document.createElement('p');
   emailParagraph.innerHTML = `Email: ${email.value}`;
   email.parentNode.replaceChild(emailParagraph, email);
 
-  const house = document.querySelector('#house');
   const houseParagraph = document.createElement('p');
   houseParagraph.innerHTML = `Casa: ${house.value}`;
   house.parentNode.replaceChild(houseParagraph, house);
