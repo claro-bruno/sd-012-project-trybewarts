@@ -45,6 +45,12 @@ main {
   width: 10px;
 }
 
+/* Estilização da area de comentários */
+#commentsField {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Estilização da Imagem */
 #trybewarts-forms-logo {
   height: 500px;
