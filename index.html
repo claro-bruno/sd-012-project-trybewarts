@@ -32,17 +32,17 @@
     </header>
 
     <main>
-      <form action="get" id="evaluation-form">
+      <form action="" id="evaluation-form">
         <h1>Forms</h1>
 
-        <div class="first-container">
+        <div class="first-container some">
           <div id="name-container">
-            <input id="input-name" type="text" placeholder="Nome" />
-            <input id="input-lastname" type="text" placeholder="Sobrenome" />
+            <input id="input-name" type="text" placeholder="Nome" required/>
+            <input id="input-lastname" type="text" placeholder="Sobrenome" required/>
           </div>
 
           <div id="house-container">
-            <input id="input-email" type="text" placeholder="Email" />
+            <input id="input-email" type="text" placeholder="Email" required/>
             <div id="house-select">
               <label for="house">Casa</label>
               <select name="Casa" id="house"></select>
@@ -50,30 +50,20 @@
           </div>
         </div>
 
-        <div class="second-container">
+        <div class="second-container some">
           <div class="family-container">
             <label id="label-family">Qual sua família?</label><br />
 
             <label for="frontend">
-              <input type="radio" name="family" value="Frontend" />Frontend
+              <input type="radio" name="family" id = "frontend" value="Frontend" checked/>Frontend
             </label>
 
             <label for="backend">
-              <input
-                name="family"
-                value="Backend"
-                id="backend"
-                type="radio"
-              />Backtend
+              <input type="radio" name="family" id = "backend" value="Backend" />Backend
             </label>
 
             <label for="fullstack">
-              <input
-                name="family"
-                value="FullStack"
-                id="fullstack"
-                type="radio"
-              />FullStack
+              <input type="radio" name="family" id = "fullstack" value="FullStack" />FullStack
             </label>
           </div>
 
@@ -82,28 +72,28 @@
             <br/>
             <div class="skills">
               <label for="hofs">HoFs
-                <input type="checkbox" id="hofs" value="HoFs"/>
+                <input type="checkbox" class="skill-option" id="hofs" value="HoFs"/>
               </label>
               <label for="jest">Jest
-                <input type="checkbox" id="jest" value="Jest"/>
+                <input type="checkbox" class="skill-option" id="jest" value="Jest"/>
               </label>
               <label for="promises">Promises
-                <input type="checkbox" id="promises" value="Promises"/>
+                <input type="checkbox" class="skill-option" id="promises" value="Promises"/>
               </label>
               <label for="react">React
-                <input type="checkbox" id="react" value="React"/>
+                <input type="checkbox" class="skill-option" id="react" value="React"/>
               </label>
               <label for="sql">SQL
-                <input type="checkbox" id="sql" value="SQL"/>
+                <input type="checkbox" class="skill-option" id="sql" value="SQL"/>
               </label>
               <label for="python">Python
-                <input type="checkbox" id="python" value="Python"/>
+                <input type="checkbox" class="skill-option" id="python" value="Python"/>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="third-container">
+        <div class="third-container some">
           <div id="rate">
             <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
           </div>
@@ -125,7 +115,9 @@
           /></label>
         </div>
 
-        <button type="submit" id="submit-btn" disabled>Enviar</button>
+        <button type="submit" id="submit-btn" class= "some" disabled>Enviar</button>
+
+        <div class="form"></div>
       </form>
       <img
         id="trybewarts-forms-logo"
