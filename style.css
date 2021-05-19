@@ -37,7 +37,7 @@ main {
   height: 500px;
 }
 
-#radioLabel {
+#labelRadio {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -45,10 +45,9 @@ main {
 
 #radioLabel a {
   display: flex;
-  flex-direction: row-reverse;
 }
 
-#checkboxLabel {
+#labelCheckbox {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -56,6 +55,19 @@ main {
 
 #checkboxLabel a {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: flex-start;
+}
+
+#labelRate {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+#divLabelRate {
+  display: flex;
+}
+
+#divLabelRate a {
+  display: flex;
 }
