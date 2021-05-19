@@ -60,3 +60,7 @@ main {
 #house {
   width: 100%;
 }
+
+#satisfaction {
+  display: flex;
+}
