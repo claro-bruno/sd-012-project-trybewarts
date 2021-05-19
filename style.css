@@ -63,6 +63,12 @@
   flex-flow: column nowrap;
 }
 
+#leave-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
 #checkbox-container {
   display: flex;
   flex-flow: row wrap;

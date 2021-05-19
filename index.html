@@ -45,18 +45,18 @@
             <label id="label-content" for="checkbox-container">
                 Qual conteúdo você está com mais vontade de aprender?</label>
             <div id="checkbox-container">
+                <input type="checkbox" name="hofs" id="hofs" value="HoFs" class="subject">
                 <label for="hofs">HoFs</label>
-                <input type="checkbox" name="hofs" id="hofs" value="HoFs">
+                <input type="checkbox" name="jest" id="jest" value="Jest" class="subject"> 
                 <label for="jest">Jest</label>
-                <input type="checkbox" name="jest" id="jest" value="Jest">
+                <input type="checkbox" name="promises" id="promises" value="Promises" class="subject">
                 <label for="promises">Promises</label>
-                <input type="checkbox" name="promises" id="promises" value="Promises">
+                <input type="checkbox" name="react" id="react" value="React" class="subject">
                 <label for="react">React</label>
-                <input type="checkbox" name="react" id="react" value="React">
+                <input type="checkbox" name="sql" id="sql" value="SQL" class="subject">
                 <label for="sql">SQL</label>
-                <input type="checkbox" name="sql" id="sql" value="SQL">
+                <input type="checkbox" name="python" id="python" value="Python" class="subject">
                 <label for="python">Python</label>
-                <input type="checkbox" name="python" id="python" value="Python">
             </div>
             <div>
                 <label id="label-rate">Como você avalia a Trybewarts?</label>
@@ -74,9 +74,10 @@
             <div id="leave-comment">
                 <label for="leave-comment-textarea" class="textarea">
                     Deixe seu comentário:
-                    <textarea name="textarea" id="leave-comment-textarea" cols="30" rows="10"
+                    <textarea name="textarea" id="textarea" cols="30" rows="10"
                         maxlength="500"></textarea>
                 </label>
+                <span id="counter">500</span>
             </div>
             <div class="agreement-container">
                 <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
