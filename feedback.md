@@ -12,6 +12,7 @@
 ---
 
 **Nota**: /ESCREVAM SUA NOTA AQUI/
+Nota Euller: 10
 
 ---
 
@@ -20,11 +21,13 @@
 ---
 
 **Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+Observação Euller: Gostei bastante da experiência, graças alguns probleminhas no git que tivemos e conseguimos solucionar, estamos mais aptos para resolver outro problemas que podem aparecer futuramente.
 
 ---
 
 **Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
-
+Euller Tadeu Pereira Braz
+Sarah Gonçalves
 ---
 
 ## Agradecemos por cada feedback! #VQV #GoTrybe
