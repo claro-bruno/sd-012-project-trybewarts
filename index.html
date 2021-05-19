@@ -20,5 +20,51 @@
       </header>
     </div>
     <script src="script.js"> </script>
+</head>
+<body>
+<main>
+  <form action="" method="GET" id="evaluation-form">
+    <div id="name-lastname-row">
+      <input type="text" name="Nome" placeholder="Nome" id="input-name">
+      <input type="text" name="Sobrenome" placeholder="Sobrenome" id="input-lastname">
+    </div>
+    <div id="row-email-house" >
+      <input type="email" name="Email" placeholder="Email" id="input-email">
+      <label for="house">Casa:</label>
+      <select name="" id="house">
+        <option value="0">Select house:</option>
+        <option value="1" id="gitnoria-house">Gitnória</option>
+        <option value="2" id="reactpuff-house">Reactpuff</option>
+        <option value="3" id="corvinode-house">Corvinode</option>
+        <option value="4" id="pytherina-house">Pytherina</option>
+      </select>
+    </div>
+  </form>
+</main>
+
+<img src="images/trybewarts-colored.svg" alt="logo" id="trybewarts-forms-logo">
+
+<div id="div-checkbox">
+  <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+    <input type="checkbox" checked="checked" class="subject" value="HoFs"> HoFs
+    <input type="checkbox" class="subject" value="Jest"> Jest
+    <input type="checkbox" class="subject" value="Promises"> Promises
+    <input type="checkbox" class="subject" value="React"> React
+    <input type="checkbox" class="subject" value="SQL"> SQL
+    <input type="checkbox" class="subject" value="Python"> Python
+</div>
+
+<div>
+  <label class="textarea"> Deixe seu comentário:
+    <textarea name="comentário" id="" cols="30" rows="10" maxlength="500"></textarea>
+  </label>
+</div>
+
+<button type="submit" id="submit-btn">Enviar</button>
+
+<footer>
+  Direitos reservados à Trybewarts©
+</footer>
+
 </body>
 </html>
