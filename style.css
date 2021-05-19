@@ -14,16 +14,8 @@
   width: 50px;
   height: 50px;
   display: flex;
-  align-items: flex-start;
   align-self: flex-start;
   align-content: flex-start;
-}
-
-.nav-brand {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: flex-start;
 }
 
 .trybewarts-header-title {
