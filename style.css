@@ -1,5 +1,11 @@
+body {
+  margin: 0;
+  background-color: rgb(240, 240, 240);
+}
+
 main {
   display: flex;
+  justify-content: center;
 }
 
 main form {
@@ -21,8 +27,55 @@ main form {
   justify-content: space-between;
 }
 
+.header h1 {
+  color: white;
+}
+
+.header input {
+  padding: 15px;
+  border-radius: 8px;
+  border: 0;
+  margin: 5px;
+}
+
+.header button {
+  border: 0;
+  border-radius: 8px;
+  margin: 5px;
+  height: 45px;
+  width: 100px;
+  color: white;
+  background-color: rgb(100, 21, 146);
+}
+
 .trybewarts-login {
   display: flex;
+}
+
+#evaluation-form button {
+  border: 0;
+  border-radius: 8px;
+  margin: 5px 0;
+  height: 35px;
+  color: white;
+  background-color: rgb(100, 21, 146);
+}
+
+.container-names input , .container-info input {
+  width: 250px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 0;
+  margin: 5px;
+}
+
+select {
+  background-color: white;
+  width: 240px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 0;
+  margin: 5px;
 }
 
 .container-radio {
@@ -51,6 +104,9 @@ textarea {
 }
 
 footer {
-  padding-top: 10px;
   text-align: center;
+  padding: 10px;
+  color: white;
+  background-color: rgb(70, 70, 70);
+  margin-top: 20px;
 }
