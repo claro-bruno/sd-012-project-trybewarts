@@ -30,9 +30,9 @@ function createHouseOptions() {
     selectHouse.appendChild(houseOption);
   }
 }
+
 if (!agreementChecked.checked) {
   submitBtn.setAttribute('disabled', true);
-  submitBtn.style.opacity = '0.5';
 }
 
 function validateCheckbox() {
