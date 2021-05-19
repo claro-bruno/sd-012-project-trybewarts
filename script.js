@@ -2,7 +2,6 @@ const button = document.querySelector('#botao-login');
 const familys = ['Frontend', 'Backend', 'FullStack'];
 const houses = ['Gitnória', 'Reactpuff', 'Corvinode', 'Pytherina'];
 const tech = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
-const arrayNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function botaoLoginPassword() {
   const loginTrybewarts = document.querySelector('#login');
