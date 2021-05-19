@@ -108,3 +108,12 @@ main {
 .textarea {
   display: flex;
 }
+
+.submit-containar {
+  display: flex;
+}
+
+#submit-btn {
+  display:flex;
+  margin:10px 10px;
+}
