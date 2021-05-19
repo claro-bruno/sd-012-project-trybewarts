@@ -13,9 +13,9 @@ function changeBtnStatus(event) {
   const statusAgreement = event.target.checked;
   const btnAlterState = document.querySelector('#submit-btn');
   if (statusAgreement === true) {
-    btnAlterState.enable = true;
+    btnAlterState.disabled = false;
   } else {
-    btnAlterState.enable = false;
+    btnAlterState.enable = true;
   }
 }
 
