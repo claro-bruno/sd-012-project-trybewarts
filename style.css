@@ -17,3 +17,7 @@ main {
   display: flex;
   height: 500px;
 }
+
+#evaluation-form div {
+  flex-flow: nowrap row;
+}
