@@ -1,3 +1,4 @@
+// Validação do login e da senha
 const inputButton = document.getElementById('inputButton');
 
 function validateLogin() {

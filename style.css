@@ -43,3 +43,9 @@
   display: flex;
   flex-direction: row;
 }
+
+.radio-buttons {
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+}
