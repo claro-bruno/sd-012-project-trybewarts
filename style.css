@@ -4,7 +4,6 @@ main {
 
 form {
   display: flex;
-  width: 675px;
 }
 
 body {
@@ -13,10 +12,17 @@ body {
 
 main form {
   flex-direction: column;
+  width: 675px;
 }
 
 hr {
   width: 50%;
+}
+
+ul {
+  flex-direction: column;
+  list-style: none;
+  width: 675px;
 }
 
 #trybewarts-forms-logo {
@@ -59,6 +65,10 @@ hr {
   display: flex;
   flex-flow: column wrap;
   width: max-content;
+}
+
+#form-results {
+  display: none;
 }
 
 .header {

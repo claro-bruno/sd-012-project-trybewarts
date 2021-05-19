@@ -41,7 +41,7 @@
                     <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                     <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
                     <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                    <option value="Reactpuff" id="pytherina-house">Pytherina</option>
+                    <option value="Pytherina" id="pytherina-house">Pytherina</option>
                 </select>
             </div>
             <hr>
@@ -59,13 +59,12 @@
                     <label for="Promises"><input class="subject" type="checkbox" name="content" id="Promises" value="Promises">Promises</label>
                     <label for="React"><input class="subject" type="checkbox" name="content" id="React" value="React">React</label>
                     <label for="SQL"><input class="subject" type="checkbox" name="content" id="SQL" value="SQL">SQL</label>
-                    <label for="Python"><input class="subject" type="checkbox" name="content" id="Python" value="Python">Python</label>
-                    
+                    <label for="Python"><input class="subject" type="checkbox" name="content" id="Python" value="Python">Python</label>   
                 </div>
             </div>
             <hr>
             <!-- Requisito 14 -->
-            <div>
+            <div id="rate-div">
                 <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
                 <label for="1"><input type="radio" name="rate" value="1" id="1">1</label>
                 <label for="2"><input type="radio" name="rate" value="2" id="2">2</label>
@@ -92,6 +91,15 @@
             </div>
             <!-- Requisito 17 -->
             <button type="submit" id="submit-btn" disabled>Enviar</button>
+            <ul id="form-results">
+                <li id="fullname-list"></li>
+                <li id="email-list"></li>
+                <li id="house-list"></li>
+                <li id="comment-list"></li>
+                <li id="subjects-list"></li>
+                <li id="family-list"></li>
+                <li id="rate-list"></li>
+            </ul>
         </form>
         <!-- Requisito 7 -->
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da Trybewarts">
