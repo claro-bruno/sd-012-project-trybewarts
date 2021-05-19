@@ -18,7 +18,7 @@ btnLogin.addEventListener('click', () => {
   verificationInputsLogin();
 });
 
-checkboxAgreement.addEventListener('click', () => {  
+checkboxAgreement.addEventListener('click', () => {
   if (checkboxAgreement.checked) {
     btnSubmit.removeAttribute('disabled');
   } else {
