@@ -13,3 +13,17 @@ function checar() {
 
 const botao = document.getElementById('botao');
 botao.addEventListener('click', checar);
+
+const botaoSubmit = document.getElementById('submit-btn');
+const checkBox = document.getElementById('agreement');
+console.log(checkBox);
+
+function ativarBotao() {
+  if (checkBox.checked) {
+    botaoSubmit.disabled = false;
+  } else {
+    botaoSubmit.disabled = true;
+  }
+}
+
+checkBox.addEventListener('click', ativarBotao);

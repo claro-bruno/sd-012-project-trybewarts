@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
   </head>
@@ -19,14 +19,13 @@
         </form>
       </header>
     </div>
-    <script src="script.js"> </script>
-</head>
-<body>
-<main>
-  <form action="" method="GET" id="evaluation-form">
-    <div id="name-lastname-row">
-      <input type="text" name="Nome" placeholder="Nome" id="input-name">
-      <input type="text" name="Sobrenome" placeholder="Sobrenome" id="input-lastname">
+  </head>
+  <body>
+    <main>
+      <form action="" method="GET" id="evaluation-form">
+        <div id="name-lastname-row">
+          <input type="text" name="Nome" placeholder="Nome" id="input-name">
+          <input type="text" name="Sobrenome" placeholder="Sobrenome" id="input-lastname">
     </div>
     <div id="row-email-house" >
       <input type="email" name="Email" placeholder="Email" id="input-email">
@@ -71,14 +70,14 @@
       <input type="checkbox" class="subject" value="React"> React
       <input type="checkbox" class="subject" value="SQL"> SQL
       <input type="checkbox" class="subject" value="Python"> Python
-  </div>  
-</div>
-
-<label id="label-rate" for="">Como você avalia a Trybewarts?</label>
-<input type="radio" name="rate" value="1"> 1
-<input type="radio" name="rate" value="2"> 2
-<input type="radio" name="rate" value="3"> 3
-<input type="radio" name="rate" value="4"> 4
+    </div>  
+  </div>
+  
+  <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+  <input type="radio" name="rate" value="1"> 1
+  <input type="radio" name="rate" value="2"> 2
+  <input type="radio" name="rate" value="3"> 3
+  <input type="radio" name="rate" value="4"> 4
 <input type="radio" name="rate" value="5"> 5
 <input type="radio" name="rate" value="6"> 6
 <input type="radio" name="rate" value="7"> 7
@@ -93,15 +92,16 @@
 </div>  
 
 <div>
-  <label id="label-infos" for="">Você concorda com o uso das informações acima?</label>
+  <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
   <input type="checkbox" name="" id="agreement">
 </div>
 
-<button type="submit" id="submit-btn">Enviar</button>
+<button type="submit" id="submit-btn" disabled>Enviar</button>
 
 <footer>
   Direitos reservados à Trybewarts©
 </footer>
 
 </body>
+<script src="script.js"> </script>
 </html>
