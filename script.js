@@ -73,3 +73,12 @@ function createTech() {
 }
 
 createTech();
+
+document.querySelector('#agreement').addEventListener('input', () => {
+  const conteudo = document.querySelector('#agreement');
+  if (conteudo.checked === true) {
+    document.querySelector('#submit-btn').disabled = false;
+  } else {
+    document.querySelector('#submit-btn').disabled = true;
+  }
+});
