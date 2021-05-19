@@ -90,7 +90,6 @@ main {
 }
 
 .family-contents {
-  margin-top: 5px;
   display: flex;
   flex-direction: row;
   align-content: stretch;
