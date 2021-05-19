@@ -2,41 +2,41 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header class="header">
-        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trubewarts">
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <form class="trybewarts-login" action="" method="GET">
-            <input id="email" type="text" placeholder="Login">
-            <input id="senha" type="password" placeholder="Senha">
-            <br>
-            <button id="botao-login" type="submit">Entrar</button>
-        </form>
-    </header>
-    <main>
-        <form id="evaluation-form" action="" method="GET">
-            <input type="text" id="input-name" placeholder="Nome">
-            <input type="text" id="input-lastname" placeholder="Sobrenome">
-            <input type="email" id="input-email" placeholder="Email">
+  <header class="header">
+    <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Logo Trubewarts">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form class="trybewarts-login" action="" method="GET">
+      <input id="email" type="text" placeholder="Login">
+      <input id="senha" type="password" placeholder="Senha">
+      <br>
+      <button id="botao-login" type="submit">Entrar</button>
+    </form>
+  </header>
+  <main>
+    <form id="evaluation-form" action="" method="GET">
+      <input type="text" id="input-name" placeholder="Nome">
+      <input type="text" id="input-lastname" placeholder="Sobrenome">
+      <input type="email" id="input-email" placeholder="Email">
       <select name="Casa" id="house">
         <option id="gitnoria-house" value="Gitnória">Gitnória</option>
         <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
         <option id="corvinode-house" value="Corvinode">Corvinode</option>
         <option id="pytherina-house" value="Pytherina">Pytherina</option>
       </select>
-      <label id="label-family" for="">Qual sua família?</label>
+      <label id="label-family">Qual sua família?</label>
       <label for=""></label>
       <label for="frontend"><input id="frontend" type="radio" name="family" value="Frontend">Família Frontend</label>
       <label for="backend"><input id="backend" type="radio" name="family" value="Backend">Família Backend</label>
       <label for="fulltack"><input id="fullstack" type="radio" name="family" value="FullStack">Família FullStack</label>
-      <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
+      <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <div id="conteudo">
         <input class="subject" type="checkbox" value="HoFs">HoFs
         <input class="subject" type="checkbox" value="Jest">Jest
@@ -47,7 +47,7 @@
       </div>
       <label class="textarea" for="textarea">Deixe seu comentário:</label>
       <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-      <button id="submit-btn" type="submit">Enviar</button>
+      <button id="submit-btn" type="submit" disabled>Enviar</button>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
   </main>
