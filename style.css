@@ -35,16 +35,12 @@ body {
     flex-direction: column;
     width: 675px;
 }
-<<<<<<< HEAD
 
 .line-content {
     display: flex;
     flex-direction: column;
 }
 
-.line-content-2 {
-    
-}
 #trybewarts-forms-logo {
     height: 500px;
 }
@@ -56,8 +52,6 @@ body {
     display: none;
 }
     
-=======
-    
 .trybewarts-forms-logo{
     height: 500px;
 }
@@ -66,4 +60,10 @@ body {
     display: flex;
     flex-direction: row;
 }
->>>>>>> 245660bb429501355065b7bd5531dcf94f81de00
+
+#fieldset-learning {
+    display:flex;
+}
+#label-content {
+    display:none;
+}
