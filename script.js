@@ -11,3 +11,20 @@ function checkLogin() {
   }
 }
 button.addEventListener('click', checkLogin);
+
+function gerarNumero() {
+  const divAvaliacao = document.getElementById('avaliacao');
+  for (let index = 1; index <= 10; index += 1) {
+    const inputRadio = document.createElement('input');
+    const inputLabels = document.createElement('label');
+    inputRadio.type = 'radio';
+    inputRadio.name = 'rate';
+    inputRadio.id = index;
+    inputRadio.value = index;
+    inputLabels.htmlFor = index;
+    inputLabels.innerText = index;
+    divAvaliacao.appendChild(inputLabels);
+    divAvaliacao.appendChild(inputRadio);
+  }
+}
+gerarNumero();
