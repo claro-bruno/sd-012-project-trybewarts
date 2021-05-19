@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@500;700&display=swap');
 
 * {
   font-family: Inknut Antiqua, serif;
   font-size: 10px;
+  font-weight: 500;
 }
 
 body {
-  height: 96vh;
-  width: 98vw;
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
 }
 
 header {
@@ -34,14 +36,15 @@ header {
 
 #trybewarts-header-title {
   height: auto;
-  font-size: 22px;
+  font-size: 25px;
+  font-weight: 700;
   color: white;
   display: flex;
   align-items: center;
   margin: auto;
 }
 
-#evaluation-form , .trybewarts-login {
+.trybewarts-login {
   height: auto;
   width: auto;
   display: flex;
@@ -57,6 +60,7 @@ header {
   align-items: center;
   font-size: 10px;
   border-radius: 6px;
+  border: transparent;
 }
 
 #login-input {
@@ -97,19 +101,29 @@ main {
   width: 675px;
 }
 
+#title-form {
+  margin: 0.5vh auto;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.form-element {
+  margin: 0.5vh 0;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
 
 #container-nome {
-  width: 98%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 #container-mail-casa {
-  width: 98%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -117,10 +131,13 @@ main {
 
 #house {
   width: 89%;
+  border: transparent;
+  background-color: white;
 }
 
 .input-text {
   width: 48%;
+  border: transparent;
 }
 
 hr {
@@ -154,25 +171,33 @@ hr {
 .container-checkbox-content {
   display: flex;
   flex-direction: row;
-}
-
-#container-radios-rate {
-  display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #container-rate {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: start;
   align-items: center;
+}
+
+.container-radios-rate {
+  display: flex;
+  flex-direction: row;
+}
+
+.radio-rate {
+  margin: 0 9px;
 }
 
 #container-comment {
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+
+#comment {
+  border: 1px solid rgb(78, 44, 131);
 }
 
 #container-agreement {
@@ -206,5 +231,5 @@ footer {
   width: 87%;
   display: flex;
   justify-content: center;
-
+  align-items: center;
 }
