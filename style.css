@@ -2,6 +2,15 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-family: hp, sans-serif;
+}
+
+@font-face {
+  font-family: hp;
+  src: url(/fonts/HARRYP__.TTF);
+}
+
 .header {
   display: flex;
   justify-content: space-around;
@@ -9,7 +18,6 @@ body {
   padding: 0 50px;
   margin-bottom: 30px;
 }
-
 
 .trybewarts-header-logo {
   width: 50px;
