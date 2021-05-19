@@ -80,12 +80,6 @@ function familyChangeId() {
 }
 
 const originalrateListId = [];
-function ratelist() {
-  const rateId = document.querySelectorAll('.form-check-input');
-  for (let index = 0; index < rateId.length; index += 1) {
-    originalrateListId.push(rateId[index].id);
-  }
-}
 
 function rateChangeId() {
   const rateId = document.querySelectorAll('.form-check-input');
