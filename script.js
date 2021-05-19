@@ -30,7 +30,6 @@ const lastName = document.querySelector('#input-lastname');
 const email = document.querySelector('#input-email');
 const house = document.querySelector('#house');
 
-
 function replaceNameElement() {
   const nameParagraph = document.createElement('p');
   nameParagraph.innerHTML = `Nome: ${firstName.value} ${lastName.value}`;
@@ -52,15 +51,28 @@ function replaceHouseElement() {
 
 function replaceFamilyElement() {
   const family = document.querySelector('input[name="family"]:checked');
-  const familyCointainer = family.parentNode
+  const familyCointainer = family.parentNode;
   const familyParagraph = document.createElement('p');
   familyParagraph.innerHTML = `Família: ${family.value}`;
   while (familyCointainer.firstChild) {
-    familyCointainer.removeChild(familyCointainer.firstChild)
+    familyCointainer.removeChild(familyCointainer.firstChild);
   }
   familyCointainer.appendChild(familyParagraph);
-  
+}
 
+function replaceContentElement() {
+  const content = document.querySelectorAll('input[class=subject]:checked');
+  const contentContainer = content[0].parentNode.parentNode;
+  const contentParagraph = document.createElement('p');
+  const checkedArray = [];
+  for (let tech = 0; tech < content.length; tech += 1) {
+    checkedArray.push(content[tech].value);
+  }
+  while (contentContainer.firstChild) {
+    contentContainer.removeChild(contentContainer.firstChild);
+  }
+  contentParagraph.innerHTML = `Matérias: ${checkedArray.join(', ')}`;
+  contentContainer.appendChild(contentParagraph);
 }
 
 submitButton.addEventListener('click', () => {
@@ -70,7 +82,9 @@ submitButton.addEventListener('click', () => {
 
   replaceHouseElement();
 
-  replaceFamilyElement()
+  replaceFamilyElement();
+
+  replaceContentElement();
 });
 //   const families = document.querySelectorAll('.input-family')
 //   for (let family of families) {
