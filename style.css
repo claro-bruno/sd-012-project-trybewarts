@@ -38,7 +38,7 @@ main {
   flex: row;
 }
 
-.evaluation-form {
+#evaluation-form {
   width: 675px;
 }
 
