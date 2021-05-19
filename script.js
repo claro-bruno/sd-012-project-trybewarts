@@ -4,11 +4,11 @@ function login() {
   if (email === 'tryber@teste.com' && senha === '123456') {
     alert('Olá, Tryber!');
   } else {
-    alert('Login ou senha inválidos.')
+    alert('Login ou senha inválidos.');
   }
 }
 
 window.onload = function main() {
-const logar = document.querySelector('.acess')
-logar.addEventListener('click', login);
-}
+  const logar = document.querySelector('.acess');
+  logar.addEventListener('click', login);
+};
