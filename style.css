@@ -1,7 +1,6 @@
 body {
   margin: 0;
   background-color: rgb(240, 240, 240);
-  
 }
 
 main {
@@ -26,7 +25,6 @@ main form {
   margin-bottom: 50px;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .header h1 {
