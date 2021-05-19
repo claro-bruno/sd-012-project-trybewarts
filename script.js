@@ -75,12 +75,49 @@ function createFamilyOutput() {
   getOutputDiv.appendChild(pFamily);
 }
 
+function createSubjectOutput() {
+  const subject = document.getElementsByName('content');
+  const pSubject = document.createElement('p');
+  pSubject.innerHTML = `Matérias: `;
+  for (let indice = 0; indice < subject.length; indice += 1) {
+    if (subject[indice].checked) {
+      if (pSubject.innerHTML === `Matérias: `) {
+        pSubject.innerHTML += subject[indice].value;
+      } else {
+        pSubject.innerHTML += ', ' + subject[indice].value;
+      }
+    }
+  }
+  getOutputDiv.appendChild(pSubject);
+}
+
+function createRateOutput() {
+  const rate = document.getElementsByName('rate');
+  const pRate = document.createElement('p');
+  for (let indice = 0; indice < rate.length; indice += 1) {
+    if (rate[indice].checked) {
+      pRate.innerHTML = `Avaliação: ${rate[indice].value}`;
+    }
+  }
+  getOutputDiv.appendChild(pRate);
+}
+
+function createTextAreaOutput() {
+  const textArea = document.querySelector('#textarea').value;
+  const pTextArea = document.createElement('p');
+  pTextArea.innerHTML = `Observações: ${textArea}`;
+  getOutputDiv.appendChild(pTextArea);
+}
+
 function formOutput(event) {
   event.preventDefault();
   createNameOutput();
   createEmailOutput();
   createHouseOutput();
   createFamilyOutput();
+  createSubjectOutput();
+  createRateOutput();
+  createTextAreaOutput();
 
   getInputDiv.style.display = 'none';
   getOutputDiv.style.display = 'flex';
