@@ -1,12 +1,13 @@
-body{
-  font-family: 'Eczar', serif;
+body {
+  font-family: Eczar, serif;
   background-color: rgb(247, 243, 238);
 }
 
-h1{
+h1 {
   color: aliceblue;
 }
-h2{
+
+h2 {
   display: flex;
   align-items: center;
 }
@@ -15,19 +16,9 @@ h2{
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
-  align-items: baseline;  
+  align-items: baseline;
 }
 
-/*
-.header-container{
-  display: flex;  
-  background-color: chocolate;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1400px;
-  justify-content: space-between;
-
-}*/
 
 .trybewarts-header-logo {
   height: 50px;
@@ -46,10 +37,8 @@ h2{
 .formMain {
   display: flex;
   justify-content: space-between;
-  /*width: 1200px;*/
   margin-left: auto;
   margin-right: auto;
-  
 }
 
 #evaluation-form {
@@ -69,26 +58,25 @@ h2{
 #trybewarts-forms-logo {
   height: 500px;
   justify-content: right;
-  
 }
 
 
-#avalia{
+#avalia {
   display: flex;
 }
 
-textarea{
+textarea {
   height: 200px;
   width: 100%;
- 
 }
-#submit-btn{
-  color: rgb(255, 255, 255);
+
+#submit-btn {
+  color: white;
   background-color: blueviolet;
   border: none;
 }
 
-.form-container{
+.form-container {
   background-color: rgb(250, 246, 242);
   display: flex;
   margin-left: auto;
@@ -103,3 +91,7 @@ textarea{
   flex-direction: column;
 }
 
+.checkbox {
+  display: flex;
+  justify-content: space-between;
+}
