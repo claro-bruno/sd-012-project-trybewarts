@@ -84,3 +84,7 @@ main {
 footer {
   text-align: center;
 }
+
+form {
+  margin-left: 30px;
+}
