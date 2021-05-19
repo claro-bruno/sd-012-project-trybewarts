@@ -8,9 +8,9 @@ for(let casa of listaDeCasas) {
 }
 
 // guarda valores dos campos em localStorage
-function guardarCampos() {
+// // function guardarCampos() {
   
-}
+// }
 
 // valida login e senha
 function validacaoLoginSenha(event) {
@@ -89,3 +89,5 @@ function listenerKey(event) {
 
 // adiciona evento de teclado em toda página
 document.addEventListener('keyup', listenerKey);
+
+console.log("oioioioioi");
