@@ -86,3 +86,12 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#radio-bottoms {
+  display: flex;
+  flex-direction: column;
+}
+
+#container-family-checkbox {
+  display: flex;
+}
