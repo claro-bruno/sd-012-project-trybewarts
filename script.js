@@ -39,4 +39,4 @@ const checker = document.getElementById('agreement');
 const sendbtn = document.getElementById('submit-btn');
 checker.onchange = function funcao() {
   sendbtn.disabled = !this.checked;
-};
+}

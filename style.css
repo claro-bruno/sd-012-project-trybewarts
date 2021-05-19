@@ -6,11 +6,10 @@
   padding: 5px;
 }
 
-.conteiner-img {
-  background-color: rgb(50, 167, 145);
+.trybewarts-header-logo {
+  display: flex;
   width: 80px;
   height: 70px;
-  display: flex;
 }
 
 .trybewarts-login {
