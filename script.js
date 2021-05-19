@@ -30,12 +30,15 @@ function createHouses() {
     createOption.value = houses[index];
     createOption.innerText = houses[index];
     const lowCase = houses[index].toLowerCase();
-    createOption.id = lowCase + '-house';
+    const lowCase1 = lowCase.normalize('NFD').replace(/[^a-zA-Zs]/g, '');
+    const lowCase2 = '-house';
+    const familyId = lowCase1 + lowCase2;
+    createOption.id = familyId;
     getTagHouse.appendChild(createOption);
   }
 }
 
-createHouses()
+createHouses();
 
 function createFamily() {
   const getTagFamily = document.getElementById('family-input');
@@ -46,6 +49,7 @@ function createFamily() {
     createInput.className = 'family';
     createInput.type = 'radio';
     createInput.name = 'family'
+    createInput.name = 'family';
     createInput.value = familys[index];
     getTagFamily.appendChild(createLabelFamily);
     getTagFamily.appendChild(createInput);
@@ -65,7 +69,7 @@ function createTech() {
     createInputTech.value = tech[index];
     getDivTech.appendChild(createLabelTech);
     getDivTech.appendChild(createInputTech);
-  };
+  }
 }
 
 createTech();
