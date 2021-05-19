@@ -96,7 +96,8 @@ textArea.addEventListener('input', () => {
 //   }
 // });
 // // Adiciona musica tema do Harry Potter theme remix (https://www.youtube.com/watch?v=Yjr1mcZjRkM)
-// window.onload = () => {
-//   const audio = document.querySelector('audio');
-//   audio.setAttribute('autoplay', 'true');
-// };
+// // window.onload = () => {
+// //   const audio = document.querySelector('audio');
+// //   audio.setAttribute('src', 'h_p_sound.mp3');
+// //   audio.setAttribute('autoplay', 'true');
+// // };
