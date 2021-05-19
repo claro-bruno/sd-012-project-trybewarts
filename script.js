@@ -30,3 +30,9 @@ function createRadioButtons() {
   }
 }
 createRadioButtons();
+
+const catchButton2 = document.getElementById('submit-btn');
+const catchCheckbox = document.getElementById('agreement');
+catchCheckbox.addEventListener('change', () => {
+  catchButton2.disabled = !catchCheckbox.checked;
+});
