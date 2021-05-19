@@ -80,3 +80,7 @@ main {
 .div-checkbox {
   display: flex;
 }
+
+footer {
+  text-align: center;
+}
