@@ -62,7 +62,7 @@ function captureInputsValue() {
 
 function createResults() {
   const results = captureInputsValue();
-  Object.keys(results).forEach(result => {
+  Object.keys(results).forEach((result) => {
     const element = document.createElement('p');
     element.innerHTML = (`${result}: ${results[result]}`).trim();
     const parent = document.querySelector('#evaluation-form');
