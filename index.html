@@ -18,7 +18,7 @@
     </form>
   </header>
   <main class="main">
-      <form id="evaluation-form">
+      <form method="GET" id="evaluation-form">
           <div>
             <input id="input-name" placeholder="Nome"></input>
             <input id="input-lastname" placeholder="Sobrenome"></input>
@@ -61,14 +61,14 @@
             <input type="radio" name="rate">10
           </div>
           <div>
-            <labe id="textarea">Deixe seu comentário:</labe>
+            <label class="textarea" id="textarea">Deixe seu comentário:</label>
             <textarea maxlength="500"></textarea>
           </div>
           <div>
             <label id="label-infos" name="infos">Você concorda com o uso das informações acima?</label>
             <input type="checkbox" id="agreement">
           </div>
-          <button type="submit" id="submit-btn">Enviar</button>
+          <button disabled type="submit" id="submit-btn">Enviar</button>
           <footer>
             <p>Direitos reservados à Trybewarts©<p>
           </footer>
