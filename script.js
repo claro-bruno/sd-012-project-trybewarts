@@ -19,9 +19,9 @@ btnLogin.addEventListener('click', () => {
 });
 
 checkboxAgreement.addEventListener('click', () => {  
-  if(checkboxAgreement.checked) {
-    btnSubmit.removeAttribute('disabled')
+  if (checkboxAgreement.checked) {
+    btnSubmit.removeAttribute('disabled');
   } else {
-    btnSubmit.setAttribute('disabled', 'disabled')
+    btnSubmit.setAttribute('disabled', 'disabled');
   }
-})
+});
