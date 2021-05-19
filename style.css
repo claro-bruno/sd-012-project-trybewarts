@@ -36,3 +36,8 @@ main {
   display: flex;
   flex-direction: row;
 }
+
+#container-comment {
+  display: flex;
+  flex-direction: column;
+}
