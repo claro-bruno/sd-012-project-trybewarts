@@ -38,7 +38,7 @@
                 <input type="text" id="input-email" placeholder="Email">
                 
                 <label for="house">Casa: </label>
-                <select name="formulario" id="house">
+                <select name="formHouse" id="house"> 
                     <option value="Gitnória" id="gitnoria-house">Gitnoria</option>
                     <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
                     <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -50,13 +50,52 @@
         <section class="secFamily">
 
             <label id="label-family">Qual sua família?</label>
-
-            <input type="radio" id="frontId" name="family">
-            <label id="labelFA" for="frontId">Família Frontend</label>
-            <input type="radio" id="backID" name="family">
-            <label id="labelFA" for="backID">Família Backend</label>
-            <input type="radio" id="fullId" name="family">
-            <label id="labelFA" for="fullId">Família FullStack</label>
+            <div>        
+                <input type="radio" id="frontId" name="family" value="Frontend" >
+                <label id="labelFa" for="frontId">Família Frontend</label>
+            </div>
+            <div>
+                <input type="radio" id="backId" name="family" value="Backend" >
+                <label id="labelFa" for="backId">Família Backend</label>
+            </div>
+            <div>
+                <input type="radio" id="fullId" name="family" value="FullStack">
+                <label id="labelFa" for="fullId">Família FullStack</label>
+            </div>
+        </section>
+        
+        <section class="secSebject">
+            
+            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <div>
+                <input type="checkbox" class="subject" name="subject" value="HoFs">
+                <label id="labelSub" for="subject">HoFs</label>
+            </div>
+            <div>
+                <input type="checkbox" class="subject" name="subject" value="Jest">
+                <label id="labelSub" for="subject">Jest</label>
+            </div>
+            <div>
+                <input type="checkbox" class="subject" name="subject" value="Promises">
+                <label id="labelSub" for="subject">Promises</label>
+            </div>
+            <div>
+                <input type="checkbox" class="subject" name="subject" value="React">
+                <label id="labelSub" for="subject">React</label>
+            </div>
+            <div>
+                <input type="checkbox" class="subject" name="subject" value="SQL">
+                <label id="labelSub" for="subject">SQL</label>
+            </div>
+            <div>
+                <input type="checkbox" class="subject" name="subject" value="Python">
+                <label id="labelSub" for="subject">Python</label>
+            </div>        
+        
+       
+        
+        
+        
 
         </section>
 
