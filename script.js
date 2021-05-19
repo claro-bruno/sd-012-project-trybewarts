@@ -4,6 +4,7 @@ const submitBtn = document.getElementById('submit-btn');
 const textAreaInput = document.getElementById('textarea');
 const charactersCounter = document.getElementById('counter');
 const maxCount = parseInt(charactersCounter.innerText, 10);
+const form = document.getElementById('evaluation-form');
 
 function validateInput() {
   const emailInput = document.querySelector('input[type="email"]');
@@ -52,9 +53,100 @@ function charactersCount() {
   charactersCounter.innerText = counter;
 }
 
+function showFullName() {
+  const name = document.getElementById('input-name');
+  const lastname = document.getElementById('input-lastname');
+  const nameInfo = document.createElement('p');
+  nameInfo.innerText = `Nome: ${name.value} ${lastname.value}`;
+  name.remove();
+  lastname.remove();
+  form.appendChild(nameInfo);
+}
+
+function showEmail() {
+  const email = document.getElementById('input-email');
+  const emailInfo = document.createElement('p');
+  emailInfo.innerText = `Email: ${email.value}`;
+  email.remove();
+  form.appendChild(emailInfo);
+}
+
+function showHouse() {
+  const house = document.getElementById('house');
+  const option = document.getElementById(house.value);
+  const houseInfo = document.createElement('p');
+  houseInfo.innerText = `Casa: ${option.innerText}`;
+  house.remove();
+  form.appendChild(houseInfo);
+}
+
+function showFamily() {
+  const familyInput = document.getElementById('family-input');
+  const familyOptions = document.querySelectorAll('input[name="family"]');
+  const familyInfo = document.createElement('p');
+  familyOptions.forEach((family) => {
+    if (family.checked) {
+      familyInfo.innerText = `Família: ${family.value}`;
+    }
+  });
+  familyInput.remove();
+  form.appendChild(familyInfo);
+}
+
+function showContent() {
+  const contentInput = document.getElementById('content-inputs');
+  const contentOptions = document.querySelectorAll('input[name="content"]');
+  const checkedContent = [];
+  const contentInfo = document.createElement('p');
+  contentOptions.forEach((content) => {
+    if (content.checked) {
+      checkedContent.push(content.defaultValue);
+    }
+  });
+  contentInfo.innerText = `Matérias: ${checkedContent.join(', ')}`;
+  contentInput.remove();
+  form.appendChild(contentInfo);
+}
+
+function showRate() {
+  const rateInput = document.getElementById('rate-input');
+  const rateOptions = document.querySelectorAll('input[name="rate"]');
+  const rateInfo = document.createElement('p');
+  rateOptions.forEach((rate) => {
+    if (rate.checked) {
+      rateInfo.innerText = `Avaliação: ${rate.value}`;
+    }
+  });
+  rateInput.remove();
+  form.appendChild(rateInfo);
+}
+
+function showComment() {
+  const commentInput = document.querySelector('.text-area');
+  const comment = document.getElementById('textarea');
+  const commentInfo = document.createElement('p');
+  commentInfo.innerText = `Observações: ${comment.value}`;
+  commentInput.remove();
+  form.appendChild(commentInfo);
+}
+
+function showInputsValues() {
+  showFullName();
+  showEmail();
+  showHouse();
+  showFamily();
+  showContent();
+  showRate();
+  showComment();
+}
+
 window.onload = () => {
   loginBtn.addEventListener('click', validateInput);
   agreementChecked.addEventListener('click', validateCheckbox);
   textAreaInput.addEventListener('keyup', charactersCount);
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    showInputsValues();
+  });
   createHouseOptions();
 };
