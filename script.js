@@ -42,15 +42,15 @@ getAgreementCheck.addEventListener('click', enableButton);
 //  console.log(contador);
 // }
 
-function formOutput() {
+function formOutput(event) {
   event.preventDefault();
   const name = document.querySelector('#input-name').value;
   const lastName = document.querySelector('#input-lastname').value;
   const email = document.querySelector('#input-email').value;
   const house = document.querySelector('#house').value;
-  let pName = document.createElement('p');
-  let pEmail = document.createElement('p');
-  let pHouse = document.createElement('p');
+  const pName = document.createElement('p');
+  const pEmail = document.createElement('p');
+  const pHouse = document.createElement('p');
 
   pName.innerHTML = `Nome: ${name} ${lastName}`;
   getOutputDiv.appendChild(pName);
