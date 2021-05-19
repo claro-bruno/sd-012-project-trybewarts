@@ -38,6 +38,12 @@ radio();
 const checker = document.getElementById('agreement');
 const sendbtn = document.getElementById('submit-btn');
 sendbtn.disabled = true;
-checker.onchange = function funcao() {
-  sendbtn.disabled = !this.checked;
-};
+checker.addEventListener('click', function() {
+  if (checker.checked) { 
+    sendbtn.disabled = false;
+  }
+})
+
+// checker.onchange = function funcao() {
+// sendbtn.disabled = !this.checked;
+//};
