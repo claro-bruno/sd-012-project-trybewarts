@@ -1,56 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <title>Document</title>
 </head>
+
 <body>
   <header class="header">
     <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
+
+    <!---->
     <form action="" method="get" class="trybewarts-login">
       <input class="form-label" type="email" name="login" id="user" placeholder="Login">
       <input class="mb-3" type="password" name="password" id="senha" placeholder="Senha">
       <button type="submit" class="btn btn-success acess">login</button>
     </form>
   </header>
-  <main class="formMain">
-    <form action="" method="get" id="evaluation-form">
-      <div class="nomeDoTryber">
-      <input type="text" name="nome" id="input-name" placeholder="Nome">
-      <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
-      </div>
-      <div class="casaEmail">
-      <input type="email" name="email" id="input-email" placeholder="Email">
-      <select name="" id="house">
-        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-        <option value="Corvinode" id="corvinode-house">Corvinode</option>
-        <option value="Pytherina" id="pytherina-house">Pytherina</option>
-      </select>
-      </div>
-      <hr>
-      <label for="" id="label-family"> Qual sua família? <br></label>
+
+  <h2>Forms</h2><br>
+
+  <section class="form-container">
+
+    <main class="formMain">
+
+      <form action="" method="get" id="evaluation-form">
+        <div class="nomeDoTryber">
+          <input type="text" name="nome" id="input-name" placeholder="Nome">
+          <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+        </div>
+        <div class="casaEmail">
+          <input type="email" name="email" id="input-email" placeholder="Email">
+          <select name="" id="house">
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
+          </select>
+        </div>
+        <hr>
+        <label for="" id="label-family"> <strong>Qual sua família?</strong> <br></label>
         <label for="Front">
-        <input type="radio" name="family" id="Front" value="Frontend">Frontend
-        </label><br>
-      <label for="Back">
-        <input type="radio" name="family" id="Back" value="Backend"> Backend
-      </label>
-      <label for="Full">
-        <input type="radio" name="family" id="Full" value="FullStack"> FullStack
-      </label>
-    </form>
-    <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+          <input type="radio" name="family" id="Front" value="Frontend">Frontend
+        </label>
+        <label for="Back">
+          <input type="radio" name="family" id="Back" value="Backend"> Backend
+        </label>
+        <label for="Full">
+          <input type="radio" name="family" id="Full" value="FullStack"> FullStack
+        </label>
+        <hr>
+        <!--
+          <label class="textarea" for="">Deixe seu comentário:<br>
+          <textarea rows="" cols="" maxlength="500" id="textarea"></textarea>
+        </label> -->
+
+
+
+        <!--
+          <label for="agreement" id="label-infos"><strong>Você concorda com o uso das informações acima?</strong>
+          <input type="checkbox" name="" id="agreement">
+        </label>
+        <br>
+        <button type="submit" class="btn btn-success acess" id="submit-btn">Enviar</button>
+        -->
+
+
+        <!--
+
+        <div class="avalia">
+          <label for="" id="label-rate"> <strong>Como você avalia a Trybewarts?</strong> </label>
+
+          <label for="1">
+            <input type="radio" name="rate" id="1" value="1">1
+          </label>
+          <label for="2">
+            <input type="radio" name="rate" id="2" value="2">2
+          </label>
+          <label for="3">
+            <input type="radio" name="rate" id="3" value="3">3
+          </label>
+          <label for="4">
+            <input type="radio" name="rate" id="4" value="4">4
+          </label>
+          <label for="5">
+            <input type="radio" name="rate" id="5" value="5">5
+          </label>
+          <label for="6">
+            <input type="radio" name="rate" id="6" value="6">6
+          </label>
+          <label for="7">
+            <input type="radio" name="rate" id="7" value="7">7
+          </label>
+
+          <label for="8">
+            <input type="radio" name="rate" id="8" value="8">8
+          </label> <label for="9">
+            <input type="radio" name="rate" id="9" value="9">9
+          </label>
+          <label for="10">
+            <input type="radio" name="rate" id="10" value="10">10
+          </label>
+        </div>
+        <br>
+
+        -->
+
+
+      </form>
+
+      <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
+  </section>
+
   </main>
 
+
   <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+  </script>
   <script src="script.js"></script>
 </body>
+
 </html>
