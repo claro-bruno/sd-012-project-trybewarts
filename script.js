@@ -16,12 +16,6 @@ document.getElementById('input-lastname');
 document.getElementById('input-email');
 document.getElementById('house');
 
-// function capturaDados () {
-//   if (btn2.disabled === false) {
-
-//   }
-// }
-
 btn.addEventListener('click', verificaLogin);
 const valor = document.querySelector('#agreement');
 
@@ -36,13 +30,16 @@ function habilitaBotão() {
 valor.addEventListener('click', habilitaBotão);
 
 function limite_textarea(valor) {
-  quant = 500;
-  total = valor.length;
+  let quant = 500;
+  let total = valor.length;
   if(total <= quant) {
-      resto = quant - total;
-      document.getElementById('counter').innerHTML = resto;
+    resto = quant - total;
+    document.getElementById('counter').innerHTML = resto;
   } else {
-      document.getElementById('textarea').value = valor.substr(0,quant);
+    document.getElementById('textarea').value = valor.substr(0,quant);
   }
 }
-// btn2.addEventListener('click', substituiForm)
+
+let nome = document.querySelector('#input-name').value;
+let sobrenome = document.querySelector('#nput-lastname').value;
+nome.innerHTML = nome + sobrenome;
