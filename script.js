@@ -1,9 +1,11 @@
 const botaoLogin = document.querySelector('#botao-login');
 const inputLogin = document.querySelector('#email');
 const inputSenha = document.querySelector('#senha');
-// const formulario = document.querySelector('#evaluation-form');
 const inputAgreement = document.querySelector('#agreement');
+const observacoes = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
 const botaoSubmit = document.querySelector('#submit-btn');
+// const formulario = document.querySelector('#evaluation-form');
 // const inputNome = document.querySelector('#input-name');
 // const inputSobrenome = document.querySelector('#input-lastname');
 // const inputEmail = document.querySelector('#input-email');
@@ -35,6 +37,12 @@ function habilitarBotao() {
 }
 
 inputAgreement.addEventListener('click', habilitarBotao);
+
+function caracteresRestantes() {
+  counter.innerHTML = 500 - observacoes.value.length;
+}
+
+observacoes.addEventListener('keyup', caracteresRestantes);
 
 // function removerConteudo() {
 //   const conteudoForm = formulario.children;
