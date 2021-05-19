@@ -2,6 +2,7 @@ const button = document.querySelector('#botao-login');
 const familys = ['Frontend', 'Backend', 'FullStack'];
 const houses = ['Gitnória', 'Reactpuff', 'Corvinode', 'Pytherina'];
 const tech = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
+const arrayNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 function botaoLoginPassword() {
   const loginTrybewarts = document.querySelector('#login');
@@ -73,6 +74,23 @@ function createTech() {
 }
 
 createTech();
+
+function createLvlAva() {
+  const niveisAva = document.getElementById('niveis');
+  for (let index = 0; index < arrayNumber.length; index += 1) {
+    const createLabelAva = document.createElement('label');
+    const createInputAva = document.createElement('input');
+    createLabelAva.innerText = arrayNumber[index];
+    createInputAva.type = 'radio';
+    createInputAva.name = 'rate';
+    createInputAva.value = arrayNumber[index];
+    niveisAva.appendChild(createLabelAva);
+    niveisAva.appendChild(createInputAva);
+  }
+}
+
+createLvlAva();
+
 
 document.querySelector('#agreement').addEventListener('input', () => {
   const conteudo = document.querySelector('#agreement');
