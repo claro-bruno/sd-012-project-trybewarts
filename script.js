@@ -20,10 +20,9 @@ checkAgreement.addEventListener('change', (event) => {
 });
 
 const textAreaInput = document.querySelector('#textarea');
-const counter = document.querySelector('#counter');
 
 textAreaInput.addEventListener('keyup', () => {
-  counter.innerHTML = 500 - textAreaInput.value.length;
+  textAreaInput.nextElementSibling.innerHTML = 500 - textAreaInput.value.length;
 });
 
 const firstName = document.querySelector('#input-name');
