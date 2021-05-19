@@ -38,12 +38,18 @@ h1 {
 
 main {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin: 0% 20%;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 #trybewarts-forms-logo {
@@ -69,17 +75,17 @@ footer p {
   color: white;
 }
 
-#input-name {
+#input-name , #input-lastname {
   width: 150px;
-}
-
-#input-lastname {
-  width: 150px;
+  padding: 5px;
+  border-radius: 3px;
+  margin-left: 5px;
 }
 
 #nome-sobrenome {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 #conteudoAprender {
@@ -94,10 +100,14 @@ footer p {
 #email-casa {
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 }
 
 #input-email {
   width: 150px;
+  padding: 5px;
+  border-radius: 3px;
+  margin-left: 5px;
 }
 
 #house {
@@ -116,4 +126,29 @@ hr {
 
 #notas {
   display: flex;
+}
+
+#nome , #sobrenome , #casa , #email {
+  display: flex;
+}
+
+#family {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.tipoFamily {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#conteiner2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+#text {
+  display: flex;
+  flex-flow: column wrap;
 }
