@@ -3,6 +3,7 @@
   padding: 0;
   font-size: 100%;
 }
+/*↓↓↓ Header do site*/
 .header{
     display: flex;
     background-color: rgb(50, 167, 145);
@@ -22,4 +23,39 @@
     line-height: 100px;
     font-size: 50px;
     color: white;
-  }
+}
+/*↓↓↓ Main do site*/
+main{
+    display: flex;
+    justify-content: center;
+}
+#evaluation-form{
+    display: flex;
+    width: 675px;
+    flex-direction: column;
+}
+#trybewarts-forms-logo{
+    height: 500px;
+}
+#userdata{
+    display: flex;
+    flex-direction: row;
+}
+#input-name{
+    width: 49%;
+}
+#input-lastname{
+    width: 49%;
+}
+#input-email{
+    width: 49%;
+}
+#house{
+    width: 49%;
+}
+hr{
+    width: 100%;
+    background-color: black;
+    height: 2px;
+    margin: 5% 0 5% 0
+}
