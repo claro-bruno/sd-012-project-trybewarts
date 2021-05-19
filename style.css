@@ -1,3 +1,15 @@
+main {
+    display: flex;
+}
+
+form {
+    display: flex;
+}
+
+body {
+    margin: 0;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -23,6 +35,7 @@
     flex-direction: column;
     width: 675px;
 }
+<<<<<<< HEAD
 
 .line-content {
     display: flex;
@@ -43,3 +56,14 @@
     display: none;
 }
     
+=======
+    
+.trybewarts-forms-logo{
+    height: 500px;
+}
+
+#form1-row1 {
+    display: flex;
+    flex-direction: row;
+}
+>>>>>>> 245660bb429501355065b7bd5531dcf94f81de00
