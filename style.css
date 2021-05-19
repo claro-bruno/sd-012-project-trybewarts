@@ -41,3 +41,12 @@ footer {
   align-items: center;
   color: white;
 }
+
+.form-section {
+  margin-top: 50px;
+}
+
+.radio-vertical {
+  display: flex;
+  flex-direction: column;
+}

@@ -10,9 +10,7 @@ function loginCheck() {
 }
 
 
-//  referência : https://thisinterestsme.com/disable-button-checkbox-checked/
-
-function habilitarBtn(checkBox) {
+function habilitarBtn(checkBox) { //  referência : https://thisinterestsme.com/disable-button-checkbox-checked/
   if (checkBox.checked) {
     document.getElementById('submit-btn').disabled = false;
   } else {
@@ -20,3 +18,7 @@ function habilitarBtn(checkBox) {
   }
 }
 
+if (0 === 1) {
+  loginCheck();
+  habilitarBtn();
+}
