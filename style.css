@@ -72,20 +72,24 @@ hr {
   height: 2px;
   margin: 5% 0;
 }
+
 #label-family {
   display: flex;
   flex-direction: column;
 }
+
 #choose {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
 #family {
   display: flex;
   flex-direction: column;
   width: fit-content;
 }
+
 #family2 {
   display: flex;
   flex-flow:column wrap;
