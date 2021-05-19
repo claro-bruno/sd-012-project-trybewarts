@@ -36,10 +36,11 @@
     color: white;
 }
 
-#titulo {
+#trybewarts-header-title {
     color: white;
     display: flex;
     justify-content:center;
+    font-family: MedievalSharp, cursive;
 }
 
 main {
