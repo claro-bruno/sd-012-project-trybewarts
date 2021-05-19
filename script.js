@@ -81,9 +81,7 @@ function createSubjectOutput() {
   pSubject.innerHTML = 'Matérias: ';
   for (let indice = 0; indice < subject.length; indice += 1) {
     if (subject[indice].checked) {
-      pSubject.innerHTML = pSubject.innerHTML.concat(
-        `${subject[indice].value},`
-      );
+      pSubject.innerHTML = pSubject.innerHTML.concat(`${subject[indice].value},`);
     }
   }
   getOutputDiv.appendChild(pSubject);
