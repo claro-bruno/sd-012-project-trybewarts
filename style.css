@@ -41,6 +41,12 @@ header form input {
 
 main {
   display: flex;
+
+}
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
 }
 
 #input-name {
@@ -53,7 +59,7 @@ main {
 
 #input-name-lastname {
   margin-top: 10%;
-  justify-self: stretch;
+  display: flex;
 }
 
 #house {
@@ -65,7 +71,7 @@ main {
 }
 
 #input-email {
-  width: 304px;
+  width: 286px;
 }
 
 #evaluation-form input {
@@ -74,12 +80,6 @@ main {
   height: 30px;
   border-radius: 5px;
   border: 1px solid black;
-}
-
-#evaluation-form {
-  display: flex;
-  flex-direction: column;
-  width: 675px;
 }
 
 hr {
@@ -101,8 +101,12 @@ hr {
   height: 500px;
 }
 
-#valor{
+#programming-family {
   display: flex;
-  align-items: flex-start;
-  flex-direction: column
+  flex-direction: column;
+  margin-left: 2%;
+}
+
+#programming-family label input {
+  
 }
