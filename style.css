@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
+
 
 .header {
   display: flex;
@@ -68,5 +70,16 @@
 }
 
 #rodape {
+  display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(83,82,88);
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 50px;
+  bottom:0;
+  position:fixed;
+  width: 100%;
+  
 }

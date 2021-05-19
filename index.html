@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trybe Warts</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -44,51 +43,53 @@
             </div>
             <label id="label-content" for="checkbox-container">
                 Qual conteúdo você está com mais vontade de aprender?</label>
-            <div id="checkbox-container">
-                <label for="hofs">HoFs</label>
-                <input type="checkbox" name="hofs" id="hofs" value="HoFs">
-                <label for="jest">Jest</label>
-                <input type="checkbox" name="jest" id="jest" value="Jest">
-                <label for="promises">Promises</label>
-                <input type="checkbox" name="promises" id="promises" value="Promises">
-                <label for="react">React</label>
-                <input type="checkbox" name="react" id="react" value="React">
-                <label for="sql">SQL</label>
-                <input type="checkbox" name="sql" id="sql" value="SQL">
-                <label for="python">Python</label>
-                <input type="checkbox" name="python" id="python" value="Python">
-            </div>
-            <div>
-                <label id="label-rate">Como você avalia a Trybewarts?</label>
-                <input type="radio" value="1" name="rate"><label>1</label>
-                <input type="radio" value="2" name="rate"><label>2</label>
-                <input type="radio" value="3" name="rate"><label>3</label>
-                <input type="radio" value="4" name="rate"><label>4</label>
-                <input type="radio" value="5" name="rate"><label>5</label>
-                <input type="radio" value="6" name="rate"><label>6</label>
-                <input type="radio" value="7" name="rate"><label>7</label>
-                <input type="radio" value="8" name="rate"><label>8</label>
-                <input type="radio" value="9" name="rate"><label>9</label>
-                <input type="radio" value="10" name="rate"><label>10</label>
-            </div>
-            <div id="leave-comment">
-                <label for="leave-comment-textarea" class="textarea">
-                    Deixe seu comentário:
-                    <textarea name="textarea" id="leave-comment-textarea" cols="30" rows="10" maxlength="500"></textarea>
-                </label>
-            </div>
-            <div class="agreement-container">
-                <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
-                <input type="checkbox" name="" id="agreement">
-            </div> 
-            <button type="submit" id="submit-btn" disabled>Enviar</button>               
-        </form>
-        <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo"></img>
+                <div id="checkbox-container">
+                    <label for="hofs">HoFs</label>
+                    <input type="checkbox" name="hofs" id="hofs" value="HoFs">
+                    <label for="jest">Jest</label>
+                    <input type="checkbox" name="jest" id="jest" value="Jest">
+                    <label for="promises">Promises</label>
+                    <input type="checkbox" name="promises" id="promises" value="Promises">
+                    <label for="react">React</label>
+                    <input type="checkbox" name="react" id="react" value="React">
+                    <label for="sql">SQL</label>
+                    <input type="checkbox" name="sql" id="sql" value="SQL">
+                    <label for="python">Python</label>
+                    <input type="checkbox" name="python" id="python" value="Python">
+                </div>
+                <div>
+                    <label id="label-rate">Como você avalia a Trybewarts?</label>
+                    <input type="radio" value="1" name="rate"><label>1</label>
+                    <input type="radio" value="2" name="rate"><label>2</label>
+                    <input type="radio" value="3" name="rate"><label>3</label>
+                    <input type="radio" value="4" name="rate"><label>4</label>
+                    <input type="radio" value="5" name="rate"><label>5</label>
+                    <input type="radio" value="6" name="rate"><label>6</label>
+                    <input type="radio" value="7" name="rate"><label>7</label>
+                    <input type="radio" value="8" name="rate"><label>8</label>
+                    <input type="radio" value="9" name="rate"><label>9</label>
+                    <input type="radio" value="10" name="rate"><label>10</label>
+                </div>
+                <div id="leave-comment">
+                    <label for="leave-comment-textarea" class="textarea">Deixe seu comentário:</label>
+                    
+                    <textarea onkeyup="conta_caracteres(this.value)" name="textarea" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+                    <label id="counter">500</label> Restantes <br>
+                    
+                </div>
+                <div class="agreement-container">
+                    <label for="" id="label-infos">Você concorda com o uso das informações acima?</label>
+                    <input type="checkbox" name="" id="agreement">
+                </div> 
+                <button type="submit" id="submit-btn" disabled>Enviar</button>               
+            </form>
+            <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo"></img>
+            
+        </main>
         
-    </main>
-
-    <hr><br>
-    <footer id="rodape">Direitos reservados à Trybewarts©</footer>   
-</body>
+        <hr>
+        <footer id="rodape">Direitos reservados à Trybewarts©</footer> 
+        <script src="script.js"></script>
+    </body>
 
 </html>
