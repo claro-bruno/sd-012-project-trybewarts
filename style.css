@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: whitesmoke;
 }
 
 main {
@@ -24,6 +25,11 @@ main img {
   justify-content: space-between;
 }
 
+#form-text {
+  text-align: center;
+  text-decoration: underline;
+}
+
 .trybewarts-header-logo {
   display: flex;
   justify-content: left;
@@ -38,8 +44,10 @@ main img {
 
 #login , #senha , #buttonEntrar {
   padding: 10px;
+  margin: 3px;
   border-radius: 4px;
   width: 110px;
+  border: none;
 }
 
 #buttonEntrar {
@@ -47,6 +55,12 @@ main img {
   color: white;
   font-weight: 700;
   padding: 10px 30px;
+  box-shadow: 3px 3px 5px  blue;
+}
+
+#buttonEntrar:hover {
+  position: relative;
+  margin: 3px 3px;
 }
 
 #trybewarts-header-title {
@@ -60,19 +74,36 @@ main img {
   flex-wrap: wrap;
   padding: 5px;
   margin: 10px;
-  width: 500px;
+  width: 600px;
 }
 
-#input-name , #input-lastname , #input-email , #house {
+#input-name , #input-lastname , #input-email {
   padding: 15px;
   margin: 5px;
   flex-grow: 1;
+  border: none;
+  box-shadow: 2px 2px 10px black;
+}
+
+#labelhouse {
+  margin-top: 4px;
+  margin-left: 10px;
+  flex-grow: 2;
+  font-weight: 700;
+}
+
+#house {
+  background-color: white;
+  border: none;
+  padding: 15px;
+  width: 85%;
+  box-shadow: 2px 2px 10px black;
 }
 
 hr {
   display: block;
   margin: 10px;
-  width: 500px;
+  width: 90%;
 }
 
 #section_2 {
@@ -112,8 +143,14 @@ hr {
 
 footer {
   background-color: dimgray;
-  padding: 20px;
+  padding: 10px;
   margin: 0;
   text-align: center;
   font-style: italic;
+}
+
+#submit-btn {
+  background-color: blueviolet;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
