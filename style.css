@@ -1,9 +1,8 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
 }
 
 .header img {
@@ -12,6 +11,7 @@
 
 .trybewarts-login {
   width:fit-content;
+  display: flex;
 }
 
 .main {
