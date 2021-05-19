@@ -12,14 +12,14 @@ const botaoLoginPassword = () => {
   if (loginTrybewarts.value === 'tryber@teste.com' && senhaTrybewarts.value === '123456') {
     alert('Olá, Tryber!');
   }
-}
+};
 
 const preventD = () => {
   button.addEventListener('click', (event) => {
     event.preventDefault();
     botaoLoginPassword();
   });
-}
+};
 
 preventD();
 
@@ -36,7 +36,7 @@ const createHouses = () => {
     createOption.id = familyId;
     getTagHouse.appendChild(createOption);
   }
-}
+};
 
 createHouses();
 
@@ -54,7 +54,7 @@ const createFamily = () => {
     getTagFamily.appendChild(createLabelFamily);
     getTagFamily.appendChild(createInput);
   }
-}
+};
 
 createFamily();
 
@@ -70,7 +70,7 @@ const createTech = () => {
     getDivTech.appendChild(createLabelTech);
     getDivTech.appendChild(createInputTech);
   }
-}
+};
 
 createTech();
 
@@ -88,6 +88,6 @@ const getTxtArea = document.getElementById('textarea');
 const contador = () => {
   const getContador = document.querySelector('#counter');
   getContador.innerHTML = getTxtArea.textLength;
-}
+};
 
 getTxtArea.addEventListener('keydown', contador);
