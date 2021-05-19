@@ -20,7 +20,7 @@
       <input type="password" name="password" id="password" placeholder="Senha">
       <button id="botao">Logar</button>
     </form>
-    
+
   </header>
   <main>
     <form id="evaluation-form" action="" method="GET">
@@ -34,7 +34,15 @@
           <option type="text" id="corvinode-house" value="Corvinode"></option>
           <option type="text" id="pytherina-house" value="Pytherina"></option>
         </select>
-        
+        <div>
+          <label id="label-family">Qual sua familia?</label>
+          <label for="frontend">Frontend</label>
+          <input id="frontend" type="radio" name="family" value="Frontend">
+          <label for="backend">Backend</label>
+          <input id="backend" type="radio" name="family" value="Backend">
+          <label for="fullstack">FullStack</label>
+          <input id="fullstack" type="radio" name="family" value="FullStack">
+        </div>
       </div>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Brasão da Trybewarts">
