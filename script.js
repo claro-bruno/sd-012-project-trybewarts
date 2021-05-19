@@ -26,3 +26,13 @@ function activateSubmit() {
 }
 
 checkBox.addEventListener('click', activateSubmit);
+
+let count = 500;
+let divCounter = document.getElementById('counter');
+divCounter.innerHTML = count;
+const textBox = document.getElementById('textarea');
+
+function countChar() {
+  let textLength = textBox.value.length;
+  divCounter.innerHTML = count - textLength;
+}
