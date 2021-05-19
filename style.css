@@ -9,6 +9,10 @@
   justify-content: space-between;
 }
 
+h1 {
+  color: white;
+}
+
 .header img {
   height: 50px;
 }
@@ -178,4 +182,10 @@ main {
 
 hr {
   margin-left: 10px;
+}
+
+footer {
+  color: white;
+  background-color: rgb(53, 53, 53);
+  height: 30px;
 }
