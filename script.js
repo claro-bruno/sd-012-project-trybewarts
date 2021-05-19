@@ -72,3 +72,77 @@ function counter() {
 }
 
 textarea.addEventListener('keyup', counter);
+
+// formulario submit
+
+submitBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+});
+
+const getName = document.querySelector('#input-name');
+const getLastName = document.querySelector('#input-lastname');
+const getEmail = document.querySelector('#input-email');
+const getHouse = document.querySelector('#house');
+const getFamily = document.querySelectorAll('.family');
+const getSubject = document.querySelectorAll('.subject');
+const getRateRadio = document.querySelectorAll('.form-check-input');
+const form = document.querySelector('.form');
+
+function getFamilySelected() {
+  let familyCheck;
+  for (let index = 0; index < getFamily.length; index += 1) {
+    if (getFamily[index].checked) {
+      familyCheck = getFamily[index].value;
+    }
+  }
+  return familyCheck;
+}
+
+function getRateSelected() {
+  let rateCheck;
+  for (let index = 0; index < getRateRadio.length; index += 1) {
+    if (getRateRadio[index].checked) {
+      rateCheck = getRateRadio[index].value;
+    }
+  }
+  return rateCheck;
+}
+
+function getSubjectSelected() {
+  let subjectSelected = [];
+  for (let index = 0; index < getSubject.length; index += 1) {
+    if (getSubject[index].checked) {
+      subjectSelected.push(`${getSubject[index].value}, `);
+    }
+  }
+  subjectSelected = subjectSelected.join(' ');
+  console.log(subjectSelected);
+  return subjectSelected;
+}
+
+// infos align items
+
+function align() {
+  form.style.justifyContent = 'space-between';
+  form.style.alignItems = 'center';
+}
+
+submitBtn.addEventListener('click', () => {
+  form.innerHTML = '';
+  const fullName = `Nome: ${getName.value} ${getLastName.value}`;
+  const email = `Email: ${getEmail.value}`;
+  const house = `Casa: ${getHouse.value}`;
+  const family = `Família: ${getFamilySelected()}`;
+  const subject = `Matérias: ${getSubjectSelected()}`;
+  const evaluation = `Avaliação: ${getRateSelected()}`;
+  const comment = `Observações: ${textarea.value}`;
+  const infos = [fullName, email, house, family, subject, evaluation, comment];
+
+  for (let index = 0; index < infos.length; index += 1) {
+    const paragraph = document.createElement('p');
+    paragraph.classList.add('infos-p');
+    paragraph.innerHTML = infos[index];
+    form.appendChild(paragraph);
+  }
+  align();
+});

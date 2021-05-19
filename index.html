@@ -26,7 +26,8 @@
     <!-- </div> -->
   </header>
   <main>
-    <form id="evaluation-form" action="" class="form">
+    <!-- <div class="info-container hide"></div> -->
+    <form id="evaluation-form" action="" class="form" method="GET">
       <div class="name">
         <label for="input-name"></label>
         <input class="form-input" placeholder="Nome" id="input-name" type="text">
@@ -45,38 +46,60 @@
       </div>
       <div class="family-container">
         <label id="label-family" for=""><i class="bi bi-lightning-fill"></i>Qual sua família?</label>
-        <label for="frontend">Frontend
-          <input type="radio" name="family" id="frontend" value="Frontend">
-        </label>
-        <label for="backend">Backend
-          <input type="radio" name="family" id="backend" value="Backend">
-        </label>
-        <label for="fullstack">FullStack
-          <input type="radio" name="family" id="fullstack" value="FullStack">
-        </label>
+        <div class="family-options">
+          <div>
+            <input type="radio" class="family form-check-input" name="family" id="frontend" value="Frontend">
+            <label for="frontend">Frontend
+            </label>
+          </div>
+          <div>
+            <input type="radio" class="family form-check-input" name="family" id="backend" value="Backend">
+            <label for="backend">Backend
+            </label>
+          </div>
+          <div>
+            <input type="radio" class="family form-check-input" name="family" id="fullstack" value="FullStack">
+            <label for="fullstack">FullStack
+            </label>
+          </div>
+        </div>
       </div>
 
       <div class="tech">
         <label id="label-content" for=""><i class="bi bi-lightning-fill"></i> Qual conteúdo você está com mais vontade de aprender?</label>
         <br>
-        <label for="hofs">HoFs
-          <input class="subject" type="checkbox" name="skill" id="hofs" value="HoFs">
+        <div class="subject-list">
+          <div>
+            <input class="subject form-check-input" type="checkbox" name="skill" id="hofs" value="HoFs">
+            <label for="hofs">HoFs
           </label>
-          <label for="jest">Jest
-          <input class="subject" type="checkbox" name="skill" id="jest" value="Jest">
-          </label>
-          <label for="promises">Promises
-          <input class="subject" type="checkbox" name="skill" id="promises" value="Promises">
-          </label>
-          <label for="react">React
-          <input class="subject" type="checkbox" name="skill" id="react" value="React">
-          </label>
-          <label for="sql">SQL
-          <input class="subject" type="checkbox" name="skill" id="sql" value="SQL">
-          </label>
-          <label for="python">Python
-          <input class="subject" type="checkbox" name="skill" id="python" value="Python">
-          </label>
+          </div>
+          <div>
+            <input class="subject form-check-input" type="checkbox" name="skill" id="jest" value="Jest">
+            <label for="jest">Jest
+            </label>
+          </div>
+          <div>
+            <input class="subject form-check-input" type="checkbox" name="skill" id="promises" value="Promises">
+            <label for="promises">Promises
+            </label>
+          </div>
+          <div>
+            <input class="subject form-check-input" type="checkbox" name="skill" id="react" value="React">
+            <label for="react">React
+            </label>
+          </div>
+          <div>
+            <input class="subject form-check-input" type="checkbox" name="skill" id="sql" value="SQL">
+            <label for="sql">SQL
+            </label>
+          </div>
+          <div>
+            <input class="subject form-check-input" type="checkbox" name="skill" id="python" value="Python">
+            <label for="python">Python
+            </label>
+          </div>
+        </div>
       </div>
       <div class="label-rate-container">
         <label id="label-rate" class="label-rate" for="rate"><i class="bi bi-lightning-fill"></i>Como você avalia a Trybewarts?</label>
