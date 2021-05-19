@@ -26,3 +26,13 @@ main {
   display: flex;
   direction: row;
 }
+
+#container-radios-rate {
+  display: flex;
+  flex-direction: row;
+}
+
+#container-rate {
+  display: flex;
+  flex-direction: row;
+}
