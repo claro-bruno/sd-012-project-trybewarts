@@ -14,7 +14,7 @@ function concorda(event) {
     enviar(event);
   } else {
     event.target.removeEventListener('click', concorda);
- }
+  }
 }
 
 document.addEventListener('click', concorda);
