@@ -44,3 +44,17 @@
   width: 100%;
 }
 
+.container-textarea {
+  position: relative;
+  background-color: aquamarine;
+  max-width: 675px;
+}
+
+span {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  left: 94%;
+  bottom: 10px;
+}
+
