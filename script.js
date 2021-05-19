@@ -51,20 +51,6 @@ function countCharacters() {
 }
 countCharacters();
 
-function displaySelected() {
-  const subjectsField = document.querySelector('#userSubject');
-  const inputSUbjects = document.getElementsByName('subject');
-  const selectedSubjects = [];
-  for (let index = 0; index < inputSUbjects.length; index += 1) {
-    if (inputSUbjects[index].checked) {
-      const selected = inputSUbjects[index].value;
-      selectedSubjects.push(selected);
-    }
-  }
-  const displaySubjects = `Matérias: ${selectedSubjects}`;
-  subjectsField.innerHTML = displaySubjects;
-}
-
 function displayName() {
   const nameField = document.querySelector('#userFullName');
   const inputName = document.querySelector('#input-name').value;
@@ -94,6 +80,20 @@ function displayFamily() {
   familyField.innerHTML = displayOption;
 }
 
+function displaySubject() {
+  const subjectsField = document.querySelector('#userSubject');
+  const inputSUbjects = document.getElementsByName('subject');
+  const selectedSubjects = [];
+  for (let index = 0; index < inputSUbjects.length; index += 1) {
+    if (inputSUbjects[index].checked) {
+      const selected = inputSUbjects[index].value;
+      selectedSubjects.push(selected);
+    }
+  }
+  const displaySubjects = `Matérias: ${selectedSubjects.join(', ')}`;
+  subjectsField.innerHTML = displaySubjects;
+}
+
 function displayRateChecked() {
   const rateField = document.querySelector('#userRateChecked');
   const inputRate = document.querySelector('input[name="rate"]:checked').value;
@@ -108,17 +108,26 @@ function displayFeedback() {
   feedbackField.innerHTML = displayUserFeedback;
 }
 
+function showForm() {
+  const filledForm = document.querySelector('.posSubmit');
+  const unfilledForm = document.querySelector('.preSubmit');
+  filledForm.style.visibility = 'visible';
+  unfilledForm.style.visibility = 'hidden';
+}
+
 function submitInfos() {
   const submitButton = document.querySelector('#submit-btn');
 
-  submitButton.addEventListener('click', () => {
+  submitButton.addEventListener('click', (event) => {
     displayName();
     displayEmail();
     displayHouse();
     displayFamily();
-    displaySelected();
+    displaySubject();
     displayRateChecked();
     displayFeedback();
+    showForm();
+    event.preventDefault();
   });
 }
 submitInfos();

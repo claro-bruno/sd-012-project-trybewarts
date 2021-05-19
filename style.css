@@ -78,6 +78,7 @@ footer {
 }
 
 .posSubmit {
-  visibility: visible;
+  visibility: hidden;
   display: block;
+  height: auto;
 }
