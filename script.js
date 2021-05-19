@@ -91,7 +91,7 @@ function changeInformation() {
 }
 
 function submitButtonExec() {
-  submitButton.addEventListener('click', (event) => {
+  submitButton.addEventListener('click', () => {
     changeInformation();
   });
 }
