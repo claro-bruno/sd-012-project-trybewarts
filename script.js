@@ -1,6 +1,9 @@
 const loginBtn = document.querySelector('form button');
 const agreementChecked = document.getElementById('agreement');
 const submitBtn = document.getElementById('submit-btn');
+const textAreaInput = document.getElementById('textarea');
+const charactersCounter = document.getElementById('counter');
+const maxCount = parseInt(charactersCounter.innerText, 10);
 
 function validateInput() {
   const emailInput = document.querySelector('input[type="email"]');
@@ -43,8 +46,15 @@ if (!agreementChecked.checked) {
   submitBtn.setAttribute('disabled', true);
 }
 
+function charactersCount() {
+  const inputCount = textAreaInput.value.split('').length;
+  const counter = maxCount - inputCount;
+  charactersCounter.innerText = counter;
+}
+
 window.onload = () => {
   loginBtn.addEventListener('click', validateInput);
   agreementChecked.addEventListener('click', validateCheckbox);
+  textAreaInput.addEventListener('keyup', charactersCount);
   createHouseOptions();
 };
