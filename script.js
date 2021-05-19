@@ -30,6 +30,16 @@ const lastName = document.querySelector('#input-lastname');
 const email = document.querySelector('#input-email');
 const house = document.querySelector('#house');
 const comment = document.querySelector('#textarea');
+const evaluation = document.querySelector('.evaluation-note');
+
+function getRadioValue(radioClass) {
+  const radios = document.querySelectorAll(radioClass);
+  for (let index = 0; index < radios.length; index += 1) {
+    if (radios[index].checked) {
+      return radios[index].value;
+    }
+  }
+}
 
 function replaceNameElement() {
   const nameParagraph = document.createElement('p');
@@ -48,6 +58,12 @@ function replaceHouseElement() {
   const houseParagraph = document.createElement('p');
   houseParagraph.innerHTML = `Casa: ${house.value}`;
   house.parentNode.replaceChild(houseParagraph, house);
+}
+
+function replaceRateElement() {
+  const replaceParagraph = document.createElement('p');
+  replaceParagraph.innerHTML = `Avaliação: ${getRadioValue('.eval')}`;
+  evaluation.parentNode.replaceChild(replaceParagraph, evaluation);
 }
 
 function replaceFamilyElement() {
@@ -89,12 +105,15 @@ submitButton.addEventListener('click', () => {
 
   replaceHouseElement();
 
+  replaceRateElement();
+
   replaceFamilyElement();
 
   replaceContentElement();
 
   replaceCommentElement();
 });
+
 //   const families = document.querySelectorAll('.input-family')
 //   for (let family of families) {
 //       if (families[family].checked) {
