@@ -22,9 +22,8 @@ function validacaoLoginSenha(event) {
 function validaBotaoSubmit(event) {
   // acessa elemento com id 'submit-btn'
   const btnSubmit = document.querySelector('#submit-btn');
-  
   // se o checkbox estiver marcado
-  if(event.target.checked) {
+  if (event.target.checked) {
     // habilita botão de submit
     btnSubmit.removeAttribute('disabled');
   } else {
@@ -88,10 +87,6 @@ function mostrarEmail() {
 
 function mostrarCasa() {
   const casa = document.querySelector('#house');
-  // console.log(casa)
-  // console.log(casa.value)
-  // const opcao = document.getElementById(casa.value);
-  // console.log(opcao)
   const paragrafoCasa = document.createElement('p');
   paragrafoCasa.innerHTML = `Casa: ${casa.value}`;
   casa.remove();
@@ -99,30 +94,40 @@ function mostrarCasa() {
 }
 
 function mostrarFamilia() {
-  const familia = document.querySelector('#family-input');
+  const inputFamilia = document.querySelector('#family-input');
   const opcoesFamilia = document.getElementsByName('family');
   const paragrafoFamilia = document.createElement('p');
-  for(let opcao of opcoesFamilia) {
-    if(opcao.checked) {
-      paragrafoFamilia.innerHTML = `Família: ${opcao.value}`;
+  // for (const opcao of opcoesFamilia) {
+  //   if (opcao.checked) {
+  //     paragrafoFamilia.innerHTML = `Família: ${opcao.value}`;
+  //   }
+  // }
+  opcoesFamilia.forEach((familia) => {
+    if (familia.checked) {
+      paragrafoFamilia.innerHTML = `Família: ${familia.value}`;
     }
-  }
-  familia.remove();
+  });
+  inputFamilia.remove();
   evaluationForm.appendChild(paragrafoFamilia);
 }
 
 function mostrarConteudo() {
-  const conteudo = document.querySelector('#content-inputs');
+  const inputConteudo = document.querySelector('#content-inputs');
   const opcoesConteudo = document.getElementsByName('content');
   const paragrafoConteudo = document.createElement('p');
   const conteudosMarcados = [];
-  for(let opcao of opcoesConteudo) {
-    if(opcao.checked) {
-      conteudosMarcados.push(opcao.defaultValue);
+  // for (const opcao of opcoesConteudo) {
+  //   if (opcao.checked) {
+  //     conteudosMarcados.push(opcao.defaultValue);
+  //   }
+  // }
+  opcoesConteudo.forEach((conteudo) => {
+    if (conteudo.checked) {
+      conteudosMarcados.push(conteudo.defaultValue);
     }
-  }
+  });
   paragrafoConteudo.innerHTML = `Matérias: ${conteudosMarcados.join(', ')}`;
-  conteudo.remove();
+  inputConteudo.remove();
   evaluationForm.appendChild(paragrafoConteudo);
 }
 
@@ -130,11 +135,16 @@ function mostrarAvaliacao() {
   const avaliacao = document.querySelector('#avaliacao-input');
   const opcoesAvaliacao = document.getElementsByName('rate');
   const paragrafoAvaliacao = document.createElement('p');
-  for(let opcao of opcoesAvaliacao) {
-    if(opcao.checked) {
+  // for (const opcao of opcoesAvaliacao) {
+  //   if (opcao.checked) {
+  //     paragrafoAvaliacao.innerHTML = `Avaliação: ${opcao.value}`;
+  //   }
+  // }
+  opcoesAvaliacao.forEach((opcao) => {
+    if (opcao.checked) {
       paragrafoAvaliacao.innerHTML = `Avaliação: ${opcao.value}`;
     }
-  }
+  });
   avaliacao.remove();
   evaluationForm.appendChild(paragrafoAvaliacao);
 }
@@ -163,4 +173,4 @@ window.onload = () => {
     event.preventDefault();
     mostrarValores();
   });
-}
+};
