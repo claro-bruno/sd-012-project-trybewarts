@@ -36,8 +36,26 @@
   width: 150px;
   height: 35px;
   margin: 0 10px;
+  padding-left: 3px;
+  border-radius: 5px;
+  border: none;
 }
 
 .trybewarts-login button {
   margin-right: 10px;
+  height: 35px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  background-color: purple;
+  color: white;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
