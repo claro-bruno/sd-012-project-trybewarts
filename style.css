@@ -76,3 +76,9 @@ footer {
   background: dimgrey;
   color: white;
 }
+
+#label-family {
+  display:flex;
+  flex-wrap: wrap;
+  width: 200px;
+}
