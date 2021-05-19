@@ -18,10 +18,6 @@
   align-content: flex-start;
 }
 
-.trybewarts-header-title {
-  align-items: flex-end;
-}
-
 main {
   display: flex;
 }
