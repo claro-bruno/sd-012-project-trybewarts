@@ -18,6 +18,7 @@
     </form>
   </header>
   <main class="main-content">
+    <h1 id="title">Forms</h1>
     <form id="evaluation-form" action="">
       <div id="name-container">
         <input type="text" name="name" id="input-name" placeholder="Nome">
@@ -57,19 +58,20 @@
       <label for="SQLInput"><input type="checkbox" value="SQL" id="SQLInput">SQL</label>
       <label for="PythonInput"><input type="checkbox" value="Python" id="PythonInput">Python</label>
     </form>
-    <section id="rate-section">
+    <form id="rate-section">
       <div id="radio-container">
-        <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
+        <label id="label-rate">Como você avalia a Trybewarts?</label>
       </div>
       <div id="comment-container">
         <label for="comment" class="textarea">Deixe seu comentário:</label>
-      <textarea name="coment" id="comment" cols="30" rows="10" maxlength="500"></textarea>
-      <div id="agreement-container">
-        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" name="agreement" id="agreement">
+        <textarea name="coment" id="comment" cols="30" rows="10" maxlength="500"></textarea>
+        <div id="agreement-container">
+          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" name="agreement" id="agreement">
+        </div>
       </div>
-      </div>
-    </section>
+      <button id="submit-btn" type="submit">Enviar</button>
+    </form>
   </main>
   <img src="images/trybewarts-colored.svg" alt="Logo da Academia TrybeWarts" id="trybewarts-forms-logo">
   <script src="script.js"></script>
