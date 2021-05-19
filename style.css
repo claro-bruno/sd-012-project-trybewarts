@@ -50,7 +50,7 @@ select {
   flex-wrap: wrap;
 }
 
-.radios ,.checkbox-content{
+.radios , .checkbox-content {
   display: flex;
   flex-flow: column;
   margin: 5px 20px;
@@ -58,7 +58,7 @@ select {
 }
 
 .checkbox-content {
-  margin-left: 50px;  
+  margin-left: 50px;
 }
 
 .checkbox-content > :first-child {
