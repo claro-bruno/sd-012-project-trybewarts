@@ -108,7 +108,7 @@ function rateChecked() {
 
 function preencheForm() {
   const dados = [
-    {dado: 'Nome',value: `${nameInput.value} ${lastNameInput.value}`,class: 'nome'},
+    { dado: 'Nome', value: `${nameInput.value} ${lastNameInput.value}`, class: 'nome' },
     { dado: 'Email', value: emailInput.value, class: 'email' },
     { dado: 'Casa', value: escolheCasa.value, class: 'casa' },
     { dado: 'Família', value: familyChecked(), class: 'familia' },
