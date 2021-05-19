@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
+
 <body>
   <header class="header">
     <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo" alt="">
@@ -21,8 +23,11 @@
   </header>
   <main>
     <form action="" method="GET" id="evaluation-form">
-      <input type="text" id="input-name" placeholder="Nome">
-      <input type="text" id="input-lastname" placeholder="Sobrenome">
+      <!-- Coloquei o nome e sobrenome dentro de uma div com id full-name para que colocar eles em linha conforme o requisito 10 -->
+      <div id="full-name">
+        <input type="text" id="input-name" placeholder="Nome">
+        <input type="text" id="input-lastname" placeholder="Sobrenome">
+      </div>
       <input type="text" id="input-email" placeholder="Email">
       <label for="subjects" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <div id="subjects">
@@ -44,6 +49,15 @@
         <label>Python
           <input type="checkbox" class="subject" value="Python">
         </label>
+        <!-- Como ainda vamos ajustar o código, estou colocando o select com as options aqui beleza? -->
+        
+        <select name="" id="house">
+          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="Corvinode">Corvinode</option>
+          <option id="pytherina-house" value="Pytherina">Pytherina</option>
+        </select>
+
         <!-- Requisito feito inspirado no código da dupla Adriana e Gedeão -->
       </div>
       <div id="all-rates">
@@ -92,4 +106,5 @@
   </main>
   <script src="/script.js"></script>
 </body>
+
 </html>
