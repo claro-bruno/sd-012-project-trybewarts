@@ -26,3 +26,17 @@ function loginButton() {
 window.onload = () => {
   loginButton();
 };
+
+let maxChar = document.getElementById('counter');
+const inputText = document.getElementById('textarea');
+let valorMax = 500;
+console.log(maxChar);
+
+function countChar(event) {
+    let textSise = event.target.value.length;
+    let total = valorMax - textSise; 
+    maxChar.innerHTML = total;
+}
+
+inputText.addEventListener('keyup', countChar);
+
