@@ -122,13 +122,26 @@ function mostrarConteudo() {
   evaluationForm.appendChild(paragrafoConteudo);
 }
 
+function mostrarAvaliacao() {
+  const avaliacao = document.querySelector('#avaliacao-input');
+  const opcoesAvaliacao = document.getElementsByName('rate');
+  const paragrafoAvaliacao = document.createElement('p');
+  for(let opcao of opcoesAvaliacao) {
+    if(opcao.checked) {
+      paragrafoAvaliacao.innerHTML = `Avaliação: ${opcao.value}`;
+    }
+  }
+  avaliacao.remove();
+  evaluationForm.appendChild(paragrafoAvaliacao);
+}
+
 function mostrarValores() {
   mostrarNomeCompleto();
   mostrarEmail();
   mostrarCasa();
   mostrarFamilia();
   mostrarConteudo();
-  // mostrarAvaliacao();
+  mostrarAvaliacao();
   // mostrarComentario();
 }
 
