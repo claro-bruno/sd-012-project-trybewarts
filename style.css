@@ -70,6 +70,8 @@ main {
 
 .family-container {
   display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
 }
 
 .content-checkbox-container {
@@ -79,3 +81,4 @@ main {
 .checkbox-container {
   display: flex;
 }
+
