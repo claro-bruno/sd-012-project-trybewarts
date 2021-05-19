@@ -1,5 +1,8 @@
 * {
-  margin: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
 header {
@@ -42,5 +45,21 @@ header {
 }
 
 #trybewarts-header-title {
+  color: white;
+}
+
+main {
+  background: rgb(235, 239, 240);
+  width: 100%;
+  height: 650px;
+}
+
+footer {
+  background: dimgrey;
+  width: 100%;
+  height: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: white;
 }
