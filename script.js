@@ -40,9 +40,19 @@ function habilitandoBotaoEnviar() {
   });
 }
 
+const textarea = document.querySelector('#textarea');
+const contador = document.querySelector('#counter');
+
+function contadorDeCaracteres() {
+  textarea.addEventListener('keyup', () => {
+    contador.innerText = `${500 - textarea.value.length}`;
+  });
+}
+
 window.onload = () => {
   habilitandoBotaoEnviar();
   criandoRadiosNota();
   validandoCabecalho();
+  contadorDeCaracteres();
   botaoSubmit.disabled = true;
 };
