@@ -31,7 +31,6 @@ createOptions();
 function createA(array, position) {
   for (let index = 0; index < array.length; index += 1) {
     const tagA = document.createElement('a');
-    tagA.innerHTML = `Família ${array[index]}`;
     position.appendChild(tagA);
   }
 }
@@ -46,7 +45,23 @@ function createRadio() {
     inputRadio.type = 'radio';
     inputRadio.name = 'family';
     inputRadio.value = radioValue[index];
+    divRadio.children[index + 1].innerHTML = `Família ${radioValue[index]}`;
     divRadio.children[index + 1].appendChild(inputRadio);
   }
 }
 createRadio();
+
+const divCheckbox = document.getElementById('checkboxLabel');
+const checkboxValue = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
+function createCheckbox() {
+  createA(checkboxValue, divCheckbox);
+  for (let index = 0; index < checkboxValue.length; index += 1) {
+    const inputCheckbox = document.createElement('input');
+    inputCheckbox.type = 'checkBox';
+    inputCheckbox.value = checkboxValue[index];
+    inputCheckbox.className = 'subject';
+    divCheckbox.children[index + 1].innerHTML = checkboxValue[index];
+    divCheckbox.children[index + 1].appendChild(inputCheckbox);
+  }
+}
+createCheckbox();

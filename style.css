@@ -42,7 +42,20 @@ main {
   flex-direction: column;
   align-items: flex-start;
 }
+
 #radioLabel a {
   display: flex;
   flex-direction: row-reverse;
+}
+
+#checkboxLabel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#checkboxLabel a {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
 }
