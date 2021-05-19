@@ -39,6 +39,25 @@ input, select {
   margin-right: 0.5rem;
 }
 
+#wizard-img {
+  height: 60px;
+  position: relative;
+  animation-name: appearFromTop;
+  animation-duration: 2s;
+  top: 5px;
+}
+
+@keyframes appearFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .trybewarts-login button {
   padding: 0.8rem 0.5rem;
   border: none;
@@ -60,7 +79,7 @@ label {
 }
 
 form h1 {
-  text-align: center;
+  text-align: left;
   font-size: 3.5rem;
   margin-bottom: 3rem;
 }
@@ -91,6 +110,19 @@ form hr {
   display: flex;
   height: 500px;
   margin-left: auto;
+  animation-name: appearFromRight;
+  animation-duration: 3s;
+}
+
+@keyframes appearFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .inline2 {
@@ -163,7 +195,19 @@ form hr {
 
 .text-area {
   display: flex;
-  width: 350px;
+  width: 100%;
+}
+
+textarea {
+  width: 700px;
+  height: 350px;
+  resize: none;
+}
+
+textarea:focus {
+  outline: none !important;
+  border:1px solid rgb(78, 44, 131);
+  box-shadow: 0 0 2px rgb(88, 11, 211);
 }
 
 .checkbox-agreement {
@@ -172,9 +216,10 @@ form hr {
 
 footer {
   text-align: center;
-  background-color: #2fc18c;
+  background-color: #333;
   padding: 1rem;
   font-weight: 600;
+  color: white;
 }
 
 @media only screen and (min-width: 1400px) {
@@ -184,6 +229,7 @@ footer {
 
   #trybewarts-forms-logo {
     height: 700px;
+    margin-top: 200px;
     margin-left: 100px;
   }
 
