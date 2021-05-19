@@ -1,17 +1,3 @@
-const inputNome = document.querySelector('#input-name');
-const inputEmail = document.querySelector('#input-email');
-const listaDeCasas = document.getElementsByName('casa');
-for(let casa of listaDeCasas) {
-  if(casa.checked) {
-    console.log(casa);
-  }
-}
-
-// guarda valores dos campos em localStorage
-function guardarCampos2() {
-  console.log('teste');
-}
-
 // valida login e senha
 function validacaoLoginSenha(event) {
   // acessa elemento com id 'inputSenha'
@@ -56,9 +42,6 @@ function listenerClick(event) {
   } else if (event.target.id === 'agreement') {
     // se não, se o alvo do click for o elemento com id 'agreement' (checkbox)
     validaBotaoSubmit(event);
-  } else if (event.target.id === 'submit-btn') {
-    // se não, se o alvo do click for o elemento com id 'submit-btn'
-    guardarCampos2();
   } else {
     // se não, exclua esse evento dos registros
     event.target.removeEventListener('click', listenerClick);
@@ -89,5 +72,3 @@ function listenerKey(event) {
 
 // adiciona evento de teclado em toda página
 document.addEventListener('keyup', listenerKey);
-
-console.log("oioioioioi");
