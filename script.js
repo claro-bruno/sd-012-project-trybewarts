@@ -87,7 +87,6 @@ function mostraMaterias() {
   containerInfos.appendChild(paragrafo);
 }
 
-
 function mostraAvaliacao() {
   const inputAvaliacao = document.getElementsByClassName('rate');
   const paragrafo = document.createElement('p');
