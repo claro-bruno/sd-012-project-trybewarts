@@ -9,5 +9,6 @@
 }
 
 .trybewarts-login {
+  display: flex;
   align-self: center;
 }
