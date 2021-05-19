@@ -35,3 +35,18 @@ function createRadioButtons() {
 }
 
 createRadioButtons();
+
+/*  Criação de radio buttons  */
+const submitButton = document.querySelector('#submit-btn');
+const checkBox = document.querySelector('#agreement');
+submitButton.disabled = true;
+
+function enableSubmitButton() {
+  if (checkBox.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+}
+
+checkBox.addEventListener('change', enableSubmitButton);

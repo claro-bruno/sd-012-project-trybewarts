@@ -67,6 +67,13 @@ main {
   color: white;
 }
 
+#submit-btn:disabled {
+  border: 1px solid gray;
+  background-color: gray;
+  color: gainsboro;
+  cursor: not-allowed;
+}
+
 /* Estilização da Imagem */
 #trybewarts-forms-logo {
   height: 500px;
