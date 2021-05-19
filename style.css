@@ -10,7 +10,7 @@
 }
 
 
-/*Inicio dos estilos do header*/
+/* Inicio dos estilos do header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -29,9 +29,10 @@
   align-self: flex-start;
   align-content: flex-start;
 }
-/*Fim dos estilos do header*/
 
-/*Inicio dos estilos da Main*/
+/* Fim dos estilos do header */
+
+/* Inicio dos estilos da Main */
 main {
   display: flex;
 }
@@ -46,5 +47,5 @@ main {
   justify-content: end;
 }
 
-/*Fim dos estilos da Main*/
+/* Fim dos estilos da Main */
 
