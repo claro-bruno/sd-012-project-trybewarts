@@ -16,3 +16,20 @@ function validarLogin() {
 }
 
 validarLogin();
+
+function validarSubmit() {
+    const checkin = document.getElementById("agreement");
+    checkin.addEventListener('change', (event) => {
+    let buttonSubmit = document.getElementById('submit-btn');  
+        if(event.target.checked) {
+            buttonSubmit.removeAttribute('disabled');
+        }
+        else {
+            buttonSubmit.setAttribute('disabled', true);
+            console.log(buttonSubmit);
+        }
+
+    });
+}
+ 
+validarSubmit();
