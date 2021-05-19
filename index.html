@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Trybewarts</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Trybewarts</title>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<header class="header">
+		<div class="img-container">
+		<img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg">
+		</div>
+		<h1 id="trybewarts-header-title">Trybewarts</h1>
+	<div class="login-container">
+		<form class="trybewarts-login" method="GET">
+			<input type="text" placeholder="Login" name="email" id="input-login-email" class="style-input">
+			<input type="password" placeholder="Senha" id="input-login-password" class="style-input">
+			<button id="loginButton" class="style-button">Login</button>
+		</form>
+	</div>
+	</header>
 	<main>
 		<form id="evaluation-form" action="" method="GET">
 			<input id="input-name" type="text" placeholder="Nome">
@@ -16,6 +29,6 @@
 		</form>
 		<img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
 	</main>
-	<script src="./script.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
