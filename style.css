@@ -47,6 +47,8 @@ main {
   height: 500px;
 }
 
-#input-name , #input-lastname , #input-email , #house {
+#container-info1 , #container-info2 {
   width: 200px;
+  display: flex;
+  flex-direction: row;
 }
