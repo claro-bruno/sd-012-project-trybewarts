@@ -48,9 +48,17 @@ function formOutput(event) {
   const lastName = document.querySelector('#input-lastname').value;
   const email = document.querySelector('#input-email').value;
   const house = document.querySelector('#house').value;
+  const family = document.getElementsByName('family');
   const pName = document.createElement('p');
   const pEmail = document.createElement('p');
   const pHouse = document.createElement('p');
+  const pFamily = document.createElement('p');
+
+  for(let indice = 0;indice < family.length;indice+=1){
+   if(family[indice].checked){
+    pFamily.innerHTML = `Família: ${family[indice].value}`
+   }
+  }
 
   pName.innerHTML = `Nome: ${name} ${lastName}`;
   getOutputDiv.appendChild(pName);
@@ -58,6 +66,7 @@ function formOutput(event) {
   getOutputDiv.appendChild(pEmail);
   pHouse.innerHTML = `Casa: ${house}`;
   getOutputDiv.appendChild(pHouse);
+  getOutputDiv.appendChild(pFamily);
 
   getInputDiv.style.display = 'none';
   getOutputDiv.style.display = 'flex';
