@@ -87,3 +87,10 @@
 #agreement {
   margin-left: 10px;
 }
+
+#submit-btn {
+  margin-top: 10px;
+  border-radius: 7px;
+  background-color: rgb(100, 0, 255);
+  color: white;
+}
