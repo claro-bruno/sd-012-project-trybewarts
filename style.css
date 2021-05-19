@@ -17,12 +17,18 @@
   display: flex;
 }
 
+form input {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
 .trybewarts-login input {
   width: 100px;
 }
 
 main {
   display: flex;
+  background-color: rgb(231, 231, 231);
 }
 
 #evaluation-form {
@@ -40,11 +46,10 @@ main {
   flex-direction: column;
 }
 
-#coreInfos {
-  display: flex;
-  flex-direction: row;
+#emailCasa {
+  max-width: 329.5px;
 }
 
-#coreInfos div {
-  padding: 0 8px;
+#family {
+  width: 250px;
 }

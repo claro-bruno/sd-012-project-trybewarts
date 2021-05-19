@@ -22,28 +22,40 @@
       <div class="d-flex align-items-center">
         <input id="email-login" type="email" placeholder="Login">
         <input id="passwd-login" type="password" placeholder="Senha">
-        <button id="btLogin">Entrar</button>
+        <button id="btLogin" class="btn btn-primary">Entrar</button>
       </div>
     </form>
   </header>
   <main>
     <form id="evaluation-form">
-      <div>
-        <input id="input-name" type="text" placeholder="Nome">
-        <input id="input-lastname" type="text" placeholder="Sobrenome">
+      <h2 class="text-center">Forms</h2>
+      <div class="d-flex flex-column  bd-highlight">
+        <div class="d-flex align-items-center p-2 flex-fill bd-highlight">
+          <div class="d-flex align-items-center p-2 flex-fill bd-highlight justify-content-center">
+            <input id="input-name" type="text" placeholder="Nome">
+          </div>
+          <div class="d-flex align-items-center p-2 flex-fill bd-highlight justify-content-center">
+            <input id="input-lastname" type="text" placeholder="Sobrenome">
+          </div>
+        </div>
+        <div class="d-flex align-items-center p-2 flex-fill bd-highlight">
+          <div class="d-flex align-items-center p-2 flex-fill bd-highlight justify-content-center" id="emailCasa">
+            <input id="input-email" type="email" placeholder="Email">
+          </div>
+          <div class="d-flex align-items-center p-2 flex-fill bd-highlight justify-content-center"  id="emailCasa">
+            <label for="house" class="d-flex align-middle">Casa:</label>
+            <select name="Casa" id="house">
+              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+              <option value="Corvinode" id="corvinode-house">Corvinode</option>
+              <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            </select>
+          </div>
+        </div>
       </div>
-      <div>
-        <input id="input-email" type="email" placeholder="Email">
-        <label for="house">Casa:</label>
-        <select name="Casa" id="house">
-          <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
-      </div>
-      <div id="coreInfos">
-        <div>
+      <hr>
+      <div class="d-flex flex-row  bd-highlight" id="coreInfos">
+        <div class="d-flex flex-column align-items-center p-2 flex-fill bd-highlight justify-content-center" id="family">
           <div>
             <label for="" id="label-family">Qual sua família?
           </div>
@@ -60,7 +72,7 @@
           </div>
         </div>
         <div>
-          <div>
+          <div class="d-flex flex-column align-items-center p-2 flex-fill bd-highlight justify-content-center">
             <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
           </div>
           <div>
@@ -87,6 +99,7 @@
           </div>
         </div>
       </div>
+      <hr>
     </form>
     <a href="#">
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Brasão da Trybewarts em cores">
