@@ -72,7 +72,7 @@ main {
 }
 
 #input-email {
-  width: 256px;
+  width: 200px;
   border-radius: 10px;
 }
 
@@ -92,7 +92,11 @@ main {
 .family-contents {
   margin-top: 5px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2%;
 }
 
 #evaluation-form {
@@ -105,6 +109,11 @@ main {
 .section-learning-content {
   display: flex;
   flex-direction: column;
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+
+#radio-section {
   margin-left: 80px;
   margin-bottom: 10px;
 }
@@ -139,4 +148,6 @@ footer {
   justify-content: center;
   background-color: rgb(150, 147, 147);
   color: antiquewhite;
+  height: 30px;
+  align-items: center;
 }
