@@ -29,7 +29,7 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
-  align-content: flex-start;
+  align-content: center;
   border: black, 1px, solid;
   margin: 10px;
 }
@@ -70,4 +70,13 @@ main {
 textarea{
   resize: none;
   margin: 10px;
+}
+#agreement {
+  margin: 10px;
+}
+
+#submit-btn {
+  display: flex;
+  justify-content: center;
+  width: 20%;
 }
