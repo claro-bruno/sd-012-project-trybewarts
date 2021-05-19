@@ -31,20 +31,31 @@ const lastName = document.querySelector('#input-lastname');
 const email = document.querySelector('#input-email');
 const house = document.querySelector('#house');
 
-submitButton.addEventListener('click', () => {
-
+function replaceNameElement() {
   const nameParagraph = document.createElement('p');
   nameParagraph.innerHTML = `Nome: ${firstName.value} ${lastName.value}`;
   firstName.parentNode.removeChild(firstName.parentNode.lastElementChild);
   firstName.parentNode.replaceChild(nameParagraph, firstName);
+}
 
+function replaceEmailElement() {
   const emailParagraph = document.createElement('p');
   emailParagraph.innerHTML = `Email: ${email.value}`;
   email.parentNode.replaceChild(emailParagraph, email);
+}
 
+function replaceHouseElement() {
   const houseParagraph = document.createElement('p');
   houseParagraph.innerHTML = `Casa: ${house.value}`;
   house.parentNode.replaceChild(houseParagraph, house);
+}
+
+submitButton.addEventListener('click', () => {
+  replaceNameElement();
+
+  replaceEmailElement();
+
+  replaceHouseElement();
 });
 //   const families = document.querySelectorAll('.input-family')
 //   for (let family of families) {
