@@ -37,3 +37,16 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+.label-family input  {
+display: flex;
+vertical-align: middle;
+
+}
+
+.label-family input p  {
+  display: flex;
+  vertical-align: sub;
+  
+  }
+
