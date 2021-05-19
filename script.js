@@ -3,8 +3,11 @@ const password = document.querySelector('#password');
 const loginButton = document.querySelector('#login-btn');
 const loginInput = 'tryber@teste.com';
 const passwordInput = '123456';
+const textarea = document.querySelector('#textarea');
 const submitButton = document.querySelector('#submit-btn');
 const agreementCheckbox = document.querySelector('#agreement');
+const counter = document.querySelector('#counter');
+const counterStartValue = parseInt(counter.innerHTML, 10);
 
 function loginValidate() {
   if (login.value === loginInput && password.value === passwordInput) {
@@ -27,3 +30,11 @@ function enableButtonSubmit() {
 }
 
 agreementCheckbox.addEventListener('change', enableButtonSubmit);
+
+function calculateCounter() {
+  const textValue = textarea.value.length;
+  const counterValue = counterStartValue - textValue;
+  counter.innerHTML = counterValue;
+}
+
+textarea.addEventListener('input', calculateCounter);
