@@ -38,7 +38,7 @@ img {
   float: right;
 }
 
-#label-family {
+#radioButtons{
   display: flex;
   flex-direction: column;
 }
