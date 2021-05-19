@@ -102,8 +102,64 @@ main {
   cursor: pointer;
 }
 
-#avaliacao {
-  display: flex;
+#avaliacao input {
+  margin-left: 5px;
+  margin-right: 3px;
+}
+
+#avaliacao input:hover {
+  cursor: pointer;
+}
+
+#avaliacao label {
+  font-size: 18px;
+}
+
+#textLabel {
+  font-size: 18px;
+}
+
+#counter {
+  text-align: end;
+}
+
+#label-infos {
+  font-size: 18px;
+}
+
+#agreement {
+  width: 30px;
+}
+
+#agreement:hover {
+  cursor: pointer;
+}
+
+#submit-btn {
+  margin-bottom: 40px;
+  width: 80px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: cadetblue;
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 0 1em greenyellow;
+  font-size: 23px;
+  color: white;
+}
+
+footer {
+  background-color: rgb(50, 167, 145);
+}
+
+footer p{
+  padding: 10px;
+  color: whitesmoke;
+  font-size: 15px;
+  text-align: end;
 }
 
 #trybewarts-forms-logo {
