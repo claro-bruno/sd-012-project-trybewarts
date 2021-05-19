@@ -28,13 +28,13 @@ function switchButtonOnOff() {
 function changeCounterNum() {
   const textArea = document.querySelector('#textarea');
   const counter = document.querySelector('#counter');
-  counter.innerHTML = parseInt(textArea.maxLength) - textArea.value.length;
+  counter.innerHTML = parseInt(textArea.maxLength, 10) - textArea.value.length;
 }
 
 function filterInputList(nodeList) {
   const arr = [];
   for (let indexSubject = 0; indexSubject < nodeList.length; indexSubject += 1) {
-    arr.push(' ' + nodeList[indexSubject].value);
+    arr.push(` ${nodeList[indexSubject].value}`);
   }
   return arr;
 }
@@ -49,29 +49,25 @@ function captureInputsValue() {
   const rateInputValue = document.querySelector('[name=rate]:checked').value;
   const commentInputValue = document.querySelector('#textarea').value;
   const inputsValue = {
-    'Nome': (`${firstNameInputValue} ${lastNameInputValue}`),
-    'Email': emailInputValue,
-    'Casa': houseInputValue,
-    'Família': familyInputValue,
-    'Matérias': subjectsInputValue,
-    'Avaliação': rateInputValue,
-    'Observações': commentInputValue
-  }
+    Nome: (`${firstNameInputValue} ${lastNameInputValue}`),
+    Email: emailInputValue,
+    Casa: houseInputValue,
+    Família: familyInputValue,
+    Matérias: subjectsInputValue,
+    Avaliação: rateInputValue,
+    Observações: commentInputValue,
+  };
   return inputsValue;
 }
 
 function createResults() {
   const results = captureInputsValue();
-  for(result in results){
+  Object.keys(results).forEach(result => {
     const element = document.createElement('p');
     element.innerHTML = (`${result}: ${results[result]}`).trim();
     const parent = document.querySelector('#evaluation-form');
     parent.appendChild(element);
-  }
-}
-
-function showResults() {
-  createResults();
+  });
 }
 
 window.onload = () => {
@@ -83,6 +79,6 @@ window.onload = () => {
   document.querySelector('#textarea').addEventListener('keyup', changeCounterNum);
   document.querySelector('#submit-btn').addEventListener('click', (e) => {
     e.preventDefault();
-    showResults();
-  })
+    createResults();
+  });
 };

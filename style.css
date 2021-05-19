@@ -63,8 +63,7 @@
 
 #leave-content {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  flex-flow: row nowrap;
 }
 
 #checkbox-container {
