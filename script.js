@@ -95,7 +95,7 @@ function colocandoInfoNasLis() {
 
 botaoSubmit.addEventListener('click', (event) => {
   event.preventDefault();
-  document.querySelector('#evaluation-form').style.display = 'none';
+  document.querySelector('#container-forms').style.display = 'none';
   document.querySelector('#lista-form').style.display = 'flex';
   preenchendoValores();
   colocandoInfoNasLis();
