@@ -11,3 +11,15 @@ function validaLogar() {
 }
 
 logar.addEventListener('click', validaLogar);
+
+const check = document.getElementById('agreement');
+const send = document.getElementById('submit-btn');
+send.disabled = true;
+
+function validarBotao () {
+  if (check.checked == true) {
+    send.disabled = false;
+  }
+}
+
+check.addEventListener('click', validarBotao);
