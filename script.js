@@ -38,3 +38,20 @@ function enableSubmit() {
   });
 }
 enableSubmit();
+
+function countCharacters() {
+  const textArea = document.querySelector('#textarea');
+
+  textArea.addEventListener('keyup', () => {
+    const typed = document.querySelector('#textarea').value;
+    const typedLength = typed.length;
+    if (typed === '') {
+      document.querySelector('#counter').innerHTML = 500;
+    }
+    const maxCharacters = 500;
+    const remains = maxCharacters - typedLength;
+    console.log(remains);
+    document.querySelector('#counter').innerHTML = remains;
+  });
+}
+countCharacters();
