@@ -17,10 +17,21 @@
   align-items: center;
 }
 
-#input-login , #input-senha {
-  padding: 5px;
-  margin: 3px;
-  border-radius: 10px;
+.cool {
+  padding: 4px 8px;
+  margin: 5px;
+  border-radius: 15px;
+  border: 2px solid grey;
+  outline: none;
+}
+
+.cool:hover {
+  border: 2px solid rgb(0, 255, 191);
+  box-shadow: 0 0 2px 2px cyan;
+}
+
+.cool:focus {
+  box-shadow: 0 0 2px 2px cyan;
 }
 
 #btn-login {
@@ -35,6 +46,12 @@
 #btn-login:hover {
   background-color: rgba(233, 233, 233, 1);
   box-shadow: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .form-container {
