@@ -15,8 +15,14 @@ function changeBtnStatus(event) {
   if (statusAgreement === true) {
     btnAlterState.disabled = false;
   } else {
-    btnAlterState.enable = true;
+    btnAlterState.disabled = true;
   }
+}
+
+function checkLengthArea(event) {
+  const lengthTxtArea = event.target.textLength;
+  const lblCounter = document.querySelector('#counter');
+  lblCounter.innerHTML = (500 - Number(lengthTxtArea));
 }
 
 const btnLogin = document.querySelector('#logar');
@@ -24,3 +30,6 @@ btnLogin.addEventListener('click', logar);
 
 const checkAgreement = document.querySelector('#agreement');
 checkAgreement.addEventListener('change', changeBtnStatus);
+
+const textArea = document.querySelector('textarea');
+textArea.addEventListener('change', checkLengthArea);
