@@ -11,3 +11,15 @@ function verificaLogin() {
 }
 
 btn.addEventListener('click', verificaLogin);
+const valor = document.querySelector('#agreement')
+
+function habilitaBotão () {
+  const btn2 = document.querySelector('#submit-btn');
+  if(valor.checked) {
+    btn2.disabled = false;
+  } else {
+    btn2.disabled = true;
+  }
+}
+
+valor.addEventListener('click', habilitaBotão)
