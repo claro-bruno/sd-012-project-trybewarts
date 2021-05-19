@@ -9,7 +9,7 @@ for(let casa of listaDeCasas) {
 
 // guarda valores dos campos em localStorage
 function guardarCampos() {
-
+  
 }
 
 // valida login e senha
