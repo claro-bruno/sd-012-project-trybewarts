@@ -13,13 +13,14 @@ main {
 #evaluation-form {
   display: flex;
   width: 675px;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   justify-content: space-evenly;
 }
-#evaluation-form  input {
+
+#evaluation-form input {
   max-width: 60%;
 }
+
 select {
   min-width: 33%;
 }
