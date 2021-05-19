@@ -55,7 +55,7 @@ main img {
   align-items: center;
 }
 
-.section_1 {
+#section_1 {
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
@@ -75,12 +75,38 @@ hr {
   width: 500px;
 }
 
-.section_2 {
+#section_2 {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 5px;
+}
+
+#section_3 {
+  display: flex;
+  flex-flow: column wrap;
+  margin: 5px;
+}
+
+#sections_2_3 {
+  display: flex;
+  flex-flow: row;
+}
+
+#div-conteudo {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#div-familia {
   display: flex;
   flex-flow: column wrap;
 }
 
 #label-family {
+  margin: 5px;
+}
+
+#label-content {
   margin: 5px;
 }
 
