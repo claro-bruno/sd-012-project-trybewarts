@@ -50,27 +50,79 @@ function formOutput(event) {
   event.preventDefault();
   const name = document.querySelector('#input-name').value;
   const lastName = document.querySelector('#input-lastname').value;
-  const email = document.querySelector('#input-email').value;
-  const house = document.querySelector('#house').value;
-  const family = document.getElementsByName('family');
   const pName = document.createElement('p');
-  const pEmail = document.createElement('p');
-  const pHouse = document.createElement('p');
-  const pFamily = document.createElement('p');
-
-  for(let indice = 0;indice < family.length;indice+=1){
-   if(family[indice].checked){
-    pFamily.innerHTML = `Família: ${family[indice].value}`
-   }
-  }
-
   pName.innerHTML = `Nome: ${name} ${lastName}`;
   getOutputDiv.appendChild(pName);
+}
+
+function createEmailOutput() {
+  const email = document.querySelector('#input-email').value;
+  const pEmail = document.createElement('p');
   pEmail.innerHTML = `Email: ${email}`;
   getOutputDiv.appendChild(pEmail);
+}
+
+function createHouseOutput() {
+  const house = document.querySelector('#house').value;
+  const pHouse = document.createElement('p');
   pHouse.innerHTML = `Casa: ${house}`;
   getOutputDiv.appendChild(pHouse);
+}
+
+function createFamilyOutput() {
+  const family = document.getElementsByName('family');
+  const pFamily = document.createElement('p');
+  for (let indice = 0; indice < family.length; indice += 1) {
+    if (family[indice].checked) {
+      pFamily.innerHTML = `Família: ${family[indice].value}`;
+    }
+  }
   getOutputDiv.appendChild(pFamily);
+}
+
+function createSubjectOutput() {
+  const subject = document.getElementsByName('content');
+  const pSubject = document.createElement('p');
+  pSubject.innerHTML = `Matérias: `;
+  for (let indice = 0; indice < subject.length; indice += 1) {
+    if (subject[indice].checked) {
+      if (pSubject.innerHTML === `Matérias: `) {
+        pSubject.innerHTML += subject[indice].value;
+      } else {
+        pSubject.innerHTML += ', ' + subject[indice].value;
+      }
+    }
+  }
+  getOutputDiv.appendChild(pSubject);
+}
+
+function createRateOutput() {
+  const rate = document.getElementsByName('rate');
+  const pRate = document.createElement('p');
+  for (let indice = 0; indice < rate.length; indice += 1) {
+    if (rate[indice].checked) {
+      pRate.innerHTML = `Avaliação: ${rate[indice].value}`;
+    }
+  }
+  getOutputDiv.appendChild(pRate);
+}
+
+function createTextAreaOutput() {
+  const textArea = document.querySelector('#textarea').value;
+  const pTextArea = document.createElement('p');
+  pTextArea.innerHTML = `Observações: ${textArea}`;
+  getOutputDiv.appendChild(pTextArea);
+}
+
+function formOutput(event) {
+  event.preventDefault();
+  createNameOutput();
+  createEmailOutput();
+  createHouseOutput();
+  createFamilyOutput();
+  createSubjectOutput();
+  createRateOutput();
+  createTextAreaOutput();
 
   getInputDiv.style.display = 'none';
   getOutputDiv.style.display = 'flex';
