@@ -35,6 +35,7 @@
 /* Inicio dos estilos da Main */
 main {
   display: flex;
+  flex: row;
 }
 
 .evaluation-form {
