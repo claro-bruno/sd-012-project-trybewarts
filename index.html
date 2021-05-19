@@ -19,13 +19,13 @@
     </header>
     <main>
         <form id="evaluation-form">
-            <h1>Forms</h1>
+            <h1 id="form-text">Forms</h1>
             <section class="section_1">
             <input type="text" name="Nome" id="input-name" placeholder="Nome">
             <input type="text" name="Sobrenome" id="input-lastname" placeholder="Sobrenome">
             <input type="email" name="Email" id="input-email" placeholder="Email">
-            <label for="house">Casa
-                <select name="Casa" id="house">Casa
+            <label for="house" id="labelhouse">Casa:
+                <select name="Casa" id="house">
                     <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                     <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
                     <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -57,6 +57,7 @@
               <textarea name="Comentario" id="comentario" cols="40" rows="10" maxlength="500"></textarea>
             </label>
             <label for="" id="label-infos">Você concorda com o uso das informações acima?<input type="checkbox" name="agreement" id="agreement"></label>
+            <button type="submit" id="submit-btn">Enviar</button>
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg">
     </main>
