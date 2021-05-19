@@ -74,11 +74,14 @@ function familyInfoAdd() {
 function subjectsInfoAdd() {
   const subjects = document.getElementsByName('content');
   const subjectsInfo = document.querySelector('#subjects-info');
+  const subjectsChecked = [];
   for (let index = 0; index < subjects.length; index += 1) {
     if (subjects[index].checked === true) {
-      subjectsInfo.innerHTML = `${subjectsInfo.innerHTML} ${subjects[index].value}`;
+      subjectsChecked.push(subjects[index].value);
     }
   }
+  console.log(subjectsChecked);
+  subjectsInfo.innerHTML = `${subjectsInfo.innerHTML} ${subjectsChecked.join(', ')}`;
 }
 
 function rateInfoAdd() {
