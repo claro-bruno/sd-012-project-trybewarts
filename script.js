@@ -88,8 +88,12 @@ function mostrarEmail() {
 
 function mostrarCasa() {
   const casa = document.querySelector('#house');
-  const option = document.getElementById(house.value);
+  // console.log(casa)
+  // console.log(casa.value)
+  // const opcao = document.getElementById(casa.value);
+  // console.log(opcao)
   const paragrafoCasa = document.createElement('p');
+  paragrafoCasa.innerHTML = `Casa: ${casa.value}`;
   casa.remove();
   evaluationForm.appendChild(paragrafoCasa);
 }
