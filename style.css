@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(246, 244, 244);
+}
+
 header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -8,6 +12,7 @@ header {
 
 main {
   display: flex;
+  justify-content: center;
 }
 
 #evaluation-form {
@@ -43,6 +48,21 @@ select {
   margin: 2px 50px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.radios ,.checkbox-content{
+  display: flex;
+  flex-flow: column;
+  margin: 5px 20px;
+  max-width: 40%;
+}
+
+.checkbox-content {
+  margin-left: 50px;  
+}
+
+.checkbox-content > :first-child {
+  margin-bottom: 20px;
 }
 
 .header {
