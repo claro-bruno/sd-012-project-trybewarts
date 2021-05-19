@@ -31,36 +31,46 @@ function changeCounterNum() {
   counter.innerHTML = parseInt(textArea.maxLength) - textArea.value.length;
 }
 
-captureInputsValue() {
-  const firstNameInputValue = document.querySelector('#input-name');
-  const lastNameInputValue = document.querySelector('#input-lastname');
-  const emailInputValue = document.querySelector('#input-email');
+function filterInputList(nodeList) {
+  const arr = [];
+  for (let indexSubject = 0; indexSubject < nodeList.length; indexSubject += 1) {
+    arr.push(' ' + nodeList[indexSubject].value);
+  }
+  return arr;
+}
+
+function captureInputsValue() {
+  const firstNameInputValue = document.querySelector('#input-name').value;
+  const lastNameInputValue = document.querySelector('#input-lastname').value;
+  const emailInputValue = document.querySelector('#input-email').value;
   const houseInputValue = document.querySelector('#house').value;
   const familyInputValue = document.querySelector('[name=family]:checked').value;
-  const subjectsInputValue = [];
-  const subjectsList = document.querySelectorAll('.subject');
-  for(let indexSubject = 0; indexSubject < subjectsList.length; indexSubject += 1){
-    subjectsInputValue.push(subjectsList[indexSubject].value);
-  }
-  const rateInputValue = document.querySelector('[name=rate:checked').value;
+  const subjectsInputValue = filterInputList(document.querySelectorAll('.subject:checked'));
+  const rateInputValue = document.querySelector('[name=rate]:checked').value;
   const commentInputValue = document.querySelector('#textarea').value;
   const inputsValue = {
-    name : (firstName + lastName),
-    email : email,
-    house : house
+    'Nome': (`${firstNameInputValue} ${lastNameInputValue}`),
+    'Email': emailInputValue,
+    'Casa': houseInputValue,
+    'Família': familyInputValue,
+    'Matérias': subjectsInputValue,
+    'Avaliação': rateInputValue,
+    'Observações': commentInputValue
   }
+  return inputsValue;
 }
 
 function createResults() {
-  captureInputsValue();
-  for (let formInputsIndex = 0; formInputsIndex < 7; formInputsIndex += 1) {
-    const p = document.createElement('p');
-
+  const results = captureInputsValue();
+  for(result in results){
+    const element = document.createElement('p');
+    element.innerHTML = (`${result}: ${results[result]}`).trim();
+    const parent = document.querySelector('#evaluation-form');
+    parent.appendChild(element);
   }
 }
 
 function showResults() {
-  document.querySelector('#evaluation-form').style.display = 'none';
   createResults();
 }
 
