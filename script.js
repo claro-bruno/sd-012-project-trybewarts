@@ -138,7 +138,7 @@ function submitForm(event) {
   const infoFamily = document.createElement('p');
   infoFamily.innerHTML = `Família: ${family}`;
   const infoLessons = document.createElement('p');
-  infoLessons.innerHTML = `Matérias: ${lessons}`;
+  infoLessons.innerHTML = `Matérias: ${lessons.join(', ')}`;
   const infoAvaliation = document.createElement('p');
   infoAvaliation.innerHTML = `Avaliação: ${avaliation}`;
   const infoObservation = document.createElement('p');
