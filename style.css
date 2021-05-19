@@ -8,7 +8,7 @@
   width: 100%;
   height: 50%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
@@ -25,7 +25,10 @@
 
 .trybewarts-login {
   display: flex;
-
+}
+  
+.trybewarts-login input {
+  margin-right: 5px;
 }
 
 .trybewarts-login button {
