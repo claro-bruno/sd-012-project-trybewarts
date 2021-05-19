@@ -33,17 +33,42 @@ function validaBotaoSubmit(event) {
   }
 }
 
-// gerencia os clicks na página
-function listener(event) {
+// gerencia eventos de clicks na página
+function listenerClick(event) {
   // se o alvo do click for o elemento com id 'botaoLogin'
   if (event.target.id === 'botaoLogin') {
     // valida login e senha
     validacaoLoginSenha(event);
-  }
-  // se o alvo do click for o elemento com id 'agreement' (checkbox)
-  if (event.target.id === 'agreement') {
+  } else if (event.target.id === 'agreement') {
+    // se não, se o alvo do click for o elemento com id 'agreement' (checkbox)
     validaBotaoSubmit(event);
+  } else {
+    // se não, exclua esse evento dos registros
+    event.target.removeEventListener('click', listenerClick);
   }
 }
 // adiciona evento de click em toda a página
-document.addEventListener('click', listener);
+document.addEventListener('click', listenerClick);
+
+function quantidadeDeCaracteresDisponíveis(quantidadeDeCaracteres) {
+  return 500 - quantidadeDeCaracteres;
+}
+
+// gerencia eventos de teclado na página
+function listenerKey(event) {
+  // se o alvo do click for o elemento com id 'textarea'
+  if (event.target.id === 'textarea') {
+    // acessa quantidade de caracteres em 'textarea'
+    const quantidadeDeCaracteres = event.target.value.length;
+    // acessa elemento com id 'contador'
+    const contador = document.querySelector('#counter');
+    // altera html interno do contador
+    contador.innerHTML = quantidadeDeCaracteresDisponíveis(quantidadeDeCaracteres);
+  } else {
+    // se não, exclua esse evento dos registros
+    event.target.removeEventListener('keyup', listenerKey);
+  }
+}
+
+// adiciona evento de teclado em toda página
+document.addEventListener('keyup', listenerKey);
