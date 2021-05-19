@@ -25,6 +25,7 @@ function criandoRadiosNota() {
     notaRadio.classList.add('form-check-input');
     labelNota.innerText = nota;
     labelNota.classList.add('form-check-label');
+    if (nota === 10) notaRadio.checked = true;
     divNotas.appendChild(notaRadio);
     divNotas.appendChild(labelNota);
   }
@@ -49,10 +50,24 @@ function contadorDeCaracteres() {
   });
 }
 
+const form = document.querySelector('#evaluation-form');
+
+const valoresInputs = {
+  Nome: document.querySelector('#input-name').value,
+  Sobrenome: document.querySelector('#input-lastname').value,
+  Email: document.querySelector('#input-email').value,
+  Casa: document.querySelector('#house').value,
+  Familia: document.querySelector('input[name="family"]:checked').value,
+  Materias: 0,
+  Avaliacao: 0,
+  Observacao: textarea.value,
+}
+
 window.onload = () => {
   habilitandoBotaoEnviar();
   criandoRadiosNota();
   validandoCabecalho();
   contadorDeCaracteres();
   botaoSubmit.disabled = true;
+  valoresInputs.Avaliacao = document.querySelector('input[name="rate"]:checked').value;
 };
