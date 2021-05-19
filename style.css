@@ -78,19 +78,19 @@ hr {
   flex-direction: column;
 }
 
-#choose {
+#form2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-#family {
+#form2left {
   display: flex;
   flex-direction: column;
   width: fit-content;
 }
 
-#family2 {
+#form2right {
   display: flex;
   flex-flow: column wrap;
   width: max-content;
