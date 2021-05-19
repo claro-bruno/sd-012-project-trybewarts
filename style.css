@@ -39,6 +39,11 @@ img {
   float: right;
 }
 
+#radioButtons {
+  display: flex;
+  flex-direction: column;
+}
+
 #rate-section {
   width: 515px;
   display: flex;
