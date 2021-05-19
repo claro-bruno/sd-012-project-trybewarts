@@ -100,7 +100,16 @@ footer p {
 }
 
 #family-container , #content-container {
-  width: 50%;
+  width: 100%;
+}
+
+#content-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#content-options div {
+  margin-right: 20px;
 }
 
 #form-section3 {
