@@ -13,7 +13,7 @@ const emailInput = document.getElementById("input-email");
 const finalForm = document.querySelector(".form");
 const family = document.getElementsByName("family");
 const skills = document.getElementsByClassName("subject");
-const avaliacao = document.getElementsByClassName('nota');
+const avaliacao = document.getElementsByClassName("nota");
 
 loginButton.addEventListener("click", (event) => {
   event.preventDefault();
@@ -31,12 +31,6 @@ getTextArea.addEventListener("keyup", (event) => {
   getCounter.innerText = `Caracteres restantes: ${
     event.target.maxLength - currentLength
   }`;
-});
-
-submitButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  someForm();
-  preencheForm();
 });
 
 function escolherCasa() {
@@ -62,7 +56,7 @@ function rate() {
     const novaNota = document.createElement("input");
     novaNota.name = "rate";
     novaNota.type = "radio";
-    novaNota.className = 'nota';
+    novaNota.className = "nota";
     novaNota.value = index;
     nota.append(novaNota);
     nota.appendChild(notaLabel);
@@ -88,7 +82,7 @@ function someForm() {
 
 function skillsChecked() {
   let skillsArray = [];
-  for(let index = 0; index < skills.length; index += 1) {
+  for (let index = 0; index < skills.length; index += 1) {
     if (skills[index].checked === true) {
       skillsArray.push(` ${skills[index].value}`);
     }
@@ -97,7 +91,7 @@ function skillsChecked() {
 }
 
 function familyChecked() {
-  for(let index = 0; index < family.length; index += 1) {
+  for (let index = 0; index < family.length; index += 1) {
     if (family[index].checked === true) {
       return family[index].value;
     }
@@ -105,7 +99,7 @@ function familyChecked() {
 }
 
 function rateChecked() {
-  for(let index = 0; index < avaliacao.length; index += 1) {
+  for (let index = 0; index < avaliacao.length; index += 1) {
     if (avaliacao[index].checked === true) {
       return avaliacao[index].value;
     }
@@ -113,23 +107,33 @@ function rateChecked() {
 }
 
 function preencheForm() {
-
-  let dados =
-    [{ dado: 'Nome', value: `${nameInput.value} ${lastNameInput.value}`, class: "nome" },
-    { dado:'Email', value: emailInput.value, class: "email" },
-    { dado:'Casa', value: escolheCasa.value, class: "casa" },
-    { dado:'Família', value: familyChecked(), class: "familia" },
-    { dado:'Matérias', value: skillsChecked(), class: "subject" },
-    { dado:'Avaliação', value: rateChecked(), class: "nota" },
-    { dado:'Observações', value: getTextArea.value, class: "observacao" }];
+  const dados = [
+    {
+      dado: "Nome",
+      value: `${nameInput.value} ${lastNameInput.value}`,
+      class: "nome",
+    },
+    { dado: "Email", value: emailInput.value, class: "email" },
+    { dado: "Casa", value: escolheCasa.value, class: "casa" },
+    { dado: "Família", value: familyChecked(), class: "familia" },
+    { dado: "Matérias", value: skillsChecked(), class: "subject" },
+    { dado: "Avaliação", value: rateChecked(), class: "nota" },
+    { dado: "Observações", value: getTextArea.value, class: "observacao" },
+  ];
 
   for (let index = 0; index < dados.length; index += 1) {
-    let novoDado = document.createElement('p')
+    const novoDado = document.createElement("p");
     novoDado.innerHTML = `${dados[index].dado}: ${dados[index].value}`;
     novoDado.className = dados[index].class;
     finalForm.appendChild(novoDado);
   }
 }
+
+submitButton.addEventListener("click", (event) => {
+  event.preventDefault();
+  someForm();
+  preencheForm();
+});
 
 escolherCasa();
 rate();
