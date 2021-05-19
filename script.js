@@ -25,10 +25,10 @@ function getFamily() {
     if (inputsFamilia[index].checked) {
      let famSelec = inputsFamilia[index].value;
      textoFam += famSelec;
-    };
-  };
+    }
+  }
   return textoFam;
-};
+}
 
 getFamily();
 
@@ -38,10 +38,10 @@ function getConteudo() {
     if (inputsConteudo[index].checked) {
      let contSelec = inputsConteudo[index].value;
      textoCont += contSelec + ', '
-    };
-  };
+    }
+  }
   return textoCont;
-};
+}
 
 getConteudo();
 
@@ -62,18 +62,16 @@ function criaDiv () {
   getConteudo();
 }
 
-
-
 const evalForm = document.getElementById('evaluation-form');
 
 function hideForm() {
   evalForm.style.display='none';
   criaDiv();
-};
+}
 
 function preventDef (event) {
   event.preventDefault();
-};
+}
 
 evalForm.addEventListener('submit', preventDef);
 
