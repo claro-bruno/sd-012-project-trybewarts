@@ -34,7 +34,9 @@ function rates() {
     rateOption.value = index;
     rateOption.name = 'rate';
     rateOption.type = 'radio';
+    rateOption.className = 'form-check-input';
     rateLabel.innerHTML = index;
+    rateLabel.className = 'form-check-label';
     rate.appendChild(rateOption);
     rate.appendChild(rateLabel);
   }
