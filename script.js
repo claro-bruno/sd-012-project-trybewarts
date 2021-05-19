@@ -1,10 +1,9 @@
-const butto = document.querySelector('.btn');
+const butto = document.querySelector('#botao');
+const log = document.querySelector('#input-login');
+const senha = document.querySelector('#input-senha');
 
 butto.addEventListener('click', () => {
-  const senha = document.querySelector('#input-senha');
-  const login = document.querySelector('#input-login');
-
-  if (login.value === 'tryber@teste.com' && senha.value === '123456') {
+  if (log.value === 'tryber@teste.com' && senha.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');

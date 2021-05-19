@@ -16,27 +16,22 @@
       />
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <form class="trybewarts-login" action="">
-        <label for="input-login">
-          <input
-            type="text"
-            name="email"
-            id="input-login"
-            placeholder="Login"
-            class="inputlog"
-          />
-        </label>
-        <label for="input-senha">
-          <input
-            type="password"
-            name="senha"
-            id="input-senha"
-            placeholder="Senha"
-            class="inputlog"
-          />
-        </label>
+        <input
+          type="text"
+          name="email"
+          id="input-login"
+          placeholder="Login"
+          class="inputlog"
+        />
+        <input
+          type="password"
+          name="senha"
+          id="input-senha"
+          placeholder="Senha"
+          class="inputlog"
+        />
 
-        <label for=""> <button class="btn">Entrar!</button> </label>
-
+        <button id="botao" class="btn">Entrar!</button>
       </form>
     </header>
 
@@ -72,69 +67,150 @@
           </select>
         </div>
 
-<div class="family-checker">
-    
-<div class="div-family">
+        <div class="family-checker">
+          <div class="div-family">
+            <label for="family" id="label-family">Qual sua família?</label>
+            <label for="front">
+              <input type="radio" name="family" value="Frontend" id="front" />
+              Família Frontend</label
+            >
 
-    <label for="family" id="label-family">Qual sua família?</label>
-    <label for="front">
+            <label for="back"
+              ><input type="radio" name="family" value="Backend" id="back" />
+              Família Backend</label
+            >
 
-        <input type="radio" name="family" value="Frontend" id="front" />
-        Família Frontend</label>
-    
-    <label for="back"
-        ><input type="radio" name="family" value="Backend" id="back" />
-        Família Backend</label>
+            <label for="full"
+              ><input type="radio" name="family" value="FullStack" id="full" />
+              Família FullStack</label
+            >
+          </div>
 
-    <label for="full"
-        ><input type="radio" name="family" value="FullStack" id="full" />
-        Família FullStack</label>
+          <div class="div-checkbox">
+            <label for="" id="label-content">
+              Qual conteúdo você está com mais vontade de aprender?
+            </label>
 
- </div>
-    
-    <div class="div-checkbox">
-    
-    <label for="" id="label-content"> Qual conteúdo você está com mais vontade de aprender? </label>
+            <label for=""
+              ><input
+                type="checkbox"
+                name=""
+                id=""
+                value="HoFs"
+                class="subject"
+              />
+              Hofs</label
+            >
 
-    <label for=""><input type="checkbox" name="" id="" value="HoFs" class="subject"> Hofs</label>
+            <label for=""
+              ><input
+                type="checkbox"
+                name=""
+                id=""
+                value="Jest"
+                class="subject"
+              />
+              Jest</label
+            >
 
-    <label for=""><input type="checkbox" name="" id="" value="Jest" class="subject"> Jest</label>
+            <label for=""
+              ><input
+                type="checkbox"
+                name=""
+                id=""
+                value="Promises"
+                class="subject"
+              />
+              Promises</label
+            >
 
-    <label for=""><input type="checkbox" name="" id="" value="Promises" class="subject"> Promises</label>
+            <label for=""
+              ><input
+                type="checkbox"
+                name=""
+                id=""
+                value="React"
+                class="subject"
+              />
+              React</label
+            >
 
-    <label for=""><input type="checkbox" name="" id="" value="React" class="subject"> React</label>
+            <label for=""
+              ><input
+                type="checkbox"
+                name=""
+                id=""
+                value="SQL"
+                class="subject"
+              />
+              SQL</label
+            >
 
-    <label for=""><input type="checkbox" name="" id="" value="SQL" class="subject"> SQL</label>
+            <label for=""
+              ><input
+                type="checkbox"
+                name=""
+                id=""
+                value="Python"
+                class="subject"
+              />
+              Python</label
+            >
+          </div>
+        </div>
 
-    <label for=""><input type="checkbox" name="" id="" value="Python" class="subject"> Python</label>
-    </div>
- </div>
+        <div class="label-rate-container">
+          <label for="rate" id="label-rate"
+            >Como você avalia a Trybewarts?
+          </label>
 
-    <div class="label-rate-container">
+          <label for="1">
+            <input type="radio" name="rate" id="1" value="1" /> 1
+          </label>
+          <label for="2">
+            <input type="radio" name="rate" id="2" value="2" /> 2
+          </label>
+          <label for="3">
+            <input type="radio" name="rate" id="3" value="3" /> 3
+          </label>
+          <label for="4">
+            <input type="radio" name="rate" id="4" value="4" /> 4
+          </label>
+          <label for="5">
+            <input type="radio" name="rate" id="5" value="5" /> 5
+          </label>
+          <label for="6">
+            <input type="radio" name="rate" id="6" value="6" /> 6
+          </label>
+          <label for="7">
+            <input type="radio" name="rate" id="7" value="7" /> 7
+          </label>
+          <label for="8">
+            <input type="radio" name="rate" id="8" value="8" /> 8
+          </label>
+          <label for="9">
+            <input type="radio" name="rate" id="9" value="9" /> 9
+          </label>
+          <label for="10">
+            <input type="radio" name="rate" id="10" value="10" /> 10
+          </label>
+        </div>
 
-    <label for="rate" id="label-rate">Como você avalia a Trybewarts?  </label>
+        <label class="textarea" for="textarea">Deixe seu comentário:</label>
+        <textarea
+          name="comentario"
+          id="textarea"
+          cols="30"
+          rows="10"
+          maxlength="500"
+        ></textarea>
 
-    <label for="1"> <input type="radio" name="rate" id="1" value="1"> 1 </label>
-    <label for="2"> <input type="radio" name="rate" id="2" value="2"> 2 </label>
-    <label for="3"> <input type="radio" name="rate" id="3" value="3"> 3 </label>
-    <label for="4"> <input type="radio" name="rate" id="4" value="4"> 4 </label>
-    <label for="5"> <input type="radio" name="rate" id="5" value="5"> 5 </label>
-    <label for="6"> <input type="radio" name="rate" id="6" value="6"> 6 </label>
-    <label for="7"> <input type="radio" name="rate" id="7" value="7"> 7 </label>
-    <label for="8"> <input type="radio" name="rate" id="8" value="8"> 8 </label>
-    <label for="9"> <input type="radio" name="rate" id="9" value="9"> 9 </label>
-    <label for="10"> <input type="radio" name="rate" id="10" value="10"> 10 </label>
+        <label for="agreement" id="label-infos">
+          <input type="checkbox" name="agree" id="agreement" /> Você concorda
+          com o uso das informações acima?</label
+        >
 
-</div>
-
-    <label class="textarea" for="textarea">Deixe seu comentário:</label>
-    <textarea name="comentario" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-
-    
-    <label for="agreement" id="label-infos"> <input type="checkbox" name="agree" id="agreement"> Você concorda com o uso das informações acima?</label>
-
-    <button id="submit-btn" type="submit">Enviar</button>
-
+        <button id="submit-btn" type="submit">Enviar</button>
       </form>
 
       <img
@@ -144,9 +220,9 @@
       />
     </main>
 
-  <footer> 
-      <h2> Direitos reservados à <em>Trybewarts©</em> </h2>
-       </footer>
+    <footer>
+      <h2>Direitos reservados à <em>Trybewarts©</em></h2>
+    </footer>
 
     <script src="script.js"></script>
   </body>
