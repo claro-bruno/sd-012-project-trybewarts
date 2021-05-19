@@ -4,6 +4,7 @@ const login = document.getElementById('login');
 const correctLogin = 'tryber@teste.com';
 const logar = document.getElementById('login-button');
 const agreeBox = document.getElementById('agreement');
+let userChar = document.getElementById('textarea');
 
 function verifyLogin() {
   if (password.value === correctPassword && login.value === correctLogin) {
@@ -25,3 +26,13 @@ function ableButton() {
 }
 
 agreeBox.addEventListener('click', ableButton);
+
+function charactersCounter() {
+  const maxLength = 500;
+  let userCharLength = userChar.value.length;
+  let charRemain = maxLength - userCharLength;
+  document.getElementById('counter').innerHTML = charRemain; 
+}
+
+userChar.addEventListener('keyup', charactersCounter);
+
