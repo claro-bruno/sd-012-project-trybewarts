@@ -60,3 +60,21 @@
   display: flex;
   justify-content: space-around;
 }
+
+#avaliacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.rate {
+  display: flex;
+}
+
+#textarea {
+  width: 60%;
+}
+
+#area-de-texto {
+  display: flex;
+  flex-direction: column;
+}
