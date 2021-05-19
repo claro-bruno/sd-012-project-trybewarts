@@ -41,13 +41,33 @@ main {
   height: 500px;
 }
 
+#input-name {
+  width: 90%;
+}
+
+#input-lastname {
+  width: 90%;
+}
+
+#input-email {
+  width: 90%;
+}
+
 #optionsRadio {
   display: flex;
   flex-direction: column;
 }
 
 #emailCasa {
-  max-width: 50%;
+  width: 50%;
+}
+
+#house {
+  width: 70%;
+  border: solid 2px white;
+  background-color: white;
+  border-radius: 5px;
+  height: 30px;
 }
 
 #family {
@@ -133,4 +153,24 @@ main {
 
 #n10 {
   margin-right: 5px;
+}
+
+#submit-btn {
+  width: 100%;
+}
+
+#submitBtnDiv {
+  padding-left: 20px;
+}
+
+#comments {
+  padding-left: 20px;
+}
+
+#label-infos {
+  padding: 5px 20px;
+}
+
+hr {
+  margin-left: 10px;
 }
