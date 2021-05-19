@@ -1,45 +1,45 @@
 .header {
-    display: flex;
-    background-color: rgb(50, 167, 145);
-    padding: 20px;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .trybewarts-header-logo {
-    display: flex;
-    height: 100px;
-    justify-content: flex-start;
+  display: flex;
+  height: 100px;
+  justify-content: flex-start;
 }
 
 .trybewarts-login {
-    display: flex;
-    justify-content: flex-end;
-   
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 .trybewarts-login input {
-    margin:5px;
-    padding-left: 10px;
-    height: 30px;
-    width: 150px;
-    border-radius: 10px;
+  margin: 5px;
+  padding-left: 10px;
+  height: 30px;
+  width: 150px;
+  border-radius: 10px;
 }
 
 .trybewarts-login button {
-    margin: 5px;
-    margin-right: 10px;
-    height: 30px;
-    width: 100px;
-    border-radius: 10px;
-    background-color: rebeccapurple;
-    color: white;
+  margin: 5px;
+  margin-right: 10px;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  background-color: rebeccapurple;
+  color: white;
 }
 
 #titulo {
-    color: white;
-    display: flex;
-    justify-content:center;
+  color: white;
+  display: flex;
+  justify-content: center;
 }
 
 main {
@@ -86,29 +86,51 @@ h2 {
   margin-left: 5px;
 }
 
-.infoText{
+.infoText {
   display: flex;
   font-weight: bolder;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.281);
+  border-top: 1px solid rgba(0, 0, 0, 0.281);
 }
 
-.sectionName{
+.sectionName {
   font-size: large;
 }
 
-.sections{
+.sections {
   display: flex;
   flex-direction: column;
-  }
+}
 
-  .radioButtons{
+.radioButtons {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-wrap: nowrap;
+  padding-top: 8px;
 }
 
-.radioButtons label{
+.radioButtons label {
   padding-left: 5px;
- }
+}
+
+.buttonsCheckbox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.buttonsCheckbox label {
+  padding-left: 5px;
+}
+
+.buttonsCheckbox input {
+  margin-left: 5px;
+}
+
+
