@@ -31,7 +31,7 @@ function getAgreement() {
 function enableButton() {
   const agreement = document.getElementById('agreement');
   agreement.addEventListener('input', () => {
-    if (getAgreement()){
+    if (getAgreement()) {
       document.getElementById('submit-btn').disabled = false;
     } else {
       document.getElementById('submit-btn').disabled = true;

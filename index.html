@@ -35,6 +35,38 @@
             <option value="Pytherina" id="pytherina-house">Pytherina</option>
           </select>
         </section>
+        <hr>
+        <section id="family-type-content-learn">
+          <section id="family-type">        
+            <label for="" id="label-family">Qual sua família?</label> 
+            <label for="frontend">
+              <input type="radio" name="family" id="frontend" value="Frontend">Família Frontend
+            </label>
+            <label for="backend">
+              <input type="radio" name="family" id="backend" value="Backend">Família Backend
+            </label>
+            <label for="fullstack">
+              <input type="radio" name="family" id="fullstack" value="FullStack">Família FullStack
+            </label>
+          </section>
+          <section id="learn-content">
+            <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            <section id="learn-checkbox">
+              <input type="checkbox" value="HoFs" id="hofs" class="subject">
+              <label for="hofs">HoFs</label>
+              <input type="checkbox" value="Jest" id="jest" class="subject">
+              <label for="jest">Jest</label>
+              <input type="checkbox" value="Promises" id="promises" class="subject">
+              <label for="promises">Promises</label>
+              <input type="checkbox" value="React" id="react" class="subject">
+              <label for="react">React</label>
+              <input type="checkbox" value="SQL" id="sql" class="subject">
+              <label for="sql">SQL</label>
+              <input type="checkbox" value="Python" id="python" class="subject">
+              <label for="python">Python</label>
+            </section>
+          </section>
+        </section>
         <section id="final">
           <hr>
           <div class="line-content">
@@ -70,8 +102,8 @@
               <input class="form-check-input" type="radio" name="rate" id="10" value="1">10
             </label>
           </div>
-          <label class="form-label" for="textarea">Deixe seu comentário:</label>
-          <textarea name="curriculo" class="form-control" id="textarea" cols="30" rows="3" maxlength="500"></textarea>
+          <label class="form-label textarea" for="textarea">Deixe seu comentário:</label>
+          <textarea name="curriculo" class="form-control" id="textarea" cols="30" rows="3" maxlength="500" placeholder="Deixe deu comentario"></textarea>
           <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
           <input class="form-check-input" type="checkbox" id="agreement" value="agreement">
           <button type="submit" class="btn btn-primary submit-button" id="submit-btn" disabled >Enviar</button>
