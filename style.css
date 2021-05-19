@@ -41,3 +41,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#container-agreement {
+  display: flex;
+  flex-direction: row;
+}
