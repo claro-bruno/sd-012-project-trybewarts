@@ -1,7 +1,7 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  flex-flow: space-between;
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
@@ -107,4 +107,15 @@ main {
 
 .textarea {
   display: flex;
+}
+
+.agreement-container{
+ display: flex;
+}
+
+footer{
+ display: flex;
+ justify-content: center;
+ background-color: dimgray;
+ color: white;
 }
