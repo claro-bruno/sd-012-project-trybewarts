@@ -96,6 +96,7 @@ footer p {
 
 #form-section2 {
   display: flex;
+  text-align: center;
   margin: 10px 20px;
 }
 
@@ -105,6 +106,7 @@ footer p {
 
 #content-options {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -129,4 +131,8 @@ footer p {
 
 #rate-container input {
   margin: 3px 6px 0;
+}
+
+textarea {
+  resize: none;
 }
