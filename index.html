@@ -26,78 +26,69 @@
     <form id="evaluation-form" class="formEvaluation" method="GET" action="">
         <div id="pre-form">
                 <!-- Requisito 10 -->
-            <div id="form1-row1">   
-                 <!--Requisito 8  -->
-                <div class="line-content">
-                    <label for="input-name">Nome</label>
-                  <input type="text" name="name" id="input-name" maxlength="40" placeholder="Nome" required>
+                <div id="form1-row1">
+                    <!-- Requisito 8 -->
+                    <input placeholder="Nome" type="text" id="input-name">
+                    <input placeholder="Sobrenome" type="text" id="input-lastname">
                 </div>
-                <div class="line-content">
-                    <label for="input-lastname">Sobrenome</label>
-                    <input type="text" name="cpf" id="input-lastname" maxlength="40" placeholder="Sobrenome" required>
+                <!-- Requisito 11 -->
+                <div id="form1-row2">
+                    <input placeholder="Email" type="email" id="input-email">
+                    <!-- Requisito 9 -->
+                    <select name="house" id="house">
+                        <option value="">Casa</option>
+                        <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                        <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                        <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                    </select>
                 </div>
-            </div>
-            <!-- Requisito 11 -->
-            <div id="form1-row2">    
-                <label for="input-email">Endereço de e-mail: </label>
-                <input class="email-input" type="email" name="email" id="input-email" maxlength="50" placeholder="Email" required>
-                <!-- Requisito 9 -->
-                <select name="house" id="house">
-                    <option value="">Casa</option>
-                    <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-                    <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-                    <option value="Corvinode" id="corvinode-house">Corvinode</option>
-                    <option value="Pytherina" id="pytherina-house">Pytherina</option>
-                </select>
-            </div>
-        </div>   
-        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo alta trybewarts">
+                <hr> 
+                <div id="form2" class ="form-row">
+                    <div id="form2-left">
+                    <fieldset id="fieldset-family">
+                        <!-- Requisito 12 -->
+                        <label id="label-family">Qual sua família?</label>
+                        <legend>Qual sua família?</legend>
+                        <label for="family-frontend">Frontend</label>
+                        <input type="radio" name="family" id="family-frontend" value="Frontend">
+                        <label for="family-backend">Backend</label>
+                        <input type="radio" name="family" id="family-backend" value="Backend">
+                        <label for="family-full-stack">FullStack</label>
+                        <input type="radio" name="family" id="family-full-stack" value="FullStack">
+                    </fieldset>
+                    </div>
+                </div> 
+                <div id="form2-right">
+                    <fieldset id="fieldset-learning">
+                        <legend>Qual conteúdo você está com mais vontade de aprender?</legend>
+                        <!-- Requisito 13 -->
+                        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                        <label for="hofs">HoFs</label>
+                        <input type="checkbox" value="HoFs" id="hofs"class="subject">
+                        <label for="jest">Jest</label>
+                        <input type="checkbox" value="Jest" id="jest"class="subject">
+                        <label for="promises">Promises</label>
+                        <input type="checkbox" value="Promises" id="promises"class="subject">
+                        <label for="react">React</label>
+                        <input type="checkbox" value="React" id="react"class="subject">
+                        <label for="sql">SQL</label>
+                        <input type="checkbox" value="SQL" id="sql"class="subject">
+                        <label for="Phyton">Python</label>
+                        <input type="checkbox" value="Python" id="python"class="subject">
+                    </fieldset>
+                </div>   
+                    </option>
+                </label> 
     </form>
     <div>
         
-        <label>Casa
-        <select id="house" class="line-content-2">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
-    <div class ="form-row">
-        <fieldset id="fieldset-family">
-            <!-- Requisito 12 -->
-            <label id="label-family">Qual sua família?</label>
-            <legend>Qual sua família?</legend>
-            <label for="family-frontend">Frontend</label>
-            <input type="radio" name="family" id="family-frontend" value="Frontend">
-            <label for="family-backend">Backend</label>
-            <input type="radio" name="family" id="family-backend" value="Backend">
-            <label for="family-full-stack">FullStack</label>
-            <input type="radio" name="family" id="family-full-stack" value="FullStack">
-        </fieldset>
-    </div> 
-    <div class ="form-row">
-        <fieldset id="fieldset-learning">
-            <legend>Qual conteúdo você está com mais vontade de aprender?</legend>
-            <!-- Requisito 13 -->
-            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-            <label for="hofs">HoFs</label>
-            <input type="checkbox" value="HoFs" id="hofs"class="subject">
-            <label for="jest">Jest</label>
-            <input type="checkbox" value="Jest" id="jest"class="subject">
-            <label for="promises">Promises</label>
-            <input type="checkbox" value="Promises" id="promises"class="subject">
-            <label for="react">React</label>
-            <input type="checkbox" value="React" id="react"class="subject">
-            <label for="sql">SQL</label>
-            <input type="checkbox" value="SQL" id="sql"class="subject">
-            <label for="Phyton">Python</label>
-            <input type="checkbox" value="Python" id="python"class="subject">
-        </fieldset>
-    </div>   
-        </option>
-    </label>
         
-       
+        
+    
+        
+    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo alta trybewarts">
+
     </div>
     <!-- Requisito 14 -->
     <div id="rate-div">

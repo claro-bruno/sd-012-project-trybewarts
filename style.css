@@ -10,6 +10,11 @@ body {
     margin: 0;
 }
 
+main form {
+    flex-direction: column;
+    width: 675px;;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
