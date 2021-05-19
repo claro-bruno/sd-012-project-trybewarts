@@ -24,3 +24,16 @@ function hability() {
 }
 
 checkbox.addEventListener('click', hability);
+
+/* Código do desafio 20 */
+
+let valorContador = 500;
+const comentario = document.querySelector('#textarea');
+const contador = document.querySelector('#counter');
+
+function contaCaracter() {
+  valorContador = (500 - comentario.value.length);
+  contador.innerHTML = valorContador;
+}
+
+comentario.addEventListener('keyup', contaCaracter);
