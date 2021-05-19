@@ -89,6 +89,7 @@ hr {
 #label-rate-container {
   margin-left: 2%;
   display: flex;
+  align-items: center;
 }
 
 #terms {
@@ -107,6 +108,15 @@ hr {
   margin-left: 2%;
 }
 
-#programming-family label input {
-  
+#learn-content {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 2%;
 }
+
+.subjects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
