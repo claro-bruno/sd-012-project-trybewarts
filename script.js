@@ -31,9 +31,31 @@ textarea.addEventListener('keyup', () => {
   counter.innerHTML = maxLength - textarea.value.length;
 });
 
+function printSubjects() {
+  let subjects = [];
+
+
+  for (let index = 0; index < 6; index += 1) {
+    if (checks[index].checked === true) {
+      subjects.push(checks[index].value);
+    }
+  }
+
+  if ( subjects.length > 0 ) {
+    console.log('MAIOR QUE ZERO');
+    let subjectString = `${subjects[0]}`;
+    for (let item = 1; item < subjects.length; item += 1) {
+      subjectString += `, ${subjects[item]}`;
+    }
+    document.querySelector('#subjects-list').innerHTML = `Matérias: ${subjectString}`;
+  } else {
+    document.querySelector('#subjects-list').innerHTML = `Matérias:`;
+  }
+}
+
 submit.addEventListener('click', (event) => {
   event.preventDefault();
-  document.querySelector('#evaluation-form').style.display = "none";
+  document.querySelector('#pre-form').style.display = "none";
 
   let name = document.querySelector('#input-name').value;
   let lastname = document.querySelector('#input-lastname').value;
@@ -42,19 +64,12 @@ submit.addEventListener('click', (event) => {
   let email = document.querySelector('#input-email').value;
   let house = document.querySelector('#house').value;
   let comment = document.querySelector('textarea').value;
-  let subjects = [];
   let family = [];
   let rate = [];
 
   for (let index = 0; index < 3; index += 1) {
     if (radios[index].checked === true) {
       family.push(radios[index].value);
-    }
-  }
-
-  for (let index = 0; index < 6; index += 1) {
-    if (checks[index].checked === true) {
-      subjects.push(checks[index].value);
     }
   }
 
@@ -68,9 +83,9 @@ submit.addEventListener('click', (event) => {
   document.querySelector('#email-list').innerHTML = `Email: ${email}`;
   document.querySelector('#house-list').innerHTML = `Casa: ${house}`;
   document.querySelector('#family-list').innerHTML = `Família: ${family}`;
-  document.querySelector('#subjects-list').innerHTML = `Matérias: ${subjects}`;
   document.querySelector('#rate-list').innerHTML = `Avaliação: ${rate}`;
-  document.querySelector('#comment-list').innerHTML = `Observações ${comment}`;
+  document.querySelector('#comment-list').innerHTML = `Observações: ${comment}`;
+  printSubjects();
 
   document.querySelector('#form-results').style.display = "flex";
 })
