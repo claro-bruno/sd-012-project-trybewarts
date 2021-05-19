@@ -94,8 +94,12 @@ function replaceContentElement() {
 
 function replaceCommentElement() {
   const commentParagraph = document.createElement('p');
+  const commentContainer = comment.parentNode;
+  while (commentContainer.firstChild) {
+    commentContainer.removeChild(commentContainer.firstChild);
+  }
   commentParagraph.innerHTML = `Observações: ${comment.value} `;
-  comment.parentNode.replaceChild(commentParagraph, comment);
+  commentContainer.appendChild(commentParagraph);
 }
 
 submitButton.addEventListener('click', () => {
