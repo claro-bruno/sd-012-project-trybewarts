@@ -26,7 +26,18 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  margin: 50px;
+  justify-content: right;
 }
 #trybewarts-forms-logo {
   height: 500px;
+  width: 300px;
+  
+}
+#label-rate {
+  display: flex;
+  /* justify-content: ; */
+}
+.trybewarts-header-logo {
+  width: 70px;
 }
