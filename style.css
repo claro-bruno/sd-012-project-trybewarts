@@ -98,3 +98,10 @@
   display: flex;
   flex-direction: row;
 }
+
+#submit-btn {
+  background-color: indigo;
+  color: whitesmoke;
+  width: 100%;
+  border-radius: 5px;
+}
