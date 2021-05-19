@@ -16,7 +16,7 @@ header {
 button {
   background-color: aliceblue;
 }
-.trybewarts-login {
+body img {
   display: flex;
 }
 main {
@@ -27,5 +27,23 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  align-content: flex-start;
+  
 }
 
+#trybewarts-forms-logo {
+  height: 500px;
+  margin-left: auto;
+}
+
+main form {
+  display: flex;
+}
+
+#input-lastname, #input-name {
+  width: 200px;
+}
+
+.trybewarts-login{
+  display: flex;
+}
