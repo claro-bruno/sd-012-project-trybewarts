@@ -1,4 +1,3 @@
-
 // valida login e senha
 function validacaoLoginSenha(event) {
   // acessa elemento com id 'inputSenha'
@@ -17,33 +16,34 @@ function validacaoLoginSenha(event) {
   }
 }
 
-//gerencia os clicks na página
-const listener = function (event) {
+function validaBotaoSubmit(event) {
+  // acessa elemento com id 'submit-btn'
+  const btnSubmit = document.querySelector('#submit-btn');
+  // se o checkbox estiver marcado
+  if (event.target.value === 'on') {
+    // habilita botão de submit
+    btnSubmit.disabled = false;
+    // altera estado do checkbox para desmarcado
+    event.target.value = 'off';
+  } else {
+    // se não, desabilita botão submit
+    btnSubmit.disabled = true;
+    // altera estado do checkbox para marcado
+    event.target.value = 'on';
+  }
+}
 
+// gerencia os clicks na página
+function listener(event) {
   // se o alvo do click for o elemento com id 'botaoLogin'
   if (event.target.id === 'botaoLogin') {
     // valida login e senha
     validacaoLoginSenha(event);
   }
-  
   // se o alvo do click for o elemento com id 'agreement' (checkbox)
   if (event.target.id === 'agreement') {
-    // acessa elemento com id 'submit-btn'
-    const btnSubmit = document.querySelector('#submit-btn');
-    // se o checkbox estiver marcado
-    if (event.target.value === 'on') {
-      // habilita botão de submit
-      btnSubmit.disabled = false;
-      // altera estado do checkbox para desmarcado
-      event.target.value = 'off';
-    } else {
-      // se não, desabilita botão submit
-      btnSubmit.disabled = true;
-      // altera estado do checkbox para marcado
-      event.target.value = 'on';
-    }
-
+    validaBotaoSubmit(event);
   }
-};
+}
 // adiciona evento de click em toda a página
 document.addEventListener('click', listener);
