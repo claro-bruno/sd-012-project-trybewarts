@@ -11,6 +11,7 @@
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
+  
 }
 
 .header .trybewarts-header-logo {
@@ -25,4 +26,11 @@
 
 #login , #password {
   width: 100px;
+}
+#buttonSubmit {
+  margin-right: 15px;
+}
+
+#trybewarts-header-title{
+ margin-top: 15px;
 }
