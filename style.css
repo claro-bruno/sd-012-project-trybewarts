@@ -42,3 +42,29 @@ form {
   display: flex;
   flex-direction: row;
 }
+
+.container-radios {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-item-radio {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-checkbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-check-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.radio-validation {
+  display: flex;
+  flex-direction: row;
+}
+

@@ -36,11 +36,22 @@
           <div class="family-content">
             <div>
               <label id="label-family" required name="family">Qual sua família?</label>
-                <input type="radio" name="family" value="Frontend">Frontend</input>
-                <input type="radio" name="family" value="Backend">Backend</input>
-                <input type="radio" name="family" value="FullStack">Fullstack</input>
+              <div class="container-radios">
+                <div class="container-item-radio">
+                  <label class="item-radio" name="family">Frontend</label>
+                  <input type="radio" name="family" value="Frontend"></input>
+                </div>
+                <div class="container-item-radio">
+                  <label class="item-radio" name="family">Backend</label name="family">
+                  <input type="radio" name="family" value="Backend"></input>
+                </div>
+                <div class="container-item-radio">
+                  <label class="item-radio" name="family">FullStack</label>
+                  <input type="radio" name="family" value="FullStack"></input>
+                </div>
+              </div>
             </div>
-            <div>
+            <div class="container-checkbox">
               <label id="label-content" required name="content">Qual conteúdo você está com mais vontade de aprender?</label>
               <input type="checkbox" name="content" class="subject" value="HoFs">HoFs
               <input type="checkbox" name="content" class="subject" value="Jest">Jest
@@ -50,18 +61,18 @@
               <input type="checkbox" name="content" class="subject" value="Python">Python
             </div>
           </div>
-          <div>
-            <label id="label-rate" name="rate">Como você avalia a Trybewarts?</label>
-            <input type="radio" name="rate">1
-            <input type="radio" name="rate">2
-            <input type="radio" name="rate">3
-            <input type="radio" name="rate">4
-            <input type="radio" name="rate">5
-            <input type="radio" name="rate">6
-            <input type="radio" name="rate">7
-            <input type="radio" name="rate">8
-            <input type="radio" name="rate">9
-            <input type="radio" name="rate">10
+          <div class="radio-validation">
+            <label id="label-rate">Como você avalia a Trybewarts?</label>
+            <label name="rate">1<input  type="radio" value="1" name="rate"></label>
+            <label name="rate">2<input id="radio-buttons" type="radio" value="2" name="rate"></label>
+            <label name="rate">3<input id="radio-buttons" type="radio" value="3" name="rate"></label>
+            <label name="rate">4<input id="radio-buttons" type="radio" value="4" name="rate"></label>
+            <label name="rate">5<input id="radio-buttons" type="radio" value="5" name="rate"></label>
+            <label name="rate">6<input id="radio-buttons" type="radio" value="6" name="rate"></label>
+            <label name="rate">7<input id="radio-buttons" type="radio" value="7" name="rate"></label>
+            <label name="rate">8<input id="radio-buttons" type="radio" value="8" name="rate"></label>
+            <label name="rate">9<input id="radio-buttons" type="radio" value="9" name="rate"></label>
+            <label name="rate">10<input id="radio-buttons" type="radio" value="10" name="rate"></label>
           </div>
           <div>
             <label class="textarea" id="textarea">Deixe seu comentário:</label>
