@@ -85,15 +85,18 @@ hr {
   margin-top: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and ( max-width : 768px ) {
+
   .header {
     display: flex;
     flex-direction: column;
   }
-  .trybewarts-header-logo{
+
+  .trybewarts-header-logo {
     display: none;
   }
+
   #trybewarts-forms-logo {
-    width: 100%
+    width: 100%;
   }
 }
