@@ -35,6 +35,16 @@ main {
   margin-bottom: 5px;
 }
 
+/* Estilização dos Radios de Satisfação */
+#satisfactionAssessment {
+  display: flex;
+  align-items: center;
+}
+
+#satisfactionAssessment input {
+  width: 10px;
+}
+
 /* Estilização da Imagem */
 #trybewarts-forms-logo {
   height: 500px;
