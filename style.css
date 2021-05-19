@@ -2,6 +2,7 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
 }
 
@@ -13,7 +14,6 @@ h1 {
 
 .trybewarts-header-logo {
   max-width: 50px;
-
 }
 
 .trybewarts-login {
@@ -135,4 +135,8 @@ main input:nth-of-type( 2 ) {
   display: flex;
   flex-flow: column wrap;
   height: 100px;
+}
+
+.none {
+  display: none !important;
 }

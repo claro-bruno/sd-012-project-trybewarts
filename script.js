@@ -24,3 +24,27 @@ function hability() {
 }
 
 checkbox.addEventListener('click', hability);
+
+const form = document.getElementsByClassName('form-data');
+const btnForm = document.querySelector('#submit-btn');
+const nome = document.getElementsByClassName('nome-completo')[0].children;
+const main = document.getElementsByClassName('main');
+
+function captureElements() {
+  let nomeCompleto = document.createElement('li');
+  nomeCompleto.innerHTML = 'Nome: ';
+  for (let index = 0; index < nome.length; index += 1) {
+    nomeCompleto.innerHTML += nome[index].value + ' ';
+  }
+  main[0].appendChild(nomeCompleto);
+}
+
+function formChange() {
+  for (let indexForm = 0; indexForm < form.length; indexForm += 1) {
+    form[indexForm].remove();
+  }
+}
+
+btnForm.addEventListener('click', captureElements);
+btnForm.addEventListener('click', formChange);
+
