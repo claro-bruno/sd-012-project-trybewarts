@@ -22,9 +22,18 @@ function enableSubmit() {
   const checkbox = document.querySelector('#agreement');
 
   checkbox.addEventListener('click', () => {
-    const condition = document.querySelector('#agreement').value;
-    if (condition === 'true') {
+    const condition = checkbox.value;
+    if (condition === 'false') {
+      console.log(checkbox.value);
       submitButton.disabled = false;
+      checkbox.value = 'true';
+      console.log(checkbox.value);
+    }
+    if (condition === 'true') {
+      console.log(checkbox.value);
+      submitButton.disabled = true;
+      checkbox.value = 'false';
+      console.log(checkbox.value);
     }
   });
 }
