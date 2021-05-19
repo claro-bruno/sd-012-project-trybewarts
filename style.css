@@ -27,3 +27,8 @@
 .main img {
   height: 500px;
 }
+
+.radios {
+  display: flex;
+  flex-direction: column;
+}
