@@ -109,6 +109,8 @@ const limite = (valor1) => {
   } else {
     document.getElementById('textarea').value = quant;
   }
+  return true;
 };
 
-const usefunction = limite('');
+let usefunction = limite('');
+usefunction += false;
