@@ -27,18 +27,20 @@
   color: white;
 }
 
-/* ↓↓↓ Main do site*/
+/* Main do site */
 main {
   display: flex;
   justify-content: center;
 
 }
+
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
 
 }
+
 #trybewarts-forms-logo {
   height: 500px;
 }
