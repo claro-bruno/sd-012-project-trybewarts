@@ -9,14 +9,144 @@ body {
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  color: aliceblue;
   justify-content: space-between;
+  align-items: center;
+}
+
+.trybewarts-header-logo {
+  height: 100px;
+}
+
+#login-input {
+  width: 200px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+#login-pass {
+  width: 200px;
+  margin-left: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+#login-btn {
+  border-radius: 10px;
 }
 
 .trybewarts-login {
   display: flex;
-  align-items: center;
+  margin-right: 20px;
+  justify-content: space-between;
 }
 
 main {
   display: flex;
+}
+
+#label-forms {
+  display: flex;
+  justify-content: center;
+}
+
+#input-name {
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+#input-lastname {
+  border-radius: 10px;
+}
+
+#name-lastName {
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+#label-house {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 6px;
+}
+
+#input-email {
+  width: 200px;
+  border-radius: 10px;
+}
+
+#house {
+  width: 205px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+
+#email-house {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.family-contents {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2%;
+}
+
+#evaluation-form {
+  background-color: rgb(228, 226, 226);
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+}
+
+.section-learning-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+
+#radio-section {
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+
+#text-area {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-around;
+  align-items: flex-start;
+  margin-top: 2px;
+}
+
+#agree-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#agreement {
+  margin: 15px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  margin-left: 150px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(150, 147, 147);
+  color: antiquewhite;
+  height: 30px;
+  align-items: center;
 }
