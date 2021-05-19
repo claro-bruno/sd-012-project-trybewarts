@@ -26,7 +26,7 @@
 
     </form>
   </header>
-  
+
   <main>
     <form id='evaluation-form'>
       <!-- nome e sobrenome -->
@@ -64,16 +64,19 @@
         </div>
       </div>
 
-      <label id='label-content'>Qual conteúdo você está com mais vontade de aprender?</label>
-      <div class="dados">
-        <input class='subject' type="checkbox" value='HoFs'> <label for=""> HoFs </label>
-        <input class='subject' type="checkbox" value='Jest'> <label for=""> Jest </label>
-        <input class='subject' type="checkbox" value='Promises'> <label for=""> Promises </label>
-        <input class='subject' type="checkbox" value='React'> <label for=""> React </label>
-        <input class='subject' type="checkbox" value='SQL'> <label for=""> SQL </label>
-        <input class='subject' type="checkbox" value='Python'> <label for=""> Python </label>
+      <div id='content-inputs'>
+        <label id='label-content'>Qual conteúdo você está com mais vontade de aprender?</label>
+        <div class="dados">
+          <input class='subject' type="checkbox" value='HoFs' name='content'> <label for=""> HoFs </label>
+          <input class='subject' type="checkbox" value='Jest' name='content'> <label for=""> Jest </label>
+          <input class='subject' type="checkbox" value='Promises' name='content'> <label for=""> Promises </label>
+          <input class='subject' type="checkbox" value='React' name='content'> <label for=""> React </label>
+          <input class='subject' type="checkbox" value='SQL' name='content'> <label for=""> SQL </label>
+          <input class='subject' type="checkbox" value='Python' name='content'> <label for=""> Python </label>
+        </div>
       </div>
-      <div id='avaliacao' class="dados">
+
+      <div id='avaliacao-input' class="dados">
         <label id='label-rate'>Como você avalia a Trybewarts?</label>
         <input type="radio" value='1' name='rate'> 1
         <input type="radio" value='2' name='rate'> 2
@@ -105,7 +108,7 @@
     <img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="Imagem logo">
 
   </main>
-  
+
   <footer>
 
     <p>Direitos reservados à Trybewarts©</p>

@@ -107,12 +107,27 @@ function mostrarFamilia() {
   evaluationForm.appendChild(paragrafoFamilia);
 }
 
+function mostrarConteudo() {
+  const conteudo = document.querySelector('#content-inputs');
+  const opcoesConteudo = document.getElementsByName('content');
+  const paragrafoConteudo = document.createElement('p');
+  const conteudosMarcados = [];
+  for(let opcao of opcoesConteudo) {
+    if(opcao.checked) {
+      conteudosMarcados.push(opcao.defaultValue);
+    }
+  }
+  paragrafoConteudo.innerHTML = `Matérias: ${conteudosMarcados.join(', ')}`;
+  conteudo.remove();
+  evaluationForm.appendChild(paragrafoConteudo);
+}
+
 function mostrarValores() {
   mostrarNomeCompleto();
   mostrarEmail();
   mostrarCasa();
   mostrarFamilia();
-  // mostrarConteudo();
+  mostrarConteudo();
   // mostrarAvaliacao();
   // mostrarComentario();
 }
