@@ -46,18 +46,21 @@
         </select>
       </div>
 
-      <label for="family-radio" id='label-family'>Qual sua família?</label>
-      <div id="family-radio" class="dados">
-        <div>
-          <input type="radio" name='family' id="radioFrontend" class="radioFamily" value="Frontend"> <label
-          for="radioFrontend">Frontend</label>
-        </div>
-        <div>
-          <input type="radio" name='family' id="radioBackend" class="radioFamily" value="Backend"> <label for="radioBackend">Backend</label>
-        </div>
-        <div>
-          <input type="radio" name='family' id="radioFullStack" class="radioFamily" value="FullStack"> <label
-          for="radioFullStack">FullStack</label>
+      <div id="family-input">
+        <label for="which-family" id="label-family">Qual sua família?</label>
+        <div id="which-family">
+          <div>
+            <input type="radio" name="family" value="Frontend" id="front-end" checked>
+            <label for="front-end">Frontend</label>
+          </div>
+          <div>
+            <input type="radio" name="family" value="Backend" id="back-end">
+            <label for="back-end">Backend</label>
+          </div>
+          <div>
+            <input type="radio" name="family" value="FullStack" id="full-stack">
+            <label for="full-stack">FullStack</label>
+          </div>
         </div>
       </div>
 

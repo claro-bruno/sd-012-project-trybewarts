@@ -94,11 +94,24 @@ function mostrarCasa() {
   evaluationForm.appendChild(paragrafoCasa);
 }
 
+function mostrarFamilia() {
+  const familia = document.querySelector('#family-input');
+  const opcoesFamilia = document.getElementsByName('family');
+  const paragrafoFamilia = document.createElement('p');
+  for(let opcao of opcoesFamilia) {
+    if(opcao.checked) {
+      paragrafoFamilia.innerHTML = `Família: ${opcao.value}`;
+    }
+  }
+  familia.remove();
+  evaluationForm.appendChild(paragrafoFamilia);
+}
+
 function mostrarValores() {
   mostrarNomeCompleto();
   mostrarEmail();
   mostrarCasa();
-  // mostrarFamilia();
+  mostrarFamilia();
   // mostrarConteudo();
   // mostrarAvaliacao();
   // mostrarComentario();
