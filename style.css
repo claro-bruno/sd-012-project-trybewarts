@@ -81,3 +81,8 @@ footer {
 main {
   display: flex;
 }
+
+#your-family {
+  display: flex;
+  flex-direction: column;
+}
