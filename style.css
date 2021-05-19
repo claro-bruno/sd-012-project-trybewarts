@@ -51,3 +51,27 @@ main {
 }
 
 /* Fim dos estilos da Main */
+.rate {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* falta algo aqui, só consegui deixar lado-a-lado */
+.features-container {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.label-family {
+  flex-direction: column;
+  width: 35%;
+}
+
+.skills-check {
+  width: 55%;
+}
+
+/* só pra bloquear a alteração do tamnaho ca daixa mesmo */
+.text-area {
+  resize: none;
+}
