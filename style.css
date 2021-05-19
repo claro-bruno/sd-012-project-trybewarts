@@ -41,3 +41,8 @@ main {
 #emailECasa {
   display: flex;
 }
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
