@@ -23,20 +23,36 @@ function loginButton() {
   });
 }
 
+function getAgreement() {
+  const agreement = document.getElementById('agreement').checked;
+  return agreement;
+}
+
+function enableButton() {
+  const agreement = document.getElementById('agreement');
+  agreement.addEventListener('input', () => {
+    if (getAgreement()) {
+      document.getElementById('submit-btn').disabled = false;
+    } else {
+      document.getElementById('submit-btn').disabled = true;
+    }
+  });
+}
+
 window.onload = () => {
   loginButton();
+  enableButton();
 };
 
-let maxChar = document.getElementById('counter');
+const maxChar = document.getElementById('counter');
 const inputText = document.getElementById('textarea');
-let valorMax = 500;
+const valorMax = 500;
 console.log(maxChar);
 
 function countChar(event) {
-    let textSise = event.target.value.length;
-    let total = valorMax - textSise; 
-    maxChar.innerHTML = total;
+  const textSise = event.target.value.length;
+  const total = valorMax - textSise;
+  maxChar.innerHTML = total;
 }
 
 inputText.addEventListener('keyup', countChar);
-
