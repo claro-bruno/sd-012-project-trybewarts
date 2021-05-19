@@ -19,17 +19,14 @@ function validacaoLoginSenha(event) {
 function validaBotaoSubmit(event) {
   // acessa elemento com id 'submit-btn'
   const btnSubmit = document.querySelector('#submit-btn');
+  
   // se o checkbox estiver marcado
-  if (event.target.value === 'on') {
+  if(event.target.checked) {
     // habilita botão de submit
-    btnSubmit.disabled = false;
-    // altera estado do checkbox para desmarcado
-    event.target.value = 'off';
+    btnSubmit.removeAttribute('disabled');
   } else {
     // se não, desabilita botão submit
-    btnSubmit.disabled = true;
-    // altera estado do checkbox para marcado
-    event.target.value = 'on';
+    btnSubmit.setAttribute('disabled', true);
   }
 }
 
