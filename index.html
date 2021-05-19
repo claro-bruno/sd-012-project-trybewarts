@@ -107,12 +107,17 @@
       </div>
       <!-- Linha divisória -->
       <div id="comments-textarea">
-        <label for="comments" class="textarea">Deixe seu comentário:</label>
-        <textarea name="comments" id="comments" cols="30" rows="10" maxlength="500"></textarea>
+        <label for="textarea" class="textarea">Deixe seu comentário:</label>
+        <textarea name="comments" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
       </div>
-      <div>
-        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" name="agreement" id="agreement">
+      <div class="pergunta-verificacao">
+        <div class="separacao1">
+          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" name="agreement" id="agreement">
+        </div>
+        <div class="separacao2">
+          <div id="counter">500</div>
+        </div>
       </div>
       <button type="submit" id="submit-btn" class="submit-btn btn" disabled="true">Enviar</button>
     </form>

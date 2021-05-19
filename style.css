@@ -137,6 +137,20 @@ main input:nth-of-type( 2 ) {
   height: 100px;
 }
 
-.none {
-  display: none !important;
+.pergunta-verificacao {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#label-infos {
+  margin-right: 10px;
+}
+
+#counter {
+  justify-content: flex-end;
+}
+
+.separacao2 {
+  text-align: right;
 }
