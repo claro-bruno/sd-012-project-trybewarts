@@ -26,7 +26,7 @@ Observação Euller: Gostei bastante da experiência, graças alguns probleminha
 ---
 
 **Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
-Euller Tadeu Pereira Braz
+Euller Tadeu Pereira Braz.
 Sarah Gonçalves
 ---
 
