@@ -32,4 +32,4 @@ const checkAgreement = document.querySelector('#agreement');
 checkAgreement.addEventListener('change', changeBtnStatus);
 
 const textArea = document.querySelector('textarea');
-textArea.addEventListener('change', checkLengthArea);
+textArea.addEventListener('keyup', checkLengthArea);
