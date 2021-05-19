@@ -34,3 +34,9 @@
 #trybewarts-header-title{
  margin-top: 15px;
 }
+main , #evaluation-form{
+  display: flex;
+}
+#evaluation-form{
+  width: 675px;
+}
