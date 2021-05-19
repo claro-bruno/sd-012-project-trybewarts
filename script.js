@@ -4,7 +4,7 @@ const btn = document.querySelector('#buttonEntrar');
 const btn2 = document.querySelector('#submit-btn');
 
 function verificaLogin() {
-  if (login.value === 'tryber@teste.com' && senha.value === '123456') {
+  if(login.value === 'tryber@teste.com' && senha.value === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
@@ -18,10 +18,12 @@ const inputHouse = document.getElementById('house').value;
 const inputsFamilia = document.getElementsByName('family');
 const inputsConteudo = document.getElementsByName('conteudo');
 const mainElement = document.getElementById('mainEl');
+const inputAval = document.getElementsByName('rate');
+const comentText = document.getElementById('textarea').value;
 
 function getFamily() {
   let textoFam = 'Família: '
-  for (index = 0; index < inputsFamilia.length; index += 1){
+  for (let index = 0; index < inputsFamilia.length; index += 1){
     if (inputsFamilia[index].checked) {
      let famSelec = inputsFamilia[index].value;
      textoFam += famSelec;
@@ -30,46 +32,56 @@ function getFamily() {
   return textoFam;
 }
 
-getFamily();
+function getAvaliacao() {
+  let textoAva = 'Avaliação: '
+  for (let index = 0; index < inputAval.length; index += 1){
+     if (inputAval[index].checked) {
+     let rate = inputAval[index].value;
+     textoAva += rate;
+    }
+  }
+  return textoAva;
+}
 
 function getConteudo() {
   let textoCont = 'Matérias: '
-  for (index = 0; index < inputsConteudo.length; index += 1){
+  for (let index = 0; index < inputsConteudo.length; index += 1){
     if (inputsConteudo[index].checked) {
      let contSelec = inputsConteudo[index].value;
-     textoCont += contSelec + ', '
+     textoCont += contSelec + ', ';
     }
   }
   return textoCont;
 }
 
-getConteudo();
-
-function criaDiv () {
+function criaDiv() {
   let formDiv = document.createElement('div');
   mainElement.appendChild(formDiv);
-  
-  for (index1 = 0; index1 < 7; index1 += 1){
+  for (let index1 = 0; index1 < 7; index1 += 1){
     let pDiv = document.createElement('p');
-    pDiv.className = 'formItens';
+    pDiv.id = 'formItens' + index1;
+    pDiv.innerHTML = recebeValores(index)
     formDiv.appendChild(pDiv);
   }
+}
 
+function recebeValores(num) {
   let textoNomeSobrenome = 'Nome: ' + inputName + ' ' + inputLastName;
   let textoEmail = 'Email: ' + inputEmail;
   let textoCasa = 'Casa: ' + inputHouse;
-  getFamily();
-  getConteudo();
+  let textoComent = 'Observações: ' + comentText;
+  let array = [textoNomeSobrenome, textoEmail, textoCasa, getFamily(), getConteudo(), getAvaliacao(), textoComent];
+  return array[num];
 }
 
 const evalForm = document.getElementById('evaluation-form');
 
 function hideForm() {
-  evalForm.style.display='none';
+  evalForm.style.display = 'none';
   criaDiv();
 }
 
-function preventDef (event) {
+function preventDef(event) {
   event.preventDefault();
 }
 
@@ -81,7 +93,7 @@ btn.addEventListener('click', verificaLogin);
 const valor = document.querySelector('#agreement');
 
 function habilitaBotão() {
-  if (valor.checked) {
+  if(valor.checked) {
     btn2.disabled = false;
   } else {
     btn2.disabled = true;
@@ -100,7 +112,3 @@ function limite_textarea(valor) {
     document.getElementById('textarea').value = valor.substr(0,quant);
   }
 }
-
-let nome = document.querySelector('#input-name').value;
-let sobrenome = document.querySelector('#nput-lastname').value;
-nome.innerHTML = nome + sobrenome;

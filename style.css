@@ -75,15 +75,15 @@ main img {
 #input-name , #input-lastname , #input-email {
   padding: 15px;
   margin: 5px;
-  flex-grow: 1;
+  flex-grow: 0;
   border: none;
   box-shadow: 2px 2px 10px black;
 }
 
 #labelhouse {
-  margin-top: 4px;
+  margin-top: 2px;
   margin-left: 10px;
-  flex-grow: 2;
+  flex-grow: 1;
   font-weight: 700;
 }
 
