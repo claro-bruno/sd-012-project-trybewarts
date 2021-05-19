@@ -90,16 +90,19 @@ main {
   display: flex;
 }
 
-.ckbx-container { 
+.ckbx-container {
   display: flex;
 }
 
 .text-container {
   display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
 }
 
 #textarea {
   display: flex;
+  order: 1;
 }
 
 .textarea {
