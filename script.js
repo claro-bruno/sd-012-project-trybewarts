@@ -81,3 +81,14 @@ function createRate() {
   }
 }
 createRate();
+
+// Cria verificação de botão
+const checkAgree = document.getElementById('agreement');
+const submitBtn = document.getElementById('submit-btn');
+checkAgree.addEventListener('click', () => {
+  if (submitBtn.disabled === true) {
+    submitBtn.disabled = false;
+  } else if (submitBtn.disabled === false) {
+    submitBtn.disabled = true;
+  }
+});
