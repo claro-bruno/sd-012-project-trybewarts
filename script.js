@@ -3,7 +3,7 @@ const familys = ['Frontend', 'Backend', 'FullStack'];
 const houses = ['Gitnória', 'Reactpuff', 'Corvinode', 'Pytherina'];
 const tech = ['HoFs', 'Jest', 'Promises', 'React', 'SQL', 'Python'];
 
-function botaoLoginPassword() {
+const botaoLoginPassword = () => {
   const loginTrybewarts = document.querySelector('#login');
   const senhaTrybewarts = document.querySelector('#password');
   if (loginTrybewarts.value !== 'tryber@teste.com' || senhaTrybewarts.value !== '123456') {
@@ -12,18 +12,18 @@ function botaoLoginPassword() {
   if (loginTrybewarts.value === 'tryber@teste.com' && senhaTrybewarts.value === '123456') {
     alert('Olá, Tryber!');
   }
-}
+};
 
-function preventD() {
+const preventD = () => {
   button.addEventListener('click', (event) => {
     event.preventDefault();
     botaoLoginPassword();
   });
-}
+};
 
 preventD();
 
-function createHouses() {
+const createHouses = () => {
   const getTagHouse = document.getElementById('house');
   for (let index = 0; index < houses.length; index += 1) {
     const createOption = document.createElement('option');
@@ -36,11 +36,11 @@ function createHouses() {
     createOption.id = familyId;
     getTagHouse.appendChild(createOption);
   }
-}
+};
 
 createHouses();
 
-function createFamily() {
+const createFamily = () => {
   const getTagFamily = document.getElementById('family-input');
   for (let index = 0; index < familys.length; index += 1) {
     const createLabelFamily = document.createElement('label');
@@ -54,11 +54,11 @@ function createFamily() {
     getTagFamily.appendChild(createLabelFamily);
     getTagFamily.appendChild(createInput);
   }
-}
+};
 
 createFamily();
 
-function createTech() {
+const createTech = () => {
   const getDivTech = document.getElementById('radio-button-container');
   for (let index = 0; index < tech.length; index += 1) {
     const createLabelTech = document.createElement('label');
@@ -70,7 +70,7 @@ function createTech() {
     getDivTech.appendChild(createLabelTech);
     getDivTech.appendChild(createInputTech);
   }
-}
+};
 
 createTech();
 
@@ -85,10 +85,10 @@ document.querySelector('#agreement').addEventListener('input', () => {
 
 const getTxtArea = document.getElementById('textarea');
 
-function contador() {
+const contador = () => {
   const getContador = document.querySelector('#counter');
   getContador.innerHTML = getTxtArea.textLength;
-}
+};
 
 getTxtArea.addEventListener('keydown', contador);
 
