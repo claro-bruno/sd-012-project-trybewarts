@@ -27,10 +27,10 @@ function getFamily() {
     if (inputsFamilia[index].checked) {
      let famSelec = inputsFamilia[index].value;
      textoFam += famSelec;
-    };
-  };
+    }
+  }
   return textoFam;
-};
+}
 
 getFamily();
 
@@ -40,10 +40,10 @@ function getConteudo() {
     if (inputsConteudo[index].checked) {
      let contSelec = inputsConteudo[index].value;
      textoCont += contSelec + ', '
-    };
-  };
+    }
+  }
   return textoCont;
-};
+}
 
 getConteudo();
 
@@ -64,18 +64,16 @@ function criaDiv () {
   getConteudo();
 }
 
-
-
 const evalForm = document.getElementById('evaluation-form');
 
 function hideForm() {
   evalForm.style.display='none';
   criaDiv();
-};
+}
 
 function preventDef (event) {
   event.preventDefault();
-};
+}
 
 evalForm.addEventListener('submit', preventDef);
 
@@ -95,10 +93,6 @@ function habilitaBotão() {
 
 valor.addEventListener('click', habilitaBotão);
 
-<<<<<<< HEAD
-
-
-=======
 function limite_textarea(valor) {
   let quant = 500;
   let total = valor.length;
@@ -110,6 +104,7 @@ function limite_textarea(valor) {
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 let nome = document.querySelector('#input-name').value;
 let sobrenome = document.querySelector('#nput-lastname').value;
@@ -118,3 +113,6 @@ nome.innerHTML = nome + sobrenome;
 // btn2.addEventListener('click', substituiForm)
 >>>>>>> 1d83929432f6fca90b6a896762e51690cfcc3e4c
 >>>>>>> f8c527ed617c6caf99b44e961ee9956ea5b70bb6
+=======
+
+>>>>>>> e4bccd70a4c02ad3c50d1ae02da1d3891f2ff019
