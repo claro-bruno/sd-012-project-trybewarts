@@ -109,13 +109,6 @@ main {
   display: flex;
 }
 
-<<<<<<< HEAD
-=======
-.agreement-container {
-  display: flex;
-}
-
->>>>>>> 148b9f657e66cb1aaaef4d5376033e6198d7e580
 .submit-container {
   display: flex;
 }
@@ -130,4 +123,8 @@ footer {
   justify-content: center;
   background-color: dimgray;
   color: white;
+}
+
+#counter {
+  display: flex;
 }

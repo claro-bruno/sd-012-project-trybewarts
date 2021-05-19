@@ -24,3 +24,18 @@ function enableButton(event) {
   }
 }
 getAgreementCheck.addEventListener('click', enableButton);
+
+function counterFunction {
+  let contador = 500;
+  let getTextArea = document.querySelectorAll(#textarea);
+  if (getTextAra !== '') {
+    for (let index = 500; index < getTextArea.length; index -= 1) {
+      contador = contador - getTextArea.length;
+    }
+  } else {
+      for (let index = 500; index < getTextArea.length; index += 1) {
+        contador = index;
+    }
+  }
+  console.log(contador);
+}
