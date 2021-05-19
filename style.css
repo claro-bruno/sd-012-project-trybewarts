@@ -10,11 +10,11 @@
   height: 100px;
   justify-content: space-between;
 }
-
-/*.trybewarts-header-logo {
+/*
+.trybewarts-header-logo {
   padding: 10px;
-}*/
-
+}
+*/
 .trybewarts-login {
   display: flex;
   align-items: center;
@@ -23,7 +23,7 @@
 .trybewarts-login input {
   width: 150px;
   height: 35px;
-  margin: 0px 10px;
+  margin: 0 10px;
 }
 
 .trybewarts-login button {
