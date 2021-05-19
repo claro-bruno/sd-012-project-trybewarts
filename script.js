@@ -1,7 +1,8 @@
-const loginField = document.getElementsByClassName('login-field');
-const senhaField = document.getElementsByClassName('senha-field');
+const loginField = document.getElementById('login-field');
+const senhaField = document.getElementById('senha-field');
 
 function validate() {
+    console.log(loginField.value)
   if (loginField.value === 'tryber@teste.com' && senhaField.value === '123456') {
     alert('Olá, Tryber!');
   } else {
@@ -9,4 +10,4 @@ function validate() {
   }
 }
 
-document.getElementById('entrar').addEventListener('click', validate);
+
