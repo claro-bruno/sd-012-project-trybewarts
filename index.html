@@ -31,7 +31,7 @@
             </div>
             <div>
             <input id="input-email" type="text" placeholder="Email">
-
+            
             <label for="house" id="select-label">Casa:</label>
             <select name="casa" id="house">
                 <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -39,6 +39,7 @@
                 <option value="Corvinode" id="corvinode-house">Corvinode</option>
                 <option value="Pytherina" id="pytherina-house">Pytherina</option>
             </select>
+            <hr>
             </div>
             <label for="" id="label-family">Qual sua família?</label>
             <div class="form-check">
@@ -54,8 +55,8 @@
                 </label>
               </div>
               <div class="form-check">
-                <input value="FullStack" class="form-check-input" type="radio" name="family" id="flexRadioDefault2" checked>
-                <label class="form-check-label" for="flexRadioDefault2">
+                <input value="FullStack" class="form-check-input" type="radio" name="family" id="flexRadioDefault3" checked>
+                <label class="form-check-label" for="flexRadioDefault3">
                     FullStack
                 </label>
               </div>
@@ -70,42 +71,46 @@
                   <label class="form-check-label" for="inlineCheckbox2">Jest</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="subject" type="checkbox" id="inlineCheckbox2" value="Promises">
-                  <label class="form-check-label" for="inlineCheckbox2">Promises</label>
+                  <input class="subject" type="checkbox" id="inlineCheckbox3" value="Promises">
+                  <label class="form-check-label" for="inlineCheckbox3">Promises</label>
                 </div><br>
                 <div class="form-check form-check-inline"> 
-                  <input class="subject" type="checkbox" id="inlineCheckbox1" value="React">
-                  <label class="form-check-label" for="inlineCheckbox1">React</label>
+                  <input class="subject" type="checkbox" id="inlineCheckbox4" value="React">
+                  <label class="form-check-label" for="inlineCheckbox4">React</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="subject" type="checkbox" id="inlineCheckbox2" value="SQL">
-                  <label class="form-check-label" for="inlineCheckbox2">SQL</label>
+                  <input class="subject" type="checkbox" id="inlineCheckbox5" value="SQL">
+                  <label class="form-check-label" for="inlineCheckbox5">SQL</label>
                 </div>
                 <div class="form-check form-check-inline">
-                  <input class="subject" type="checkbox" id="inlineCheckbox2" value="Python">
-                  <label class="form-check-label" for="inlineCheckbox2">Python</label>
+                  <input class="subject" type="checkbox" id="inlineCheckbox6" value="Python">
+                  <label class="form-check-label" for="inlineCheckbox6">Python</label>
                 </div>
               </div>
-        </form>
-
-    </main>
-
-
-        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
+        <hr>
         <footer id="avaliador">
-        <label id="label-rate" for="rate">Como você avalia a Trybewarts? </label>
-            <input type="radio" name="rate" class="radInput" value="1">1
-            <input type="radio" name="rate" class="radInput" value="2">2
-            <input type="radio" name="rate" class="radInput" value="3">3
-            <input type="radio" name="rate" class="radInput" value="4">4
-            <input type="radio" name="rate" class="radInput" value="5">5
-            <input type="radio" name="rate" class="radInput" value="6">6
-            <input type="radio" name="rate" class="radInput" value="7">7  
-            <input type="radio" name="rate" class="radInput" value="8">8
-            <input type="radio" name="rate" class="radInput" value="9">9
-            <input type="radio" name="rate" class="radInput" value="10">10
-        </footer>
-
+            <label id="label-rate" for="rate">Como você avalia a Trybewarts? </label>
+                <input type="radio" name="rate" class="radInput" value="1">1
+                <input type="radio" name="rate" class="radInput" value="2">2
+                <input type="radio" name="rate" class="radInput" value="3">3
+                <input type="radio" name="rate" class="radInput" value="4">4
+                <input type="radio" name="rate" class="radInput" value="5">5
+                <input type="radio" name="rate" class="radInput" value="6">6
+                <input type="radio" name="rate" class="radInput" value="7">7  
+                <input type="radio" name="rate" class="radInput" value="8">8
+                <input type="radio" name="rate" class="radInput" value="9">9
+                <input type="radio" name="rate" class="radInput" value="10">10
+            </footer>
+            
+            <label for="comentario" class="textarea">Deixe seu comentário:
+                <textarea name="comentario" id="comentario" cols="30" rows="5" maxlength="500" placeholder="Deixe aqui seu Comentario!"></textarea>
+            </label>
+        </form>
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo Trybe">      
+            
+    </main>
+ 
+        
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
