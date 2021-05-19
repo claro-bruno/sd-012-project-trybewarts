@@ -72,3 +72,8 @@ hr {
   height: 2px;
   margin: 5% 0;
 }
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+}
