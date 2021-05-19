@@ -49,8 +49,9 @@ function rate() {
 function isChecked() {
   if (checkboxAgreement.checked === true) {
     submitButton.disabled = 0;
+    submitButton.style.opacity = 1;
   } else {
-    submitButton.disabled = 1;
+    submitButton.style.opacity = 0.5;
   }
 }
 

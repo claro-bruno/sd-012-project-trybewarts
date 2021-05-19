@@ -63,6 +63,8 @@ body {
 main {
   display: flex;
   height: 100vh;
+  margin: auto;
+  justify-content: space-around;
 }
 
 h1 {
@@ -101,6 +103,10 @@ h1 {
 
 .content-container label {
   margin-right: 25px;
+}
+
+.skills {
+  margin-top: 32px;
 }
 
 .family-container label {
@@ -161,7 +167,8 @@ textarea {
 
 #submit-btn {
   margin-top: 10px;
-  padding: 5px;
+  border: none;
+  padding: 7px;
   width: 80%;
 }
 
