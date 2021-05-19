@@ -25,17 +25,24 @@ function enableButton(event) {
 }
 getAgreementCheck.addEventListener('click', enableButton);
 
-function counterFunction {
-  let contador = 500;
-  let getTextArea = document.querySelectorAll(#textarea);
-  if (getTextAra !== '') {
-    for (let index = 500; index < getTextArea.length; index -= 1) {
-      contador = contador - getTextArea.length;
-    }
-  } else {
-      for (let index = 500; index < getTextArea.length; index += 1) {
-        contador = index;
-    }
-  }
-  console.log(contador);
-}
+//  function counterFunction () {
+//  let contador = 500;
+//  let referencia = 500;
+//  let counterChar = document.getElementById('counter').value;
+//  let textArea = document.querySelectorAll('#textarea');
+//  if (textArea.value !== '') {
+//    for (let index = 0; index < 500; index += 1) {
+//      contador = 500 - textArea.length;
+//    } 
+// 
+//  }
+//  counterChar = contador
+//  console.log(contador);
+// }
+  
+// function formOutput() {
+//   const name = document.querySelector('#input-name').value;
+//   const lastName = document.querySelector('#input-lastname').value;
+//   const email = document.querySelector('#input-email').value;
+//   const house = document.querySelector('#house').value;
+// }

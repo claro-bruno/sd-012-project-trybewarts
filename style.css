@@ -109,6 +109,10 @@ main {
   display: flex;
 }
 
+.agreement-container {
+  display: flex;
+}
+
 .submit-container {
   display: flex;
 }
