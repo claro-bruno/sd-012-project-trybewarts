@@ -20,7 +20,9 @@ const agreement = document.querySelector('#agreement');
 const submitBtn = document.querySelector('#submit-btn');
 
 agreement.addEventListener('click', () => {
-  if (agreement) {
+  if (agreement.checked) {
+    submitBtn.disabled = false;
+  } else {
     submitBtn.disabled = false;
   }
 });
