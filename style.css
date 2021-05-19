@@ -7,8 +7,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(50, 167, 145);
-  height: 12vh;
-  padding: 0 10%;
+  height: 10vh;
 }
 
 .trybewarts-login {
@@ -17,18 +16,18 @@ body {
 }
 
 .trybewarts-header-logo {
-  height: 10vh;
-  width: 10vh;
+  height: 8vh;
+  width: 8vh;
 }
 
 #trybewarts-header-title {
-  font-size: 5vh;
+  font-size: 4vh;
   color: white;
 }
 
 .login {
-  height: 30px;
-  width: 140px;
+  height: 4vh;
+  width: 20vh;
   margin-right: 5px;
   border-radius: 5px;
 }
@@ -36,6 +35,7 @@ body {
 #botao-logar {
   background-color: purple;
   color: white;
+  font-size: 2.2vh;
 }
 
 main {
@@ -48,17 +48,17 @@ main {
 #evaluation-form {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 5px;
+  margin-bottom: 20px;
   margin-left: 20px;
-  height: 100vh;
+  height: auto;
   width: 675px;
 }
 
 #titulo-forms {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #input-name {
@@ -151,5 +151,5 @@ main {
   align-items: center;
   background-color: rgb(108, 123, 139);
   color: white;
-  height: 5vh;
+  height: 4vh;
 }
