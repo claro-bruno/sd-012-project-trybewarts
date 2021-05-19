@@ -66,6 +66,14 @@ main {
   flex-direction: column;
 }
 
+.form-label {
+  margin-right: 20px;
+}
+
+.form-check-label {
+  margin-right: 10px;
+}
+
 textarea {
   resize: none;
 }
