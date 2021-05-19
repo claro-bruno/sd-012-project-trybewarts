@@ -50,13 +50,11 @@ function contadorDeCaracteres() {
   });
 }
 
-const form = document.querySelector('#evaluation-form');
-
 function pegandoMaterias() {
   const materiasEscolhidas = document.querySelectorAll('input[name="content"]:checked');
   let textoMaterias = '';
-  materiasEscolhidas.forEach(element => {
-    textoMaterias += `${element.value}, `
+  materiasEscolhidas.forEach((element) => {
+    textoMaterias += `${element.value}, `;
   });
   return textoMaterias;
 }
@@ -70,7 +68,7 @@ const valoresInputs = {
   Materias: '',
   Avaliacao: '',
   Observacao: '',
-}
+};
 
 function preenchendoValores() {
   valoresInputs.Nome = document.querySelector('#input-name').value;
@@ -84,13 +82,14 @@ function preenchendoValores() {
 }
 
 function colocandoInfoNasLis() {
-  document.querySelector('#li-fullname').innerText = `Nome: ${valoresInputs.Nome} ${valoresInputs.Sobrenome}`;
+  const fullname = document.querySelector('#li-fullname');
+  fullname.innerText = `Nome: ${valoresInputs.Nome} ${valoresInputs.Sobrenome}`;
   document.querySelector('#li-email').innerText = `Email: ${valoresInputs.Email}`;
   document.querySelector('#li-casa').innerText = `Casa: ${valoresInputs.Casa}`;
   document.querySelector('#li-familia').innerText = `Família: ${valoresInputs.Familia}`;
   document.querySelector('#li-materias').innerText = `Matérias: ${valoresInputs.Materias}`;
   document.querySelector('#li-avaliacao').innerText = `Avaliação: ${valoresInputs.Avaliacao}`;
-  document.querySelector('#li-observacao').innerText = `Observações: ${valoresInputs.Observacao}`; 
+  document.querySelector('#li-observacao').innerText = `Observações: ${valoresInputs.Observacao}`;
 }
 
 botaoSubmit.addEventListener('click', (event) => {
@@ -107,5 +106,4 @@ window.onload = () => {
   validandoCabecalho();
   contadorDeCaracteres();
   botaoSubmit.disabled = true;
-  
 };
