@@ -49,3 +49,13 @@
   align-items: flex-start;
   flex-flow: column nowrap;
 }
+
+.checkbox-buttons {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.section-buttons {
+  display: flex;
+  flex-wrap: nowrap;
+}
