@@ -1,32 +1,32 @@
-const loginButton = document.querySelector("#login-button");
-const loginInput = document.querySelector("#login-input");
-const passInput = document.querySelector("#pass-input");
-const escolheCasa = document.querySelector("#house");
-const nota = document.querySelector("#rate");
-const checkboxAgreement = document.querySelector("#agreement");
-const submitButton = document.querySelector("#submit-btn");
-const getTextArea = document.getElementById("textarea");
-const getCounter = document.getElementById("counter");
-const nameInput = document.getElementById("input-name");
-const lastNameInput = document.getElementById("input-lastname");
-const emailInput = document.getElementById("input-email");
-const finalForm = document.querySelector(".form");
-const family = document.getElementsByName("family");
-const skills = document.getElementsByClassName("subject");
-const avaliacao = document.getElementsByClassName("nota");
+const loginButton = document.querySelector('#login-button');
+const loginInput = document.querySelector('#login-input');
+const passInput = document.querySelector('#pass-input');
+const escolheCasa = document.querySelector('#house');
+const nota = document.querySelector('#rate');
+const checkboxAgreement = document.querySelector('#agreement');
+const submitButton = document.querySelector('#submit-btn');
+const getTextArea = document.getElementById('textarea');
+const getCounter = document.getElementById('counter');
+const nameInput = document.getElementById('input-name');
+const lastNameInput = document.getElementById('input-lastname');
+const emailInput = document.getElementById('input-email');
+const finalForm = document.querySelector('.form');
+const family = document.getElementsByName('family');
+const skills = document.getElementsByClassName('subject');
+const avaliacao = document.getElementsByClassName('nota');
 
-loginButton.addEventListener("click", (event) => {
+loginButton.addEventListener('click', (event) => {
   event.preventDefault();
-  if (loginInput.value !== "tryber@teste.com" || passInput.value !== "123456") {
-    alert("Login ou senha inválidos.");
+  if (loginInput.value !== 'tryber@teste.com' || passInput.value !== '123456') {
+    alert('Login ou senha inválidos.');
   } else {
-    alert("Olá, Tryber!");
-    loginInput.value = "";
-    passInput.value = "";
+    alert('Olá, Tryber!');
+    loginInput.value = '';
+    passInput.value = '';
   }
 });
 
-getTextArea.addEventListener("keyup", (event) => {
+getTextArea.addEventListener('keyup', (event) => {
   const currentLength = event.target.value.length;
   getCounter.innerText = `Caracteres restantes: ${
     event.target.maxLength - currentLength
@@ -35,14 +35,14 @@ getTextArea.addEventListener("keyup", (event) => {
 
 function escolherCasa() {
   const casas = [
-    { casa: "Gitnória", id: "gitnoria-house" },
-    { casa: "Reactpuff", id: "reactpuff-house" },
-    { casa: "Corvinode", id: "corvinode-house" },
-    { casa: "Pytherina", id: "pytherina-house" },
+    { casa: 'Gitnória', id: 'gitnoria-house' },
+    { casa: 'Reactpuff', id: 'reactpuff-house' },
+    { casa: 'Corvinode', id: 'corvinode-house' },
+    { casa: 'Pytherina', id: 'pytherina-house' },
   ];
 
   for (let index = 0; index < casas.length; index += 1) {
-    const novaCasa = document.createElement("option");
+    const novaCasa = document.createElement('option');
     novaCasa.innerHTML = casas[index].casa;
     novaCasa.id = casas[index].id;
     escolheCasa.appendChild(novaCasa);
@@ -51,12 +51,12 @@ function escolherCasa() {
 
 function rate() {
   for (let index = 1; index <= 10; index += 1) {
-    const notaLabel = document.createElement("label");
+    const notaLabel = document.createElement('label');
     notaLabel.innerHTML = index;
-    const novaNota = document.createElement("input");
-    novaNota.name = "rate";
-    novaNota.type = "radio";
-    novaNota.className = "nota";
+    const novaNota = document.createElement('input');
+    novaNota.name = 'rate';
+    novaNota.type = 'radio';
+    novaNota.className = 'nota';
     novaNota.value = index;
     nota.append(novaNota);
     nota.appendChild(notaLabel);
@@ -74,9 +74,9 @@ function isChecked() {
 }
 
 function someForm() {
-  const someForm = document.getElementsByClassName("some");
+  const someForm = document.getElementsByClassName('some');
   for (let index = 0; index < someForm.length; index += 1) {
-    someForm[index].style.display = "none";
+    someForm[index].style.display = 'none';
   }
 }
 
@@ -109,27 +109,27 @@ function rateChecked() {
 function preencheForm() {
   const dados = [
     {
-      dado: "Nome",
+      dado: 'Nome',
       value: `${nameInput.value} ${lastNameInput.value}`,
-      class: "nome",
+      class: 'nome',
     },
-    { dado: "Email", value: emailInput.value, class: "email" },
-    { dado: "Casa", value: escolheCasa.value, class: "casa" },
-    { dado: "Família", value: familyChecked(), class: "familia" },
-    { dado: "Matérias", value: skillsChecked(), class: "subject" },
-    { dado: "Avaliação", value: rateChecked(), class: "nota" },
-    { dado: "Observações", value: getTextArea.value, class: "observacao" },
+    { dado: 'Email', value: emailInput.value, class: 'email' },
+    { dado: 'Casa', value: escolheCasa.value, class: 'casa' },
+    { dado: 'Família', value: familyChecked(), class: 'familia' },
+    { dado: 'Matérias', value: skillsChecked(), class: 'subject' },
+    { dado: 'Avaliação', value: rateChecked(), class: 'nota' },
+    { dado: 'Observações', value: getTextArea.value, class: 'observacao' },
   ];
 
   for (let index = 0; index < dados.length; index += 1) {
-    const novoDado = document.createElement("p");
+    const novoDado = document.createElement('p');
     novoDado.innerHTML = `${dados[index].dado}: ${dados[index].value}`;
     novoDado.className = dados[index].class;
     finalForm.appendChild(novoDado);
   }
 }
 
-submitButton.addEventListener("click", (event) => {
+submitButton.addEventListener('click', (event) => {
   event.preventDefault();
   someForm();
   preencheForm();
