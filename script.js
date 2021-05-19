@@ -1,4 +1,6 @@
-const btnSubmit = document.querySelector('#submit-login');
+const btnLogin = document.querySelector('#submit-login');
+const checkboxAgreement = document.querySelector('#agreement');
+const btnSubmit = document.querySelector('#submit-btn');
 
 function verificationInputsLogin() {
   const inputLogin = document.querySelector('#input-login');
@@ -12,6 +14,14 @@ function verificationInputsLogin() {
   }
 }
 
-btnSubmit.addEventListener('click', () => {
+btnLogin.addEventListener('click', () => {
   verificationInputsLogin();
 });
+
+checkboxAgreement.addEventListener('click', () => {  
+  if(checkboxAgreement.checked) {
+    btnSubmit.removeAttribute('disabled')
+  } else {
+    btnSubmit.setAttribute('disabled', 'disabled')
+  }
+})
