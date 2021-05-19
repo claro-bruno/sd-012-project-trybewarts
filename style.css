@@ -8,14 +8,37 @@
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
+  margin-bottom: 50px;
+  align-items: center;
 }
 
 .trybewarts-login {
+  margin-right: 30px;
+  height: 40px;
   display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+  align-items: stretch;
+}
+
+.trybewarts-login input {
+  border-radius: 5px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.trybewarts-login button {
+  background-color:cadetblue;
+  color: white;
+  border-radius: 5px;
+  width: 80px;
+  height: 30px;
+  align-self: center;
 }
 
 main {
   display: flex;
+  justify-content: center;
 }
 
 #evaluation-form {
