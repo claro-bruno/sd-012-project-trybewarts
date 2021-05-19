@@ -29,10 +29,10 @@ checkboxAgreement.addEventListener('click', () => {
 });
 
 counter.innerText = 500;
-textarea.addEventListener('input', ()  => {
+textarea.addEventListener('input', () => {
   const maxCaracteres = textarea.getAttribute('maxLength');
   const caracteresDigitados = textarea.value.length;
-  let caracteresRestantes = maxCaracteres - caracteresDigitados;
+  const caracteresRestantes = maxCaracteres - caracteresDigitados;
 
   counter.innerText = caracteresRestantes;
 });
