@@ -10,11 +10,11 @@
   justify-content: space-between;
 }
 
-main {
+.trybewarts-login {
   display: flex;
 }
 
-.trybewarts-login {
+main {
   display: flex;
 }
 
@@ -29,10 +29,6 @@ main {
   flex-flow: row nowrap;
 }
 
-#trybewarts-forms-logo {
-  height: 500px;
-}
-
 #family-radio {
   display: flex;
   flex-direction: column;
@@ -41,3 +37,8 @@ main {
 #avaliacao {
   display: flex;
 }
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
