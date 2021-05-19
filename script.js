@@ -9,3 +9,13 @@ function validate() {
 }
 const submitButton = document.querySelector('#send-button');
 submitButton.addEventListener('click', validate);
+
+const agreement = document.querySelector('#agreement');
+const enviar = document.querySelector('#submit-btn');
+agreement.addEventListener('click', () => {
+  if (agreement.checked) {
+    enviar.disabled = false;
+  } else {
+    enviar.disabled = true;
+  }
+});
