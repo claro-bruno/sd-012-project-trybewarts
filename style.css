@@ -39,3 +39,12 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+#coreInfos {
+  display: flex;
+  flex-direction: row;
+}
+
+#coreInfos div {
+  padding: 0 8px;
+}
