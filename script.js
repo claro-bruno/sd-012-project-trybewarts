@@ -25,3 +25,46 @@ function ableButton() {
 }
 
 agreeBox.addEventListener('click', ableButton);
+
+const submitButton = document.getElementById('submit-btn');
+
+function createDivs(event) {
+  event.preventDefault();
+  createFullName();
+  createEmail();
+  createHouse();
+
+}
+
+function createFullName() {
+  const nome = document.querySelector('#input-name');
+  const sobrenome = document.querySelector('#input-lastname');
+  const nomeCompleto = nome.value + ' ' + sobrenome.value;
+  document.querySelector('#input-name').remove();
+  document.querySelector('#input-lastname').remove();
+  document.querySelector('[for=input-name]').innerHTML = 'Nome: ' + nomeCompleto;
+}
+
+function createEmail() {
+  const email = document.querySelector('#input-email');
+  document.querySelector('[for=input-email]').innerHTML = 'Email: ' + email.value;
+  document.querySelector('#input-email').remove();
+}
+
+function createHouse() {
+  const house = document.querySelector('#house');
+  document.querySelector('[for=house]').innerHTML = 'Casa: ' + house.value;
+  document.querySelector('#house').remove();
+}
+
+function createFamily() {
+  const family = document.querySelectorAll('[name=family]');
+  for (let index = 0; index < family.length; index += 1) {
+    if (family[index].checked === true) {
+      document.querySelector('#label-family').innerHTML = 'Família: ' + family[index].value;
+    }
+  }
+  
+}
+
+submitButton.addEventListener('click', createDivs);
