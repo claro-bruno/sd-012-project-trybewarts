@@ -21,6 +21,7 @@
 .trybewarts-login {
   display: flex;
   height: 40px;
+  width: 675px;
 }
 
 .btn {
@@ -43,7 +44,8 @@ main {
   display: flex;
 
 }
-#evaluation-form {
+
+main form {
   display: flex;
   flex-direction: column;
   width: 675px;
