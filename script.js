@@ -1,3 +1,4 @@
+/* Function checkLogin checks if the login and password typed on header form is equal to default login and password. If true the function shows the alert saying "Ola Tryber". If false function shows the alert saying "Login ou senha invalidos"  */
 function checkLogin() {
   const loginButton = document.querySelector('#loginButton');
   const defaultLogin = 'tryber@teste.com';
@@ -17,6 +18,7 @@ function checkLogin() {
 }
 checkLogin();
 
+/* Functione enableSubmit: by clicking on the #agreement check box the function changes its value to 'true' and if value === 'true' the submit button is enabled. If the checkbox its unchecked the function changes back the value to false and the button is disable */
 function enableSubmit() {
   const submitButton = document.getElementById('submit-btn');
   const checkbox = document.querySelector('#agreement');
@@ -35,6 +37,7 @@ function enableSubmit() {
 }
 enableSubmit();
 
+/* Function countCharacters counts the characters typed on the textarea and shows how many characters the user can still enter on the textarea */
 function countCharacters() {
   const textArea = document.querySelector('#textarea');
 
@@ -51,6 +54,7 @@ function countCharacters() {
 }
 countCharacters();
 
+/* All the next functions with the name 'display' are complementary to the function submitInfos, they get the input values from their respective input fields and assign as innerHTML to their respective hidden <div> to be show after clicking on the submit button.   */
 function displayName() {
   const nameField = document.querySelector('#userFullName');
   const inputName = document.querySelector('#input-name').value;
@@ -108,6 +112,7 @@ function displayFeedback() {
   feedbackField.innerHTML = displayUserFeedback;
 }
 
+/* Function showFrom changes the forms CSS atribute visibility to hide the form and show the informations typed before clicking submit  */
 function showForm() {
   const filledForm = document.querySelector('.posSubmit');
   const unfilledForm = document.querySelector('.preSubmit');
@@ -115,6 +120,7 @@ function showForm() {
   unfilledForm.style.visibility = 'hidden';
 }
 
+/* Function submitInfos calls all the auxiliary functions needed to fill the forms disabling the submit event so the user can see the informations typed on the forms  */
 function submitInfos() {
   const submitButton = document.querySelector('#submit-btn');
 
