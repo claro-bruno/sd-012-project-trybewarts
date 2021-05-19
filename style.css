@@ -9,10 +9,23 @@
   justify-content: space-between;
 }
 
+.header img {
+  height: 50px;
+}
+
 .trybewarts-login {
   display: flex;
 }
 
-.header img {
-  height: 50px;
+.trybewarts-login input {
+  width: 100px;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
