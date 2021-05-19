@@ -22,6 +22,11 @@ form input {
   border-radius: 5px;
 }
 
+#passwd-login {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .trybewarts-login input {
   width: 100px;
 }
