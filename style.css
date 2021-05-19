@@ -51,6 +51,16 @@ main {
   flex-direction: column;
 }
 
+/* Estilização da area de comentários */
+#agreementField {
+  display: flex;
+  align-items: center;
+}
+
+#agreementField input {
+  width: 15px;
+}
+
 /* Estilização da Imagem */
 #trybewarts-forms-logo {
   height: 500px;
