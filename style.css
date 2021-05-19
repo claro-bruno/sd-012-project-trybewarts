@@ -22,3 +22,7 @@ main {
 #evaluation-form div {
   flex-flow: nowrap row;
 }
+
+#evaluation-form #second-div {
+  flex-flow: nowrap row-reverse;
+}
