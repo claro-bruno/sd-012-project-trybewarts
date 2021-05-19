@@ -15,14 +15,13 @@ function verifyLogin() {
 
 logar.addEventListener('click', verifyLogin);
 
-
 function ableButton() {
-    let button = document.getElementById('submit-btn');
-    if (agreeBox.checked === true) {
-        button.removeAttribute('disabled');
-    } else {
-        button.setAttribute("disabled", "disabled");
-    }
+  const button = document.getElementById('submit-btn');
+  if (agreeBox.checked === true) {
+    button.removeAttribute('disabled');
+  } else {
+    button.setAttribute('disabled', 'disabled');
+  }
 }
 
-agreeBox.addEventListener('click', ableButton)
+agreeBox.addEventListener('click', ableButton);

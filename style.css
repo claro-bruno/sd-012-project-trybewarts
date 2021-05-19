@@ -30,7 +30,7 @@ main form {
   flex-direction: column;
 }
 
-#label-content {
+.container-checkbox {
   display: flex;
   flex-direction: column;
 }
@@ -40,7 +40,7 @@ main form {
   align-items: center;
 }
 
-#text-area {
+#container-textarea {
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
