@@ -66,10 +66,10 @@
         </label>
       </div>
       <div class="form-group col-md-6">
-        <label class="fullstack for="family">Família Fullstack</label>        
-        <input type="radio" name="family" id="fullstack">
+          <label class="fullstack for="family">Família Fullstack</label>        
+          <input type="radio" name="family" id="fullstack">
+        </div>
       </div>
-    </div>
     <div class="form-row"> <!--requisito 14, também falta ajuste no css-->
       <span>Qual conteúdo você está com mais vontade de aprender?</span>
       <div class="form-group col-md-6">
@@ -85,20 +85,22 @@
         <input class="subject" type="checkbox" value="Promises" id="flexCheckDefault">
       </div>
       <div class="form-group col-md-6">
-        <label class="subject" for="flexCheckDefault">React</label>
-        <input class="subject" type="checkbox" value="React" id="flexCheckDefault">
-      </div>
-      <div class="form-group col-md-6">
-        <label class="subject" for="flexCheckDefault">SQL</label>
-        <input class="subject" type="checkbox" value="SQL" id="flexCheckDefault">
-      </div>
-      <div class="form-group col-md-6">
-        <label class="subject" for="flexCheckDefault">Python</label>
-        <input class="subject" type="checkbox" value="Python" id="flexCheckDefault">
-      </div>
-      </div>        
-      <span>Como você avalia a Trybewarts?</span>
-      <div class="label-family form-row"> <!--requesito 14, poderia ter feito um for kk , mas só lembrei dps que terminei, posso fzer dps-->
+          <label class="subject" for="react">React</label>
+          <input class="subject" type="checkbox" value="React" id="react">
+        </div>
+        <div class="form-group col-md-6">
+          <label class="subject" for="sql">SQL</label>
+          <input class="subject" type="checkbox" value="SQL" id="sql">
+        </div>
+        <div class="form-group col-md-6">
+          <label class="subject" for="python">Python</label>
+          <input class="subject" type="checkbox" value="Python" id="python">
+        </div>
+        </div>
+   </section>
+      <hr>
+      <div class="rate form-row"> <!--requesito 14, poderia ter feito um for kk , mas só lembrei dps que terminei, posso fzer dps-->
+        <span>Como você avalia a Trybewarts?</span>
         <label for="one">1</label>      
         <input type="radio" name="rate" id="one" value="1">
         <label for="two">2</label>
@@ -120,12 +122,16 @@
         <label for="ten">10</label>
         <input type="radio" name="rate" id="ten" value="10">
       </div>
+      <div>
+        <div class="form-row">
+          <label for="feedback-area" class="form-label">Deixe seu comentário:</label>
+          <textarea class="text-area form-control" id="feedback-area" rows="3"></textarea>
+        </div>
+      </div>
       <div class="form-group">
         <div class="form-check">
           <input class="form-check-input" type="checkbox" id="gridCheck">
-          <label class="form-check-label" for="gridCheck">
-            Clique em mim
-          </label>
+          <label class="form-check-label" for="gridCheck">Você concorda com o uso das informações acima?</label>
         </div>
         <button type="submit" class="btn btn-primary mt-3">Entrar</button>
       </div>
