@@ -8,13 +8,13 @@ confirma.addEventListener('change', () => {
     botao.disabled = false;
   }
 });
-const senha = document.querySelector('#senha').value;
-const email = document.querySelector('#email').value;
+const senha = document.querySelector('#senha');
+const email = document.querySelector('#email');
 const botaoHeader = document.querySelector('#btnheader');
 function verificaLogin() {
-  const novaSenha = document.querySelector('#senha').value;
-  const novaEmail = document.querySelector('#email').value;
-  if (senha !== novaSenha || email !== novaEmail) {
+  const novaSenha = '123456';
+  const novaEmail = 'tryber@teste.com';
+  if (senha.value !== novaSenha || email.value !== novaEmail) {
     alert('Login ou senha inválidos.');
   } else {
     alert('Olá, Tryber!');
