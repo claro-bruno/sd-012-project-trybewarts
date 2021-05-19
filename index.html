@@ -49,7 +49,8 @@
                     <label for="Python"><input type="checkbox" id="Python" value="Python" class="subject">Python</label>
                 </section>
             </section>
-            <section>
+            <!-- https://www.educative.io/edpresso/radio-button-in-html --> 
+            <section id="valuation">
                 <label id="label-rate"> Como você avalia a Trybewarts? </label>
                 <input type="radio" name = "rate" value="1"> 1
                 <input type="radio" name = "rate" value="2"> 2
@@ -61,7 +62,13 @@
                 <input type="radio" name = "rate" value="8"> 8
                 <input type="radio" name = "rate" value="9"> 9
                 <input type="radio" name = "rate" value="10"> 10
-            </section>     
+            </section>
+            <!-- https://www.w3schools.com/tags/tag_textarea.asp --> 
+            <section id="comments">
+                <label class="textarea" for="textarea">Deixe seu comentário:</label>
+            <!-- Corrigindo erro: https://cursos.alura.com.br/forum/topico-text-area-comeca-com-um-espaco-75147 --> 
+                <textarea id="textarea" name="textarea" rows="4" cols="50" maxlength="500" placeholder="Digite aqui"></textarea>
+            </section>    
         </form>
         <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
     

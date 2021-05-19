@@ -94,4 +94,21 @@ hr {
   display: flex;
   flex-flow: column wrap;
   width: max-content;
+  margin-bottom: 15px;
+}
+
+#valuation {
+  display: flex;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+#valuation input {
+  margin-left: auto;
+}
+
+#comments textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
 }
