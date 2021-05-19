@@ -74,16 +74,20 @@ submitBtn.addEventListener('click', (e) => {
   const name = document.querySelector('#input-name').value;
   const lastName = document.querySelector('#input-lastname').value;
   const email = document.querySelector('#input-email').value;
-  const house = document.querySelector('#house').value; // Correção 1
+  const house = document.querySelector('#house').value;
   const observacao = document.querySelector('#textarea').value;
   const printForm = document.querySelector('#print-form-container');
+  const form1 = document.querySelector('#evaluation-form');
+  form1.classList.toggle('hidden');
+  form1.id = '';
   const addform = document.createElement('form');
   const addParagraph = document.createElement('p');
   printForm.appendChild(addform);
   addform.appendChild(addParagraph);
-  const formResult = `Nome: ${name} ${lastName} \n Email: ${email} \n Casa: ${house} 
-  \n Familia: ${getFamilyValue()} \n Matérias:${getMaterias()} \n 
-  Avaliação: ${getAvaliacao()} \n Observações ${observacao}`;
-  console.log(formResult);
+  const formResult = `Nome: ${name} ${lastName}`;
   addParagraph.innerText = formResult;
 });
+
+//  \n Email: ${email} \n Casa: ${house} 
+// \n Familia: ${getFamilyValue()} \n Matérias:${getMaterias()} \n 
+// Avaliação: ${getAvaliacao()} \n Observações ${observacao};

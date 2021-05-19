@@ -30,3 +30,7 @@ main {
 #email-house-container {
   display: flex;
 }
+
+.hidden {
+  display: none;
+}
