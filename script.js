@@ -32,3 +32,13 @@ function createRadioButtons() {
 }
 
 createRadioButtons();
+
+const submitButton = document.getElementById('agreement');
+
+submitButton.addEventListener('click', () => {
+  if (document.getElementById('agreement').checked === true) {
+    document.getElementById('submit-btn').disabled = false;
+  } else {
+    document.getElementById('submit-btn').disabled = true;
+  }
+});
