@@ -21,12 +21,38 @@ main{
     align-items: center;
 }
 
+#evaluation-form{
+
+}
+
+.familyBox{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+.divRadioBox{
+
+}
+
+.divCommentBox{
+
+}
+
+.termsBox{
+
+}
+
+.submitBox{
+
+}
+
 #trybewarts-forms-logo{
     height: 500px;
     left: 50%;
     position: absolute;
     display: flex;
-}   
+}  
 
 .footerClass{
     background-color: rgb(54, 54, 54);
@@ -41,18 +67,4 @@ main{
 
 .footerClassalign-content space-between p{
     color: white;
-}
-
-.familyBox{
-    display: flex;
-    flex-direction: column;
-    width: 200px;
-}
-
-#labelFa{
-    display: inline-block;
-}
-
-#inputId{
-    display: inline-block;
 }
