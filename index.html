@@ -25,77 +25,100 @@
 
   </header><!--Fim do header-->
 
-  <main class="container row ml-auto mr-auto mt-5"><!-- Início seção home -->
-    <form id="evaluation-form">
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="input-name">Nome</label>
-          <input type="email" class="form-control" id="input-name" placeholder="Nome">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="input-lastname">Sobrenome</label>
-          <input type="password" class="form-control" id="input-lastname" placeholder="Sobrenome">
-        </div>
+<main class="container row ml-auto mr-auto mt-5"><!-- Início seção home -->
+  <form id="evaluation-form">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="input-name">Nome</label>
+        <input type="email" class="form-control" id="input-name" placeholder="Nome">
       </div>
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="input-email">Email</label>
-          <input type="text" class="form-control" id="input-email" placeholder="Email">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="house">Casa</label>
-          <select id="house" class="form-control">
-            <option selected>Escolher...</option>
-            <option id="gitnoria-house">Gitnória</option>
-            <option id="reactpuff-house">Reactpuff</option>
-            <option id="corvinode-house">Corvinode</option>
-            <option id="pytherina-house">Pytherina</option>
-          </select>
-        </div>
+      <div class="form-group col-md-6">
+        <label for="input-lastname">Sobrenome</label>
+        <input type="password" class="form-control" id="input-lastname" placeholder="Sobrenome">
       </div>
-      <hr>
-      <div class="label-family form-row"> <!--requisito 12, não acertei no css -->
-        <span>Qual sua familia?</span>
-        <div class="form-group col-md-6">
-          <label for="frontend">Família Frontend</label>
-          <input type="radio" name="family" id="frontend">
-        </div>
-        <div class="form-group col-md-6">
-          <label for="backend">Família Backend
-          <input type="radio" name="family" id="backend">
-          </label>
-        </div>
-        <div class="form-group col-md-6">
-          <label class="fullstack for="family">Família Fullstack</label>        
-          <input type="radio" name="family" id="fullstack">
-        </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="input-email">Email</label>
+        <input type="text" class="form-control" id="input-email" placeholder="Email">
       </div>
-      <div class="form-row"> <!--requisito 14, também falta ajuste no css-->
-        <span>Qual conteúdo você está com mais vontade de aprender?</span>
-        <div class="form-group col-md-6">
-          <label class="subject" for="flexCheckDefault">HoFs</label>
-          <input class="subject" type="checkbox" value="HoFs" id="flexCheckDefault">
-        </div>
-        <div class="form-group col-md-6">
-          <label class="subject" for="flexCheckDefault">Jest</label>
-          <input class="subject" type="checkbox" value="Jest" id="flexCheckDefault">
-        </div>
-        <div class="form-group col-md-6">
-          <label class="subject" for="flexCheckDefault">Promises</label>
-          <input class="subject" type="checkbox" value="Promises" id="flexCheckDefault">
-        </div>
-        <div class="form-group col-md-6">
-          <label class="subject" for="flexCheckDefault">React</label>
-          <input class="subject" type="checkbox" value="React" id="flexCheckDefault">
-        </div>
-        <div class="form-group col-md-6">
-          <label class="subject" for="flexCheckDefault">SQL</label>
-          <input class="subject" type="checkbox" value="SQL" id="flexCheckDefault">
-        </div>
-        <div class="form-group col-md-6">
-          <label class="subject" for="flexCheckDefault">Python</label>
-          <input class="subject" type="checkbox" value="Python" id="flexCheckDefault">
-        </div>
+      <div class="form-group col-md-6">
+        <label for="house">Casa</label>
+        <select id="house" class="form-control">
+          <option selected>Escolher...</option>
+          <option id="gitnoria-house">Gitnória</option>
+          <option id="reactpuff-house">Reactpuff</option>
+          <option id="corvinode-house">Corvinode</option>
+          <option id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+    </div>
+    <hr>
+    <div class="label-family form-row"> <!--requisito 12, não acertei no css -->
+      <span>Qual sua familia?</span>
+      <div class="form-group col-md-6">
+        <label for="frontend">Família Frontend</label>
+        <input type="radio" name="family" id="frontend">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="backend">Família Backend
+        <input type="radio" name="family" id="backend">
+        </label>
+      </div>
+      <div class="form-group col-md-6">
+        <label class="fullstack for="family">Família Fullstack</label>        
+        <input type="radio" name="family" id="fullstack">
+      </div>
+    </div>
+    <div class="form-row"> <!--requisito 14, também falta ajuste no css-->
+      <span>Qual conteúdo você está com mais vontade de aprender?</span>
+      <div class="form-group col-md-6">
+        <label class="subject" for="flexCheckDefault">HoFs</label>
+        <input class="subject" type="checkbox" value="HoFs" id="flexCheckDefault">
+      </div>
+      <div class="form-group col-md-6">
+        <label class="subject" for="flexCheckDefault">Jest</label>
+        <input class="subject" type="checkbox" value="Jest" id="flexCheckDefault">
+      </div>
+      <div class="form-group col-md-6">
+        <label class="subject" for="flexCheckDefault">Promises</label>
+        <input class="subject" type="checkbox" value="Promises" id="flexCheckDefault">
+      </div>
+      <div class="form-group col-md-6">
+        <label class="subject" for="flexCheckDefault">React</label>
+        <input class="subject" type="checkbox" value="React" id="flexCheckDefault">
+      </div>
+      <div class="form-group col-md-6">
+        <label class="subject" for="flexCheckDefault">SQL</label>
+        <input class="subject" type="checkbox" value="SQL" id="flexCheckDefault">
+      </div>
+      <div class="form-group col-md-6">
+        <label class="subject" for="flexCheckDefault">Python</label>
+        <input class="subject" type="checkbox" value="Python" id="flexCheckDefault">
+      </div>
+      </div>        
+      <span>Como você avalia a Trybewarts?</span>
+      <div class="label-family form-row"> <!--requesito 14, poderia ter feito um for kk , mas só lembrei dps que terminei, posso fzer dps-->
+        <label for="one">1</label>      
+        <input type="radio" name="rate" id="one" value="1">
+        <label for="two">2</label>
+        <input type="radio" name="rate" id="two" value="2">
+        <label for="three">3</label>
+        <input type="radio" name="rate" id="three" value="3">
+        <label for="for">4</label>
+        <input type="radio" name="rate" id="for" value="4">
+        <label for="five">5</label>
+        <input type="radio" name="rate" id="five" value="5">
+        <label for="six">6</label>
+        <input type="radio" name="rate" id="six" value="6">
+        <label for="seven">7</label>
+        <input type="radio" name="rate" id="seven" value="7">
+        <label for="eight">8</label>
+        <input type="radio" name="rate" id="eight" value="8">
+        <label for="nine">9</label>
+        <input type="radio" name="rate" id="nine" value="9">
+        <label for="ten">10</label>
+        <input type="radio" name="rate" id="ten" value="10">
       </div>
       <div class="form-group">
         <div class="form-check">
