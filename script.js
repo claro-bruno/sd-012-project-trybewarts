@@ -9,5 +9,18 @@ function logar() {
   }
 }
 
+function changeBtnStatus(event) {
+  const statusAgreement = event.target.checked;
+  const btnAlterState = document.querySelector('#submit-btn');
+  if (statusAgreement === true) {
+    btnAlterState.enable = true;
+  } else {
+    btnAlterState.enable = false;
+  }
+}
+
 const btnLogin = document.querySelector('#logar');
 btnLogin.addEventListener('click', logar);
+
+const checkAgreement = document.querySelector('#agreement');
+checkAgreement.addEventListener('change', changeBtnStatus);
