@@ -1,3 +1,4 @@
+// Funcao para executar o butao logar
 const selectButtonLogin = document.querySelector('.botaoLogin');
 const selectLogin = document.querySelector('#login');
 const selectPassword = document.querySelector('#senha');
@@ -16,6 +17,7 @@ function verificarLogin() {
 
 selectButtonLogin.addEventListener('click', verificarLogin);
 
+// funcao para executar subimit do checkbox
 const selectButtonSubmit = document.querySelector('#submit-btn');
 const checkBox = document.querySelector('#agreement');
 selectButtonSubmit.disabled = true;
