@@ -87,3 +87,9 @@ main {
 .name-inputs {
   display: flex;
 }
+
+#house {
+    height: 35px;
+    width: 177px;
+    padding: 3px;
+}
