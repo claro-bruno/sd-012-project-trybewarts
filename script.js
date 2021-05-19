@@ -3,9 +3,6 @@ const agree = document.querySelector('#agreement');
 const submit = document.querySelector('#submit-btn');
 const textarea = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
-const radios = document.querySelectorAll('#form2-left label input');
-const checks = document.querySelectorAll('#form2-right label input');
-const rates = document.querySelectorAll('#rate-div label input');
 const maxLength = 500;
 
 logar.addEventListener('click', () => {
@@ -31,28 +28,18 @@ textarea.addEventListener('keyup', () => {
   counter.innerHTML = maxLength - textarea.value.length;
 });
 
-function subjectExist(subjects) {
-  let subjectString = `${subjects[0]}`;
-  for (let item = 1; item < subjects.length; item += 1) {
-    subjectString += `, ${subjects[item]}`;
-  }
-  document.querySelector('#subjects-list').innerHTML = `Matérias: ${subjectString}`;
-}
-
 function printSubjects() {
-  const subjects = [];
+  let answer = 'Matérias: ';
+  const allInputs = document.querySelectorAll('input[name="content"]:checked');
+  console.log(allInputs);
 
-  for (let index = 0; index < 6; index += 1) {
-    if (checks[index].checked === true) {
-      subjects.push(checks[index].value);
+  if (allInputs.length > 0) {
+    answer += allInputs[0].value;
+    for (let item = 1; item < allInputs.length; item += 1) {
+      answer += `, ${allInputs[item].value}`;
     }
   }
-
-  if (subjects.length > 0) {
-    subjectExist(subjects);
-  } else {
-    document.querySelector('#subjects-list').innerHTML = 'Matérias:';
-  }
+  return answer;
 }
 
 function createInfos(infos) {
@@ -62,24 +49,8 @@ function createInfos(infos) {
   document.querySelector('#family-list').innerHTML = `Família: ${infos.family}`;
   document.querySelector('#rate-list').innerHTML = `Avaliação: ${infos.rate}`;
   document.querySelector('#comment-list').innerHTML = `Observações: ${infos.comment}`;
-  printSubjects();
+  document.querySelector('#subjects-list').innerHTML = printSubjects();
   document.querySelector('#form-results').style.display = 'flex';
-}
-
-function createFamily(family) {
-  for (let index = 0; index < 3; index += 1) {
-    if (radios[index].checked === true) {
-      family.push(radios[index].value);
-    }
-  }
-}
-
-function createRate(rate) {
-  for (let index = 0; index < 10; index += 1) {
-    if (rates[index].checked === true) {
-      rate.push(rates[index].value);
-    }
-  }
 }
 
 submit.addEventListener('click', (event) => {
@@ -93,11 +64,9 @@ submit.addEventListener('click', (event) => {
     email: document.querySelector('#input-email').value,
     house: document.querySelector('#house').value,
     comment: document.querySelector('textarea').value,
-    family: [],
-    rate: [],
+    family: document.querySelector('input[name="family"]:checked').value,
+    rate: document.querySelector('input[name="rate"]:checked').value,
   };
 
-  createFamily(infos.family);
-  createRate(infos.rate);
   createInfos(infos);
 });
