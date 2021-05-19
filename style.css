@@ -67,15 +67,39 @@ main {
 .dados {
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
   margin-bottom: 10px;
+}
+
+#label-family {
+  font-size: 18px;
 }
 
 #family-radio {
   flex-flow: column nowrap;
+  align-self: flex-start;
 }
 
 #family-radio div {
   margin-top: 5px;
+}
+
+.radioFamily:hover {
+  cursor: pointer;
+}
+
+#label-content {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.subject {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.subject:hover {
+  cursor: pointer;
 }
 
 #avaliacao {
