@@ -32,3 +32,15 @@ main {
 .email-e-casa-container {
   display: flex;
 }
+
+.family-e-learn {
+  display: flex;
+}
+
+.family-container {
+  display: flex;
+  flex-direction: column;
+}
+.learn-technology-container {
+  display: flex;
+}
