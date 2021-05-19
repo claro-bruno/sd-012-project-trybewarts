@@ -12,34 +12,39 @@
 </head>
 
 
-  <header class = "header">
-      <img class = 'trybewarts-header-logo' src="images/trybewarts-header-logo.svg" alt="">
-      <h1 id="trybewarts-header-title">Trybewarts</h1>
-      <form class="trybewarts-login flex-container" action="">
-        <input id = 'email'type="email" placeholder="Login" value="">
-        <input id = "senha" type="text" placeholder="Senha" value="">
-        <button id ='login-button'> entrar </button>
-      </form>
-  </header>
-  <main  class="main">
-    <form class="container" id="evaluation-form" action="">
-      <div class="select-name">
-        <input type="text" id="input-name" placeholder="Nome">
-        <input type="text" id="input-lastname" placeholder="Sobrenome">
-      </div>
-      <div class="housemail">
-        <input type="email" id="input-email" placeholder="Email">
-        <select id="house">Casa
-          <option value="Gitnória" selected id="gitnoria-house">Gitnória</option>
-          <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-          <option value="Corvinode" id="corvinode-house">Corvinode</option>
-          <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
-      </div>
-    </form>
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
-  </main>
-  <script src="script.js"></script>
+<header class="header">
+  <img class='trybewarts-header-logo' src="images/trybewarts-header-logo.svg" alt="">
+  <h1 id="trybewarts-header-title">Trybewarts</h1>
+  <form class="trybewarts-login flex-container" action="">
+    <input id='email' type="email" placeholder="Login" value="">
+    <input id="senha" type="text" placeholder="Senha" value="">
+    <button id='login-button'> entrar </button>
+  </form>
+</header>
+<main class="main">
+  <form class="container" id="evaluation-form" action="">
+    <div class="select-name">
+      <input type="text" id="input-name" placeholder="Nome">
+      <input type="text" id="input-lastname" placeholder="Sobrenome">
+    </div>
+    <div class="housemail">
+      <input type="email" id="input-email" placeholder="Email">
+      <select id="house">Casa
+        <option value="Gitnória" selected id="gitnoria-house">Gitnória</option>
+        <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+        <option value="Corvinode" id="corvinode-house">Corvinode</option>
+        <option value="Pytherina" id="pytherina-house">Pytherina</option>
+      </select>
+    </div>
+    <label id='label-family' for="family">Qual sua família?
+      <div class="radio1"><input type="radio" value="Frontend" name="family" id=""> Frontend</div>
+      <div class='radio2'><input type="radio" value="Backend" name="family" id="">Backend </div>
+      <div class='radio3'><input type="radio" value="FullStack" name="family" id="">FullStack</div>
+    </label>
+  </form>
+  <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="">
+</main>
+<script src="script.js"></script>
 </body>
 
 </html>

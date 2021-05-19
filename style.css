@@ -38,3 +38,33 @@
   display: flex;
   flex-direction: row;
 }
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  margin: 20px;
+  width: max-content;
+}
+
+.radio1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+}
+
+.radio2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+}
+
+.radio3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+}
