@@ -16,6 +16,7 @@
 
 .main {
   display: flex;
+  justify-content: center;
 }
 
 form {
@@ -35,4 +36,9 @@ form {
 #label-family {
   display: flex;
   flex-direction: column;
+}
+
+.family-content {
+  display: flex;
+  flex-direction: row;
 }

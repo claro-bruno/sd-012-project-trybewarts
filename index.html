@@ -25,6 +25,7 @@
           </div>
           <div>
             <input id="input-email" placeholder="Email"></input>
+            <label for="house">Casa:</label>
             <select id="house">
               <option id="gitnoria-house" type="radio" value="Gitnória">Gitnória</option>
               <option id="reactpuff-house" type="radio" value="Reactpuff">Reactpuff</option>
@@ -32,19 +33,21 @@
               <option id="pytherina-house" type="radio" value="Pytherina">Pytherina</option>
             </select>
           </div>
-          <div id="label-family">
-            <label required name="family">Qual sua família?</label>
-            <input type="radio" name="family" value="Frontend">Frontend</input>
-            <input type="radio" name="family" value="Backend">Backend</input>
-            <input type="radio" name="family" value="FullStack">Fullstack</input>
+          <div class="family-content">
             <div>
-            <label id="label-content" required name="content">Qual conteúdo você está com mais vontade de aprender?</label>
-            <input type="checkbox" name="content" class="subject" value="HoFs">HoFs
-            <input type="checkbox" name="content" class="subject" value="Jest">Jest
-            <input type="checkbox" name="content" class="subject" value="Promises">Promises
-            <input type="checkbox" name="content" class="subject" value="React">React
-            <input type="checkbox" name="content" class="subject" value="SQL">SQL
-            <input type="checkbox" name="content" class="subject" value="Python">Python
+              <label id="label-family" required name="family">Qual sua família?</label>
+                <input type="radio" name="family" value="Frontend">Frontend</input>
+                <input type="radio" name="family" value="Backend">Backend</input>
+                <input type="radio" name="family" value="FullStack">Fullstack</input>
+            </div>
+            <div>
+              <label id="label-content" required name="content">Qual conteúdo você está com mais vontade de aprender?</label>
+              <input type="checkbox" name="content" class="subject" value="HoFs">HoFs
+              <input type="checkbox" name="content" class="subject" value="Jest">Jest
+              <input type="checkbox" name="content" class="subject" value="Promises">Promises
+              <input type="checkbox" name="content" class="subject" value="React">React
+              <input type="checkbox" name="content" class="subject" value="SQL">SQL
+              <input type="checkbox" name="content" class="subject" value="Python">Python
             </div>
           </div>
           <div>
