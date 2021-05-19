@@ -46,7 +46,15 @@ main{
 
 
 .divRadioBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;    
+}
 
+.form-radio{
+    display: flex;
+    flex-direction: row;
 }
 
 .divCommentBox{

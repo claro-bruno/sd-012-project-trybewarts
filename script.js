@@ -1,8 +1,7 @@
 const loginId = document.getElementById("login");
 const passwId = document.getElementById("password");
 const sendButton = document.querySelector('#submit-btn');
-const currentText = document.querySelector('#counter');
-const textArea = document.querySelector('#textarea');
+
 
 function Startlogin() {
     if (loginId.value === 'tryber@teste.com' && passwId.value === '123456') {
@@ -21,10 +20,3 @@ function checkTerms() {
     };
 };
 checkTerms();
-
-function characterAccount() {
-    let current = currentText.innerHTML;
-    current = 500;
-    currentText.innerHTML = current - textArea.value.length;
-};
-characterAccount();
