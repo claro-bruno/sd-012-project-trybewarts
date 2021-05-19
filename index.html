@@ -54,24 +54,24 @@
       </div>
     </div>
     <hr>
-   <section class="features-container">
-      <div class="label-family form-row form-group"> <!--requisito 12, não acertei no css -->
-        <span> Qual sua familia?</span>
-        <div class=" col-md-6">
+    <div class="row">
+      <div class="label-familyform-group"> <!--requisito 12, não acertei no css -->
+        <h5 id="label-family"> Qual sua familia?</h5>
+        <div>
+        <div>
           <label for="frontend">Família Frontend</label>
-          <input type="radio" name="family" id="frontend">
+          <input type="radio" name="family" id="frontend" value="Frontend">
         </div>
-        <div class=" col-md-6">
+        <div>
           <label for="backend">Família Backend</label>
-          <input type="radio" name="family" id="backend">
-
+          <input type="radio" name="family" id="backend" value="Backend">
         </div>
-        <div class=" col-md-6">
-          <label class="fullstack for="family">Família Fullstack</label>        
-          <input type="radio" name="family" id="fullstack">
+        <div>
+          <label class="fullstack" for="family">Família Fullstack</label>        
+          <input type="radio" name="family" id="fullstack" value="Fullstack">
         </div>
       </div>
-      <div class="skills-check form-row form-group"> <!--requisito 14, também falta ajuste no css-->
+      <div class="skills-check form-group"> <!--requisito 14, também falta ajuste no css-->
         <span>Qual conteúdo você está com mais vontade de aprender?</span>
         <div class="form-group col-md-6">
           <label class="subject" for="hofs">HoFs</label>
@@ -98,7 +98,8 @@
           <input class="subject" type="checkbox" value="Python" id="python">
         </div>
         </div>
-   </section>
+      </div>
+
       <hr>
       <div class="rate form-row"> <!--requesito 14, poderia ter feito um for kk , mas só lembrei dps que terminei, posso fzer dps-->
         <span>Como você avalia a Trybewarts?</span>
@@ -137,7 +138,7 @@
         <button type="submit" class="btn btn-primary mt-3">Entrar</button>
       </div>
     </form>
-    <div class="col-md-4 d-none d-md-block">
+    <div class="col-md-6 d-none d-md-block">
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" class="img-fluid">
     </div>
   </main><!--/fim seção home -->
