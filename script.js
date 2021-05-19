@@ -70,7 +70,7 @@ const valoresInputs = {
   Observacao: '',
 };
 
-function preenchendoValores() {
+function preenchendoObjetoValores() {
   valoresInputs.Nome = document.querySelector('#input-name').value;
   valoresInputs.Sobrenome = document.querySelector('#input-lastname').value;
   valoresInputs.Email = document.querySelector('#input-email').value;
@@ -92,18 +92,21 @@ function colocandoInfoNasLis() {
   document.querySelector('#li-observacao').innerText = `Observações: ${valoresInputs.Observacao}`;
 }
 
-botaoSubmit.addEventListener('click', (event) => {
-  event.preventDefault();
-  document.querySelector('#container-forms').style.display = 'none';
-  document.querySelector('#lista-form').style.display = 'flex';
-  preenchendoValores();
-  colocandoInfoNasLis();
-});
+function gerandoDadosForms() {
+  botaoSubmit.addEventListener('click', (event) => {
+    event.preventDefault();
+    document.querySelector('#container-forms').style.display = 'none';
+    document.querySelector('#lista-form').style.display = 'flex';
+    preenchendoObjetoValores();
+    colocandoInfoNasLis();
+  });
+}
 
 window.onload = () => {
   habilitandoBotaoEnviar();
   criandoRadiosNota();
   validandoCabecalho();
   contadorDeCaracteres();
+  gerandoDadosForms();
   botaoSubmit.disabled = true;
 };

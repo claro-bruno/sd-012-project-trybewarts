@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 8
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: Para ess primeiro projeto em grupo, talvez fosse interessante a Trybe oferecer uma divisão de requisitos, para os alunos aprenderem a como fazer isso de maneira adequada.
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: Guilherme H. Junior e Thales Daniel
 
 ---
 
