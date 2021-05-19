@@ -38,15 +38,23 @@
   height: 500px;
 }
 
-.label-family input  {
-display: flex;
-vertical-align: middle;
-
+#textarea {
+  position: relative;
+  resize: none;
+  width: 100%;
 }
 
-.label-family input p  {
-  display: flex;
-  vertical-align: sub;
-  
-  }
+.container-textarea {
+  position: relative;
+  background-color: aquamarine;
+  max-width: 675px;
+}
+
+span {
+  display: inline-block;
+  position: absolute;
+  width: 100px;
+  left: 94%;
+  bottom: 10px;
+}
 

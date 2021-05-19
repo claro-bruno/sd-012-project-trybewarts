@@ -1,4 +1,8 @@
-const btnSubmit = document.querySelector('#submit-login');
+const btnLogin = document.querySelector('#submit-login');
+const checkboxAgreement = document.querySelector('#agreement');
+const btnSubmit = document.querySelector('#submit-btn');
+const textarea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
 
 function verificationInputsLogin() {
   const inputLogin = document.querySelector('#input-login');
@@ -12,6 +16,23 @@ function verificationInputsLogin() {
   }
 }
 
-btnSubmit.addEventListener('click', () => {
+btnLogin.addEventListener('click', () => {
   verificationInputsLogin();
 });
+
+checkboxAgreement.addEventListener('click', () => {
+  if (checkboxAgreement.checked) {
+    btnSubmit.removeAttribute('disabled');
+  } else {
+    btnSubmit.setAttribute('disabled', 'disabled');
+  }
+});
+
+counter.innerText = 500;
+textarea.addEventListener('input', () => {
+  const maxCaracteres = textarea.getAttribute('maxLength');
+  const caracteresDigitados = textarea.value.length;
+  const caracteresRestantes = maxCaracteres - caracteresDigitados;
+
+  counter.innerText = caracteresRestantes;
+})
