@@ -26,7 +26,7 @@
   padding-left: 10px;
 }
 
-.trybewarts-login button {
+button {
   height: 34px;
   width: 100px;
   margin: 5px;
@@ -43,6 +43,10 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+}
+
+div {
+  justify-content: center;
 }
 
 .input1 {
@@ -104,4 +108,23 @@ main {
 
 textarea {
   resize: none;
+}
+
+.input7 {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px;
+}
+
+p:only-child {
+  text-align: right;
+  padding-right: 30px;
 }
