@@ -29,6 +29,16 @@ const firstName = document.querySelector('#input-name');
 const lastName = document.querySelector('#input-lastname');
 const email = document.querySelector('#input-email');
 const house = document.querySelector('#house');
+const evaluation = document.querySelector('.evaluation-note');
+
+function getRadioValue(radioClass) {
+  const radios = document.querySelectorAll(radioClass);
+  for (let index = 0; index < radios.length; index += 1) {
+    if (radios[index].checked) {
+      return radios[index].value;
+    }
+  }
+}
 
 function replaceNameElement() {
   const nameParagraph = document.createElement('p');
@@ -49,13 +59,22 @@ function replaceHouseElement() {
   house.parentNode.replaceChild(houseParagraph, house);
 }
 
+function replaceRateElement() {
+  const replaceParagraph = document.createElement('p');
+  replaceParagraph.innerHTML = `Avaliação: ${getRadioValue('.eval')}`;
+  evaluation.parentNode.replaceChild(replaceParagraph, evaluation);
+}
+
 submitButton.addEventListener('click', () => {
   replaceNameElement();
 
   replaceEmailElement();
 
   replaceHouseElement();
+
+  replaceRateElement();
 });
+
 //   const families = document.querySelectorAll('.input-family')
 //   for (let family of families) {
 //       if (families[family].checked) {
