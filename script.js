@@ -19,10 +19,10 @@ loginButton.addEventListener('click', loginValidate);
 function enableButtonSubmit() {
   if (agreementCheckbox.checked === true) {
     submitButton.disabled = false;
-    console.log('teste1');
+    submitButton.style.backgroundColor = 'rgb(115, 5, 115)';
   } else {
     submitButton.disabled = true;
-    console.log('teste2');
+    submitButton.style.backgroundColor = 'rgb(180, 180, 180)';
   }
 }
 

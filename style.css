@@ -6,7 +6,7 @@
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-color: rgb(50, 167, 145);
 }
@@ -33,6 +33,15 @@
   border-radius: 4px;
 }
 
+main button {
+  margin-top: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(180, 180, 180);
+  color: white;
+}
+
 .trybewarts-login button {
   width: 100px;
   padding: 5px;
@@ -56,12 +65,19 @@ main form {
   flex-direction: column;
 }
 
+.info-container {
+  padding: 10px 0;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
-  margin: 5px;
 }
 
 .row input {
@@ -76,6 +92,10 @@ main form {
   display: flex;
 }
 
+.family div label {
+  margin-left: 5px;
+}
+
 .row .select-container label {
   align-self: center;
 }
@@ -87,6 +107,69 @@ main form {
   padding: 5px;
   border: none;
   border-radius: 4px;
+}
+
+.family-content-container {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 0;
+  justify-content: space-between;
+}
+
+.family {
+  display: flex;
+  flex-direction: column;
+}
+
+.family div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content div {
+  display: flex;
+  flex-flow: row wrap;
+  flex-grow: 1;
+  align-content: space-evenly;
+}
+
+.content div div {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+
+.content div div input {
+  margin-right: 5px;
+}
+
+.rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.text-area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.text-area textarea {
+  resize: none;
+}
+
+.agreement {
+  margin-top: 10px;
 }
 
 main img {
