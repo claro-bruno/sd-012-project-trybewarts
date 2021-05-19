@@ -18,7 +18,6 @@
         <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
         <h1 id="trybewarts-header-title" slot="">Trybewarts</h1>
 
-
         <forms class="trybewarts-login">
             <input type="text" id="login" class="controlClass" placeholder="Login">
             <input type="password" id="password" class="controlClass" placeholder="Senha">
@@ -51,51 +50,43 @@
 
             <label id="label-family">Qual sua família?</label>
             <div>        
-                <input type="radio" id="frontId" name="family" value="Frontend" >
-                <label id="labelFa" for="frontId">Família Frontend</label>
+                <label for="frontId">
+                <input type="radio" id="frontId" name="family" value="Frontend"> Família Frontend</label>
             </div>
             <div>
-                <input type="radio" id="backId" name="family" value="Backend" >
-                <label id="labelFa" for="backId">Família Backend</label>
+                <label for="backId">
+                <input type="radio" id="backId" name="family" value="Backend"> Família Backend</label>
             </div>
             <div>
-                <input type="radio" id="fullId" name="family" value="FullStack">
-                <label id="labelFa" for="fullId">Família FullStack</label>
+                <label for="fullId">
+                <input type="radio" id="fullId" name="family" value="FullStack"> Família FullStack</label>
             </div>
         </section>
-        
-        <section class="secSebject">
+
+        <section class="secSubject">
             
             <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
             <div>
-                <input type="checkbox" class="subject" name="subject" value="HoFs">
-                <label id="labelSub" for="subject">HoFs</label>
+                <label for="input-hofs">
+                <input type="checkbox" id="input-hofs" name="subject" value="HoFs">HoFs</label>
+                
+                <label for="input-jest">
+                <input type="checkbox" id="input-jest" name="subject" value="Jest">Jest</label>
             </div>
             <div>
-                <input type="checkbox" class="subject" name="subject" value="Jest">
-                <label id="labelSub" for="subject">Jest</label>
+                <label for="input-promises">
+                <input type="checkbox" id="input-promises" name="subject" value="Promises">Promises</label>
+                
+                <label for="input-react">
+                <input type="checkbox" id="input-react" name="subject" value="React">React</label>
             </div>
             <div>
-                <input type="checkbox" class="subject" name="subject" value="Promises">
-                <label id="labelSub" for="subject">Promises</label>
-            </div>
-            <div>
-                <input type="checkbox" class="subject" name="subject" value="React">
-                <label id="labelSub" for="subject">React</label>
-            </div>
-            <div>
-                <input type="checkbox" class="subject" name="subject" value="SQL">
-                <label id="labelSub" for="subject">SQL</label>
-            </div>
-            <div>
-                <input type="checkbox" class="subject" name="subject" value="Python">
-                <label id="labelSub" for="subject">Python</label>
+                <label for="input-sql">
+                <input type="checkbox" id="input-sql" name="subject" value="SQL">SQL</label>
+                
+                <label for="input-python">
+                <input type="checkbox" id="input-python" name="subject" value="Python">Python</label>
             </div>        
-        
-       
-        
-        
-        
 
         </section>
 
