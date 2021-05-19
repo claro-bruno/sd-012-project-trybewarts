@@ -11,3 +11,16 @@ function validateLogin() {
   }
 }
 inputButton.addEventListener('click', validateLogin);
+
+function buttonSubmit(event){
+  const statusButton = event.target.checked;
+  const status = document.getElementById('submit-btn');
+  if (statusButton === true){
+    status.disabled = false;
+  } else {
+    status.enable = true;
+  }
+}
+
+const check = document.getElementById('agreement');
+check.addEventListener('change', buttonSubmit);
