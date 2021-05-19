@@ -46,29 +46,29 @@ main {
 }
 
 #userdata {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 #input-name {
-    width: 49%;
+  width: 49%;
 }
 
 #input-lastname {
-    width: 49%;
+  width: 49%;
 }
 
 #input-email {
-    width: 49%;
+  width: 49%;
 }
 
 #house {
-    width: 49%;
+  width: 49%;
 }
 
 hr {
-    width: 100%;
-    background-color: black;
-    height: 2px;
-    margin: 5% 0 5% 0
+  width: 100%;
+  background-color: black;
+  height: 2px;
+  margin: 5% 0;
 }
