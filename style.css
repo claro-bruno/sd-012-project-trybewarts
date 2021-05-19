@@ -141,6 +141,12 @@ main form {
   align-content: space-evenly;
 }
 
+.textarea-container div {
+  position: absolute;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
 .content div div {
   display: flex;
   flex-direction: row;
@@ -174,17 +180,15 @@ main form {
   position: relative;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;;
-}
-
-.textarea-container div {
-  position: absolute;
-  margin-bottom: 5px;
-  margin-right: 5px;
+  justify-content: flex-end;
 }
 
 .agreement {
   margin-top: 10px;
+}
+
+.infos-div {
+  display: none;
 }
 
 main img {
