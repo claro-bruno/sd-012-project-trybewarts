@@ -25,9 +25,9 @@ function enableButton(event) {
 }
 getAgreementCheck.addEventListener('click', enableButton);
 
-function formOutput (){
- const name = document.querySelector('#input-name').value;
- const lastName = document.querySelector('#input-lastname').value;
- const email = document.querySelector('#input-email').value;
- const house = document.querySelector('#house').value;
-}
+// function formOutput() {
+//   const name = document.querySelector('#input-name').value;
+//   const lastName = document.querySelector('#input-lastname').value;
+//   const email = document.querySelector('#input-email').value;
+//   const house = document.querySelector('#house').value;
+// }
