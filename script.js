@@ -16,8 +16,8 @@ const check = document.getElementById('agreement');
 const send = document.getElementById('submit-btn');
 send.disabled = true;
 
-function validarBotao () {
-  if (check.checked == true) {
+function validarBotao() {
+  if (check.checked) {
     send.disabled = false;
   }
 }
