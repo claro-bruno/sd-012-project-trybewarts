@@ -34,3 +34,12 @@ main {
 .hidden {
   display: none;
 }
+
+#family-container {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style-type: none;
+}

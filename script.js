@@ -51,7 +51,6 @@ function getMaterias() {
   for (let index = 0; index < materia.length; index += 1) {
     if (materia[index].checked) {
       materiaSelecionadas.push(materia[index].value);
-      console.log(materiaSelecionadas);
     }
   }
   return materiaSelecionadas;
@@ -63,31 +62,43 @@ function getAvaliacao() {
   for (let index = 0; index < avalicacao.length; index += 1) {
     if (avalicacao[index].checked) {
       avaliacaoValue = avalicacao[index].value;
-      console.log(avaliacaoValue);
     }
   }
   return avaliacaoValue;
 }
 
-submitBtn.addEventListener('click', (e) => {
-  e.preventDefault();
+const createObject = () => {
   const name = document.querySelector('#input-name').value;
   const lastName = document.querySelector('#input-lastname').value;
   const email = document.querySelector('#input-email').value;
   const house = document.querySelector('#house').value;
   const observacao = document.querySelector('#textarea').value;
-  const printForm = document.querySelector('#print-form-container');
-  const form1 = document.querySelector('#evaluation-form');
-  form1.classList.toggle('hidden');
-  form1.id = '';
-  const addform = document.createElement('form');
-  const addParagraph = document.createElement('p');
-  printForm.appendChild(addform);
-  addform.appendChild(addParagraph);
-  const formResult = `Nome: ${name} ${lastName}`;
-  addParagraph.innerText = formResult;
-});
 
-//  \n Email: ${email} \n Casa: ${house} 
-// \n Familia: ${getFamilyValue()} \n Matérias:${getMaterias()} \n 
-// Avaliação: ${getAvaliacao()} \n Observações ${observacao};
+  const infos = {
+    nomeCompleto: `${name} ${lastName}`,
+    inputEmail: email,
+    casa: house,
+    familia: getFamilyValue(),
+    mateira: getMaterias(),
+    avaliacao: getAvaliacao(),
+    inputObservacao: observacao,
+  };
+  return infos;
+};
+
+submitBtn.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  const form1 = document.querySelector('#inputForm');
+  form1.classList.toggle('hidden');
+
+  const object = createObject();
+
+  document.querySelector('#returnName').innerText = `Nome: ${object.nomeCompleto}`;
+  document.querySelector('#returnEmail').innerText = `Email: ${object.inputEmail}`;
+  document.querySelector('#returnHouse').innerText = `Casa: ${object.casa}`;
+  document.querySelector('#returnFamily').innerText = `Família: ${object.familia}`;
+  document.querySelector('#returnSubject').innerText = `Observações: ${object.mateira}`;
+  document.querySelector('#returnRate').innerText = `Matérias: ${object.avaliacao}`;
+  document.querySelector('#returnComment').innerText = `Avaliação: ${object.inputObservacao}`;
+});
