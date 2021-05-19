@@ -8,6 +8,11 @@ main {
   justify-content: center;
 }
 
+h2 {
+  text-align: center;
+  margin: 5px;
+}
+
 #evaluation-form {
   display: flex;
   flex-direction: column;

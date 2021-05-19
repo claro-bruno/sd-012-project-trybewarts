@@ -11,15 +11,10 @@ function verificaLogin() {
   }
 }
 
-const inputName = document.getElementById('input-name').value;
-const inputLastName = document.getElementById('input-lastname').value;
-const inputEmail = document.getElementById('input-email').value;
-const inputHouse = document.getElementById('house').value;
 const inputsFamilia = document.getElementsByName('family');
 const inputsConteudo = document.getElementsByName('conteudo');
 const mainElement = document.getElementById('mainEl');
 const inputAval = document.getElementsByName('rate');
-const comentText = document.getElementById('textarea').value;
 
 function getFamily() {
   let textoFam = 'Família: '
@@ -48,36 +43,44 @@ function getConteudo() {
   for (let index = 0; index < inputsConteudo.length; index += 1){
     if (inputsConteudo[index].checked) {
      let contSelec = inputsConteudo[index].value;
-     textoCont += contSelec + ', ';
+     textoCont += `${contSelec}, `;
     }
   }
   return textoCont;
 }
 
+  const evalForm = document.getElementById('evaluation-form')
+
 function criaDiv() {
   let formDiv = document.createElement('div');
-  mainElement.appendChild(formDiv);
+  formDiv.id = 'div2';
+  evalForm.appendChild(formDiv);
   for (let index1 = 0; index1 < 7; index1 += 1){
     let pDiv = document.createElement('p');
     pDiv.id = 'formItens' + index1;
-    pDiv.innerHTML = recebeValores(index)
+    pDiv.innerHTML = recebeValores(index1);
     formDiv.appendChild(pDiv);
   }
 }
 
 function recebeValores(num) {
-  let textoNomeSobrenome = 'Nome: ' + inputName + ' ' + inputLastName;
-  let textoEmail = 'Email: ' + inputEmail;
-  let textoCasa = 'Casa: ' + inputHouse;
-  let textoComent = 'Observações: ' + comentText;
-  let array = [textoNomeSobrenome, textoEmail, textoCasa, getFamily(), getConteudo(), getAvaliacao(), textoComent];
+  const inputName = document.getElementById('input-name').value;
+  const inputLastName = document.getElementById('input-lastname').value;
+  const inputEmail = document.getElementById('input-email').value;
+  const inputHouse = document.getElementById('house').value;
+  const comentText = document.getElementById('textarea').value;
+  let fullName = `Nome: ${inputName} ${inputLastName}`;
+  let textoEmail = `Email: ${inputEmail}`;
+  let textoCasa = `Casa: ${inputHouse}`;
+  let textoComent = `Observações: ${comentText}`;
+  let array = [fullName, textoEmail, textoCasa, getFamily(), getConteudo(), getAvaliacao(), textoComent];
   return array[num];
 }
 
-const evalForm = document.getElementById('evaluation-form');
+const div1 = document.getElementById('div1');
 
 function hideForm() {
-  evalForm.style.display = 'none';
+  div1.style.display = 'none';
   criaDiv();
 }
 
@@ -86,9 +89,7 @@ function preventDef(event) {
 }
 
 evalForm.addEventListener('submit', preventDef);
-
 btn2.addEventListener('click', hideForm);
-
 btn.addEventListener('click', verificaLogin);
 const valor = document.querySelector('#agreement');
 
