@@ -90,11 +90,11 @@ main {
   display: flex;
 }
 
-.ckbx-container{ 
+.ckbx-container { 
   display: flex;
 }
 
-text-container {
+.text-container {
   display: flex;
 }
 
@@ -102,6 +102,6 @@ text-container {
   display: flex;
 }
 
-.textarea{
+.textarea {
   display: flex;
 }
