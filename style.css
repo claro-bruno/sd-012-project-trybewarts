@@ -33,3 +33,7 @@ main {
   height: 500px;
   align-self: flex-end;
 }
+
+#all-rates {
+  display: flex;
+}
