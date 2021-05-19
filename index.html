@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Requisito 1 -->
     <header class="header">
+        <!-- Requisito 2 -->
         <img class = "trybewarts-header-logo" src='images/trybewarts-header-logo.svg' alt="logo projeto cabecalho">
+        <!-- Requisito 4 -->
         <h1 id="trybewarts-header-title">Trybewarts</h1>
+        <!-- Requisito 3 -->
         <form class="trybewarts-login" action="" method="get">
             <input type="text" name="login" id="input-login" placeholder="Login">
             <input type="password" name="login" id="input-senha" placeholder="Senha">
@@ -18,8 +22,12 @@
         </form>
     </header>
 <main class="container-form-1">
-    <form id="evaluation-form" class="formEvaluation">
-        <div class="form-row">
+    <!-- Requisito 5 e 6 -->
+    <form id="evaluation-form" class="formEvaluation" method="GET" action="">
+        <div id="pre-form">
+                <!-- Requisito 10 -->
+            <div id="form1-row1">   
+                 <!--Requisito 8  -->
                 <div class="line-content">
                     <label for="input-name">Nome</label>
                   <input type="text" name="name" id="input-name" maxlength="40" placeholder="Nome" required>
@@ -27,23 +35,28 @@
                 <div class="line-content">
                     <label for="input-lastname">Sobrenome</label>
                     <input type="text" name="cpf" id="input-lastname" maxlength="40" placeholder="Sobrenome" required>
-                  </div>
-                <div class="line-content-2">
-                    <label for="input-email">Endereço de e-mail: </label>
-                    <input class="email-input" type="email" name="email" id="input-email" maxlength="50" placeholder="Email" required>
-                  </div>
+                </div>
+            </div>
+            <!-- Requisito 11 -->
+            <div id="form1-row2">    
+                <label for="input-email">Endereço de e-mail: </label>
+                <input class="email-input" type="email" name="email" id="input-email" maxlength="50" placeholder="Email" required>
+                <!-- Requisito 9 -->
+                <select name="house" id="house">
+                    <option value="">Casa</option>
+                    <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+                    <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                    <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                    <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                </select>
+
+            </div>
         </div>   
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo alta trybewarts">
     </form>
     <div>
-        <label>Casa
-        <select id="house" class="line-content-2">
-            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house">Corvinode</option>
-            <option value="Pytherina" id="pytherina-house">Pytherina</option>
-        </select>
-    </label>
+        
+       
     </div>
     
 </main>
