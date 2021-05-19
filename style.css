@@ -57,14 +57,7 @@ form {
   display: flex;
 }
 
-#niveis {
+.direction-row {
   display: flex;
-}
-
-#label-rate {
-  display: flex;
-}
-
-#rate {
-  display: flex;
+  flex-direction: row;
 }

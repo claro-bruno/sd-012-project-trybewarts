@@ -75,21 +75,21 @@ function createTech() {
 
 createTech();
 
-function createLvlAva() {
-  const niveisAva = document.getElementById('rate');
-  for (let index = 0; index < arrayNumber.length; index += 1) {
-    const createLabelAva = document.createElement('label');
-    const createInputAva = document.createElement('input');
-    createLabelAva.innerText = arrayNumber[index];
-    niveisAva.appendChild(createLabelAva);
-    createInputAva.type = 'radio';
-    createInputAva.name = 'rate';
-    createInputAva.value = arrayNumber[index];
-    niveisAva.appendChild(createInputAva);
-  }
-}
+// function createLvlAva() {
+//   const niveisAva = document.getElementById('label-rate');
+//   for (let index = 0; index < arrayNumber.length; index += 1) {
+//     const createLabelAva = document.createElement('label');
+//     const createInputAva = document.createElement('input');
+//     createLabelAva.innerText = arrayNumber[index];
+//     niveisAva.appendChild(createLabelAva);
+//     createInputAva.type = 'radio';
+//     createInputAva.name = 'rate';
+//     createInputAva.value = arrayNumber[index];
+//     niveisAva.appendChild(createInputAva);
+//   }
+// }
 
-createLvlAva();
+// createLvlAva();
 
 document.querySelector('#agreement').addEventListener('input', () => {
   const conteudo = document.querySelector('#agreement');
