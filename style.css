@@ -92,6 +92,6 @@ hr {
 
 #family2 {
   display: flex;
-  flex-flow:column wrap;
+  flex-flow: column wrap;
   width: max-content;
 }
