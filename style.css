@@ -64,14 +64,18 @@ main {
   width: 675px;
 }
 
-#evaluation-form div {
+.dados {
   display: flex;
   flex-flow: row nowrap;
+  margin-bottom: 10px;
 }
 
 #family-radio {
-  display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
+}
+
+#family-radio div {
+  margin-top: 5px;
 }
 
 #avaliacao {
@@ -80,5 +84,7 @@ main {
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
