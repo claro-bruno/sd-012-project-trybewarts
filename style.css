@@ -89,7 +89,22 @@ main {
 }
 
 #house {
-    height: 35px;
-    width: 177px;
-    padding: 3px;
+  height: 35px;
+  width: 177px;
+  padding: 3px;
+}
+
+.content-form-family {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-familia {
+  display: flex;
+  flex-direction: column;
+}
+
+#family {
+  display: flex;
+  flex-direction: column;
 }
