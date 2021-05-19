@@ -113,4 +113,6 @@ const limite = (valor1) => {
 };
 
 let usefunction = limite('');
-usefunction += false;
+if (usefunction === true) {
+  usefunction += false;
+}
