@@ -9,7 +9,6 @@ function loginCheck() {
   alert('Login ou senha inválidos.');
 }
 
-
 function habilitarBtn(checkBox) { //  referência : https://thisinterestsme.com/disable-button-checkbox-checked/
   if (checkBox.checked) {
     document.getElementById('submit-btn').disabled = false;
