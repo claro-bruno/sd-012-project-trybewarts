@@ -9,3 +9,13 @@ btnEl.addEventListener('click', () => {
     alert('Olá, Tryber!');
   }
 });
+
+const botaoSubmit = document.querySelector('#submit-btn');
+const botaoCheck = document.querySelector('#agreement');
+
+botaoSubmit.disabled=true
+botaoCheck.addEventListener('click', () => {
+  if (botaoCheck.checked) {
+    botaoSubmit.disabled=false
+  }
+})
