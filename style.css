@@ -138,6 +138,7 @@ footer {
 }
 
 #rate {
+  font-size: 18px;
   display: flex;
-  justify-content: space-evenly;
+  width:100%;
 }
