@@ -28,11 +28,8 @@ function loginValidation() {
     }
   });
 }
-
-<<<<<<< HEAD
 submitValidation();
 document.getElementById('label-infos').disabled = true;
-=======
 function manageSubmit() {
   agreement.addEventListener('click', () => {
     if (agreement.checked === true) {
