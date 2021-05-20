@@ -11,6 +11,9 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+#trybewarts-header-title {
+  color: white;
+}
 
 button {
   background-color: aliceblue;
@@ -79,4 +82,10 @@ textarea{
   display: flex;
   justify-content: center;
   width: 20%;
+}
+
+#rodape {
+  text-align: center;
+  background-color: rgb(50, 167, 145);
+  font-size: 12px;
 }
