@@ -53,6 +53,7 @@
   flex-direction: row;
   align-items: center;
   margin: 5px;
+  justify-content: start;
 }
 
 .radio2 {
@@ -60,6 +61,7 @@
   flex-direction: row;
   align-items: center;
   margin: 5px;
+  justify-content: start;
 }
 
 .radio3 {
@@ -67,4 +69,5 @@
   flex-direction: row;
   align-items: center;
   margin: 5px;
+  justify-content: start;
 }
