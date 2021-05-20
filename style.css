@@ -75,6 +75,10 @@ main {
   border-radius: 5px;
 }
 
+.input-select {
+  display: inline-block;
+}
+
 #input-email {
   width: 50%;
   height: 30px;
