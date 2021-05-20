@@ -50,3 +50,12 @@ main {
 .to-assess {
   display: flex;
 }
+footer {
+  margin-top: 60px;
+  background-color: blueviolet;
+  padding: 20px;
+}
+footer p {
+  padding-top: 10px;
+  text-align: center;
+}
