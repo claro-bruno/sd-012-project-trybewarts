@@ -88,3 +88,9 @@ footer {
   display: flex;
   flex-direction: column;
 }
+
+#filled-form {
+  width: 675px;
+  display: none;
+  flex-direction: column;
+}
