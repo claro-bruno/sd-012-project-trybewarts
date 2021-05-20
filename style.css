@@ -93,3 +93,13 @@ footer {
 #userTextArea {
   resize: none;
 }
+
+.preSubmit {
+  visibility: visible;
+}
+
+.posSubmit {
+  visibility: hidden;
+  display: block;
+  height: auto;
+}
