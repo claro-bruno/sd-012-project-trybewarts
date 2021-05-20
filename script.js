@@ -1,5 +1,5 @@
-let submitButton = document.querySelector('#submit-btn');
-let checkbox = document.querySelector("#agreement");
+const submitButton = document.querySelector('#submit-btn');
+const checkbox = document.querySelector('#agreement');
 submitButton.disabled = true;
 
 function verifyLogin(login, password) {
@@ -30,13 +30,12 @@ const checkSubmmit = () => {
   } else {
     submitButton.disabled = true;
   }
-}
+};
 
 checkbox.addEventListener('click', checkSubmmit);
 
 checkSubmmit();
 addEvents();
-
 
 /* const loginButton = document.getElementById('botao-login');
 
