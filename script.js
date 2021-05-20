@@ -31,3 +31,14 @@ function validarSubmit() {
 }
 
 validarSubmit();
+
+const charCounter = () => {
+  const textArea = document.getElementById('textarea');
+
+  textArea.addEventListener('keyup', (event) => {
+    const counter = document.getElementById('counter');
+    counter.innerHTML = 500 - event.target.textLength;
+  });
+};
+
+charCounter();
