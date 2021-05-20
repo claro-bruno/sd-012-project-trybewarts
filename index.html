@@ -54,21 +54,21 @@
       </div>
     </div>
     <hr>
-  
-      <div class="label-family form-row form-group"> <!--requisito 12, não acertei no css -->
-        <h5 id="label-family">Qual sua família?</h5>
+    <div class="row">
+      <div class="label-familyform-group"> <!--requisito 12, não acertei no css -->
+        <h5 id="label-family"> Qual sua familia?</h5>
         <div>
         <div>
-          <input type="radio" name="family" id="frontend" value="Frontend">
           <label for="frontend">Família Frontend</label>
+          <input type="radio" name="family" id="frontend" value="Frontend">
         </div>
         <div>
-          <input type="radio" name="family" id="backend" value="Backend">
           <label for="backend">Família Backend</label>
+          <input type="radio" name="family" id="backend" value="Backend">
         </div>
         <div>
-          <input type="radio" name="family" id="fullstack" value="FullStack">
-          <label class="fullstack" for="family">Família Fullstack</label>
+          <label class="fullstack" for="family">Família Fullstack</label>        
+          <input type="radio" name="family" id="fullstack" value="Fullstack">
         </div>
       </div>
       <div class="skills-check form-group"> <!--requisito 14, também falta ajuste no css-->
@@ -97,10 +97,11 @@
           <label class="subject" for="python">Python</label>
           <input class="subject" type="checkbox" value="Python" id="python">
         </div>
+        </div>
       </div>
 
       <hr>
-      <div class="rate form-row"> <!--requesito 14, poderia ter feito um for kk , mas só lembrei dps que terminei, posso fzer dps-->
+      <div id="label-rate" class="form-row"> <!--requesito 14, poderia ter feito um for kk , mas só lembrei dps que terminei, posso fzer dps-->
         <span>Como você avalia a Trybewarts?</span>
         <label for="one">1</label>      
         <input type="radio" name="rate" id="one" value="1">
@@ -125,8 +126,8 @@
       </div>
       <div>
         <div class="form-row">
-          <label for="feedback-area" class="form-label">Deixe seu comentário:</label>
-          <textarea class="text-area form-control" id="feedback-area" rows="3"></textarea>
+          <label for="feedback-area" class="text-area form-label">Deixe seu comentário:</label>
+          <textarea form-control" id="feedback-area" rows="3" maxlength="500"></textarea>
         </div>
       </div>
       <div class="form-group"> <!--só mudei o texto-->
@@ -134,7 +135,7 @@
           <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
           <input class="form-check-input" type="checkbox" id="agreement">
         </div>
-        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+        <button id="submit-btn" type="submit" class="btn btn-primary mt-3">Enviar</button>
       </div>
     </form>
     <div class="col-md-6 d-none d-md-block">

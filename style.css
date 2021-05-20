@@ -51,7 +51,7 @@ main {
 }
 
 /* Fim dos estilos da Main */
-.rate {
+.label-rate {
   display: flex;
   justify-content: space-evenly;
 }
