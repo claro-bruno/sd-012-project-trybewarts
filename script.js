@@ -39,7 +39,7 @@ freeText.addEventListener('keyup', countChar);
 
 window.onload = countChar;
 
-// Gerar textos após o clique do botão de envio
+// Gerar textos após o clique do botão de envio.
 function generateText(array) {
   let text = '';
   for (let index = 0; index < array.length; index += 1) {
