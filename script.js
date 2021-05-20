@@ -19,5 +19,5 @@ const funcaoBotaoSubmit = (event) => {
   } else {
     botaoSubmeter.disabled = true;
   }
-}
+};
 checkboxAgreement.addEventListener('click', funcaoBotaoSubmit);
