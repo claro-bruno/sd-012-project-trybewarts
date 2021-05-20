@@ -39,15 +39,16 @@ main {
   flex-wrap: wrap;
   width: 600px;
   justify-content: space-around;
-}
-
-#trybewarts-forms-logo {
-  height: 500px;
+  margin: 15px 15px;
 }
 
 #container-nomeSobrenomeCasa input {
   width: 200px;
   margin: 2px;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
 }
 
 form select {
