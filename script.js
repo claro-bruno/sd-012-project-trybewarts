@@ -125,3 +125,17 @@ function formOutput(event) {
   getOutputDiv.style.display = 'flex';
 }
 getFormButton.addEventListener('click', formOutput);
+
+let textArea = document.querySelector("#textarea");
+
+textArea.addEventListener('keyup', counterFunction);
+
+
+function counterFunction () {
+  let contador = 500;
+  contador = 500 - textArea.value.length;
+  document.getElementById("counter").innerHTML = contador;
+  return contador
+}
+
+
