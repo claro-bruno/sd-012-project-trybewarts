@@ -36,3 +36,9 @@ const catchCheckbox = document.getElementById('agreement');
 catchCheckbox.addEventListener('change', () => {
   catchButton2.disabled = !catchCheckbox.checked;
 });
+
+const catchTextArea = document.getElementById('textarea');
+const catchCounter = document.getElementById('counter');
+catchTextArea.addEventListener('keyup', () => {
+  catchCounter.innerText = 500 - catchTextArea.value.length;
+});
