@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   border: 0;
+  font-family: 'Rye', cursive;
 }
 
 body {
@@ -51,20 +54,38 @@ main {
   width: 675px;
 }
 
+#evaluation-form h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
 #trybewarts-forms-logo {
-  width: 500px;
+  width: 700px;
 }
 
-#section-name {
+#first-container  input{
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+#first-container  label{
+  margin-left: 10px;
+}
+
+#section-name, #section-email-houses {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
-#section-email-houses {
+#house-type {
   display: flex;
-  flex-direction: row;
+  align-items: center;
 }
-
+#house {
+  min-width: 282px;
+}
 #images-position {
   display: flex;
   justify-content: space-evenly;
@@ -82,17 +103,42 @@ main {
 #family-type {
   display: flex;
   flex-direction: column;
-  background-color: rgb(50, 167, 145);
+  min-width: 300px;
+  min-height: 150px;
+  justify-content: space-around;
+ 
 }
 
+#family-type #label-family {
+  margin-bottom: 10px;
+}
+
+#family-type input[type=radio] {
+  margin-right: 9px;
+}
+
+#toLearn {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  min-height: 150px;
+  justify-content: space-around;
+ 
+}
+
+#toLearn #label-content {
+  margin-bottom: 10px;
+}
+
+.toLearn-opts {
+ display: flex;
+ flex-flow: wrap;
+ justify-content: space-around;
+}
 #learn-content {
   display: flex;
   flex-direction: column;
   background-color: rgb(192, 206, 203);
-}
-
-#label-content {
-  background-color: red;
 }
 
 #learn-checkbox {
@@ -109,15 +155,33 @@ main {
 
 }
 
+input[type=radio] {
+  margin-left: 9px;
+}
+
+#label-infos {
+  margin-bottom: 20px;
+}
+
 footer {
   display: flex;
   background-color: darkslategray;
   color: whitesmoke;
   justify-content: center;
-
+  margin-top: 100px;
 }
 
 footer p {
   margin: 0;
   padding: 10px;
+}
+
+#counter {
+  float: right;
+}
+
+@media screen and (max-width:1378px){
+  #trybewarts-forms-logo {
+    display: none;
+  }
 }

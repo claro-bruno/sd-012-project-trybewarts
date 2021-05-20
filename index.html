@@ -13,59 +13,78 @@
     <img src="images/trybewarts-header-logo.svg" alt="imagem-trybewarts" class="trybewarts-header-logo">  
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form method="GET" action="" class="trybewarts-login form-container js-form">
-      <input id="input-login"type="text" placeholder="Login">
-      <input id="input-senha" type="text" placeholder="Senha">
+      <input class="form-control" id="input-login"type="text" placeholder="Login">
+      <input class="form-control" id="input-senha" type="text" placeholder="Senha">
       <button type="submit" class="btn btn-primary submit-button" id="btt-login">Logar</button>
     </form>
   </header>
   <section id="images-position">
     <main>  
       <form method="GET" action="" id="evaluation-form">
-        <section id="section-name">
-          <input type="text" name="name" id="input-name" placeholder="Nome">
-          <input type="text" name="lastName" id="input-lastname" placeholder="Sobrenome">
-        </section>
-        <section id="section-email-houses">
-          <input type="text" name="email" id="input-email" placeholder="Email">
-          <label for="">Casa: </label>
-          <select name="" id="house">
-            <option value="Gitnória" id="gitnoria-house" >Gitnória</option>
-            <option value="Reactpuff" id="reactpuff-house" >Reactpuff</option>
-            <option value="Corvinode" id="corvinode-house" >Corvinode</option>
-            <option value="Pytherina" id="pytherina-house" >Pytherina</option>
-          </select>
+        <h1>Forms</h1>
+        <section id="first-container" class="line-content">
+          <section id="section-name">
+            <input class="form-control" type="text" name="name" id="input-name" placeholder="Nome">
+            <input class="form-control" type="text" name="lastName" id="input-lastname" placeholder="Sobrenome">
+          </section>
+          <section id="section-email-houses">
+            <input class="form-control" type="text" name="email" id="input-email" placeholder="Email">
+            <div id="house-type">
+              <label class="form-label" for="house"> Casa: </label>
+              <select class="form-select" name="casa" id="house">
+                <option value="Gitnória" id="gitnoria-house" >Gitnória</option>
+                <option value="Reactpuff" id="reactpuff-house" >Reactpuff</option>
+                <option value="Corvinode" id="corvinode-house" >Corvinode</option>
+                <option value="Pytherina" id="pytherina-house" >Pytherina</option>
+              </select>
+            </div>
+          </section>
         </section>
         <hr>
         <section id="family-type-content-learn">
           <section id="family-type">        
             <label for="" id="label-family">Qual sua família?</label> 
             <label for="frontend">
-              <input type="radio" name="family" id="frontend" value="Frontend" class="family">Família Frontend
+              <input class="form-check-input" type="radio" name="family" id="frontend" value="Frontend" class="family">Família Frontend
             </label>
             <label for="backend">
-              <input type="radio" name="family" id="backend" value="Backend" class="family">Família Backend
+              <input class="form-check-input" type="radio" name="family" id="backend" value="Backend" class="family">Família Backend
             </label>
             <label for="fullstack">
-              <input type="radio" name="family" id="fullstack" value="FullStack" class="family">Família FullStack
+              <input class="form-check-input" type="radio" name="family" id="fullstack" value="FullStack" class="family">Família FullStack
             </label>
           </section>
-          <section id="learn-content">
-            <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-            <section id="learn-checkbox">
-              <input type="checkbox" value="HoFs" id="hofs" class="subject">
-              <label for="hofs">HoFs</label>
-              <input type="checkbox" value="Jest" id="jest" class="subject">
-              <label for="jest">Jest</label>
-              <input type="checkbox" value="Promises" id="promises" class="subject">
-              <label for="promises">Promises</label>
-              <input type="checkbox" value="React" id="react" class="subject">
-              <label for="react">React</label>
-              <input type="checkbox" value="SQL" id="sql" class="subject">
-              <label for="sql">SQL</label>
-              <input type="checkbox" value="Python" id="python" class="subject">
-              <label for="python">Python</label>
+          <section id="toLearn" class="line-content">
+            <div class="toLearn-opts">
+              <label class="form-check-label" for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+              <div>
+                <input class="form-check-input" type="checkbox" value="HoFs" id="hofs" class="subject">
+                <label class="form-check-label" for="hofs">HoFs</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" value="Jest" id="jest" class="subject">
+                <label class="form-check-label" for="jest">Jest</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" value="Promises" id="promises" class="subject">
+                <label class="form-check-label" for="promises">Promises</label>
+              </div>
+            </div>
+            <div class="toLearn-opts">
+              <div>
+                <input class="form-check-input" type="checkbox" value="React" id="react" class="subject">
+                <label class="form-check-label" for="react">React</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" value="SQL" id="sql" class="subject">
+                <label class="form-check-label" for="sql">SQL</label>
+              </div>
+              <div>
+                <input class="form-check-input" type="checkbox" value="Python" id="python" class="subject">
+                <label class="form-check-label" for="python">Python</label>
+              </div>
+            </div>
             </section>
-          </section>
         </section>
         <section id="final">
           <hr>
@@ -103,9 +122,8 @@
             </label>
           </div>
           <label class="form-label textarea" for="textarea">Deixe seu comentário:</label>
-          
           <textarea name="curriculo" class="form-control" id="textarea" cols="30" rows="3" maxlength="500" placeholder="Deixe deu comentario"></textarea>
-          <span id="counter">500</span> <br>
+          <small id="counter">500</small> <br>
           <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
           <input class="form-check-input" type="checkbox" id="agreement" value="agreement">
           <button type="submit" class="btn btn-primary submit-button" id="submit-btn" disabled >Enviar</button>

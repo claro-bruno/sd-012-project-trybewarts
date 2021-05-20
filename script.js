@@ -48,13 +48,11 @@ const maxChar = document.getElementById('counter');
 const inputText = document.getElementById('textarea');
 const valorMax = 500;
 
-function countChar(event) {
-  const textSise = event.target.value.length;
+inputText.addEventListener('input', (e) => {
+  const textSise = e.target.value.length;
   const total = valorMax - textSise;
   maxChar.innerHTML = total;
-}
-
-inputText.addEventListener('keyup', countChar);
+});
 
 const btnSubmit = document.getElementById('submit-btn');
 
