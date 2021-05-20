@@ -22,20 +22,28 @@ body img {
 
 main {
   display: flex;
+  justify-content: space-around;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
-  align-content: flex-start;
+  align-content: center;
   border: black, 1px, solid;
   margin: 10px;
 }
 
+#evaluation-form hr {
+  background-color: rgb(50, 167, 145);
+  padding: 1px;
+  width: 100%;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
-  width: 300px;
+  display: flex;
+  align-content: flex-end;
 }
 
 .trybewarts-header-logo {
@@ -53,4 +61,22 @@ main {
 #avaliador input {
   margin-left: 5px;
   margin-right: 3px;
+}
+
+#avaliador label {
+  margin: 10px;
+}
+
+textarea{
+  resize: none;
+  margin: 10px;
+}
+#agreement {
+  margin: 10px;
+}
+
+#submit-btn {
+  display: flex;
+  justify-content: center;
+  width: 20%;
 }
