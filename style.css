@@ -91,6 +91,15 @@ select {
   align-self: center;
 }
 
+.textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  width: 80%;
+}
+
 footer {
   display: flex;
   justify-content: center;
