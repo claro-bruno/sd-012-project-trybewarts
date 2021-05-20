@@ -44,17 +44,12 @@ submitButton.addEventListener('click', () => {
 });
 
 const textArea = document.getElementById('textarea');
-textArea.addEventListener('keypress', () => {
-  const counter = document.getElementById('counter');
-  if (counter.innerText !== '0') {
-    counter.innerText = parseInt(counter.innerText, 10) - 1;
-  }
-});
+const counter = document.getElementById('counter');
+const count = 500;
 
-textArea.addEventListener('keydown', (event) => {
-  const counter = document.getElementById('counter');
-  const { key } = event;
-  if (key === 'Backspace' && counter.innerText !== '500') {
-    counter.innerText = parseInt(counter.innerText, 10) + 1;
-  }
-});
+const countUpdate = () => {
+  const temp = count - textArea.textLength;
+  counter.innerHTML = temp;
+};
+
+textArea.addEventListener('keyup', countUpdate);
