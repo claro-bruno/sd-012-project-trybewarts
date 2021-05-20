@@ -10,6 +10,7 @@ body {
   width: 100%;
   padding: 20px 10px;
   align-items: center;
+  box-shadow: 3px 3px 10px black;
 }
 
 main img {
@@ -35,6 +36,26 @@ main img {
 
 .header form button {
   margin: 0 10px 0 0;
+}
+
+.header #trybewarts-header-title {
+  color: black;
+  animation-name: trybewarts-anim;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes trybewarts-anim {
+
+  0% { color: red;}
+
+  25% { color: blue;}
+
+  50% { color: green;}
+
+  75% { color: yellow;}
+
+  100% { color: red;}
 }
 
 main {
