@@ -49,7 +49,7 @@ select {
 
 .header #trybewarts-header-title {
   color: black;
-  /* animation-name: trybewarts-anim; */
+  animation-name: trybewarts-anim;
   animation-duration: 0.4s;
   animation-iteration-count: infinite;
 }
@@ -118,14 +118,14 @@ h3 {
   margin-bottom: 30px;
 }
 
-#label-rate, #label-content {
-  font-weight: bold;
+#label-rate , #label-content {
+  font-weight: 900;
 }
 
 footer {
   background-color: darkblue;
   color: aliceblue;
-  font-weight: bolder;
+  font-weight: 900;
   height: 30px;
   display: flex;
   flex-direction: row;
@@ -142,7 +142,7 @@ textarea {
 }
 
 #submit-btn {
-  margin: 30px  ;
+  margin: 30px;
 }
 
 .preSubmit {
