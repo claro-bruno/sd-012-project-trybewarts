@@ -193,6 +193,7 @@ footer {
 @media screen and ( max-width : 950px ) {
 
   * {
+    max-width: 100vw;
     font-size: 30px;
   }
 
@@ -273,6 +274,7 @@ footer {
 
   #validacao-container {
     justify-content: space-evenly;
+    
   }
 
   #avaliando-container {
