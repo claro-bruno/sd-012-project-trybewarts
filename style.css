@@ -39,6 +39,7 @@ body h1 {
 
 main {
   display: flex;
+  margin-bottom: 52px;
 }
 
 #evaluation-form {
@@ -61,4 +62,11 @@ main {
 
 .radio-container {
   display: flex;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: dimgrey;
+  padding: 8px;
 }
