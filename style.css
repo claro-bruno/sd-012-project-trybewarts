@@ -11,6 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+
 #trybewarts-header-title {
   color: white;
 }
@@ -30,7 +31,7 @@ main {
 }
 
 main hr {
-  background-color:rgb(50, 167, 145);
+  background-color: rgb(50, 167, 145);
   font-size: 1px;
 }
 
@@ -51,7 +52,6 @@ main hr {
 #trybewarts-forms-logo {
   height: 500px;
   display: flex;
-  /* justify-content: space-around; */
 }
 
 .trybewarts-header-logo {
@@ -69,17 +69,11 @@ main hr {
 #avaliador {
   display: flex;
   align-items: center;
-  
 }
 
 #avaliador input {
-
   margin-left: 5px;
   margin-right: 3px;
-}
-
-#avaliador label {
-  margin: 0px;
 }
 
 textarea {
