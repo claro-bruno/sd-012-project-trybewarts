@@ -41,3 +41,24 @@ function inserImageLogo() {
   paiBody.appendChild(image);
 }
 inserImageLogo();
+
+function insertInputs() {
+  const paiForm = document.querySelector('form');
+  const inputName = document.createElement('input');
+  const inputLastName = document.createElement('input');
+  const inputEmail = document.createElement('input');
+  inputName.id = 'input-name';
+  inputName.type = 'text';
+  inputName.placeholder = 'Nome';
+  paiForm.appendChild(inputName);
+  inputLastName.id = 'input-lastname';
+  inputLastName.type = 'text';
+  inputLastName.placeholder = 'Sobrenome';
+  paiForm.appendChild(inputLastName);
+  inputEmail.id = 'input-email';
+  inputEmail.type = 'text';
+  inputEmail.placeholder = 'Email';
+  paiForm.appendChild(inputEmail);
+}
+
+insertInputs();
