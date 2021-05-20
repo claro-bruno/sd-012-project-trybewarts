@@ -20,32 +20,41 @@
     <main id="main">
         <form id="evaluation-form" action="" >
         <div id="nome-completo">
-          <input id="input-name" type="text" placeholder="Nome">
-          <input id="input-lastname" type="text" placeholder="Sobrenome">
+          <input id="input-name" name="name" type="text" placeholder="Nome">
+          <input id="input-lastname" name="lastname" type="text" placeholder="Sobrenome">
         </div>
         <div id="email-casa">
-          <input id="input-email" type="text" placeholder="Email">
+          <input id="input-email" name="email" type="text" placeholder="Email">
           <label for="house">Casa</label>
-          <select id="house" name="" >
-              <option id="gitnoria-house" value="">Gitnória</option>
-              <option id="reactpuff-house" value="">Reactpuff</option>
-              <option id="corvinode-house" value="">Corvinode</option>
-              <option id="pytherina-house" value="">Pytherina</option>
+          <select id="house" name="casa" >
+              <option id="gitnoria-house"  value="gitnoria">Gitnória</option>
+              <option id="reactpuff-house" value="reactpuff">Reactpuff</option>
+              <option id="corvinode-house" value="corvinode">Corvinode</option>
+              <option id="pytherina-house" value="pytherina">Pytherina</option>
           </select>
         </div>
         <hr>
         <label id="label-family" for="">Qual sua família?</label>
-        <input id="frontend" type="radio" name="family" value="Frontend">
+        <span>
+          <input id="frontend" type="radio" name="family" value="Frontend">
+          <label id="" for="frontend">Familia Frontend</label>
+        </span>
+        <span>
         <input id="backend" type="radio" name="family" value="Backend">
+          <label id="" for="backend">Familia Backend</label>
+        </span>
+        <span>
         <input id="fullstack" type="radio" name="family" value="FullStack">
+          <label id="" for="fullstack">Familia Fullstack</label>
+        </span>
         <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
         <div class="checkbox">
-          <input class="subject" type="checkbox" name="" value="HoFs">
-          <input class="subject" type="checkbox" name="" value="Jest">
-          <input class="subject" type="checkbox" name="" value="Promises">
-          <input class="subject" type="checkbox" name="" value="React">
-          <input class="subject" type="checkbox" name="" value="SQL">
-          <input class="subject" type="checkbox" name="" value="Python">
+          <input class="subject" type="checkbox" name="conteudo" value="HoFs">
+          <input class="subject" type="checkbox" name="conteudo" value="Jest">
+          <input class="subject" type="checkbox" name="conteudo" value="Promises">
+          <input class="subject" type="checkbox" name="conteudo" value="React">
+          <input class="subject" type="checkbox" name="conteudo" value="SQL">
+          <input class="subject" type="checkbox" name="conteudo" value="Python">
         </div>
         <hr>
         <div>
@@ -62,7 +71,7 @@
             <input class="rate" type="radio" name="rate" value="10">
         </div>
         <label class="textarea" for="">Deixe seu comentário:</label>
-        <textarea name="" id="textarea" cols="30" rows="10" maxlength="500" ></textarea>
+        <textarea name="comentario" id="textarea" cols="30" rows="10" maxlength="500" ></textarea>
         <div id="counter"></div>
         <div>
          <label id="label-infos" for="">Você concorda com o uso das informações acima?</label> 

@@ -38,3 +38,27 @@ function countChar() {
 }
 
 textBox.addEventListener('keyup', countChar);
+
+/*
+class="subject"
+Nome
+Sobrenome
+Email
+Casa
+Família
+Matérias
+Avaliação
+Observações
+ */
+/* const inputNome = document.getElementById('input-name')
+const inputSobrenome = document.getElementById('input-lastname')
+const inputEmail = document.getElementById('input-email')
+const inputCasa = document.getElementById('')
+const inputFamília = document.getElementsByName('')
+const inputMatérias = document.getElementById('')
+const inputAvaliação = document.getElementById('')
+const inputObservações = document.getElementById('textarea')
+let valores = {
+}
+checkBox.addEventListener('click', activateSubmit);
+*/
