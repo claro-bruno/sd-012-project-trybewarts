@@ -42,12 +42,12 @@ main {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  margin: 0% 20%;
 }
 
 #evaluation-form {
   display: flex;
   flex-direction: column;
+  width: 675px;
   justify-content: space-around;
   order: 1;
   flex-basis: 675px;
