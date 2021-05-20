@@ -25,6 +25,5 @@ function charCounter() {
   const lng = `${500 - textareaEl.value.length}`;
   counter.textContent = lng;
 }
-
 textareaEl.addEventListener('keyup', charCounter);
 window.onload = charCounter;
