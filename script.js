@@ -31,7 +31,6 @@ function validaBotaoSubmit(event) {
     btnSubmit.setAttribute('disabled', true);
   }
 }
-
 // gerencia eventos de clicks na página
 function listenerClick(event) {
   // se o alvo do click for o elemento com id 'botaoLogin'
@@ -97,11 +96,6 @@ function mostrarFamilia() {
   const inputFamilia = document.querySelector('#family-input');
   const opcoesFamilia = document.getElementsByName('family');
   const paragrafoFamilia = document.createElement('p');
-  // for (const opcao of opcoesFamilia) {
-  //   if (opcao.checked) {
-  //     paragrafoFamilia.innerHTML = `Família: ${opcao.value}`;
-  //   }
-  // }
   opcoesFamilia.forEach((familia) => {
     if (familia.checked) {
       paragrafoFamilia.innerHTML = `Família: ${familia.value}`;
@@ -116,11 +110,6 @@ function mostrarConteudo() {
   const opcoesConteudo = document.getElementsByName('content');
   const paragrafoConteudo = document.createElement('p');
   const conteudosMarcados = [];
-  // for (const opcao of opcoesConteudo) {
-  //   if (opcao.checked) {
-  //     conteudosMarcados.push(opcao.defaultValue);
-  //   }
-  // }
   opcoesConteudo.forEach((conteudo) => {
     if (conteudo.checked) {
       conteudosMarcados.push(conteudo.defaultValue);
@@ -135,11 +124,6 @@ function mostrarAvaliacao() {
   const avaliacao = document.querySelector('#avaliacao-input');
   const opcoesAvaliacao = document.getElementsByName('rate');
   const paragrafoAvaliacao = document.createElement('p');
-  // for (const opcao of opcoesAvaliacao) {
-  //   if (opcao.checked) {
-  //     paragrafoAvaliacao.innerHTML = `Avaliação: ${opcao.value}`;
-  //   }
-  // }
   opcoesAvaliacao.forEach((opcao) => {
     if (opcao.checked) {
       paragrafoAvaliacao.innerHTML = `Avaliação: ${opcao.value}`;
