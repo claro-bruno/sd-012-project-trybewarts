@@ -1,7 +1,6 @@
 body {
   background-color: rgb(246, 244, 244);
 }
-
 header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -9,23 +8,19 @@ header {
   width: 100%;
   padding: 10px 100px;
 }
-
 main {
   display: flex;
   justify-content: center;
 }
-
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-flow: column wrap;
   justify-content: space-evenly;
 }
-
 #evaluation-form input {
   max-width: 60%;
 }
-
 #evaluation-form hr {
   width: 80%;
   height: 2px;
@@ -34,66 +29,57 @@ main {
   align-self: center;
   margin-right: 20%;
 }
-
 h2 {
   text-align: center;
   margin-right: 20%;
 }
-
 select {
   min-width: 33%;
 }
-
 .container {
   margin: 2px 50px;
   display: flex;
   flex-wrap: wrap;
 }
-
 .radios , .checkbox-content {
   display: flex;
   flex-flow: column;
   margin: 5px 20px;
   max-width: 40%;
 }
-
 .checkbox-content {
   margin-left: 50px;
 }
-
 .checkbox-content > :first-child {
   margin-bottom: 20px;
 }
-
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
 }
-
 .trybewarts-header-logo {
   width: 50px;
 }
-
 #trybewarts-header-title {
   font-size: 30px;
   color: white;
 }
-
 .trybewarts-login {
   display: flex;
 }
-
 #trybewarts-forms-logo {
   height: 500px;
 }
-
 #agreement {
   align-self: center;
 }
-
 .textarea {
   display: flex;
   flex-direction: column;
+}
+
+textarea {
+  width: 80%;
 }
 
 footer {
