@@ -3,16 +3,14 @@ const checkboxAgreement = document.querySelector('#agreement');
 const btnSubmit = document.querySelector('#submit-btn');
 const textarea = document.querySelector('#textarea');
 const counter = document.querySelector('#counter');
-const inputForm = document.querySelector('#evaluation-form');
+const containerForm = document.querySelector('#evaluation-form');
 
+const containerValues = document.createElement('div');
 const inputName = document.querySelector('#input-name');
 const inputLastName = document.querySelector('#input-lastname');
 const inputEmail = document.querySelector('#input-email');
 const inputHouse = document.querySelector('#house');
-const inputFamily = document.querySelector('input[name="family"]:checked');
-const inputContentLike = document.querySelectorAll('input[name="matter"]:checked');
-const inputRate = document.querySelector('input[name="rate"]:checked');
-const inputTextare = document.querySelector('#textarea');
+const inputTextarea = document.querySelector('#textarea');
 
 function verificationInputsLogin() {
   const inputLogin = document.querySelector('#input-login');
@@ -47,23 +45,25 @@ textarea.addEventListener('input', () => {
   counter.innerText = caracteresRestantes;
 });
 
+// Resolvi essa questão com ajuda do David Gonzaga
+
 function createElementP(inputValue) {
   const elementP = document.createElement('p');
   elementP.innerHTML = inputValue;
-  inputForm.appendChild(elementP);
+  containerValues.appendChild(elementP);
 }
 
 function matterValue(arrayValue) {
-  let inputValue = 'Matérias:';
+  let inputValue = 'Matérias: ';
   for (let index = 0; index < arrayValue.length; index += 1) {
     inputValue += `${arrayValue[index].value}`;
-    if (index !== arrayValue.length - 1) inputValue += ',';
+    if (index !== arrayValue.length - 1) inputValue += ', ';
   }
   createElementP(inputValue);
 }
 
-function changeValueInput() {
-  inputForm.innerHTML = '';
+function changeValueInput(e) {
+  e.preventDefault();
 
   const fullName = `Nome: ${inputName.value} ${inputLastName.value}`;
   createElementP(fullName);
@@ -71,16 +71,16 @@ function changeValueInput() {
   createElementP(email);
   const house = `Casa: ${inputHouse.value}`;
   createElementP(house);
-  const family = `Família: ${inputFamily.value}`;
-  createElementP(family);
+  const family = document.querySelector('input[name="family"]:checked');
+  createElementP(`Família: ${family.value}`);
+  const inputContentLike = document.querySelectorAll('input[name="matter"]:checked');
   matterValue(inputContentLike);
-  const rate = `Nota: ${inputRate.value}`;
-  createElementP(rate);
-  const comment = `Observações: ${inputTextare.value}`;
+  const rate = document.querySelector('input[name="rate"]:checked');
+  createElementP(`Avaliação: ${rate.value}`);
+  const comment = `Observações: ${inputTextarea.value}`;
   createElementP(comment);
+  containerForm.innerHTML = '';
+  containerForm.appendChild(containerValues);
 }
 
-btnSubmit.addEventListener('click', (e) => {
-  e.preventDefault();
-  changeValueInput();
-});
+btnSubmit.addEventListener('click', changeValueInput);

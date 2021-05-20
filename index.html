@@ -31,7 +31,7 @@
     <main class="main-content">
       <form action="" id="evaluation-form">
         <div class="row">
-          <input id="input-name" type="text" name="name" placeholder="Nome">
+          <input id="input-name" type="text" name="name" placeholder="Nome" required>
           <input id="input-lastname" type="text" name="sobrenome" placeholder="Sobrenome">
         </div>
         <div class="row">
@@ -46,13 +46,16 @@
         </div>
         <label for="" id="label-family">Qual sua família?</label>
         <div class="row">
-          <input type="radio" name="family" value="Frontend">Frontend
+          <input id="input-frontend" type="radio" name="family" value="Frontend">
+          <label for="input-frontend">Frontend</label>
         </div>
         <div class="row">
-          <input type="radio" name="family" value="Backend">Backend
+          <input id="input-backend" type="radio" name="family" value="Backend">
+          <label for="input-backend">Backend</label>
         </div>
         <div class="row">
-          <input type="radio" name="family"  value="FullStack">FullStack
+          <input id="input-fullstack" type="radio" name="family"  value="FullStack">
+          <label for="input-fullstack">FullStack</label>
         </div>
         <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
         <div class="row">
