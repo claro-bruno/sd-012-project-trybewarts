@@ -136,4 +136,5 @@ footer {
 
 #counter {
   display: flex;
+  margin-left: 50%;
 }
