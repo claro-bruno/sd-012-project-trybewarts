@@ -27,25 +27,6 @@ function enableButton(event) {
 }
 getAgreementCheck.addEventListener('click', enableButton);
 
-//function counterFunction () {
-//  let contador = 500;
-//  let referencia = 500;
-//  let counterChar = document.getElementById('counter').value;
-//  let textArea = document.querySelectorAll('#textarea');
-//  counterChar = 500;
-//  if (textArea.value !== '') {
-//    for (let index = 0; index < 500; index += 1) {
-//      contador = 500 - textArea.length;
-//    }
-
-//  }
-//  counterChar = contador;
-//  console.log(counterChar);
-//  return counterChar
-// }
-
-// counterFunction ();
-
 function formOutput(event) {
   event.preventDefault();
   const name = document.querySelector('#input-name').value;
@@ -127,15 +108,10 @@ function formOutput(event) {
 getFormButton.addEventListener('click', formOutput);
 
 let textArea = document.querySelector("#textarea");
-
 textArea.addEventListener('keyup', counterFunction);
-
 
 function counterFunction () {
   let contador = 500;
   contador = 500 - textArea.value.length;
   document.getElementById("counter").innerHTML = contador;
-  return contador
 }
-
-
