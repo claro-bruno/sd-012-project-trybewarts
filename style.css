@@ -38,6 +38,7 @@ ul {
   width: 50px;
   flex-direction: row-reverse;
 }
+
 .trybewarts-login {
   display: flex;
 }
@@ -60,14 +61,15 @@ ul {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
 #fieldset-family {
   display: flex;
   flex-direction: column;
 }
+
 #label-family {
-  display: flex;
-  flex-direction: column;
   display: none;
+  flex-direction: column;
 }
 
 #form2-left {
@@ -84,9 +86,9 @@ ul {
 
 #form-results {
   display: none;
-  }
-    
-.trybewarts-forms-logo{
+}
+
+.trybewarts-forms-logo {
   height: 500px;
 }
 
@@ -101,27 +103,22 @@ ul {
 }
 
 #fieldset-learning {
-  display:flex;
-}
-#label-content {
-  display:none;
-}
-
-.header {
   display: flex;
-  background-color: rgb(50 167 145);
-  justify-content: space-between;
-  }
+}
 
-  .footer-style {
+#label-content {
+  display: none;
+}
+
+.footer-style {
   background-color: rgb(60 64 74);
   padding: 5px;
   color: white;
   text-align: center;
-  }
+}
 
-  .comentario {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  }
+.comentario {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}

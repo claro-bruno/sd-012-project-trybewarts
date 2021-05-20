@@ -3,20 +3,21 @@ const senha = document.getElementById('input-senha');
 const botao = document.getElementById('input-botao');
 const botaoSubmeter = document.getElementById('submit-btn');
 const checkboxAgreement = document.getElementById('agreement');
+// const areaTexto = document.getElementById('textarea');
 function mensagemFormulario() {
   if (login.value === 'tryber@teste.com' && senha.value === '123456') {
-    alert('Olá, Tryber!')
+    alert('Olá, Tryber!');
   } else {
-    alert('Login ou senha inválidos.') 
-  };
-};
+    alert('Login ou senha inválidos.');
+  }
+}
 botao.addEventListener('click', mensagemFormulario);
 
 const funcaoBotaoSubmit = (event) => {
-  if(event.target.checked){
+  if (event.target.checked) {
     botaoSubmeter.disabled = false;
-  } else{
+  } else {
     botaoSubmeter.disabled = true;
-  };
-};
+  }
+}
 checkboxAgreement.addEventListener('click', funcaoBotaoSubmit);
