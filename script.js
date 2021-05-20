@@ -42,6 +42,35 @@ function charCounter() {
 
 charCounter();
 
+const fillComent = () => {
+  const coment = document.getElementById('textarea');
+  const filledComent = document.getElementById('filled-coment');
+
+  filledComent.innerHTML = coment.value;
+};
+
+const fillRate = () => {
+  const rate = document.querySelectorAll('input[name="rate"]');
+  const filledRate = document.getElementById('filled-rate');
+
+  for (let index = 0; index < rate.length; index += 1) {
+    if (rate[index].checked) {
+      filledRate.innerHTML = rate[index].value;
+    }
+  }
+};
+
+const fillContent = () => {
+  const content = document.querySelectorAll('.subject');
+  const filledContent = document.getElementById('filled-content');
+
+  for (let index = 0; index < content.length; index += 1) {
+    if (content[index].checked) {
+      filledContent.innerHTML += `${content[index].value}, `;
+    }
+  }
+};
+
 const fillFamily = () => {
   const family = document.querySelectorAll('input[name="family"]');
   const filledFamily = document.getElementById('filled-family');
@@ -95,6 +124,9 @@ function eventSubmit() {
     fillEmail();
     fillHouse();
     fillFamily();
+    fillContent();
+    fillRate();
+    fillComent();
   });
 }
 
