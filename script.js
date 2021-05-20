@@ -22,13 +22,3 @@ const activeBtn = () => {
         document.getElementById('submit-btn').setAttribute('disabled', 'disabled');
     }
 };
-
-function checkTerms() {
-
-    if (terms.checked) {
-        sendButton.disabled = false;
-    }
-    else {
-        sendButton.disabled = true;
-    }
-};
