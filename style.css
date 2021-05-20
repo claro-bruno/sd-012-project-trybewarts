@@ -67,10 +67,11 @@ main {
   margin: 10px;
 }
 
-textarea{
+textarea {
   resize: none;
   margin: 10px;
 }
+
 #agreement {
   margin: 10px;
 }
