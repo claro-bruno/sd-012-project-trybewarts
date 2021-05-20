@@ -21,16 +21,10 @@ botaoCheck.addEventListener('click', () => {
   }
 });
 
-// const charCounter = (str) => {
-//   // AJUDA EM: https://codepen.io/borisplotkin/pen/RPwXeK
-//   document.querySelector('#counter').innerHTML = lng;
-// }
-
-textareaEl.addEventListener('keyup', charCounter);
-
 function charCounter() {
   const lng = `${500 - textareaEl.value.length}`;
   counter.textContent = lng;
 }
 
+textareaEl.addEventListener('keyup', charCounter);
 window.onload = charCounter;
