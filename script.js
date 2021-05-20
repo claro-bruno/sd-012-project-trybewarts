@@ -19,6 +19,7 @@ const createHouseOptions = (optionsList) => {
     houseSelect.appendChild(newOption);
   }
 };
+// cria objeto com valores e ids das opções do select de casas
 const optionsList = {
   Gitnória: 'gitnoria-house',
   Reactpuff: 'reactpuff-house',
@@ -26,6 +27,24 @@ const optionsList = {
   Pytherina: 'pytherina-house',
 };
 createHouseOptions(optionsList);
+
+// cria inputs do tipo rádio para a avalição da Trybewarts
+const createRateInputs = () => {
+  // acessa div de que agrupa os inputs
+  const rateDiv = document.querySelector('#avaliacao-input');
+  // cria 10 novos inputs com labels
+  for (let index = 1; index <= 10; index += 1) {
+    const newInput = document.createElement('input');
+    const newLabel = document.createElement('label');
+    newInput.type = 'radio';
+    newInput.value = `'${index}'`;
+    newInput.name = 'rate';
+    newLabel.innerHTML = index;
+    rateDiv.appendChild(newInput);
+    rateDiv.appendChild(newLabel);
+  }
+};
+// createRateInputs();
 
 // valida login e senha
 function validacaoLoginSenha(event) {
