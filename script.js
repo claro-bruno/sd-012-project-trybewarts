@@ -96,3 +96,4 @@ for(const singleCheckBox of checkBoxContent) {
     singleCheckBox.checked = true;
   }
 }
+/* Credito: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams */
