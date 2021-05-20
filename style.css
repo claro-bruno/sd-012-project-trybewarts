@@ -70,3 +70,13 @@ main {
   background-color: dimgrey;
   padding: 8px;
 }
+
+#textarea {
+  padding: 20px 16px;
+}
+
+#counter {
+  position: absolute;
+  top: 438px;
+  left: 400px;
+}

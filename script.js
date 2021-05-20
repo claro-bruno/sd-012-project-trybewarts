@@ -20,3 +20,15 @@ agreement.addEventListener('click', () => {
     submitBtn.disabled = false;
   }
 });
+
+const textArea = document.getElementById('textarea');
+let counter = document.getElementById('counter');
+
+function charactersCounter() {
+  const maxLength = 500;
+  const userCharLength = textArea.value.length;
+  const remainingChar = maxLength - userCharLength;
+  counter.innerHTML = remainingChar;
+}
+
+textArea.addEventListener('keyup', charactersCounter);
