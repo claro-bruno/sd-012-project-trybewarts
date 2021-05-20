@@ -51,7 +51,7 @@ header {
 main {
   display: flex;
   align-items: center;
-  width: 100%;
+  justify-content: center;
   height: 650px;
   background: rgb(235, 239, 240);
 }
@@ -59,12 +59,71 @@ main {
 #evaluation-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 675px;
   border: 1px solid black;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.trybewarts-evaluator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 20px 10px;
+}
+
+.trybewarts-evaluator  input, select {
+  border-radius: 7px;
+  padding: 15px;
+  background-color: white;
+  border: none;
+  width: 300px;
+  margin: 5px;
+}
+
+.trybewarts-evaluator select {
+  width: 250px;
+  font-size: 14px;
+}
+
+.trybewarts-evaluator label {
+  font-size: 20px;
+  margin-left: 8px;
 }
   
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+.evaluator-form2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px 10px;
+}
+
+.input-family {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-size: 20px;
+}
+
+.input-family div {
+  margin: 10px 0px;
+}
+
+.input-content {
+  width: 60%;
+  border: 1px solid green;
 }
 
 footer {
@@ -75,10 +134,4 @@ footer {
   height: 39px;
   background: dimgrey;
   color: white;
-}
-
-#label-family {
-  display:flex;
-  flex-wrap: wrap;
-  width: 200px;
 }
