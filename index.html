@@ -10,17 +10,20 @@
 </head>
 
 <body>
+
     <header class="header">
+
         <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
         <h1 id="trybewarts-header-title" slot="">Trybewarts</h1>
         <form class="trybewarts-login">
-            <input type="login" id="login" placeholder="Login">
-            <input type="password" id="password" placeholder="Senha">
-            <button type="submit" id="buttonId">Logar</button>
+            <input type="login" id="login" class="loginClass" placeholder="Login">
+            <input type="password" id="password" class="loginClass" placeholder="Senha">
+            <button type="submit" id="buttonId" class="logarClass">Logar</button>
         </form>
+
     </header>
     <main>
-        <form id="evaluation-form"><strong>Forms</strong>
+        <form id="evaluation-form"><strong class="nameFormsClass">Forms</strong>
             <div>
                 <input type="text" id="input-name" placeholder="Nome">
                 <input type="text" id="input-lastname" placeholder="Sobrenome">
@@ -122,15 +125,15 @@
             </div>
             <div class="divCommentBox">
                 <label class="textarea">Deixe seu comentário:</label>
-                <textarea name="textarea" id="textarea" cols="80" rows="10"></textarea>
+                <textarea name="textarea" id="textarea" cols="50" rows="10"></textarea>
                 <span id="counter">500</span>
             </div>
             <div class="divTermsBox">
-                <input type="checkbox" name="checkbox" id="agreement">
                 <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+                <input type="checkbox" name="checkbox" id="agreement">
             </div>
             <div class="divSubmitBox">
-                <button id="submit-btn" type="submit" disabled>Enviar</button>
+                <button id="submit-btn" class="submitBtnClass" type="submit" disabled>Enviar</button>
             </div>
         </form>
         <img src="images/trybewarts-colored.svg" alt="" id="trybewarts-forms-logo">
