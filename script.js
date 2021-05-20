@@ -12,7 +12,6 @@ function starLogin() {
 }
 btn.addEventListener('click', starLogin);
 
-
 const activeBtn = () => {
 
     if (document.getElementById('agreement').checked) {
