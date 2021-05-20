@@ -21,7 +21,7 @@ agreement.addEventListener('click', () => {
 });
 
 const textArea = document.getElementById('textarea');
-let counter = document.getElementById('counter');
+const counter = document.getElementById('counter');
 
 function charactersCounter() {
   const maxLength = 500;
