@@ -15,7 +15,7 @@ h2 {
 
 #evaluation-form {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   width: 675px;
 }
 
@@ -41,16 +41,11 @@ main img {
   flex-flow: column wrap;
   width: 650px;
   height: 450px;
-  margin: 60px 5px 20px 5px;
+  margin: 60px 5px 20px;
 }
 
 #trybewarts-forms-logo {
-  margin: 60px 5px 20px 5px;
-}
-
-#evaluation-form {
-  display: flex;
-  flex-flow: column wrap;
+  margin: 60px 5px 20pxz;
 }
 
 #form-text {
