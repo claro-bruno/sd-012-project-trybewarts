@@ -100,7 +100,7 @@ function obsInfoAdd() {
   obsInfo.innerHTML = `${obsInfo.innerHTML} ${obs.value}`;
 }
 
-function submitInfos(e) {
+function submitInfos(event) {
   fullNameInfoAdd();
   emailInfoAdd();
   houseInfoAdd();
@@ -110,7 +110,7 @@ function submitInfos(e) {
   obsInfoAdd();
   formDiv.style.display = 'none';
   infos.style.display = 'block';
-  e.preventDefault();
+  event.preventDefault();
 }
 
 form.addEventListener('submit', submitInfos);
