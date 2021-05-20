@@ -46,7 +46,7 @@ const createFamily = () => {
     const createLabelFamily = document.createElement('label');
     const createInput = document.createElement('input');
     createLabelFamily.innerText = familys[index];
-    createInput.className = 'family';
+    createInput.className = 'family form-check-input';
     createInput.type = 'radio';
     createInput.name = 'family';
     createInput.name = 'family';
@@ -65,7 +65,7 @@ const createTech = () => {
     const createInputTech = document.createElement('input');
     createLabelTech.innerText = tech[index];
     createInputTech.type = 'checkbox';
-    createInputTech.className = 'subject';
+    createInputTech.className = 'subject form-check-input';
     createInputTech.value = tech[index];
     getDivTech.appendChild(createLabelTech);
     getDivTech.appendChild(createInputTech);
@@ -92,29 +92,28 @@ const contador = () => {
 
 getTxtArea.addEventListener('keydown', contador);
 
+// const selectDiv = document.querySelector('.direction-row')
+// const label = document.createElement('label')
 
-const selectDiv = document.querySelector('.direction-row')
-const label = document.createElement('label')
+// function createLabel() {
+//   selectDiv.appendChild(label);
+//   label.innerHTML = 'Como você avalia a Trybewarts?'
+// }
 
-function createLabel() {
-  selectDiv.appendChild(label);
-  label.innerHTML = 'Como você avalia a Trybewarts?'
-}
+// createLabel();
 
-createLabel();
+// function createInputs() {
+//   for(let i = 1; i <= 10; i += 1) {
+//     const createLabel = document.createElement('label');
+//     selectDiv.appendChild(createLabel);
+//     const input = document.createElement('input');
+//     createLabel.appendChild(input);
+//     input.type = 'radio';
+//     input.name = 'rate';
+//     input.id = i;
+//     input.value = i;
+//     input.innerHTML = i;
+//   }
+// }
 
-function createInputs() {
-  for(let i = 1; i <= 10; i += 1) {
-    const createLabel = document.createElement('label');
-    selectDiv.appendChild(createLabel);
-    const input = document.createElement('input');
-    createLabel.appendChild(input);
-    input.type = 'radio';
-    input.name = 'rate';
-    input.id = i;
-    input.value = i;
-    input.innerHTML = i;
-  }
-}
-
- createInputs();
+//  createInputs();
