@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 10
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: Achamos que alguns conteúdos de javascript ES6 do bloco 7 foram importantes para o projeto. Por isso, achamos que esse projeto poderia ser desenvolvido no bloco 7, ou que os conteúdos de javascript ES6 do bloco 7 poderiam ser estudados no final do bloco 6. Gostamos muito de desenvolver esse projeto em dupla e achamos que foi bom para treinar o trabalho em equipe.
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: Camila Malvessi e Ygor Saturnino.
 
 ---
 
