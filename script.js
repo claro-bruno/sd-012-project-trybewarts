@@ -24,9 +24,8 @@ loginForm.addEventListener('submit', (event) => {
 });
 
 function activateButton() {
-  if (agreement.checked) {
-    submitBtn.disabled = false;
-  } else submitBtn.disabled = true;
+  if (agreement.checked) submitBtn.disabled = false;
+  else submitBtn.disabled = true;
 }
 activateButton();
 
@@ -143,7 +142,5 @@ const setSubscriptionData = (objectFormData, event) => {
 
 subscriptionForm.addEventListener('submit', (event) => {
   subscriptionFormData = getSubscriptionFormData(event.target, verifySubjectsChecked());
-  // event.preventDefault();
-  // setSubscriptionFormData(subscriptionFormData);
   setSubscriptionData(subscriptionFormData, event);
 });
