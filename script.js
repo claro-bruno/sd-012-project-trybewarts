@@ -1,6 +1,7 @@
 const loginId = document.getElementById('login');
 const passwId = document.getElementById('password');
 const btn = document.getElementById('buttonId');
+const formsBtn = document.getElementById('agreement');
 
 function starLogin() {
     if (loginId.value === 'tryber@teste.com' && passwId.value === '123456') {
@@ -20,4 +21,5 @@ const activeBtn = () => {
     else {
         document.getElementById('submit-btn').setAttribute('disabled', 'disabled');
     }
-};
+}
+formsBtn.addEventListener('click', activeBtn);
