@@ -111,14 +111,14 @@ textarea {
   margin-top: 5px;
 }
 
-#counter {
-  margin-top: 5px;
-}
-
 footer {
   text-align: center;
   padding: 20px 0;
   color: white;
   background-color: rgb(70, 70, 70);
   margin-top: auto;
+}
+
+#counter {
+  margin-top: 5px;
 }
