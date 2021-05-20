@@ -1,96 +1,96 @@
 * {
-    margin: 0;
+  margin: 0;
 }
 
 .header {
-    display: flex;
-    background-color: rgb(50, 167, 145);
-    width: 100%;
-    height: 50px;
-    justify-content: space-between;
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
 }
 
 .trybewarts-header-logo {
-    margin: 4px 0 0 130px;
-    height: 42px;
+  margin: 4px 0 0 130px;
+  height: 42px;
 }
 
 #trybewarts-header-title {
-    color: white;
-    display: flex;
-    align-items: center;
-    font-size: 24px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
 }
 
 .trybewarts-login {
-    display: flex;
+  display: flex;
 }
 
 .loginClass {
-    margin: 11px 0 0 8px;
-    height: 28px;
-    border: none;
-    border-radius: 8px;
-    width: 150px;
+  margin: 11px 0 0 8px;
+  height: 28px;
+  border: none;
+  border-radius: 8px;
+  width: 150px;
 }
 
 .logarClass {
-    margin: 11px 130px 0 8px;
-    height: 30px;
-    border: none;
-    border-radius: 8px;
-    width: 120px;
-    background-color: rgb(69, 0, 133);
-    color: white;
+  margin: 11px 130px 0 8px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  width: 120px;
+  background-color: rgb(69, 0, 133);
+  color: white;
 }
 
 .submitBtnClass {
-    height: 30px;
-    border: none;
-    border-radius: 8px;
-    width: 100%;
-    background-color: rgb(69, 0, 133);
-    color: white;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  background-color: rgb(69, 0, 133);
+  color: white;
 }
 
 main {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 
 .nameFormsClass {}
 
 #evaluation-form {
-    margin-left: 130px;
-    width: 675px;
-    display: flex;
-    flex-direction: column;
+  margin-left: 130px;
+  width: 675px;
+  display: flex;
+  flex-direction: column;
 }
 
 #house {}
 
 .divFamilyBox {
-    display: flex;
-    flex-direction: column;
-    width: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
 }
 
 .divCheckBox {}
 
 .divRadioBox {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
 }
 
 .form-radio {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
 }
 
 .divCommentBox {
-    width: 500px;
+  width: 500px;
 }
 
 .textarea {}
@@ -100,22 +100,22 @@ main {
 .divSubmitBox {}
 
 #trybewarts-forms-logo {
-    height: 500px;
-    position: absolute;
-    right: 10px;
+  height: 500px;
+  position: absolute;
+  right: 10px;
 }
 
 .footerClass {
-    background-color: rgb(54, 54, 54);
-    bottom: 0;
-    display: flex;
-    position: absolute;
-    width: 100%;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
+  background-color: rgb(54, 54, 54);
+  bottom: 0;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 .footerClass p {
-    color: white;
+  color: white;
 }
