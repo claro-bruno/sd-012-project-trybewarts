@@ -32,10 +32,10 @@
         <input type="text" name="email" id="input-email" placeholder="Email">
         <label for="house">Casa: </label>
         <select name="house" id="house">
-          <option id="gitnoria-house" value="gitnoria-house">Gitnoria</option>
-          <option id="reactpuff-house" value="reactpuff-house">Reactpuff</option>
-          <option id="corvinode-house" value="corvinode-house">Corvinode</option>
-          <option id="pytherina-house" value="pytherina-house">Pytherina</option>
+          <option id="gitnoria-house" value="Gitnória">Gitnoria</option>
+          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="Corvinode">Corvinode</option>
+          <option id="pytherina-house" value="Pytherina">Pytherina</option>
         </select>
       </div>
       <hr>
@@ -106,14 +106,17 @@
         </label>         
       </div>
       <div id='container-textarea'>
-          <label for='text-area-input' class="textarea">Deixe seu comentário:</label>
-          <textarea maxlength="500"></textarea>
+          <label for='textarea' class="textarea">Deixe seu comentário:</label>
+          <textarea maxlength="500" id='textarea'></textarea>
+          <p id="counter">500</p>
       </div>
       <div id='container-agreement'>
           <label for='agreement' id='label-infos'>Você concorda com o uso das informações acima?</label>
           <input type="checkbox" id="agreement">
       </div>
-      <button type="submit" id="submit-btn" disabled>Enviar</button>
+      <div id= 'container-button-submit'>
+        <button type="submit" id="submit-btn" disabled>Enviar</button>
+      </div>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da Trybewarts">
   </main>

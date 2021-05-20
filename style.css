@@ -1,11 +1,16 @@
 body {
   margin: 0;
+  height: 100vh;
   background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
 }
 
 main {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 main form {
@@ -21,7 +26,7 @@ main form {
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  padding: 10px;
+  padding: 10px 60px;
   margin-bottom: 50px;
   align-items: center;
   justify-content: space-between;
@@ -57,6 +62,7 @@ main form {
   border-radius: 8px;
   margin: 5px 0;
   height: 35px;
+  width: 100%;
   color: white;
   background-color: rgb(100, 21, 146);
 }
@@ -101,12 +107,18 @@ select {
 
 textarea {
   resize: none;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+#counter {
+  margin-top: 5px;
 }
 
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 20px 0;
   color: white;
   background-color: rgb(70, 70, 70);
-  margin-top: 20px;
+  margin-top: auto;
 }
