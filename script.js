@@ -31,7 +31,6 @@ textarea.addEventListener('keyup', () => {
 function printSubjects() {
   let answer = 'Matérias: ';
   const allInputs = document.querySelectorAll('input[name="content"]:checked');
-  console.log(allInputs);
 
   if (allInputs.length > 0) {
     answer += allInputs[0].value;

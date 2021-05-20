@@ -1,5 +1,6 @@
 main {
   display: flex;
+  justify-content: center;
 }
 
 form {
@@ -15,8 +16,22 @@ main form {
   width: 675px;
 }
 
+button {
+  background-color: blueviolet;
+  color: wheat;
+  border: 1px solid rgb(132, 0, 255);
+  height: 25px;
+  border-radius: 5%;
+}
+
+button:disabled , button [ disabled ] {
+  border: 1px solid gray;
+  background-color: white;
+  color: rgb(102 102 102);
+}
+
 hr {
-  width: 50%;
+  width: 100%;
 }
 
 ul {
@@ -25,8 +40,27 @@ ul {
   width: 675px;
 }
 
+#evaluation-form {
+  border: 1px solid black;
+  margin: 50px 40px;
+}
+
+#input-name , #input-lastname , #input-email , #house {
+  width: 50%;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
+  margin-top: 30px;
+  border: 1px solid black;
+}
+
+#trybewarts-header-title {
+  color: white;
+}
+
+#submit-btn {
+  width: 100%;
 }
 
 #form1-row1 {
