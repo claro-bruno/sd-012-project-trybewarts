@@ -3,9 +3,13 @@ body {
   margin: 0;
 }
 
+#topDiv {
+  background-color: rgb(50, 167, 145);
+}
+
 .header {
   display: flex;
-  background-color: rgb(50, 167, 145);
+  
   justify-content: space-between;
   width: 100%;
   padding: 20px 10px;

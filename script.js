@@ -1,3 +1,53 @@
+const header = document.querySelector('header');
+
+function addHeaderImage() {
+  const image = document.createElement('img');
+  image.src = 'images/trybewarts-header-logo.svg';
+  image.className = 'trybewarts-header-logo';
+  header.appendChild(image);
+}
+addHeaderImage();
+
+function addHeaderTitle() {
+  const title = document.createElement('h1');
+  title.innerHTML = 'Trybewarts';
+  title.id = 'trybewarts-header-title';
+  header.appendChild(title);
+}
+addHeaderTitle();
+
+function addHeaderForm() {
+  const form = document.createElement('form');
+  form.id = 'headerForm';
+  form.className = 'trybewarts-login';
+  header.appendChild(form);
+}
+addHeaderForm();
+
+function addHeaderFormFields() {
+  const form = document.querySelector('#headerForm');
+  const loginInput = document.createElement('input');
+  loginInput.type = 'text';
+  loginInput.placeholder = 'Login';
+  loginInput.id = 'login';
+  form.appendChild(loginInput);
+  const passwordInput = document.createElement('input');
+  passwordInput.type = 'text';
+  passwordInput.placeholder = 'Senha';
+  passwordInput.id = 'password';
+  form.appendChild(passwordInput);
+}
+addHeaderFormFields();
+
+function addHeaderButton() {
+  const form = document.querySelector('#headerForm');
+  const headerButton = document.createElement('button');
+  headerButton.id = 'loginButton';
+  headerButton.innerHTML = 'Logar';
+  form.appendChild(headerButton);
+}
+addHeaderButton();
+
 /* Function checkLogin checks if the login and password typed on header form is equal to default login and password. If true the function shows the alert saying "Ola Tryber". If false function shows the alert saying "Login ou senha invalidos"  */
 function checkLogin() {
   const loginButton = document.querySelector('#loginButton');
