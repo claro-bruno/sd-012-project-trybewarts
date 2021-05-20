@@ -27,8 +27,7 @@ function enableButton(event) {
 }
 getAgreementCheck.addEventListener('click', enableButton);
 
-function formOutput(event) {
-  event.preventDefault();
+function createNameOutput() {
   const name = document.querySelector('#input-name').value;
   const lastName = document.querySelector('#input-lastname').value;
   const pName = document.createElement('p');
