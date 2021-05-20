@@ -150,7 +150,7 @@ hr {
   text-align: right;
 }
 
-#submit-btn {
+.style-disabled-btn {
   margin-top: 10px;
   border-radius: 5px;
   padding: 10px;

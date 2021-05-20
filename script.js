@@ -18,12 +18,10 @@ btnSubmit.disabled = true;
 function checkSelected() {
   if (checkAgree.checked === true) {
     btnSubmit.disabled = false;
-    btnSubmit.removeAttribute('id');
     btnSubmit.classList.add('activated-btn');
   } else {
     btnSubmit.disabled = true;
-    btnSubmit.setAttribute('id', 'submit-btn');
-    btnSubmit.removeAttribute('class');
+    btnSubmit.classList.remove('activated-btn');
   }
 }
 checkAgree.addEventListener('click', checkSelected);
