@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(218, 216, 216);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -28,6 +32,7 @@ header form input {
 
 main {
   display: flex;
+  margin: 10px 0;
 }
 
 #evaluation-form {
@@ -39,6 +44,9 @@ main {
 #trybewarts-forms-logo {
   display: flex;
   height: 500px;
+  background-color: rgb(164, 139, 90);
+  border: 2px solid black;
+  border-radius: 10%;
 }
 
 #evaluation-form div {
@@ -62,4 +70,6 @@ main {
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: center;
+  font-style: italic;
+  text-transform: uppercase;
 }
