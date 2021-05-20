@@ -20,7 +20,7 @@ header {
 }
 
 .header {
-  width: 87%;
+  width: 84%;
   display: flex;
   justify-content: space-between;
   background-color: rgb(50, 167, 145);
@@ -89,6 +89,8 @@ header {
 main {
   width: 87%;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   margin: 0;
 }
 
@@ -100,6 +102,20 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
+  justify-content: flex-start;
+}
+
+#container-data {
+  display: flex;
+  flex-direction: column;
+  width: 675px;
+  justify-content: flex-start;
+  margin-top: 12vh;
+}
+
+.field {
+  margin: 0.1vh 0;
+  font-size: 20px;
 }
 
 #title-form {
@@ -110,10 +126,6 @@ main {
 
 .form-element {
   margin: 0.5vh 0;
-}
-
-#trybewarts-forms-logo {
-  height: 500px;
 }
 
 #container-nome {
@@ -227,6 +239,12 @@ hr {
   border-radius: 6px;
   color: white;
   background-color: rgb(78, 44, 131);
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 footer {
