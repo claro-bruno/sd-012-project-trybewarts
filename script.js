@@ -45,7 +45,6 @@ textarea.addEventListener('input', () => {
   const caracteresRestantes = maxCaracteres - caracteresDigitados;
 
   counter.innerText = caracteresRestantes;
-<<<<<<< HEAD
 });
 
 function createElementP(inputValue) {
@@ -85,6 +84,3 @@ btnSubmit.addEventListener('click', (e) => {
   e.preventDefault();
   changeValueInput();
 });
-=======
-})
->>>>>>> d652ab1667c22a5e052bc3de578649d04f6122c2
