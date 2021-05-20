@@ -1,6 +1,29 @@
 .header {
   display: flex;
+  justify-content: space-between;
   background-color: rgb(50, 167, 145);
+}
+
+.trybewarts-header-logo {
+  width: 120px;
+  height: 120px;
+}
+
+header h1 {
+  align-self: center;
+  font-style: italic;
+}
+
+.trybewarts-login {
+  display: flex;
+}
+
+header form {
+  align-self: center;
+}
+
+header form input {
+  width: 130px;
 }
 
 main {
