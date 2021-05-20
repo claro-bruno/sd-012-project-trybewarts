@@ -1,10 +1,8 @@
-/*Reset*/
-*{
+* {
     margin: 0;
 }
 
-/*Começa os estilos*/
-.header{
+.header {
     display: flex;
     background-color: rgb(50, 167, 145);
     width: 100%;
@@ -12,80 +10,79 @@
     justify-content: space-between;
 }
 
-.trybewarts-header-logo{
+.trybewarts-header-logo {
     display: flex;
 }
 
-#trybewarts-header-title{
+#trybewarts-header-title {
     
 }
 
-.trybewarts-login{
+.trybewarts-login {
     display: flex;
     align-items: center;
 }
 
-main{
+main {
     display: flex;
     width: 1000px;
 }
 
-#evaluation-form{
+#evaluation-form {
     width: 675px;
     display: flex;
     flex-direction: column;
 }
 
-#house{
+#house {
 
 }
 
-.divFamilyBox{
+.divFamilyBox {
     display: flex;
     flex-direction: column;
     width: 200px;
 }
 
-.divCheckBox{
+.divCheckBox {
 
 }
 
-.divRadioBox{
+.divRadioBox {
     display: flex;
     align-items: center;
     font-size: 16px;    
 }
 
-.form-radio{
+.form-radio {
     display: flex;
     flex-direction: row;
     margin-left: 10px;
 }
 
-.divCommentBox{
+.divCommentBox {
     width: 500px;
 }
 
-.textarea{
+.textarea {
     width: 480px;
 }
 
-.divTermsBox{
+.divTermsBox {
 
 }
 
-.divSubmitBox{
+.divSubmitBox {
 
 }
 
-#trybewarts-forms-logo{
+#trybewarts-forms-logo {
     height: 500px;
     position: absolute;
     right: 50px ;
-    
 }
 
-.footerClass{
+.footerClass {
     background-color: rgb(54, 54, 54);
     bottom: 0;
     display: flex;    
@@ -96,6 +93,6 @@ main{
     justify-content: center;
 }
 
-.footerClassalign-content space-between p{
+.footerClassalign-content space-between p {
     color: white;
 }
