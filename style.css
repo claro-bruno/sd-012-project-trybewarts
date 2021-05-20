@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+body {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 .header {
   display: flex;
   flex-flow: row nowrap;
@@ -42,6 +47,7 @@ main {
   justify-content: space-between;
   align-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 
 #evaluation-form {
