@@ -136,3 +136,8 @@ footer {
   background: dimgrey;
   color: white;
 }
+
+#rate {
+  display: flex;
+  justify-content: space-evenly;
+}
