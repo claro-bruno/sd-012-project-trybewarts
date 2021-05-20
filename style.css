@@ -26,7 +26,7 @@ main form {
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  padding: 10px 60px;
+  padding: 10px 80px;
   margin-bottom: 50px;
   align-items: center;
   justify-content: space-between;
