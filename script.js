@@ -2,6 +2,12 @@ const login = document.querySelector('#login');
 const senha = document.querySelector('#senha');
 const btn = document.querySelector('#buttonEntrar');
 const btn2 = document.querySelector('#submit-btn');
+const inputsFamilia = document.getElementsByName('family');
+const inputsConteudo = document.getElementsByName('conteudo');
+const inputAval = document.getElementsByName('rate');
+const div1 = document.getElementById('div1');
+const evalForm = document.getElementById('evaluation-form');
+const valor = document.querySelector('#agreement');
 
 function verificaLogin() {
   if (login.value === 'tryber@teste.com' && senha.value === '123456') {
@@ -10,13 +16,6 @@ function verificaLogin() {
     alert('Login ou senha inválidos.');
   }
 }
-
-const inputsFamilia = document.getElementsByName('family');
-const inputsConteudo = document.getElementsByName('conteudo');
-const inputAval = document.getElementsByName('rate');
-const div1 = document.getElementById('div1');
-const evalForm = document.getElementById('evaluation-form');
-const valor = document.querySelector('#agreement');
 
 function getFamily() {
   let textoFam = 'Família: ';
@@ -79,7 +78,7 @@ function criaDiv() {
 const hideForm = () => {
   div1.style.display = 'none';
   criaDiv();
-}
+};
 
 const preventDef = (event) => event.preventDefault();
 
