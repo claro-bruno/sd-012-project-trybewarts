@@ -56,14 +56,20 @@ h1 {
   padding: 4px 110px;
   border-radius: 5px;
   border: none;
-  box-shadow: 0 2px 2px rgb(58, 58, 58);
   cursor: pointer;
   margin-top: 5px;
+  box-shadow: 1px 2px 0 1px rgb(58, 58, 58);
+  opacity: 0.8;
+  transition: all 0.3s ease;
 }
 
 #btn-login:hover {
-  background-color: rgba(233, 233, 233, 1);
-  box-shadow: none;
+  opacity: 1;
+}
+
+#btn-login:active {
+  box-shadow: 0 0 0 0 rgb(58, 58, 58), inset 3px 3px 3px rgb(58, 58, 58);
+  transform: translate(3px, 3px);
 }
 
 main {
@@ -126,7 +132,20 @@ hr , #textarea {
 }
 
 #textarea {
+  resize: none;
   border: 2px solid gray;
+  border-radius: 7px;
+  outline: none;
+  padding: 10px;
+}
+
+#textarea:hover {
+  border: 2px solid rgb(0, 255, 191);
+  box-shadow: 0 0 2px 2px cyan;
+}
+
+#textarea:focus {
+  box-shadow: 0 0 2px 2px cyan;
 }
 
 label , #counter {
@@ -136,17 +155,33 @@ label , #counter {
   font-family: Lucida, sans-serif;
 }
 
+#counter {
+  text-align: right;
+  padding-right: 70px;
+}
+
 #submit-btn {
   padding: 5px;
   border: none;
   font-size: large;
   background-color: rgb(221, 221, 221);
   border-radius: 5px;
-  box-shadow: 0 2px 2px rgb(58, 58, 58);
+  box-shadow: 1px 2px 0 1px rgb(58, 58, 58);
   cursor: pointer;
   margin-top: 35px;
   width: 40%;
   margin-left: 130px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+#submit-btn:enabled:hover {
+  opacity: 1;
+}
+
+#submit-btn:enabled:active {
+  box-shadow: 0 0 0 0 rgb(58, 58, 58), inset 3px 3px 3px rgb(58, 58, 58);
+  transform: translate(3px, 3px);
 }
 
 .loginSenha {
