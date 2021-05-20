@@ -11,7 +11,7 @@ function starLogin() {
   } else {
     alert('Login ou senha inválidos.');
   }
-}
+};
 btn.addEventListener('click', starLogin);
 
 const activeBtn = () => {
@@ -20,12 +20,12 @@ const activeBtn = () => {
   } else {
     document.getElementById('submit-btn').setAttribute('disabled', 'disabled');
   }
-}
+};
 formsBtn.addEventListener('click', activeBtn);
 
 const textLimitCounter = () => {
   const maxLength = 500;
   document.getElementById('textarea').setAttribute('maxlength', maxLength);
   counter.innerHTML = 500 - textarea.value.length;
-}
+};
 textarea.addEventListener('keyup', textLimitCounter);
