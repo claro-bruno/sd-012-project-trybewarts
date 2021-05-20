@@ -5,20 +5,21 @@ body {
 
 #topDiv {
   background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-items: center;
+  justify-content: center;
 }
 
 .header {
   display: flex;
-  
+  background-color: rgb(50, 167, 145);
   justify-content: space-between;
-  width: 100%;
+  width: 80%;
   padding: 20px 10px;
-  align-items: center;
-  box-shadow: 3px 3px 10px black;
 }
 
 main img {
-  height: 500px;
+  height: 650px;
 }
 
 .header img {
@@ -38,13 +39,17 @@ main img {
   border-radius: 5px;
 }
 
+select {
+  margin-left: 43px;
+}
+
 .header form button {
   margin: 0 10px 0 0;
 }
 
 .header #trybewarts-header-title {
   color: black;
-  animation-name: trybewarts-anim;
+  /* animation-name: trybewarts-anim; */
   animation-duration: 0.4s;
   animation-iteration-count: infinite;
 }
@@ -64,12 +69,15 @@ main img {
 
 main {
   display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 main #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  align-items: center;
 }
 
 main .name-lastName {
@@ -85,11 +93,11 @@ main #trybewarts-logo {
 main #trybewarts-logo #trybewarts-forms-logo {
   flex-direction: row;
   align-content: flex-end;
-  padding: 100px;
+  padding: 10px;
 }
 
 hr {
-  width: 250px;
+  width: 600px;
   background-color: rgb(50, 167, 145);
   border-bottom: 3px;
   border-color: grey;
@@ -99,15 +107,42 @@ hr {
 .userOptions {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+h3 {
+  margin: 0;
+}
+
+#userRate {
+  margin-bottom: 30px;
+}
+
+#label-rate, #label-content {
+  font-weight: bold;
 }
 
 footer {
   background-color: darkblue;
   color: aliceblue;
+  font-weight: bolder;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 #userTextArea {
   resize: none;
+}
+
+textarea {
+  margin: 10px;
+}
+
+#submit-btn {
+  margin: 30px  ;
 }
 
 .preSubmit {
