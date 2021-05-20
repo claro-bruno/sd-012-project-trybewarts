@@ -18,6 +18,7 @@
 
 main {
   display: flex;
+  padding: 20px;
 }
 
 #evaluation-form {
