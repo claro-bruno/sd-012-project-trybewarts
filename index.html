@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div>
-      <header class="header">
-        <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <form class="trybewarts-login">
-          <input id="login" placeholder="Login" type="email">
-          <input id="senha" placeholder="Senha" type="password" maxlength="6">
-          <button id="botao">Enviar</button>
-        </form>
-      </header>
-    </div>
-  </head>
-  <body>
-    <main>
-      <form action="" method="GET" id="evaluation-form">
-        <div id="name-lastname-row">
-          <input type="text" name="Nome" placeholder="Nome" id="input-name">
-          <input type="text" name="Sobrenome" placeholder="Sobrenome" id="input-lastname">
-    </div>
-    <div id="row-email-house" >
-      <input type="email" name="Email" placeholder="Email" id="input-email">
-      <label for="house">Casa:</label>
-      <select name="" id="house">
-        <option value="0">Select house:</option>
-        <option value="1" id="gitnoria-house">Gitnória</option>
-        <option value="2" id="reactpuff-house">Reactpuff</option>
-        <option value="3" id="corvinode-house">Corvinode</option>
-        <option value="4" id="pytherina-house">Pytherina</option>
-      </select>
-    </div>
-  </form>
-</main>
-
-<img src="images/trybewarts-colored.svg" alt="logo" id="trybewarts-forms-logo">
-
-<div id="container-family-checkbox">
-  <div id="your-family">
-    <label id="label-family" for="">Qual sua família?</label>
-    <div id="radio-bottoms">
-      <div>
-        <input type="radio" name="family" id="family-1" value="Frontend">
-        <label for="family-1">Família Frontend</label>
-      </div>
-      <div>
-        <input type="radio" name="family" id="family-2" value="Backend">
-        <label for="family-2">Família Backend</label>
-      </div>
-      <div>
-        <input type="radio" name="family" id="family-3" value="FullStack">
-        <label for="family-3">Família FullStack</label>
-      </div>
-    </div>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <header class="header">
+      <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="">
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form class="trybewarts-login">
+        <input id="login" placeholder="Login" type="email">
+        <input id="senha" placeholder="Senha" type="password" maxlength="6">
+        <button id="botao">Enviar</button>
+      </form>
+    </header>
   </div>
+  <main>
+    <form action="" method="GET" id="evaluation-form">
+      <div id="name-lastname-row">
+        <input type="text" name="Nome" placeholder="Nome" id="input-name">
+        <input type="text" name="Sobrenome" placeholder="Sobrenome" id="input-lastname">
+      </div>
+      <div id="row-email-house" >
+        <input type="email" name="Email" placeholder="Email" id="input-email">
+        <label for="house">Casa:</label>
+        <select name="" id="house">
+          <option value="0">Select house:</option>
+          <option value="1" id="gitnoria-house">Gitnória</option>
+          <option value="2" id="reactpuff-house">Reactpuff</option>
+          <option value="3" id="corvinode-house">Corvinode</option>
+          <option value="4" id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
+    </form>
+  </main>
 
-  <div id="div-checkbox">
-    <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+  <img src="images/trybewarts-colored.svg" alt="logo" id="trybewarts-forms-logo">
+
+  <div id="container-family-checkbox">
+    <div id="your-family">
+      <label id="label-family" for="">Qual sua família?</label>
+      <div id="radio-bottoms">
+        <div>
+          <input type="radio" name="family" id="family-1" value="Frontend">
+          <label for="family-1">Família Frontend</label>
+        </div>
+        <div>
+          <input type="radio" name="family" id="family-2" value="Backend">
+          <label for="family-2">Família Backend</label>
+        </div>
+        <div>
+          <input type="radio" name="family" id="family-3" value="FullStack">
+          <label for="family-3">Família FullStack</label>
+        </div>
+      </div>
+    </div>
+
+    <div id="div-checkbox">
+      <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <input type="checkbox" checked="checked" class="subject" value="HoFs"> HoFs
       <input type="checkbox" class="subject" value="Jest"> Jest
       <input type="checkbox" class="subject" value="Promises"> Promises
@@ -78,17 +76,18 @@
   <input type="radio" name="rate" value="2"> 2
   <input type="radio" name="rate" value="3"> 3
   <input type="radio" name="rate" value="4"> 4
-<input type="radio" name="rate" value="5"> 5
-<input type="radio" name="rate" value="6"> 6
-<input type="radio" name="rate" value="7"> 7
-<input type="radio" name="rate" value="8"> 8
-<input type="radio" name="rate" value="9"> 9
-<input type="radio" name="rate" value="10"> 10
+  <input type="radio" name="rate" value="5"> 5
+  <input type="radio" name="rate" value="6"> 6
+  <input type="radio" name="rate" value="7"> 7
+  <input type="radio" name="rate" value="8"> 8
+  <input type="radio" name="rate" value="9"> 9
+  <input type="radio" name="rate" value="10"> 10
 
 <div>
   <label class="textarea"> Deixe seu comentário:
-    <textarea name="comentário" id="" cols="30" rows="10" maxlength="500"></textarea>
-  </label>  
+    <textarea name="comentário" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+    <div id="counter">500</div>
+  </label>
 </div>  
 
 <div>
