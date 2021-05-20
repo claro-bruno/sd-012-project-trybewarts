@@ -42,3 +42,33 @@ const catchCounter = document.getElementById('counter');
 catchTextArea.addEventListener('keyup', () => {
   catchCounter.innerText = 500 - catchTextArea.value.length;
 });
+
+const catchInputName = document.getElementById('input-name');
+const catchInputLastName = document.getElementById('input-lastname');
+const catchInputCasa = document.getElementById('house');
+const catchInputTextarea = document.getElementById('textarea');
+const catchInputEmail2 = document.getElementById('input-email');
+const evaluationForm = document.getElementById('evaluation-form');
+
+const createDivAnswers = (event) => {
+  event.preventDefault();
+  const catchInputMaterias = document.querySelectorAll('input[name="content"]:checked');
+  const materias = [];
+  for (let index = 0; index < catchInputMaterias.length; index += 1) {
+    materias.push(catchInputMaterias[index].value);
+  }
+  const catchInputFamily = document.querySelector('input[name="family"]:checked');
+  const catchInputRate = document.querySelector('input[name="rate"]:checked');
+  const newDiv = document.createElement('div');
+  newDiv.innerText = `Nome: ${catchInputName.value} ${catchInputLastName.value};
+  Email: ${catchInputEmail2.value};
+  Casa: ${catchInputCasa.value};
+  Família: ${catchInputFamily.value};
+  Matérias: ${materias.join(', ')};
+  Avaliação: ${catchInputRate.value};
+  Observações: ${catchInputTextarea.value}`;
+  evaluationForm.innerHTML = '';
+  evaluationForm.appendChild(newDiv);
+};
+
+catchButton2.addEventListener('click', createDivAnswers);
