@@ -32,7 +32,6 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
-  flex-wrap: wrap;
 }
 
 #container-nomeSobrenomeCasa {
@@ -77,9 +76,14 @@ form select {
 
 #label-rate {
   display: flex;
+<<<<<<< HEAD
 }
 
 #textarea {
   max-width: 5ch;
   overflow: hidden;
 }
+=======
+  flex-wrap: nowrap;
+};
+>>>>>>> 444afb6946a2c007fe1aea5a900a63ce3118e2c8
