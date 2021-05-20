@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Trybe Warts</title>
 </head>
@@ -12,80 +13,80 @@
     <header class="header">
         <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Imagem do trybewarts">
         <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <form action="" class="trybewarts-login">
-            <input type="email" placeholder="Login" id="login">
-            <input type="password" placeholder="Senha" id="password">
-            <button type="submit" id="botao-login">Logar</button>
+        <form class="trybewarts-login">
+            <input class="form-control" type="email" placeholder="Login" id="login">
+            <input class="form-control" type="password" placeholder="Senha" id="password">
+            <button class="btn btn-outline-light" type="submit" id="botao-login">Logar</button>
         </form>
     </header>
     <main>
         <form method="GET" id="evaluation-form">
-            <div id="dados-container">
-                <input type="text" id="input-name" placeholder="Nome">
-                <input type="text" id="input-lastname" placeholder="Sobrenome">
+            <div id="dados-container" class="form-control">
+                <input class="form-control" type="text" id="input-name" placeholder="Nome">
+                <input class="form-control" type="text" id="input-lastname" placeholder="Sobrenome">
             </div>
-            <div id="house-container">
-                <input type="text" id="input-email" placeholder="Email">
-                <label for="house">Casa</label>
-                <select name="house" id="house"></select>
+            <div id="house-container" class="form-control">
+                <input class="form-control" type="text" id="input-email" placeholder="Email">
+                <label class="h5" for="house">Casa</label>
+                <select class="form-select " name="house" id="house"></select>
             </div>
-            <div id="family-container">
+            <div id="family-container" class="form-control">
                 <label for="family" id="label-family">Qual sua família?</label>
-                <div id="family-input"></div>
+                <div class="form-check" id="family-input"></div>
             </div>
-            <div id="conteudo-container">
+            <div id="conteudo-container" class="form-control">
                 <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-                <div id="radio-button-container"></div>
+                <div id="radio-button-container" class="form-check"></div>
             </div>
-            <div id="avaliando-container">
-                <div class="direction-row">
+            <div id="avaliando-container" class="form-control">
+                <div class="direction-row" class="form-check">
                     <label id="label-rate">Como você avalia a Trybewarts?</label>
-                    <label for="one">
-                        <input id="one" type="radio" name="rate" value="1">1
+                    <label for="one"> 
+                        <input class="form-check-input" id="one" type="radio" name="rate" value="1"> 1
                     </label>
                     <label for="two">
-                        <input id="two" type="radio" name="rate" value="2">2
+                        <input class="form-check-input" id="two" type="radio" name="rate" value="2"> 2
                     </label>
                     <label for="three">
-                        <input id="three" type="radio" name="rate" value="3">3
+                        <input class="form-check-input" id="three" type="radio" name="rate" value="3"> 3
                     </label>
                     <label for="four">
-                        <input id="four" type="radio" name="rate" value="4">4
+                        <input class="form-check-input" id="four" type="radio" name="rate" value="4"> 4
                     </label>
                     <label for="five">
-                        <input id="five" type="radio" name="rate" value="5">5
+                        <input class="form-check-input" id="five" type="radio" name="rate" value="5"> 5
                     </label>
                     <label for="six">
-                        <input id="six" type="radio" name="rate" value="6">6
+                        <input class="form-check-input" id="six" type="radio" name="rate" value="6"> 6
                     </label>
                     <label for="seven">
-                        <input id="seven" type="radio" name="rate" value="7">7
+                        <input class="form-check-input" id="seven" type="radio" name="rate" value="7"> 7
                     </label>
                     <label for="eight">
-                        <input id="eight" type="radio" name="rate" value="8">8
+                        <input class="form-check-input" id="eight" type="radio" name="rate" value="8"> 8
                     </label>
                     <label for="none">
-                        <input id="none" type="radio" name="rate" value="9">9
+                        <input class="form-check-input" id="none" type="radio" name="rate" value="9"> 9
                     </label>
                     <label for="ten">
-                        <input id="ten" type="radio" name="rate" value="10">10
+                        <input class="form-check-input" id="ten" type="radio" name="rate" value="10"> 10
                     </label>
                 </div>
             </div>
-            <div id="texto-container">
+            <div id="texto-container" class="form-control">
                 <label class="textarea" for="textarea">Deixe seu comentário:</label>
-                <textarea id="textarea" name="textarea" maxlength="500"></textarea>
+                <textarea id="textarea" class="form-control" name="textarea" maxlength="500"></textarea>
             </div>
             <div id="contador-container">
                 <div id="exibir-contador">
                     <p>total de caracteres:<p id="counter"></p></p>
                 </div>
             </div>
-            <div id="validacao-container">
-                <label id="label-infos" for="infos">Você concorda com o uso das informações acima?</label>
-                <input type="checkbox" name="infos" id="agreement" required>
+            <div id="validacao-container" class="form-check">
+                <label class="form-check-label" id="label-infos" for="infos">Você concorda com o uso das informações acima?</label>
+                <input class="form-check-input" type="checkbox" name="infos" id="agreement" required>
             </div>
-            <button type="submit" id="submit-btn" disabled>Enviar</button>
+            <button class="btn btn-primary" type="submit" id="submit-btn" disabled>Enviar</button>
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="logo da Trybewarts">
     </main>

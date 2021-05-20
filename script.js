@@ -46,7 +46,7 @@ const createFamily = () => {
     const createLabelFamily = document.createElement('label');
     const createInput = document.createElement('input');
     createLabelFamily.innerText = familys[index];
-    createInput.className = 'family';
+    createInput.className = 'family form-check-input';
     createInput.type = 'radio';
     createInput.name = 'family';
     createInput.name = 'family';
@@ -65,7 +65,7 @@ const createTech = () => {
     const createInputTech = document.createElement('input');
     createLabelTech.innerText = tech[index];
     createInputTech.type = 'checkbox';
-    createInputTech.className = 'subject';
+    createInputTech.className = 'subject form-check-input';
     createInputTech.value = tech[index];
     getDivTech.appendChild(createLabelTech);
     getDivTech.appendChild(createInputTech);
