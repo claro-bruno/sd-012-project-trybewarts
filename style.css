@@ -26,12 +26,14 @@
 }
 
 main{
-    flex-direction: column;
+    display: flex;
     width: 1000px;
 }
 
 #evaluation-form{
-
+    width: 675px;
+    display: flex;
+    flex-direction: column;
 }
 
 #house{
@@ -47,7 +49,6 @@ main{
 
 .divRadioBox{
     display: flex;
-    justify-content: space-around;
     align-items: center;
     font-size: 16px;    
 }
@@ -55,10 +56,15 @@ main{
 .form-radio{
     display: flex;
     flex-direction: row;
+    margin-left: 10px;
 }
 
 .divCommentBox{
+    width: 500px;
+}
 
+#textarea{
+    width: 480px;
 }
 
 .divTermsBox{
@@ -71,9 +77,9 @@ main{
 
 #trybewarts-forms-logo{
     height: 500px;
-    left: 50%;
     position: absolute;
-    display: flex;
+    right: 50px ;
+    
 }
 
 .footerClass{
