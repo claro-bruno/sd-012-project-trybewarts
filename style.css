@@ -38,7 +38,32 @@ main {
   width: 650px;
 }
 
+.label-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+}
+#family-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
 #label-family {
   display: flex;
   flex-flow: column;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-wrap: wrap;
 }
