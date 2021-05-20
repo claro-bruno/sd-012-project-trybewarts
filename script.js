@@ -1,17 +1,17 @@
 function titleOnHeader() {
-  const paiBody = document.querySelector('header');
+  const paiHeader = document.querySelector('header');
   const title = document.createElement('h1');
   title.innerHTML = 'Trybewarts';
-  paiBody.appendChild(title);
+  paiHeader.appendChild(title);
   title.id = 'trybewarts-header-title';
 }
 titleOnHeader();
 // HeaderVAZIO foi criado só para adiantar, pode ser substituido futuramente.
 function headerVazio() {
-  const paiBody = document.querySelector('header');
+  const paiHeader = document.querySelector('header');
   const teste = document.createElement('h1');
   teste.innerHTML = '';
-  paiBody.appendChild(teste);
+  paiHeader.appendChild(teste);
 }
 headerVazio();
 
@@ -26,5 +26,18 @@ function formularyOnBody() {
   main.style.display = 'flex';
   form.style.display = 'flex';
   form.style.width = '675px';
+  // Desafio 6.
+  form.style.flexDirection = 'column';
+  form.method = 'GET';
 }
 formularyOnBody();
+
+function inserImageLogo() {
+  const paiBody = document.querySelector('body');
+  const image = document.createElement('img');
+  image.id = 'trybewarts-forms-logo';
+  image.src = 'images/trybewarts-colored.svg';
+  image.style.height = '500px';
+  paiBody.appendChild(image);
+}
+inserImageLogo();
