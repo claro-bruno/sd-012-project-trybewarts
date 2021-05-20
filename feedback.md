@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 8
 
 ---
 
@@ -19,11 +19,12 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: Para um projeto em dupla, foi um projeto bem fácil. Projetos em grupo ao me ver, deveriam 
+ser um pouco mais dificeis.
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: Bruno Yamamoto, Tiago Ornelas.
 
 ---
 
