@@ -11,7 +11,7 @@ function starLogin() {
   } else {
     alert('Login ou senha inválidos.');
   }
-};
+}
 btn.addEventListener('click', starLogin);
 
 const activeBtn = () => {
