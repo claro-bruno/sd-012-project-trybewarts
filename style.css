@@ -75,17 +75,15 @@ main {
   border-radius: 5px;
 }
 
-.input-select {
-  display: inline-block;
-}
-
 #input-email {
+  display: inline-block;
   width: 50%;
   height: 30px;
   border-radius: 5px;
 }
 
 #house {
+  display: inline-block;
   width: 43%;
   height: 30px;
   border-radius: 5px;
