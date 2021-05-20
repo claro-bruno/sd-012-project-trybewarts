@@ -19,9 +19,9 @@
         <h1 id="trybewarts-header-title" slot="">Trybewarts</h1>
 
         <form class="trybewarts-login">
-            <input type="text" id="login" class="controlClass" placeholder="Login">
-            <input type="password" id="password" class="controlClass" placeholder="Senha">
-            <button id="buttonId" class="controlClass">Logar</button>
+            <input type="email" id="login" placeholder="Login">
+            <input type="password" id="password" placeholder="Senha">
+            <button type="submit" id="buttonId">Logar</button>
         </form>
 
     </header>
@@ -66,29 +66,28 @@
             <div class="divCheckBox">
 
                 <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+            </div>
+
                 <div>
                     <label for="input-hofs">
                         <input type="checkbox" id="input-hofs" class="subject" value="HoFs"> HoFs</label>
 
                     <label for="input-jest">
-                        <input type="checkbox" id="input-jest" class="subject" value="Jest"> Jest</label>
+                        <input type="checkbox" id="input-jest" class="subject" value="Jest"> Jest</label>   
                 </div>
                 <div>
                     <label for="input-promises">
-                        <input type="checkbox" id="input-promises" class="subject" value="Promises" name="conToLearn">
-                        Promises</label>
+                        <input type="checkbox" id="input-promises" class="subject" value="Promises" name="conToLearn"> Promises</label>
 
                     <label for="input-react">
-                        <input type="checkbox" id="input-react" class="subject" value="React" name="conToLearn">
-                        React</label>
+                        <input type="checkbox" id="input-react" class="subject" value="React" name="conToLearn"> React</label>
                 </div>
                 <div>
                     <label for="input-sql">
                         <input type="checkbox" id="input-sql" class="subject" value="SQL" name="conToLearn"> SQL</label>
 
                     <label for="input-python">
-                        <input type="checkbox" id="input-python" class="subject" value="Python" name="conToLearn">
-                        Python</label>
+                        <input type="checkbox" id="input-python" class="subject" value="Python" name="conToLearn">Python</label>
                 </div>
 
             </div>
@@ -139,7 +138,7 @@
             </div>
 
             <div class="divCommentBox">
-                <label id="textarea">Deixe seu comentário:</label>
+                <label class="textarea">Deixe seu comentário:</label>
                 <textarea name="textarea" id="textarea" cols="80" rows="10" maxlength="500"></textarea>
                 <span id="counter">500</span>
             </div>
