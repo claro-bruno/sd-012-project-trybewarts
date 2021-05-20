@@ -87,29 +87,29 @@ const getTxtArea = document.getElementById('textarea');
 
 const contador = () => {
   const getContador = document.querySelector('#counter');
-  getContador.innerHTML = getTxtArea.textLength;
+  getContador.innerHTML = 500 - getTxtArea.textLength;
 };
 
-getTxtArea.addEventListener('keydown', contador);
+getTxtArea.addEventListener('keyup', contador);
 
-const selectDiv = document.querySelector('.direction-row')
-const label = document.createElement('label')
+const selectDiv = document.querySelector('.direction-row');
+const label = document.createElement('label');
 
 function createLabel() {
   selectDiv.appendChild(label);
-  label.innerHTML = 'Como você avalia a Trybewarts?'
+  label.innerHTML = 'Como você avalia a Trybewarts?';
   label.id = 'label-rate';
 }
 
 createLabel();
 
 function createInputs() {
-  for(let i = 1; i <= 10; i += 1) {
-    const createLabel = document.createElement('label');
-    selectDiv.appendChild(createLabel);
+  for (let i = 1; i <= 10; i += 1) {
+    const createLabel1 = document.createElement('label');
+    selectDiv.appendChild(createLabel1);
     const input = document.createElement('input');
-    createLabel.innerText = i
-    createLabel.appendChild(input);
+    createLabel1.innerText = i;
+    createLabel1.appendChild(input);
     input.type = 'radio';
     input.name = 'rate';
     input.id = i;
@@ -117,4 +117,4 @@ function createInputs() {
   }
 }
 
- createInputs();
+createInputs();
