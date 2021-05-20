@@ -11,7 +11,6 @@ function starLogin() {
 }
 btn.addEventListener('click', starLogin);
 
-
 const activeBtn = () => {
 
     if (document.getElementById('agreement').checked) {
@@ -22,4 +21,3 @@ const activeBtn = () => {
         document.getElementById('submit-btn').setAttribute('disabled', 'disabled');
     }
 };
-
