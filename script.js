@@ -1,22 +1,17 @@
-const loginId = document.getElementById('#login');
-const passwId = document.getElementById('#password');
-const sendButton = document.querySelector('#submit-btn');
+const loginId = document.getElementById('login');
+const passwId = document.getElementById('password');
+const btn = document.getElementById('buttonId');
+const sendButton = document.querySelector('submit-btn');
 
-function startLogin() {
-    if (loginId.value !== 'tryber@teste.com' || passwId.value !== '123456') {
-      alert('Login ou senha inválidos.');
-    } else {
-      alert('Olá, Tryber!');
-    };
-};
-/*function startLogin() {
+function starLogin() {
     if (loginId.value === 'tryber@teste.com' && passwId.value === '123456') {
-        alert('Login ou senha inválidos.')
+    alert('Olá, Tryber!');
+    } else {
+    alert('Login ou senha inválidos.');
     }
-    else {
-        alert('Olá, Tryber!');
-    }   
-};*/
+}
+btn.addEventListener('click', starLogin);
+
 
 const activeBtn = () => {
 
@@ -27,7 +22,6 @@ const activeBtn = () => {
     else {
         document.getElementById('submit-btn').setAttribute('disabled', 'disabled');
     }
-
 };
 
 function checkTerms() {
@@ -38,5 +32,4 @@ function checkTerms() {
     else {
         sendButton.disabled = true;
     }
-
 };
