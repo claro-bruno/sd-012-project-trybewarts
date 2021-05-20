@@ -16,6 +16,7 @@ const inputsConteudo = document.getElementsByName('conteudo');
 const inputAval = document.getElementsByName('rate');
 const div1 = document.getElementById('div1');
 const evalForm = document.getElementById('evaluation-form');
+const valor = document.querySelector('#agreement');
 
 function getFamily() {
   let textoFam = 'Família: ';
@@ -70,25 +71,17 @@ function criaDiv() {
   evalForm.appendChild(formDiv);
   for (let index1 = 0; index1 < 7; index1 += 1) {
     const pDiv = document.createElement('p');
-
     pDiv.innerHTML = recebeValores(index1);
     formDiv.appendChild(pDiv);
   }
 }
 
-function hideForm() {
+const hideForm = () => {
   div1.style.display = 'none';
   criaDiv();
 }
 
-function preventDef(event) {
-  event.preventDefault();
-}
-
-evalForm.addEventListener('submit', preventDef);
-btn2.addEventListener('click', hideForm);
-btn.addEventListener('click', verificaLogin);
-const valor = document.querySelector('#agreement');
+const preventDef = (event) => event.preventDefault();
 
 function habilitaBotão() {
   if (valor.checked) {
@@ -98,6 +91,9 @@ function habilitaBotão() {
   }
 }
 
+evalForm.addEventListener('submit', preventDef);
+btn2.addEventListener('click', hideForm);
+btn.addEventListener('click', verificaLogin);
 valor.addEventListener('click', habilitaBotão);
 
 const limite = (valor1) => {

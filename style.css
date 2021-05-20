@@ -82,6 +82,7 @@ main img {
   margin: 5px;
   flex-grow: 0;
   border: none;
+  border-radius: 4px;
   box-shadow: 2px 2px 10px black;
 }
 
@@ -94,9 +95,10 @@ main img {
 
 #house {
   background-color: white;
-  border: none;
   padding: 15px;
   width: 85%;
+  border: none;
+  border-radius: 4px;
   box-shadow: 2px 2px 10px black;
 }
 
