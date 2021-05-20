@@ -34,11 +34,12 @@ window.onload = () => {
 };
 
 //Requisito 20. Contador de caracteres Utilizando a função onkeyup
+//Código com modificações a partir de https://pt.stackoverflow.com/questions/25753/como-fazer-um-contador-de-caracteres-de-uma-textarea
 const conta_caracteres = (valor) => {
-  quant = 500;
-  total = valor.length;
-  if(total <= quant) {
-      resto = quant - total;
+  maximoDeCaracteres = 500;
+  totalDigitados = valor.length;
+  if(totalDigitados <= maximoDeCaracteres) {
+      resto = maximoDeCaracteres - totalDigitados;
       document.getElementById('counter').innerHTML = resto;
   } else {
       document.getElementById('textarea').value = valor.substr(0,quant);
