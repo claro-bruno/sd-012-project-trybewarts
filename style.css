@@ -46,3 +46,9 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+input[type='radio']{   
+  vertical-align: baseline;
+  padding: 10px;
+  margin: 10px;
+}
