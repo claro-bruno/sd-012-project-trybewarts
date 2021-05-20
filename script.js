@@ -2,7 +2,8 @@ const submitButtom = document.getElementById('submit-button');
 const submitBtn = document.getElementById('submit-btn');
 const agreement = document.getElementById('agreement');
 // Botão de login
-function submit() {
+
+submitButtom.addEventListener('click', () => {
   const inputLogin = document.getElementById('input-login');
   const inputPassword = document.getElementById('input-password');
 
@@ -11,9 +12,8 @@ function submit() {
   } else {
     alert('Olá, Tryber!');
   }
-}
+});
 
-submitButtom.addEventListener('click', submit);
 // Botão do formulário central
 agreement.addEventListener('click', () => {
   if (agreement.checked === true) {
