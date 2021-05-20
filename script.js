@@ -87,7 +87,7 @@ const getTxtArea = document.getElementById('textarea');
 
 const contador = () => {
   const getContador = document.querySelector('#counter');
-  getContador.innerHTML = getTxtArea.textLength;
+  getContador.innerHTML = 500 - getTxtArea.textLength;
 };
 
-getTxtArea.addEventListener('keydown', contador);
+getTxtArea.addEventListener('keyup', contador);
