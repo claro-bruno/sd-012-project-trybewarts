@@ -5,6 +5,7 @@ const getAgreementCheck = document.querySelector('#agreement');
 const getFormButton = document.querySelector('#submit-btn');
 const getOutputDiv = document.querySelector('#form-output');
 const getInputDiv = document.querySelector('#form-input');
+const textArea = document.querySelector("#textarea");
 
 function validaLogin() {
   if (
@@ -106,11 +107,11 @@ function formOutput(event) {
 }
 getFormButton.addEventListener('click', formOutput);
 
-let textArea = document.querySelector("#textarea");
-textArea.addEventListener('keyup', counterFunction);
-
-function counterFunction () {
+function counterFunction() {
   let contador = 500;
   contador = 500 - textArea.value.length;
-  document.getElementById("counter").innerHTML = contador;
+  document.getElementById('counter').innerHTML = contador;
 }
+textArea.addEventListener('keyup', counterFunction);
+
+
