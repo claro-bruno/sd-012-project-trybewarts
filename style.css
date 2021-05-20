@@ -115,7 +115,38 @@ hr {
 }
 
 .div-content input {
-  margin: 15px 5px 0;
+  margin: 20px 5px 0 15px;
+}
+
+.form-third-part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.div-assessment input {
+  margin: 10px 3px 0 10px;
+}
+
+.div-textarea {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+#textarea {
+  border: 1px solid rgb(75, 45, 128);
+  border-radius: 5px;
+  margin: 10px 0 0;
+  padding: 10px;
+}
+
+#counter {
+  color: rgb(75, 45, 128);
+  text-align: right;
 }
 
 footer {
