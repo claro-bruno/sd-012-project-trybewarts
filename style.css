@@ -9,20 +9,37 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 20px;
+  padding: 30px;
+  margin-top: 30px;
+  box-shadow: rgb(24, 46, 46) 3px 3px 10px;
+}
+
+h1 {
+  font-size: 70px;
+  align-items: center;
+  display: flex;
+  color: white;
+  text-shadow: rgb(24, 46, 46) 3px 3px 10px;
+}
+
+.trybewarts-header-logo {
+  width: 100px;
 }
 
 .trybewarts-login {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  margin-right: 50px;
 }
 
 .cool {
-  padding: 4px 8px;
+  padding: 4px 10px;
   margin: 5px;
-  border-radius: 15px;
-  border: 2px solid grey;
+  border-radius: 7px;
+  border: 2px solid gray;
   outline: none;
+  width: 260px;
 }
 
 .cool:hover {
@@ -35,12 +52,13 @@
 }
 
 #btn-login {
-  background-color: rgba(233, 233, 233, 0.8);
-  padding: 7px;
-  border-radius: 10px;
+  background-color: rgb(221, 221, 221);
+  padding: 4px 110px;
+  border-radius: 5px;
   border: none;
-  box-shadow: 0 2px 2px black;
+  box-shadow: 0 2px 2px rgb(58, 58, 58);
   cursor: pointer;
+  margin-top: 5px;
 }
 
 #btn-login:hover {
@@ -50,8 +68,8 @@
 
 main {
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
+  justify-content: space-around;
 }
 
 .form-container {
@@ -59,22 +77,92 @@ main {
 }
 
 #evaluation-form {
+  margin-top: 40px;
   display: flex;
   flex-direction: column;
   width: 675px;
+  margin-left: 50px;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 50px 0 50px 65px;
+  border-radius: 15px;
+  box-shadow: rgba(24, 46, 46, 0.3) -5px 5px 10px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  opacity: 100%;
+  margin-left: 0;
 }
 
 footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: aliceblue;
+  padding-top: 20px;
+}
+
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.music-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 #music {
+  height: 20px;
+  margin: 10px;
+}
+
+hr , #textarea {
+  margin: 10px 0;
+  width: 89%;
+  border-radius: 5px;
+}
+
+#textarea {
+  border: 2px solid gray;
+}
+
+label , #counter {
+  font-size: 15px;
+  margin-bottom: 5px;
+  color: rgb(39, 39, 39);
+  font-family: Lucida, sans-serif;
+}
+
+#submit-btn {
+  padding: 5px;
+  border: none;
+  font-size: large;
+  background-color: rgb(221, 221, 221);
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgb(58, 58, 58);
+  cursor: pointer;
+  margin-top: 35px;
+  width: 40%;
+  margin-left: 130px;
+}
+
+.loginSenha {
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+}
+
+#house {
+  padding: 3px 87px;
+}
+
+body {
+  background-image: url('verde.jpeg');
+  background-size: cover;
+}
+
+.subject {
+  margin-left: 10px;
 }

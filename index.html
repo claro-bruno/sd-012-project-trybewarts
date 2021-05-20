@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trybewarts</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,6 +17,7 @@
             <button id="btn-login" type="submit">Entrar</button>
         </form>
     </header>
+    <div class="music-container"><iframe id="music"></iframe></div>
     <main class="form-container">
         <form id="evaluation-form" action="" method="GET">
             <div class="name-container">
@@ -40,12 +41,12 @@
             <hr>
             <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
             <div>
-                <label for="hofs"><input type="checkbox" name="subject" id="hofs" class="subject cool" value="HoFs"> HoFs</label>
-                <label for="jest"><input type="checkbox" name="subject" id="jest" class="subject cool" value="Jest"> Jest</label>
-                <label for="promises"><input type="checkbox" name="subject" id="promises" class="subject cool" value="Promises"> Promises</label>
-                <label for="react"><input type="checkbox" name="subject" id="react" class="subject cool" value="React"> React</label>
-                <label for="sql"><input type="checkbox" name="subject" id="sql" class="subject cool" value="SQL"> SQL</label>
-                <label for="python"><input type="checkbox" name="subject" id="python" class="subject cool" value="Python"> Python</label>
+                <label for="hofs"><input type="checkbox" name="subject" id="hofs" class="subject" value="HoFs"> HoFs</label>
+                <label for="jest"><input type="checkbox" name="subject" id="jest" class="subject" value="Jest"> Jest</label>
+                <label for="promises"><input type="checkbox" name="subject" id="promises" class="subject" value="Promises"> Promises</label>
+                <label for="react"><input type="checkbox" name="subject" id="react" class="subject" value="React"> React</label>
+                <label for="sql"><input type="checkbox" name="subject" id="sql" class="subject" value="SQL"> SQL</label>
+                <label for="python"><input type="checkbox" name="subject" id="python" class="subject" value="Python"> Python</label>
             </div>
             <hr>
             <div class="rate-container">
@@ -69,10 +70,12 @@
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima? <input type="checkbox" name="check-info" id="agreement" required></label>
             <button id="submit-btn" type="submit"disabled>Enviar</button>
         </form>
-        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts">
+            <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts">
+        
     </main>
-    <div id="music"><iframe></iframe></div>
+    <br>
     <footer>Direitos reservados à Trybewarts©</footer>
+    <br>
     <script src="script.js"></script>
 </body>
 </html>
