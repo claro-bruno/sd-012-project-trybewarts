@@ -92,28 +92,29 @@ const contador = () => {
 
 getTxtArea.addEventListener('keydown', contador);
 
-// const selectDiv = document.querySelector('.direction-row')
-// const label = document.createElement('label')
+const selectDiv = document.querySelector('.direction-row')
+const label = document.createElement('label')
 
-// function createLabel() {
-//   selectDiv.appendChild(label);
-//   label.innerHTML = 'Como você avalia a Trybewarts?'
-// }
+function createLabel() {
+  selectDiv.appendChild(label);
+  label.innerHTML = 'Como você avalia a Trybewarts?'
+  label.id = 'label-rate';
+}
 
-// createLabel();
+createLabel();
 
-// function createInputs() {
-//   for(let i = 1; i <= 10; i += 1) {
-//     const createLabel = document.createElement('label');
-//     selectDiv.appendChild(createLabel);
-//     const input = document.createElement('input');
-//     createLabel.appendChild(input);
-//     input.type = 'radio';
-//     input.name = 'rate';
-//     input.id = i;
-//     input.value = i;
-//     input.innerHTML = i;
-//   }
-// }
+function createInputs() {
+  for(let i = 1; i <= 10; i += 1) {
+    const createLabel = document.createElement('label');
+    selectDiv.appendChild(createLabel);
+    const input = document.createElement('input');
+    createLabel.innerText = i
+    createLabel.appendChild(input);
+    input.type = 'radio';
+    input.name = 'rate';
+    input.id = i;
+    input.value = i;
+  }
+}
 
-//  createInputs();
+ createInputs();
