@@ -130,13 +130,19 @@ main {
   font-size: 18px;
 }
 
+.text-area {
+  flex-flow: column nowrap;
+}
+
 #textLabel {
   font-size: 18px;
+  display: block;
 }
 
 #counter {
-  text-align: end;
+  text-align: start;
   margin-bottom: 20px;
+  display: block;
 }
 
 hr {
