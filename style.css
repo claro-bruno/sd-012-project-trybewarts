@@ -87,6 +87,10 @@ select {
   height: 500px;
 }
 
+#agreement {
+  align-self: center;
+}
+
 footer {
   display: flex;
   justify-content: center;
