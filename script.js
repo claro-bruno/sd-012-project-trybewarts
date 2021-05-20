@@ -1,8 +1,6 @@
 const login = document.getElementById('login');
 const senha = document.getElementById('senha');
 const botao = document.getElementById('botao');
-// const enviar = document.getElementById('submit-btn');
-// const checkbox = document.getElementById('agreement');
 const loginText = 'tryber@teste.com';
 const senhaText = '123456';
 
@@ -14,10 +12,17 @@ botao.addEventListener('click', () => {
   }
 });
 
-/*
-checkbox.addEventListener('click', () => {
-    if(checkbox.value === true) {
+const botaoSubmit = document.getElementById('submit-btn');
 
-    }
+botaoSubmit.disabled = true;
+
+const inputRadio = document.querySelector('#agreement');
+
+inputRadio.addEventListener('change', () => {
+  const conteudo = inputRadio.checked;
+  if (conteudo === true) {
+    botaoSubmit.disabled = false;
+  } else {
+    botaoSubmit.disabled = true;
+  }
 });
-*/
