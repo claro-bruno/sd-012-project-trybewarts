@@ -92,23 +92,30 @@ main {
   background-color: white;
 }
 
-.form-first-part hr {
+hr {
   width: 100%;
   margin: 20px 5px;
+}
+
+.form-second-part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  font-size: 18px;
 }
 
 .div-family {
   display: flex;
   flex-direction: column;
+  margin-right: 60px;
 }
 
-.div-content {
-  display: flex;
-  flex-direction: column;
+.div-family input {
+  margin: 10px 5px 0;
 }
 
-.div-checkbox {
-  display: flex;
+.div-content input {
+  margin: 15px 5px 0;
 }
 
 footer {
