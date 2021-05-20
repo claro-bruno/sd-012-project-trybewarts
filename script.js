@@ -49,3 +49,25 @@ function counterTextArea() {
   counter.innerHTML = textArea.maxLength - textArea.value.length;
 }
 textArea.addEventListener('keyup', counterTextArea);
+
+const saveData = () => {
+  const nameInput = document.getElementById('input-name');
+  const lastNameInput = document.getElementById('input-lastname');
+  const houseRadio = document.querySelector('input[name="family"]:checked');
+
+  return {
+    name: `Nome: ${nameInput.value} ${lastNameInput.value}`,
+    house: `Casa: ${houseRadio.value}`,
+  };
+};
+
+const submitBtn = document.getElementById('submit-btn');
+function summary(event) {
+  event.preventDefault();
+  const data = saveData();
+  const form = document.getElementById('evaluation-form');
+  form.innerHTML = '';
+  Object.values(data).forEach((value) => console.log(value));
+}
+
+submitBtn.addEventListener('click', summary);
