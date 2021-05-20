@@ -29,6 +29,11 @@ main {
   justify-content: space-between;
 }
 
+main hr {
+  background-color:rgb(50, 167, 145);
+  font-size: 1px;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -46,7 +51,7 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
   display: flex;
-  justify-content: flex-end;
+  /* justify-content: space-around; */
 }
 
 .trybewarts-header-logo {
@@ -61,19 +66,27 @@ main {
   display: flex;
 }
 
+#avaliador {
+  display: flex;
+  align-items: center;
+  
+}
+
 #avaliador input {
+
   margin-left: 5px;
   margin-right: 3px;
 }
 
 #avaliador label {
-  margin: 10px;
+  margin: 0px;
 }
 
-textarea{
+textarea {
   resize: none;
   margin: 10px;
 }
+
 #agreement {
   margin: 10px;
 }
@@ -83,6 +96,7 @@ textarea{
   justify-content: center;
   width: 20%;
 }
+
 
 #rodape {
   text-align: center;
