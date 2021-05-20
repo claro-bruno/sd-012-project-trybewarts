@@ -143,6 +143,7 @@ hr {
   border-radius: 5px;
   margin: 10px 0 0;
   padding: 10px;
+  resize: none;
 }
 
 #counter {
