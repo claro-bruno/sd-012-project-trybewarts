@@ -44,47 +44,6 @@ const getSubscriptionFormData = (data, content) => {
   return subscriptionData;
 };
 
-/* const verifyFamilySelect = (objectFamily) => {
-  const formFamily = document.querySelectorAll('.family');
-  for (let index = 0; index < formFamily.length; index += 1) {
-    if (formFamily[index].value === objectFamily) formFamily[index].checked = true;
-  }
-}; */
-
-/* const verifySubjectChecks = (objectSubject) => {
-  const formSubject = document.querySelectorAll('.subject');
-  for (let indexA = 0; indexA < formSubject.length; indexA += 1) {
-    for (let indexB = 0; indexB < objectSubject.length; indexB += 1) {
-      if (formSubject[indexA].value === objectSubject[indexB]) {
-        formSubject[indexA].checked = true;
-      }
-    }
-  }
-}; */
-
-/* const verifyRateSelect = (objectRate) => {
-  const formRate = document.querySelectorAll('.rate');
-  for (let index = 0; index < formRate.length; index += 1) {
-    if (formRate[index].value === objectRate) formRate[index].checked = true;
-  }
-}; */
-
-/* const setSubscriptionFormData = (objectFormData) => {
-  const formName = document.querySelector('#input-name');
-  const formLastName = document.querySelector('#input-lastname');
-  const formEmail = document.querySelector('#input-email');
-  const formHouse = document.querySelector('#house');
-  const formComment = document.querySelector('#comment');
-  formName.value = objectFormData.name;
-  formLastName.value = objectFormData.lastName;
-  formEmail.value = objectFormData.email;
-  formHouse.value = objectFormData.house;
-  verifyFamilySelect(objectFormData.family);
-  verifySubjectChecks(objectFormData.subject);
-  verifyRateSelect(objectFormData.rate);
-  formComment.value = objectFormData.comment;
-}; */
-
 const verifySubjectsChecked = () => {
   const markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked.subject');
   const content = [];
@@ -188,16 +147,3 @@ subscriptionForm.addEventListener('submit', (event) => {
   // setSubscriptionFormData(subscriptionFormData);
   setSubscriptionData(subscriptionFormData, event);
 });
-
-/* if ($('div.check-content :checkbox:checked').length > 0) {
-    alert('Marcou pelo menos uma opção!');
-  } else alert('Marque uma opção'); */
-/*
-  * Deve haver um campo com o formato "Nome: Alguem Aqui"
-  * Deve haver um campo com o formato "Email: email@mail.com"
-  * Deve haver um campo com o formato "Casa: Casa Escolhida"
-  * Deve haver um campo com o formato "Família: Família Escolhida"
-  * Deve haver um campo com o formato "Matérias: Matérias, Marcadas, Aqui"
-  * Deve haver um campo com o formato "Avaliação: NotaAqui"
-  * Deve haver um campo com o formato "Observações: Observações aqui"
-*/
