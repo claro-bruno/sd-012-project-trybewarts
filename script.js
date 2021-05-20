@@ -7,7 +7,7 @@ const counter = document.getElementById('counter');
 const freeText = document.getElementById('textarea');
 const abstractPlace = document.querySelector('.abstract');
 
-// Código para validação do Login conforme especificado
+// Código para validação do Login conforme especificado;
 function validaçãoLogin(event) {
   console.log(loginName, loginSenha);
   if (loginName.value === 'tryber@teste.com' && loginSenha.value === '123456') {
@@ -20,17 +20,17 @@ function validaçãoLogin(event) {
 
 logarBtn.addEventListener('click', validaçãoLogin);
 
-// Iniciar a página com o Botão enviar form desabilitado
+// Iniciar a página com o Botão enviar form desabilitado;
 sendBtn.disabled = true;
 
-// Habilitar o botão enviar quando selecionado o "aceite de termos"
+// Habilitar o botão enviar quando selecionado o "aceite de termos";
 function ableSend() {
   if (agreeCb.checked) { sendBtn.disabled = false; } else { sendBtn.disabled = true; }
 }
 
 agreeCb.addEventListener('click', ableSend);
 
-// Contador de Char
+// Contador de Char;
 function countChar() {
   counter.innerText = `${500 - freeText.value.length}/500`;
 }
@@ -39,7 +39,7 @@ freeText.addEventListener('keyup', countChar);
 
 window.onload = countChar;
 
-// Gerar textos após o clique do botão de envio
+// Gerar textos após o clique do botão de envio;
 function generateText(array) {
   let text = '';
   for (let index = 0; index < array.length; index += 1) {
