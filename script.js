@@ -1,5 +1,31 @@
-// acessa formulário de avaliação
-const evaluationForm = document.querySelector('#evaluation-form');
+// cria opções de casa
+const createHouseOptions = (optionsList) => {
+  // acessa elemento 'select' com id 'house'
+  const houseSelect = document.querySelector('#house');
+  const valueOptions = Object.keys(optionsList);
+  const idOptions = Object.values(optionsList);
+  for (let index = 0; index < idOptions.length; index += 1) {
+    // cria novo elemento 'option'
+    const newOption = document.createElement('option');
+    // adiciona id
+    newOption.id = idOptions[index];
+    // adiciona valor
+    newOption.value = valueOptions[index];
+    // adiciona nome
+    newOption.name = 'casa';
+    // adiciona html interno
+    newOption.innerHTML = valueOptions[index];
+    // vincula opçao à seção
+    houseSelect.appendChild(newOption);
+  }
+};
+const optionsList = {
+  Gitnória: 'gitnoria-house',
+  Reactpuff: 'reactpuff-house',
+  Corvinode: 'corvinode-house',
+  Pytherina: 'pytherina-house',
+};
+createHouseOptions(optionsList);
 
 // valida login e senha
 function validacaoLoginSenha(event) {
@@ -65,6 +91,9 @@ function listenerKey(event) {
 }
 // adiciona evento de teclado em toda página
 document.addEventListener('keyup', listenerKey);
+
+// acessa formulário de avaliação
+const evaluationForm = document.querySelector('#evaluation-form');
 
 function mostrarNomeCompleto() {
   const nome = document.querySelector('#input-name');
