@@ -5,7 +5,7 @@ const getAgreementCheck = document.querySelector('#agreement');
 const getFormButton = document.querySelector('#submit-btn');
 const getOutputDiv = document.querySelector('#form-output');
 const getInputDiv = document.querySelector('#form-input');
-const textArea = document.querySelector("#textarea");
+const textArea = document.querySelector('#textarea');
 
 function validaLogin() {
   if (
@@ -86,7 +86,6 @@ function createRateOutput() {
 }
 
 function createTextAreaOutput() {
-  const textArea = document.querySelector('#textarea').value;
   const pTextArea = document.createElement('p');
   pTextArea.innerHTML = `Observações: ${textArea}`;
   getOutputDiv.appendChild(pTextArea);
@@ -113,5 +112,3 @@ function counterFunction() {
   document.getElementById('counter').innerHTML = contador;
 }
 textArea.addEventListener('keyup', counterFunction);
-
-
