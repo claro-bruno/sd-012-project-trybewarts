@@ -3,8 +3,6 @@ const subscriptionForm = document.querySelector('#evaluation-form');
 const agreement = document.querySelector('#agreement');
 const submitBtn = document.querySelector('#submit-btn');
 
-let subscriptionFormData;
-
 const getFormData = (data) => {
   const form = {
     login: data.elements.login.value,
@@ -44,12 +42,10 @@ const getSubscriptionFormData = (data, content) => {
 };
 
 const verifySubjectsChecked = () => {
-  const markedCheckbox = document.querySelectorAll('input[type="checkbox"]:checked.subject');
-  const content = [];
-  for (let index = 0; index < markedCheckbox.length; index += 1) {
-    content.push(markedCheckbox[index].value);
-  }
-  return content;
+  const subjectsChecked = document.querySelectorAll('input[type="checkbox"]:checked.subject');
+  const subjects = [];
+  subjectsChecked.forEach((subject) => { subjects.push(subject.value); });
+  return subjects;
 };
 
 function remainingChar() {
@@ -99,10 +95,10 @@ const createSubjectField = (subject, object) => {
   subjectsField.className = 'field';
   let subjects = '';
   for (let index = 0; index < subject.length; index += 1) {
-    if (index === 0) subjects = subject[index];
+    if (index === 0) subjects = `Matérias: ${subject[index]}`;
     else subjects += `, ${subject[index]}`;
   }
-  subjectsField.innerHTML = `Matérias: ${subjects}`;
+  subjectsField.innerHTML = subjects;
   object.appendChild(subjectsField);
 };
 
@@ -122,25 +118,34 @@ const createCommentField = (comment, object) => {
   object.appendChild(commentField);
 };
 
-const setSubscriptionData = (objectFormData, event) => {
-  while (subscriptionForm.firstChild) {
-    subscriptionForm.removeChild(subscriptionForm.firstChild);
-  }
+const createFields = (formObject, containerElement) => {
+  createNameField(formObject.name, formObject.lastName, containerElement);
+  createEmailField(formObject.email, containerElement);
+  createHouseField(formObject.house, containerElement);
+  createFamilyField(formObject.family, containerElement);
+  createSubjectField(formObject.subject, containerElement);
+  createRateField(formObject.rate, containerElement);
+  createCommentField(formObject.comment, containerElement);
+};
+
+const clearForm = (form) => { while (form.firstChild) { form.removeChild(form.firstChild); } };
+
+const createFieldsContainer = () => {
   const dataContainer = document.createElement('div');
   dataContainer.id = 'container-data';
   subscriptionForm.appendChild(dataContainer);
   const dataContainerElement = document.querySelector('#container-data');
-  createNameField(objectFormData.name, objectFormData.lastName, dataContainerElement);
-  createEmailField(objectFormData.email, dataContainerElement);
-  createHouseField(objectFormData.house, dataContainerElement);
-  createFamilyField(objectFormData.family, dataContainerElement);
-  createSubjectField(objectFormData.subject, dataContainerElement);
-  createRateField(objectFormData.rate, dataContainerElement);
-  createCommentField(objectFormData.comment, dataContainerElement);
+  return dataContainerElement;
+};
+
+const setSubscriptionData = (objectFormData, event) => {
+  clearForm(subscriptionForm);
+  createFieldsContainer();
+  createFields(objectFormData, createFieldsContainer());
   event.preventDefault();
 };
 
 subscriptionForm.addEventListener('submit', (event) => {
-  subscriptionFormData = getSubscriptionFormData(event.target, verifySubjectsChecked());
+  const subscriptionFormData = getSubscriptionFormData(event.target, verifySubjectsChecked());
   setSubscriptionData(subscriptionFormData, event);
 });
