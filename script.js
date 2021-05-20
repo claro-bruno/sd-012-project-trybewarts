@@ -86,8 +86,9 @@ function createRateOutput() {
 }
 
 function createTextAreaOutput() {
+  const getTextArea = document.querySelector('#textarea').value;
   const pTextArea = document.createElement('p');
-  pTextArea.innerHTML = `Observações: ${textArea}`;
+  pTextArea.innerHTML = `Observações: ${getTextArea}`;
   getOutputDiv.appendChild(pTextArea);
 }
 
