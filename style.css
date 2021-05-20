@@ -44,7 +44,6 @@
   flex-direction: column;
   justify-content: start;
   align-items: flex-start;
-  margin: 20px;
   width: max-content;
 }
 
@@ -70,4 +69,47 @@
   align-items: center;
   margin: 5px;
   justify-content: start;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.options-forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+  align-items: flex-start;
+}
+
+.horizon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.horizon2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#label-rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#textarea {
+  resize: none;
+  display: flex;
+
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
 }
