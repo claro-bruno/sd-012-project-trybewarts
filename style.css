@@ -27,6 +27,11 @@ main form {
   flex-direction: column;
   width: 675px;
 }
+#radio-family {
+  display:flex;
+  justify-content: center;
+  
+}
 #trybewarts-forms-logo {
   height: 500px;
 }
