@@ -84,11 +84,11 @@ radioButtonFamily.forEach((element) => {
 
 const radioButtonRate = document.querySelectorAll('input[name="rate"]');
 radioButtonRate.forEach((element) => {
-  if (radioButton.id.split('-')[1] === queryRate) {
-    radioButton.checked = true;
+  if (element.id.split('-')[1] === queryRate) {
+    element.checked = true;
   }
-
 });
+
 // for (const radioButton of radioButtonRate) {
 //   if (radioButton.id.split('-')[1] === queryRate) {
 //     radioButton.checked = true;
@@ -100,14 +100,20 @@ radioButtonRate.forEach((element) => {
 const checkBoxContent = document.querySelectorAll('input[name="conteudo"]');
 // console.log(checkBoxContent)
 
-for (let i = 0; i < queryConteudo.length; i += 1) { 
+for (let i = 0; i < queryConteudo.length; i += 1) {
   queryConteudo[i] = queryConteudo[i].toLowerCase();
 }
-console.log('queryConteudo', queryConteudo);
-for (const singleCheckBox of checkBoxContent) {
-  // console.log('singleCheckBox', singleCheckBox)
-  if (queryConteudo.includes(singleCheckBox.id.toLowerCase())) {
-    singleCheckBox.checked = true;
+// console.log('queryConteudo', queryConteudo);
+
+checkBoxContent.forEach((element) => {
+  if (queryConteudo.includes(element.id.toLowerCase())) {
+    element.checked = true;
   }
-}
+})
+// for (const singleCheckBox of checkBoxContent) {
+//   // console.log('singleCheckBox', singleCheckBox)
+//   if (queryConteudo.includes(singleCheckBox.id.toLowerCase())) {
+//     singleCheckBox.checked = true;
+//   }
+// }
 /* Credito: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams */
