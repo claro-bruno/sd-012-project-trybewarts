@@ -1,0 +1,130 @@
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.trybewarts-header-logo {
+  width: 100px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  max-width: 675px;
+  flex-direction: column;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+  display: flex;
+}
+
+.select-name {
+  display: flex;
+  flex-direction: row;
+}
+
+.housemail {
+  display: flex;
+  flex-direction: row;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: max-content;
+}
+
+.radio1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+  justify-content: start;
+}
+
+.radio2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+  justify-content: start;
+}
+
+.radio3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 5px;
+  justify-content: start;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.options-forms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px;
+  align-items: flex-start;
+}
+
+.horizon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.horizon2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#label-rate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#textarea {
+  resize: none;
+  display: flex;
+
+}
+
+.textarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.submit-none {
+  display: none;
+}
+
+.submit1 {
+  display: flex;
+}
