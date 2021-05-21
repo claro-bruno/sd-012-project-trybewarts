@@ -68,7 +68,7 @@ if (queryName === null) {
   submittedObservation.innerHTML = '';
 } else {
   submittedName.innerHTML = `Nome: ${queryName} ${queryLastName}`;
-  submittedEmail.innerHTML = `Email: ${queryEmail}`; 
+  submittedEmail.innerHTML = `Email: ${queryEmail}`;
   submittedHouse.innerHTML = `Casa: ${queryHouse}`;
   submittedFamily.innerHTML = `Família: ${queryFamily}`;
   submittedTopics.innerHTML = `Matérias: ${queryConteudo}`;
@@ -76,7 +76,7 @@ if (queryName === null) {
   submittedObservation.innerHTML = `Observações: ${queryComment}`;
 }
 
-/* 
+/*
 const inputName = document.getElementById('input-name');
 const inputLastName = document.getElementById('input-lastname');
 const inputEmail = document.getElementById('input-email');
