@@ -17,43 +17,74 @@
             <button id="send-button" type="button">Entrar</button>
         </form>
     </header>
-     <main>
+
+    <main>
         <form id="evaluation-form">
             <section id="userData">
-              <input id="input-name" type="text" placeholder="Nome">
-              <input id="input-lastname" type="text" placeholder="Sobrenome">
-              <input id="input-email" type="email" placeholder="Email">
-              <select id="house">
-                <option disabled selected value>Selecione sua casa</option>
-                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                <option id="pytherina-house" value="Pytherina-house">Pytherina</option>
-            </select>
-          </section>
-          <hr>
-      <section id="form2">   
-        <section id="form2left">  
-            <label id="label-family"> Qual sua família? </label>
-            <label for="Frontend"><input type="radio" id="Frontend" value="Frontend" name="family">Frontend</label>
-            <label for="Backend"><input type="radio" id="Backend" value="Backend" name="family">Backend</label>
-            <label for="FullStack"><input type="radio" id="FullStack" value="FullStack" name="family">FullStack</label>
-        </section>
-        <section id="form2right">
-            <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-            <label for="HoFs"><input type="checkbox" id="HoFs" value="HoFs" class="subject">HoFs</label>
-            <label for="Jest"><input type="checkbox" id="Jest" value="Jest" class="subject">Jest</label>
-            <label for="Promises"><input type="checkbox" id="Promises" value="Promises" class="subject">Promises</label>
-            <label for="React"><input type="checkbox" id="React" value="React" class="subject">React</label>
-            <label for="SQL"><input type="checkbox" id="SQL" value="SQL" class="subject">SQL</label>
-            <label for="Python"><input type="checkbox" id="Python" value="Python" class="subject">Python</label>
-
-        </section>
-      </section>      
-     </form>
+                <input id="input-name" type="text" placeholder="Nome">
+                <input id="input-lastname" type="text" placeholder="Sobrenome">
+                <input id="input-email" type="email" placeholder="Email">
+                <select id="house">
+                    <label id="Casa" for="Casa">Casa:</label>
+                    <option disabled selected value>Selecione sua casa</option>
+                    <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                    <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                    <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                    <option id="pytherina-house" value="Pytherina-house">Pytherina</option>
+                </select>
+            </section>
+            <hr>
+            <section id="choose">   
+                <section id="family">  
+                    <label id="label-family"> Qual sua família? </label>
+                    <label for="Frontend"><input type="radio" id="Frontend" value="Frontend" name="family">Frontend</label>
+                    <label for="Backend"><input type="radio" id="Backend" value="Backend" name="family">Backend</label>
+                    <label for="FullStack"><input type="radio" id="FullStack" value="FullStack" name="family">FullStack</label>
+                </section>
+                <section id="family2">
+                    <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                    <label for="HoFs"><input type="checkbox" id="HoFs" value="HoFs" class="subject">HoFs</label>
+                    <label for="Jest"><input type="checkbox" id="Jest" value="Jest" class="subject">Jest</label>
+                    <label for="Promises"><input type="checkbox" id="Promises" value="Promises" class="subject">Promises</label>
+                    <label for="React"><input type="checkbox" id="React" value="React" class="subject">React</label>
+                    <label for="SQL"><input type="checkbox" id="SQL" value="SQL" class="subject">SQL</label>
+                    <label for="Python"><input type="checkbox" id="Python" value="Python" class="subject">Python</label>
+                </section>
+            </section>
+            <!-- https://www.educative.io/edpresso/radio-button-in-html --> 
+            <section id="valuation">
+                <label id="label-rate"> Como você avalia a Trybewarts? </label>
+                <input type="radio" name = "rate" value="1"> 1
+                <input type="radio" name = "rate" value="2"> 2
+                <input type="radio" name = "rate" value="3"> 3
+                <input type="radio" name = "rate" value="4"> 4
+                <input type="radio" name = "rate" value="5"> 5
+                <input type="radio" name = "rate" value="6"> 6
+                <input type="radio" name = "rate" value="7"> 7
+                <input type="radio" name = "rate" value="8"> 8
+                <input type="radio" name = "rate" value="9"> 9
+                <input type="radio" name = "rate" value="10"> 10
+            </section>
+            <!-- https://www.w3schools.com/tags/tag_textarea.asp --> 
+            <section id="comments">
+                <label class="textarea" for="textarea">Deixe seu comentário:</label>
+            <!-- Corrigindo erro: https://cursos.alura.com.br/forum/topico-text-area-comeca-com-um-espaco-75147 --> 
+                <textarea id="textarea" name="textarea" rows="4" cols="50" maxlength="500" placeholder="Digite aqui"></textarea>
+            </section>
+            <section id="agree">
+                <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+                <input type="checkbox" id="agreement">
+            </section>
+            <section>
+                <button id="submit-btn" type="submit" disabled>Enviar</button>
+            </section>
+        </form>
         <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo">
+    </main>
     
+    <footer>
+        <p>Direitos reservados à Trybewarts©</p>
+    </footer>
     <script src="script.js"></script>
-</main>
 </body>
 </html>
