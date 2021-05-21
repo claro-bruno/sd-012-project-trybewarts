@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // Funcao para executar o butao logar
 const selectButtonLogin = document.querySelector('.botaoLogin');
 const selectLogin = document.querySelector('#login');
@@ -30,3 +31,15 @@ function verificaCheckbox() {
   }
 }
 checkBox.addEventListener('click', verificaCheckbox);
+
+// Contador caracteres:
+const selectTextArea = document.querySelector('#textarea');
+const selectCounter = document.querySelector('#counter');
+
+function verificaCaracteres() {
+  const maxCaracters = 500;
+  const numerosCaracteres = selectTextArea.value.length;
+  selectCounter.innerHTML = `Caracteres Disponíveis: ${maxCaracters - numerosCaracteres}`;
+}
+
+selectTextArea.addEventListener('keyup', verificaCaracteres);
