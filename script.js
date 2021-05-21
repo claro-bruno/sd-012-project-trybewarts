@@ -69,19 +69,18 @@ inputTextArea.value = queryComment;
 
 // console.log(queryFamily)
 const radioButtonFamily = document.querySelectorAll('input[name="family"]');
-// radioButtonFamily.forEach(element => isRadioButtonChecked(element))
-
-// const isRadioButtonChecked = (element) => {
-//   if (queryFamily && element.id === queryFamily.toLowerCase()) {
-//     element.checked = true;
-//   }
-// }
-for (const radioButton of radioButtonFamily) {
-  if (queryFamily && radioButton.id === queryFamily.toLowerCase()) {
-    radioButton.checked = true;
+radioButtonFamily.forEach(element => {
+  if (queryFamily && element.id === queryFamily.toLowerCase()) {
+    element.checked = true;
   }
+});
+
+// for (const radioButton of radioButtonFamily) {
+//   if (queryFamily && radioButton.id === queryFamily.toLowerCase()) {
+//     radioButton.checked = true;
+//   }
   // console.log(radioButton.id)
-}
+// }
 
 const radioButtonRate = document.querySelectorAll('input[name="rate"]');
 for (const radioButton of radioButtonRate) {
