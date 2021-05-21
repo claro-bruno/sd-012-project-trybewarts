@@ -13,34 +13,24 @@
 
   <header class='header'>
     <img class='trybewarts-header-logo' src="images/trybewarts-header-logo.svg" alt="Logo">
-
     <h1 id='trybewarts-header-title'>Trybewarts</h1>
-
     <form class='trybewarts-login' method="get">
-
       <input type="text" name="inputLogin" id="inputLogin" placeholder='Login'>
-
       <input type="password" name="inputSenha" id="inputSenha" placeholder='Senha'>
-
       <button id='botaoLogin' type="submit">Logar</button>
-
     </form>
   </header>
 
   <main>
     <form id='evaluation-form'>
-      <!-- nome e sobrenome -->
       <div class="dados">
         <input type="text" class="inputText" id='input-name' placeholder='Nome'>
         <input type="text" class="inputText" id="input-lastname" placeholder='Sobrenome'>
       </div>
-      <!-- email e casa -->
       <div class="dados">
         <input type="text" class="inputText" id='input-email' placeholder='Email'>
-
         <select id="house"></select>
       </div>
-
       <div id="family-input">
         <label for="which-family" id="label-family">Qual sua família?</label>
         <div id="which-family">
@@ -58,7 +48,6 @@
           </div>
         </div>
       </div>
-
       <div id='content-inputs'>
         <label id='label-content'>Qual conteúdo você está com mais vontade de aprender?</label>
         <div class="dados">
@@ -70,30 +59,21 @@
           <input class='subject' type="checkbox" value='Python' name='content'> <label for=""> Python </label>
         </div>
       </div>
-
       <div id='avaliacao-input' class="dados"></div>
-      
       <div class='text-area'>
         <label for="texarea" id="textLabel" class='textarea'>Deixe seu comentário:</label>
         <textarea id="textarea" cols="30" rows="10" maxlength="500"></textarea>
         <em id='counter'>500</em>
       </div>
-
       <hr>
-
       <div class="dados">
         <label for="agreement" id='label-infos'>Você concorda com o uso das informações acima?</label>
         <input type="checkbox" id="agreement">
       </div>
-
       <button type="submit" id='submit-btn' disabled>Enviar</button>
-
     </form>
-
     <img id='trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="Imagem logo">
-
   </main>
-
   <footer>
 
     <p>Direitos reservados à Trybewarts©</p>

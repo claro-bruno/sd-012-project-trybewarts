@@ -1,3 +1,5 @@
+// acessa formulário de avaliação
+const evaluationForm = document.querySelector('#evaluation-form');
 // cria opções de casa
 const createHouseOptions = (optionsList) => {
   // acessa elemento 'select' com id 'house'
@@ -102,6 +104,7 @@ function listenerKey(event) {
     // acessa quantidade de caracteres em 'textarea'
     const quantidadeDeCaracteres = event.target.value.length;
     // acessa elemento com id 'contador'
+
     const contador = document.querySelector('#counter');
     // altera html interno do contador
     contador.innerHTML = 500 - quantidadeDeCaracteres;
@@ -110,9 +113,6 @@ function listenerKey(event) {
     event.target.removeEventListener('keyup', listenerKey);
   }
 }
-
-// acessa formulário de avaliação
-const evaluationForm = document.querySelector('#evaluation-form');
 
 function mostrarNomeCompleto() {
   const nome = document.querySelector('#input-name');
