@@ -16,10 +16,10 @@ loginButton.addEventListener('click', verifyLogin);
 function generateRates() {
   const contentRate = document.querySelector('.content-rate');
   for (let index = 1; index <= 10; index += 1) {
-    let label = document.createElement('label');
-    let option = document.createElement('input');
+    const label = document.createElement('label');
+    const option = document.createElement('input');
     option.classList.add('optionClass');
-    option.id = 'optionRate' + index;
+    option.id = `optionRate${index}`;
     label.for = option.id;
     option.type = 'radio';
     option.value = index;
