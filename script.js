@@ -27,3 +27,16 @@ function housesOfTrybeWarts() {
 }
 
 housesOfTrybeWarts();
+
+const agreementId = document.getElementById('agreement');
+const getSubmitId = document.getElementById('submit-btn');
+
+getSubmitId.disabled = true;
+
+function checkedAgreementId() {
+  if (agreementId.checked) {
+    getSubmitId.disabled = false;
+  }
+}
+
+agreementId.addEventListener('click', checkedAgreementId);
