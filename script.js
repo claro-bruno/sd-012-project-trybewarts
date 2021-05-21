@@ -36,8 +36,8 @@ const checkbox = document.getElementById('agreement');
 const submitButton = document.getElementById('submit-btn');
 checkbox.addEventListener('click', () => {
   if (checkbox.checked === true) {
-    submitButton.disabled = false; 
+    submitButton.disabled = false;
   } else {
     submitButton.disabled = true;
   }
-})
+});
