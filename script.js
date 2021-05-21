@@ -69,7 +69,7 @@ inputTextArea.value = queryComment;
 
 // console.log(queryFamily)
 const radioButtonFamily = document.querySelectorAll('input[name="family"]');
-radioButtonFamily.forEach(element => {
+radioButtonFamily.forEach((element) => {
   if (queryFamily && element.id === queryFamily.toLowerCase()) {
     element.checked = true;
   }
@@ -79,17 +79,23 @@ radioButtonFamily.forEach(element => {
 //   if (queryFamily && radioButton.id === queryFamily.toLowerCase()) {
 //     radioButton.checked = true;
 //   }
-  // console.log(radioButton.id)
+// console.log(radioButton.id)
 // }
 
 const radioButtonRate = document.querySelectorAll('input[name="rate"]');
-for (const radioButton of radioButtonRate) {
+radioButtonRate.forEach((element) => {
   if (radioButton.id.split('-')[1] === queryRate) {
     radioButton.checked = true;
   }
-  // console.log(radioButton.id)
-  // console.log(radioButton.id.split('-')[1])
-}
+
+});
+// for (const radioButton of radioButtonRate) {
+//   if (radioButton.id.split('-')[1] === queryRate) {
+//     radioButton.checked = true;
+//   }
+// console.log(radioButton.id)
+// console.log(radioButton.id.split('-')[1])
+// }
 
 const checkBoxContent = document.querySelectorAll('input[name="conteudo"]');
 // console.log(checkBoxContent)
