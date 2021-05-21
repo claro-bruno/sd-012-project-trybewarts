@@ -4,7 +4,6 @@ const btnLogin = document.querySelector('.submit-btn-login');
 const checkAgree = document.querySelector('#agreement');
 const btnSubmit = document.querySelector('#submit-btn');
 const textArea = document.querySelector('#textarea');
-const main = document.querySelector('#main');
 
 function alertLogin() {
   if (inputLogin.value === 'tryber@teste.com' && inputPass.value === '123456') {
@@ -34,6 +33,7 @@ function contador() {
 }
 textArea.addEventListener('keyup', contador);
 
+const main = document.querySelector('#main');
 function clearMain() {
   main.innerHTML = ' ';
 }
