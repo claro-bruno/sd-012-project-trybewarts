@@ -1,6 +1,7 @@
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  
 }
 
 .img-container {
@@ -16,6 +17,7 @@
 .trybewarts-login {
   display: flex;
 }
+
 
 /* Estilização do forms principal */
 main {
@@ -78,6 +80,7 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
 
 /* Estilização do Footer  */
 footer {
