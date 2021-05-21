@@ -11,13 +11,13 @@ btnLogin.addEventListener('click', () => {
   const submitButton = document.querySelector('#submit');
 submitButton.addEventListener('click', validate);
 
-const agreement = document.querySelector('#agreement');
-const enviar = document.querySelector('#submit-btn');
-agreement.addEventListener('click', () => {
-  if (agreement.checked) {
-    enviar.disabled = false;
-  } else {
-    enviar.disabled = true;
-  }
-});
+  const agreement = document.querySelector('#agreement');
+  const enviar = document.querySelector('#submit-btn');
+  agreement.addEventListener('click', () => {
+    if (agreement.checked) {
+      enviar.disabled = false;
+    } else {
+      enviar.disabled = true;
+    }
+  });
 });
