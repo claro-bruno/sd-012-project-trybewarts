@@ -49,3 +49,44 @@ function counterTextArea() {
   counter.innerHTML = textArea.maxLength - textArea.value.length;
 }
 textArea.addEventListener('keyup', counterTextArea);
+
+function valueList(nodeList) {
+  let list = '';
+  nodeList.forEach((node) => { list += `${node.value}, `; });
+  return list;
+}
+
+const saveData = () => {
+  const nameInput = document.getElementById('input-name');
+  const lastNameInput = document.getElementById('input-lastname');
+  const inputEmail = document.getElementById('input-email');
+  const houseInput = document.getElementById('house');
+  const familyRadio = document.querySelector('input[name="family"]:checked');
+  const subjectChecks = document.querySelectorAll('.subject:checked');
+  const subjects = valueList(subjectChecks);
+  const rateInput = document.querySelector('input[name="rate"]:checked');
+  return {
+    name: `Nome: ${nameInput.value} ${lastNameInput.value}`,
+    email: `Email: ${inputEmail.value}`,
+    house: `Casa: ${houseInput.value}`,
+    family: `Família: ${familyRadio.value}`,
+    subjects: `Matérias: ${subjects}`,
+    rating: `Avaliação: ${rateInput.value}`,
+    comment: `Observações: ${textArea.value}`,
+  };
+};
+
+const submitBtn = document.getElementById('submit-btn');
+function summary(event) {
+  event.preventDefault();
+  const data = saveData();
+  const form = document.getElementById('evaluation-form');
+  form.innerHTML = '';
+  Object.values(data).forEach((value) => { // source https://www.30secondsofcode.org/blog/s/eslint-refactor-for-in
+    const span = document.createElement('span');
+    span.innerHTML = value;
+    form.appendChild(span);
+  });
+}
+
+submitBtn.addEventListener('click', summary);
