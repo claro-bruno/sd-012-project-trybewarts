@@ -23,12 +23,6 @@
   font-size: 40px;
 }
 
-/*
-.trybewarts-header-logo {
-  padding: 10px;
-}
-*/
-
 .trybewarts-login {
   display: flex;
   align-items: center;
@@ -153,4 +147,14 @@ hr {
 
 .content-textarea {
   margin-top: 10px;
+}
+
+#submit-btn {
+  width: 100%;
+  margin-top: 10px;
+  background-color: purple;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
 }
