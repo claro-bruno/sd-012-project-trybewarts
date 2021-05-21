@@ -10,7 +10,6 @@
   </head>
   <body>
     <header class="header">
-      <!-- Vou colocar width provisorio na <img> só pra visualizar melhor, mas fica a seu critério mudar com base no formulario que voce fizer de login/senha -->
       <img
         class="trybewarts-header-logo"
         src="images/trybewarts-header-logo.svg"
@@ -18,7 +17,6 @@
         width="65px"
       />
       <h1 id="trybewarts-header-title">Trybewarts</h1>
-      <!-- Já criei o container do form pra poder centralizar o título e cumprir o requisito 4-->
       <form action="" class="trybewarts-login">
         <input type="text" name="" id="input-login" placeholder="Login" />
         <input type="password" id="input-senha" placeholder="Senha" />
@@ -27,11 +25,8 @@
     </header>
 
     <main>
-      <!-- Criei novas divs dentro do form, uma para juntar email e casa
-      outra para juntar familia e o que espera aprender, alem de uma div
-      para famila e outra para o que espera aprender, separadas.-->
       <form action="" id="evaluation-form">
-        <div>
+        <div id="name-info">
           <label for="input-name">
             Nome:
             <input type="text" id="input-name" placeholder="Nome" />
@@ -68,36 +63,36 @@
             <input type="radio" name="family" id="Backend" value="Backend" />
           </label>
           <label for="FullStack">
-            Frontend
+            FullStack
             <input type="radio" name="family" id="FullStack" value="FullStack" />
           </label>
       </div>
-      <div class="content-container">
+      <div id="content-container">
           <label id="label-content">
             Qual conteúdo você está com mais vontade de aprender?
           </label>
           <div class="checkbox-container">
-            <input type="checkbox" name="" class="subject" value="HoFs" id="HoFs">
+            <input type="checkbox" name="subject" class="subject" value="HoFs" id="HoFs">
             <label for="HoFs">
               HoFs
             </label>
-            <input type="checkbox" name="" class="subject" value="Jest" id="Jest">
+            <input type="checkbox" name="subject" class="subject" value="Jest" id="Jest">
             <label for="Jest">
               Jest
             </label>
-            <input type="checkbox" name="" class="subject" value="Promises" id="Promises">
+            <input type="checkbox" name="subject" class="subject" value="Promises" id="Promises">
             <label for="Promises">
               Promises
             </label>
-            <input type="checkbox" name="" class="subject" value="React" id="React">
+            <input type="checkbox" name="subject" class="subject" value="React" id="React">
             <label for="React">
               React 
             </label>
-            <input type="checkbox" name="" class="subject" value="SQL" id="SQL">
+            <input type="checkbox" name="subject" class="subject" value="SQL" id="SQL">
             <label for="SQL">
               SQL
             </label>
-            <input type="checkbox" name="" class="subject" value="Python" id="Python">
+            <input type="checkbox" name="subject" class="subject" value="Python" id="Python">
             <label for="Python">
               Python 
             </label>
@@ -149,13 +144,13 @@
         </div>
         <label class="textarea" for="comment">
           Deixe seu comentário:
-          <textarea name="" id="comment" maxlength="500" cols="30" rows="10"></textarea>
+          <textarea  id="textarea" maxlength="500" cols="30" rows="10"></textarea>
         </label>
-        <button type="submit" id="submit-btn">Enviar</button>
         <div>
-          <input type="checkbox" name="" id="agreement">
+          <input type="checkbox" id="agreement">
           <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         </div>
+        <button type="submit" id="submit-btn">Enviar</button>
       </form>
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
     </main>
