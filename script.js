@@ -49,24 +49,31 @@ const queryConteudo = searchParams.getAll('conteudo');
 const queryRate = searchParams.get('rate');
 const queryComment = searchParams.get('comentario');
 
-const submittedName = document.getElementById("submitted-name");
-const submittedEmail = document.getElementById("submitted-email");
-const submittedHouse = document.getElementById("submitted-house");
-const submittedFamily = document.getElementById("submitted-family");
-const submittedTopics = document.getElementById("submitted-topics");
-const submittedRating = document.getElementById("submitted-rating");
-const submittedObservation = document.getElementById("submitted-observation");
+const submittedName = document.getElementById('submitted-name');
+const submittedEmail = document.getElementById('submitted-email');
+const submittedHouse = document.getElementById('submitted-house');
+const submittedFamily = document.getElementById('submitted-family');
+const submittedTopics = document.getElementById('submitted-topics');
+const submittedRating = document.getElementById('submitted-rating');
+const submittedObservation = document.getElementById('submitted-observation');
 
-submittedName.innerHTML = `Nome: ${queryName} ${queryLastName}`;
-submittedEmail.innerHTML = `Email: ${queryEmail}` 
-submittedHouse .innerHTML = `Casa: ${queryHouse}` 
-submittedFamily.innerHTML = `Família: ${queryFamily}` 
-submittedTopics.innerHTML = `Matérias: ${queryConteudo}` 
-submittedRating.innerHTML = `Avaliação: ${queryRate}` 
-submittedObservation.innerHTML = `Observações: ${queryComment}` 
-
-
-
+if(queryName === null && queryLastName == null && queryEmail === null && queryHouse === null && queryFamily === null && queryConteudo === null && queryRate === null && queryComment === null) {
+  submittedName.innerHTML = '';
+  submittedEmail.innerHTML = '';
+  submittedHouse .innerHTML = '';
+  submittedFamily.innerHTML = '';
+  submittedTopics.innerHTML = '';
+  submittedRating.innerHTML = '';
+  submittedObservation.innerHTML = '';
+} else {
+  submittedName.innerHTML = `Nome: ${queryName} ${queryLastName}`;
+  submittedEmail.innerHTML = `Email: ${queryEmail}` 
+  submittedHouse .innerHTML = `Casa: ${queryHouse}` 
+  submittedFamily.innerHTML = `Família: ${queryFamily}` 
+  submittedTopics.innerHTML = `Matérias: ${queryConteudo}` 
+  submittedRating.innerHTML = `Avaliação: ${queryRate}` 
+  submittedObservation.innerHTML = `Observações: ${queryComment}` 
+}
 
 /* 
 const inputName = document.getElementById('input-name');
@@ -118,4 +125,3 @@ checkBoxContent.forEach((element) => {
  */
 /* Credito: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams */
 /* Credito: https://masteringjs.io/tutorials/fundamentals/foreach */
-
