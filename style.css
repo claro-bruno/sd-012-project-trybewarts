@@ -1,3 +1,7 @@
+/* Geral */
+.btn {
+  background-color: blueviolet;
+}
 /* Header */
 .header {
   display: flex;

@@ -130,6 +130,7 @@ getButtunLogin.addEventListener(
   "click",
   verificarLogin(getEmail.value, getPassword.value)
 );
+
 createToAssess();
 createListLearnTechnology();
 criaOpcaoCasa();
