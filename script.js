@@ -4,6 +4,16 @@ const btnLogin = document.querySelector('.submit-btn-login');
 const checkAgree = document.querySelector('#agreement');
 const btnSubmit = document.querySelector('#submit-btn');
 const textArea = document.querySelector('#textarea');
+const main = document.querySelector('#main');
+const ulFormReturn = document.querySelector('#form-return').children[0];
+const inputName = document.querySelector('#input-name');
+const inputLastName = document.querySelector('#input-lastname');
+const inputEmail = document.querySelector('#input-email');
+const inputCasa = document.querySelector('#house');
+const inputFamily = document.querySelector('#label-family');
+const inputContent = document.querySelector('#label-content');
+const inputAssessment = document.querySelector('#label-rate');
+const inputTextarea = document.querySelector('#textarea');
 
 function alertLogin() {
   if (inputLogin.value === 'tryber@teste.com' && inputPass.value === '123456') {
@@ -32,25 +42,14 @@ function contador() {
   counter.innerText = 500 - lenText;
 }
 textArea.addEventListener('keyup', contador);
-const main = document.querySelector('#main');
+
 function clearMain() {
   main.innerHTML = ' ';
 }
 btnSubmit.addEventListener('click', clearMain);
 
-const ulFormReturn = document.querySelector('.form-return');
-const inputName = document.querySelector('#input-name');
-const inputLastName = document.querySelector('#input-lastname');
-const inputEmail = document.querySelector('#input-email');
-const inputCasa = document.querySelector('#house');
-const inputFamily = document.querySelector('#label-family');
-const inputContent = document.querySelector('#label-content');
-const inputAssessment = document.querySelector('#label-rate');
-const inputTextarea = document.querySelector('#textarea');
-
 function createResult() {
-  ulFormReturn.classList.remove('form-return');
-  ulFormReturn.classList.add('form-return-activated');
+  ulFormReturn.classList.add('form-return-style');
   ulFormReturn.setAttribute('id', 'evaluation-form');
   const formReturn = document.createElement('li');
   formReturn.innerText = `Nome: ${inputName.value} ${inputLastName.value}
