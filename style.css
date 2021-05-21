@@ -1,7 +1,13 @@
+body {
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
   justify-content: space-between;
+  height: auto;
 }
 
 .trybewarts-header-logo {
@@ -10,20 +16,47 @@
 
 .trybewarts-login {
   display: flex;
+  margin: auto 10px;
+  height: 40%;
+}
+
+.trybewarts-login input {
+  border-radius: 5px;
+  border-style: solid;
+}
+
+#login-button {
+  background-color: rgb(50, 167, 145);
+  border-radius: 5px;
+  border-style: solid;
+  border-color: azure;
 }
 
 #trybewarts-header-title {
   text-align: center;
+  font-size: 50px;
+  display: flex;
+  vertical-align: middle;
+  margin: auto;
+  color: azure;
 }
 
 main {
   display: flex;
+  padding: 5%;
+  justify-content: space-around;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
+  background-color: rgb(208, 165, 100);
+  border-radius: 20px;
+}
+
+#evaluation-form h3 {
+  margin: 5%;
 }
 
 #trybewarts-forms-logo {
@@ -32,14 +65,208 @@ main {
 
 .div-form {
   display: flex;
+  margin: 2% 5%;
+}
+
+.div-form input {
+  border-style: solid;
+  border-color: azure;
+  border-radius: 10px;
+}
+
+#input-name , #input-email {
+  margin-right: 5%;
 }
 
 .div-column {
   display: flex;
   flex-direction: column;
+  margin: 3%;
+  flex-basis: 40%;
+}
+
+#div-family {
+  display: flex;
+  flex-direction: column;
+}
+
+#div-family input {
+  margin: 10px;
 }
 
 .div-learn {
   display: flex;
   flex-wrap: wrap;
+  margin: 5%;
+}
+
+#textarea {
+  border-style: solid;
+  border-color: azure;
+  border-radius: 10px;
+  resize: none;
+}
+
+#counter {
+  font-style: italic;
+  font-size: 12px;
+}
+
+#submit-btn {
+  border-style: solid;
+  border-color: azure;
+  background-color: azure;
+  color: rgb(156, 124, 75);
+  font-weight: 800;
+  margin: auto;
+  padding: 5px;
+  border-radius: 5px;
+  width: 20%;
+}
+
+.divResult {
+  margin: 5%;
+}
+
+footer {
+  background-color: rgb(50, 167, 145);
+  padding: 5px;
+  text-align: center;
+}
+
+footer p {
+  color: azure;
+}
+
+@media screen and ( max-width : 375px ) {
+
+  body {
+    font-size: 2em;
+  }
+
+  .header {
+    background-color: rgb(50, 167, 145);
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .trybewarts-header-logo {
+    width: 100px;
+    margin: auto;
+  }
+
+  .trybewarts-login {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    margin: 15px auto;
+  }
+
+  .trybewarts-login input {
+    border-radius: 5px;
+    border-style: solid;
+    margin-bottom: 5px;
+    height: 30px;
+  }
+
+  #trybewarts-header-title {
+    display: none;
+  }
+
+  #login-button {
+    height: 30px;
+    font-size: 20px;
+    color: azure;
+  }
+
+  main {
+    display: flex;
+    padding: 5%;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+  }
+
+  #evaluation-form {
+    display: flex;
+    margin: 2%;
+    width: 96%;
+    flex-direction: column;
+    background-color: rgb(208, 165, 100);
+    border-radius: 20px;
+  }
+
+  .div-form {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5%;
+  }
+
+  .div-form input {
+    width: 80%;
+    border-style: solid;
+    border-color: azure;
+    border-radius: 10px;
+  }
+
+  .div-learn input {
+    margin: 20px auto;
+  }
+
+  #evaluation-form input {
+    height: 3em;
+  }
+
+  #input-name , #input-email {
+    margin: 5% 0;
+  }
+
+  .div-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5%;
+  }
+
+  #house {
+    height: 2em;
+    display: flex;
+    font-size: 30px;
+  }
+
+  #div-family {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  #div-family input {
+    margin: 10px;
+  }
+
+  .div-learn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  #counter {
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  #agreement {
+    text-align: center;
+    width: 50px;
+    margin: 5% auto;
+  }
+
+  #submit-btn {
+    height: 50px;
+    width: 40%;
+  }
 }
