@@ -75,27 +75,12 @@ radioButtonFamily.forEach((element) => {
   }
 });
 
-// for (const radioButton of radioButtonFamily) {
-//   if (queryFamily && radioButton.id === queryFamily.toLowerCase()) {
-//     radioButton.checked = true;
-//   }
-// console.log(radioButton.id)
-// }
-
 const radioButtonRate = document.querySelectorAll('input[name="rate"]');
 radioButtonRate.forEach((element) => {
   if (element.id.split('-')[1] === queryRate) {
     element.checked = true;
   }
 });
-
-// for (const radioButton of radioButtonRate) {
-//   if (radioButton.id.split('-')[1] === queryRate) {
-//     radioButton.checked = true;
-//   }
-// console.log(radioButton.id)
-// console.log(radioButton.id.split('-')[1])
-// }
 
 const checkBoxContent = document.querySelectorAll('input[name="conteudo"]');
 // console.log(checkBoxContent)
@@ -109,11 +94,6 @@ checkBoxContent.forEach((element) => {
   if (queryConteudo.includes(element.id.toLowerCase())) {
     element.checked = true;
   }
-})
-// for (const singleCheckBox of checkBoxContent) {
-//   // console.log('singleCheckBox', singleCheckBox)
-//   if (queryConteudo.includes(singleCheckBox.id.toLowerCase())) {
-//     singleCheckBox.checked = true;
-//   }
-// }
+});
 /* Credito: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams */
+/* Credito: https://masteringjs.io/tutorials/fundamentals/foreach */
