@@ -134,8 +134,3 @@ footer {
   background-color: dimgray;
   color: white;
 }
-
-#counter {
-  display: flex;
-  margin-left: 50%;
-}
