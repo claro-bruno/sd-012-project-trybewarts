@@ -27,7 +27,7 @@
             <input type="text" name="input-email" id="input-email" placeholder="Email" required>
             <select name="casa" id="house"></select>
          </div>
-         <div>
+         <section class="label-family-container">
             <label id="label-family" for="family">Qual sua família?</label>
             <div>
                <input value="Frontend" name="family" type="radio" id="frontend">
@@ -41,7 +41,26 @@
                <input value="FullStack" name="family" type="radio" id="fullStack">
                <label for="fullStack">Família FullStack</label>
             </div>
-         </div>
+         </section>
+         <section class="label-content-container">
+            <label id="label-content" for="content">
+               Qual conteúdo você está com mais vontade de aprender?
+            </label>
+            <div>
+               <input type="checkbox" value="HoFs" name="hofs-content" class="subject">
+               <label for="hofs-content">HoFs</label>
+               <input type="checkbox" value="Jest" name="jest-content" class="subject">
+               <label for="jest-content">Jest</label>
+               <input type="checkbox" value="Promises" name="promises-content" class="subject">
+               <label for="promises-content">Promises</label>
+               <input type="checkbox" value="React" name="react-content" class="subject">
+               <label for="react-content">React</label>
+               <input type="checkbox" value="SQL" name="sql-content" class="subject">
+               <label for="sql-content">SQL</label>
+               <input type="checkbox" value="Python" name="python-content" class="subject">
+               <label for="python-content">Python</label>
+            </div>
+         </section>
       </form>
       <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Escudo da Trybewarts">
    </main>
