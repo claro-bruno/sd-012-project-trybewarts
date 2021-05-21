@@ -145,8 +145,17 @@ h2 {
   font-size: 15px;
 }
 
+.flex-container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  width: 80%;
+  margin: 10px;
+
+}
 .rate div {
-  margin-left: 9px;
+  margin-left: 7px;
 }
 
 footer {
