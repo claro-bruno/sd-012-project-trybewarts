@@ -120,3 +120,11 @@
   justify-content: space-between;
   align-items: center;
 }
+
+.submit-none {
+  display: none;
+}
+
+.submit1 {
+  display: flex;
+}

@@ -1,4 +1,5 @@
 const login = document.getElementById('login-button');
+const envio = document.getElementById('agreement');
 
 function validation() {
   const email = 'tryber@teste.com';
@@ -12,3 +13,15 @@ function validation() {
   }
 }
 login.addEventListener('click', validation);
+
+function displayenviar() {
+  const submit = document.getElementById('submit-btn');
+  if (submit.className === 'submit1') {
+    submit.className = ('submit-none');
+  } else {
+    submit.className = 'submit1';
+    submit.disabled = false;
+  }
+}
+
+envio.addEventListener('click', displayenviar);
