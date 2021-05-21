@@ -115,6 +115,7 @@ main {
 
 .submit-container {
   display: flex;
+  justify-content: center;
 }
 
 #submit-btn {
