@@ -11,3 +11,11 @@ function clicarLogar() {
 }
 
 pegabotao.addEventListener('click', clicarLogar);
+
+const checkzinho = document.getElementsByClassName('abriu');
+const botaocheck = doxument.querySelector('.fechou').disabled = 'true';
+
+function clickbait () {
+botaocheck.disabled = 'false';  
+}
+checkzinho.addEventListener('click', clickbait);
