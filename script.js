@@ -9,7 +9,7 @@ botao.addEventListener('click', () => {
   const login = 'tryber@teste.com';
   const senha = '123456';
 
-  if (inputLogin.value !== login && inputSenha.value !== senha) {
+  if (inputLogin.value !== login || inputSenha.value !== senha) {
     window.alert('Login ou senha inválidos.');
   } else {
     window.alert('Olá, Tryber!');
@@ -53,7 +53,7 @@ function getMaterias() {
       materiaSelecionadas.push(materia[index].value);
     }
   }
-  return materiaSelecionadas;
+  return materiaSelecionadas.join(', ');
 }
 
 function getAvaliacao() {
@@ -98,7 +98,7 @@ submitBtn.addEventListener('click', (e) => {
   document.querySelector('#returnEmail').innerText = `Email: ${object.inputEmail}`;
   document.querySelector('#returnHouse').innerText = `Casa: ${object.casa}`;
   document.querySelector('#returnFamily').innerText = `Família: ${object.familia}`;
-  document.querySelector('#returnSubject').innerText = `Observações: ${object.mateira}`;
-  document.querySelector('#returnRate').innerText = `Matérias: ${object.avaliacao}`;
-  document.querySelector('#returnComment').innerText = `Avaliação: ${object.inputObservacao}`;
+  document.querySelector('#returnRate').innerText = `Matérias: ${object.mateira}`;
+  document.querySelector('#returnComment').innerText = `Avaliação: ${object.avaliacao}`;
+  document.querySelector('#returnSubject').innerText = `Observações: ${object.inputObservacao}`;
 });
