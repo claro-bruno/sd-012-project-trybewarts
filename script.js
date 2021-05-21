@@ -57,22 +57,23 @@ const submittedTopics = document.getElementById('submitted-topics');
 const submittedRating = document.getElementById('submitted-rating');
 const submittedObservation = document.getElementById('submitted-observation');
 
-if(queryName === null && queryLastName == null && queryEmail === null && queryHouse === null && queryFamily === null && queryConteudo === null && queryRate === null && queryComment === null) {
+// if(queryName === null && queryLastName == null && queryEmail === null && queryHouse === null && queryFamily === null && queryConteudo === null && queryRate === null && queryComment === null) {
+if (queryName === null) {
   submittedName.innerHTML = '';
   submittedEmail.innerHTML = '';
-  submittedHouse .innerHTML = '';
+  submittedHouse.innerHTML = '';
   submittedFamily.innerHTML = '';
   submittedTopics.innerHTML = '';
   submittedRating.innerHTML = '';
   submittedObservation.innerHTML = '';
 } else {
   submittedName.innerHTML = `Nome: ${queryName} ${queryLastName}`;
-  submittedEmail.innerHTML = `Email: ${queryEmail}` 
-  submittedHouse .innerHTML = `Casa: ${queryHouse}` 
-  submittedFamily.innerHTML = `Família: ${queryFamily}` 
-  submittedTopics.innerHTML = `Matérias: ${queryConteudo}` 
-  submittedRating.innerHTML = `Avaliação: ${queryRate}` 
-  submittedObservation.innerHTML = `Observações: ${queryComment}` 
+  submittedEmail.innerHTML = `Email: ${queryEmail}`; 
+  submittedHouse.innerHTML = `Casa: ${queryHouse}`;
+  submittedFamily.innerHTML = `Família: ${queryFamily}`;
+  submittedTopics.innerHTML = `Matérias: ${queryConteudo}`;
+  submittedRating.innerHTML = `Avaliação: ${queryRate}`;
+  submittedObservation.innerHTML = `Observações: ${queryComment}`;
 }
 
 /* 
