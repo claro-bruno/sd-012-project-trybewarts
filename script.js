@@ -10,9 +10,6 @@ const inputName = document.querySelector('#input-name');
 const inputLastName = document.querySelector('#input-lastname');
 const inputEmail = document.querySelector('#input-email');
 const inputCasa = document.querySelector('#house');
-const inputFamily = document.querySelector('#label-family');
-const inputContent = document.querySelector('#label-content');
-const inputAssessment = document.querySelector('#label-rate');
 const inputTextarea = document.querySelector('#textarea');
 
 function alertLogin() {
@@ -46,7 +43,28 @@ textArea.addEventListener('keyup', contador);
 function clearMain() {
   main.innerHTML = ' ';
 }
-btnSubmit.addEventListener('click', clearMain);
+
+const getSelectedRadio = (elementName) => {
+  const inputElement = document.getElementsByName(elementName);
+  let valueInput;
+  for (let index = 0; index < inputElement.length; index += 1) {
+    if (inputElement[index].checked) {
+      valueInput = inputElement[index].value;
+    }
+  }
+  return valueInput;
+};
+
+const getSelectedCheckbox = (elementName) => {
+  const inputElement = document.getElementsByName(elementName);
+  const selectedValues = [];
+  for (let index = 0; index < inputElement.length; index += 1) {
+    if (inputElement[index].checked) {
+      selectedValues.push(inputElement[index].value);
+    }
+  }
+  return selectedValues.join(', ');
+};
 
 function createResult() {
   ulFormReturn.classList.add('form-return-style');
@@ -55,10 +73,16 @@ function createResult() {
   formReturn.innerText = `Nome: ${inputName.value} ${inputLastName.value}
   Email: ${inputEmail.value}
   Casa: ${inputCasa.value}
-  Família: ${inputFamily.value}
-  Matérias: ${inputContent.value}
-  Avaliação: ${inputAssessment.value}
+  Família: ${getSelectedRadio('family')}
+  Matérias: ${getSelectedCheckbox('conteudo')}
+  Avaliação: ${getSelectedRadio('rate')}
   Observações: ${inputTextarea.value}`;
   ulFormReturn.appendChild(formReturn);
 }
-btnSubmit.addEventListener('click', createResult);
+
+const submitForm = () => {
+  createResult();
+  clearMain();
+};
+
+btnSubmit.addEventListener('click', submitForm);
