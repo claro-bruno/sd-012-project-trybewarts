@@ -42,7 +42,9 @@ main {
   display: flex;
 }
 
-#label-family {
+#family-buttons {
   display: flex;
   flex-direction: column;
+  max-width: fit-content;
+  align-items: flex-end;
 }
