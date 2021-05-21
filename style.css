@@ -81,13 +81,15 @@ main {
 }
 
 #input-email {
+  display: inline-block;
   width: 50%;
   height: 30px;
   border-radius: 5px;
 }
 
 #house {
-  width: 43%;
+  display: inline-block;
+  width: 42%;
   height: 30px;
   border-radius: 5px;
   background-color: white;
