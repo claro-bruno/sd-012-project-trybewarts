@@ -30,23 +30,27 @@
 main {
   display: flex;
   margin: 0 auto;
-  width: 90%;
+  background-color: aliceblue;
+  height: 90vh;
 }
 
 #evaluation-form {
-  display: flex;
   width: 675px;
+  display: flex;
   flex-direction: column;
+  margin: auto;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
+  margin: auto;
 }
 
 #radioLabel {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  width: 240px;
 }
 
 #radioLabel a {
@@ -55,8 +59,9 @@ main {
 
 #checkboxLabel {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  width: 230px;
+  flex-flow: column wrap;
 }
 
 #checkboxLabel a {
@@ -82,4 +87,54 @@ main {
 p {
   margin: 0 auto;
   width: 90%;
+}
+
+#inputLogin {
+  margin-right: 20px;
+  border: rgb(50, 167, 145);
+  border-style: revert;
+}
+
+#inputPassword {
+  margin-right: 20px;
+  border: rgb(50, 167, 145);
+  border-style: revert;
+}
+
+.formInputs {
+  padding-top: 16px;
+}
+
+#house {
+  width: 173px;
+}
+
+.hr {
+  width: auto;
+}
+
+#footer {
+  background-color: aliceblue;
+  height: 4vh;
+  padding: 0 5%;
+}
+
+#sectionLabel {
+  display: flex;
+}
+
+.radio {
+  margin-top: 5px;
+}
+
+#labelRatio {
+  height: 30px;
+}
+
+#label-content {
+  line-height: 30px;
+}
+
+#label-family {
+  line-height: 40px;
 }

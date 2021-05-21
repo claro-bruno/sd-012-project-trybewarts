@@ -39,9 +39,9 @@ function createA(array, position) {
 const divRadio = document.getElementById('radioLabel');
 const radioValue = ['Frontend', 'Backend', 'FullStack'];
 const labelValue = ['label1', 'label2', 'label3'];
+
 // Cria label
 function createLabel(index) {
-  console.log(index);
   const inputLabel = document.createElement('label');
   inputLabel.htmlFor = labelValue[index];
   inputLabel.id = 'labelRadio';
@@ -56,6 +56,7 @@ function createRadio() {
     inputRadio.name = 'family';
     inputRadio.value = radioValue[index];
     inputRadio.id = labelValue[index];
+    inputRadio.className = 'radio';
     divRadio.children[index + 1].appendChild(inputRadio);
     createLabel(index);
   }
