@@ -6,7 +6,7 @@
 }
 
 header {
-  height: 80px;
+  height: 75px;
   width: 100%;
   margin: none;
 }
@@ -61,7 +61,6 @@ main {
   flex-direction: column;
   align-items: center;
   width: 675px;
-  border: 1px solid black;
 }
 
 h2 {
@@ -75,16 +74,15 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 80%;
   margin: 10px;
 }
 
 .trybewarts-evaluator  input, select {
   border-radius: 7px;
-  padding: 15px;
+  padding: 10px;
   background-color: white;
   border: none;
-  width: 250px;
+  width: 240px;
   margin: 5px;
 }
 
@@ -143,16 +141,32 @@ h2 {
   display: flex;
   justify-content: center;
   font-size: 15px;
+  margin: 5px;
 }
 
 .flex-container2 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border: 1px solid black;
+  align-items: ;
   width: 80%;
-  margin: 10px;
+  margin: 0px 10px;
+}
 
+.flex-container2 textarea {
+  margin-bottom: 10px;
+  border-radius: 7px;
+  background-color: white;
+  border: none;
+}
+#submit-btn {
+  padding: 7px;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  margin: 10px;
+  background-color: slateblue;
+  color: white;
+  
 }
 .rate div {
   margin-left: 7px;
