@@ -21,9 +21,11 @@ function createRadioButtons() {
     const createInput = document.createElement('input');
     const createLabel = document.createElement('label');
     createInput.type = 'radio';
+    createInput.className = 'form-check-input';
     createInput.value = index;
     createInput.name = 'rate';
     createInput.id = index;
+    createLabel.className = 'form-label';
     createLabel.innerHTML = index;
     createLabel.htmlFor = index;
     rateSection.appendChild(createInput);

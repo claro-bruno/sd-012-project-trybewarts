@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,22 +13,22 @@
     <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form action="" class="trybewarts-login" id="login-form">
-      <input type="text" name="username" placeholder="Login" id="login-input" required>
-      <input type="text" name="password" placeholder="Senha" id="senha-input" required>
-      <button type="submit" id="loginButton">Login</button>
+      <input type="text" name="username" placeholder="Login" id="login-input" required class="form-control">
+      <input type="text" name="password" placeholder="Senha" id="senha-input" required class="form-control">
+      <button type="submit" id="loginButton" class="btn btn-primary">Login</button>
     </form>
   </header>
   <h1 id="title">Forms</h1>
   <main class="main-content">
     <form id="evaluation-form" action="">
-      <div id="name-container">
-        <input type="text" name="name" id="input-name" placeholder="Nome">
-        <input type="text" name="lastname" id= "input-lastname" placeholder="Sobrenome">
+      <div id="name-container" class="mb-3">
+        <input type="text" name="name" id="input-name" placeholder="Nome" class="form-control">
+        <input type="text" name="lastname" id= "input-lastname" placeholder="Sobrenome" class="form-control">
       </div>
-      <div id="email-house-container">
-        <input type="text" name="email" id="input-email" placeholder="Email">
-        <label for="gitnoria-house">Casa:</label>
-        <select name="house" id="house">
+      <div id="email-house-container" class="mb-3">
+        <input type="text" name="email" id="input-email" placeholder="Email" class="form-control">
+        <label for="gitnoria-house" class="form-text">Casa:</label>
+        <select name="house" id="house" class="form-select">
         <option id="gitnoria-house" value="Gitnória">
           Gitnória
         </option>
@@ -41,40 +42,47 @@
           Pytherina
         </option>
         </select>
+        <hr>
       </div>
-      <label id="label-family">Qual sua família?</label>
-    <div action="" id="radioButtons">
-      <label for="frontendInput"><input type="radio" id="frontendInput" name="family" value="Frontend" class="familyButtons">Família Frontend</label>
-      <label for="backendInput"><input type="radio" id="backendInput" name="family" value="Backend" class="familyButtons">Família Backend</label>
-      <label for="fullstackInput"><input type="radio" id="fullstackInput" name="family" value="FullStack" class="familyButtons">Família FullStack</label>
-    </div>
-    <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+    <div id="radio-check-container">
+      <div id="radioButtons">
+        <label id="label-family">Qual sua família?</label>
+        <label for="frontendInput"><input type="radio" id="frontendInput" name="family" value="Frontend" class="familyButtons">Família Frontend</label>
+        <label for="backendInput"><input type="radio" id="backendInput" name="family" value="Backend" class="familyButtons">Família Backend</label>
+        <label for="fullstackInput"><input type="radio" id="fullstackInput" name="family" value="FullStack" class="familyButtons">Família FullStack</label>
+      </div>
+      <hr>
       <div id="checkBox">
-      <label for="HoFsInput"><input type="checkbox" value="HoFs" id="HoFsInput">HoFs</label>
-      <label for="JestInput"><input type="checkbox" value="Jest" id="JestInput">Jest</label>
-      <label for="PromisesInput"><input type="checkbox" value="Promises" id="PromisesInput">Promises</label>
-      <label for="ReactInput"><input type="checkbox" value="React" id="ReactInput">React</label>
-      <label for="SQLInput"><input type="checkbox" value="SQL" id="SQLInput">SQL</label>
-      <label for="PythonInput"><input type="checkbox" value="Python" id="PythonInput">Python</label>
-    </div>
-    <div id="rate-section">
-      <div id="radio-container">
-        <label id="label-rate">Como você avalia a Trybewarts?</label>
-      </div>
-      <div id="comment-container">
-        <label for="comment" class="textarea">Deixe seu comentário:</label>
-        <textarea name="coment" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-        <label for="" id="counter">500</label>
-        <div id="agreement-container">
-          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-          <input type="checkbox" name="agreement" id="agreement">
+        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        <div id="check-box-container">
+          <label for="HoFsInput"><input type="checkbox" value="HoFs" id="HoFsInput">HoFs</label>
+          <label for="JestInput"><input type="checkbox" value="Jest" id="JestInput">Jest</label>
+          <label for="PromisesInput"><input type="checkbox" value="Promises" id="PromisesInput">Promises</label>
+          <label for="ReactInput"><input type="checkbox" value="React" id="ReactInput">React</label>
+          <label for="SQLInput"><input type="checkbox" value="SQL" id="SQLInput">SQL</label>
+          <label for="PythonInput"><input type="checkbox" value="Python" id="PythonInput">Python</label>
         </div>
       </div>
-      <button id="submit-btn" type="submit" disabled>Enviar</button>
+    </div>
+    <hr>
+    <div id="rate-section">
+      <div id="radio-container" class="mb-3">
+        <label id="label-rate" class="form-label">Como você avalia a Trybewarts?</label>
+      </div>
+      <div id="comment-container">
+        <label for="comment" class="textarea form-label">Deixe seu comentário:</label>
+        <textarea name="coment" id="textarea" cols="30" rows="10" maxlength="500" class="form-control"></textarea>
+        <label for="" id="counter" class="form-label">500</label>
+        <div id="agreement-container">
+          <label for="agreement" id="label-infos" class="form-label">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" name="agreement" id="agreement" class="form-check-input">
+        </div>
+      </div>
+      <button id="submit-btn" type="submit" disabled class="btn btn-primary">Enviar</button>
     </div>
     </form>
+    <img src="images/trybewarts-colored.svg" alt="Logo da Academia TrybeWarts" id="trybewarts-forms-logo">
   </main>
-  <img src="images/trybewarts-colored.svg" alt="Logo da Academia TrybeWarts" id="trybewarts-forms-logo">
   <footer>
     <p>Direitos reservados à Trybewarts©</p>
   </footer>
