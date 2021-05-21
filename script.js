@@ -32,7 +32,6 @@ function contador() {
   counter.innerText = 500 - lenText;
 }
 textArea.addEventListener('keyup', contador);
-
 const main = document.querySelector('#main');
 function clearMain() {
   main.innerHTML = ' ';
@@ -52,6 +51,7 @@ const inputTextarea = document.querySelector('#textarea');
 function createResult() {
   ulFormReturn.classList.remove('form-return');
   ulFormReturn.classList.add('form-return-activated');
+  ulFormReturn.setAttribute('id', 'evaluation-form');
   const formReturn = document.createElement('li');
   formReturn.innerText = `Nome: ${inputName.value} ${inputLastName.value}
   Email: ${inputEmail.value}

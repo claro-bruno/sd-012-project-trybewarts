@@ -172,18 +172,16 @@ hr {
 }
 
 .form-return-activated {
-  display: flex;
-  justify-content: center;
   list-style: none;
   font-size: 20px;
   background-color: white;
-  width: 25%;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgb(148, 148, 148);
+  text-align: center;
 }
 
 footer {
