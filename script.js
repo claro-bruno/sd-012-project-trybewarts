@@ -67,7 +67,7 @@ const checkedSubjects = () => {
       selectedSubject.push(allSubject[skills].value);
     }
   }
-  return `${selectedSubject}`;
+  return selectedSubject.join(', ');
 };
 
 const checkedRate = () => {
