@@ -50,17 +50,24 @@ function counterTextArea() {
 }
 textArea.addEventListener('keyup', counterTextArea);
 
+function subjectList() {
+  let list = '';
+  const subjectChecks = document.querySelectorAll('.subject:checked');
+  subjectChecks.forEach((node) => {
+    list += `${node.value} `;
+  });
+  return list;
+}
+
 const saveData = () => {
   const nameInput = document.getElementById('input-name');
   const lastNameInput = document.getElementById('input-lastname');
   const inputEmail = document.getElementById('input-email');
   const houseInput = document.getElementById('house');
   const familyRadio = document.querySelector('input[name="family"]:checked');
-  const subjectChecks = document.querySelectorAll('.subject:checked');
-  let subjects = '';
-  subjectChecks.forEach((node) => {
-    subjects += `${node.value} `;
-  });
+
+  const subjects = subjectList();
+
   console.log(subjects);
   return {
     name: `Nome: ${nameInput.value} ${lastNameInput.value}`,
