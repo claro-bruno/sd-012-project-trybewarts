@@ -35,7 +35,7 @@ const createRateInputs = () => {
   // acessa div de que agrupa os inputs
   const rateDiv = document.querySelector('#avaliacao-input');
   // cria label de avaliação
-  const rateLabel = document.createElement('label')
+  const rateLabel = document.createElement('label');
   rateLabel.id = 'label-rate';
   rateLabel.innerHTML = 'Como você avalia a Trybewarts?';
   rateDiv.appendChild(rateLabel);
