@@ -22,11 +22,11 @@
     <main>
         <form action="" method="get" id="evaluation-form">
             <h2>Forms</h2>
-            <section class="name-inputs">
+            <section class="content-input">
                 <input type="text" id="input-name" placeholder="Nome">
                 <input type="text" id="input-lastname" placeholder="Sobrenome">
             </section>
-            <section>
+            <section class="content-input">
                 <input type="email" id="input-email" placeholder="Email">
                 <label for="house">Casa
                     <select name="casa" id="house">
@@ -47,7 +47,29 @@
                         <label for="fullstack"><input type="radio" name="family" value="FullStack" id="fullstack">FullStack</label>
                     </section>
                 </section>
-                <section>hello world</section>
+                <section class="content-checkboxes">
+                    <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                    <section class="checkboxes">
+                        <label for="hofs">
+                            <input class="subject" type="checkbox" name="content-checkbox" id="hofs" value="HoFs"> HoFs
+                        </label>
+                        <label for="jest">
+                            <input class="subject" type="checkbox" name="content-checkbox" id="jest" value="Jest"> Jest
+                        </label>
+                        <label for="promises">
+                            <input class="subject" type="checkbox" name="content-checkbox" id="promises" value="Promises"> Promises
+                        </label>
+                        <label for="react">
+                            <input class="subject" type="checkbox" name="content-checkbox" id="react" value="React"> React
+                        </label>
+                        <label for="sql">
+                            <input class="subject" type="checkbox" name="content-checkbox" id="sql" value="SQL"> SQL
+                        </label>
+                        <label for="python">
+                            <input class="subject" type="checkbox" name="content-checkbox" id="python" value="Python"> Python
+                        </label>
+                    </section>
+                </section>
             </section>
         </form>
         <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo Trybewarts">

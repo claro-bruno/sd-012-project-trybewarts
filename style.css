@@ -55,7 +55,7 @@
 
 main {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 #evaluation-form {
@@ -72,20 +72,21 @@ main {
   font-size: 35px;
 }
 
-#evaluation-form input {
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.content-input {
+  display: flex;
+  align-items: center;  
+}
+
+.content-input input {
   margin: 15px;
   height: 35px;
   border-radius: 5px;
   border: 1px solid;
   padding: 3px;
-}
-
-#trybewarts-forms-logo {
-  height: 500px;
-}
-
-.name-inputs {
-  display: flex;
 }
 
 #house {
@@ -96,7 +97,8 @@ main {
 
 .content-form-family {
   display: flex;
-  justify-content: space-between;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .form-familia {
@@ -107,4 +109,22 @@ main {
 #family {
   display: flex;
   flex-direction: column;
+}
+
+#family input{
+  margin: 10px 10px;
+}
+
+.content-checkboxes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.checkboxes {
+  display: flex;
+}
+
+.checkboxes input {
+  margin: 5px 10px;
 }
