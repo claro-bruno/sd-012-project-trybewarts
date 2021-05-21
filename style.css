@@ -78,7 +78,7 @@ main {
 
 .content-input {
   display: flex;
-  align-items: center;  
+  align-items: center;
 }
 
 .content-input input {
@@ -111,8 +111,12 @@ main {
   flex-direction: column;
 }
 
-#family input{
-  margin: 10px 10px;
+.checkboxes input {
+  margin: 5px 10px;
+}
+
+#family input {
+  margin: 10px;
 }
 
 .content-checkboxes {
@@ -123,8 +127,4 @@ main {
 
 .checkboxes {
   display: flex;
-}
-
-.checkboxes input {
-  margin: 5px 10px;
 }
