@@ -69,6 +69,13 @@ inputTextArea.value = queryComment;
 
 // console.log(queryFamily)
 const radioButtonFamily = document.querySelectorAll('input[name="family"]');
+// radioButtonFamily.forEach(element => isRadioButtonChecked(element))
+
+// const isRadioButtonChecked = (element) => {
+//   if (queryFamily && element.id === queryFamily.toLowerCase()) {
+//     element.checked = true;
+//   }
+// }
 for (const radioButton of radioButtonFamily) {
   if (queryFamily && radioButton.id === queryFamily.toLowerCase()) {
     radioButton.checked = true;
@@ -88,7 +95,9 @@ for (const radioButton of radioButtonRate) {
 const checkBoxContent = document.querySelectorAll('input[name="conteudo"]');
 // console.log(checkBoxContent)
 
-for (let i = 0; i < queryConteudo.length; i += 1) { queryConteudo[i] = queryConteudo[i].toLowerCase(); }
+for (let i = 0; i < queryConteudo.length; i += 1) { 
+  queryConteudo[i] = queryConteudo[i].toLowerCase();
+}
 console.log('queryConteudo', queryConteudo);
 for (const singleCheckBox of checkBoxContent) {
   // console.log('singleCheckBox', singleCheckBox)
