@@ -2,11 +2,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 header {
-  height: 80px;
+  height: 75px;
   width: 100%;
   margin: none;
 }
@@ -16,7 +15,6 @@ header {
   background-color: rgb(50, 167, 145);
   align-items: center;
   justify-content: space-between;
-
 }
 
 .trybewarts-header-logo {
@@ -53,7 +51,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 650px;
   background: rgb(235, 239, 240);
 }
 
@@ -62,13 +59,12 @@ main {
   flex-direction: column;
   align-items: center;
   width: 675px;
-  border: 1px solid black;
 }
 
 h2 {
   text-align: center;
-  font-size: 30px;
-  margin: 20px;
+  font-size: 25px;
+  margin: 10px;
 }
 
 .trybewarts-evaluator {
@@ -76,46 +72,44 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 20px 10px;
+  margin: 10px;
 }
 
 .trybewarts-evaluator  input, select {
   border-radius: 7px;
-  padding: 15px;
+  padding: 10px;
   background-color: white;
   border: none;
-  width: 300px;
+  width: 240px;
   margin: 5px;
 }
 
 .trybewarts-evaluator select {
-  width: 250px;
+  width: 200px;
   font-size: 14px;
 }
 
 .trybewarts-evaluator label {
-  font-size: 20px;
-  margin-left: 8px;
+  font-size: 15px;
+  margin-left: 15px;
 }
   
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-.evaluator-form2 {
+.flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
-  margin: 20px 10px;
+  width: 80%;
+  margin: 10px;
 }
 
 .input-family {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .input-family div {
@@ -124,7 +118,55 @@ h2 {
 
 .input-content {
   width: 60%;
-  border: 1px solid green;
+  font-size: 17px;
+}  
+
+.input-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.input-checkbox div {
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.rate {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  margin: 5px;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0px 10px;
+}
+
+.flex-container2 textarea {
+  margin-bottom: 10px;
+  border-radius: 7px;
+  background-color: white;
+  border: none;
+}
+
+#submit-btn {
+  padding: 7px;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  margin: 10px;
+  background-color: slateblue;
+  color: white;
+}
+  
+.rate div {
+  margin-left: 7px;
 }
 
 footer {
@@ -135,10 +177,4 @@ footer {
   height: 39px;
   background: dimgrey;
   color: white;
-}
-
-#rate {
-  font-size: 18px;
-  display: flex;
-  width:100%;
 }
