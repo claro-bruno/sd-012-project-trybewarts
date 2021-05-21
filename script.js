@@ -53,11 +53,20 @@ textArea.addEventListener('keyup', counterTextArea);
 const saveData = () => {
   const nameInput = document.getElementById('input-name');
   const lastNameInput = document.getElementById('input-lastname');
-  const houseRadio = document.querySelector('input[name="family"]:checked');
-
+  const inputEmail = document.getElementById('input-email');
+  const houseInput = document.getElementById('house');
+  const familyRadio = document.querySelector('input[name="family"]:checked');
+  const subjectChecks = document.querySelectorAll('.subject:checked');
+  let subjects = '';
+  subjectChecks.forEach((node) => {
+    subjects += `${node.value} `;
+  });
+  console.log(subjects);
   return {
     name: `Nome: ${nameInput.value} ${lastNameInput.value}`,
-    house: `Casa: ${houseRadio.value}`,
+    email: `Email: ${inputEmail.value}`,
+    house: `Casa: ${houseInput.value}`,
+    family: `Família: ${familyRadio.value}`,
   };
 };
 
@@ -67,7 +76,11 @@ function summary(event) {
   const data = saveData();
   const form = document.getElementById('evaluation-form');
   form.innerHTML = '';
-  Object.values(data).forEach((value) => console.log(value));
+  Object.values(data).forEach((value) => { // source https://www.30secondsofcode.org/blog/s/eslint-refactor-for-in
+    const span = document.createElement('span');
+    span.innerHTML = value;
+    form.appendChild(span);
+  });
 }
 
 submitBtn.addEventListener('click', summary);
