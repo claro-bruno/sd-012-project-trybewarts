@@ -32,20 +32,24 @@ createHouseOptions(optionsList);
 const createRateInputs = () => {
   // acessa div de que agrupa os inputs
   const rateDiv = document.querySelector('#avaliacao-input');
+  // cria label de avaliação
+  const rateLabel = document.createElement('label')
+  rateLabel.id = 'label-rate';
+  rateLabel.innerHTML = 'Como você avalia a Trybewarts?';
+  rateDiv.appendChild(rateLabel);
   // cria 10 novos inputs com labels
   for (let index = 1; index <= 10; index += 1) {
     const newInput = document.createElement('input');
     const newLabel = document.createElement('label');
     newInput.type = 'radio';
-    newInput.value = `'${index}'`;
+    newInput.value = index;
     newInput.name = 'rate';
     newLabel.innerHTML = index;
     rateDiv.appendChild(newInput);
     rateDiv.appendChild(newLabel);
   }
 };
-// createRateInputs();
-
+createRateInputs();
 // valida login e senha
 function validacaoLoginSenha(event) {
   // acessa elemento com id 'inputSenha'
@@ -90,8 +94,6 @@ function listenerClick(event) {
     event.target.removeEventListener('click', listenerClick);
   }
 }
-// adiciona evento de click em toda a página
-document.addEventListener('click', listenerClick);
 
 // gerencia eventos de teclado na página
 function listenerKey(event) {
@@ -108,8 +110,6 @@ function listenerKey(event) {
     event.target.removeEventListener('keyup', listenerKey);
   }
 }
-// adiciona evento de teclado em toda página
-document.addEventListener('keyup', listenerKey);
 
 // acessa formulário de avaliação
 const evaluationForm = document.querySelector('#evaluation-form');
@@ -201,6 +201,11 @@ function mostrarValores() {
 }
 
 window.onload = () => {
+  // adiciona evento de click em toda a página
+  document.addEventListener('click', listenerClick);
+  // adiciona evento de teclado em toda página
+  document.addEventListener('keyup', listenerKey);
+  // adiciona evento para não enviar formulário e mmostrar valores do formulário de avaliação
   evaluationForm.addEventListener('submit', (event) => {
     event.preventDefault();
     mostrarValores();
