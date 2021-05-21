@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 header {
@@ -16,7 +15,6 @@ header {
   background-color: rgb(50, 167, 145);
   align-items: center;
   justify-content: space-between;
-
 }
 
 .trybewarts-header-logo {
@@ -121,8 +119,7 @@ h2 {
 .input-content {
   width: 60%;
   font-size: 17px;
-  
-}
+}  
 
 .input-checkbox {
   display: flex;
@@ -147,7 +144,6 @@ h2 {
 .flex-container2 {
   display: flex;
   flex-direction: column;
-  align-items: ;
   width: 80%;
   margin: 0px 10px;
 }
@@ -158,6 +154,7 @@ h2 {
   background-color: white;
   border: none;
 }
+
 #submit-btn {
   padding: 7px;
   width: 100%;
@@ -166,8 +163,8 @@ h2 {
   margin: 10px;
   background-color: slateblue;
   color: white;
-  
 }
+  
 .rate div {
   margin-left: 7px;
 }
@@ -181,5 +178,3 @@ footer {
   background: dimgrey;
   color: white;
 }
-
-
