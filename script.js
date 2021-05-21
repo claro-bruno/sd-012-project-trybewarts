@@ -30,11 +30,12 @@ function getAgreement() {
 
 function enableButton() {
   const agreement = document.getElementById('agreement');
+  const buttonCheck = document.getElementById('submit-btn');
   agreement.addEventListener('input', () => {
     if (getAgreement()) {
-      document.getElementById('submit-btn').disabled = false;
+      buttonCheck.disabled = false;
     } else {
-      document.getElementById('submit-btn').disabled = true;
+      buttonCheck.disabled = true;
     }
   });
 }
@@ -48,11 +49,13 @@ const maxChar = document.getElementById('counter');
 const inputText = document.getElementById('textarea');
 const valorMax = 500;
 
-inputText.addEventListener('input', (e) => {
-  const textSise = e.target.value.length;
+function countChar(event) {
+  const textSise = event.target.value.length;
   const total = valorMax - textSise;
   maxChar.innerHTML = total;
-});
+}
+
+inputText.addEventListener('keyup', countChar);
 
 const btnSubmit = document.getElementById('submit-btn');
 
@@ -102,54 +105,39 @@ function subjectList() {
   }
 }
 
+function getData() {
+  const data = {
+    name: document.getElementById('input-name').value,
+    lastName: document.getElementById('input-lastname').value,
+    email: document.getElementById('input-email').value,
+    house: document.getElementById('house').value,
+    family: document.getElementById('family-selected').value,
+    lessons: originalSubjectsId,
+    avaliation: document.getElementById('rate-selected').value,
+    observation: document.getElementById('textarea').value,
+  };
+  return data;
+}
+
+function createLi(innerhtml) {
+  const li = document.createElement('li');
+  li.innerHTML = innerhtml;
+  return li;
+}
+
 function submitForm(event) {
   familyChangeId();
   subjectList();
   rateChangeId();
   event.preventDefault();
-  const form = document.getElementById('evaluation-form');
-  // form.style.display = 'none';
-  const newDiv = document.createElement('div');
-  form.appendChild(newDiv);
-  const name = document.getElementById('input-name').value;
-  console.log(name);
-  const lastName = document.getElementById('input-lastname').value;
-  console.log(lastName);
-  const email = document.getElementById('input-email').value;
-  console.log(email);
-  const house = document.getElementById('house').value;
-  console.log(house);
-  const family = document.getElementById('family-selected').value;
-  console.log(family);
-  const lessons = originalSubjectsId;
-  const avaliation = document.getElementById('rate-selected').value;
-  console.log(avaliation);
-  const observation = document.getElementById('textarea').value;
-  console.log(observation);
-
-  const infoNome = document.createElement('p');
-  infoNome.innerHTML = `Nome: ${name} ${lastName}`;
-  const infoEmail = document.createElement('p');
-  infoEmail.innerHTML = `Email: ${email}`;
-  const infoHouse = document.createElement('p');
-  infoHouse.innerHTML = `Casa: ${house}`;
-  const infoFamily = document.createElement('p');
-  infoFamily.innerHTML = `Família: ${family}`;
-  const infoLessons = document.createElement('p');
-  infoLessons.innerHTML = `Matérias: ${lessons.join(', ')}`;
-  const infoAvaliation = document.createElement('p');
-  infoAvaliation.innerHTML = `Avaliação: ${avaliation}`;
-  const infoObservation = document.createElement('p');
-  infoObservation.innerHTML = `Observações: ${observation}`;
-
-  newDiv.appendChild(infoNome);
-  newDiv.appendChild(infoEmail);
-  newDiv.appendChild(infoHouse);
-  newDiv.appendChild(infoFamily);
-  newDiv.appendChild(infoLessons);
-  newDiv.appendChild(infoAvaliation);
-  newDiv.appendChild(infoObservation);
+  const newDiv = document.querySelector('#show-result ul');
+  newDiv.appendChild(createLi(`Nome: ${getData().name} ${getData().lastName}`));
+  newDiv.appendChild(createLi(`Email: ${getData().email}`));
+  newDiv.appendChild(createLi(`Casa: ${getData().house}`));
+  newDiv.appendChild(createLi(`Família: ${getData().family}`));
+  newDiv.appendChild(createLi(`Matérias: ${getData().lessons.join(', ')}`));
+  newDiv.appendChild(createLi(`Avaliação: ${getData().avaliation}`));
+  newDiv.appendChild(createLi(`Observações: ${getData().observation}`));
 }
 familyList();
-
 btnSubmit.addEventListener('click', submitForm);

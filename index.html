@@ -31,7 +31,7 @@
             <input class="form-control" type="text" name="email" id="input-email" placeholder="Email">
             <div id="house-type">
               <label class="form-label" for="house"> Casa: </label>
-              <select class="form-select" name="casa" id="house">
+              <select class="form-select" name="house" id="house">
                 <option value="Gitnória" id="gitnoria-house" >Gitnória</option>
                 <option value="Reactpuff" id="reactpuff-house" >Reactpuff</option>
                 <option value="Corvinode" id="corvinode-house" >Corvinode</option>
@@ -45,42 +45,42 @@
           <section id="family-type">        
             <label for="" id="label-family">Qual sua família?</label> 
             <label for="frontend">
-              <input class="form-check-input" type="radio" name="family" id="frontend" value="Frontend" class="family">Família Frontend
+              <input type="radio" name="family" id="frontend" value="Frontend" class="family">Família Frontend
             </label>
             <label for="backend">
-              <input class="form-check-input" type="radio" name="family" id="backend" value="Backend" class="family">Família Backend
+              <input type="radio" name="family" id="backend" value="Backend" class="family">Família Backend
             </label>
             <label for="fullstack">
-              <input class="form-check-input" type="radio" name="family" id="fullstack" value="FullStack" class="family">Família FullStack
+              <input type="radio" name="family" id="fullstack" value="FullStack" class="family">Família FullStack
             </label>
           </section>
-          <section id="toLearn" class="line-content">
+          <section id="toLearn" class="learn-content">
             <div class="toLearn-opts">
               <label class="form-check-label" for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
               <div>
-                <input class="form-check-input" type="checkbox" value="HoFs" id="hofs" class="subject">
+                <input type="checkbox" value="HoFs" name="learn" id="hofs" class="subject">
                 <label class="form-check-label" for="hofs">HoFs</label>
               </div>
               <div>
-                <input class="form-check-input" type="checkbox" value="Jest" id="jest" class="subject">
+                <input type="checkbox" value="Jest" name="learn" id="jest" class="subject">
                 <label class="form-check-label" for="jest">Jest</label>
               </div>
               <div>
-                <input class="form-check-input" type="checkbox" value="Promises" id="promises" class="subject">
+                <input type="checkbox" value="Promises" name="learn" id="promises" class="subject">
                 <label class="form-check-label" for="promises">Promises</label>
               </div>
             </div>
             <div class="toLearn-opts">
               <div>
-                <input class="form-check-input" type="checkbox" value="React" id="react" class="subject">
+                <input type="checkbox" value="React" name="learn" id="react" class="subject">
                 <label class="form-check-label" for="react">React</label>
               </div>
               <div>
-                <input class="form-check-input" type="checkbox" value="SQL" id="sql" class="subject">
+                <input type="checkbox" value="SQL" name="learn" id="sql" class="subject">
                 <label class="form-check-label" for="sql">SQL</label>
               </div>
               <div>
-                <input class="form-check-input" type="checkbox" value="Python" id="python" class="subject">
+                <input type="checkbox" value="Python" name="learn" id="python" class="subject">
                 <label class="form-check-label" for="python">Python</label>
               </div>
             </div>
@@ -128,6 +128,11 @@
           <input class="form-check-input" type="checkbox" id="agreement" value="agreement">
           <button type="submit" class="btn btn-primary submit-button" id="submit-btn" disabled >Enviar</button>
         </section>
+        <div id="show-result">
+          <ul>
+          
+          </ul>
+        </div>
       </form>
     </main>
     <aside>

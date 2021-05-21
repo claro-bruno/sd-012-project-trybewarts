@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-family: 'Rye', cursive;
+  font-family: Rye, cursive;
 }
 
 body {
@@ -63,17 +63,17 @@ main {
   width: 700px;
 }
 
-#first-container  input{
+#first-container input {
   border-radius: 8px;
   padding: 10px;
   margin-left: 10px;
 }
 
-#first-container  label{
+#first-container label {
   margin-left: 10px;
 }
 
-#section-name, #section-email-houses {
+#section-name , #section-email-houses {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -83,9 +83,11 @@ main {
   display: flex;
   align-items: center;
 }
+
 #house {
   min-width: 282px;
 }
+
 #images-position {
   display: flex;
   justify-content: space-evenly;
@@ -106,14 +108,13 @@ main {
   min-width: 300px;
   min-height: 150px;
   justify-content: space-around;
- 
 }
 
 #family-type #label-family {
   margin-bottom: 10px;
 }
 
-#family-type input[type=radio] {
+#family-type input {
   margin-right: 9px;
 }
 
@@ -123,7 +124,6 @@ main {
   min-width: 300px;
   min-height: 150px;
   justify-content: space-around;
- 
 }
 
 #toLearn #label-content {
@@ -131,10 +131,11 @@ main {
 }
 
 .toLearn-opts {
- display: flex;
- flex-flow: wrap;
- justify-content: space-around;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
 }
+
 #learn-content {
   display: flex;
   flex-direction: column;
@@ -155,7 +156,7 @@ main {
 
 }
 
-input[type=radio] {
+.form-check-label {
   margin-left: 9px;
 }
 
@@ -168,7 +169,7 @@ footer {
   background-color: darkslategray;
   color: whitesmoke;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 65px;
 }
 
 footer p {
@@ -180,7 +181,26 @@ footer p {
   float: right;
 }
 
-@media screen and (max-width:1378px){
+#show-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+#show-result ul li:first-child {
+  margin-top: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+@media screen and ( max-width : 1378px ) {
+
   #trybewarts-forms-logo {
     display: none;
   }
