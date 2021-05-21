@@ -23,21 +23,25 @@
 	</header>
 	<main>
 		<form id="evaluation-form" action="" method="GET">
-			<input id="input-name" type="text" placeholder="Nome">
-			<input id="input-lastname" type="text" placeholder="Sobrenome">
-			<input id="input-email" type="email" placeholder="Email">
-            <select id="house" class="style-input" name="casa">
-                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                <option id="pytherina-house" value="Pytherina">Pytherina</option>
-              </select>
-			  
+			<div class="form-line">
+				<input id="input-name" class="style-input" type="text" name="nome" placeholder="Nome">
+				<input id="input-lastname" class="style-input" type="text" name="sobrenome" placeholder="Sobrenome">
+			  </div>
+			
+			  <div class="form-line">
+				<input id="input-email" class="style-input" type="text" name="email" placeholder="Email">
+				<select id="house" class="style-input" name="casa">
+				  <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+				  <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+				  <option id="corvinode-house" value="Corvinode">Corvinode</option>
+				  <option id="pytherina-house" value="Pytherina">Pytherina</option>
+				</select>
+			  </div>
 				<label id="label-family" for="">Qual sua família?</label>
 				  <label for="frontend"><input id="frontend" type="radio" name="family" value="Frontend">Frontend</label>
 				  <label for="backend"><input id="backend" type="radio" name="family" value="Backend">Backend</label>
 				  <label for="fullstack"><input id="fullstack" type="radio" name="family" value="FullStack">FullStack</label>
-				  
+
 				  <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
 					<label for="hofs"><input id="hofs" type="checkbox" name="subject" value="HoFs" class="subject">HoFs</label>
 					<label for="jest"><input type="checkbox" id="jest" name="subject" value="Jest" class="subject">Jest</label>

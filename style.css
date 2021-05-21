@@ -17,6 +17,10 @@
 .trybewarts-login {
   display: flex;
 }
+.form-line {
+  display: flex;
+  margin-bottom: 10px;
+}
 
 
 /* Estilização do forms principal */
