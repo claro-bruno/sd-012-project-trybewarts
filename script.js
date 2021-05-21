@@ -1,15 +1,18 @@
-const inputLogin = document.querySelector('.input-login');
-const inputSenha = document.querySelector('.input-senha');
-const btnLogin = document.querySelector('.btn-login');
+function validate() {
+  const inputLogin = document.querySelector('.input-login');
+  const inputSenha = document.querySelector('.input-senha');
+  const btnLogin = document.querySelector('.btn-login');
 
-btnLogin.addEventListener('click', () => {
-  if (inputLogin.value !== 'tryber@teste.com' && inputSenha.value !== '123456') {
-    alert('Login ou senha inválidos.');
-  } else {
-    alert('Olá, Tryber!');
+  btnLogin.addEventListener('click', () => {
+    if (inputLogin.value !== 'tryber@teste.com' && inputSenha.value !== '123456') {
+      alert('Login ou senha inválidos.');
+    } else {
+      alert('Olá, Tryber!');
+    }
   }
+};
   const submitButton = document.querySelector('#submit');
-submitButton.addEventListener('click', validate);
+  submitButton.addEventListener('click', validate);
 
   const agreement = document.querySelector('#agreement');
   const enviar = document.querySelector('#submit-btn');
@@ -20,4 +23,4 @@ submitButton.addEventListener('click', validate);
       enviar.disabled = true;
     }
   });
-});
+
