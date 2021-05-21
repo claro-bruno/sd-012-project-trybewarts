@@ -52,9 +52,7 @@ textArea.addEventListener('keyup', counterTextArea);
 
 function valueList(nodeList) {
   let list = '';
-  nodeList.forEach((node) => {
-    list += `${node.value} `;
-  });
+  nodeList.forEach((node) => { list += `${node.value}, `; });
   return list;
 }
 
@@ -66,13 +64,15 @@ const saveData = () => {
   const familyRadio = document.querySelector('input[name="family"]:checked');
   const subjectChecks = document.querySelectorAll('.subject:checked');
   const subjects = valueList(subjectChecks);
-
-  console.log(subjects);
+  const rateInput = document.querySelector('input[name="rate"]:checked');
   return {
     name: `Nome: ${nameInput.value} ${lastNameInput.value}`,
     email: `Email: ${inputEmail.value}`,
     house: `Casa: ${houseInput.value}`,
     family: `Família: ${familyRadio.value}`,
+    subjects: `Matérias: ${subjects}`,
+    rating: `Avaliação: ${rateInput.value}`,
+    comment: `Observações: ${textArea.value}`,
   };
 };
 
