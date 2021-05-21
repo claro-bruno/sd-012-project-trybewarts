@@ -1,19 +1,35 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .trybewarts-header-logo {
   align-items: flex-start;
+  height: 75px;
 }
 
 .trybewarts-login {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#login-input , #senha-input , #loginButton {
+  height: 40px;
+  width: 33%;
+}
+
+#loginButton {
+  background-color: orangered;
+  color: white;
 }
 
 .main-content {
