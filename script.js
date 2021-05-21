@@ -1,6 +1,8 @@
-const getEmail = document.querySelector("#email");
-const getPassword = document.querySelector("#password");
+const getEmail = document.querySelector('#email');
+const getPassword = document.querySelector('#password');
 const getButtunLogin = document.querySelector("#btn-login");
+const getCheckbox = document.querySelector('#agreement');
+const getButtonSubmit = document.querySelector('#submit-btn');
 
 const getHouse = document.querySelector("#house");
 let tiposCasa = [
@@ -31,16 +33,14 @@ let itemLearnTechnology = [
 
 let getToAssess = document.querySelector(".to-assess");
 
-function verificarLogin(email, password) {
+function verificarLogin() {
   let emailCerto = "tryber@teste.com";
   let passwordCerto = "123456";
-  console.log(email, password);
-  if (email === emailCerto && password === passwordCerto) {
-    // alert("Olá, Tryber!");
+  if (getEmail.value === emailCerto && getPassword.value === passwordCerto) {
+    alert("Olá, Tryber!");
   } else {
-    // alert("Login ou senha inválidos.");
+    alert("Login ou senha inválidos.");
   }
-  console.log(getEmail.value, getPassword.value);
 }
 
 // Lista de seleção casa
@@ -127,9 +127,14 @@ function createToAssess() {
 }
 
 getButtunLogin.addEventListener(
-  "click",
-  verificarLogin(getEmail.value, getPassword.value)
+  'click',
+  verificarLogin
 );
+
+getCheckbox.addEventListener('click', () => {
+  getButtonSubmit.disabled = !getCheckbox.checked;
+});
+
 
 createToAssess();
 createListLearnTechnology();
