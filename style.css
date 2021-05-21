@@ -53,7 +53,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 650px;
   background: rgb(235, 239, 240);
 }
 
@@ -67,8 +66,8 @@ main {
 
 h2 {
   text-align: center;
-  font-size: 30px;
-  margin: 20px;
+  font-size: 25px;
+  margin: 10px;
 }
 
 .trybewarts-evaluator {
@@ -76,8 +75,8 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  margin: 20px 10px;
+  width: 80%;
+  margin: 10px;
 }
 
 .trybewarts-evaluator  input, select {
@@ -85,37 +84,36 @@ h2 {
   padding: 15px;
   background-color: white;
   border: none;
-  width: 300px;
+  width: 250px;
   margin: 5px;
 }
 
 .trybewarts-evaluator select {
-  width: 250px;
+  width: 200px;
   font-size: 14px;
 }
 
 .trybewarts-evaluator label {
-  font-size: 20px;
-  margin-left: 8px;
+  font-size: 15px;
+  margin-left: 15px;
 }
   
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-.evaluator-form2 {
+.flex-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
-  margin: 20px 10px;
+  width: 80%;
+  margin: 10px;
 }
 
 .input-family {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .input-family div {
@@ -124,7 +122,31 @@ h2 {
 
 .input-content {
   width: 60%;
-  border: 1px solid green;
+  font-size: 17px;
+  
+}
+
+.input-checkbox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.input-checkbox div {
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
+.rate {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.rate div {
+  margin-left: 9px;
 }
 
 footer {
@@ -137,8 +159,4 @@ footer {
   color: white;
 }
 
-#rate {
-  font-size: 18px;
-  display: flex;
-  width:100%;
-}
+
