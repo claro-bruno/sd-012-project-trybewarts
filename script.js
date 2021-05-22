@@ -25,8 +25,10 @@ captureBtnLogin.addEventListener('click', acessLogin);
 function controlBtn() {
   if (captureCheckbox.checked) {
     captureBtnSubmit.disabled = false;
+    captureBtnSubmit.style.backgroundColor = 'rgb(102, 51, 153)';
   } else {
-    (captureBtnSubmit.disabled = true);
+    captureBtnSubmit.disabled = true;
+    captureBtnSubmit.style.backgroundColor = 'rgb(176, 126, 226)';
   }
 }
 

@@ -96,7 +96,6 @@ h2 {
 }
 
 #house {
-  width: 20%;
   margin-left: 5px;
 }
 
@@ -140,7 +139,7 @@ h2 {
 
 #submit-btn {
   border-radius: 10px;
-  background-color: rebeccapurple;
+  background-color: rgb(176, 126, 226);
   color: white;
 }
 
@@ -193,7 +192,6 @@ footer {
 
 .homeContainer {
   display: flex;
-  flex-grow: 1;
   justify-content: flex-start;
   align-items: center;
 }
