@@ -18,6 +18,16 @@ main {
   flex-wrap: wrap;
 }
 
+main #family {
+  display: flex;
+  flex-direction: column;
+}
+
+main #input-field-2 {
+  display:flex;
+  flex-direction: column;
+}
+
 #evaluation-form {
   display: flex;
   flex-direction: column;
