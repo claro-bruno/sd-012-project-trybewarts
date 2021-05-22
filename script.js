@@ -18,7 +18,15 @@ function checked() {
   }
 }
 
+function counted() {
+  const textArea = document.getElementById('textarea');
+  const counter = document.getElementById('counter');
+  counter.innerHTML = 500 - textArea.value.length;
+}
+
 window.onload = function main() {
+  const textArea = document.getElementById('textarea');
+  textArea.addEventListener('input', counted);
   const logar = document.querySelector('.acess');
   logar.addEventListener('click', login);
   const agreed = document.getElementById('agreement');
