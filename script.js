@@ -89,7 +89,6 @@ const showData = () => {
   avaliation.innerHTML = `Avaliação: ${checkedRate()}`;
   textArea.innerHTML = `Observações: ${com.value}`;
 };
-
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   console.log('Formulário Enviado');
