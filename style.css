@@ -153,6 +153,11 @@ Gerador de imagem com as letras do HarryPotter */
 .section-buttons {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.section-buttons div {
+  width: 40%;
 }
 
 .content {
@@ -189,4 +194,18 @@ Gerador de imagem com as letras do HarryPotter */
   text-align: center;
   background-color: rgba(128, 128, 128, 0.7);
   color: black;
+}
+
+.radiosform {
+  display: flex;
+  flex-direction: column;
+}
+
+.radiosAndchecks label {
+  margin-bottom: 15px;
+}
+
+.checks {
+  display: flex;
+  flex-direction: column;
 }
