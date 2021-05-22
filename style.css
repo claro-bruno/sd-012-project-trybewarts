@@ -37,10 +37,10 @@
 }
 
 #trybewarts-header-title {
-    color: white;
-    display: flex;
-    justify-content:center;
-    font-family: MedievalSharp, cursive;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-family: MedievalSharp, cursive;
 }
 
 main {
@@ -87,9 +87,12 @@ h2 {
   margin-left: 5px;
 }
 
+.textStyle {
+  font-weight: bolder;
+}
+
 .infoText {
   display: flex;
-  font-weight: bolder;
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 20px;
@@ -140,12 +143,36 @@ h2 {
   color: white;
 }
 
-footer{
+footer {
   width: 100%;
   height: 40px;
   margin: auto;
   bottom: 0;
   background-color: grey;
   color: white;
-  }
+}
 
+.rateContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.commentContainer{
+  display: flex;
+  flex-direction: column;
+}
+
+#textarea{
+  resize: none;
+}
+
+#textAreaLabel{
+ padding-top: 20px;
+}
+
+#counter{
+  display: flex;
+  justify-content: flex-end;
+}
