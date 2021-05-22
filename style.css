@@ -6,6 +6,20 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+button {
+  color: black;
+  background-color: rgb(235, 190, 38);
+  padding: 6px;
+  border: none;
+  border-radius: 6px;
+}
+
+#trybewarts-header-title {
+  font-family: UnifrakturCook, Arial, Helvetica, sans-serif;
+  font-size: 2.6em;
 }
 
 .header {
@@ -20,19 +34,35 @@ body {
   max-height: 59px;
 }
 
+h3 , .container-heading , .textarea {
+  font-family: Inknut Antiqua, Arial, Helvetica, sans-serif;
+}
+
 .trybewarts-login {
   display: flex;
   padding-right: 30px;
 }
 
+.trybewarts-login input {
+  margin-right: 6px;
+  border: none;
+  border-radius: 3px;
+}
+
+#name-container input , #house-container input , select {
+  height: 115%;
+  border: solid 1px grey;
+  background-color: whitesmoke;
+  border-radius: 3px;
+}
+
 main {
   display: flex;
   justify-content: center;
-  padding: 9px;
 }
 
 #evaluation-form {
-  margin-top: 30px;
+  margin-top: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,14 +76,13 @@ main {
 }
 
 label {
-  padding: 6px;
+  padding: 3px;
 }
 
 #family-container , #subject-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15px 0 0 15px;
 }
 
 .input-list {
@@ -62,7 +91,15 @@ label {
   align-items: flex-end;
 }
 
-.container-heading {
+#label-rate {
+  margin-right: 9px;
+}
+
+#avaliacao input {
+  margin-right: 9px;
+}
+
+.container-heading , .textarea {
   font-weight: 600;
 }
 
@@ -72,4 +109,12 @@ label {
 
 #house-container {
   display: flex;
+}
+
+.agreement {
+  margin: 6px;
+}
+
+footer {
+  margin-top: 9px;
 }
