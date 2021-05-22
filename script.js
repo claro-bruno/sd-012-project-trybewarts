@@ -21,4 +21,5 @@ function sendClick() {
     send.disabled = false;
   }
 }
-check.addEventListener('click',sendClick);
+
+check.addEventListener('click', sendClick);
