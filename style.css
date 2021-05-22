@@ -31,6 +31,28 @@ body {
   width: 50px;
 }
 
+/* https://medium.com/@sixbillion/animacao-de-background-com-particles-js-9aaf8de58f99 -
+modelo utilizado para efeito de transição */
+
+#trybewarts-header-title {
+  animation: colors 15s infinite;
+}
+
+@keyframes colors {
+
+  0% {
+    color: whitesmoke;
+  }
+
+  50% {
+    color: blue;
+  }
+
+  100% {
+    color: yellow;
+  }
+}
+
 .trybewarts-login {
   display: flex;
   flex-direction: row;
@@ -49,6 +71,12 @@ body {
   background-color: indigo;
   color: whitesmoke;
   border-color: indigo;
+}
+
+#inputButton:hover {
+  background-color: navy;
+  color: whitesmoke;
+  border-color: navy;
 }
 
 .main-form {
@@ -126,10 +154,12 @@ body {
 .nome {
   text-align: center;
   background-color: rgba(75, 0, 130, 0.3);
+  margin: 20px auto;
 }
 
-.footer {
+.footer p {
+  width: 100%;
   text-align: center;
-  background-color: rgb(79, 79, 79);
-  color: whitesmoke;
+  background-color: rgba(128, 128, 128, 0.7);
+  color: black;
 }
