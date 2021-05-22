@@ -10,5 +10,6 @@ function verificaLogin() {
     alert('Olá, Tryber!');
   }
 }
+
 const botaoLogar = document.querySelector('#botaoLogar');
 botaoLogar.addEventListener('click', verificaLogin);
