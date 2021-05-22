@@ -3,10 +3,24 @@
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
+  padding: 0 50px;
 }
 
 .header img {
   width: 150px;
+}
+
+@font-face {
+  font-family: Child;
+  src: url(ChildWitch-z8ABL.ttf);
+}
+
+#trybewarts-header-title {
+  font-size: 75px;
+  color: black;
+  font-family: Child;
+  letter-spacing: 6px;
+  margin: 0;
 }
 
 .trybewarts-login {
@@ -17,6 +31,7 @@
 .main {
   display: flex;
   justify-content: center;
+  font-size: 17px;
 }
 
 form {
@@ -43,6 +58,26 @@ form {
   flex-direction: row;
 }
 
+.nome-sobrenome {
+  display: flex;
+}
+
+.email-casa {
+  display: flex;
+  align-content: center;
+}
+
+.casa {
+  display: flex;
+  align-items: center;
+}
+
+.family-content-bg {
+  background-color: rgb(255, 255, 255);
+  border-radius: 6px;
+  margin-right: 1%;
+}
+
 .container-radios {
   display: flex;
   flex-direction: column;
@@ -56,6 +91,8 @@ form {
 .container-checkbox {
   display: flex;
   flex-direction: column;
+  background-color: white;
+  border-radius: 6px;
 }
 
 .item-check-container {
@@ -63,8 +100,46 @@ form {
   flex-direction: row;
 }
 
+.subject {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  align-content: center;
+}
+
 .radio-validation {
   display: flex;
   flex-direction: row;
 }
 
+.comentario {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+main form {
+  background-color: rgb(231, 233, 211);
+  border-radius: 12px;
+  margin: 30px;
+  padding: 0 25px;
+  font-family: Merriweather, serif;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  background-color:rgb(50, 167, 145);
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  height: 10%;
+  font-size: 22px;
+}
