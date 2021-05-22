@@ -19,10 +19,10 @@ function checked() {
 }
 
 function submited() {
-  var personName = document.getElementById('input-name').value;
-  var lastName = document.getElementById('input-lastname').value;
-  var mail = document.getElementById('input-email').value;
-  var casa = document.getElementById('house').value;
+  const personName = document.getElementById('input-name').value;
+  const lastName = document.getElementById('input-lastname').value;
+  const mail = document.getElementById('input-email').value;
+  const casa = document.getElementById('house').value;
   console.log(personName);
   console.log(lastName);
   console.log(mail);
