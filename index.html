@@ -103,8 +103,15 @@
 
             
             <label for="" class="textarea">Deixe seu comentário: </label>
-            <textarea name="" id="textarea" cols="30" maxlength="500" rows="10"></textarea>
+            <textarea name="" id="textarea" style="resize: none" cols="30" maxlength="500" rows="10"></textarea>
             
+            <div class="container">
+                <input type="checkbox" class="subject" id="agreement" value="Python" required onclick="sendForm()" name="lessons">
+                <label id="label-infos" for="agreement" >Você concorda com o uso das informações acima?</label>
+            </div> 
+            <div>   
+            <button type="submit" id="submit-btn" disabled = true>Enviar</button>
+            </div>
 
         </form>
         <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">

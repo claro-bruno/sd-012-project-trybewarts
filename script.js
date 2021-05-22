@@ -11,3 +11,23 @@ botao.addEventListener('click', () => {
     window.alert('Olá, Tryber!');
   }
 });
+
+// const subButton = document.querySelector("#submit-btn");
+// const agreement = document.querySelector("#agreement");
+
+function sendForm() {
+  document.getElementById("submit-btn").disabled = false;
+}
+
+// if(agreement.checked == true){
+//   subButton.disabled = false;
+// }
+
+// // function sendForm(){
+// //   if(agreement.checked){
+// //     sendForm.disabled = false;
+// //   }else{
+// //     sendForm.disabled = true;
+// //   }    
+// // }
+// // agreement.addEventListener("click", sendForm)
