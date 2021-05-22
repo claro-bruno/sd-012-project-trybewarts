@@ -47,11 +47,11 @@ h2 {
   flex-direction: column;
 }
 
-.nomeDoTryber {
+#nomeDoTryber {
   display: flex;
 }
 
-.casaEmail {
+#casaEmail {
   display: flex;
 }
 
@@ -67,7 +67,7 @@ h2 {
 
 textarea {
   height: 200px;
-  width: 100%;
+  width: 675px;
 }
 
 #submit-btn {
@@ -94,4 +94,8 @@ textarea {
 .checkbox {
   display: flex;
   justify-content: space-between;
+}
+
+#coment {
+  width: 100%;
 }
