@@ -28,6 +28,24 @@ function housesOfTrybeWarts() {
 
 housesOfTrybeWarts();
 
+// const getLabelRateContainer = document.getElementById('label-rate-container');
+
+// function addNewRateInput() {
+//   const rateOfSatisfaction = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//   for (let index = 0; index < rateOfSatisfaction.length; index += 1) {
+//     const inputTag = document.createElement('input');
+//     const labelTag = document.createElement('label');
+//     inputTag.type = 'radio';
+//     inputTag.name = 'rate';
+//     inputTag.value = rateOfSatisfaction[index];
+//     labelTag.innerText = rateOfSatisfaction[index];
+//     getLabelRateContainer.appendChild(inputTag[index]);
+//     getLabelRateContainer.appendChild(labelTag[index]);
+//   }
+// }
+
+// addNewRateInput();
+
 const agreementId = document.getElementById('agreement');
 const getSubmitId = document.getElementById('submit-btn');
 
@@ -40,3 +58,13 @@ function checkedAgreementId() {
 }
 
 agreementId.addEventListener('click', checkedAgreementId);
+
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+
+function countCharacters() {
+  const totalOfCharacters = textArea.value.length;
+  counter.innerText = 500 - totalOfCharacters;
+}
+
+textArea.addEventListener('keyup', countCharacters);
