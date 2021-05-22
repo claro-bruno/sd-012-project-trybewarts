@@ -118,3 +118,9 @@ label {
 footer {
   margin-top: 9px;
 }
+
+.summary {
+  font-family: Inknut Antiqua, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  justify-content: center;
+}

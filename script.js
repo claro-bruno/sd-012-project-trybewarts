@@ -82,6 +82,7 @@ function summary(event) {
   const data = saveData();
   const form = document.getElementById('evaluation-form');
   form.innerHTML = '';
+  form.classList.add('summary');
   Object.values(data).forEach((value) => { // source https://www.30secondsofcode.org/blog/s/eslint-refactor-for-in
     const span = document.createElement('span');
     span.innerHTML = value;
