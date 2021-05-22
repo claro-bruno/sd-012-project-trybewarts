@@ -6,18 +6,45 @@ function titleOnHeader() {
   title.id = 'trybewarts-header-title';
 }
 titleOnHeader();
-// HeaderVAZIO foi criado só para adiantar, pode ser substituido futuramente.
-function headerVazio() {
+
+function altenticationInput() {
   const paiHeader = document.querySelector('header');
-  const teste = document.createElement('h1');
-  teste.innerHTML = '';
-  paiHeader.appendChild(teste);
+  const form = document.createElement('form');
+  form.action = '';
+  form.className = 'trybewarts-login';
+  form.style.display = 'flex';
+  paiHeader.appendChild(form);
+  const paiForm = document.querySelector('.trybewarts-login');
+  const inputNameL = document.createElement('label');
+  inputNameL.for = 'full-name';
+  inputNameL.innerHTML = 'Name';
+  paiForm.appendChild(inputNameL);
+  const inputNameI = document.createElement('input');
+  inputNameI.type = 'text';
+  inputNameI.name = 'name';
+  inputNameI.id = 'full-name';
+  inputNameI.placeholder = 'Login';
+  paiForm.appendChild(inputNameI);
+  const inputSenhaL = document.createElement('label');
+  inputSenhaL.for = 'pwd';
+  inputSenhaL.innerHTML = 'Senha';
+  paiForm.appendChild(inputSenhaL);
+  const inputSenhaI = document.createElement('input');
+  inputSenhaI.type = 'password';
+  inputSenhaI.name = 'pwd';
+  inputSenhaI.id = 'pwd';
+  inputSenhaI.placeholder = 'Senha';
+  paiForm.appendChild(inputSenhaI);
+  const loginButton = document.createElement('button');
+  loginButton.type = 'submit';
+  loginButton.innerHTML = 'SUBMITER';
+  paiForm.appendChild(loginButton);
+  // Lint dando erro de quantidade de linhas. Precisamos dividir em 2 funções ou passar os estilos para css e html.
 }
-headerVazio();
+altenticationInput();
 
 function formularyOnBody() {
   const paiBody = document.querySelector('body');
-  const main = document.createElement('main');
   const form = document.createElement('form');
   form.id = 'evaluation-form';
   form.innerHTML = 'FORMULARIO';
@@ -43,7 +70,7 @@ function inserImageLogo() {
 inserImageLogo();
 
 function insertInputs() {
-  const paiForm = document.querySelector('form');
+  const paiForm = document.querySelectorAll('form')[1];
   const inputName = document.createElement('input');
   const inputLastName = document.createElement('input');
   const inputEmail = document.createElement('input');
@@ -60,5 +87,4 @@ function insertInputs() {
   inputEmail.placeholder = 'Email';
   paiForm.appendChild(inputEmail);
 }
-
 insertInputs();
