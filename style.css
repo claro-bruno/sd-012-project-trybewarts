@@ -66,18 +66,32 @@ form select {
 
 #container-boxes {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+#label-family {
+  text-align: center;
+  margin-bottom: 15px;
 }
 
 #container-radio {
   display: flex;
   flex-direction: column;
   width: 200px;
+  justify-content: space-evenly;
 }
 
 #container-checkBox {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.container-skills{
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
 }
 
 #container-rate {
