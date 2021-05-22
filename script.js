@@ -6,6 +6,7 @@ const captureCheckbox = document.getElementById('agreement');
 const whatWasTyped = document.getElementById('textarea');
 const counter = document.getElementById('counter');
 captureBtnSubmit.disabled = true;
+
 //  Para acessar Login e Senha
 function acessLogin(event) {
   console.log(captureEmail, capturePassword);
@@ -41,5 +42,4 @@ whatWasTyped.addEventListener('input', (e) => {
   const currentLength = target.value.length;
 
   counter.innerHTML = maxLength - currentLength;
-
 });
