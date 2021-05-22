@@ -1,3 +1,16 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  background-image: url("images/trem.jpg");
+  background-size: cover;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
@@ -10,6 +23,7 @@ h1 {
   color: white;
   font-family: serif;
   font-weight: 600;
+  margin-bottom: 0px;
 }
 
 .trybewarts-header-logo {
@@ -63,6 +77,10 @@ footer {
 /* Linha Divisória */
 main {
   display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  width: 80%;
+  align-self: center;
 }
 
 form {
@@ -73,6 +91,9 @@ form {
   width: 675px;
   flex-flow: column nowrap;
   flex-basis: auto;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
 }
 
 #trybewarts-forms-logo {
@@ -127,6 +148,18 @@ main input:nth-of-type( 2 ) {
   flex-direction: column;
 }
 
+.radio-family {
+  height: 30px;
+}
+
+.avaliacao {
+  text-align: center;
+}
+
+textarea {
+  resize: none;
+}
+
 #label-content {
   width: 100%;
 }
@@ -134,13 +167,19 @@ main input:nth-of-type( 2 ) {
 .opcoes-vontade-aprender {
   display: flex;
   flex-flow: column wrap;
-  height: 100px;
+  height: 80px;
 }
 
 .pergunta-verificacao {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.checkbox-button {
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 #label-infos {
