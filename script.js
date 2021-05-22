@@ -13,7 +13,6 @@ function validateLogin() {
 inputButton.addEventListener('click', validateLogin);
 
 // requisito 18 add evento ao checkbox
-const check = document.getElementById('agreement');
 function buttonSubmit(event) {
   const statusButton = event.target.checked;
   const status = document.getElementById('submit-btn');
@@ -24,6 +23,7 @@ function buttonSubmit(event) {
   }
 }
 
+const check = document.getElementById('agreement');
 check.addEventListener('change', buttonSubmit);
 
 // requisito 20
@@ -35,7 +35,7 @@ funCounter();
 textArea.addEventListener('input', funCounter);
 
 // requisito 21
-// código passado pelo Gabriel Bueno, source: https://www.learnwithjason.dev/blog/get-form-values-as-json
+// código passado pelo Gabriel Bueno, que pega todos os objetos gerados nos inputs do form. source: https://www.learnwithjason.dev/blog/get-form-values-as-json
 const renderInfo = (obj) => {
   console.log(obj);
   form.innerHTML = '';
@@ -52,3 +52,4 @@ const form = document.querySelector('#evaluation-form');
 form.addEventListener('submit', handleSubmit);
 
 // agora tem que para cada item o template literals p adicionar esses valores q q ele pegou. Pode ser em uma nova div, ou criar vários p's dentro dessa div.
+// O butão de enviar n está funcionando, então n tem nem como testar se o começo dessa função ai em cima funciona. 
