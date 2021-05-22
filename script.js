@@ -112,3 +112,5 @@ function counterFunction() {
   document.getElementById('counter').innerHTML = contador;
 }
 getTextArea.addEventListener('keyup', counterFunction);
+
+//bootstrap será implantado posteriormente
