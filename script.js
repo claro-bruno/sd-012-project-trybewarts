@@ -18,15 +18,14 @@ function checked() {
   }
 }
 
-function counted() {
-  const textArea = document.getElementById('textarea');
-  const counter = document.getElementById('counter');
-  counter.innerHTML = 500 - textArea.value.length;
-}
-
 window.onload = function main() {
+  const counter = document.getElementById('counter');
   const textArea = document.getElementById('textarea');
-  textArea.addEventListener('input', counted);
+  const maxCaracter = 500;
+  counter.innerHTML = maxCaracter;
+  textArea.addEventListener('input', () => {
+    counter.innerHTML = maxCaracter - textArea.value.length;
+  });
   const logar = document.querySelector('.acess');
   logar.addEventListener('click', login);
   const agreed = document.getElementById('agreement');
