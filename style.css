@@ -5,7 +5,7 @@
 body {
   display: flex;
   flex-flow: column;
-  background-image: url("images/trem.jpg");
+  background-image: url('images/trem.jpg');
   background-size: cover;
 }
 
@@ -78,7 +78,7 @@ main {
   display: flex;
   justify-content: space-around;
   padding-top: 50px;
-  width:88%;
+  width: 88%;
   align-self: center;
 }
 
