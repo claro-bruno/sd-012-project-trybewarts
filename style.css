@@ -23,19 +23,19 @@
   height: 500px;
 }
 
+.radioNumbers input {
+  display: flex;
+  flex-direction: row;
+}
+
 #label input {
   display: flex;
-  flex-direction: column
+  flex-direction: column;
 }
 
 .radioNumbers {
   display: flex;
-  flex-direction: row
-}
-
-.radioNumbers input {
-  display: flex;
-  flex-direction: row
+  flex-direction: row;
 }
 
 .textarea {
