@@ -24,3 +24,11 @@ function buttonSubmit(event) {
 
 const check = document.getElementById('agreement');
 check.addEventListener('change', buttonSubmit);
+
+// requisito 20
+const contador = document.getElementById('counter');
+const textArea = document.getElementById('textarea');
+
+const funCounter = () => { contador.innerText = 500 - textArea.value.length; };
+funCounter();
+textArea.addEventListener('input', funCounter);
