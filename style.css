@@ -18,6 +18,7 @@ body {
   font-weight: 600;
   letter-spacing: 1px;
   color: black;
+  margin-left: 20px;
 }
 
 .header {
@@ -164,6 +165,7 @@ Gerador de imagem com as letras do HarryPotter */
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-left: 300px;
 }
 
 .radios {
