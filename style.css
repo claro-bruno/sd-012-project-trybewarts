@@ -17,6 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  box-shadow: 0px 0px 12px rgb(0, 0, 0, 50%);
 }
 
 h1 {
@@ -83,6 +84,12 @@ main {
   align-self: center;
 }
 
+.logo-trybewarts {
+  display: flex;
+  flex-flow: column;
+  align-self: center;
+}
+
 form {
   display: flex;
 }
@@ -110,7 +117,7 @@ main select {
 
 .nome-completo {
   display: flex;
-  flex-direction: row;
+  flex-flow: row;
   justify-content: space-between;
   box-sizing: border-box;
 }
@@ -192,4 +199,89 @@ textarea {
 
 .separacao2 {
   text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100vw;
+    background-image: none;
+  }
+
+  header #trybewarts-header-title {
+    display: none;
+  }
+
+  #trybewarts-header-logo {
+    margin-right: 30px;
+  }
+
+  .logo-trybewarts {
+    order: -1;
+    min-height: 280px;
+    margin-top: 30px;
+  }
+
+  .logo-trybewarts img {
+    width: 80%;
+    align-self: center;
+  }
+
+  #trybewarts-forms-logo {
+    height: auto;
+  }
+
+  main {
+    width: 100%;
+    flex-flow: column;
+    padding-top: 0px;
+  }
+
+  #evaluation-form {
+    width: 100vw;
+    padding: 20px;
+  }
+
+  .nome-completo {
+    flex-flow: row wrap;
+  }
+
+  .largura-maxima {
+    width: 100%;
+  }
+
+  .email-casa {
+    flex-flow: row wrap;
+  }
+
+  .perguntas {
+    flex-flow: column wrap;
+  }
+
+  .pergunta-familia {
+    margin-bottom: 10px;
+  }
+
+  .pergunta-verificacao {
+    flex-flow: column;
+  }
+
+  .separacao1 {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+  }
+
+  .separacao2 {
+    order: -1;
+  }
+
+  .checkbox-holder {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+
+  #label-infos {
+    display: flex;
+  }
 }

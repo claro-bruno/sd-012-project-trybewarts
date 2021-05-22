@@ -21,12 +21,12 @@
   <main class="main">
     <form id="evaluation-form" action="" class="form-data">
       <div class="nome-completo col-12">
-        <input id="input-name" class="col-5" placeholder="Nome" autofocus>
-        <input id="input-lastname" class="col-6" placeholder="Sobrenome">
+        <input id="input-name" class="col-lg-5 col-md-12 col-sm-12 largura-maxima" placeholder="Nome" autofocus>
+        <input id="input-lastname" class="col-lg-6 col-md-12 col-sm-12 largura-maxima" placeholder="Sobrenome">
       </div>
       <div class="email-casa col-12">
-        <input id="input-email" placeholder="Email" class="col-5">
-        <select id="house" name="house" class="select-casa col-6">
+        <input id="input-email" placeholder="Email" class="col-lg-5 col-md-12 col-sm-12 largura-maxima">
+        <select id="house" name="house" class="col-lg-6 col-md-12 col-sm-12 largura-maxima">
           <option id="gitnoria-house" value="gitnoria">Gitnória</option>
           <option id="reactpuff-house" value="reactpuff">Reactpuff</option>
           <option id="corvinode-house" value="corvinode">Corvinode</option>
@@ -34,7 +34,7 @@
         </select>
       </div>
       <div class="perguntas">
-        <div class="pergunta-familia col-6">
+        <div class="pergunta-familia col-lg-6 col-md-12 col-sm-12">
           <label for="" id="label-family" class="col-12">Qual sua família?</label>
           <label for="radio-frontend" class="radio-family">
             <input id="radio-frontend" type="radio" name="family" id="" value="Frontend" checked> Frontend
@@ -46,7 +46,7 @@
             <input id="radio-fullstack" type="radio" name="family" id="" value="FullStack"> FullStack
           </label>
         </div>
-        <div class="pergunta-aprender col-6">
+        <div class="pergunta-aprender col-lg-6 col-md-12 col-sm-12">
           <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
           <div class="opcoes-vontade-aprender">
             <label for="checkbox-hofs">
@@ -72,7 +72,7 @@
         </div>
         <hr>
         <div class="avaliacao col-12">
-          <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+          <label id="label-rate" class="largura-maxima" for="">Como você avalia a Trybewarts?</label>
           <label for="radio-button-valor-1">
             1 <input type="radio" name="rate" id="radio-button-valor1" value="1">
           </label>
@@ -113,15 +113,19 @@
       <div class="pergunta-verificacao">
         <div class="separacao1">
           <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-          <input class="checkbox-button" type="checkbox" name="agreement" id="agreement">
+          <div class="checkbox-holder">
+            <input class="checkbox-button" type="checkbox" name="agreement" id="agreement">
+          </div>
         </div>
-        <div class="separacao2">
+        <div class="separacao2 largura-maxima">
           <div id="counter">500</div>
         </div>
       </div>
       <button type="submit" id="submit-btn" class="submit-btn btn" disabled="true">Enviar</button>
     </form>
-    <img  id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da escola de códigos automágicos Trybewarts">
+    <div class="logo-trybewarts">
+      <img  id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo da escola de códigos automágicos Trybewarts">
+    </div>
   </main>
   <footer>Direitos reservados à Trybewarts©</footer>
   <script src="script.js"></script>
