@@ -15,7 +15,7 @@ button.addEventListener('click', login);
 
 const checkbox = document.getElementById('agreement');
 
-function hability() {
+function ability() {
   if (checkbox.checked === true) {
     document.getElementById('submit-btn').disabled = false;
   } else {
@@ -23,22 +23,33 @@ function hability() {
   }
 }
 
-checkbox.addEventListener('click', hability);
+checkbox.addEventListener('click', ability);
 
 const form = document.getElementsByClassName('form-data');
 const btnForm = document.querySelector('#submit-btn');
 const nome = document.getElementsByClassName('nome-completo')[0].children;
+const email = document.getElementById('input-email');
 const main = document.getElementsByClassName('main');
 
 function captureElements() {
-  const nomeCompleto = document.createElement('li');
+  const nomeCompleto = document.createElement('div');
   nomeCompleto.innerHTML = 'Nome: ';
+  nomeCompleto.classList.add('consolidado');
   for (let index = 0; index < nome.length; index += 1) {
-    // nomeCompleto.innerHTML += nome[index].value + ' ';
     nomeCompleto.innerHTML += `${nome[index].value} `;
   }
-  main[0].appendChild(nomeCompleto);
+
+  const inputEmail = document.createElement('div');
+  inputEmail.innerHTML = `E-mail: ${email.value}`;
+  inputEmail.classList.add('consolidado');
+
+  const divConsolida = document.createElement('div');
+  divConsolida.classList.add('consolidaContainer');
+  divConsolida.appendChild(nomeCompleto);
+  divConsolida.appendChild(inputEmail);
+  main[0].appendChild(divConsolida);
 }
+
 
 function formChange() {
   for (let indexForm = 0; indexForm < form.length; indexForm += 1) {
