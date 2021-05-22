@@ -113,4 +113,4 @@ function counterFunction() {
 }
 getTextArea.addEventListener('keyup', counterFunction);
 
-//bootstrap será implantado posteriormente
+//  bootstrap será implantado posteriormente
