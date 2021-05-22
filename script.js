@@ -18,6 +18,17 @@ function checked() {
   }
 }
 
+function submited() {
+  var personName = document.getElementById('input-name').value;
+  var lastName = document.getElementById('input-lastname').value;
+  var mail = document.getElementById('input-email').value;
+  var casa = document.getElementById('house').value;
+  console.log(personName);
+  console.log(lastName);
+  console.log(mail);
+  console.log(casa);
+}
+
 window.onload = function main() {
   const counter = document.getElementById('counter');
   const textArea = document.getElementById('textarea');
@@ -30,4 +41,6 @@ window.onload = function main() {
   logar.addEventListener('click', login);
   const agreed = document.getElementById('agreement');
   agreed.addEventListener('click', checked);
+  const submit = document.getElementById('submit-btn');
+  submit.addEventListener('click', submited);
 };
