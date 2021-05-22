@@ -26,8 +26,8 @@ const allRate = document.getElementsByName('rate');
 
 // div textarea and buttons
 const textArea = document.querySelector('.textarea');
-const counter = document.getElementById('counter');
-const comment = document.getElementById('textarea');
+const cou = document.getElementById('counter');
+const com = document.getElementById('textarea');
 const agreeButton = document.getElementById('agreement');
 const submitButton = document.getElementById('submit-btn');
 
@@ -87,7 +87,7 @@ const showData = () => {
   familyContainer.innerHTML = `Família: ${checkFamily()}`;
   contentContainer.innerHTML = `Matérias: ${checkedSubjects()}`;
   avaliation.innerHTML = `Avaliação: ${checkedRate()}`;
-  textArea.innerHTML = `Observações: ${comment.value}`;
+  textArea.innerHTML = `Observações: ${com.value}`;
 };
 
 form.addEventListener('submit', (event) => {
@@ -97,7 +97,4 @@ form.addEventListener('submit', (event) => {
   showData();
 });
 
-comment.addEventListener('input', () => {
-  parseInt(counter.value, 10);
-  counter.value = (comment.maxLength - comment.value.length);
-});
+com.addEventListener('input', () => { cou.innerHTML = (com.maxLength - com.value.length); });
