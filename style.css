@@ -19,10 +19,6 @@ h1 {
   justify-content: space-between;
 }
 
-.header .trybewarts-header-logo {
-  width: 50px;
-}
-
 .trybewarts-login {
   display: flex;
   height: 20px;
@@ -55,6 +51,7 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
 #container-info1 , #container-info2 {
   width: 200px;
   display: flex;
@@ -69,4 +66,3 @@ main {
 #label-rate {
   margin-right: 10px;
 }
-
