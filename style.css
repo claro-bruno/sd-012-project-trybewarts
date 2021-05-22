@@ -29,6 +29,7 @@ header h1 {
   border-radius: 6px;
   height: 20px;
   border: white 2px solid;
+  margin: 5px 2px;
 }
 
 main {
@@ -65,6 +66,7 @@ form select {
 
 #container-boxes {
   display: flex;
+  justify-content: center;
 }
 
 #container-radio {
