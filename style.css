@@ -12,13 +12,13 @@
 
 @font-face {
   font-family: Child;
-  src: url(ChildWitch-z8ABL.ttf);
+  src: url('ChildWitch-z8ABL.ttf');
 }
 
 #trybewarts-header-title {
   font-size: 75px;
   color: black;
-  font-family: Child;
+  font-family: Child, 'sans-serif';
   letter-spacing: 6px;
   margin: 0;
 }
@@ -73,7 +73,7 @@ form {
 }
 
 .family-content-bg {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   border-radius: 6px;
   margin-right: 1%;
 }
@@ -136,7 +136,7 @@ footer {
   align-items: center;
   position: absolute;
   bottom: 0;
-  background-color:rgb(50, 167, 145);
+  background-color: rgb(50, 167, 145);
   text-align: center;
   margin: 0;
   width: 100%;
