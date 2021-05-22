@@ -3,6 +3,8 @@ const senha = document.getElementById('senha');
 const botao = document.getElementById('btn');
 const enviar = document.getElementById('submit-btn');
 const agree = document.getElementById('agreement');
+const textArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 
 function alerta() {
   if (login.value !== 'tryber@teste.com' || senha.value !== '123456') {
@@ -25,3 +27,9 @@ function turnOnButton() {
 }
 
 agree.addEventListener('click', turnOnButton);
+
+function addCounter() {
+  counter.innerHTML = `${500 - textArea.value.length}`;
+}
+
+textArea.addEventListener('keyup', addCounter);
