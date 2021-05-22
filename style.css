@@ -190,3 +190,10 @@ footer {
 #agreement {
   margin-left: 10px;
 }
+
+.homeContainer {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
