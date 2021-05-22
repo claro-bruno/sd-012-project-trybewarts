@@ -159,6 +159,7 @@ h2 {
   border-radius: 7px;
   background-color: white;
   border: none;
+  padding: 5px;
 }
 
 #submit-btn {

@@ -12,7 +12,7 @@ function clicarLogar() {
 
 pegabotao.addEventListener('click', clicarLogar);
 
-const checkzinho = document.getElementsByClassName('abriu');
+const checkzinho = document.getElementsByClassName('abriu')[0];
 
 function clickbait () {
   let botaocheck = document.querySelector('.fechou');
