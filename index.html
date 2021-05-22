@@ -10,28 +10,17 @@
 <body>
     <div class="header">
 
-    <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
-    
+        <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
+        <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form action="" method="get" class="trybewarts-login">
-     <input type="login" name="email" id="mail" placeholder="Login" value=" " >
+     <input type="login" name="email" id="mail" placeholder="Login" value="" >
      <input type="password" name="password" id="password" placeholder="Senha">
      <button type="submit" id="submit">Entrar</button>
      
-
     </form>
     
 </div>
-    
-
-        <img src="images/trybewarts-header-logo.svg" class="trybewarts-header-logo" alt=""> 
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <form class ="trybewarts-login">
-            
-            <input type="login" name="login" placeholder="Login" id="login">
-            
-            <input type="password" name="senha" placeholder="Senha" id="password">
-            <button type="submit" id="buttonSubmit">Entrar</button>
-        </form>
+   
     </div>
     <main>
         <form id="evaluation-form">
@@ -117,9 +106,15 @@
 
             
             <label for="" class="textarea">Deixe seu comentário: </label>
-            <textarea name="" id="textarea" cols="30" maxlength="500" rows="10"></textarea>
+            <textarea name="" id="textarea" cols="30" maxlength="500" rows="10" style="resize: none;"></textarea>
             
-
+            <div class="container">
+            <input type="checkbox" name="" id="agreement" required onclick="myFunction()">
+            <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+            </div>
+            <div>
+            <button type="submit" id="submit-btn" disabled=true>Enviar</button>
+            </div>
         </form>
         <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
     </main>
