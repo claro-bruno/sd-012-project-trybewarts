@@ -5,7 +5,7 @@
 body {
   display: flex;
   flex-flow: column;
-  background-image: url('images/trem.jpg');
+  background-image: url('images/background-desktop.png');
   background-size: cover;
 }
 
@@ -200,11 +200,19 @@ textarea {
   text-align: right;
 }
 
+form hr {
+  width: 100%;
+  margin-top: 1px;
+}
+
 @media screen and ( max-width : 480px ) {
 
   body {
     width: 100vw;
     background-image: none;
+    background: url('images/background-mobile.jpg');
+    background-position: center;
+    background-repeat: repeat-y;
   }
 
   header #trybewarts-header-title {
@@ -237,8 +245,10 @@ textarea {
   }
 
   #evaluation-form {
+    min-width: 1px;
     width: 100vw;
     padding: 20px;
+    background: none;
   }
 
   .nome-completo {
@@ -283,6 +293,80 @@ textarea {
   }
 
   #label-infos {
+    display: flex;
+  }
+}
+
+@media screen and ( min-width: 481px ) and ( max-width : 768px ) {
+
+  main {
+    flex-flow: column-reverse wrap;
+  }
+
+  .logo-trybewarts {
+    margin-bottom: 20px;
+  }
+
+  #evaluation-form {
+    min-width: 1px;
+    max-width: 100%;
+  }
+
+  .nome-completo {
+    flex-flow: column wrap;
+  }
+
+  .email-casa {
+    flex-flow: column wrap;
+  }
+
+  .separacao1 {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  #label-infos {
+    display: flex;
+  }
+
+  .checkbox-holder {
+    display: flex;
+  }
+}
+
+@media screen and ( min-width: 769px ) and ( max-width : 1170px ) {
+
+  main {
+    flex-flow: column wrap;
+  }
+
+  .logo-trybewarts {
+    order: -1;
+    margin-bottom: 20px;
+  }
+
+  #evaluation-form {
+    align-self: center;
+  }
+
+  .nome-completo {
+    flex-flow: wrap;
+  }
+
+  .email-casa {
+    flex-flow: wrap;
+  }
+
+  .separacao1 {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+
+  #label-infos {
+    display: flex;
+  }
+
+  .checkbox-holder {
     display: flex;
   }
 }
