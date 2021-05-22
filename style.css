@@ -80,7 +80,7 @@ main {
   display: flex;
   justify-content: space-around;
   padding-top: 50px;
-  width: 80%;
+  width:88%;
   align-self: center;
 }
 
@@ -95,7 +95,8 @@ form {
 }
 
 #evaluation-form {
-  width: 675px;
+  min-width: 675px;
+  max-width: 675px;
   flex-flow: column nowrap;
   flex-basis: auto;
   padding: 30px;

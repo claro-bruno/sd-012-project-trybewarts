@@ -31,10 +31,11 @@ const nome = document.getElementsByClassName('nome-completo')[0].children;
 const main = document.getElementsByClassName('main');
 
 function captureElements() {
-  let nomeCompleto = document.createElement('li');
+  const nomeCompleto = document.createElement('li');
   nomeCompleto.innerHTML = 'Nome: ';
   for (let index = 0; index < nome.length; index += 1) {
-    nomeCompleto.innerHTML += nome[index].value + ' ';
+    // nomeCompleto.innerHTML += nome[index].value + ' ';
+    nomeCompleto.innerHTML += `${nome[index].value} `;
   }
   main[0].appendChild(nomeCompleto);
 }
