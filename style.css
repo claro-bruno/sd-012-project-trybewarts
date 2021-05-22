@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: rgb(185, 184, 184);
+}
+
 main {
   display: flex;
 }
@@ -39,7 +43,7 @@ form {
 }
 
 #evaluation-form {
-  background-color: aquamarine;
+  background-color: rgb(204, 207, 206);
   padding: 2%;
   border-radius: 5px;
 }
@@ -77,6 +81,9 @@ form {
   flex-direction: column;
 }
 
+#avaliando-container {
+  display: flex;
+}
 
 #validacao-container {
   display: flex;
@@ -107,7 +114,7 @@ footer {
     align-items: center;
     align-content: stretch;
     width: 100%;
-    height: 89vh;
+    height: 87vh;
   }
 
   #login {
@@ -177,6 +184,10 @@ footer {
     border: none;
     display: flex;
     flex-direction: column;
+  }
+
+  #avaliando-container {
+    justify-content: space-around;
   }
 
   #radio-button-container {
@@ -277,7 +288,7 @@ footer {
   }
 
   #avaliando-container {
-    display: flex;
+    flex-direction: column;
   }
 
   .direction-row {

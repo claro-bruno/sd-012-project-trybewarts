@@ -93,23 +93,15 @@ const contador = () => {
 getTxtArea.addEventListener('keyup', contador);
 
 const selectDiv = document.querySelector('.direction-row');
-const label = document.createElement('label');
-
-function createLabel() {
-  selectDiv.appendChild(label);
-  label.innerHTML = 'Como você avalia a Trybewarts?';
-  label.id = 'label-rate';
-}
-
-createLabel();
 
 function createInputs() {
   for (let i = 1; i <= 10; i += 1) {
     const createLabel1 = document.createElement('label');
     selectDiv.appendChild(createLabel1);
     const input = document.createElement('input');
-    createLabel1.innerText = i;
+    createLabel1.innerText = `${i} `;
     createLabel1.appendChild(input);
+    input.className = 'form-check-input';
     input.type = 'radio';
     input.name = 'rate';
     input.id = i;
