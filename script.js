@@ -26,6 +26,7 @@ const allRate = document.getElementsByName('rate');
 
 // div textarea and buttons
 const textArea = document.querySelector('.textarea');
+const counter = document.getElementById('counter');
 const comment = document.getElementById('textarea');
 const agreeButton = document.getElementById('agreement');
 const submitButton = document.getElementById('submit-btn');
@@ -94,4 +95,9 @@ form.addEventListener('submit', (event) => {
   console.log('Formulário Enviado');
   console.log(studentName);
   showData();
+});
+
+comment.addEventListener('input', () => {
+  parseInt(counter.value, 10);
+  counter.value = (comment.maxLength - comment.value.length);
 });
