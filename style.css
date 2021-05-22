@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: rgb(240, 235, 235)
 }
 
 .header {
@@ -22,6 +23,12 @@ header form {
 
 header h1 {
   color: white;
+}
+
+.input-text {
+  border-radius: 6px;
+  height: 20px;
+  border: white 2px solid;
 }
 
 main {
