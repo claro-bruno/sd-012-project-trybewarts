@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/* https://www.wizardingworld.com/features/try-out-our-new-harry-potter-video-call-
+backgrounds Repositório de imagens
+*/
+
 body {
   background-image: url('UOR_HogwartsLights_Hogsmeade.jpg');
   background-attachment: fixed;
@@ -84,8 +88,11 @@ modelo utilizado para efeito de transição */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 15px;
 }
+
+/* //https://fontmeme.com/pt/fonte-de-harry-potter/
+Gerador de imagem com as letras do HarryPotter */
 
 #img {
   background-color: rgba(128, 128, 128, 0.7);
@@ -105,11 +112,31 @@ modelo utilizado para efeito de transição */
 .input-form-name {
   display: flex;
   flex-direction: row;
+  width: 90%;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.input-form-name input {
+  width: 40%;
+  height: 25px;
 }
 
 .input-form-email {
   display: flex;
   flex-direction: row;
+  width: 90%;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+
+.input-form-email input {
+  width: 40%;
+  height: 25px;
+}
+
+#house {
+  height: 25px;
 }
 
 .radio-buttons {
