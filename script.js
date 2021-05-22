@@ -10,3 +10,15 @@ function alertClick() {
   }
 }
 clickButton.addEventListener('click', alertClick);
+
+const send = document.querySelector('#submit-btn');
+const check = document.querySelector('#agreement');
+
+send.disabled = true;
+
+function sendClick() {
+  if (check.checked) {
+    send.disabled = false;
+  }
+}
+check.addEventListener('click',sendClick);

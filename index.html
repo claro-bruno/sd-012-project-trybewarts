@@ -33,9 +33,58 @@
                 <option id = 'pytherina-house' value="Pytherina">Pytherina</option>
             </select>
         </div>
+        <hr>
+        <div>
+        <label id="label" for="family">
+            <h6 id="label-family">Qual sua família?</h6>
+            <input value="Frontend" name="family" type="radio">Família Frontend
+            <input value="Backend" name="family" type="radio">Família Backend
+            <input value="FullStack" name="family" type="radio">Família FullStack
+        </label>
+        <hr>
+        <label for="">
+            <h6 id="label-content">Qual conteúdo você está com mais vontade de aprender?</h6> 
+            <input class="" value="HoFs" type="checkbox">HoFs
+            <input class="" value="Jest" type="checkbox">Jest
+            <input class="" value="Promises" type="checkbox">Promises
+            <input class="" value="React" type="checkbox">React
+            <input class="" value="SQL" type="checkbox">SQL
+            <input class="" value="Python" type="checkbox">Python
+        </label>
+        </div>
+        <hr>
+        <main id="mainId">
+        <div class="radioNumbers">
+            <label id="label-rate" for="rate">Como você avalia a Trybewarts?
+        </div>    
+        <div class="radioNumbers">    
+                <input value="1" name="rate" type="radio">1
+                <input value="2" name="rate" type="radio">2
+                <input value="3" name="rate" type="radio">3
+                <input value="4" name="rate" type="radio">4
+                <input value="5" name="rate" type="radio">5
+                <input value="6" name="rate" type="radio">6
+                <input value="7" name="rate" type="radio">7
+                <input value="8" name="rate" type="radio">8
+                <input value="9" name="rate" type="radio">9
+                <input value="10" name="rate" type="radio">10
+            </label>
+        </div>
+        </main>
+        <hr>
+        <label class="textarea" for="text">Deixe seu comentário:
+            <textarea name="text" id="textarea" maxlength="500" cols="30" rows="10"></textarea>
+        </label>
+        <hr>
+        <label id="label-infos" for="">Você concorda com o uso das informações acima?
+            <input id="agreement" type="checkbox">
+        </label>
+        <hr>
+        <button  type="submit" id="submit-btn">Enviar</button>
         </form>
         <img id = 'trybewarts-forms-logo' src="images/trybewarts-colored.svg" alt="">
     </main>
+    <footer>Direitos reservados à Trybewarts©</footer>
 <script src="script.js"></script>
 </body>
 </html>

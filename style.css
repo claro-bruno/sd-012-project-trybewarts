@@ -22,3 +22,26 @@
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+#label input {
+  display: flex;
+  flex-direction: column
+}
+
+.radioNumbers {
+  display: flex;
+  flex-direction: row
+}
+
+.radioNumbers input {
+  display: flex;
+  flex-direction: row
+}
+
+.textarea {
+  display: flex;
+}
+
+#submit-btn {
+  width: 50px;
+}
