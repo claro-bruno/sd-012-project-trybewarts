@@ -45,6 +45,7 @@ altenticationInput();
 
 function formularyOnBody() {
   const paiBody = document.querySelector('body');
+  const main = document.createElement('main');
   const form = document.createElement('form');
   form.id = 'evaluation-form';
   form.innerHTML = 'FORMULARIO';
@@ -53,7 +54,6 @@ function formularyOnBody() {
   main.style.display = 'flex';
   form.style.display = 'flex';
   form.style.width = '675px';
-  // Desafio 6.
   form.style.flexDirection = 'column';
   form.method = 'GET';
 }
