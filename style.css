@@ -24,7 +24,7 @@ main #family {
 }
 
 main #input-field-2 {
-  display:flex;
+  display: flex;
   flex-direction: column;
 }
 
