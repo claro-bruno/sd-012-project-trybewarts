@@ -8,12 +8,12 @@ function login() {
   }
 }
 
-function checked () {
+function checked() {
   const agreed = document.getElementById('agreement');
   const send = document.getElementById('submit-btn');
   if (agreed.checked) {
     send.removeAttribute('disabled');
-  } else{
+  } else {
     send.setAttribute('disabled', 'disabled');
   }
 }
