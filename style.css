@@ -26,20 +26,18 @@ main {
   display: flex;
   flex-direction: column;
   width: 675px;
-}
-#radio-family {
-  display:flex;
-  align-items: flex-start;
 
-  
-  
 }
+
+#radio-family {
+  display: flex;
+  align-items: flex-start;
+}
+
 #trybewarts-forms-logo {
   height: 500px;
 }
 
 #label content {
   flex-direction: column;
-  
-
 }
