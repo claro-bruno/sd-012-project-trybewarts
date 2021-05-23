@@ -1,6 +1,6 @@
 const emailLogin = document.getElementById('email-login');
 const passwordLogin = document.getElementById('password-login');
-const rate = document.getElementById('rate-container');
+const formLogin = document.getElementById('form-login');
 
 function login() {
   if (emailLogin.value === 'tryber@teste.com' && passwordLogin.value === '123456') {
@@ -10,8 +10,7 @@ function login() {
   }
 }
 
-const formLoginHeader = document.getElementById('forms-login');
-formLoginHeader.addEventListener('submit', login);
+formLogin.addEventListener('submit', login);
 
 const agreement = document.getElementById('agreement');
 
@@ -22,10 +21,10 @@ function buttonStatus() {
     document.getElementById('submit-btn').disabled = true;
   }
 }
+
 agreement.addEventListener('click', buttonStatus);
 
-const formLogin = document.getElementsByClassName('trybewarts-login');
-formLogin[0].addEventListener('submit', login);
+const rate = document.getElementById('rate-container');
 
 function rates() {
   for (let index = 1; index <= 10; index += 1) {
@@ -46,11 +45,11 @@ rates();
 
 const textarea = document.getElementById('textarea');
 const maxCharacters = textarea.maxLength;
+const countRemaining = document.getElementById('counter');
 
 function countCharacters() {
   const textEntered = textarea.value;
   const counter = maxCharacters - textEntered.length;
-  const countRemaining = document.getElementById('counter');
   countRemaining.textContent = counter;
 }
 
