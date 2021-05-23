@@ -81,7 +81,7 @@ h2 {
   margin: 10px;
 }
 
-.trybewarts-evaluator input, select {
+.trybewarts-evaluator input , select {
   border-radius: 7px;
   padding: 10px;
   background-color: white;
