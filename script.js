@@ -1,6 +1,4 @@
-const containerInfos = document.getElementById('container-informacoes');
-
-function alerta() {
+function verificaLogin() {
   const email = document.getElementById('email');
   const senha = document.getElementById('senha');
   const botaoLogar = document.getElementById('logar');
@@ -13,7 +11,7 @@ function alerta() {
   });
 }
 
-function submit() {
+function submeteFormulario() {
   const concorda = document.getElementById('agreement');
   const botaoEnviar = document.getElementById('submit-btn');
   concorda.addEventListener('click', () => {
@@ -25,45 +23,44 @@ function submit() {
   });
 }
 
-function contadorCaracteres() {
+function contaCaracteres() {
   const contador = document.getElementById('counter');
-  const text = document.getElementById('textarea');
-  text.addEventListener('keyup', () => {
-    contador.innerText = `${500 - text.value.length} caracteres restantes.`;
+  const textArea = document.getElementById('textarea');
+  textArea.addEventListener('keyup', () => {
+    contador.innerText = `${500 - textArea.value.length} caracteres restantes.`;
   });
+}
+
+function criaParagrafo(text) {
+  const containerInfos = document.getElementById('container-informacoes');
+  const paragrafo = document.createElement('p');
+  paragrafo.innerText = text;
+  containerInfos.appendChild(paragrafo);
 }
 
 function mostraNome() {
   const inputName = document.getElementById('input-name');
   const inputLastname = document.getElementById('input-lastname');
-  const paragrafo = document.createElement('p');
-  paragrafo.innerText = `Nome: ${inputName.value} ${inputLastname.value}`;
-  containerInfos.appendChild(paragrafo);
+  criaParagrafo(`Nome: ${inputName.value} ${inputLastname.value}`);
 }
 
 function mostraEmail() {
   const inputEmail = document.getElementById('input-email');
-  const paragrafo = document.createElement('p');
-  paragrafo.innerText = `Email: ${inputEmail.value}`;
-  containerInfos.appendChild(paragrafo);
+  criaParagrafo(`Email: ${inputEmail.value}`);
 }
 
 function mostraCasa() {
   const inputCasa = document.getElementById('house');
-  const paragrafo = document.createElement('p');
-  paragrafo.innerText = `Casa: ${inputCasa.value}`;
-  containerInfos.appendChild(paragrafo);
+  criaParagrafo(`Casa: ${inputCasa.value}`);
 }
 
 function mostraFamilia() {
   const inputFamilia = document.getElementsByClassName('familia');
-  const paragrafo = document.createElement('p');
   for (let i = 0; i < inputFamilia.length; i += 1) {
     if (inputFamilia[i].checked) {
-      paragrafo.innerText = `Família: ${inputFamilia[i].value}`;
+      criaParagrafo(`Família: ${inputFamilia[i].value}`);
     }
   }
-  containerInfos.appendChild(paragrafo);
 }
 
 function preencheMaterias() {
@@ -78,32 +75,27 @@ function preencheMaterias() {
 }
 
 function mostraMaterias() {
-  const paragrafo = document.createElement('p');
-  paragrafo.innerText = `Matérias: ${preencheMaterias()}`;
-  containerInfos.appendChild(paragrafo);
+  criaParagrafo(`Matérias: ${preencheMaterias()}`);
 }
 
 function mostraAvaliacao() {
   const inputAvaliacao = document.getElementsByClassName('rate');
-  const paragrafo = document.createElement('p');
   for (let i = 0; i < inputAvaliacao.length; i += 1) {
     if (inputAvaliacao[i].checked) {
-      paragrafo.innerText = `Avaliação: ${inputAvaliacao[i].value}`;
+      criaParagrafo(`Avaliação: ${inputAvaliacao[i].value}`);
     }
   }
-  containerInfos.appendChild(paragrafo);
 }
 
 function mostraObservacoes() {
   const inputTextarea = document.getElementById('textarea');
-  const paragrafo = document.createElement('p');
-  paragrafo.innerText = `Observações: ${inputTextarea.value}`;
-  containerInfos.appendChild(paragrafo);
+  criaParagrafo(`Observações: ${inputTextarea.value}`);
 }
 
 function exibeDados() {
   const botaoEnviar = document.getElementById('submit-btn');
   const containerFormulario = document.getElementById('container-forms');
+  const containerInfos = document.getElementById('container-informacoes');
   botaoEnviar.addEventListener('click', (e) => {
     e.preventDefault();
     containerFormulario.style.display = 'none';
@@ -119,8 +111,8 @@ function exibeDados() {
 }
 
 window.onload = function load() {
-  alerta();
-  submit();
-  contadorCaracteres();
+  verificaLogin();
+  submeteFormulario();
+  contaCaracteres();
   exibeDados();
 };
