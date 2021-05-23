@@ -6,16 +6,16 @@ function clicarLogar() {
     alert('Olá, Tryber!');
   } else {
     alert('Login ou senha inválidos.');
-  };
-};
+  }
+}
 
 pegabotao.addEventListener('click', clicarLogar);
 
 const checkzinho = document.getElementsByClassName('abriu')[0];
 
-function clickbait () {
+function clickbait() {
   const botaocheck = document.querySelector('.fechou');
   botaocheck.disabled = false;
-};
+}
 
 checkzinho.addEventListener('click', clickbait);

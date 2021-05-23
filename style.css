@@ -81,7 +81,16 @@ h2 {
   margin: 10px;
 }
 
-.trybewarts-evaluator  input, select {
+.trybewarts-evaluator  input {
+  border-radius: 7px;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  width: 240px;
+  margin: 5px;
+}
+
+.trybewarts-evaluator  select {
   border-radius: 7px;
   padding: 10px;
   background-color: white;
@@ -119,7 +128,7 @@ h2 {
 }
 
 .input-family div {
-  margin: 10px 0px;
+  margin: 10px none;
 }
 
 .input-content {
@@ -151,7 +160,7 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 0px 10px;
+  margin: none 10px;
 }
 
 .flex-container2 textarea {
