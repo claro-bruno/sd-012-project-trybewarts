@@ -55,11 +55,10 @@ function buttonSubmit() {
   });
 }
 buttonSubmit();
-
+const paiBody = document.querySelector('body');
+const main = document.createElement('main');
+const form = document.createElement('form');
 function formularyOnBody() {
-  const paiBody = document.querySelector('body');
-  const main = document.createElement('main');
-  const form = document.createElement('form');
   form.id = 'evaluation-form';
   form.innerHTML = 'FORMULARIO';
   paiBody.appendChild(main);
@@ -73,7 +72,6 @@ function formularyOnBody() {
 formularyOnBody();
 
 function inserImageLogo() {
-  const paiBody = document.querySelector('body');
   const image = document.createElement('img');
   image.id = 'trybewarts-forms-logo';
   image.src = 'images/trybewarts-colored.svg';
@@ -106,3 +104,12 @@ function insertInputs() {
   paiHouse.insertBefore(inputEmail, selecSelect);
 }
 insertInputs();
+// Ferificar o footer e dar push hoje
+function footer() {
+  const createFooter = document.createElement('footer');
+  const createP = document.createElement('p');
+  createP.innerHTML = 'Direitos reservados à Trybewarts©';
+  createFooter.appendChild(createP);
+  paiBody.appendChild(createFooter);
+}
+footer();
