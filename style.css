@@ -82,7 +82,7 @@ main {
   justify-content: space-evenly;
 }
 
-#container-radio label{
+#container-radio label {
   margin: 5px;
 }
 
@@ -105,12 +105,12 @@ main {
   margin: 2px 25px;
 }
 
-#container-text-area{
- display: flex;
- flex-direction: column;
- justify-content: center;
- text-align: center;
- margin: 10px 25px;
+#container-text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 25px;
 }
 
 #textarea {
