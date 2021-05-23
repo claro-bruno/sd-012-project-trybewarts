@@ -126,6 +126,12 @@ main {
   justify-content: center;
 }
 
+#counter {
+  margin: 0;
+  text-align: end;
+  color: rgb(117, 117, 122);
+}
+
 footer {
   color: white;
   display: flex;
