@@ -68,17 +68,13 @@ function mostraFamilia() {
 
 function preencheMaterias() {
   const inputMaterias = document.getElementsByClassName('subject');
-  let materias = '';
+  const materias = [];
   for (let i = 0; i < inputMaterias.length; i += 1) {
     if (inputMaterias[i].checked) {
-      if (materias === '') {
-        materias = inputMaterias[i].value;
-      } else {
-        materias += `, ${inputMaterias[i].value}`;
-      }
+      materias.push(inputMaterias[i].value);
     }
   }
-  return materias;
+  return materias.join(', ');
 }
 
 function mostraMaterias() {
