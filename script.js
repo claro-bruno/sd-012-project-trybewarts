@@ -3,6 +3,8 @@ const inputSenha = document.querySelector('.input-senha');
 const btnLogin = document.querySelector('.btn-login');
 const agreement = document.querySelector('#agreement');
 const enviar = document.querySelector('#submit-btn');
+const textarea = document.querySelector('#textarea');
+const count = document.querySelector('#counter');
 
 btnLogin.addEventListener('click', () => {
   if (inputLogin.value !== 'tryber@teste.com' && inputSenha.value !== '123456') {
@@ -18,4 +20,9 @@ agreement.addEventListener('click', () => {
   } else {
     enviar.disabled = true;
   }
+});
+
+textarea.addEventListener('keyup', () => {
+  count.innerHTML = 500 - textarea.value.length;
+  textarea.innerHTML = count;
 });

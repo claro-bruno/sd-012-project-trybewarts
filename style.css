@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+
+body {
+  font-family: Aref Ruqaa, serif;
+  font-weight: 900;
+  margin: 0;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   background-color: rgb(50, 167, 145);
+  width: 100%;
 }
 
 .trybewarts-header-logo {
   left: 0;
+  width: 50px;
 }
 
 .trybewarts-login {
@@ -18,14 +28,35 @@ main {
   flex-wrap: wrap;
 }
 
-main #family {
+hr {
+  border-color: rgb(170, 170, 170);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#family {
   display: flex;
   flex-direction: column;
 }
 
-main #input-field-2 {
+#input-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+#input-field-2 {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#input-field-comments {
   display: flex;
   flex-direction: column;
+}
+
+
+#counter {
+  align-self: flex-end;
 }
 
 #evaluation-form {
@@ -34,6 +65,38 @@ main #input-field-2 {
   width: 675px;
 }
 
+#evaluation-form h1 {
+  align-self: center;
+}
+
+
 #trybewarts-forms-logo {
   height: 500px;
+}
+
+#formContainer {
+  display: flex;
+  flex-flow: wrap column;
+  padding: 40px;
+  flex-shrink: 10;
+}
+
+#logoContainer {
+  margin: 0;
+  align-self: center;
+  box-sizing: border-box;
+  padding: 40px;
+}
+
+footer {
+  background-color: rgb(60, 65, 74);
+  color: rgb(230, 230, 230);
+  margin-bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  padding: 10px;
+  margin: 0;
 }
