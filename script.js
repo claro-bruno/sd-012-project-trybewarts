@@ -1,20 +1,29 @@
-
 const email = document.querySelector('#mail');
 const senha = document.querySelector('#password');
 const submit = document.querySelector('#submit');
+const subBtn = document.querySelector('#submit-btn');
+const agreeCheck = document.querySelector('#agreement');
+subBtn.disabled = true;
 
-submit.addEventListener('click', () =>{
-  const loginTrybe = 'tryber@teste.com'; 
+submit.addEventListener('click', () => {
+  const loginTrybe = 'tryber@teste.com';
   const senhaTrybe = '123456';
-  if(email.value !== loginTrybe && senha.value !== senhaTrybe){
-      window.alert( "Login ou senha inválidos.")
+  if (email.value !== loginTrybe && senha.value !== senhaTrybe) {
+    window.alert('Login ou senha inválidos.');
   } else {
-      window.alert( "Olá, Tryber!")
-  }    
+    window.alert('Olá, Tryber!');
+  }
 });
 
+// function sendForm() {
+//   document.getElementById('submit-btn').disabled = false;
+// }
+
 function sendForm() {
-  document.getElementById("submit-btn").disabled = false;
+  if (agreeCheck.checked === true) {
+    subBtn.disabled = false;
+  } else {
+    subBtn.disabled = true;
+  }
 }
-
-
+agreeCheck.addEventListener('click', sendForm);
