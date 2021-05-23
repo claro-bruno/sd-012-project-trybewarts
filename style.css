@@ -29,15 +29,11 @@ main {
 
 }
 
-#radio-family {
-  display: flex;
-  align-items: flex-start;
-}
-
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-#label content {
+.radio-input {
+  display: flex;
   flex-direction: column;
 }
