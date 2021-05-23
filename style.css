@@ -24,6 +24,8 @@ header form {
 
 header h1 {
   color: white;
+  font-family: EG Dragon Caps, sans-serif;
+  font-weight: 300;
 }
 
 #botaoLogar {
@@ -131,6 +133,10 @@ main {
   display: flex;
   justify-content: space-around;
   margin: 10px 15px;
+}
+
+hr {
+  width: 610px;
 }
 
 #container-rate {
