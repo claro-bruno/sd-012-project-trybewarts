@@ -28,13 +28,14 @@ function addEvents() {
 function contaLimiteCaracteres() {
   const char = comments.value;
   const contadorDeCaracteres = document.querySelector('#counter');
-  let dif = 500;
+  // let dif = 500;
 
   if (char.length >= 1) {
-    for (let i = 1; i < char.length; i += 1) {
-      dif = (500 - i);
-      contadorDeCaracteres.innerText = dif;
-    }
+    contadorDeCaracteres.innerText = 500 - char.length;
+    // for (let i = 0; i < char.length; i += 1) {
+    //   dif = (500 - i);
+    //   contadorDeCaracteres.innerText = dif;
+    // }
   } else {
     contadorDeCaracteres.innerText = 500;
   }
