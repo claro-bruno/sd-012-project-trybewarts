@@ -15,10 +15,6 @@ submit.addEventListener('click', () => {
   }
 });
 
-// function sendForm() {
-//   document.getElementById('submit-btn').disabled = false;
-// }
-
 function sendForm() {
   if (agreeCheck.checked === true) {
     subBtn.disabled = false;
