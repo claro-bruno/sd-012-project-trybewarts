@@ -117,3 +117,7 @@ main {
   justify-content: space-between;
 }
 
+#avaliacao {
+  display: flex;
+  margin-top: 10px;
+}
