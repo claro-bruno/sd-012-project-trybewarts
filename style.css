@@ -209,7 +209,6 @@ form hr {
 
   body {
     width: 100vw;
-    background-image: none;
     background: url('images/background-mobile.jpg') center repeat-y;
   }
 
