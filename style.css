@@ -140,3 +140,9 @@ main {
 #agree label {
   margin-right: 10px;
 }
+
+#submit-btn {
+  width: 100%;
+  background-color: blueviolet;
+  color: white;
+}
