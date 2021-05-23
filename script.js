@@ -7,41 +7,54 @@ function titleOnHeader() {
 }
 titleOnHeader();
 
-function altenticationInput() {
+function createFormLogin() {
   const paiHeader = document.querySelector('header');
   const form = document.createElement('form');
   form.action = '';
   form.className = 'trybewarts-login';
   form.style.display = 'flex';
   paiHeader.appendChild(form);
-  const paiForm = document.querySelector('.trybewarts-login');
-  const inputNameL = document.createElement('label');
-  inputNameL.for = 'full-name';
-  inputNameL.innerHTML = 'Name';
-  paiForm.appendChild(inputNameL);
+}
+createFormLogin();
+
+const paiForm = document.querySelector('.trybewarts-login');
+
+function createLogin() {
   const inputNameI = document.createElement('input');
   inputNameI.type = 'text';
   inputNameI.name = 'name';
   inputNameI.id = 'full-name';
   inputNameI.placeholder = 'Login';
   paiForm.appendChild(inputNameI);
-  const inputSenhaL = document.createElement('label');
-  inputSenhaL.for = 'pwd';
-  inputSenhaL.innerHTML = 'Senha';
-  paiForm.appendChild(inputSenhaL);
+}
+createLogin();
+
+function createPwd() {
   const inputSenhaI = document.createElement('input');
   inputSenhaI.type = 'password';
   inputSenhaI.name = 'pwd';
   inputSenhaI.id = 'pwd';
   inputSenhaI.placeholder = 'Senha';
   paiForm.appendChild(inputSenhaI);
+}
+createPwd();
+
+function buttonSubmit() {
   const loginButton = document.createElement('button');
   loginButton.type = 'submit';
-  loginButton.innerHTML = 'SUBMITER';
+  loginButton.innerHTML = 'ENVIAR';
   paiForm.appendChild(loginButton);
-  // Lint dando erro de quantidade de linhas. Precisamos dividir em 2 funções ou passar os estilos para css e html.
+  loginButton.addEventListener('click', () => {
+    const boxText = document.querySelector('#full-name').value;
+    const boxPwd = document.querySelector('#pwd').value;
+    if (boxText === 'tryber@teste.com' && boxPwd === '123456') {
+      alert('Olá, Tryber!');
+    } else {
+      alert('Login ou senha inválidos.');
+    }
+  });
 }
-altenticationInput();
+buttonSubmit();
 
 function formularyOnBody() {
   const paiBody = document.querySelector('body');
@@ -70,21 +83,21 @@ function inserImageLogo() {
 inserImageLogo();
 
 function insertInputs() {
-  const paiForm = document.querySelectorAll('form')[1];
+  const form1 = document.querySelectorAll('form')[1];
   const inputName = document.createElement('input');
   const inputLastName = document.createElement('input');
   const inputEmail = document.createElement('input');
   inputName.id = 'input-name';
   inputName.type = 'text';
   inputName.placeholder = 'Nome';
-  paiForm.appendChild(inputName);
+  form1.appendChild(inputName);
   inputLastName.id = 'input-lastname';
   inputLastName.type = 'text';
   inputLastName.placeholder = 'Sobrenome';
-  paiForm.appendChild(inputLastName);
+  form1.appendChild(inputLastName);
   inputEmail.id = 'input-email';
   inputEmail.type = 'text';
   inputEmail.placeholder = 'Email';
-  paiForm.appendChild(inputEmail);
+  form1.appendChild(inputEmail);
 }
 insertInputs();
