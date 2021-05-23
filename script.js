@@ -79,7 +79,7 @@ const changeUserSubject = () => {
       selectedSubjects.push(selected);
     }
   }
-  const infoSubject = `Matérias: ${selectedSubjects.join(', ')}`
+  const infoSubject = `Matérias: ${selectedSubjects.join(', ')}`;
   inputSubject.innerHTML = infoSubject;
 };
 
