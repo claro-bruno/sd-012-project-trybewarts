@@ -55,51 +55,52 @@
     </div>
     <hr>
     <div class="row">
-      <div class="form-group" id="label-family"> <!--requisito 12, não acertei no css -->
-        <h5> Qual sua família?</h5>
-        <div>
-        <div>
-          <label for="frontend">Família Frontend</label>
-          <input type="radio" name="family" id="frontend" value="Frontend">
+     <section class="family-content">
+        <div class="form-group family-content" id="label-family">
+          <label name="family">Qual sua família?</label>
+          <div>
+          <div>
+            <label for="frontend">Família Frontend</label>
+            <input type="radio" name="family" id="frontend" value="Frontend">
+          </div>
+          <div>
+            <label for="backend">Família Backend</label>
+            <input type="radio" name="family" id="backend" value="Backend">
+          </div>
+          <div>
+            <label for="fullstack">Família Fullstack</label>        
+            <input type="radio" name="family" id="fullstack" value="FullStack">
+          </div>
         </div>
-        <div>
-          <label for="backend">Família Backend</label>
-          <input type="radio" name="family" id="backend" value="Backend">
-        </div>
-        <div>
-          <label class="fullstack" for="family">Família Fullstack</label>        
-          <input type="radio" name="family" id="fullstack" value="FullStack">
+        <div id="label-content" class="form-group"> <!--requisito 14, também falta ajuste no css-->
+          <label name="subject">Qual conteúdo você está com mais vontade de aprender?</label> 
+          <div class="form-group col-md-6">
+            <label class="subject" for="hofs">HoFs</label>
+            <input class="subject" type="checkbox" value="HoFs" id="hofs">
+          </div>
+          <div class="form-group col-md-6">
+            <label class="subject" for="jest">Jest</label>
+            <input class="subject" type="checkbox" value="Jest" id="jest">
+          </div>
+          <div class="form-group col-md-6">
+            <label class="subject" for="promises">Promises</label>
+            <input class="subject" type="checkbox" value="Promises" id="promises">
+          </div>
+          <div class="form-group col-md-6">
+            <label class="subject" for="react">React</label>
+            <input class="subject" type="checkbox" value="React" id="react">
+          </div>
+          <div class="form-group col-md-6">
+            <label class="subject" for="sql">SQL</label>
+            <input class="subject" type="checkbox" value="SQL" id="sql">
+          </div>
+          <div class="form-group col-md-6">
+            <label class="subject" for="python">Python</label>
+            <input class="subject" type="checkbox" value="Python" id="python">
+          </div>
         </div>
       </div>
-      <div id="label-content" class="skills-check form-group"> <!--requisito 14, também falta ajuste no css-->
-        <span>Qual conteúdo você está com mais vontade de aprender?</span>
-        <div class="form-group col-md-6">
-          <label class="subject" for="hofs">HoFs</label>
-          <input class="subject" type="checkbox" value="HoFs" id="hofs">
-        </div>
-        <div class="form-group col-md-6">
-          <label class="subject" for="jest">Jest</label>
-          <input class="subject" type="checkbox" value="Jest" id="jest">
-        </div>
-        <div class="form-group col-md-6">
-          <label class="subject" for="promises">Promises</label>
-          <input class="subject" type="checkbox" value="Promises" id="promises">
-        </div>
-        <div class="form-group col-md-6">
-          <label class="subject" for="react">React</label>
-          <input class="subject" type="checkbox" value="React" id="react">
-        </div>
-        <div class="form-group col-md-6">
-          <label class="subject" for="sql">SQL</label>
-          <input class="subject" type="checkbox" value="SQL" id="sql">
-        </div>
-        <div class="form-group col-md-6">
-          <label class="subject" for="python">Python</label>
-          <input class="subject" type="checkbox" value="Python" id="python">
-        </div>
-        </div>
-      </div>
-
+     </section>
       <hr>
       <div id="label-rate" class="form-row"> <!--requesito 14, poderia ter feito um for kk , mas só lembrei dps que terminei, posso fzer dps-->
         <span>Como você avalia a Trybewarts?</span>
