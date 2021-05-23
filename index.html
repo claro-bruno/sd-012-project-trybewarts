@@ -4,18 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
   <title>Trybewarts</title>
 </head>
 <body>
-  <header class='header'>
-    <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
-    <h1 id="trybewarts-header-title">Trybewarts</h1>
-    <form class="trybewarts-login" action="" method="GET">
-      <input placeholder="Login" type="text" name="login" id='input-login'>
-      <input placeholder="Senha" type="text" name="senha" id='input-password'>
-      <button type="submit" id="submit-button">Entrar</button>
-    </form>
-  </header>
+  <div class="header-container">
+    <header class='header'>
+      <img src="images/trybewarts-header-logo.svg" alt="" class="trybewarts-header-logo">
+      <h1 id="trybewarts-header-title">Trybewarts</h1>
+      <form class="trybewarts-login" action="" method="GET">
+        <input placeholder="Login" type="text" name="login" id='input-login'>
+        <input placeholder="Senha" type="text" name="senha" id='input-password'>
+        <button type="submit" id="submit-button">Entrar</button>
+      </form>
+    </header>
+  </div>
+
 
   <main>
     <form id="evaluation-form" action="" method="GET">
@@ -25,6 +30,7 @@
       </div>
       <div id='input-email-house' class="input-row">
         <input placeholder="Email" type="email" name="email" id='input-email'>
+        <label for="house">Casa:</label>
         <select name="casa" id="house">
           <option id="gitnoria-house" value="Gitnória">Gitnória</option>
           <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
@@ -32,48 +38,56 @@
           <option id="pytherina-house" value="Pytherina">Pytherina</option>
         </select>
       </div>
-      <label for="" id="label-family">Qual sua família?</label>
-      <div id='userFamily'>
-        <div>
-          <input type="radio" name="family" id="Frontend" value="Frontend" class='family' checked>
-          <label for="Frontend">Frontend</label>
+      <hr>
+      <div class='family-subject-container'>
+        <div class='family-container'>
+          <label for="" id="label-family">Qual sua família?</label>
+          <div id='userFamily'>
+            <div>
+              <input type="radio" name="family" id="Frontend" value="Frontend" class='family' checked>
+              <label for="Frontend">Frontend</label>
+            </div>
+            <div>
+              <input type="radio" name="family" id="Backend" value="Backend" class='family'>
+              <label for="Backend">Backend</label>
+            </div>
+            <div>
+              <input type="radio" name="family" id="FullStack" value="FullStack" class='family'>
+              <label for="FullStack">FullStack</label>
+            </div>
+          </div>
         </div>
-        <div>
-          <input type="radio" name="family" id="Backend" value="Backend" class='family'>
-          <label for="Backend">Backend</label>
-        </div>
-        <div>
-          <input type="radio" name="family" id="FullStack" value="FullStack" class='family'>
-          <label for="FullStack">FullStack</label>
+        <div class='subject-container'>
+          <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="content">
+            <div>
+              <input type="checkbox" value="HoFs" class="subject">
+              <label for="">Hofs</label>
+            </div>
+            <div>
+              <input type="checkbox" value="Jest" class="subject">
+              <label for="">Jest</label>
+            </div>
+            <div>
+              <input type="checkbox" value="Promises" class="subject">
+              <label for="">Promises</label>
+            </div>
+            <div>
+              <input type="checkbox" value="React" class="subject">
+              <label for="">React</label>
+            </div>
+            <div>
+              <input type="checkbox" value="SQL" class="subject">
+              <label for="">SQL</label>
+            </div>
+            <div>
+              <input type="checkbox" value="Python" class="subject">
+              <label for="">Python</label>
+            </div>
+          </div>
         </div>
       </div>
-      <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-      <div class="content">
-        <div>
-          <input type="checkbox" value="HoFs" class="subject">
-          <label for="">Hofs</label>
-        </div>
-        <div>
-          <input type="checkbox" value="Jest" class="subject">
-          <label for="">Jest</label>
-        </div>
-        <div>
-          <input type="checkbox" value="Promises" class="subject">
-          <label for="">Promises</label>
-        </div>
-        <div>
-          <input type="checkbox" value="React" class="subject">
-          <label for="">React</label>
-        </div>
-        <div>
-          <input type="checkbox" value="SQL" class="subject">
-          <label for="">SQL</label>
-        </div>
-        <div>
-          <input type="checkbox" value="Python" class="subject">
-          <label for="">Python</label>
-        </div>
-      </div>
+      <hr>
       <div class="radio-container">
         <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
         <div>
@@ -119,7 +133,7 @@
       </div>
       <label class="textarea" for="textarea">Deixe seu comentário:</label>
       <div class="textarea-container">
-        <textarea name="coments"  id="textarea" cols="50" rows="10" maxlength="500"></textarea>
+        <textarea name="coments"  id="textarea" cols="60" rows="5" maxlength="500"></textarea>
       </div>
       <div id="counter">500</div>
       <div>

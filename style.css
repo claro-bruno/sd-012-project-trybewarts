@@ -5,11 +5,16 @@
 }
 
 body {
-  background-color: blanchedalmond;
+  background-color: lavender;
+  font-family: 'Mate SC', serif;
 }
 
 body h1 {
   color: white;
+}
+
+.header-container {
+  background-color: rgb(50, 167, 145);
 }
 
 .header {
@@ -17,29 +22,54 @@ body h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 115px;
+}
+
+.header h1 {
+  font-size: 40px;
 }
 
 .trybewarts-header-logo {
-  width: 80px;
+  width: 60px;
+  margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 .trybewarts-login {
   display: flex;
+  margin-right: 150px;
+  /* width: 675px; */
 }
 
 .trybewarts-login input {
   margin: 0 8px;
   height: 24px;
-  padding: 0 8px;
+  padding: 14px;
+  border-radius: 6px;
+  border: 0;
+  font-family: 'Mate SC', serif;
+}
+
+.trybewarts-login input:focus {
+  outline: none;
 }
 
 .trybewarts-login button {
   margin: 0 8px;
+  padding: 0 12px;
+  border-radius: 6px;
+  border: 0;
+  background-color: slateblue;
+  color: white;
+  font-family: 'Mate SC', serif;
+  font-weight: bold;
 }
 
 main {
   display: flex;
-  margin-bottom: 52px;
+  margin-bottom: 18px;
+  justify-content: center;
+  margin-top: 38px;
 }
 
 #evaluation-form {
@@ -56,12 +86,62 @@ main {
   flex-direction: row;
 }
 
+.input-row input {
+  padding: 8px;
+  width: 250px;
+  font-family: 'Mate SC', serif;
+  border-radius: 6px;
+  border: 0;
+  margin: 4px;
+  font-size: 16px;
+}
+
+.input-row select {
+  padding: 8px;
+  width: 214px;
+  border-radius: 6px;
+  font-family: 'Mate SC', serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+hr {
+  margin: 12px 0;
+  width: 550px;
+}
+
+.family-subject-container {
+  display: flex;
+}
+
+.family-container {
+  margin-right: 48px;
+}
+
+.family-container input {
+  margin: 12px 0;
+}
+
+.subject-container {
+  max-width: 400px;
+}
+
 .content {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.content div {
+  margin: 4px 24px;
 }
 
 .radio-container {
   display: flex;
+  margin-bottom: 8px;
+}
+
+.radio-container div {
+  margin: 0 4px;
 }
 
 .footer {
@@ -73,10 +153,24 @@ main {
 
 #textarea {
   padding: 20px 16px;
+  resize: none;
+}
+
+#agreement {
+  margin: 8px 0;
 }
 
 #counter {
   position: absolute;
-  top: 438px;
-  left: 400px;
+  top: 525px;
+  left: 605px;
+}
+
+#submit-btn {
+  padding: 6px;
+  background-color: slateblue;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  max-width: 530px;
 }
