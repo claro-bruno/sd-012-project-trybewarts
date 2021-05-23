@@ -84,6 +84,15 @@ main {
 #house {
   width: 266px;
   margin: 3px;
+  height: 25px;
+  border: white 2px solid;
+  background-color: white;
+  border-radius: 6px;
+
+}
+
+#house:focus {
+  outline: none;
 }
 
 #trybewarts-forms-logo {
