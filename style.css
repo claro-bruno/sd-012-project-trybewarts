@@ -110,10 +110,18 @@ main {
  flex-direction: column;
  justify-content: center;
  text-align: center;
- margin: 20px 25px;
+ margin: 10px 25px;
 }
 
 #textarea {
   overflow: hidden;
   flex-wrap: nowrap;
+  resize: none;
+  border: 1px rgb(172, 24, 172) solid;
+  border-radius: 5px;
+}
+
+#label-infos {
+  display: flex;
+  justify-content: center;
 }
