@@ -1,7 +1,7 @@
 const submitButton = document.querySelector('#submit-btn');
 const checkbox = document.querySelector('#agreement');
 submitButton.disabled = true;
-const comments = document.querySelector('#textarea')
+const comments = document.querySelector('#textarea');
 
 function verifyLogin(login, password) {
   if (login === 'tryber@teste.com') {
@@ -26,7 +26,7 @@ function addEvents() {
 }
 
 function contaLimiteCaracteres() {
-  let char = comments.value;
+  const char = comments.value;
   const contadorDeCaracteres = document.querySelector('#counter');
   let dif = 500;
 
@@ -38,7 +38,7 @@ function contaLimiteCaracteres() {
   } else {
     contadorDeCaracteres.innerText = 500;
   }
-};
+}
 
 const checkSubmmit = () => {
   if (checkbox.checked) {
