@@ -130,3 +130,13 @@ main {
   margin-top: 10px;
   padding: 1%;
 }
+
+#agree {
+  display: flex;
+  padding: 1%;
+  justify-content: center;
+}
+
+#agree label {
+  margin-right: 10px;
+}
