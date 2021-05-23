@@ -117,7 +117,16 @@ main {
   justify-content: space-between;
 }
 
-#avaliacao {
+#Avaliacao {
   display: flex;
   margin-top: 10px;
+  padding: 1%;
+  justify-content: space-evenly;
+}
+
+#textarea {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 1%;
 }
