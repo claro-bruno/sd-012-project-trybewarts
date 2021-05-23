@@ -44,20 +44,20 @@
           </select>
         </div>
       </div>
-      <div id="form-section2">
+      <div class="mb-2" id="form-section2">
         <div id="family-container">
           <label class="form-label" id="label-family">Qual sua família?</label>
           <div id="frontend-container">
             <input class="form-check-input" type="radio" id="frontend-family" value="Frontend" name="family">
-            <label class="form-check-label" id="frontend-label"for="frontend-family">Família Frontend</label>
+            <label class="form-check-label" id="frontend-label" for="frontend-family">Família Frontend</label>
           </div>
           <div id="backend-container">
             <input class="form-check-input" type="radio" id="backend-family" value="Backend" name="family">
-            <label class="form-check-label" id="backend-label"for="backend-family">Família Backend</label>
+            <label class="form-check-label" id="backend-label" for="backend-family">Família Backend</label>
           </div>
           <div id="fullstack-container">
             <input class="form-check-input" type="radio" id="fullstack-family" value="FullStack" name="family">
-            <label class="form-check-label" id="fullstack-label"for="fullstack-family">Família FullStack</label>
+            <label class="form-check-label" id="fullstack-label" for="fullstack-family">Família FullStack</label>
           </div>
         </div>
         <div id="content-container">
@@ -96,16 +96,19 @@
       </div>
       <div id="form-section4">
         <label class="form-label textarea">Deixe seu comentário:</label>
-        <textarea class="form-control" maxlength="500" cols="50" rows="4"></textarea>
+        <textarea id="textarea" class="form-control" maxlength="500" cols="50" rows="4"></textarea>
+        <p id="counter">500 characters</p>
       </div>
       <div id="agreement-container">
-        <label for="agreement" id="label-infos" class="form-label">Você concorda com o uso das informações acima?</label>
+        <label for="agreement" id="label-infos" class="form-label">Você concorda com o uso das informações
+          acima?</label>
         <input class="form-check-input" id="agreement" type="checkbox">
       </div>
       <button type="submit" id="submit-btn" class="btn btn-primary" disabled>Enviar</button>
     </form>
     <aside class="img-container">
-      <img class="trybewarts-body-logo" src="images/trybewarts-colored.svg" alt="Brasão Trybewarts" id="trybewarts-forms-logo">
+      <img class="trybewarts-body-logo" src="images/trybewarts-colored.svg" alt="Brasão Trybewarts"
+        id="trybewarts-forms-logo">
     </aside>
   </main>
 
@@ -114,4 +117,5 @@
   </footer>
   <script src="script.js"></script>
 </body>
+
 </html>

@@ -43,3 +43,15 @@ function rates() {
 }
 
 rates();
+
+const textarea = document.getElementById('textarea');
+const maxCharacters = textarea.maxLength;
+
+function countCharacters() {
+  const textEntered = textarea.value;
+  const counter = maxCharacters - textEntered.length;
+  const countRemaining = document.getElementById('counter');
+  countRemaining.textContent = counter;
+}
+
+textarea.addEventListener('keyup', countCharacters);
