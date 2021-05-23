@@ -19,31 +19,33 @@
 
   <main>
     <form id="evaluation-form" action="" method="GET">
-      <div class="input-row">
-        <input placeholder="Nome" type="text" name="senha" id='input-name'>
-        <input placeholder="Sobrenome" type="text" name="senha" id='input-lastname'>
+      <div id='input-fullname' class="input-row">
+        <input placeholder="Nome" type="text" name="name" id='input-name'>
+        <input placeholder="Sobrenome" type="text" name="lastname" id='input-lastname'>
       </div>
-      <div class="input-row">
-        <input placeholder="Email" type="text" name="senha" id='input-email'>
+      <div id='input-email-house' class="input-row">
+        <input placeholder="Email" type="email" name="email" id='input-email'>
         <select name="casa" id="house">
-          <option id="gitnoria-house" value="">Gitnória</option>
-          <option id="reactpuff-house" value="">Reactpuff</option>
-          <option id="corvinode-house" value="">Corvinode</option>
-          <option id="pytherina-house" value="">Pytherina</option>
+          <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+          <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+          <option id="corvinode-house" value="Corvinode">Corvinode</option>
+          <option id="pytherina-house" value="Pytherina">Pytherina</option>
         </select>
       </div>
       <label for="" id="label-family">Qual sua família?</label>
-      <div>
-        <input type="radio" name="family" id="Frontend" value="Frontend">
-        <label for="Frontend">Frontend</label>
-      </div>
-      <div>
-        <input type="radio" name="family" id="Backend" value="Backend">
-        <label for="Backend">Backend</label>
-      </div>
-      <div>
-        <input type="radio" name="family" id="FullStack" value="FullStack">
-        <label for="FullStack">FullStack</label>
+      <div id='userFamily'>
+        <div>
+          <input type="radio" name="family" id="Frontend" value="Frontend" class='family' checked>
+          <label for="Frontend">Frontend</label>
+        </div>
+        <div>
+          <input type="radio" name="family" id="Backend" value="Backend" class='family'>
+          <label for="Backend">Backend</label>
+        </div>
+        <div>
+          <input type="radio" name="family" id="FullStack" value="FullStack" class='family'>
+          <label for="FullStack">FullStack</label>
+        </div>
       </div>
       <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
       <div class="content">
