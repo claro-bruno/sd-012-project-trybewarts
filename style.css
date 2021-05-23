@@ -96,6 +96,10 @@ select {
   flex-direction: column;
 }
 
+textarea {
+  width: 80%;
+}
+
 footer {
   display: flex;
   justify-content: center;

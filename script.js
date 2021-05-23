@@ -1,3 +1,7 @@
+const submitButton = document.querySelector('#submit-btn');
+const checkbox = document.querySelector('#agreement');
+submitButton.disabled = true;
+
 function verifyLogin(login, password) {
   if (login === 'tryber@teste.com') {
     if (password === '123456') {
@@ -20,7 +24,19 @@ function addEvents() {
   });
 }
 
+const checkSubmmit = () => {
+  if (checkbox.checked) {
+    submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
+  }
+};
+
+checkbox.addEventListener('click', checkSubmmit);
+
+checkSubmmit();
 addEvents();
+
 /* const loginButton = document.getElementById('botao-login');
 
 function checkLogin() {
