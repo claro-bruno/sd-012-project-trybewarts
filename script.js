@@ -104,7 +104,29 @@ function insertInputs() {
   paiHouse.insertBefore(inputEmail, selecSelect);
 }
 insertInputs();
-// Ferificar o footer e dar push hoje
+// Precisa de correção 18
+
+function checkToSend() {
+  const send = document.querySelector('#submit-btn');
+  const termos = document.querySelector('#agreement');
+  if (termos.checked === true) {
+    send.disabled = true;
+  }
+}
+// Precisa de correção 18
+function createBttnSend() {
+  const divBttnLabel = document.querySelector('#divBttnLabel');
+  const bttnSend = document.createElement('button');
+  bttnSend.type = 'submit';
+  bttnSend.id = 'submit-btn';
+  bttnSend.disable = true;
+  bttnSend.innerHTML = 'Enviar';
+  bttnSend.disabled = true;
+  bttnSend.addEventListener('click', checkToSend);
+  divBttnLabel.appendChild(bttnSend);
+}
+createBttnSend();
+
 function footer() {
   const createFooter = document.createElement('footer');
   const createP = document.createElement('p');
