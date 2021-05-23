@@ -88,8 +88,32 @@ main {
   flex-grow: 2;
 }
 
+#divOpcoes {
+  display: flex;
+  justify-content: space-between;
+}
+
 #divFamily {
   display: flex;
   flex-direction: column;
   padding: 1%;
+  width: 300px;
 }
+
+#label-family {
+  margin-bottom: 10px;
+}
+
+#label-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+#divChecks {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  justify-content: space-between;
+}
+
