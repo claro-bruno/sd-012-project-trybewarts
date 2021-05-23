@@ -82,22 +82,27 @@ function inserImageLogo() {
 }
 inserImageLogo();
 
+const form1 = document.querySelectorAll('form')[1];
+const paiHouse = document.querySelector('#house-container div');
+const selecSelect = document.querySelector('#house');
+const inputName = document.createElement('input');
+const inputLastName = document.createElement('input');
+const inputEmail = document.createElement('input');
+const createDiv = document.createElement('div');
+
 function insertInputs() {
-  const form1 = document.querySelectorAll('form')[1];
-  const inputName = document.createElement('input');
-  const inputLastName = document.createElement('input');
-  const inputEmail = document.createElement('input');
+  form1.appendChild(createDiv);
   inputName.id = 'input-name';
   inputName.type = 'text';
   inputName.placeholder = 'Nome';
-  form1.appendChild(inputName);
+  createDiv.appendChild(inputName);
   inputLastName.id = 'input-lastname';
   inputLastName.type = 'text';
   inputLastName.placeholder = 'Sobrenome';
-  form1.appendChild(inputLastName);
+  createDiv.appendChild(inputLastName);
   inputEmail.id = 'input-email';
   inputEmail.type = 'text';
   inputEmail.placeholder = 'Email';
-  form1.appendChild(inputEmail);
+  paiHouse.insertBefore(inputEmail, selecSelect);
 }
 insertInputs();
