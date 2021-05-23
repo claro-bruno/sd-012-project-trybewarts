@@ -14,5 +14,16 @@ botaoEntrar.addEventListener('click', validate);
 
 // btn enviar inicialmente desabilitado //
 const btnEnviar = document.getElementById('submit-btn');
-
 btnEnviar.disabled = true;
+
+// feito com ajuda da repositório do colega Max alves.
+const checkbox = document.getElementById('agreement');
+
+function enableButton(event) {
+  if (event.target.checked) {
+    btnEnviar.disabled = false;
+  } else {
+    btnEnviar.disabled = true;
+  }
+}
+checkbox.addEventListener('click', enableButton);
