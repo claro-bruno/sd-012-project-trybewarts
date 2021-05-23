@@ -1,6 +1,9 @@
 body {
   margin: 0;
   background-color: rgb(240, 235, 235);
+  font-family: Tangerine, cursive;
+  font-size: 25px;
+  font-weight: 700;
 }
 
 .header {
@@ -26,6 +29,7 @@ header h1 {
   color: white;
   font-family: EG Dragon Caps, sans-serif;
   font-weight: 300;
+  font-size: 30px;
 }
 
 #botaoLogar {
