@@ -15,7 +15,10 @@ const checkzinho = document.getElementsByClassName('abriu')[0];
 
 function clickbait() {
   const botaocheck = document.querySelector('.fechou');
-  botaocheck.disabled = false;
+  botaocheck.disabled = false
+  if(botaocheck.disabled == false) {
+    botaocheck.style.backgroundColor = 'slateblue';
+  }
 }
 
 checkzinho.addEventListener('click', clickbait);
