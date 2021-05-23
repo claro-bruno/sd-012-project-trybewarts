@@ -125,3 +125,16 @@ main {
   display: flex;
   justify-content: center;
 }
+
+footer {
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(61, 66, 70);
+  border-top: 2px rgb(68, 68, 68) solid;
+  padding: 10px;
+}
+
+#text-footer {
+  margin: 0;
+}
