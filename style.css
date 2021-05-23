@@ -149,6 +149,9 @@ hr {
   justify-content: center;
   background-color: dimgrey;
   padding: 8px;
+  bottom: 0;
+  position: fixed;
+  width: 100vw;
 }
 
 #textarea {
