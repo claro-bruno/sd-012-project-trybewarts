@@ -6,7 +6,7 @@
 
 body {
   background-color: lavender;
-  font-family: 'Mate SC', serif;
+  font-family: Mate SC, serif;
 }
 
 body h1 {
@@ -38,7 +38,6 @@ body h1 {
 .trybewarts-login {
   display: flex;
   margin-right: 150px;
-  /* width: 675px; */
 }
 
 .trybewarts-login input {
@@ -47,7 +46,21 @@ body h1 {
   padding: 14px;
   border-radius: 6px;
   border: 0;
-  font-family: 'Mate SC', serif;
+  font-family: Mate SC, serif;
+}
+
+.family-container input {
+  margin: 12px 0;
+}
+
+.input-row input {
+  padding: 8px;
+  width: 250px;
+  font-family: Mate SC, serif;
+  border-radius: 6px;
+  border: 0;
+  margin: 4px;
+  font-size: 16px;
 }
 
 .trybewarts-login input:focus {
@@ -61,8 +74,9 @@ body h1 {
   border: 0;
   background-color: slateblue;
   color: white;
-  font-family: 'Mate SC', serif;
-  font-weight: bold;
+  font-family: Mate SC, serif;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 main {
@@ -86,21 +100,11 @@ main {
   flex-direction: row;
 }
 
-.input-row input {
-  padding: 8px;
-  width: 250px;
-  font-family: 'Mate SC', serif;
-  border-radius: 6px;
-  border: 0;
-  margin: 4px;
-  font-size: 16px;
-}
-
 .input-row select {
   padding: 8px;
   width: 214px;
   border-radius: 6px;
-  font-family: 'Mate SC', serif;
+  font-family: Mate SC, serif;
   font-size: 16px;
   background-color: white;
 }
@@ -116,10 +120,6 @@ hr {
 
 .family-container {
   margin-right: 48px;
-}
-
-.family-container input {
-  margin: 12px 0;
 }
 
 .subject-container {
@@ -173,4 +173,7 @@ hr {
   border: 0;
   border-radius: 6px;
   max-width: 530px;
+  cursor: pointer;
+  font-family: Mate SC, serif;
+  font-weight: 600;
 }
