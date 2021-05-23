@@ -53,7 +53,7 @@ textArea.addEventListener('keyup', counterTextArea);
 function valueList(nodeList) {
   let list = '';
   nodeList.forEach((node) => { list += `${node.value}, `; });
-  return list;
+  return list.substring(0, list.length - 2);
 }
 
 const saveData = () => {
