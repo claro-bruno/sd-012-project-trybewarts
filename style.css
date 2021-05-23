@@ -71,3 +71,16 @@ main {
 #input-lastname {
   flex-grow: 2;
 }
+
+#divEmailHouse {
+  display: flex;
+}
+
+#input-email {
+  flex-grow: 2;
+}
+
+#house {
+  flex-grow: 2;
+}
+
