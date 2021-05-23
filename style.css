@@ -19,10 +19,31 @@ body {
 
 header form {
   display: flex;
+  align-items: center;
 }
 
 header h1 {
   color: white;
+}
+
+#botaoLogar {
+  background-color: rgb(126, 52, 146);
+  color: white;
+  font-weight: 700;
+  border: solid 1px rgb(126, 52, 146);
+  border-radius: 10px;
+  height: 25px;
+  width: 120px;
+  cursor: pointer;
+}
+
+#botaoLogar:active {
+  border-radius: 10px;
+  border: solid 1px rgb(50, 167, 145);
+}
+
+#botaoLogar:hover {
+  opacity: 80%;
 }
 
 .input-text {
@@ -30,6 +51,10 @@ header h1 {
   height: 20px;
   border: white 2px solid;
   margin: 5px 2px;
+}
+
+.input-text:focus {
+  outline: none;
 }
 
 main {
@@ -119,6 +144,10 @@ main {
   resize: none;
   border: 1px rgb(172, 24, 172) solid;
   border-radius: 5px;
+}
+
+#textarea:focus {
+  outline: none;
 }
 
 #label-infos {
