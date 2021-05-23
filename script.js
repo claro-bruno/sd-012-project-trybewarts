@@ -11,3 +11,8 @@ function validate() {
 }
 botaoEntrar.addEventListener('click', validate);
 // validate();
+
+// btn enviar inicialmente desabilitado //
+const btnEnviar = document.getElementById('submit-btn');
+
+btnEnviar.disabled = true;
