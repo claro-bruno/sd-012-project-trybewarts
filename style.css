@@ -185,6 +185,10 @@ Gerador de imagem com as letras do HarryPotter */
   border-radius: 5px;
 }
 
+#submit-btn:disabled {
+  background-color: gray;
+}
+
 .nome {
   text-align: center;
   background-color: rgba(75, 0, 130, 0.3);

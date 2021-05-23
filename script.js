@@ -13,13 +13,15 @@ function validateLogin() {
 inputButton.addEventListener('click', validateLogin);
 
 // requisito 18 add evento ao checkbox
+let statusButton = document.getElementById('agreement');
+const status = document.getElementById('submit-btn');
 function buttonSubmit(event) {
-  const statusButton = event.target.checked;
-  const status = document.getElementById('submit-btn');
-  if (statusButton === true) {
+  statusButton = event.target.checked;
+  if (statusButton === true && status.disabled === true) {
     status.disabled = false;
-  } else {
-    status.enable = true;
+  }
+  if (statusButton === false && status.disabled === false) {
+    status.disabled = true;
   }
 }
 
