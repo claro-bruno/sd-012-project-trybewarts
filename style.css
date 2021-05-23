@@ -98,6 +98,11 @@ Gerador de imagem com as letras do HarryPotter */
   background-color: rgba(128, 128, 128, 0.7);
 }
 
+h4 {
+  margin-top: 15px;
+  font-style: italic;
+}
+
 #evaluation-form {
   display: flex;
   width: 675px;
@@ -141,7 +146,6 @@ Gerador de imagem com as letras do HarryPotter */
 
 .radio-buttons {
   display: flex;
-  align-items: flex-start;
   flex-flow: column nowrap;
 }
 
@@ -157,7 +161,7 @@ Gerador de imagem com as letras do HarryPotter */
 }
 
 .section-buttons div {
-  width: 40%;
+  width: 80%;
 }
 
 .content {
@@ -169,11 +173,19 @@ Gerador de imagem com as letras do HarryPotter */
 .radios {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  width: 90%;
+  margin: 15px 0;
+}
+
+.radios input {
+  margin-left: 10px;
 }
 
 .infos {
   display: flex;
   flex-direction: row;
+  margin: 15px 0;
 }
 
 #submit-btn {
@@ -181,6 +193,7 @@ Gerador de imagem com as letras do HarryPotter */
   color: whitesmoke;
   width: 80%;
   border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 #submit-btn:disabled {
@@ -209,7 +222,27 @@ Gerador de imagem com as letras do HarryPotter */
   margin-bottom: 15px;
 }
 
+.radios-family {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+}
+
 .checks {
   display: flex;
   flex-direction: column;
+}
+
+.checks-skills {
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+}
+
+.checks-skills label {
+  margin-right: 15px;
+}
+
+#counter {
+  margin-left: 5px;
 }

@@ -49,30 +49,40 @@
               <h4 id="label-family">Qual sua família?</h4>
               <br>
               <div class="radiosform">
-                <input type="radio" name="family" id="frontend" value="Frontend">
-                <label for="frontend">Família Frontend</label>
-                <input type="radio" name="family" id="backend" value="Backend">
-                <label for="backend">Família Backend</label>
-                <input type="radio" name="family" id="fullStack" value="FullStack">
-                <label for="fullStack">Família FullStack</label>
+                <div class="radios-family">
+                  <input type="radio" name="family" id="frontend" value="Frontend">
+                  <label for="frontend">Família Frontend</label>
+                </div>
+                <div class="radios-family">
+                  <input type="radio" name="family" id="backend" value="Backend">
+                  <label for="backend">Família Backend</label>
+                </div>
+                <div class="radios-family">
+                  <input type="radio" name="family" id="fullStack" value="FullStack">
+                  <label for="fullStack">Família FullStack</label>
+                </div>
               </div>	
             </div>
             <div class="checkbox-buttons">
               <h4 id="label-content">Qual conteúdo você está com mais vontade de aprender?</h4>
               <div class="checks">
-                <input type="checkbox" id="HoFs" value="HoFs" class="subject" name="techs">
-                <label for="HoFs">HoFs</label>
-                <input type="checkbox" id="Jest" value="Jest" class="subject" name="techs">
-                <label for="Jest">Jest</label> 
-                <input type="checkbox" id="Promises" value="Promises" class="subject" name="techs">
-                <label for="Promises">Promises</label>                
-                <input type="checkbox" id="React" value="React" class="subject" name="techs">
-                <label for="React">React</label>
-                <input type="checkbox" id="SQL" value="SQL" class="subject" name="techs">
-                <label for="SQL">SQL</label>
-                <input type="checkbox" id="Python" value="Python" class="subject" name="techs">
-                <label for="Python">Python</label>
-                
+                <br>
+                <div class="checks-skills">
+                  <input type="checkbox" id="HoFs" value="HoFs" class="subject" name="techs">
+                  <label for="HoFs">HoFs</label>
+                  <input type="checkbox" id="Jest" value="Jest" class="subject" name="techs">
+                  <label for="Jest">Jest</label> 
+                  <input type="checkbox" id="Promises" value="Promises" class="subject" name="techs">
+                  <label for="Promises">Promises</label>                
+                </div>
+                <div class="checks-skills">
+                  <input type="checkbox" id="React" value="React" class="subject" name="techs">
+                  <label for="React">React</label>
+                  <input type="checkbox" id="SQL" value="SQL" class="subject" name="techs">
+                  <label for="SQL">SQL</label>
+                  <input type="checkbox" id="Python" value="Python" class="subject" name="techs">
+                  <label for="Python">Python</label>
+                </div>
               </div>
             </div>
           </section>
@@ -102,9 +112,9 @@
           <label for="">10</label>
         </div>
       <label for="textarea"  class="textarea">Deixe seu comentário:
-        <textarea name="comentario" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+        <textarea name="comentario" id="textarea" cols="30" rows="10" maxlength="500" ></textarea>
+        <span id="counter">500</span>
       </label>
-      <span id="counter">500</span>
       <div class="infos">
         <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
         <input type="checkbox" id="agreement">
