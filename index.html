@@ -22,26 +22,46 @@
       </form>
     </header>
 
-  <main>
-    <form action="" method="get" id="evaluation-form">
+    <main>
+      <form action="" method="get" id="evaluation-form">
         <div id="divNomeSobrenome">
-            <input id="input-name" type="text" placeholder="Nome">
-            <input id="input-lastname" type="text" placeholder="Sobrenome">
+          <input id="input-name" type="text" placeholder="Nome" />
+          <input id="input-lastname" type="text" placeholder="Sobrenome" />
         </div>
         <div id="divEmailHouse">
-          <input id="input-email" type="email" placeholder="Email">
+          <input id="input-email" type="email" placeholder="Email" />
           <select name="Casa" id="house">
-              <option disabled selected>Escolha sua casa</option>
-              <option value="Gitnória" id="gitnoria-house">Gitnória</option>
-              <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
-              <option value="Corvinode" id="corvinode-house">Corvinode</option>
-              <option value="Pytherina" id="pytherina-house">Pytherina</option>
+            <option disabled selected>Escolha sua casa</option>
+            <option value="Gitnória" id="gitnoria-house">Gitnória</option>
+            <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+            <option value="Corvinode" id="corvinode-house">Corvinode</option>
+            <option value="Pytherina" id="pytherina-house">Pytherina</option>
           </select>
         </div>
-    </form>
-    <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts a direita">
-  </main>
+        <hr />
+        <label id="label-family" for="family"
+          ><b>Qual a sua família?</b>
+          <label for="Frontend">
+            <input name="family" type="radio" value="Frontend" />Família
+            Frontend</label
+          >
+          <label for="Backend">
+            <input name="family" type="radio" value="Backend" />Família
+            Backend</label
+          >
+          <label for="FullStack">
+            <input name="family" type="radio" value="FullStack" />Família
+            FullStack</label
+          >
+        </label>
+      </form>
 
+      <img
+        id="trybewarts-forms-logo"
+        src="images/trybewarts-colored.svg"
+        alt="trybewarts a direita"
+      />
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

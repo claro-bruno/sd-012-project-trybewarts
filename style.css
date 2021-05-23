@@ -74,13 +74,20 @@ main {
 
 #divEmailHouse {
   display: flex;
+  margin-bottom: 10px;
 }
 
 #input-email {
   flex-grow: 2;
+  margin-right: 10px;
 }
 
 #house {
   flex-grow: 2;
 }
 
+#label-family {
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
