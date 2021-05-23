@@ -96,6 +96,8 @@ main {
 
 #container-rate {
   display: flex;
+  justify-content: space-evenly;
+  margin: 2px 25px;
 }
 
 #label-rate {
