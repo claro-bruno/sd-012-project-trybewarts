@@ -13,27 +13,27 @@
     <img  class= "trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logo TrybeWarts">
     <h1 id="trybewarts-header-title">Trybewarts</h1>
     <form class = "trybewarts-login" action="" method="get">
-        <input type="email" name="email" id="email" placeholder="Login">
-        <input type="password" name="senha" id="senha" placeholder="Senha">
-        <button id='botao' type="submit">Logar</button>
+        <input class="form-control" type="email" name="email" id="email" placeholder="Login">
+        <input class="form-control" type="password" name="senha" id="senha" placeholder="Senha">
+        <button class='btn btn-primary' id='botao' type="submit">Logar</button>
     </form>
 </header>
 <main>
     <form id="evaluation-form" action="" method="get">
-        <div id="complete-name">
-            <input type="text" name="nome" id="input-name" placeholder="Nome">
-            <input type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
+        <div class="margin-div" id="complete-name">
+            <input class="form-control" type="text" name="nome" id="input-name" placeholder="Nome">
+            <input class="form-control" type="text" name="sobrenome" id="input-lastname" placeholder="Sobrenome">
         </div>
-        <div id="adress">
-            <input type="email" name="email-cadastro" id="input-email" placeholder="Email">
-            <select name="Casa" id="house">
+        <div class="margin-div" id="adress">
+            <input class="form-control" type="email" name="email-cadastro" id="input-email" placeholder="Email">
+            <select class="form-select" name="Casa" id="house">
                 <option id="gitnoria-house" value="Gitnória">Gitnória</option>
                 <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
                 <option id="corvinode-house" value="Corvinode">Corvinode</option>
                 <option id="pytherina-house" value="Pytherina">Pytherina</option>
             </select>
         </div>
-        <div class ="radio-input"> 
+        <div class ="radio-input margin-div"> 
             <label id="label-family" for="">Qual sua família?</label>
             <div class="form-check form-switch">
                 <label class="form-check-label" for="frontend">Frontend</label>
@@ -48,7 +48,7 @@
                 <input class="form-check-input" type="radio" name="family" id="fullstack" value="FullStack">
             </div>
         </div>
-        <div class="checkbox-input">
+        <div class="checkbox-input margin-div">
             <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
             <div>
                 <label for="hofs">HoFs</label>
@@ -65,7 +65,7 @@
                 <input class="subject" type="checkbox" name="content" id="phyton" value="Python">
             </div>
         </div>
-        <div id="rate-div">
+        <div class="margin-div" id="rate-div">
             <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
             <div>
                 <div class="form-check form-switch">
@@ -112,15 +112,15 @@
                 </div>
             </div>
         </div>
-        <div id="text-area-div">
+        <div class="margin-div" id="text-area-div">
             <label for="comentario" class="textarea">Deixe seu comentário:</label>
             <textarea name="comentario" id="comentario" cols="30" rows="5" maxlength="500"></textarea>
         </div>
-        <div id="agree">
+        <div class="margin-div" id="agree">
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
             <input type="checkbox" name="" id="agreement">
         </div>
-        <button id="submit-btn" type="submit" disabled>Enviar</button>
+        <button class='btn btn-success' id="submit-btn" type="submit" disabled>Enviar</button>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo trybeWarts">
 </main>
