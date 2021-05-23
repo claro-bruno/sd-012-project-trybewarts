@@ -82,6 +82,10 @@ main {
   justify-content: space-evenly;
 }
 
+#container-radio label{
+  margin: 5px;
+}
+
 #container-checkBox {
   display: flex;
   flex-direction: column;
@@ -92,7 +96,7 @@ main {
 .container-skills {
   display: flex;
   justify-content: space-around;
-  margin: 15px;
+  margin: 10px 15px;
 }
 
 #container-rate {
@@ -106,7 +110,7 @@ main {
  flex-direction: column;
  justify-content: center;
  text-align: center;
- margin: 25px;
+ margin: 20px 25px;
 }
 
 #textarea {
