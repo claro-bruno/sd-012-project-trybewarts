@@ -68,7 +68,7 @@ footer p {
   display: flex;
 }
 
-#input-name, #input-lastname, #input-email, #house, #house-label {
+#input-name , #input-lastname , #input-email , #house , #house-label {
   margin: 10px;
 }
 
