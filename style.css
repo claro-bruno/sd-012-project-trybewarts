@@ -61,6 +61,7 @@ main {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 10px;
+  padding: 1%;
 }
 
 #input-name {
@@ -75,6 +76,7 @@ main {
 #divEmailHouse {
   display: flex;
   margin-bottom: 10px;
+  padding: 1%;
 }
 
 #input-email {
@@ -86,7 +88,7 @@ main {
   flex-grow: 2;
 }
 
-#label-family {
+#divFamily {
   display: flex;
   flex-direction: column;
   padding: 1%;
