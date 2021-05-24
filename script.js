@@ -61,8 +61,9 @@ function replaceHouseElement() {
 }
 
 function replaceRateElement() {
+  const rate = document.querySelector('input[name="rate"]:checked');
   const rateParagraph = document.createElement('p');
-  rateParagraph.innerHTML = `Avaliação: ${getRadioValue('.eval')}`;
+  rateParagraph.innerHTML = `Avaliação: ${rate.value}`;
   while (evaluation.firstChild) {
     evaluation.removeChild(evaluation.firstChild);
   }
@@ -71,23 +72,24 @@ function replaceRateElement() {
 
 function replaceFamilyElement() {
   const family = document.querySelector('input[name="family"]:checked');
-  const familyCointainer = family.parentNode;
+  const familyContainer = document.querySelector('.family');
   const familyParagraph = document.createElement('p');
   familyParagraph.innerHTML = `Família: ${family.value}`;
-  while (familyCointainer.firstChild) {
-    familyCointainer.removeChild(familyCointainer.firstChild);
+  while (familyContainer.firstChild) {
+    familyContainer.removeChild(familyContainer.firstChild);
   }
-  familyCointainer.appendChild(familyParagraph);
+  familyContainer.appendChild(familyParagraph);
 }
 
 function replaceContentElement() {
   const content = document.querySelectorAll('input[class=subject]:checked');
-  const contentContainer = content[0].parentNode.parentNode;
+  const contentContainer = document.querySelector('#content-container');
   const contentParagraph = document.createElement('p');
   const checkedArray = [];
   for (let tech = 0; tech < content.length; tech += 1) {
     checkedArray.push(content[tech].value);
   }
+  console.log(checkedArray);
   while (contentContainer.firstChild) {
     contentContainer.removeChild(contentContainer.firstChild);
   }
@@ -101,7 +103,7 @@ function replaceCommentElement() {
   while (commentContainer.firstChild) {
     commentContainer.removeChild(commentContainer.firstChild);
   }
-  commentParagraph.innerHTML = `Observações: ${comment.value} `;
+  commentParagraph.innerHTML = `Observações: ${comment.value}`;
   commentContainer.appendChild(commentParagraph);
 }
 
@@ -120,23 +122,3 @@ submitButton.addEventListener('click', () => {
 
   replaceCommentElement();
 });
-
-//   const families = document.querySelectorAll('.input-family')
-//   for (let family of families) {
-//       if (families[family].checked) {
-//         const familyParagraph = document.createElement('p');
-//       }
-
-//   }
-
-// const evaluationNote = document.querySelector('#label-rate');
-// for (let note = 1; note <= 10; note += 1) {
-//     let input = document.createElement('input');
-//     let label = document.createElement('label');
-//     input.type = 'radio';
-//     input.name = 'rate';
-//     input.value = note;
-//     label.innerText = note;
-//     evaluationNote.appendChild(label);
-//     evaluationNote.appendChild(input);
-// }
