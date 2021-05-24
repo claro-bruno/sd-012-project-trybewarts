@@ -25,8 +25,8 @@
 
   </header><!--Fim do header-->
 
-<main class="container row ml-auto mr-auto mt-5 d-flex justify-content-center"><!-- Início seção home -->
-  <form id="evaluation-form col-md-6">
+<main class="container row ml-auto mr-auto mt-5 d-flex justify-content-between"><!-- Início seção home -->
+  <form id="evaluation-form col-md-5">
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="input-name">Nome</label>
@@ -54,9 +54,8 @@
       </div>
     </div>
     <hr>
-    <div class="row">
-     <section class="family-content">
-        <div class="form-group family-content" id="label-family">
+      <div class="row">
+        <div class="form-group family-content col-md-5" id="label-family">
           <label name="family">Qual sua família?</label>
           <div>
             <input type="radio" name="family" id="frontend" value="Frontend">
@@ -65,13 +64,13 @@
           <div>
             <input type="radio" name="family" id="backend" value="Backend">
             <label for="backend">Família Backend</label>
-          </div>
+         </div>
           <div>
             <input type="radio" name="family" id="fullstack" value="FullStack">
             <label for="fullstack">Família Fullstack</label>
           </div>
         </div>
-        <div id="label-content" class="form-group"> <!--requisito 14, também falta ajuste no css-->
+        <div id="label-content" class="form-group col-md-6"> <!--requisito 14, também falta ajuste no css-->
           <label name="subject">Qual conteúdo você está com mais vontade de aprender?</label> 
           <div class="form-group col-md-6">
             <label class="subject" for="hofs">HoFs</label>
@@ -98,9 +97,9 @@
             <input class="subject" type="checkbox" value="Python" id="python">
           </div>
         </div>
-      </div>
-     </section>
-      <hr>
+      </div> 
+    </div>
+    <hr>
       <div id="label-rate" class="form-row"> <!--requesito 14, poderia ter feito um for kk , mas só lembrei dps que terminei, posso fzer dps-->
         <span>Como você avalia a Trybewarts?</span>
         <div>
@@ -145,7 +144,7 @@
       <div>
         <div class="form-row">
           <label for="text-area" class="text-area form-label">Deixe seu comentário:</label>
-          <textarea form-control" id="text-area" rows="3" maxlength="500"></textarea>
+          <textarea form-control="" id="text-area" rows="3" maxlength="500"></textarea>
         </div>
       </div>
       <div class="form-group"> <!--só mudei o texto-->
@@ -156,7 +155,7 @@
         <button id="submit-btn" type="submit" class="btn btn-primary mt-3">Enviar</button>
       </div>
     </form>
-    <div class="col-md-6 d-none d-md-block">
+    <div class="col-md-5 d-none d-md-block">
       <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" class="img-fluid">
     </div>
   </main><!--/fim seção home -->
