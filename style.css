@@ -1,9 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 5px;
+  height: 10vh;
 }
 
 .trybewarts-header-logo {
@@ -19,6 +26,10 @@
 main {
   display: flex;
   padding: 20px;
+  height: 85vh;
+  justify-content: center;
+  font-size: 20px;
+  padding-top: 5%;
 }
 
 #evaluation-form {
@@ -27,8 +38,15 @@ main {
   width: 675px;
 }
 
+#evaluation-form h2 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 #conteiner-brasao {
   display: flex;
+  padding-left: 5%;
 
 }
 
@@ -38,10 +56,33 @@ main {
 
 .linha {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.linha input {
+  width: 49%;
+  border-radius: 5px;
+  height: 25px;
+}
+
+.house-conteiner {
+  width: 49%;
+}
+
+.house-conteiner select {
+  width: 85%;
+  border-radius: 5px;
+}
+
+.house-conteiner label {
+  width: 15%;
 }
 
 .horizonte {
   width: 100%;
+  margin: 10px 0;
 }
 
 #conteiner-maior {
@@ -62,10 +103,16 @@ main {
 
 #radio-conteiner {
   display: flex;
+  width: 50%;
 }
 
 .avaliador {
   display: flex;
+  width: 100%;
+}
+
+.avaliador label {
+  width: 50%;
 }
 
 #textarea {
@@ -75,12 +122,17 @@ main {
 
 #submit-btn {
   width: 100%;
+  font-size: 20px;
+  color: black;
+  background-color: green;
+  opacity: 0.5;
+  margin-top: 5px;
 }
 
 #rodape {
   background-color: rgb(50, 167, 145);
   text-align: center;
-  height: 50px;
+  height: 5vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,4 +140,14 @@ main {
 
 #counter {
   text-align: end;
+}
+
+#user-data {
+  display: flex;
+  background-color: lightpink;
+  padding: 20px;
+  font-size: 24px;
+  color: black;
+  flex-direction: column;
+  border: 1px solid black;
 }

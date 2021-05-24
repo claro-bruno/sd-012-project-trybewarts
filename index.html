@@ -4,86 +4,98 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Trybewarts Project</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header class="header">
       <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="logotipo">
       <h1 id="trybewarts-header-title">Trybewarts</h1>
       <div>
-      <form class="trybewarts-login" method="get">
-        <input id="email" type="email" name="email" placeholder="Login">
-        <input id="senha" type="password" name="password" placeholder="Senha">
-        <button id="botao" type="submit">Login</button>
-      </form>
-    </div>
+        <form class="trybewarts-login" method="get">
+          <input id="email" type="email" name="email" placeholder="Login">
+          <input id="senha" type="password" name="password" placeholder="Senha">
+          <button id="botao" type="submit">Login</button>
+        </form>
+      </div>
   </header>
+
   <main>
     <form id="evaluation-form">
+      <h2> Formulário </h2>
     <div class="linha">
       <input id="input-name" type="text" placeholder="Nome">
       <input id="input-lastname" type="text" name="Sobrenome" placeholder="Sobrenome">
     </div>
     <div class="linha">
       <input id="input-email" type="email" placeholder="Email">
-      <label for="house">Casa</label>
-      <select id="house" name="casa">
-        <option>Default</option>
-        <option id="gitnoria-house">Gitnória</option>
-        <option id="reactpuff-house">Reactpuff</option>
-        <option id="corvinode-house">Corvinode</option>
-        <option id="pytherina-house">Pytherina</option>
-      </select>
+      <div class="house-conteiner">
+        <label for="house">Casa</label>
+        <select id="house" name="casa">
+          <option>Default</option>
+          <option id="gitnoria-house">Gitnória</option>
+          <option id="reactpuff-house">Reactpuff</option>
+          <option id="corvinode-house">Corvinode</option>
+          <option id="pytherina-house">Pytherina</option>
+        </select>
+      </div>
     </div>
+
     <hr class="horizonte">
-  <div id="conteiner-maior">
-    <div id="family-conteiner">
-      <label id="label-family">Qual sua família?</label><br>
 
-      <label for="Frontend">
-        <input id="Frontend"type="radio" name="family" value="Frontend">Frontend
-      </label>
+    <div id="conteiner-maior">
+      <div id="family-conteiner">
+        <label id="label-family">Qual sua família?</label><br>
 
-      <label for="Backend">
-        <input id="Backend" type="radio" name="family" value="Backend">Backend
-      </label>
+        <label for="Frontend">
+          <input id="Frontend"type="radio" name="family" value="Frontend">Frontend
+        </label>
 
-      <label for="FullStack">
-        <input id="FullStack" type="radio" name="family" value="FullStack">FullStack
-      </label>
+        <label for="Backend">
+          <input id="Backend" type="radio" name="family" value="Backend">Backend
+        </label>
+
+        <label for="FullStack">
+          <input id="FullStack" type="radio" name="family" value="FullStack">FullStack
+        </label>
+      </div>
+
+      <div id="family-conteiner2">
+        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
+        <div>
+          <input class="subject" type="checkbox" value="HoFs" class="subject">Hofs
+          <input class="subject" type="checkbox" value="Jest" class="subject">Jest
+          <input class="subject" type="checkbox" value="Promises" class="subject">Promises
+          <input class="subject" type="checkbox" value="React" class="subject">React
+          <input class="subject" type="checkbox" value="SQL" class="subject">SQL
+          <input class="subject" type="checkbox" value="Python" class="subject">Python
+        </div>
+      </div>
     </div>
-    <div id="family-conteiner2">
-      <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
-      <div>
-      <input type="checkbox" value="HoFs" class="subject">Hofs
-      <input type="checkbox" value="Jest" class="subject">Jest
-      <input type="checkbox" value="Promises" class="subject">Promises
-      <input type="checkbox" value="React" class="subject">React
-      <input type="checkbox" value="SQL" class="subject">SQL
-      <input type="checkbox" value="Python" class="subject">Python
-    </div>
-    </div>
-  </div>
-  <hr class="horizonte">
-  <div class="avaliador">
-    <label id="label-rate">Como você avalia a Trybewarts?</label>
-  <div id="radio-conteiner">
-  </div>
-  </div>
 
-  <div>
-    <label class="textarea">Deixe seu comentário:</label>
-    <textarea id="textarea" maxlength="500"></textarea>
-    <p id="counter">500</p>
-  </div>
+    <hr class="horizonte">
 
-  <div>
-    <label id="label-infos">Você concorda com o uso das informações acima?
-    <input id="agreement"type="checkbox"></label>
-  </div>
+    <div class="avaliador">
+      <label id="label-rate">Como você avalia a Trybewarts?</label>
+      <div id="radio-conteiner">
+      </div>
+    </div>
+
+    <hr class="horizonte">
+
+    <div>
+      <label class="textarea">Deixe seu comentário:</label>
+      <textarea id="textarea" maxlength="500"></textarea>
+      <p id="counter">500</p>
+    </div>
+
+    <div>
+      <label id="label-infos">Você concorda com o uso das informações acima?
+        <input id="agreement"type="checkbox"></label>
+      </div>
   
-  <button id="submit-btn"type="submit">Enviar</button>
+    <button id="submit-btn"type="submit">Enviar</button>
     </form>
 
     <div id="conteiner-brasao">
