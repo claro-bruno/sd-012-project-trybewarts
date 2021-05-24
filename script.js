@@ -9,6 +9,7 @@ function alertClick() {
     alert('Login ou senha inválidos.');
   }
 }
+
 clickButton.addEventListener('click', alertClick);
 
 const send = document.querySelector('#submit-btn');
