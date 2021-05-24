@@ -76,14 +76,18 @@ function replaceContentElement() {
   const content = document.querySelectorAll('input[class=subject]:checked');
   const contentContainer = document.querySelector('#content-container');
   const contentParagraph = document.createElement('p');
-  const checkedArray = [];
-  for (let tech = 0; tech < content.length; tech += 1) {
-    checkedArray.push(content[tech].value);
+  let checkedArray = '';
+  for (let index = 0; index < content.length; index += 1) {
+    if (index === content.length - 1) {
+      checkedArray += `${content[index].value}`;
+    } else {
+      checkedArray += `${content[index].value}, `;
+    }
   }
   while (contentContainer.firstChild) {
     contentContainer.removeChild(contentContainer.firstChild);
   }
-  contentParagraph.innerHTML = `Matérias: ${checkedArray.join(', ')}"`;
+  contentParagraph.innerHTML = `Matérias: ${checkedArray}`;
   contentContainer.appendChild(contentParagraph);
 }
 
