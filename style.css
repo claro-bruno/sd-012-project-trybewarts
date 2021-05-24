@@ -6,6 +6,20 @@
   flex-direction: row;
 }
 
+.trybewarts-header-logo {
+  width: 50px;
+}
+
+h1 {
+  color: white;
+
+}
+
 .flex-container {
   display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
 }
