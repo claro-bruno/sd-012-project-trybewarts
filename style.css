@@ -14,6 +14,23 @@
   display: flex;
 }
 
+#email {
+  border-radius: 10px;
+  margin-right: 10px;
+  border: none;
+}
+
+#senha {
+  border-radius: 10px;
+  margin-right: 10px;
+  border: none;
+}
+
+#login-button {
+  border: none;
+  border-radius: 10px;
+}
+
 .main {
   display: flex;
 }
@@ -127,4 +144,18 @@
 
 .submit1 {
   display: flex;
+}
+
+.rodape {
+  background-color: rgb(73, 160, 41);
+  bottom: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.filho-rodape {
+  display: flex;
+  justify-content: center;
 }
