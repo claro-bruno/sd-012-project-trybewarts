@@ -45,7 +45,7 @@ function criaOpcaoCasa() {
     getHouse.appendChild(opcao);
   }
 }
-//---Botão radio familia---
+// ---Botão radio familia---
 // Cria a div dos radios
 function criaRadioContainer(nomeClasse, elementoConteiner) {
   const div = document.createElement('div');
@@ -54,7 +54,7 @@ function criaRadioContainer(nomeClasse, elementoConteiner) {
 }
 // Cria rotulo dos botão radio
 function criaLabelFamily(textoLabel) {
-  const div = document.querySelector(`'.' ${textoLabel}`);
+  const div = document.querySelector(`.${textoLabel}`);
   const label = document.createElement('label');
   label.setAttribute('for', textoLabel);
   label.innerText = textoLabel;
@@ -62,30 +62,30 @@ function criaLabelFamily(textoLabel) {
 }
 // Cria e adiciona os botões radio
 function criaRadioBotaoFamilia() {
-  for (const family of valoresFamily) {
-    criaRadioContainer(family.valor, getFamilyContainer);
-    const divRadio = document.querySelector(`.${family.valor}`);
+  for (let index = 0; index < valoresFamily.length; index += 1) {
+    criaRadioContainer(valoresFamily[index].valor, getFamilyContainer);
+    const divRadio = document.querySelector(`.${valoresFamily[index].valor}`);
     const radio = document.createElement('input');
     radio.setAttribute('type', 'radio');
-    radio.value = family.valor;
+    radio.value = valoresFamily[index].valor;
     radio.setAttribute('name', 'family');
-    radio.id = family.valor;
+    radio.id = valoresFamily[index].valor;
     divRadio.appendChild(radio);
-    criaLabelFamily(family.valor);
+    criaLabelFamily(valoresFamily[index].valor);
   }
 }
 // Criando checkbox
 function createListLearnTechnology() {
-  for (const item of itemLearnTechnology) {
-    criaRadioContainer(item.valor, getLearnTechnology);
-    const getDiv = document.querySelector(`.${item.valor}`);
+  for (let index = 0; index < itemLearnTechnology.length; index += 1) {
+    criaRadioContainer(itemLearnTechnology[index].valor, getLearnTechnology);
+    const getDiv = document.querySelector(`.${itemLearnTechnology[index].valor}`);
     const checkbox = document.createElement('input');
     checkbox.setAttribute('type', 'checkbox');
-    checkbox.setAttribute('value', item.valor);
+    checkbox.setAttribute('value', itemLearnTechnology[index].valor);
     checkbox.className = 'subject';
-    checkbox.id = item.valor;
+    checkbox.id = itemLearnTechnology[index].valor;
     getDiv.appendChild(checkbox);
-    criaLabelFamily(item.valor);
+    criaLabelFamily(itemLearnTechnology[index].valor);
   }
 }
 // criando avaliador de 1 a 10;
