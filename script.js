@@ -91,11 +91,12 @@ const capturaItens = () => {
 const criaParagrafo = () => {
   const paragrafo = document.createElement('p');
   const armazena = capturaItens();
+  const materias = armazena[5].join(', ');
   paragrafo.innerHTML = `Nome: ${armazena[0]} ${armazena[1]}<br>`;
   paragrafo.innerHTML += `Email: ${armazena[2]} <br>`;
   paragrafo.innerHTML += `Casa: ${armazena[3]}<br>`;
-  paragrafo.innerHTML += `Família: ${armazena[4]}<br>`;
-  paragrafo.innerHTML += `Matérias: ${armazena[5]}<br>`;
+  paragrafo.innerHTML += `Família: ${armazena[4]} <br>`;
+  paragrafo.innerHTML += `Matérias: ${materias}<br>`;
   paragrafo.innerHTML += `Avaliação: ${armazena[6]}<br>`;
   paragrafo.innerHTML += `Observações: ${armazena[7]}<br>`;
 
