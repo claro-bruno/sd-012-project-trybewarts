@@ -86,9 +86,15 @@ function test(event) {
   const subjectValue = getCheckedSubjects();
   const obj = getFormItems();
 
-  document.getElementById('evaluation-form').innerHTML = `<p>Nome: ${obj.name} ${obj.lastname}<br>
-  Email: ${obj.email} <br>Casa: ${obj.house} <br>Família: ${familyValue}<br>
-  Matérias: ${subjectValue} <br>Avaliação: ${rateValue} <br>Observações: ${obj.obs}</p>`;
+  document.getElementById('evaluation-form').innerHTML = `
+  <p>Nome: ${obj.name} ${obj.lastname}</p>
+  <p>Email: ${obj.email}</p>
+  <p>Casa: ${obj.house}</p>
+  <p>Família: ${familyValue}</p>
+  <p>Matérias: ${subjectValue}</p>
+  <p>Avaliação: ${rateValue}</p>
+  <p>Observações: ${obj.obs}</p>
+  `;
 }
 
 submitButton.addEventListener('click', test);
