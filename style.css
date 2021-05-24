@@ -1,7 +1,8 @@
 .header {
   display: flex;
-  background-color: rgb(50, 167, 145); 
+  background-color: rgb(50, 167, 145);
 }
+
 .img-container {
   display: flex;
   align-items: center;
@@ -15,6 +16,7 @@
 .trybewarts-login {
   display: flex;
 }
+
 .form-line {
   display: flex;
   margin-bottom: 10px;
