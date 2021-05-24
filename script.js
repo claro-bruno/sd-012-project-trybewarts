@@ -58,13 +58,15 @@ textarea.addEventListener('keyup', countCharacters);
 
 function getCheckedSubjects() {
   const checkboxes = document.getElementsByName('subject');
-  let checkboxesValues = '';
+  const checkboxesArray = [];
 
   for (let index = 0; index < checkboxes.length; index += 1) {
     if (checkboxes[index].checked) {
-      checkboxesValues += ` ${checkboxes[index].value}`;
+      checkboxesArray.push(checkboxes[index].value);
     }
   }
+
+  const checkboxesValues = checkboxesArray.join(', ');
   return checkboxesValues;
 }
 
