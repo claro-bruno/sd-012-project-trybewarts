@@ -11,7 +11,7 @@
 
 ---
 
-**Nota**: /ESCREVAM SUA NOTA AQUI/
+**Nota**: 8
 
 ---
 
@@ -19,11 +19,11 @@
 
 ---
 
-**Observações**: /ESCREVAM SUAS OBSERVAÇÕES AQUI/
+**Observações**: No projeto Trybewarts, requisito 21, achei a descrição da tarefa confusa... não consegui entender o que exatamente está sendo pedido. Talvez um gif animado do resultado esperado ajudasse a entender o que é pedido. Uma descrição mais detalhada também ajudaria.
 
 ---
 
-**Pessoas integrantes da dupla**: /ESCREVAM SEUS NOMES AQUI/
+**Pessoas integrantes da dupla**: Victor Emmanuel, Paulo Michael Schweigert Pereira
 
 ---
 
