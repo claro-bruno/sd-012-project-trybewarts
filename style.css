@@ -1,3 +1,7 @@
+body {
+  background-color: rgb(235, 234, 234);
+}
+
 .header {
   background-color: rgb(50, 167, 145);
   display: flex;
@@ -29,6 +33,33 @@
 #login-button {
   border: none;
   border-radius: 10px;
+}
+
+#input-name {
+  border-radius: 10px;
+  border: solid 1px black;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+#input-lastname {
+  border-radius: 10px;
+  border: solid 1px black;
+  margin-top: 5px;
+}
+
+#input-email {
+  border-radius: 10px;
+  border: solid 1px black;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+#house {
+  border-radius: 10px;
+  border: solid 1px black;
+  margin-right: 5px;
+  margin-top: 5px;
 }
 
 .main {
@@ -123,7 +154,7 @@
 #textarea {
   resize: none;
   display: flex;
-
+  border-radius: 10px;
 }
 
 .textarea {
