@@ -27,5 +27,5 @@ const textLimitCounter = () => {
     const maxLength = 500;
     document.getElementById('textarea').setAttribute('maxlength', maxLength);
     counter.innerHTML = 500 - textarea.value.length;
-};
+}
 textarea.addEventListener('keyup', textLimitCounter);
