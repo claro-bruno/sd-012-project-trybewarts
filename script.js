@@ -25,20 +25,20 @@ const itemLearnTechnology = [
   { valor: 'SQL' },
   { valor: 'Python' },
 ];
-let getToAssess = document.querySelector(".to-assess");
+let getToAssess = document.querySelector('.to-assess');
 function verificarLogin() {
-  let emailCerto = "tryber@teste.com";
-  let passwordCerto = "123456";
+  let emailCerto = 'tryber@teste.com';
+  let passwordCerto = '123456';
   if (getEmail.value === emailCerto && getPassword.value === passwordCerto) {
-    alert("Olá, Tryber!");
+    alert('Olá, Tryber!');
   } else {
-    alert("Login ou senha inválidos.");
+    alert('Login ou senha inválidos.');
   }
 }
 // Lista de seleção casa
 function criaOpcaoCasa() {
   for (const tipo of tiposCasa) {
-    const opcao = document.createElement("option");
+    const opcao = document.createElement('option');
     opcao.value = tipo.valor;
     opcao.innerText = tipo.valor;
     opcao.id = tipo.id;
@@ -48,14 +48,14 @@ function criaOpcaoCasa() {
 //---Botão radio familia---
 // Cria a div dos radios
 function criaRadioContainer(nomeClasse, elementoConteiner) {
-  let div = document.createElement("div");
+  let div = document.createElement('div');
   div.className = nomeClasse;
   elementoConteiner.appendChild(div);
 }
 // Cria rotulo dos botão radio
 function criaLabelFamily(textoLabel) {
   let div = document.querySelector("." + textoLabel);
-  let label = document.createElement("label");
+  let label = document.createElement('label');
   label.setAttribute('for', textoLabel);
   label.innerText = textoLabel;
   div.appendChild(label);
@@ -65,10 +65,10 @@ function criaRadioBotaoFamilia() {
   for (const family of valoresFamily) {
     criaRadioContainer(family.valor, getFamilyContainer);
     let divRadio = document.querySelector(`.${family.valor}`);
-    let radio = document.createElement("input");
-    radio.setAttribute("type", "radio");
+    let radio = document.createElement('input');
+    radio.setAttribute('type', 'radio');
     radio.value = family.valor;
-    radio.setAttribute("name", "family");
+    radio.setAttribute('name', 'family');
     radio.id = family.valor;
     divRadio.appendChild(radio);
     criaLabelFamily(family.valor);
@@ -79,10 +79,10 @@ function createListLearnTechnology() {
   for (const item of itemLearnTechnology) {
     criaRadioContainer(item.valor, getLearnTechnology);
     let getDiv = document.querySelector(`.${item.valor}`);
-    let checkbox = document.createElement("input");
-    checkbox.setAttribute("type", "checkbox");
-    checkbox.setAttribute("value", item.valor);
-    checkbox.className = "subject";
+    let checkbox = document.createElement('input');
+    checkbox.setAttribute('type', 'checkbox');
+    checkbox.setAttribute('value', item.valor);
+    checkbox.className = 'subject';
     checkbox.id = item.valor;
     getDiv.appendChild(checkbox);
     criaLabelFamily(item.valor);
@@ -109,10 +109,13 @@ function createToAssess() {
     creatLabel(index);
   }
 }
+
 getButtunLogin.addEventListener('click', verificarLogin);
+
 getCheckbox.addEventListener('click', () => {
   getButtonSubmit.disabled = !getCheckbox.checked;
 });
+
 createToAssess();
 createListLearnTechnology();
 criaOpcaoCasa();
