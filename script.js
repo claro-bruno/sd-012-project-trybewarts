@@ -89,7 +89,6 @@ function replaceContentElement() {
   for (let tech = 0; tech < content.length; tech += 1) {
     checkedArray.push(content[tech].value);
   }
-  console.log(checkedArray);
   while (contentContainer.firstChild) {
     contentContainer.removeChild(contentContainer.firstChild);
   }
