@@ -20,10 +20,6 @@ function validateLogin(e) {
 }
 loginSubmitBtn.addEventListener('click', validateLogin);
 
-function uptdateCount() {
-  counter.innerHTML = 500 - textArea.value.length;
-}
-
 function enableSubmitBtn() {
   if (agreeCheckBox.checked === true) {
     submitBtn.disabled = false;
@@ -33,5 +29,10 @@ function enableSubmitBtn() {
     submitBtn.style.display = 'none';
   }
 }
+
+function uptdateCount() {
+  counter.innerHTML = 500 - textArea.value.length;
+}
+
 agreeCheckBox.addEventListener('click', enableSubmitBtn);
 textArea.addEventListener('keyup', uptdateCount);
