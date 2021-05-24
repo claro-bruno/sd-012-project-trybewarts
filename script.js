@@ -61,9 +61,12 @@ function replaceHouseElement() {
 }
 
 function replaceRateElement() {
-  const replaceParagraph = document.createElement('p');
-  replaceParagraph.innerHTML = `Avaliação: ${getRadioValue('.eval')}`;
-  evaluation.parentNode.replaceChild(replaceParagraph, evaluation);
+  const rateParagraph = document.createElement('p');
+  rateParagraph.innerHTML = `Avaliação: ${getRadioValue('.eval')}`;
+  while (evaluation.firstChild) {
+    evaluation.removeChild(evaluation.firstChild);
+  }
+  evaluation.appendChild(rateParagraph);
 }
 
 function replaceFamilyElement() {
