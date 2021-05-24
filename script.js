@@ -44,51 +44,51 @@ function verificaCaracteres() {
 
 selectTextArea.addEventListener('keyup', verificaCaracteres);
 
-// Substituicao Formulario
-const selectName = document.querySelector('#input-name');
-const selectLastName = document.querySelector('#input-lastname');
-const selectEmail = document.querySelector('#input-email');
-const selectFrontEnd = document.querySelector('#frontend');
-const selectBackEnd = document.querySelector('#backend');
-const selectFullStack = document.querySelector('#fullstack');
-const selectSubject = document.querySelectorAll('.subject');
-const selectRate = document.querySelectorAll('#rate');
+// // Substituicao Formulario
+// const selectName = document.querySelector('#input-name');
+// const selectLastName = document.querySelector('#input-lastname');
+// const selectEmail = document.querySelector('#input-email');
+// const selectFrontEnd = document.querySelector('#frontend');
+// const selectBackEnd = document.querySelector('#backend');
+// const selectFullStack = document.querySelector('#fullstack');
+// const selectSubject = document.querySelectorAll('.subject');
+// const selectRate = document.querySelectorAll('#rate');
 
-function armazenarFamilia() {
-  let resposta = '';
-  if (selectFrontEnd.checked === true) {
-    resposta = selectFrontEnd.value;
-  } else if (selectBackEnd.checked === true) {
-    resposta = selectBackEnd.value;
-  } else {
-    resposta = selectFullStack.value;
-  }
-  return resposta;
-}
+// function armazenarFamilia() {
+//   let resposta = '';
+//   if (selectFrontEnd.checked === true) {
+//     resposta = selectFrontEnd.value;
+//   } else if (selectBackEnd.checked === true) {
+//     resposta = selectBackEnd.value;
+//   } else {
+//     resposta = selectFullStack.value;
+//   }
+//   return resposta;
+// }
 
-function armazenarConteudo() {
-  const resultado = [];
-  for (let index = 0; index < selectSubject.length; index += 1) {
-    if (selectSubject.checked === true) {
-      resultado.push(selectSubject[index]);
-    }
-  }
-  return resultado;
-}
+// function armazenarConteudo() {
+//   const resultado = [];
+//   for (let index = 0; index < selectSubject.length; index += 1) {
+//     if (selectSubject.checked === true) {
+//       resultado.push(selectSubject[index]);
+//     }
+//   }
+//   return resultado;
+// }
 
-function armazenarAvaliacao() {
-  let resultado;
-  for (let index = 0; index < selectRate.length; index += 1) {
-    if (selectRate[index].checked === true) {
-      resultado = selectRate[index].value;
-    }
-  }
-  return resultado;
-}
-function substituirForm(event) {
-  event.preventDefault();
-  const armazenarName = selectName.value;
-  const armazenarLastName = selectLastName.value;
-  const armazenarEmail = selectEmail.value;
-}
-selectButtonSubmit.addEventListener('click', substituirForm);
+// function armazenarAvaliacao() {
+//   let resultado;
+//   for (let index = 0; index < selectRate.length; index += 1) {
+//     if (selectRate[index].checked === true) {
+//       resultado = selectRate[index].value;
+//     }
+//   }
+//   return resultado;
+// }
+// function substituirForm(event) {
+//   event.preventDefault();
+//   const armazenarName = selectName.value;
+//   const armazenarLastName = selectLastName.value;
+//   const armazenarEmail = selectEmail.value;
+// }
+// selectButtonSubmit.addEventListener('click', substituirForm);
