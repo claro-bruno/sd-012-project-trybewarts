@@ -37,7 +37,7 @@ function verificarLogin() {
 }
 // Lista de seleção casa
 function criaOpcaoCasa() {
-  for (const tipo of tiposCasa) {
+  for (let tipo of tiposCasa) {
     const opcao = document.createElement('option');
     opcao.value = tipo.valor;
     opcao.innerText = tipo.valor;
@@ -48,13 +48,13 @@ function criaOpcaoCasa() {
 //---Botão radio familia---
 // Cria a div dos radios
 function criaRadioContainer(nomeClasse, elementoConteiner) {
-  let div = document.createElement('div');
+  const div = document.createElement('div');
   div.className = nomeClasse;
   elementoConteiner.appendChild(div);
 }
 // Cria rotulo dos botão radio
 function criaLabelFamily(textoLabel) {
-  const div = document.querySelector("." + textoLabel);
+  const div = document.querySelector(`'.' ${textoLabel}`);
   const label = document.createElement('label');
   label.setAttribute('for', textoLabel);
   label.innerText = textoLabel;
