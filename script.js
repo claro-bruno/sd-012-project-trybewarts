@@ -108,5 +108,5 @@ function createInputs() {
     input.value = i;
   }
 }
-
+ 
 createInputs();
