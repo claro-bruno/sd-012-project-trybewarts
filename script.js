@@ -83,7 +83,7 @@ function replaceContentElement() {
   while (contentContainer.firstChild) {
     contentContainer.removeChild(contentContainer.firstChild);
   }
-  contentParagraph.innerHTML = `Matérias: ${checkedArray.join(', ')}`;
+  contentParagraph.innerHTML = `Matérias: ${checkedArray.join(', ')}"`;
   contentContainer.appendChild(contentParagraph);
 }
 
