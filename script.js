@@ -23,5 +23,5 @@ verificaCaixa.addEventListener('click', () => {
   }
 });
 if (!verificaCaixa.checked) {
-  validaBt.setAttribute('disabled', true);
+ validaBt.setAttribute('disabled', true);
 }
