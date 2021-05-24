@@ -1,34 +1,32 @@
 const getEmail = document.querySelector('#email');
 const getPassword = document.querySelector('#password');
-const getButtunLogin = document.querySelector("#btn-login");
+const getButtunLogin = document.querySelector('#btn-login');
 const getCheckbox = document.querySelector('#agreement');
 const getButtonSubmit = document.querySelector('#submit-btn');
 
-const getHouse = document.querySelector("#house");
-let tiposCasa = [
-  { valor: "Gitnória", id: "gitnoria-house" },
-  { valor: "Reactpuff", id: "reactpuff-house" },
-  { valor: "Corvinode", id: "corvinode-house" },
-  { valor: "Pytherina", id: "pytherina-house" },
+const getHouse = document.querySelector('#house');
+const tiposCasa = [
+  { valor: 'Gitnória', id: 'gitnoria-house' },
+  { valor: 'Reactpuff', id: 'reactpuff-house' },
+  { valor: 'Corvinode', id: 'corvinode-house' },
+  { valor: 'Pytherina', id: 'pytherina-house' },
 ];
 
-const getFamilyContainer = document.querySelector(".family-container");
-let valoresFamily = [
-  { valor: "Frontend" },
-  { valor: "Backend" },
-  { valor: "FullStack" },
+const getFamilyContainer = document.querySelector('.family-container');
+const valoresFamily = [
+  { valor: 'Frontend' },
+  { valor: 'Backend' },
+  { valor: 'FullStack' },
 ];
 
-const getLearnTechnology = document.querySelector(
-  ".learn-technology-container"
-);
-let itemLearnTechnology = [
-  { valor: "HoFs" },
-  { valor: "Jest" },
-  { valor: "Promises" },
-  { valor: "React" },
-  { valor: "SQL" },
-  { valor: "Python" },
+const getLearnTechnology = document.querySelector('.learn-technology-container');
+const itemLearnTechnology = [
+  { valor: 'HoFs' },
+  { valor: 'Jest' },
+  { valor: 'Promises' },
+  { valor: 'React' },
+  { valor: 'SQL' },
+  { valor: 'Python' },
 ];
 
 let getToAssess = document.querySelector(".to-assess");
@@ -134,7 +132,6 @@ getButtunLogin.addEventListener(
 getCheckbox.addEventListener('click', () => {
   getButtonSubmit.disabled = !getCheckbox.checked;
 });
-
 
 createToAssess();
 createListLearnTechnology();
