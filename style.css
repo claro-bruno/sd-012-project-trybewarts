@@ -2,11 +2,12 @@
 .btn {
   background-color: blueviolet;
 }
-/* Header */
 
+/* Header */
 .header img {
   width: 50px;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -19,14 +20,17 @@
 .trybewarts-login {
   display: flex;
 }
+
 .trybewarts-login .email {
   max-width: 220px;
   margin-right: 10px;
 }
+
 .trybewarts-login .password {
   max-width: 220px;
   margin-right: 10px;
 }
+
 /* Formulario */
 main {
   display: flex;
@@ -58,20 +62,25 @@ main {
   display: flex;
   flex-direction: column;
 }
+
 .learn-technology-container {
   display: flex;
 }
+
 .rate-container {
   display: flex;
 }
+
 .to-assess {
   display: flex;
 }
+
 footer {
   margin-top: 60px;
   background-color: blueviolet;
   padding: 20px;
 }
+
 footer p {
   padding-top: 10px;
   text-align: center;
