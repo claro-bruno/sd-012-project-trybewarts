@@ -136,9 +136,10 @@
           <input type="radio" name="rate" value="10" />10
         </div>
 
-        <div id="textarea">
+        <div id="textareas">
           <label for="textarea" class="textarea">Deixe seu comentário:</label>
-          <textarea name="" id="" maxlength="500" cols="10" rows="5"></textarea>
+          <textarea name="" id="textarea" maxlength="500" cols="50" rows="5" onkeyup="CharacterLimit()"></textarea>
+          <p id="counter">500</p>
         </div>
 
         <div id="agree">

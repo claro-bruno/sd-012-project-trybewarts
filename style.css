@@ -132,7 +132,7 @@ footer {
   justify-content: space-evenly;
 }
 
-#textarea {
+#textareas {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
@@ -153,4 +153,9 @@ footer {
   width: 100%;
   background-color: blueviolet;
   color: white;
+}
+
+#counter {
+  text-align: end;
+  margin-top: 0;
 }

@@ -27,3 +27,11 @@ checkAgreement.addEventListener('change', () => {
     DeactivateButton();
   }
 });
+
+function CharacterLimit() {
+  const counter = document.querySelector('textarea').value.length;
+  const tMaxLength = document.getElementById('textarea').maxLength;
+  const pCounter = document.getElementById('counter');
+  pCounter.innerHTML = tMaxLength - counter;
+}
+CharacterLimit();
