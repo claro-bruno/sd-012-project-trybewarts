@@ -34,14 +34,19 @@ hr {
   width: 100%;
 }
 
+#input-field {
+  display: flex;
+  justify-content: space-between;
+}
+
 #family {
   display: flex;
   flex-direction: column;
 }
 
-#input-field {
+#label-content {
   display: flex;
-  justify-content: space-between;
+  flex-flow: column wrap;
 }
 
 #input-field-2 {
@@ -53,7 +58,6 @@ hr {
   display: flex;
   flex-direction: column;
 }
-
 
 #counter {
   align-self: flex-end;
@@ -74,7 +78,7 @@ hr {
   height: 500px;
 }
 
-#formContainer {
+form {
   display: flex;
   flex-flow: wrap column;
   padding: 40px;

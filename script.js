@@ -5,16 +5,6 @@ const agreement = document.querySelector('#agreement');
 const enviar = document.querySelector('#submit-btn');
 const textarea = document.querySelector('#textarea');
 const count = document.querySelector('#counter');
-const fName = document.querySelector('#input-name');
-const lName = document.querySelector('#input-lastname');
-const email = document.querySelector('#input-email');
-const house = document.querySelector('#house');
-const labelFamily = document.querySelector('#label-family');
-const labelContent = document.querySelector('#label-content');
-const labelRate = document.querySelector('#label-rate');
-const mainContainer = document.querySelector('main');
-const arrayValues = [fName, lName, email, house, textarea];
-const arrayElements = [labelFamily, labelContent, labelRate];
 
 btnLogin.addEventListener('click', () => {
   if (inputLogin.value !== 'tryber@teste.com' && inputSenha.value !== '123456') {
@@ -36,55 +26,23 @@ textarea.addEventListener('keyup', () => {
   count.innerHTML = 500 - textarea.value.length;
   textarea.innerHTML = count;
 });
+const form = document.querySelector('#evaluation-form');
+function createDiv(dataForm) {
+  form.innerHTML = '';
+  form.innerHTML = `<p>Nome: ${dataForm.name} ${dataForm.lastname}</p>`;
+  form.innerHTML += `<p>Email: ${dataForm.email}</p>`;
+  form.innerHTML += `<p>Casa: ${dataForm.house}</p>`;
+  form.innerHTML += `<p>Família: ${dataForm.family}</p>`;
+  form.innerHTML += `<p>Matérias: ${dataForm.subject.join(', ')}</p>`;
+  form.innerHTML += `<p>Avaliação: ${dataForm.rate}</p>`;
+  form.innerHTML += `<p>Observações: ${dataForm.textarea}</p>`;
+}
 
-function apagarCampos() { mainContainer.innerHTML = ''; }
-
-const getRadioChecked = () => {
-  const arrayContent = [];
-  for (let i = 0; i < arrayElements.length; i += 1) {
-    //for (let index = 0; index < arrayElements[i].children.length; index += 1) {
-      arrayContent.push(arrayElements[i].childNodes.filter((child) => {child.checked}));
-      //if (arrayElements[i].children[index].checked) {
-      //  arrayContent.push(arrayElements[i].children[index].value);
-      //} 
-    //}
-  }
-  return arrayContent;
-};
-
-const criarCampos = () => {
-  const item = [];
-  for (let index = 0; index < arrayValues.length; index += 1) {
-    item.push(arrayValues[index].value);
-  }
-  item.push(getRadioChecked());
-  console.log(item);
-  const objValues = {
-    Nome: `${item[0]} ${item[1]}`,
-    Email: item[2],
-    Casa: item[3],
-    Familia: item[6],
-    Matérias: item[7],
-    Avaliação: item[5],
-    Observações: item[4],
-  };
-  return objValues;
-};
-
-const adicionarCampos = (item) => {
-  const campo = document.createElement('div')
-  for (let index = 0; index < item.length; index += 1) {
-    campo.innerHTML = item.innerHTML;
-    mainContainer.appendChild(campo);
-  }
-};
-
-enviar.addEventListener('click', () => {
-  const cria = criarCampos();
-  console.log(cria);
-
-  const apaga = apagarCampos();
-  // console.log(apaga);
-  const adiciona = adicionarCampos(cria);
-  // console.log(adiciona);
-});
+function handleFormSubmit(event) {
+  event.preventDefault();
+  const data = new FormData(event.target);
+  const formJSON = Object.fromEntries(data.entries());
+  formJSON.subject = data.getAll('subject');
+  createDiv(formJSON);
+}
+form.addEventListener('submit', handleFormSubmit);
