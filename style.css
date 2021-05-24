@@ -62,6 +62,11 @@ main {
   margin-bottom: 10px;
 }
 
+.input-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 #input-name {
   width: 50%;
   height: 30px;
@@ -85,7 +90,7 @@ main {
 
 #house {
   display: inline-block;
-  width: 43%;
+  width: 42%;
   height: 30px;
   border-radius: 5px;
   background-color: white;
