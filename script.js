@@ -32,15 +32,6 @@ const house = document.querySelector('#house');
 const comment = document.querySelector('#textarea');
 const evaluation = document.querySelector('.evaluation-note');
 
-function getRadioValue(radioClass) {
-  const radios = document.querySelectorAll(radioClass);
-  for (let index = 0; index < radios.length; index += 1) {
-    if (radios[index].checked) {
-      return radios[index].value;
-    }
-  }
-}
-
 function replaceNameElement() {
   const nameParagraph = document.createElement('p');
   nameParagraph.innerHTML = `Nome: ${firstName.value} ${lastName.value}`;
