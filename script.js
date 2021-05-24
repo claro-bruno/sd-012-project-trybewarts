@@ -39,20 +39,20 @@ textArea.addEventListener('input', funCounter);
 // requisito 21
 // código passado pelo Gabriel Bueno, que pega todos os objetos gerados nos inputs do form. source: https://www.learnwithjason.dev/blog/get-form-values-as-json
 
-function handleSubmit(event) {
-  event.preventDefault();
-  const data = new FormData(event.target);
-  const value = Object.fromEntries(data.entries());
-  value.techs = data.getAll('techs');
-  console.log({ value });
-}
-const form = document.querySelector('#evaluation-form');
-form.addEventListener('submit', handleSubmit);
+// function handleSubmit(event) {
+//   event.preventDefault();
+//   const data = new FormData(event.target);
+//   const value = Object.fromEntries(data.entries());
+//   value.techs = data.getAll('techs');
+//   console.log({ value });
+// }
+// const form = document.querySelector('#evaluation-form');
+// form.addEventListener('submit', handleSubmit);
 
 // const renderInfo = (obj) => {
 //   console.log(obj);
+//   console.log(renderInfo);
 //   form.innerHTML = '';
 // };
 
 // agora tem que para cada item o template literals p adicionar esses valores q q ele pegou. Pode ser em uma nova div, ou criar vários p's dentro dessa div.
-// O butão de enviar n está funcionando, então n tem nem como testar se o começo dessa função ai em cima funciona.

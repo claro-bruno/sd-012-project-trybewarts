@@ -39,16 +39,22 @@ body {
 modelo utilizado para efeito de transição */
 
 #trybewarts-header-title {
-  animation: colors 15s infinite;
+  animation: colors 5s infinite;
+  animation-duration: alternate;
 }
 
 @keyframes colors {
 
   0% {
     color: whitesmoke;
+    border-color: black;
   }
 
-  50% {
+  20% {
+    color: orangered;
+  }
+
+  60% {
     color: darkblue;
   }
 

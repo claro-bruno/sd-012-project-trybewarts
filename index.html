@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <header class="header">
       <img
         class="trybewarts-header-logo"
@@ -22,21 +23,23 @@
         <button id="inputButton">Logar</button>
       </form>
     </header>
+
     <div class="nome">
       <img src="https://fontmeme.com/permalink/210521/4b26a204d433e16b60837e9f8ca0b308.png" alt="fonte-de-harry-potter" border="0">
     </div>
+
     <div class="content">
       <main class="main-form">
         <form id="evaluation-form">
           <div class="input-form-name">
-            <input id="input-name" placeholder="Nome" />
-            <input id="input-lastname" placeholder="Sobrenome" />
+            <input id="input-name" placeholder="Nome" required/>
+            <input id="input-lastname" placeholder="Sobrenome" required/>
           </div>
           <div class="input-form-email">
-              <input id="input-email" placeholder="Email" />
+              <input id="input-email" placeholder="Email" required/>
               <div>
                 <label for="#house">Casa</label>
-                <select name="houses" id="house">
+                <select name="houses" id="house" required>
                   <option value="Gitnória" id="gitnoria-house">Gitnória</option>
                   <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
                   <option value="Corvinode" id="corvinode-house">Corvinode</option>
@@ -87,39 +90,39 @@
             </div>
           </section>
           <hr>
-        </form>
-        <div class="radios">
-          <label id="label-rate" for=""> Como você avalia a Trybewarts?</label>
-          <input type="radio" value="1" name="rate">
-          <label for="">1</label>
-          <input type="radio" value="2" name="rate">
-          <label for="">2</label>
-          <input type="radio" value="3" name="rate">
-          <label for="">3</label>
-          <input type="radio" value="4" name="rate">
-          <label for="">4</label>
-          <input type="radio" value="5" name="rate">
-          <label for="">5</label>
-          <input type="radio" value="6" name="rate">
-          <label for="">6</label>
-          <input type="radio" value="7" name="rate">
-          <label for="">7</label>
-          <input type="radio" value="8" name="rate">
-          <label for="">8</label>
-          <input type="radio" value="9" name="rate">
-          <label for="">9</label>
-          <input type="radio" value="10" name="rate">
-          <label for="">10</label>
+          <div class="radios">
+            <label id="label-rate" for=""> Como você avalia a Trybewarts?</label>
+            <input type="radio" value="1" name="rate">
+            <label for="">1</label>
+            <input type="radio" value="2" name="rate">
+            <label for="">2</label>
+            <input type="radio" value="3" name="rate">
+            <label for="">3</label>
+            <input type="radio" value="4" name="rate">
+            <label for="">4</label>
+            <input type="radio" value="5" name="rate">
+            <label for="">5</label>
+            <input type="radio" value="6" name="rate">
+            <label for="">6</label>
+            <input type="radio" value="7" name="rate">
+            <label for="">7</label>
+            <input type="radio" value="8" name="rate">
+            <label for="">8</label>
+            <input type="radio" value="9" name="rate">
+            <label for="">9</label>
+            <input type="radio" value="10" name="rate">
+            <label for="">10</label>
+          </div>
+        <label for="textarea"  class="textarea">Deixe seu comentário:
+          <textarea name="comentario" id="textarea" cols="30" rows="10" maxlength="500" ></textarea>
+          <span id="counter">500</span>
+        </label>
+        <div class="infos">
+          <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
+          <input type="checkbox" id="agreement" required>
         </div>
-      <label for="textarea"  class="textarea">Deixe seu comentário:
-        <textarea name="comentario" id="textarea" cols="30" rows="10" maxlength="500" ></textarea>
-        <span id="counter">500</span>
-      </label>
-      <div class="infos">
-        <label for="agreement" id="label-infos">Você concorda com o uso das informações acima?</label>
-        <input type="checkbox" id="agreement">
-      </div>
-      <button type="submit" id="submit-btn" disabled="true">Enviar</button>
+        <button type="submit" id="submit-btn" disabled="true">Enviar</button>
+        </form>
       </main>
       <div id="img">
         <img
