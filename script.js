@@ -50,3 +50,12 @@ function enableSubmitButton() {
 }
 
 checkBox.addEventListener('change', enableSubmitButton);
+
+const counter = document.querySelector('#counter');
+
+function wordCounter() {
+  const nWords = textArea.value.length;
+  counter.innerText = 500 - nWords;
+}
+
+textArea.addEventListener('keyup', wordCounter);
