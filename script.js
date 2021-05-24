@@ -28,6 +28,8 @@ function housesOfTrybeWarts() {
 
 housesOfTrybeWarts();
 
+// Essa parte do código é uma "cicatriz" por não conseguirmos incluir o input + label  de forma dinâmica no label-rate-container
+
 // const getLabelRateContainer = document.getElementById('label-rate-container');
 
 // function addNewRateInput() {
@@ -68,3 +70,30 @@ function countCharacters() {
 }
 
 textArea.addEventListener('keyup', countCharacters);
+
+// O código a seguir é crédito dos colegas Gabriel Bueno e Juan Victor, retirado e inspirado pelo código deles.
+// O código a seguir foi retirado de: https://www.learnwithjason.dev/blog/get-form-values-as-json
+
+const form = document.querySelector('#evaluation-form');
+
+const renderInfo = (obj) => {
+  form.innerHTML = '';
+  form.innerHTML = `<p> Nome: ${obj.name} ${obj.lastname} </p>
+  <p>Email: ${obj.email}</p>
+  <p>Casa: ${obj.house}</p>
+  <p>Família: ${obj.family}</p>
+  <p>Matérias: ${obj.techsContent.join(', ')}</p>
+  <p>Avaliação: ${obj.rate}</p>
+  <p>Observações: ${obj.textarea}</p>
+  `;
+};
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  const data = new FormData(event.target);
+  const value = Object.fromEntries(data.entries());
+  value.techsContent = data.getAll('techsContent');
+  renderInfo(value);
+};
+
+form.addEventListener('submit', handleSubmit);
