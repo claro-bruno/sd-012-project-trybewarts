@@ -65,7 +65,7 @@ function criaRadioContainer(nomeClasse, elementoConteiner) {
 function criaLabelFamily(textoLabel) {
   let div = document.querySelector("." + textoLabel);
   let label = document.createElement("label");
-  label.setAttribute("for", textoLabel);
+  label.setAttribute('for', textoLabel);
   label.innerText = textoLabel;
   div.appendChild(label);
 }
