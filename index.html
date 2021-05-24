@@ -35,7 +35,7 @@
         <div id="contact-container">
           <input class="form-control" name="email" id="input-email" placeholder="Email">
           <label class="form-label" for="house" id="house-label">Casa: </label>
-          <select class="form-select" id="house">
+          <select name="house" class="form-select" id="house">
             <option id="gitnoria-house">Gitnória</option>
             <option id="reactpuff-house">Reactpuff</option>
             <option id="corvinode-house">Corvinode</option>
@@ -63,27 +63,27 @@
           <label class="form-label" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
           <div id="content-options">
             <div>
-              <input class="form-check-input" type="checkbox" id="hofs-option" value="HoFs">
+              <input class="form-check-input" name="subject" type="checkbox" id="hofs-option" value="HoFs">
               <label class="form-check-label" id="hofs-label" for="hofs-option">HoFs</label>
             </div>
             <div>
-              <input class="form-check-input" type="checkbox" id="jest-option" value="Jest">
+              <input class="form-check-input" name="subject" type="checkbox" id="jest-option" value="Jest">
               <label class="form-check-label" id="jest-label" for="jest-option">Jest</label>
             </div>
             <div>
-              <input class="form-check-input" type="checkbox" id="promises-option" value="Promises">
+              <input class="form-check-input" name="subject" type="checkbox" id="promises-option" value="Promises">
               <label class="form-check-label" id="promises-label" for="promises-option">Promises</label>
             </div>
             <div>
-              <input class="form-check-input" type="checkbox" id="react-option" value="React">
+              <input class="form-check-input" name="subject" type="checkbox" id="react-option" value="React">
               <label class="form-check-label" id="react-label" for="reactoption">React</label>
             </div>
             <div>
-              <input class="form-check-input" type="checkbox" id="sql-option" value="SQL">
+              <input class="form-check-input" name="subject" type="checkbox" id="sql-option" value="SQL">
               <label class="form-check-label" id="sql-label" for="sql-option">SQL</label>
             </div>
             <div>
-              <input class="form-check-input" type="checkbox" id="python-option" value="Python">
+              <input class="form-check-input" name="subject" type="checkbox" id="python-option" value="Python">
               <label class="form-check-label" id="python-label" for="python-option">Python</label>
             </div>
           </div>
@@ -95,7 +95,7 @@
       </div>
       <div id="form-section4">
         <label class="form-label textarea">Deixe seu comentário:</label>
-        <textarea id="textarea" class="form-control" maxlength="500" cols="50" rows="4"></textarea>
+        <textarea name="obs" id="textarea" class="form-control" maxlength="500" cols="50" rows="4"></textarea>
         <p id="counter">500</p>
       </div>
       <div id="agreement-container">

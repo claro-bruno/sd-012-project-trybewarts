@@ -1,6 +1,7 @@
 const emailLogin = document.getElementById('email-login');
 const passwordLogin = document.getElementById('password-login');
 const formLogin = document.getElementById('form-login');
+const submitButton = document.getElementById('submit-btn');
 
 function login() {
   if (emailLogin.value === 'tryber@teste.com' && passwordLogin.value === '123456') {
@@ -16,9 +17,9 @@ const agreement = document.getElementById('agreement');
 
 function buttonStatus() {
   if (agreement.checked) {
-    document.getElementById('submit-btn').disabled = false;
+    submitButton.disabled = false;
   } else {
-    document.getElementById('submit-btn').disabled = true;
+    submitButton.disabled = true;
   }
 }
 
@@ -54,3 +55,40 @@ function countCharacters() {
 }
 
 textarea.addEventListener('keyup', countCharacters);
+
+function getCheckedSubjects() {
+  const checkboxes = document.getElementsByName('subject');
+  let checkboxesValues = '';
+
+  for (let index = 0; index < checkboxes.length; index += 1) {
+    if (checkboxes[index].checked) {
+      checkboxesValues += ` ${checkboxes[index].value}`;
+    }
+  }
+  return checkboxesValues;
+}
+
+function getFormItems() {
+  const form = document.getElementById('evaluation-form');
+  const elementsForm = form.elements;
+  const obj = {};
+  for (let i = 0; i < elementsForm.length; i += 1) {
+    const item = elementsForm.item(i);
+    obj[item.name] = item.value;
+  }
+  return obj;
+}
+
+function test(event) {
+  event.preventDefault();
+  const rateValue = document.querySelector('input[name="rate"]:checked').value;
+  const familyValue = document.querySelector('input[name="family"]:checked').value;
+  const subjectValue = getCheckedSubjects();
+  const obj = getFormItems();
+
+  document.getElementById('evaluation-form').innerHTML = `<p>Nome: ${obj.name} ${obj.lastname}<br>
+  Email: ${obj.email} <br>Casa: ${obj.house} <br>Família: ${familyValue}<br>
+  Matérias: ${subjectValue} <br>Avaliação: ${rateValue} <br>Observações: ${obj.obs}</p>`;
+}
+
+submitButton.addEventListener('click', test);
