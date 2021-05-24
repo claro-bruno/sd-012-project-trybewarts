@@ -25,10 +25,10 @@ const itemLearnTechnology = [
   { valor: 'SQL' },
   { valor: 'Python' },
 ];
-let getToAssess = document.querySelector('.to-assess');
+const getToAssess = document.querySelector('.to-assess');
 function verificarLogin() {
-  let emailCerto = 'tryber@teste.com';
-  let passwordCerto = '123456';
+  const emailCerto = 'tryber@teste.com';
+  const passwordCerto = '123456';
   if (getEmail.value === emailCerto && getPassword.value === passwordCerto) {
     alert('Olá, Tryber!');
   } else {
@@ -54,8 +54,8 @@ function criaRadioContainer(nomeClasse, elementoConteiner) {
 }
 // Cria rotulo dos botão radio
 function criaLabelFamily(textoLabel) {
-  let div = document.querySelector("." + textoLabel);
-  let label = document.createElement('label');
+  const div = document.querySelector("." + textoLabel);
+  const label = document.createElement('label');
   label.setAttribute('for', textoLabel);
   label.innerText = textoLabel;
   div.appendChild(label);
@@ -64,8 +64,8 @@ function criaLabelFamily(textoLabel) {
 function criaRadioBotaoFamilia() {
   for (const family of valoresFamily) {
     criaRadioContainer(family.valor, getFamilyContainer);
-    let divRadio = document.querySelector(`.${family.valor}`);
-    let radio = document.createElement('input');
+    const divRadio = document.querySelector(`.${family.valor}`);
+    const radio = document.createElement('input');
     radio.setAttribute('type', 'radio');
     radio.value = family.valor;
     radio.setAttribute('name', 'family');
@@ -78,8 +78,8 @@ function criaRadioBotaoFamilia() {
 function createListLearnTechnology() {
   for (const item of itemLearnTechnology) {
     criaRadioContainer(item.valor, getLearnTechnology);
-    let getDiv = document.querySelector(`.${item.valor}`);
-    let checkbox = document.createElement('input');
+    const getDiv = document.querySelector(`.${item.valor}`);
+    const checkbox = document.createElement('input');
     checkbox.setAttribute('type', 'checkbox');
     checkbox.setAttribute('value', item.valor);
     checkbox.className = 'subject';
