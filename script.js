@@ -12,7 +12,7 @@ const counter = document.querySelector('#counter');
 const validateLogin = () => loginInput.value === 'tryber@teste.com'
   && loginPass.value === '123456';
 
-// Adiciona evento ao botão submit
+// Adiciona evento ao botão login
 loginBtn.addEventListener('click', () => {
   if (validateLogin()) {
     alert('Olá, Tryber!');
@@ -35,3 +35,29 @@ textArea.addEventListener('input', (event) => {
   const newLength = event.target.value.length;
   counter.innerText = 500 - newLength;
 });
+
+// Retorna os dados do forms
+// O código a seguir foi retirado de: https://www.learnwithjason.dev/blog/get-form-values-as-json
+const form = document.querySelector('#evaluation-form');
+
+const renderInfo = (obj) => {
+  form.innerHTML = '';
+  form.innerHTML = `<p> Nome: ${obj.name} ${obj.lastName} </p>
+  <p>Email: ${obj.email}</p>
+  <p>Casa: ${obj.house}</p>
+  <p>Família: ${obj.family}</p>
+  <p>Matérias: ${obj.techs.join(', ')}</p>
+  <p>Avaliação: ${obj.rate}</p>
+  <p>Observações: ${obj.textarea}</p>
+  `;
+};
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  const data = new FormData(event.target);
+  const value = Object.fromEntries(data.entries());
+  value.techs = data.getAll('techs');
+  renderInfo(value);
+};
+
+form.addEventListener('submit', handleSubmit);
