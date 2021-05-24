@@ -110,6 +110,8 @@ function checkToSend() {
   const send = document.querySelector('#submit-btn');
   const termos = document.querySelector('#agreement');
   if (termos.checked === true) {
+    send.disabled = false;
+  } else {
     send.disabled = true;
   }
 }
@@ -119,13 +121,17 @@ function createBttnSend() {
   const bttnSend = document.createElement('button');
   bttnSend.type = 'submit';
   bttnSend.id = 'submit-btn';
-  bttnSend.disable = true;
   bttnSend.innerHTML = 'Enviar';
   bttnSend.disabled = true;
-  bttnSend.addEventListener('click', checkToSend);
   divBttnLabel.appendChild(bttnSend);
 }
 createBttnSend();
+
+function checkSend() {
+  const checkBox = document.querySelector('#agreement');
+  checkBox.addEventListener('click', checkToSend);
+}
+checkSend();
 
 function footer() {
   const createFooter = document.createElement('footer');
