@@ -1,6 +1,19 @@
 const inputLogin = document.getElementById('login');
 const inputSenha = document.getElementById('senha');
 const botaoLogar = document.getElementById('logar');
+const checkBox = document.getElementById('agreement');
+const submitButton = document.getElementById('submit-btn');
+const divCounter = document.getElementById('counter');
+const textBox = document.getElementById('textarea');
+const inputName = document.getElementById('input-name');
+const inputLastName = document.getElementById('input-lastname');
+const inputEmail = document.getElementById('input-email');
+const inputTextArea = document.getElementById('textarea');
+const evaluationForm = document.getElementById('evaluation-form');
+const house = document.getElementById('house');
+const radioButtonFamily = document.querySelectorAll('input[name="family"]');
+const radioButtonRate = document.querySelectorAll('input[name="rate"]');
+const disciplines = document.getElementsByName('conteudo');
 
 function login() {
   const loginCerto = 'tryber@teste.com';
@@ -13,9 +26,6 @@ function login() {
 }
 botaoLogar.addEventListener('click', login);
 
-const checkBox = document.getElementById('agreement');
-const submitButton = document.getElementById('submit-btn');
-
 function activateSubmit() {
   if (checkBox.checked === true) {
     submitButton.disabled = false;
@@ -26,38 +36,23 @@ function activateSubmit() {
 checkBox.addEventListener('click', activateSubmit);
 
 const count = 500;
-const divCounter = document.getElementById('counter');
-divCounter.innerHTML = count;
-const textBox = document.getElementById('textarea');
 
+divCounter.innerHTML = count;
 function countChar() {
   const textLength = textBox.value.length;
   divCounter.innerHTML = count - textLength;
 }
 textBox.addEventListener('keyup', countChar);
 
-const inputName = document.getElementById('input-name');
-const inputLastName = document.getElementById('input-lastname');
-const inputEmail = document.getElementById('input-email');
-const inputTextArea = document.getElementById('textarea');
-const evaluationForm = document.getElementById('evaluation-form');
-
-const house = document.getElementById('house');
 function getHouseValue() {
-  // console.log(house.value)
   return house.value;
 }
 
 function getRadioButtonFamily() {
-  const radioButtonFamily = document.querySelectorAll('input[name="family"]');
-  // console.log(radioButtonFamily)
   let selectedRadioButtonFamily;
   for (let index = 0; index < radioButtonFamily.length; index += 1) {
-    // console.log(radioButtonFamily[index])
     if (radioButtonFamily[index].checked) {
-      // console.log(radioButtonFamily[index])
       selectedRadioButtonFamily = radioButtonFamily[index];
-      // console.log(selectedRadioButtonFamily.value)
     }
   }
   return selectedRadioButtonFamily.value;
@@ -65,8 +60,6 @@ function getRadioButtonFamily() {
 
 function getDisciplines() {
   const selectedDisciplines = [];
-  const disciplines = document.getElementsByName('conteudo');
-  // console.log(disciplines[0].checked)
   disciplines.forEach((discipline) => {
     if (discipline.checked) {
       selectedDisciplines.push(discipline.value);
@@ -77,12 +70,10 @@ function getDisciplines() {
 }
 
 function getRadioButtonRate() {
-  const radioButtonRate = document.querySelectorAll('input[name="rate"]');
   let selectedRadioButtonRate;
   for (let index = 0; index < radioButtonRate.length; index += 1) {
     if (radioButtonRate[index].checked) {
       selectedRadioButtonRate = radioButtonRate[index];
-      // console.log('selectedRadioButtonRate', selectedRadioButtonRate)
     }
   }
   return selectedRadioButtonRate.value;
@@ -105,5 +96,4 @@ function replaceForm(event) {
 }
 submitButton.addEventListener('click', replaceForm);
 
-/* Credito: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams */
 /* Credito: https://masteringjs.io/tutorials/fundamentals/foreach */
