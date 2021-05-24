@@ -39,15 +39,16 @@ main {
   flex-wrap: wrap;
   width: 600px;
   justify-content: space-around;
+  margin: 15px 15px;
+}
+
+#container-nomeSobrenomeCasa input {
+  width: 200px;
+  margin: 2px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
-}
-
-form input {
-  width: 200px;
-  margin: 3px;
 }
 
 form select {
@@ -81,6 +82,5 @@ form select {
 #textarea {
   max-width: 5ch;
   overflow: hidden;
-}
   flex-wrap: nowrap;
 };
