@@ -11,7 +11,6 @@ function login() {
     alert('Login ou senha inválidos.');
   }
 }
-
 botaoLogar.addEventListener('click', login);
 
 const checkBox = document.getElementById('agreement');
@@ -24,7 +23,6 @@ function activateSubmit() {
     submitButton.disabled = true;
   }
 }
-
 checkBox.addEventListener('click', activateSubmit);
 
 const count = 500;
@@ -36,47 +34,8 @@ function countChar() {
   const textLength = textBox.value.length;
   divCounter.innerHTML = count - textLength;
 }
-
 textBox.addEventListener('keyup', countChar);
 
-const searchParams = new URLSearchParams(window.location.search);
-const queryName = searchParams.get('name');
-const queryLastName = searchParams.get('lastname');
-const queryEmail = searchParams.get('email');
-const queryHouse = searchParams.get('casa');
-const queryFamily = searchParams.get('family');
-const queryConteudo = searchParams.getAll('conteudo');
-const queryRate = searchParams.get('rate');
-const queryComment = searchParams.get('comentario');
-
-const submittedName = document.getElementById('submitted-name');
-const submittedEmail = document.getElementById('submitted-email');
-const submittedHouse = document.getElementById('submitted-house');
-const submittedFamily = document.getElementById('submitted-family');
-const submittedTopics = document.getElementById('submitted-topics');
-const submittedRating = document.getElementById('submitted-rating');
-const submittedObservation = document.getElementById('submitted-observation');
-
-// if(queryName === null && queryLastName == null && queryEmail === null && queryHouse === null && queryFamily === null && queryConteudo === null && queryRate === null && queryComment === null) {
-if (queryName === null) {
-  submittedName.innerHTML = '';
-  submittedEmail.innerHTML = '';
-  submittedHouse.innerHTML = '';
-  submittedFamily.innerHTML = '';
-  submittedTopics.innerHTML = '';
-  submittedRating.innerHTML = '';
-  submittedObservation.innerHTML = '';
-} else {
-  submittedName.innerHTML = `Nome: ${queryName} ${queryLastName}`;
-  submittedEmail.innerHTML = `Email: ${queryEmail}`;
-  submittedHouse.innerHTML = `Casa: ${queryHouse}`;
-  submittedFamily.innerHTML = `Família: ${queryFamily}`;
-  submittedTopics.innerHTML = `Matérias: ${queryConteudo}`;
-  submittedRating.innerHTML = `Avaliação: ${queryRate}`;
-  submittedObservation.innerHTML = `Observações: ${queryComment}`;
-}
-
-/*
 const inputName = document.getElementById('input-name');
 const inputLastName = document.getElementById('input-lastname');
 const inputEmail = document.getElementById('input-email');
@@ -85,44 +44,135 @@ const inputLabelFamily = document.getElementById('label-family');
 const inputLabelContent = document.getElementById('label-content');
 const inputLabelRate = document.getElementById('label-rate');
 const inputTextArea = document.getElementById('textarea');
+const evaluationForm = document.getElementById('evaluation-form');
+const submittedData = document.getElementById('submitted-data');
+// evaluationForm.style.display = 'none';
 
-inputName.value = queryName;
-inputLastName.value = queryLastName;
-inputEmail.value = queryEmail;
-inputHouse.value = queryHouse;
-inputLabelFamily.value = queryFamily;
-inputLabelContent.value = queryConteudo;
-inputLabelRate.value = queryRate;
-inputTextArea.value = queryComment;
+
+const house = document.getElementById('house');  
+function getHouseValue() {
+  // console.log(house.value)
+  return house.value;
+}
+
+
+function getRadioButtonFamily() {
+
+  const radioButtonFamily = document.querySelectorAll('input[name="family"]');
+  // console.log(radioButtonFamily)
+  let selectedRadioButtonFamily;
+  for (let index = 0; index < radioButtonFamily.length; index += 1) {
+      // console.log(radioButtonFamily[index])
+    if (radioButtonFamily[index].checked) {
+      // console.log(radioButtonFamily[index])
+      selectedRadioButtonFamily = radioButtonFamily[index];
+      // console.log(selectedRadioButtonFamily.value)
+    }
+  }
+  return selectedRadioButtonFamily.value;
+}
+
+
+
+function getDisciplines() {
+  const selectedDisciplines = [];
+  let disciplines = document.getElementsByName('conteudo')
+  // console.log(disciplines[0].checked)
+  disciplines.forEach((discipline) => {
+    if(discipline.checked) {
+      selectedDisciplines.push(discipline.value);
+    }
+  });
+  console.log('selectedDisciplines.join()', selectedDisciplines.join(', '));
+  return selectedDisciplines.join(', ');
+}
+
+
+
+
+
+
+function getRadioButtonRate() {
+  let radioButtonRate = document.querySelectorAll('input[name="rate"]');
+//   radioButtonRate = Array.from(radioButtonRate)
+//   const selectedRadioButtonRate = radioButtonRate.filter((element) => {
+//   if (element.checked) {
+//     // console.log(element.value)
+//     // console.log(element.id.split('-')[1])
+//     // return element.id.split('-')[1];
+//     return element.value;
+//   }
+// });
+  // console.log(selectedRadioButtonRate[0].value)
+  // return selectedRadioButtonRate[0].value;
+  let selectedRadioButtonRate;
+  for (let index = 0; index < radioButtonRate.length; index += 1) {
+    if (radioButtonRate[index].checked) {
+      selectedRadioButtonRate = radioButtonRate[index];
+      // console.log('selectedRadioButtonRate', selectedRadioButtonRate)
+    }
+  }
+  return selectedRadioButtonRate.value;
+}
+
+function getComment() {
+  return inputTextArea.value;
+}
+
+
+
+
+
+function replaceForm(event) {
+  event.preventDefault();
+  evaluationForm.innerHTML = `
+  Nome: ${inputName.value} ${inputLastName.value}<br> 
+  Email: ${inputEmail.value}<br>
+  Casa: ${getHouseValue()}<br>
+  Família: ${getRadioButtonFamily()}<br>
+  Matérias: ${getDisciplines()}<br>
+  Avaliação: ${getRadioButtonRate()}<br>
+  Observações: ${getComment()}
+  `
+  // getRadioButtonRate();
+  // console.log(rateHtmlElement)
+  // document.body.appendChild(rateHtmlElement)
+  // evaluationForm.classList.remove('is-visible');
+  // evaluationForm.classList.add('is-not-visible')
+  // submittedData.classList.remove('is-not-visible');
+  // submittedData.classList.add('is-visible')
+  
+  // evaluationForm.innerHTML = `
+  // ${inputName.value} ${inputLastName.value}<br>
+  // ${inputEmail.value}<br>
+  // `
+}
+submitButton.addEventListener('click', replaceForm);
+
+
 
 // console.log(queryFamily)
-const radioButtonFamily = document.querySelectorAll('input[name="family"]');
-radioButtonFamily.forEach((element) => {
-  if (queryFamily && element.id === queryFamily.toLowerCase()) {
-    element.checked = true;
-  }
-});
 
-const radioButtonRate = document.querySelectorAll('input[name="rate"]');
-radioButtonRate.forEach((element) => {
-  if (element.id.split('-')[1] === queryRate) {
-    element.checked = true;
-  }
-});
+// const radioButtonRate = document.querySelectorAll('input[name="rate"]');
+// radioButtonRate.forEach((element) => {
+//   if (element.id.split('-')[1] === queryRate) {
+//     element.checked = true;
+//   }
+// });
 
 const checkBoxContent = document.querySelectorAll('input[name="conteudo"]');
 // console.log(checkBoxContent)
 
-for (let i = 0; i < queryConteudo.length; i += 1) {
-  queryConteudo[i] = queryConteudo[i].toLowerCase();
-}
+// for (let i = 0; i < queryConteudo.length; i += 1) {
+//   queryConteudo[i] = queryConteudo[i].toLowerCase();
+// }
 // console.log('queryConteudo', queryConteudo);
 
-checkBoxContent.forEach((element) => {
-  if (queryConteudo.includes(element.id.toLowerCase())) {
-    element.checked = true;
-  }
-});
- */
+// checkBoxContent.forEach((element) => {
+//   if (queryConteudo.includes(element.id.toLowerCase())) {
+//     element.checked = true;
+//   }
+// });
+
 /* Credito: https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams */
 /* Credito: https://masteringjs.io/tutorials/fundamentals/foreach */

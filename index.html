@@ -18,7 +18,7 @@
       </form>
     </header>
     <main id="main">
-        <form id="evaluation-form" action="" >
+      <form id="evaluation-form" action="" >
         <div id="nome-completo">
           <input id="input-name" name="name" type="text" placeholder="Nome">
           <input id="input-lastname" name="lastname" type="text" placeholder="Sobrenome">
@@ -27,24 +27,24 @@
           <input id="input-email" name="email" type="text" placeholder="Email">
           <label for="house">Casa</label>
           <select id="house" name="casa" >
-              <option id="gitnoria-house"  value="Gitnória">Gitnória</option>
-              <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-              <option id="corvinode-house" value="Corvinode">Corvinode</option>
-              <option id="pytherina-house" value="Pytherina">Pytherina</option>
+            <option id="gitnoria-house"  value="Gitnória">Gitnória</option>
+            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+            <option id="corvinode-house" value="Corvinode">Corvinode</option>
+            <option id="pytherina-house" value="Pytherina">Pytherina</option>
           </select>
         </div>
         <hr>
         <label id="label-family" for="">Qual sua família?</label>
         <span>
-          <input id="frontend" type="radio" name="family" value="Frontend">
+          <input id="frontend" type="radio" name="family" value="Frontend" checked>
           <label for="frontend">Familia Frontend</label>
         </span>
         <span>
-        <input id="backend" type="radio" name="family" value="Backend">
+          <input id="backend" type="radio" name="family" value="Backend">
           <label for="backend">Familia Backend</label>
         </span>
         <span>
-        <input id="fullstack" type="radio" name="family" value="FullStack">
+          <input id="fullstack" type="radio" name="family" value="FullStack">
           <label for="fullstack">Familia Fullstack</label>
         </span>
         <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
@@ -64,47 +64,38 @@
         </div>
         <hr>
         <div>
-            <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
-            <input id="rate-1" class="rate" type="radio" name="rate" value="1">
-            <label for="rate-1">1</label>
-            <input id="rate-2" class="rate" type="radio" name="rate" value="2">
-            <label for="rate-2">2</label>
-            <input id="rate-3" class="rate" type="radio" name="rate" value="3">
-            <label for="rate-3">3</label>
-            <input id="rate-4" class="rate" type="radio" name="rate" value="4">
-            <label for="rate-4">4</label>
-            <input id="rate-5"  class="rate" type="radio" name="rate" value="5">
-            <label for="rate-5">5</label>
-            <input id="rate-6"  class="rate" type="radio" name="rate" value="6">
-            <label for="rate-6">6</label>
-            <input id="rate-7"  class="rate" type="radio" name="rate" value="7">
-            <label for="rate-7">7</label>
-            <input id="rate-8"  class="rate" type="radio" name="rate" value="8">
-            <label for="rate-8">8</label>
-            <input id="rate-9"  class="rate" type="radio" name="rate" value="9">
-            <label for="rate-9">9</label>
-            <input id="rate-10"  class="rate" type="radio" name="rate" value="10">
-            <label for="rate-10">10</label>
+          <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+          <input id="rate-1" class="rate" type="radio" name="rate" value="1" checked>
+          <label for="rate-1">1</label>
+          <input id="rate-2" class="rate" type="radio" name="rate" value="2">
+          <label for="rate-2">2</label>
+          <input id="rate-3" class="rate" type="radio" name="rate" value="3">
+          <label for="rate-3">3</label>
+          <input id="rate-4" class="rate" type="radio" name="rate" value="4">
+          <label for="rate-4">4</label>
+          <input id="rate-5"  class="rate" type="radio" name="rate" value="5">
+          <label for="rate-5">5</label>
+          <input id="rate-6"  class="rate" type="radio" name="rate" value="6">
+          <label for="rate-6">6</label>
+          <input id="rate-7"  class="rate" type="radio" name="rate" value="7">
+          <label for="rate-7">7</label>
+          <input id="rate-8"  class="rate" type="radio" name="rate" value="8">
+          <label for="rate-8">8</label>
+          <input id="rate-9"  class="rate" type="radio" name="rate" value="9">
+          <label for="rate-9">9</label>
+          <input id="rate-10"  class="rate" type="radio" name="rate" value="10">
+          <label for="rate-10">10</label>
         </div>
         <label class="textarea" for="">Deixe seu comentário:</label>
         <textarea id="textarea" name="comentario" cols="30" rows="10" maxlength="500" ></textarea>
         <div id="counter"></div>
         <div>
-         <label id="label-infos" for="">Você concorda com o uso das informações acima?</label> 
-         <input id="agreement" type="checkbox" name="" >
+        <label id="label-infos" for="">Você concorda com o uso das informações acima?</label> 
+        <input id="agreement" type="checkbox" name="" >
         </div>
         <button id="submit-btn" type="submit" disabled>Enviar</button>
-        <div id="submited-information">
-          <div id="submitted-name"></div>
-          <div id="submitted-email"></div>
-          <div id="submitted-house"></div>
-          <div id="submitted-family"></div>
-          <div id="submitted-topics"></div>
-          <div id="submitted-rating"></div>
-          <div id="submitted-observation"></div>
-        </div>
-        </form>
-        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo colorido da Trybewarts">
+      </form>
+      <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo colorido da Trybewarts">
     </main>
     <footer>Direitos reservados à Trybewarts©</footer>
     <script src="script.js"></script>
