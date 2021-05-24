@@ -51,12 +51,12 @@ function enableSubmitButton() {
 
 checkBox.addEventListener('change', enableSubmitButton);
 
-textarea = document.querySelector('textarea');
+const textArea = document.querySelector('textarea');
 const counter = document.querySelector('#counter');
 
 function wordCounter() {
-  const nWords = textarea.value.length;
+  const nWords = textArea.value.length;
   counter.innerText = 500 - nWords;
 }
 
-textarea.addEventListener('keyup', wordCounter);
+textArea.addEventListener('keyup', wordCounter);
