@@ -62,6 +62,6 @@ main {
 }
 
 /* só pra bloquear a alteração do tamnaho ca daixa mesmo */
-.text-area {
+#text-area {
   resize: none;
 }
