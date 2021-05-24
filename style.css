@@ -73,8 +73,6 @@ main {
   width: 200px;
 }
 
-/*.divCheckBox {}*/
-
 .divRadioBox {
   display: flex;
   align-items: center;
@@ -90,12 +88,6 @@ main {
 .divCommentBox {
   width: 500px;
 }
-
-/*.textarea {}
-
-.divTermsBox {}
-
-.divSubmitBox {}*/
 
 #trybewarts-forms-logo {
   height: 500px;
