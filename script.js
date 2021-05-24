@@ -37,11 +37,11 @@ function verificarLogin() {
 }
 // Lista de seleção casa
 function criaOpcaoCasa() {
-  for (let tipo of tiposCasa) {
+  for (let index = 0; index < tiposCasa.length; index += 1) {
     const opcao = document.createElement('option');
-    opcao.value = tipo.valor;
-    opcao.innerText = tipo.valor;
-    opcao.id = tipo.id;
+    opcao.value = tiposCasa[index].valor;
+    opcao.innerText = tiposCasa[index].valor;
+    opcao.id = tiposCasa[index].id;
     getHouse.appendChild(opcao);
   }
 }
