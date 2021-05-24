@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,wght@0,100;0,300;0,500;0,800;0,900;1,100;1,300;1,500&display=swap');
+
 * {
   padding: 0;
   margin: 0;
+  font-family: Texturina, sans-serif;
 }
 
 body {
@@ -44,6 +47,17 @@ button {
   color: white;
   font-size: 18px;
   border-radius: 7px;
+  cursor: pointer;
+}
+
+button:hover {
+  transition: 0.2s;
+}
+
+h1 {
+  color: white;
+  font-weight: 900;
+  font-size: xx-large;
 }
 
 #evaluation-form {
@@ -91,6 +105,12 @@ button {
   justify-content: space-between;
 }
 
+.radio-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 #section-family {
   display: flex;
   flex-direction: column;
@@ -99,19 +119,20 @@ button {
 }
 
 .section-learning-content > label {
-  display: block;
   text-align: center;
-  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: large;
 }
 
-.radio-section label {
+/* .radio-section label {
   margin-left: -10px;
   margin-right: 22px;
-}
+} */
 
 #section-family > label {
-  padding-bottom: 10px;
   text-align: center;
+  font-weight: 600;
+  font-size: large;
 }
 
 .section-learning-content {
@@ -121,6 +142,7 @@ button {
 #label-rate {
   text-align: center;
   width: 100%;
+  font-weight: 600;
 }
 
 #text-area {
@@ -137,6 +159,12 @@ button {
   resize: none;
 }
 
+#text-area label {
+  font-weight: 500;
+  font-size: large;
+  align-self: baseline;
+}
+
 #agree-btn {
   display: flex;
   flex-direction: row;
@@ -144,8 +172,16 @@ button {
   align-items: center;
 }
 
+#agree-btn label {
+  font-weight: 600;
+}
+
 #agreement {
   margin: 15px;
+}
+
+#counter {
+  align-self: baseline;
 }
 
 #submit {
@@ -171,4 +207,5 @@ footer {
   align-items: center;
   font-size: 28px;
   font-weight: 800;
+  color: white;
 }
