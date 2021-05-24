@@ -16,6 +16,8 @@ const checkAgreement = document.querySelector('#agreement');
 checkAgreement.addEventListener('change', (event) => {
   if (event.target.checked) {
     submitButton.disabled = false;
+  } else {
+    submitButton.disabled = true;
   }
 });
 
@@ -30,7 +32,6 @@ const lastName = document.querySelector('#input-lastname');
 const email = document.querySelector('#input-email');
 const house = document.querySelector('#house');
 const comment = document.querySelector('#textarea');
-const evaluation = document.querySelector('.evaluation-note');
 
 function replaceNameElement() {
   const nameParagraph = document.createElement('p');
@@ -52,6 +53,7 @@ function replaceHouseElement() {
 }
 
 function replaceRateElement() {
+  const evaluation = document.querySelector('.evaluation-note');
   const rate = document.querySelector('input[name="rate"]:checked');
   const rateParagraph = document.createElement('p');
   rateParagraph.innerHTML = `Avaliação: ${rate.value}`;
