@@ -22,3 +22,28 @@ function clickbait() {
 }
 
 checkzinho.addEventListener('click', clickbait);
+
+/* const textArea = document.querySelector('#text-area')
+function calculoText() {
+const visor = document.querySelector('#counter')
+visor.innerText = '500';
+const length = document.querySelector('#text-area')
+.value.length;
+const valueNum = paseInt(length);
+const cont = 500 - valueNum;
+visor.innerText = cont ;
+
+}
+textArea.addEventListener('input', calculoText);
+ */
+const textArea = document.querySelector('#text-area')
+function calculoText() {
+let contador = document.querySelector('#counter').innerText = '500';
+let valueTxt = textArea.innerText.value;
+const valueNum = parseInt(valueTxt)
+const cont = 500 - valueNum;
+contador.innerText = cont;
+
+}
+
+textArea.addEventListener('keypress', calculoText)
