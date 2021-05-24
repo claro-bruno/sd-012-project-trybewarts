@@ -1,38 +1,31 @@
 const getEmail = document.querySelector('#email');
 const getPassword = document.querySelector('#password');
-const getButtunLogin = document.querySelector("#btn-login");
+const getButtunLogin = document.querySelector('#btn-login');
 const getCheckbox = document.querySelector('#agreement');
 const getButtonSubmit = document.querySelector('#submit-btn');
-
-const getHouse = document.querySelector("#house");
-let tiposCasa = [
-  { valor: "Gitnória", id: "gitnoria-house" },
-  { valor: "Reactpuff", id: "reactpuff-house" },
-  { valor: "Corvinode", id: "corvinode-house" },
-  { valor: "Pytherina", id: "pytherina-house" },
+const getHouse = document.querySelector('#house');
+const tiposCasa = [
+  { valor: 'Gitnória', id: 'gitnoria-house' },
+  { valor: 'Reactpuff', id: 'reactpuff-house' },
+  { valor: 'Corvinode', id: 'corvinode-house' },
+  { valor: 'Pytherina', id: 'pytherina-house' },
 ];
-
-const getFamilyContainer = document.querySelector(".family-container");
-let valoresFamily = [
-  { valor: "Frontend" },
-  { valor: "Backend" },
-  { valor: "FullStack" },
+const getFamilyContainer = document.querySelector('.family-container');
+const valoresFamily = [
+  { valor: 'Frontend' },
+  { valor: 'Backend' },
+  { valor: 'FullStack' },
 ];
-
-const getLearnTechnology = document.querySelector(
-  ".learn-technology-container"
-);
-let itemLearnTechnology = [
-  { valor: "HoFs" },
-  { valor: "Jest" },
-  { valor: "Promises" },
-  { valor: "React" },
-  { valor: "SQL" },
-  { valor: "Python" },
+const getLearnTechnology = document.querySelector('.learn-technology-container');
+const itemLearnTechnology = [
+  { valor: 'HoFs' },
+  { valor: 'Jest' },
+  { valor: 'Promises' },
+  { valor: 'React' },
+  { valor: 'SQL' },
+  { valor: 'Python' },
 ];
-
 let getToAssess = document.querySelector(".to-assess");
-
 function verificarLogin() {
   let emailCerto = "tryber@teste.com";
   let passwordCerto = "123456";
@@ -42,7 +35,6 @@ function verificarLogin() {
     alert("Login ou senha inválidos.");
   }
 }
-
 // Lista de seleção casa
 function criaOpcaoCasa() {
   for (const tipo of tiposCasa) {
@@ -53,25 +45,21 @@ function criaOpcaoCasa() {
     getHouse.appendChild(opcao);
   }
 }
-
 //---Botão radio familia---
-
 // Cria a div dos radios
 function criaRadioContainer(nomeClasse, elementoConteiner) {
   let div = document.createElement("div");
   div.className = nomeClasse;
   elementoConteiner.appendChild(div);
 }
-
 // Cria rotulo dos botão radio
 function criaLabelFamily(textoLabel) {
   let div = document.querySelector("." + textoLabel);
   let label = document.createElement("label");
-  label.setAttribute("for", textoLabel);
+  label.setAttribute('for', textoLabel);
   label.innerText = textoLabel;
   div.appendChild(label);
 }
-
 // Cria e adiciona os botões radio
 function criaRadioBotaoFamilia() {
   for (const family of valoresFamily) {
@@ -86,7 +74,6 @@ function criaRadioBotaoFamilia() {
     criaLabelFamily(family.valor);
   }
 }
-
 // Criando checkbox
 function createListLearnTechnology() {
   for (const item of itemLearnTechnology) {
@@ -101,41 +88,31 @@ function createListLearnTechnology() {
     criaLabelFamily(item.valor);
   }
 }
-
 // criando avaliador de 1 a 10;
-
 function creatLabel(number) {
-  let getDiv = document.querySelector(`.number-${number}`);
-  let createLabel = document.createElement("label");
-  createLabel.setAttribute("for", number);
+  const getDiv = document.querySelector(`.number-${number}`);
+  const createLabel = document.createElement('label');
+  createLabel.setAttribute('for', number);
   createLabel.innerText = number;
   getDiv.appendChild(createLabel);
 }
-
 function createToAssess() {
   for (let index = 1; index <= 10; index += 1) {
-    criaRadioContainer("number-" + index, getToAssess);
-    let getDiv = document.querySelector(`.number-${index}`);
-    let criaRadio = document.createElement("input");
-    criaRadio.setAttribute("type", "radio");
-    criaRadio.setAttribute("value", index);
-    criaRadio.setAttribute("name", "rate");
+    criaRadioContainer(`number-${index}`, getToAssess);
+    const getDiv = document.querySelector(`.number-${index}`);
+    const criaRadio = document.createElement('input');
+    criaRadio.setAttribute('type', 'radio');
+    criaRadio.setAttribute('value', index);
+    criaRadio.setAttribute('name', 'rate');
     criaRadio.id = index;
     getDiv.appendChild(criaRadio);
     creatLabel(index);
   }
 }
-
-getButtunLogin.addEventListener(
-  'click',
-  verificarLogin
-);
-
+getButtunLogin.addEventListener('click', verificarLogin);
 getCheckbox.addEventListener('click', () => {
   getButtonSubmit.disabled = !getCheckbox.checked;
 });
-
-
 createToAssess();
 createListLearnTechnology();
 criaOpcaoCasa();
