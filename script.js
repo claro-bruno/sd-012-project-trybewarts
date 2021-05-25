@@ -10,7 +10,6 @@ function emailIsValid() {
   return false;
 }
 
-}
 function passwordIsValid() {
   const inputPassword = document.getElementById('input-password');
   if (inputPassword.value === '123456') {
