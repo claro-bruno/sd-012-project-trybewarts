@@ -172,6 +172,7 @@ form hr {
   color: white;
   border: none;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 #submit-btn:disabled {
