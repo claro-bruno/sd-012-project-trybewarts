@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="http://fonts.cdnfonts.com/css/eg-dragon-caps" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Trybewarts</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="http://fonts.cdnfonts.com/css/eg-dragon-caps" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Trybewarts</title>
 </head>
 <body>
-    <header class="header">
-        <img src="images/trybewarts-header-logo.svg" alt="logo trybewarts" class="trybewarts-header-logo">
-        <h1 id="trybewarts-header-title">Trybewarts</h1>
-        <form action="" method="GET" class="trybewarts-login">
-          <input type="email" class="input-text" name="login" id="login" placeholder="Login">
-          <input type="password" class="input-text" name="senha" id="senha" placeholder="Senha">
-          <button type="submit" id="botaoLogar">Logar</button>
-        </form>
-    </header>
+  <header class="header">
+    <img src="images/trybewarts-header-logo.svg" alt="logo trybewarts" class="trybewarts-header-logo">
+    <h1 id="trybewarts-header-title">Trybewarts</h1>
+    <form action="" method="GET" class="trybewarts-login">
+      <input type="email" class="input-text" name="login" id="login" placeholder="Login">
+      <input type="password" class="input-text" name="senha" id="senha" placeholder="Senha">
+      <button type="submit" id="botaoLogar">Logar</button>
+    </form>
+  </header>
   <main>
   <form id="evaluation-form" action="" method="GET">
     <div id='container-nomeSobrenomeCasa'>
@@ -77,22 +77,42 @@
   </div>
     <hr>
     <div id="container-rate"> 
-        <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
-            <input type="radio" name="rate" id="" value="1">1
-            <input type="radio" name="rate" id="" value="2">2
-            <input type="radio" name="rate" id="" value="3">3
-            <input type="radio" name="rate" id="" value="4">4
-            <input type="radio" name="rate" id="" value="5">5
-            <input type="radio" name="rate" id="" value="6">6
-            <input type="radio" name="rate" id="" value="7">7
-            <input type="radio" name="rate" id="" value="8">8
-            <input type="radio" name="rate" id="" value="9">9
-            <input type="radio" name="rate" id="" value="10">10
+      <label id="label-rate">Como você avalia a Trybewarts?</label>
+      <label for="r1">
+        <input type="radio" name="rate" id="r1" value="1">1
+      </label>
+      <label for="r2">
+        <input type="radio" name="rate" id="r2" value="2">2
+      </label>
+      <label for="r3">
+        <input type="radio" name="rate" id="r3" value="3">3
+      </label>
+      <label for="r4">
+        <input type="radio" name="rate" id="r4" value="4">4
+      </label>
+      <label for="r5">
+        <input type="radio" name="rate" id="r5" value="5">5
+      </label>
+      <label for="r6">
+        <input type="radio" name="rate" id="r6" value="6">6
+      </label>
+      <label for="r7">
+        <input type="radio" name="rate" id="r7" value="7">7
+      </label>
+      <label for="r8">   
+        <input type="radio" name="rate" id="r8" value="8">8
+      </label>
+      <label for="r9"> 
+        <input type="radio" name="rate" id="r9" value="9">9
+      </label>
+      <label for="r10">
+        <input type="radio" name="rate" id="r10" value="10">10
+      </label>
     </div>
     <div id="container-text-area">
-        <label for="textarea" class="textarea">Deixe seu comentário:</label>
-        <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
-        <p id="counter"></p>
+      <label for="textarea" class="textarea">Deixe seu comentário:</label>
+      <textarea name="" id="textarea" cols="30" rows="10" maxlength="500"></textarea>
+      <p id="counter"></p>
     </div>
     <label id="label-infos" for="agreement">
       <input type="checkBox" id="agreement" value="yes" name="agree">Você concorda com o uso das informações acima?
