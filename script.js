@@ -27,3 +27,15 @@ const contador = document.querySelector('#counter');
 contador.innerText = '500/500';
 const textArea = document.querySelector('#textarea');
 textArea.addEventListener('keyup', contarCaracters);
+
+function ativarSubmit(event) {
+  const botaoSubmit = document.querySelector('#submit-btn');
+  if (event.target.checked === true) {
+    botaoSubmit.disabled = false;
+  } else {
+    botaoSubmit.disabled = true;
+  }
+}
+
+const checkBoxAgree = document.querySelector('#agreement');
+checkBoxAgree.addEventListener('click', ativarSubmit);
