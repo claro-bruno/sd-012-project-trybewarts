@@ -10,6 +10,7 @@ function emailIsValid() {
   return false;
 }
 
+}
 function passwordIsValid() {
   const inputPassword = document.getElementById('input-password');
   if (inputPassword.value === '123456') {
@@ -29,8 +30,7 @@ function loginValidation() {
     }
   });
 }
-submitValidation();
-document.getElementById('label-infos').disabled = true;
+
 function manageSubmit() {
   agreement.addEventListener('click', () => {
     if (agreement.checked === true) {
