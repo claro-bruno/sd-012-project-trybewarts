@@ -11,14 +11,19 @@ function clicarLogar() {
 
 pegabotao.addEventListener('click', clicarLogar);
 
-const checkzinho = document.getElementsByClassName('abriu')[0];
-
-function clickbait() {
-  const botaocheck = document.querySelector('.fechou');
-  botaocheck.disabled = false;
-  if (botaocheck.disable) {
-    botaocheck.style.backgroundColor = 'slateblue';
+const checkbox = document.querySelector('#agreement');
+function clickCheck() {
+  const submit = document.querySelector('#submit-btn');
+ 
+  if (checkbox.checked) {
+    submit.style.backgroundColor = 'slateblue';
+    submit.disabled = false;
+  } else {
+    submit.style.backgroundColor = 'dimgray';
+    submit.disabled = true;
+    
   }
+
 }
 
-checkzinho.addEventListener('click', clickbait);
+checkbox.addEventListener('click', clickCheck);
