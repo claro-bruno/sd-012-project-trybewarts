@@ -180,6 +180,34 @@ hr {
   color: rgb(117, 117, 122);
 }
 
+#submit-btn {
+  background-color: rgb(126, 52, 146);
+  color: white;
+  font-weight: 700;
+  border: solid 1px rgb(126, 52, 146);
+  border-radius: 5px;
+  width: 90%;
+  height: 30px;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+#submit-btn:disabled {
+  background-color: rgb(169, 165, 170);
+  border: solid 1px rgb(169, 165, 170);
+}
+
+#submit-btn:hover {
+  opacity: 80%;
+}
+
+#submit-btn:active {
+  border-radius: 10px;
+  border: solid 1px rgb(240, 235, 235);
+}
+
 footer {
   color: white;
   display: flex;
