@@ -4,9 +4,10 @@
   box-sizing: border-box;
 }
 
+/*
 body {
   height: 100vh;
-}
+} */
 
 .header {
   display: flex;
@@ -23,23 +24,34 @@ body {
 #trybewarts-header-title {
   font-family: fantasy;
   color: white;
+  letter-spacing: 8px;
 }
 
 .trybewarts-login {
   display: flex;
-  justify-content: space-between;
 }
 
-#login {
+#login , #senha {
   margin-right: 5px;
+  padding: 5px 15px;
+  border-radius: 7px;
+  border: none;
+  font-size: 11px;
 }
 
-#senha {
+/* #senha {
   margin-right: 5px;
-}
+} */
 
 #entrar {
   margin-right: 5px;
+  padding: 8px 30px;
+  background-color: rgb(78, 44, 131);
+  color: white;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  font-size: 11px;
 }
 
 .main {
