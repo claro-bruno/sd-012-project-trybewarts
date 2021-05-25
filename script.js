@@ -32,5 +32,3 @@ areaTexto.addEventListener('keyup', (event) => {
   const sub = event.target.maxLength - event.target.textLength;
   document.getElementById('counter').innerHTML = sub;
 }, false);
-
-
