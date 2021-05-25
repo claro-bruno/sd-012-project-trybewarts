@@ -14,7 +14,6 @@ pegabotao.addEventListener('click', clicarLogar);
 const checkbox = document.querySelector('#agreement');
 function clickCheck() {
   const submit = document.querySelector('#submit-btn');
- 
   if (checkbox.checked) {
     submit.style.backgroundColor = 'slateblue';
     submit.disabled = false;
@@ -23,7 +22,6 @@ function clickCheck() {
     submit.disabled = true;
     
   }
-
 }
 
 checkbox.addEventListener('click', clickCheck);
