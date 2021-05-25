@@ -52,6 +52,11 @@
   background-color: rgb(239, 239, 239);
 }
 
+form hr {
+  width: 403px;
+  margin: 12px 0;
+}
+
 #evaluation-form {
   width: 675px;
   display: flex;
@@ -112,33 +117,70 @@
   flex-flow: column wrap;
 }
 
+.aprender-group label {
+  margin-right: 15px;
+}
+
 .aprender * {
   margin: 4px 0;
 }
 
-form hr {
-  width: 403px;
-  margin: 10px 0;
+.nota {
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+
+#label-rate {
+  font-size: 14px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
 }
 
-/* .completeName {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-.familia-aprender {
+.coment {
   display: flex;
   flex-direction: column;
+  min-width: 400px;
+  font-size: 14px;
 }
 
-.nota {
-  display: flex;
-  flex-wrap: nowrap;
-} */
+.textarea {
+  margin-bottom: 3px;
+}
+
+#textarea {
+  resize: none;
+  border: none;
+  border-radius: 7px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.coment div {
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+#label-infos {
+  margin-bottom: 10px;
+}
+
+#submit-btn:enabled {
+  padding: 5px 0;
+  background-color: rgb(78, 44, 131);
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
+
+#submit-btn:disabled {
+  padding: 5px 0;
+  background-color: rgba(78, 44, 131, 0.5);
+  color: white;
+  border: none;
+  border-radius: 7px;
+}
 
 footer {
   width: 100%;
@@ -147,11 +189,6 @@ footer {
   text-align: center;
   padding-top: 15px;
 }
-
-/* .coment {
-  display: flex;
-  flex-direction: column;
-} */
 
 #filled-form {
   width: 675px;
