@@ -12,7 +12,6 @@
   display: flex;
   align-self: flex-start;
   width: 80px;
-  align-self: center;
 }
 
 .trybewarts-login {
@@ -38,7 +37,7 @@ main {
   display: flex;
   flex-direction: column;
   min-width: 675px;
-  margin: 0px 20px 0px 20px;
+  margin: 0 20px;
 }
 
 #trybewarts-forms-logo {
@@ -56,9 +55,9 @@ main {
   align-items: center;
 }
 
-#input-name, #input-lastname {
-width: 40%;
-display: flex;
+#input-name , #input-lastname {
+  width: 40%;
+  display: flex;
 }
 
 .margin-div {
