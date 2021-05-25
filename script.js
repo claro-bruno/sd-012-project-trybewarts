@@ -10,5 +10,20 @@ function verificaLogin() {
     alert('Olá, Tryber!');
   }
 }
+
 const botaoLogar = document.querySelector('#botaoLogar');
 botaoLogar.addEventListener('click', verificaLogin);
+
+// Função contarCaracters inspirada na explicação vista no link http://www.mattmorgante.com/technology/textarea-remaining-characters-javascript
+
+function contarCaracters() {
+  const textoDigitado = document.querySelector('#textarea').value;
+  const valorContador = (500 - (textoDigitado.length));
+  const contador = document.querySelector('#counter');
+  contador.innerText = `${valorContador}/500`;
+}
+
+const contador = document.querySelector('#counter');
+contador.innerText = '500/500';
+const textArea = document.querySelector('#textarea');
+textArea.addEventListener('keyup', contarCaracters);
