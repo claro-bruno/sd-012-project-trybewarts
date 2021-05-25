@@ -1,6 +1,21 @@
+/* Globbal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(243, 232, 217, 0.7);
+}
+
+/* header */
 .header {
   display: flex;
   background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
 .img-container {
@@ -20,16 +35,33 @@
 
 .trybewarts-login {
   display: flex;
+  align-items: center;
 }
 
-.form-line {
-  display: flex;
-  margin-bottom: 10px;
+.style-input {
+  border: 0;
+  margin: 5px;
+  height: 2rem;
+  width: 8rem;
+  border-radius: 0.25rem;
+  padding: 0.3rem;
+}
+
+.style-button {
+  height: 2rem;
+  width: 5rem;
+  border-radius: 0.25rem;
+  background-color: rgb(43, 127, 255);
+  color: white;
+  font-weight: 700;
 }
 
 /* Estilização do forms principal */
+
+/* Estilização da Seção 1 */
 main {
   display: flex;
+  padding: 20px;
 }
 
 #evaluation-form {
@@ -38,21 +70,95 @@ main {
   width: 675px;
 }
 
+.form-line {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
 #evaluation-form input {
   border: 1px solid gray;
-  height: 50px;
-  width: 400px;
+  height: 40px;
+  width: 20rem;
   margin-bottom: 5px;
+  border-color: aliceblue;
 }
+
+#houseSelector {
+  width: 20rem;
+  height: 35px;
+  margin: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+#house {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+}
+
+/* Estilização a Seção 2 */
+#section2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#familyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  height: 1rem;
+  padding: 20px;
+}
+
+#familyContainer input , #contentContainer input {
+  width: 10px;
+  margin: 0 5px 0 0;
+}
+
+#contentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.subContainerContent {
+  display: flex;
+  justify-content: start;
+}
+
+#label-content {
+  text-align: center;
+}
+
+#contentContainer input {
+  width: 10px;
+  margin: 0 5px 0 0;
+}
+
+/* Estilização da seção 3 */
 
 /* Estilização dos Radios de Satisfação */
 #satisfactionAssessment {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 #satisfactionAssessment input {
   width: 10px;
+}
+
+#label-rate {
+  margin-right: 20px;
 }
 
 /* Estilização da area de comentários */
@@ -61,20 +167,30 @@ main {
   flex-direction: column;
 }
 
+#counter {
+  text-align: end;
+}
+
 /* Estilização da area de comentários */
 #agreementField {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #agreementField input {
   width: 15px;
+  margin: 0 0 0 5px;
 }
+
 
 /* Estilização do botão de submit */
 #submit-btn {
-  background-color: green;
+  background-color: rgb(43, 127, 255);
   color: white;
+  font-weight: 700;
+  height: 2rem;
+  border-radius: 0.5rem;
 }
 
 #submit-btn:disabled {
