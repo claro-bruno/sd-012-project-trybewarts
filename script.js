@@ -23,7 +23,7 @@ function ability() {
   }
 }
 
-/* Código do desafio 20 */
+// Código do desafio 20
 
 let valorContador = 500;
 const comentario = document.querySelector('#textarea');

@@ -275,8 +275,6 @@ form hr {
   .separacao1 {
     width: 100%;
     display: flex;
-
-    /* justify-content: space-between; */
   }
 
   .separacao2 {
