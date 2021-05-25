@@ -16,12 +16,9 @@
      <input type="login" name="email" id="mail" placeholder="Login" value="" >
      <input type="password" name="password" id="password" placeholder="Senha">
      <button type="submit" id="submit">Entrar</button>
-     
+    </div> 
     </form>
     
-</div>
-   
-    </div>
     <main>
         <form id="evaluation-form">
             <div id="container-info1">
@@ -79,7 +76,7 @@
                     <label for="lessons6">Python</label>
              </div>
             </div>  
-           <br>
+           <div id="avaliation">
             <label for="" id="label-rate">Como você avalia a Trybewarts?</label>
                 <input type="radio" value="1" name="rate">
                 <label for="">1</label>
@@ -101,26 +98,25 @@
                 <label for="">9</label>
                 <input type="radio" value="10" name="rate">
                 <label for="">10</label>
-            <br>
+            </div> 
             </div>
 
-            
             <label for="" class="textarea">Deixe seu comentário: </label>
-
             <textarea name="" id="textarea" style="resize: none" cols="30" maxlength="500" rows="10"></textarea>
             
             <div class="container">
                 <input type="checkbox" class="subject" id="agreement" value="" required  name="lessons">
                 <label id="label-infos" for="agreement" >Você concorda com o uso das informações acima?</label>
             </div> 
-            <div>   
+
             <button type="submit" id="submit-btn" >Enviar</button>
-            </div>
 
         </form>
         <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" alt="">
     </main>
-    <footer>Direitos reservados à Trybewarts©</footer>
+    <footer>
+        <p> Direitos reservados à Trybewarts© </p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
