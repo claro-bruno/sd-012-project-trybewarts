@@ -85,7 +85,41 @@
   font-size: 12px;
 }
 
+.email-casa hr {
+  margin: 5px 0;
+  background-color: gray;
+}
 
+.familia-aprender {
+  display: flex;
+  max-width: 400px;
+  font-size: 14px;
+}
+
+.familia {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-right: 35px;
+  min-width: 100px;
+}
+
+.familia * {
+  margin: 2.5px 0;
+}
+
+.aprender {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.aprender * {
+  margin: 4px 0;
+}
+
+form hr {
+  width: 403px;
+  margin: 10px 0;
+}
 
 #trybewarts-forms-logo {
   height: 500px;
@@ -112,7 +146,6 @@ footer {
   background-color: rgb(83, 82, 88);
   text-align: center;
   padding-top: 15px;
-  margin-top: 10px;
 }
 
 /* .coment {

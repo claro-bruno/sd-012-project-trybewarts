@@ -34,38 +34,48 @@
             <option id="pytherina-house" value="Pytherina">Pytherina</option>
           </select>
         </label>
+        <hr>
       </div>
       <div class="familia-aprender">
-        <label id="label-family">Qual sua família?</label><br>
-        <label for="front">
-          <input id="front" type="radio" name="family" value="Frontend">Frontend</input>
-        </label>
-        <label for="back">
-          <input id="back" type="radio" name="family" value="Backend">Backend</input>
-        </label>
-        <label for="full">
-          <input id="full" type="radio" name="family" value="FullStack">FullStack</input>
-        </label><br>
-        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label><br>
-        <label for="hofs">
-          <input id="hofs" type="checkbox" class="subject" value="HoFs">HoFs</input>
-        </label>
-        <label for="jest">
-          <input id="jest" type="checkbox" class="subject" value="Jest">Jest</input>
-        </label>
-        <label for="promises">
-          <input id="promises" type="checkbox" class="subject" value="Promises">Promises</input>
-        </label>
-        <label for="react">
-          <input id="react" type="checkbox" class="subject" value="React">React</input>
-        </label>
-        <label for="sql">
-          <input id="sql" type="checkbox" class="subject" value="SQL">SQL</input>
-        </label>
-        <label for="python">
-          <input id="python" type="checkbox" class="subject" value="Python">Python</input>
-        </label>
+        <div class="familia">
+          <label id="label-family">Qual sua família?</label>
+          <label for="front">
+            <input id="front" type="radio" name="family" value="Frontend" checked>Frontend</input>
+          </label>
+          <label for="back">
+            <input id="back" type="radio" name="family" value="Backend">Backend</input>
+          </label>
+          <label for="full">
+            <input id="full" type="radio" name="family" value="FullStack">FullStack</input>
+          </label>
+        </div>
+        <div class="aprender">
+          <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div class="aprender-group-1">
+            <label for="hofs">
+              <input id="hofs" type="checkbox" class="subject" value="HoFs">HoFs</input>
+            </label>
+            <label for="jest">
+              <input id="jest" type="checkbox" class="subject" value="Jest">Jest</input>
+            </label>
+            <label for="promises">
+              <input id="promises" type="checkbox" class="subject" value="Promises">Promises</input>
+            </label>
+          </div>
+          <div class="aprender-group-2">
+            <label for="react">
+              <input id="react" type="checkbox" class="subject" value="React">React</input>
+            </label>
+            <label for="sql">
+              <input id="sql" type="checkbox" class="subject" value="SQL">SQL</input>
+            </label>
+            <label for="python">
+              <input id="python" type="checkbox" class="subject" value="Python">Python</input>
+            </label>
+          </div>
+        </div>
       </div>
+      <hr>
       <div class="nota">
         <label id="label-rate"> Como você avalia a Trybewarts?</label>
         <label for="rate-1">
