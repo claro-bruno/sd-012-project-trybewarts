@@ -20,7 +20,6 @@ function clickCheck() {
   } else {
     submit.style.backgroundColor = 'dimgray';
     submit.disabled = true;
-    
   }
 }
 
