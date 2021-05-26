@@ -200,6 +200,17 @@ main {
   cursor: not-allowed;
 }
 
+/* Estilização da Div das Infos do Forms */
+#showInfos {
+  border: 1px solid rgb(43, 127, 255);
+  box-shadow: 3px 3px rgba(43, 127, 255, 0.6);
+  width: 60%;
+  margin: 50px auto auto;
+  padding: 20px;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
 /* Estilização da Imagem */
 #trybewarts-forms-logo {
   height: 500px;

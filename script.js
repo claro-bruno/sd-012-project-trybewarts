@@ -60,3 +60,32 @@ function wordCounter() {
 }
 
 textArea.addEventListener('keyup', wordCounter);
+
+// Retornando dados do Forms - Requisito 21
+// O código a seguir foi baseado no código escrito pelo aluno Gabriel Bueno, turma 12
+// Que foi retirado de: https://www.learnwithjason.dev/blog/get-form-values-as-json
+
+const form = document.querySelector('#evaluation-form');
+
+const showInfo = (obj) => {
+  form.innerHTML = '';
+  form.innerHTML = `<div id="showInfos">
+    <p> Nome: ${obj.nome} ${obj.sobrenome} </p>
+    <p>Email: ${obj.email}</p>
+    <p>Casa: ${obj.casa}</p>
+    <p>Família: ${obj.family}</p>
+    <p>Matérias: ${obj.subject.join(', ')}</p>
+    <p>Avaliação: ${obj.rate}</p>
+    <p>Observações: ${obj.comentarios}</p>
+  </div>`;
+};
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  const data = new FormData(event.target);
+  const value = Object.fromEntries(data.entries());
+  value.subject = data.getAll('subject');
+  showInfo(value);
+};
+
+form.addEventListener('submit', handleSubmit);
