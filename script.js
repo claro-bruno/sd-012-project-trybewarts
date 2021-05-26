@@ -40,4 +40,5 @@ function rates() {
   }
 }
 
+
 rates();
