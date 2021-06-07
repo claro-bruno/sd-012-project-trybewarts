@@ -215,7 +215,7 @@ textarea:focus {
 }
 
 .checkbox-agreement {
-  margin: .5rem 0;
+  margin: 0.5rem 0;
 }
 
 footer {
@@ -226,7 +226,7 @@ footer {
   color: white;
 }
 
-@media only screen and ( min-width: 1400px ) {
+@media only screen and ( min-width : 1400px ) {
 
   main {
     padding: 0 18rem;
