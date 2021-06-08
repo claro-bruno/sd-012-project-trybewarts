@@ -1,0 +1,163 @@
+body {
+  margin: 0 auto;
+  font-size: 1em;
+  min-width: 1368px;
+}
+
+h2 {
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  line-height: 1.3em;
+  width: 80%;
+  margin: 60px auto;
+}
+
+header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  background-color: rgb(50, 167, 145);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1125px;
+}
+
+.trybewarts-header-logo {
+  width: 70px;
+  padding: 10px 0;
+}
+
+.evaluation-rate {
+  display: flex;
+}
+
+.header form {
+  display: flex;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-family: Zen Dots, cursive;
+}
+
+#evaluation-form {
+  display: flex;
+  flex-direction: column;
+  min-width: 675px;
+  max-width: 750px;
+}
+
+#input-continer {
+  display: flex;
+}
+
+main img {
+  height: 500px;
+  margin: auto 0;
+}
+
+#input-name {
+  width: 45%;
+}
+
+#input-lastname {
+  width: 45%;
+}
+
+#input-email {
+  width: 45%;
+}
+
+main h1 {
+  text-align: center;
+  padding: 40px;
+}
+
+.family-container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+#label-family {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+hr {
+  width: 100%;
+}
+
+.div-form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-form input {
+  width: 45%;
+}
+
+main ul {
+  list-style: none;
+  padding-inline-start: 0;
+  margin: 0;
+}
+
+#content-check {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+#family-content-container {
+  display: flex;
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-container label {
+  flex-basis: 33%;
+}
+
+footer {
+  background-color: rgb(77, 67, 67);
+  color: rgb(50, 167, 145);
+  text-align: center;
+}
+
+textarea {
+  width: 100%;
+}
+
+main button {
+  width: 100%;
+}
+
+#counter {
+  text-align: end;
+  margin-top: 0;
+}
+
