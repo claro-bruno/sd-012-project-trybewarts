@@ -20,11 +20,9 @@
     <div class="music-container"><iframe id="music"></iframe></div>
     <main class="form-container">
         <form id="evaluation-form" action="" method="GET">
-            <div class="name-container">
+            <div class="personal-info">
                 <input class="cool" id="input-name" value="" type="text" placeholder="Nome" required>
                 <input class="cool" id="input-lastname" value="" type="text" placeholder="Sobrenome" required>
-            </div>
-            <div class="address-container">
                 <input class="cool" id="input-email" value="" type="email" placeholder="Email" required>
                 <select class="cool" name="casa" id="house" required>
                     <option value="Gitnória" id="gitnoria-house">Gitnória</option>
@@ -34,13 +32,21 @@
                 </select>
             </div>
             <hr>
-            <label for="" id="label-family">Qual sua família?</label>
-            <label for="front-end"><input type="radio" name="family" value="Frontend" class="family" id="front-end" required> Frontend</label>
-            <label for="back-end"><input type="radio" name="family" value="Backend" class="family" id="back-end" required> Backend</label>
-            <label for="full-stack"><input type="radio" name="family" value="FullStack" class="family" id="full-stack" required> FullStack</label>
+            <div id="family-container">
+                <label for="" id="label-family">Qual sua família?</label>
+                <label for="front-end">
+                    <input type="radio" name="family" value="Frontend" class="family" id="front-end" required> Frontend
+                </label>
+                <label for="back-end">
+                    <input type="radio" name="family" value="Backend" class="family" id="back-end" required> Backend
+                </label>
+                <label for="full-stack">
+                    <input type="radio" name="family" value="FullStack" class="family" id="full-stack" required> FullStack
+                </label>
+            </div>
             <hr>
-            <label for="" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
-            <div>
+            <div id="subjects-container">
+                <div id="label-content">Qual conteúdo você está com mais vontade de aprender?</div>
                 <label for="hofs"><input type="checkbox" name="subject" id="hofs" class="subject" value="HoFs"> HoFs</label>
                 <label for="jest"><input type="checkbox" name="subject" id="jest" class="subject" value="Jest"> Jest</label>
                 <label for="promises"><input type="checkbox" name="subject" id="promises" class="subject" value="Promises"> Promises</label>
@@ -65,12 +71,14 @@
             <hr>
             <label for="" class="textarea">Deixe seu comentário:</label>
             <textarea name="comment" id="textarea" maxlength="500" cols="30" rows="10"></textarea>
-            <div id="counter"></div>
+            <label id="characters">
+                Limite de Caracteres: <span id="counter"></span>
+            </label>
             <hr>
             <label for="agreement" id="label-infos">Você concorda com o uso das informações acima? <input type="checkbox" name="check-info" id="agreement" required></label>
             <button id="submit-btn" type="submit"disabled>Enviar</button>
         </form>
-            <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts">
+        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="trybewarts">
         
     </main>
     <br>

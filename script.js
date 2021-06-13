@@ -1,110 +1,134 @@
-const inputLogin = document.querySelector('#input-login');
-const inputSenha = document.querySelector('#input-senha');
-const btnLogin = document.querySelector('#btn-login');
-// Validação de login
-btnLogin.addEventListener('click', () => {
-  if (inputLogin.value === 'tryber@teste.com' && inputSenha.value === '123456') {
-    alert('Olá, Tryber!');
-  } else {
-    alert('Login ou senha inválidos.');
-  }
-});
-// Habilita botão Enviar quando usuário marcar checkbox de uso de informações
-const agreement = document.querySelector('#agreement');
-const submitBtn = document.querySelector('#submit-btn');
-agreement.addEventListener('click', () => {
-  if (agreement.checked) {
-    submitBtn.removeAttribute('disabled');
-  } else {
-    submitBtn.setAttribute('disabled', 'disabled');
-  }
-});
-// Configura contador de caracteres do campo de comentário
-const textArea = document.querySelector('#textarea');
-const counter = document.querySelector('#counter');
-const maxLength = 500;
-counter.innerHTML = maxLength;
-textArea.addEventListener('input', () => {
-  counter.innerHTML = maxLength - textArea.value.length;
-});
-// Elementos dos dados
+const SRC = 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1051532824';
+const COLOR_PLAYER = '&color=%2300ffa3';
+const AUTO_PLAY = '&auto_play=true';
+const iframe = document.querySelector('iframe');
+const MSG_LOGIN = 'Olá, Tryber!';
+const MSG_ERROR = 'Login ou senha inválidos.';
+const MSG_ERROR_SUBJECTS = 'Qual ou quais conteúdos você está com mais vontade de aprender? ;)';
+const MSG_ERROR_FAMILY = 'Escolha uma família! =D';
+const MSG_ERROR_RATE = 'Nos dê uma nota ;D';
+const btnLogin = document.getElementById('btn-login');
+const dataLogin = {
+  login: 'tryber@teste.com',
+  password: '123456',
+};
+const form = document.querySelector('#evaluation-form');
 const firstName = document.querySelector('#input-name');
 const lastName = document.querySelector('#input-lastname');
 const inputEmail = document.querySelector('#input-email');
 const house = document.querySelector('#house');
 const family = document.querySelectorAll('.family');
-const subject = document.querySelectorAll('.subject');
+const subjects = document.querySelectorAll('.subject');
 const rate = document.querySelectorAll('.rate');
-// Cria Parágrafos
-const form = document.querySelector('#evaluation-form');
-function paragraphCreator(data) {
+const textArea = document.querySelector('#textarea');
+const counter = document.querySelector('#counter');
+const agreement = document.querySelector('#agreement');
+const submitBtn = document.querySelector('#submit-btn');
+
+const createMusicPlayer = () => {
+  iframe.setAttribute('scrolling', 'no');
+  iframe.setAttribute('frameborder', 'no');
+  iframe.width = '400px';
+  iframe.height = '60px';
+  iframe.allow = 'autoplay';
+  iframe.src = SRC + COLOR_PLAYER + AUTO_PLAY;
+};
+
+const validateLogin = () => {
+  const inputLogin = document.getElementById('input-login');
+  const inputPassword = document.getElementById('input-senha');
+  btnLogin.addEventListener('click', (event) => {
+    switch (inputLogin.value === dataLogin.login && inputPassword.value === dataLogin.password) {
+      case true:
+        alert(MSG_LOGIN);
+        event.preventDefault();
+      break;
+    default:
+    alert(MSG_ERROR);
+    event.preventDefault();
+    };
+  });
+};
+
+const agreeUseInformation = () => {
+  agreement.addEventListener('click', () => {
+    if (agreement.checked) {
+      submitBtn.removeAttribute('disabled');
+    } else {
+      submitBtn.setAttribute('disabled', 'disabled');
+    }
+  });
+};
+
+const characterCounter = () => {
+  const maxLength = 500;
+  counter.innerText = maxLength;
+  textArea.addEventListener('input', () => {
+    counter.innerText = maxLength - textArea.value.length;
+  });
+};
+
+function paragraphDataCreator(data) {
   const p = document.createElement('p');
   p.className = 'data';
   p.innerHTML = data;
   form.appendChild(p);
 }
-// Cria função que busca elementos selecionados em checkboxes e radios
-function optionsSelected(element) {
-  let valueElement = '';
-  for (let index = 0; index < element.length; index += 1) {
-    if (valueElement === '' && element[index].checked) {
-      valueElement += `${element[index].value}`;
-    } else if (element[index].checked) {
-      valueElement += `, ${element[index].value}`;
+
+function searchOptionChecked(element) {
+  const toArray = Array.from(element);
+  return toArray.reduce((acc, curr) => {
+    if (acc === '' && curr.checked) {
+      acc += `${curr.value}`;
+    } else if (curr.checked) {
+      acc += `, ${curr.value}`;
     }
-  }
-  return valueElement;
+    return acc;
+  }, '');
 }
-// Cria elemento com copia de dados preenchidos
+
 function copyData() {
   const fullName = `Nome: ${firstName.value} ${lastName.value}`;
-  paragraphCreator(fullName);
+  paragraphDataCreator(fullName);
   const email = `Email: ${inputEmail.value}`;
-  paragraphCreator(email);
+  paragraphDataCreator(email);
   const selectedHouse = `Casa: ${house.value}`;
-  paragraphCreator(selectedHouse);
-  const selectedFamily = `Família: ${optionsSelected(family)}`;
-  paragraphCreator(selectedFamily);
-  const selectedSubject = `Matérias: ${optionsSelected(subject)}`;
-  paragraphCreator(selectedSubject);
-  const selectedRate = `Avaliação: ${optionsSelected(rate)}`;
-  paragraphCreator(selectedRate);
+  paragraphDataCreator(selectedHouse);
+  const selectedFamily = `Família: ${searchOptionChecked(family)}`;
+  paragraphDataCreator(selectedFamily);
+  const selectedSubject = `Matérias: ${searchOptionChecked(subjects)}`;
+  paragraphDataCreator(selectedSubject);
+  const selectedRate = `Avaliação: ${searchOptionChecked(rate)}`;
+  paragraphDataCreator(selectedRate);
   const textComment = `Observações: ${textArea.value}`; // textArea declarado na linha 23
-  paragraphCreator(textComment);
+  paragraphDataCreator(textComment);
 }
-// Validador dos checkboxes com as matérias
-function subjectsValidate() {
-  let counterMark = 0;
-  for (let index = 0; index < subject.length; index += 1) {
-    if (subject[index].checked) {
-      counterMark += 1;
-    }
-  }
-  if (counterMark > 0) {
-    return true;
-  }
-  return false;
+
+function checkboxIsChecked(element) {
+  const subjectsArr = Array.from(element);
+  const isChecked = subjectsArr.reduce((acc, { checked }) => {
+    if (checked) acc = true;
+    return acc;
+  }, false);
+
+  return isChecked;
 }
 // Substitui campos do formulário por dados preenchidos ao clicar no botão "Enviar"
-submitBtn.addEventListener('click', (evt) => {
-  evt.preventDefault();
-  if (!subjectsValidate()) {
-    alert('Qual conteúdo você está com mais vontade de aprender? ;)');
-  } else {
+const returnDataCopy = () => {
+  submitBtn.addEventListener('click', (evt) => {
+    evt.preventDefault();
+    if (!checkboxIsChecked(family)) return alert(MSG_ERROR_FAMILY);
+    if (!checkboxIsChecked(subjects)) return alert(MSG_ERROR_SUBJECTS);
+    if (!checkboxIsChecked(rate)) return alert(MSG_ERROR_RATE);
     form.innerHTML = '';
     copyData();
-  }
-});
-// Adiciona musica tema do Harry Potter theme remix (https://www.youtube.com/watch?v=Yjr1mcZjRkM)
-const src = 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1051532824';
-const colorPlay = '&color=%2300ffa3';
-const autoPlay = '&auto_play=true';
+  });
+};
+
 window.onload = () => {
-  const iframe = document.querySelector('iframe');
-  iframe.setAttribute('width', '400px');
-  iframe.setAttribute('height', '60');
-  iframe.setAttribute('scrolling', 'no');
-  iframe.setAttribute('frameborder', 'no');
-  iframe.setAttribute('allow', 'autoplay');
-  iframe.setAttribute('src', src + colorPlay + autoPlay);
+  validateLogin();
+  createMusicPlayer();
+  agreeUseInformation();
+  characterCounter();
+  returnDataCopy();
 };
