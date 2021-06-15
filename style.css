@@ -9,10 +9,12 @@ body {
   background-position: center;
   background-size: cover;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
+  width: 100vw;
 }
 
-.header {
+header {
   align-items: center;
   background-color: rgb(50, 167, 145);
   box-shadow: rgb(24, 46, 46) 3px 3px 10px;
@@ -38,6 +40,7 @@ h1 {
   align-items: center;
   display: flex;
   flex-direction: column;
+  flex-basis: 20%;
 }
 
 #btn-login {
@@ -50,6 +53,10 @@ h1 {
   opacity: 0.8;
   padding: 4px 110px;
   transition: all 0.3s ease;
+}
+
+.login {
+  width: 100%;
 }
 
 #btn-login:hover {
@@ -69,10 +76,10 @@ h1 {
 
 #music {
   height: 20px;
-  margin: 10px;
+  margin: 10px 10px 0 0;
 }
 
-.form-container {
+main {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
@@ -86,7 +93,6 @@ h1 {
   box-shadow: rgba(24, 46, 46, 0.3) -5px 5px 10px;
   display: flex;
   flex-direction: column;
-  margin-left: 50px;
   margin-top: 40px;
   padding: 50px;
   width: 675px;
@@ -96,6 +102,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 100%;
 }
 
 #house {
@@ -110,11 +117,17 @@ h1 {
 }
 
 #label-content {
+  text-align: center;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .subject {
-  margin-left: 10px;
+  margin-left: 12px;
+}
+
+.rate-container {
+  display: flex;
 }
 
 .rate {
@@ -192,7 +205,7 @@ footer {
   display: flex;
   color: aliceblue;
   justify-content: center;
-  padding-top: 20px;
+  padding: 10px;
 }
 
 .cool {
@@ -213,14 +226,119 @@ footer {
   box-shadow: 0 0 2px 2px cyan;
 }
 
-@media screen and ( max-width : 880px ) {
+@media screen and ( max-width : 1024px ) {
 
   header {
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 30px 60px;
   }
 
-  /* header h1 {
-    font-size: 30px;
-  } */
+  header h1 {
+    font-size: 50px;
+  }
+
+  #music {
+    margin-right: 50px;
+  }
+
+  .rate-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and ( max-width : 768px ) {
+
+  body {
+    height: 100vh;
+    background-image: none;
+    background-color: rgb(50, 167, 145);
+  }
+
+  header {
+    box-shadow: none;
+    flex-direction: column;
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    transition: 2s;
+    z-index: 9999;
+  }
+
+  header h1 {
+    font-size: 50px;
+  }
+
+  main {
+    flex-direction: column;
+    opacity: 0;
+    transition: 2s;
+  }
+
+  .music-container {
+    justify-content: center;
+    margin: 0 10px;
+  }
+
+  #evaluation-form {
+    order: 2;
+    padding: 30px;
+    width: 80vw;
+  }
+
+  .rate-container {
+    flex-direction: column;
+  }
+
+  .rate {
+    margin-left: 10px;
+  }
+
+  .mobile-format {
+    height: 4%;
+  }
+
+  .personal-info {
+    justify-content: center;
+  }
+
+  #trybewarts-forms-logo {
+    height: 400px;
+  }
+}
+
+@media screen and ( max-width : 600px ) {
+
+  .subject {
+    margin-left: 8px;
+  }
+
+  .rate {
+    margin-left: 12px;
+  }
+
+}
+
+@media screen and ( max-width : 414px ) {
+
+  .subject {
+    margin-left: 18px;
+  }
+
+  .rate {
+    margin-left: 20px;
+  }
+
+}
+
+@media screen and ( max-width : 375px ) {
+
+  .rate {
+    margin-left: 14px;
+  }
+
 }

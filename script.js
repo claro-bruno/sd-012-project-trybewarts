@@ -25,6 +25,20 @@ const counter = document.querySelector('#counter');
 const agreement = document.querySelector('#agreement');
 const submitBtn = document.querySelector('#submit-btn');
 
+const validateLogin = () => {
+  const inputLogin = document.getElementById('input-login');
+  const inputPassword = document.getElementById('input-senha');
+  return inputLogin.value === dataLogin.login && inputPassword.value === dataLogin.password;
+};
+
+const initApplication = () => {
+  const mainStyle = document.querySelector('main').style;
+  const header = document.querySelector('header');
+  header.innerHTML = '';
+  header.style.height = '0';
+  mainStyle.opacity = '1';
+};
+
 const createMusicPlayer = () => {
   iframe.setAttribute('scrolling', 'no');
   iframe.setAttribute('frameborder', 'no');
@@ -34,19 +48,20 @@ const createMusicPlayer = () => {
   iframe.src = SRC + COLOR_PLAYER + AUTO_PLAY;
 };
 
-const validateLogin = () => {
-  const inputLogin = document.getElementById('input-login');
-  const inputPassword = document.getElementById('input-senha');
+const eventLogin = () => {
+  const bodyStyle = document.querySelector('body').style;
   btnLogin.addEventListener('click', (event) => {
-    switch (inputLogin.value === dataLogin.login && inputPassword.value === dataLogin.password) {
-      case true:
-        alert(MSG_LOGIN);
-        event.preventDefault();
-      break;
-    default:
-    alert(MSG_ERROR);
     event.preventDefault();
-    };
+
+    if (validateLogin() && bodyStyle.display <= '768px') {
+      initApplication();
+      return alert(MSG_LOGIN);
+    }
+
+    if (validateLogin()) {
+      return alert(MSG_LOGIN);
+    }
+    alert(MSG_ERROR);
   });
 };
 
@@ -126,7 +141,7 @@ const returnDataCopy = () => {
 };
 
 window.onload = () => {
-  validateLogin();
+  eventLogin();
   createMusicPlayer();
   agreeUseInformation();
   characterCounter();
