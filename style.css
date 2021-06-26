@@ -39,6 +39,7 @@ form input {
 main {
   display: flex;
   background-color: rgb(231, 231, 231);
+  justify-content: center;
 }
 
 #evaluation-form {
@@ -48,6 +49,7 @@ main {
 }
 
 #trybewarts-forms-logo {
+  display: flex;
   height: 500px;
 }
 
